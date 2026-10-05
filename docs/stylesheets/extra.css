@@ -1,0 +1,204 @@
+/* ==========================================================================
+   Identidade visual - Avaliação de Qualidade do VICKY
+   Paleta documentada em docs/projeto/identidade-visual.md
+   ========================================================================== */
+
+/* ---------- Modo claro ---------- */
+[data-md-color-scheme="default"] {
+  /* Paleta base */
+  --vicky-petroleo: #0B5563;
+  --vicky-petroleo-escuro: #083F4A;
+  --vicky-petroleo-claro: #2E7D8C;
+  --vicky-terracota: #B4531A;
+  --vicky-nevoa: #F3F7F8;
+  --vicky-gelo: #E6F1F3;
+  --vicky-grafite: #1E2B31;
+  --vicky-ardosia: #5A6B72;
+  --vicky-borda: #D5E1E4;
+
+  /* Mapeamento para o Material */
+  --md-primary-fg-color: var(--vicky-petroleo);
+  --md-primary-fg-color--light: var(--vicky-petroleo-claro);
+  --md-primary-fg-color--dark: var(--vicky-petroleo-escuro);
+  --md-primary-bg-color: #FFFFFF;
+  --md-accent-fg-color: var(--vicky-terracota);
+  --md-accent-fg-color--transparent: rgba(180, 83, 26, 0.1);
+
+  --md-default-bg-color: #FFFFFF;
+  --md-default-fg-color: var(--vicky-grafite);
+  --md-default-fg-color--light: var(--vicky-ardosia);
+  --md-typeset-color: var(--vicky-grafite);
+  --md-typeset-a-color: var(--vicky-petroleo);
+
+  --md-footer-bg-color: var(--vicky-petroleo-escuro);
+  --md-footer-bg-color--dark: #062F37;
+
+  --vicky-sidebar-bg: var(--vicky-nevoa);
+  --vicky-tabela-cabecalho: var(--vicky-gelo);
+  --vicky-card-borda: var(--vicky-borda);
+}
+
+/* ---------- Modo escuro ---------- */
+[data-md-color-scheme="slate"] {
+  --vicky-petroleo: #6CC3CF;
+  --vicky-terracota: #F2A65A;
+  --vicky-fundo: #11191D;
+  --vicky-superficie: #172328;
+  --vicky-texto: #E3EAED;
+  --vicky-texto-suave: #9AAAB1;
+  --vicky-borda: #27373E;
+
+  --md-primary-fg-color: #0B5563;
+  --md-primary-fg-color--light: #2E7D8C;
+  --md-primary-fg-color--dark: #083F4A;
+  --md-primary-bg-color: #FFFFFF;
+  --md-accent-fg-color: var(--vicky-terracota);
+  --md-accent-fg-color--transparent: rgba(242, 166, 90, 0.12);
+
+  --md-default-bg-color: var(--vicky-fundo);
+  --md-default-fg-color: var(--vicky-texto);
+  --md-default-fg-color--light: var(--vicky-texto-suave);
+  --md-default-fg-color--lighter: rgba(227, 234, 237, 0.32);
+  --md-default-fg-color--lightest: rgba(227, 234, 237, 0.12);
+  --md-typeset-color: var(--vicky-texto);
+  --md-typeset-a-color: var(--vicky-petroleo);
+  --md-code-bg-color: var(--vicky-superficie);
+
+  --md-footer-bg-color: #0A1215;
+  --md-footer-bg-color--dark: #070D10;
+
+  --vicky-sidebar-bg: var(--vicky-superficie);
+  --vicky-tabela-cabecalho: #1D2D33;
+  --vicky-card-borda: var(--vicky-borda);
+}
+
+/* ---------- Barra lateral esquerda ---------- */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary .md-sidebar__scrollwrap {
+    background-color: var(--vicky-sidebar-bg);
+    border: 1px solid var(--vicky-card-borda);
+    border-radius: 0.6rem;
+  }
+
+  /* O nome do site já aparece no cabeçalho */
+  .md-nav--primary > .md-nav__title {
+    display: none;
+  }
+
+  .md-nav--primary > .md-nav__list {
+    padding: 0.4rem 0 0.8rem;
+  }
+}
+
+.md-nav--primary .md-nav__title {
+  color: var(--md-primary-fg-color);
+}
+
+/* Títulos das seções da navegação */
+.md-nav--primary > .md-nav__list > .md-nav__item--section > .md-nav__link {
+  color: var(--md-typeset-a-color);
+  font-weight: 700;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+/* Página ativa */
+.md-nav__link--active {
+  color: var(--md-accent-fg-color) !important;
+  font-weight: 600;
+}
+
+.md-nav__item .md-nav__link--active {
+  border-left: 3px solid var(--md-accent-fg-color);
+  margin-left: -0.6rem;
+  padding-left: calc(0.6rem - 3px);
+}
+
+/* ---------- Tipografia ---------- */
+.md-typeset h1 {
+  color: var(--md-typeset-a-color);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--vicky-card-borda);
+}
+
+/* ---------- Tabelas ---------- */
+.md-typeset table:not([class]) {
+  border: 1px solid var(--vicky-card-borda);
+  border-radius: 0.4rem;
+  font-size: 0.72rem;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: var(--vicky-tabela-cabecalho);
+  color: var(--md-default-fg-color);
+}
+
+/* ---------- Cards da página inicial ---------- */
+.md-typeset .grid.cards > ul > li {
+  border: 1px solid var(--vicky-card-borda);
+  border-top: 4px solid var(--md-primary-fg-color);
+  border-radius: 0.5rem;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  border-top-color: var(--md-accent-fg-color);
+  box-shadow: 0 6px 18px rgba(11, 85, 99, 0.12);
+  transform: translateY(-2px);
+}
+
+.md-typeset .grid.cards .rotulo {
+  display: inline-block;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--md-accent-fg-color);
+}
+
+/* ---------- Destaque de abertura ---------- */
+.md-typeset .abertura {
+  padding: 1.2rem 1.4rem;
+  margin: 0 0 1.5rem;
+  border-radius: 0.6rem;
+  background: linear-gradient(135deg, #0B5563 0%, #083F4A 100%);
+  color: #FFFFFF;
+}
+
+.md-typeset .abertura p {
+  margin: 0.4rem 0;
+}
+
+.md-typeset .abertura a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.md-typeset .abertura strong {
+  color: #FFFFFF;
+}
+
+/* ---------- Amostras da paleta ---------- */
+.md-typeset .amostra {
+  display: inline-block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  vertical-align: middle;
+}
+
+/* ---------- Foco visível (acessibilidade) ---------- */
+.md-typeset a:focus-visible,
+.md-nav__link:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 2px;
+}

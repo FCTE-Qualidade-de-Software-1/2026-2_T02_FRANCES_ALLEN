@@ -1,12 +1,56 @@
 # Avaliação de Qualidade do VICKY
 
-Este site documenta a **avaliação da qualidade do produto de software VICKY**, conduzida pelo grupo **Frances Allen** (turma T02) na disciplina **FGA0315 - Qualidade de Software 1** (FCTE/UnB, 2026.2), sob orientação da Profa. Cristiane Ramos.
+<div class="abertura" markdown>
 
-O **VICKY** é um website destinado a **estudantes de medicina**, voltado à busca e consulta de informações sobre artigos científicos e conteúdos acadêmicos da área da saúde. Detalhes em [Objeto de avaliação](projeto/objeto-de-avaliacao.md).
+**FGA0315 - Qualidade de Software 1** · FCTE/UnB · 2026.2 · Turma T02 · Grupo Frances Allen
+
+Este site documenta a **avaliação da qualidade do produto de software VICKY**, um website para **estudantes de medicina** buscarem e consultarem artigos científicos e conteúdos acadêmicos da área da saúde. Orientação: Profa. Cristiane Ramos.
+
+</div>
+
+## Como navegar
+
+A barra lateral à esquerda lista todas as páginas. Os atalhos abaixo levam às seções principais.
+
+<div class="grid cards" markdown>
+
+-   <span class="rotulo">Contexto</span>
+
+    **[O projeto](projeto/index.md)**
+
+    ---
+
+    Produto avaliado, acesso ao código-fonte, equipe e declaração de uso de IA.
+
+-   <span class="rotulo">Premissa 1 · Fase 1</span>
+
+    **[Características de qualidade](premissa-1-caracteristicas/index.md)**
+
+    ---
+
+    Adequação funcional, capacidade de interação e manutenibilidade (ISO/IEC 25010:2023), com a justificativa da escolha.
+
+-   <span class="rotulo">Premissa 2 · Fase 2</span>
+
+    **[Métricas (GQM)](premissa-2-metricas/index.md)**
+
+    ---
+
+    Objetivos, questões, hipóteses, fichas das métricas, níveis de pontuação e diagrama GQM.
+
+-   <span class="rotulo">Premissa 3 · Transversal</span>
+
+    **[Gestão do projeto (PSM/CID)](premissa-3-gestao/index.md)**
+
+    ---
+
+    Indicadores de calendário e progresso, recursos e custos, e desempenho dos processos, com as decisões tomadas a partir deles.
+
+</div>
 
 ## Como a avaliação está organizada
 
-A avaliação segue o processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040) e se apoia em três premissas obrigatórias, cada uma documentada em uma seção deste site:
+A avaliação segue o processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040). Cada premissa obrigatória corresponde a uma fase desse processo:
 
 | Premissa | O que define | Fase do processo |
 |----------|--------------|------------------|
