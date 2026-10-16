@@ -34,3 +34,4 @@ _Figura 1 - Hierarquia GQM da avaliação do VICKY. Fonte: elaborada pela equipe
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
+| 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |

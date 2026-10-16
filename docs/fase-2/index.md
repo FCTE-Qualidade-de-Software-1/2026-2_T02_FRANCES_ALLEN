@@ -1,12 +1,14 @@
-# Premissa 2 - Definição das métricas (GQM)
+# Fase 2 - Especificar a avaliação
+
+Segunda fase do processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040). Os requisitos de qualidade definidos na [Fase 1](../fase-1/index.md) são desdobrados, pelo método **GQM (Goal-Question-Metric)**, em objetivos, questões, hipóteses e métricas, com os níveis de pontuação e os critérios de julgamento que serão aplicados aos resultados.
 
 > Utilizar o método Goal-Question-Metric (GQM) para estabelecer a ligação entre objetivos, questões e métricas. Para cada métrica, documentar a definição, o procedimento de cálculo, a fonte dos dados, o procedimento de coleta e os critérios de interpretação.
 >
-> _Especificação do trabalho final, FGA0315 - 2026.2_
+> _Premissa 2 - Especificação do trabalho final, FGA0315 - 2026.2_
 
-Esta premissa corresponde à **Fase 2** do processo de avaliação (ISO/IEC 25040): especificar a avaliação.
+## Conteúdo desta fase
 
-| Documento | Conteúdo | Critérios da rubrica |
+| Página | Conteúdo | Critérios da rubrica |
 |-----------|----------|----------------------|
 | [Objetivos, questões e hipóteses](objetivos-questoes-hipoteses.md) | Objetivos no template GQM, questões e hipóteses | F2-C1, F2-C2, F2-C3, F2-C11 |
 | [Especificação das métricas](especificacao-das-metricas.md) | Ficha de cada métrica | F2-C4 |
@@ -26,3 +28,4 @@ Esta premissa corresponde à **Fase 2** do processo de avaliação (ISO/IEC 2504
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
+| 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |

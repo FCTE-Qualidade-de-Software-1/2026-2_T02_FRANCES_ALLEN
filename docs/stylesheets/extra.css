@@ -72,6 +72,26 @@
   --vicky-card-borda: var(--vicky-borda);
 }
 
+/* ---------- Abas superiores (fases) ---------- */
+.md-tabs {
+  background-color: var(--md-primary-fg-color--dark);
+}
+
+.md-tabs__link {
+  font-size: 0.72rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  opacity: 1;
+  font-weight: 700;
+}
+
+.md-tabs__item--active {
+  box-shadow: inset 0 -3px 0 var(--md-accent-fg-color);
+}
+
 /* ---------- Barra lateral esquerda ---------- */
 @media screen and (min-width: 76.25em) {
   .md-sidebar--primary .md-sidebar__scrollwrap {

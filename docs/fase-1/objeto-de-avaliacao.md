@@ -38,18 +38,15 @@ _Complementar com: proposta de valor, modelo de acesso (gratuito ou pago), orige
 | Tarefas típicas | _ex.: localizar artigo para seminário; revisar tema para prova_ |
 | Ambiente | _ex.: celular entre aulas; notebook em casa ou biblioteca_ |
 
-## 5. Partes interessadas
+## 5. Implicações para a avaliação
 
-| Parte interessada | Interesse na avaliação |
-|-------------------|------------------------|
-| Estudantes de medicina | Encontrar informação confiável com rapidez |
-| Equipe de desenvolvimento do VICKY | Liberou o acesso ao código-fonte; recebe recomendações de melhoria baseadas em evidências |
-| Professora da disciplina | Verificar a aplicação do processo de avaliação |
+_Indicar o que a natureza do produto permite ou não medir agora (ex.: o acesso ao código-fonte viabiliza a análise de manutenibilidade; a ausência de ambiente de testes limita medições de desempenho)._
 
-As partes interessadas orientam a [seleção das características de qualidade](../premissa-1-caracteristicas/selecao.md).
+As partes interessadas estão em [Requisitante e partes interessadas](partes-interessadas.md), e o recorte do que será avaliado está em [Escopo e profundidade](escopo.md).
 
 ## Histórico de versão
 
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
+| 0.2 | 16/10/2026 | Página movida para a Fase 1; partes interessadas movidas para página própria | Gabriel Fae | - |

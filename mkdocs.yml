@@ -7,7 +7,7 @@ repo_name: 2026-2_T02_FRANCES_ALLEN
 edit_uri: edit/main/docs/
 
 # Rodapé com versão e data (critério GitPage da rubrica)
-copyright: "FGA0315 Qualidade de Software 1 - 2026.2 - T02 - Grupo Frances Allen | Documentação v0.2 - 05/10/2026"
+copyright: "FGA0315 Qualidade de Software 1 - 2026.2 - T02 - Grupo Frances Allen | Documentação v0.3 - 16/10/2026"
 
 theme:
   name: material
@@ -31,9 +31,11 @@ theme:
         icon: material/weather-sunny
         name: Alternar para modo claro
   features:
-    # Barra lateral esquerda com toda a navegação (sem abas no topo)
+    # Abas no topo = fases do processo de avaliação (ISO/IEC 25040);
+    # a barra lateral esquerda mostra apenas as páginas da aba selecionada
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.expand
     - navigation.indexes
     - navigation.path
     - navigation.top
@@ -44,6 +46,10 @@ theme:
     - search.highlight
     - search.suggest
     - content.action.edit
+
+# Rascunhos de entregas futuras: ficam no repositório, mas não são publicados
+exclude_docs: |
+  rascunhos/
 
 extra_css:
   - stylesheets/extra.css
@@ -76,26 +82,32 @@ markdown_extensions:
 
 nav:
   - Início: index.md
-  - O projeto:
-      - projeto/index.md
-      - Objeto de avaliação: projeto/objeto-de-avaliacao.md
-      - Equipe: projeto/equipe.md
-      - Declaração de uso de IA: projeto/uso-de-ia.md
-      - Identidade visual: projeto/identidade-visual.md
-  - "Premissa 1 - Características":
-      - premissa-1-caracteristicas/index.md
-      - Seleção e justificativa: premissa-1-caracteristicas/selecao.md
-      - Relações entre características: premissa-1-caracteristicas/relacoes.md
-  - "Premissa 2 - Métricas (GQM)":
-      - premissa-2-metricas/index.md
-      - Objetivos, questões e hipóteses: premissa-2-metricas/objetivos-questoes-hipoteses.md
-      - Especificação das métricas: premissa-2-metricas/especificacao-das-metricas.md
-      - Níveis de pontuação e julgamento: premissa-2-metricas/niveis-e-julgamento.md
-      - Diagrama GQM: premissa-2-metricas/diagrama-gqm.md
-  - "Premissa 3 - Gestão (PSM/CID)":
-      - premissa-3-gestao/index.md
-      - Plano de medição da gestão: premissa-3-gestao/plano-de-medicao.md
-      - Registro de medições: premissa-3-gestao/registro-de-medicoes.md
-      - Decisões de gestão: premissa-3-gestao/decisoes.md
-  - Atas: atas/index.md
-  - Referências: referencias.md
+  - "Fase 1":
+      - fase-1/index.md
+      - Propósito da avaliação: fase-1/proposito.md
+      - Requisitante e partes interessadas: fase-1/partes-interessadas.md
+      - Objeto de avaliação: fase-1/objeto-de-avaliacao.md
+      - Modelo de qualidade: fase-1/modelo-de-qualidade.md
+      - Seleção e priorização das características: fase-1/caracteristicas.md
+      - Escopo e profundidade: fase-1/escopo.md
+      - ODS relacionados: fase-1/ods.md
+  - "Fase 2":
+      - fase-2/index.md
+      - Objetivos, questões e hipóteses: fase-2/objetivos-questoes-hipoteses.md
+      - Especificação das métricas: fase-2/especificacao-das-metricas.md
+      - Níveis de pontuação e julgamento: fase-2/niveis-e-julgamento.md
+      - Diagrama GQM: fase-2/diagrama-gqm.md
+  - "Fase 3": fase-3/index.md
+  - "Fase 4": fase-4/index.md
+  - Gestão do projeto:
+      - gestao/index.md
+      - Plano de medição: gestao/plano-de-medicao.md
+      - Registro de medições: gestao/registro-de-medicoes.md
+      - Decisões de gestão: gestao/decisoes.md
+      - Atas de reunião: gestao/atas.md
+  - Sobre:
+      - sobre/index.md
+      - Equipe: sobre/equipe.md
+      - Declaração de uso de IA: sobre/uso-de-ia.md
+      - Identidade visual: sobre/identidade-visual.md
+      - Referências: sobre/referencias.md

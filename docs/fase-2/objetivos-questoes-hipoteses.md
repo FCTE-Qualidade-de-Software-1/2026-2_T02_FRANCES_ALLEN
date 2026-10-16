@@ -1,6 +1,16 @@
 # Objetivos, questões e hipóteses
 
-Cada objetivo deriva de uma característica selecionada na [Premissa 1](../premissa-1-caracteristicas/selecao.md) (critério F2-C11: rastreabilidade entre Fases 1 e 2).
+Cada objetivo deriva de uma característica selecionada na [Fase 1](../fase-1/caracteristicas.md) (critério F2-C11: rastreabilidade entre Fases 1 e 2).
+
+## Rastreabilidade com a Fase 1
+
+O **foco de qualidade** de cada objetivo vem da característica selecionada, e o **ponto de vista** vem das [partes interessadas](../fase-1/partes-interessadas.md).
+
+| Característica (Fase 1) | Parte interessada | Objetivo GQM |
+|-------------------------|-------------------|--------------|
+| C1 - Adequação funcional | _-_ | [G1](#g1) |
+| C2 - Capacidade de interação | _-_ | [G2](#g2) |
+| C3 - Manutenibilidade | _-_ | [G3](#g3) |
 
 ## G1
 
@@ -60,3 +70,4 @@ Cada objetivo deriva de uma característica selecionada na [Premissa 1](../premi
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
+| 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |

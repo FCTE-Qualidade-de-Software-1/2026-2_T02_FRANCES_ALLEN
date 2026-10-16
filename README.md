@@ -26,7 +26,7 @@ O objetivo do trabalho é **avaliar o produto à luz de modelos e métricas de q
 | C2 | **Capacidade de interação** | _A definir_ |
 | C3 | **Manutenibilidade** | _A definir_ |
 
-Detalhes em [Premissa 1 - Seleção e justificativa](docs/premissa-1-caracteristicas/selecao.md).
+Detalhes em [Fase 1 - Seleção e priorização das características](docs/fase-1/caracteristicas.md).
 
 ## Link da página de documentação
 
@@ -84,12 +84,15 @@ Detalhes em [Premissa 1 - Seleção e justificativa](docs/premissa-1-caracterist
 
 ## Documentação
 
+A documentação é organizada em abas pelas fases do processo de avaliação de produto da SQuaRE (ISO/IEC 25040).
+
 - [Página inicial](docs/index.md)
-- **O projeto**: [Objeto de avaliação](docs/projeto/objeto-de-avaliacao.md) · [Equipe](docs/projeto/equipe.md) · [Declaração de uso de IA](docs/projeto/uso-de-ia.md)
-- **Premissa 1 - Características de qualidade (Fase 1)**: [Seleção e justificativa](docs/premissa-1-caracteristicas/selecao.md) · [Relações entre características](docs/premissa-1-caracteristicas/relacoes.md)
-- **Premissa 2 - Métricas GQM (Fase 2)**: [Objetivos, questões e hipóteses](docs/premissa-2-metricas/objetivos-questoes-hipoteses.md) · [Especificação das métricas](docs/premissa-2-metricas/especificacao-das-metricas.md) · [Níveis e julgamento](docs/premissa-2-metricas/niveis-e-julgamento.md) · [Diagrama GQM](docs/premissa-2-metricas/diagrama-gqm.md)
-- **Premissa 3 - Gestão PSM/CID**: [Plano de medição](docs/premissa-3-gestao/plano-de-medicao.md) · [Registro de medições](docs/premissa-3-gestao/registro-de-medicoes.md) · [Decisões](docs/premissa-3-gestao/decisoes.md)
-- [Atas](docs/atas/index.md) · [Referências](docs/referencias.md) · [Dados](dados/README.md)
+- **Fase 1 - Estabelecer os requisitos da avaliação**: [Propósito](docs/fase-1/proposito.md) · [Partes interessadas](docs/fase-1/partes-interessadas.md) · [Objeto de avaliação](docs/fase-1/objeto-de-avaliacao.md) · [Modelo de qualidade](docs/fase-1/modelo-de-qualidade.md) · [Características](docs/fase-1/caracteristicas.md) · [Escopo](docs/fase-1/escopo.md) · [ODS](docs/fase-1/ods.md)
+- **Fase 2 - Especificar a avaliação (GQM)**: [Objetivos, questões e hipóteses](docs/fase-2/objetivos-questoes-hipoteses.md) · [Especificação das métricas](docs/fase-2/especificacao-das-metricas.md) · [Níveis e julgamento](docs/fase-2/niveis-e-julgamento.md) · [Diagrama GQM](docs/fase-2/diagrama-gqm.md)
+- **Fase 3 - Projetar a avaliação**: [futuramente](docs/fase-3/index.md)
+- **Fase 4 - Executar e concluir a avaliação**: [futuramente](docs/fase-4/index.md)
+- **Gestão do projeto (PSM/CID)**: [Plano de medição](docs/gestao/plano-de-medicao.md) · [Registro de medições](docs/gestao/registro-de-medicoes.md) · [Decisões](docs/gestao/decisoes.md) · [Atas](docs/gestao/atas.md)
+- **Sobre**: [Equipe](docs/sobre/equipe.md) · [Declaração de uso de IA](docs/sobre/uso-de-ia.md) · [Referências](docs/sobre/referencias.md) · [Dados](dados/README.md)
 
 ### Rodar a documentação localmente
 
@@ -104,3 +107,4 @@ GIT_DATES=false mkdocs serve   # http://127.0.0.1:8000 (GIT_DATES=false só enqu
 |--------|------|------------|-----------|
 | 0.1 | 05/10/2026 | Inicialização do projeto no github | Gabriel Fae |
 | 0.2 | 05/10/2026 | Contexto do projeto (VICKY), características selecionadas e estrutura da documentação | Gabriel Fae |
+| 0.3 | 16/10/2026 | Documentação reorganizada em abas por fase do processo de avaliação | Gabriel Fae |

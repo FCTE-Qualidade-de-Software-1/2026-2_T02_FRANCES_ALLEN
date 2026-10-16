@@ -16,7 +16,7 @@
 |----|-----------|---------|-------|------------------|
 | RC1 | Esforço realizado x planejado | horas reais / horas planejadas | Campo "Horas" no Project ou planilha `dados/gestao/esforco.csv` | fora de 0,8 a 1,2 |
 | RC2 | Distribuição de esforço | horas do membro / horas totais x 100 | idem | membro com menos de _10%_ ou mais de _30%_ |
-| RC3 | Presença em reuniões | reuniões com presença / reuniões realizadas | [Atas](../atas/index.md) | abaixo de 75% |
+| RC3 | Presença em reuniões | reuniões com presença / reuniões realizadas | [Atas](atas.md) | abaixo de 75% |
 
 ## 3. Desempenho dos Processos
 
@@ -34,3 +34,4 @@ _Os limites são valores iniciais e podem ser recalibrados; toda recalibração 
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
+| 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |

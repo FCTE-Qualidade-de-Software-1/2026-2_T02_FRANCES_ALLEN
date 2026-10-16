@@ -38,3 +38,4 @@ As cores são definidas em `docs/stylesheets/extra.css`. Para alterar a paleta, 
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 05/10/2026 | Definição da paleta e da tipografia | Gabriel Fae | - |
+| 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |

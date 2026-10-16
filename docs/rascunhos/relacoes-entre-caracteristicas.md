@@ -1,5 +1,7 @@
 # Relações entre as características
 
+<!-- Rascunho não publicado (exclude_docs em mkdocs.yml). Mover para docs/fase-4/ na Entrega 2. -->
+
 !!! note "A ser preenchido após a Fase 4"
     Esta página é concluída na Entrega 2, quando houver resultados das medições.
 

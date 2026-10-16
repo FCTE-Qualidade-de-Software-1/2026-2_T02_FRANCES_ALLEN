@@ -10,60 +10,78 @@ Este site documenta a **avaliação da qualidade do produto de software VICKY**,
 
 ## Como navegar
 
-A barra lateral à esquerda lista todas as páginas. Os atalhos abaixo levam às seções principais.
+As abas no topo seguem as **fases do processo de avaliação de produto** da família SQuaRE (ISO/IEC 25040). A barra lateral à esquerda mostra as páginas da aba selecionada.
 
 <div class="grid cards" markdown>
 
+-   <span class="rotulo">Fase 1 · Entrega 1</span>
+
+    **[Estabelecer os requisitos da avaliação](fase-1/index.md)**
+
+    ---
+
+    Propósito, partes interessadas, objeto de avaliação, modelo de qualidade, características selecionadas (adequação funcional, capacidade de interação e manutenibilidade), escopo e ODS.
+
+-   <span class="rotulo">Fase 2 · Entrega 1</span>
+
+    **[Especificar a avaliação](fase-2/index.md)**
+
+    ---
+
+    Objetivos, questões, hipóteses, fichas das métricas, níveis de pontuação, critérios de julgamento e diagrama GQM.
+
+-   <span class="rotulo">Fase 3 · Entrega 2</span>
+
+    **[Projetar a avaliação](fase-3/index.md)**
+
+    ---
+
+    Futuramente.
+
+-   <span class="rotulo">Fase 4 · Entrega 2</span>
+
+    **[Executar e concluir a avaliação](fase-4/index.md)**
+
+    ---
+
+    Futuramente.
+
+-   <span class="rotulo">Transversal</span>
+
+    **[Gestão do projeto (PSM/CID)](gestao/index.md)**
+
+    ---
+
+    Indicadores de calendário e progresso, recursos e custos, e desempenho dos processos, com as decisões tomadas a partir deles e as atas de reunião.
+
 -   <span class="rotulo">Contexto</span>
 
-    **[O projeto](projeto/index.md)**
+    **[Sobre o projeto](sobre/index.md)**
 
     ---
 
-    Produto avaliado, acesso ao código-fonte, equipe e declaração de uso de IA.
-
--   <span class="rotulo">Premissa 1 · Fase 1</span>
-
-    **[Características de qualidade](premissa-1-caracteristicas/index.md)**
-
-    ---
-
-    Adequação funcional, capacidade de interação e manutenibilidade (ISO/IEC 25010:2023), com a justificativa da escolha.
-
--   <span class="rotulo">Premissa 2 · Fase 2</span>
-
-    **[Métricas (GQM)](premissa-2-metricas/index.md)**
-
-    ---
-
-    Objetivos, questões, hipóteses, fichas das métricas, níveis de pontuação e diagrama GQM.
-
--   <span class="rotulo">Premissa 3 · Transversal</span>
-
-    **[Gestão do projeto (PSM/CID)](premissa-3-gestao/index.md)**
-
-    ---
-
-    Indicadores de calendário e progresso, recursos e custos, e desempenho dos processos, com as decisões tomadas a partir deles.
+    Equipe, declaração de uso de IA, identidade visual e referências.
 
 </div>
 
 ## Como a avaliação está organizada
 
-A avaliação segue o processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040). Cada premissa obrigatória corresponde a uma fase desse processo:
+Cada fase do processo de avaliação recebe uma aba própria. As premissas obrigatórias da especificação do trabalho se distribuem entre elas:
 
-| Premissa | O que define | Fase do processo |
-|----------|--------------|------------------|
-| [Premissa 1 - Características de qualidade](premissa-1-caracteristicas/index.md) | Adequação funcional, capacidade de interação e manutenibilidade (ISO/IEC 25010:2023) e sua justificativa | Fase 1 - Estabelecer os requisitos da avaliação |
-| [Premissa 2 - Métricas (GQM)](premissa-2-metricas/index.md) | Objetivos, questões, hipóteses, métricas e critérios de julgamento | Fase 2 - Especificar a avaliação |
-| [Premissa 3 - Gestão do projeto (PSM/CID)](premissa-3-gestao/index.md) | Indicadores de acompanhamento do próprio projeto e decisões de gestão | Transversal a todas as fases |
+| Fase do processo (ISO/IEC 25040) | O que define | Premissa atendida | Entrega |
+|----------------------------------|--------------|-------------------|---------|
+| [Fase 1 - Estabelecer os requisitos da avaliação](fase-1/index.md) | Propósito, partes interessadas, modelo de qualidade e características selecionadas | Premissa 1 | Entrega 1 |
+| [Fase 2 - Especificar a avaliação](fase-2/index.md) | Objetivos, questões, hipóteses, métricas e critérios de julgamento (GQM) | Premissa 2 | Entrega 1 |
+| [Fase 3 - Projetar a avaliação](fase-3/index.md) | Método, recursos, ambiente e cronograma da avaliação | - | Entrega 2 |
+| [Fase 4 - Executar e concluir a avaliação](fase-4/index.md) | Medições, julgamento, conclusões e ação de melhoria | Premissa 1 (relações entre características) | Entrega 2 |
+| [Gestão do projeto (PSM/CID)](gestao/index.md) | Indicadores de acompanhamento do próprio projeto e decisões de gestão | Premissa 3 | Transversal |
 
 ```mermaid
 flowchart LR
-    F1["Fase 1<br/>Requisitos da avaliação<br/>(Premissa 1)"] --> F2["Fase 2<br/>Especificação<br/>(Premissa 2)"]
+    F1["Fase 1<br/>Requisitos da avaliação"] --> F2["Fase 2<br/>Especificação"]
     F2 --> F3["Fase 3<br/>Projeto da avaliação"]
     F3 --> F4["Fase 4<br/>Execução e conclusão"]
-    G["Gestão do projeto - PSM/CID<br/>(Premissa 3)"] -.-> F1
+    G["Gestão do projeto - PSM/CID"] -.-> F1
     G -.-> F2
     G -.-> F3
     G -.-> F4
@@ -81,10 +99,11 @@ flowchart LR
 - Repositório: [FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN)
 - Releases: [página de releases](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/releases)
 - Quadro de tarefas: _link do GitHub Projects_
-- Equipe: [Integrantes e papéis](projeto/equipe.md)
+- Equipe: [Integrantes e papéis](sobre/equipe.md)
 
 ## Histórico de versão
 
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
+| 0.2 | 16/10/2026 | Reorganização da documentação em abas por fase do processo de avaliação | Gabriel Fae | - |

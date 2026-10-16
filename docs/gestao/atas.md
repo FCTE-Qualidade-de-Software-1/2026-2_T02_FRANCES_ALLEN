@@ -1,6 +1,6 @@
 # Atas de reunião
 
-As atas registram decisões e presença, que alimentam o indicador [RC3](../premissa-3-gestao/plano-de-medicao.md#2-recursos-e-custos).
+As atas registram decisões e presença, que alimentam o indicador [RC3](plano-de-medicao.md#2-recursos-e-custos).
 
 | Nº | Data | Tipo | Presentes |
 |----|------|------|-----------|
