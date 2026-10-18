@@ -14,13 +14,18 @@ Cada métrica possui uma ficha com os campos exigidos pela Premissa 2: **defini�
 | M1.4.1 | Spearman entre Quality Score e rubrica (adaptada de FAp-1-G) | Q1.4 | C1 | Quality Score exibido; nota da rubrica de dois avaliadores |
 | M1.5.1 | Conformidade com filtros (adaptada de FAp-1-G) | Q1.5 | C1 | Duas execuções com filtros restritivos; conferência item a item |
 | M1.5.2 | Estabilidade entre execuções (adaptada de FAp-1-G) | Q1.5 | C1 | Dois Top 30 do mesmo tema, com intervalo de 24 horas ou mais |
-| M2.1.1 | Consistência operacional (UOp-1-G) | Q2.1 | C2 | Inspeção das telas |
-| M2.1.2 | Clareza das mensagens (UOp-2-G) | Q2.1 | C2 | Inspeção das telas e do código |
-| M2.2.1 | Prevenção de erro de operação (UEp-1-G) | Q2.2 | C2 | Inspeção das telas e do código |
-| M2.2.2 | Correção de erro de entrada (UEp-2-S) | Q2.2 | C2 | Inspeção dos formulários |
-| M2.2.3 | Recuperabilidade de erro do usuário (UEp-3-S) | Q2.2 | C2 | Inspeção das telas |
-| M2.3.1 | Autodescrição dos pontos de entrada (UAp-3-S) | Q2.3 | C2 | Inspeção das páginas de entrada |
-| M2.3.2 | Interface autoexplicativa (ULe-4-S) | Q2.3 | C2 | Testes de cenário com estudantes |
+| M2.1.1 | Completude da descrição (UAp-1-G) | Q2.1 | C2 | Inspeção das páginas públicas |
+| M2.2.1 | Completude da orientação ao usuário (ULe-1-G) | Q2.2 | C2 | Inspeção das telas |
+| M2.2.2 | Inteligibilidade das mensagens de erro (ULe-3-S) | Q2.2 | C2 | Inspeção das telas e do código |
+| M2.3.1 | Consistência operacional (UOp-1-G) | Q2.3 | C2 | Inspeção das telas |
+| M2.3.2 | Clareza das mensagens (UOp-2-G) | Q2.3 | C2 | Inspeção das telas e do código |
+| M2.4.1 | Prevenção de erro de operação (UEp-1-G) | Q2.4 | C2 | Inspeção das telas e do código |
+| M2.4.2 | Correção de erro de entrada (UEp-2-S) | Q2.4 | C2 | Inspeção dos formulários |
+| M2.5.1 | Estética da interface (UIn-1-S) | Q2.5 | C2 | Questionário com estudantes |
+| M2.6.1 | Acessibilidade para usuários com dificuldade motora (UAc-1-G) | Q2.6 | C2 | Teste só com teclado |
+| M2.6.2 | Contraste suficiente entre texto e fundo (medida adicional) | Q2.6 | C2 | axe DevTools |
+| M2.7.1 | Autodescrição dos pontos de entrada (UAp-3-S) | Q2.7 | C2 | Inspeção das páginas de entrada |
+| M2.7.2 | Interface autoexplicativa (ULe-4-S) | Q2.7 | C2 | Testes de cenário com estudantes |
 | M3.1.1 | Acoplamento de Componentes (MMo-1-G) | Q3.1 | C3 | Código-fonte (`src/vicky/`) e análise de imports |
 | M3.1.2 | Adequação da Complexidade Ciclomática (MMo-2-S) | Q3.1 | C3 | Código-fonte (`pipeline.py`) e `radon cc` |
 | M3.2.1 | Conformidade de Estilo PEP8 (MRe-2-S) | Q3.2 | C3 | Código-fonte (`src/vicky/`) e `flake8` |
@@ -166,95 +171,63 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 
 | Campo | Definição |
 |-------|-----------|
-| Nome | Consistência operacional |
-| Medida da ISO/IEC 25023:2016 | UOp-1-G, *Operational consistency* (genérica) |
-| Subcaracterística | Operabilidade |
+| Nome | Completude da descrição |
+| Medida da ISO/IEC 25023:2016 | UAp-1-G, *Description completeness* (genérica) |
+| Subcaracterística | Reconhecimento da adequação |
 | Questão / objetivo | Q2.1 / G2 |
-| Definição | Quanto os padrões de interação que se repetem no VICKY são executados da mesma forma em todas as telas do escopo onde aparecem |
-| Procedimento de cálculo | X = 1 - A / B, onde A = padrões de interação executados de forma inconsistente e B = padrões de interação que precisam ser consistentes. Lista inicial de B (10): acionar a ação principal, confirmar ação irreversível, exibir erro, exibir sucesso, exibir lista vazia, indicar o campo em foco, navegar pelo menu, acompanhar processo longo, preencher formulário, sair da conta. A equipe expressa a medida como 1 - A / B para que, como nas demais medidas do G2, valor maior signifique melhor; a cláusula 2, alínea d, da norma permite modificar uma medida desde que a mudança seja justificada |
-| Unidade e escala | De 0 a 1; 1 significa nenhuma inconsistência |
-| Fonte dos dados | Telas do VICKY em produção e templates do código-fonte |
-| Procedimento de coleta | Para cada padrão, o avaliador registra como ele aparece em cada tela do escopo (captura de tela). Um padrão é inconsistente quando duas ou mais telas o resolvem de forma visual ou comportamental diferente, como um estado vazio com ícone e cor diferentes ou uma confirmação ora em janela própria, ora na caixa nativa do navegador. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Definição | Proporção dos cenários de uso do VICKY descritos nas páginas que o estudante vê antes de criar conta, incluindo o que o produto não faz |
+| Procedimento de cálculo | X = A / B, onde A = cenários de uso descritos na página inicial, no FAQ ou nos Termos de Uso e B = cenários de uso: as nove funções do escopo definidas na Fase 1, F01 a F09 ([Objeto de avaliação](../fase-1/objeto-de-avaliacao.md#3-principais-funcionalidades)), mais o limite declarado do produto (não substitui a leitura crítica dos artigos), num total de 10 |
+| Unidade e escala | Razão de 0 a 1, apresentada em % |
+| Fonte dos dados | Páginas públicas do VICKY em produção (`/`, `/termos`, `/privacidade`) |
+| Procedimento de coleta | Para cada cenário, o avaliador procura nas páginas públicas um trecho que diga o que ele entrega ao estudante e registra o trecho e a captura de tela. Cenário citado só de passagem, sem dizer o que entrega, não conta. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
 | Local dos dados brutos | `dados/avaliacao/M2.1.1/` |
-
-### M2.1.2
-
-| Campo | Definição |
-|-------|-----------|
-| Nome | Clareza das mensagens |
-| Medida da ISO/IEC 25023:2016 | UOp-2-G, *Message clarity* (genérica) |
-| Subcaracterística | Operabilidade |
-| Questão / objetivo | Q2.1 / G2 |
-| Definição | Proporção das mensagens do sistema (erro, sucesso, aviso e andamento) que comunicam ao estudante o resultado certo ou a instrução certa |
-| Procedimento de cálculo | X = A / B, onde A = mensagens que comunicam o resultado ou a instrução de forma correta e compreensível para o estudante e B = mensagens do fluxo do escopo |
-| Unidade e escala | Razão de 0 a 1, apresentada em % |
-| Fonte dos dados | Inventário das mensagens no código-fonte (fork do VICKY) e disparo das mensagens em produção |
-| Procedimento de coleta | 1) Listar no código todas as mensagens das rotas do escopo. 2) Disparar em produção as que podem ser provocadas sem gastar crédito, com um roteiro fixo de entradas inválidas (campo vazio, e-mail inválido, senha curta, senhas diferentes, e-mail já cadastrado, senha errada, tema vazio, limite de pré-visualizações) e guardar a captura de tela. 3) Classificar cada mensagem: é clara quando diz o que aconteceu em linguagem do estudante. Mensagem com texto técnico cru do servidor, ou que não diz o resultado, conta como não clara. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
-| Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.1.2/` |
 
 ### M2.2.1
 
 | Campo | Definição |
 |-------|-----------|
-| Nome | Prevenção de erro de operação |
-| Medida da ISO/IEC 25023:2016 | UEp-1-G, *Avoidance of user operation error* (genérica) |
-| Subcaracterística | Proteção contra erro do usuário |
+| Nome | Completude da orientação ao usuário |
+| Medida da ISO/IEC 25023:2016 | ULe-1-G, *User guidance completeness* (genérica) |
+| Subcaracterística | Facilidade de aprendizado |
 | Questão / objetivo | Q2.2 / G2 |
-| Definição | Proporção das ações e entradas do estudante que poderiam causar perda de crédito, de trabalho ou de configuração e que estão protegidas contra o engano |
-| Procedimento de cálculo | X = A / B, onde A = ações e entradas protegidas (confirmação antes de executar, aviso explícito do efeito ou bloqueio de entrada inválida) e B = ações e entradas que poderiam ser protegidas. Lista inicial de B: iniciar a triagem completa (consome 1 crédito), excluir projeto, parar a triagem em andamento, definir a quantidade do Top (não pode ser alterada depois), ativar o filtro de acesso aberto, gerar pré-visualização (consome a cota diária) |
+| Definição | Proporção das funções do escopo que têm orientação de uso dentro do próprio produto, suficiente para o estudante executá-las sem ajuda externa |
+| Procedimento de cálculo | X = A / B, onde A = funções com orientação de uso dentro das telas (texto explicativo, dica, exemplo no campo ou ajuda contextual) e B = as nove funções do escopo definidas na Fase 1, F01 a F09 ([Objeto de avaliação](../fase-1/objeto-de-avaliacao.md#3-principais-funcionalidades)) |
 | Unidade e escala | Razão de 0 a 1, apresentada em % |
-| Fonte dos dados | Telas do VICKY em produção e código-fonte |
-| Procedimento de coleta | O avaliador verifica a proteção de cada item pela tela e confirma no código. Na ação de iniciar a triagem completa, verifica-se só o que acontece antes do clique final, sem consumir crédito. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
-| Critério de interpretação | Quanto maior, melhor; ação que consome crédito sem proteção tem regra própria nos níveis; ver [níveis de pontuação](niveis-e-julgamento.md) |
+| Fonte dos dados | Telas do VICKY em produção, com a conta de cortesia |
+| Procedimento de coleta | Para cada função, o avaliador registra onde está a orientação e se ela diz como executar a função, não só que ela existe. Material fora do produto (vídeo, e-mail, conversa com a equipe do VICKY) não conta. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
 | Local dos dados brutos | `dados/avaliacao/M2.2.1/` |
 
 ### M2.2.2
 
 | Campo | Definição |
 |-------|-----------|
-| Nome | Correção de erro de entrada |
-| Medida da ISO/IEC 25023:2016 | UEp-2-S, *User entry error correction* (específica) |
-| Subcaracterística | Proteção contra erro do usuário |
+| Nome | Inteligibilidade das mensagens de erro |
+| Medida da ISO/IEC 25023:2016 | ULe-3-S, *Error messages understandability* (específica) |
+| Subcaracterística | Facilidade de aprendizado |
 | Questão / objetivo | Q2.2 / G2 |
-| Definição | Proporção dos erros de entrada detectados pelo VICKY para os quais ele sugere ao estudante o valor correto, em vez de só recusar ou corrigir em silêncio |
-| Procedimento de cálculo | X = A / B, onde A = erros de entrada para os quais o sistema sugere o valor correto e B = erros de entrada que o sistema detecta |
+| Definição | Proporção das mensagens de erro do fluxo do escopo que dizem por que o erro aconteceu e sugerem como resolvê-lo |
+| Procedimento de cálculo | X = A / B, onde A = mensagens de erro que informam a causa e sugerem a solução no próprio texto e B = mensagens de erro do fluxo do escopo |
 | Unidade e escala | Razão de 0 a 1, apresentada em % |
-| Fonte dos dados | Formulários de cadastro, login, recuperação de senha e criação de projeto, em produção |
-| Procedimento de coleta | O avaliador aplica um roteiro fixo de entradas inválidas nos formulários do escopo (e-mail sem domínio, senha curta, senhas diferentes, tema vazio, quantidade do Top fora de 1 a 30) e registra, para cada uma, se o sistema detectou o erro e se sugeriu o valor correto. Correção silenciosa, em que o sistema troca o valor sem avisar, conta como detectada e não sugerida. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Fonte dos dados | Inventário das mensagens no código-fonte (fork do VICKY) e disparo das mensagens em produção |
+| Procedimento de coleta | 1) Listar no código as mensagens de erro das rotas do escopo. 2) Disparar em produção as que podem ser provocadas sem gastar crédito, com um roteiro fixo de entradas inválidas (campo vazio, e-mail inválido, senha curta, senhas diferentes, e-mail já cadastrado, senha errada, tema vazio, limite de pré-visualizações), e guardar a captura de tela. 3) Classificar cada mensagem: tem causa? tem solução no texto? Botão ao lado da mensagem não conta como solução escrita. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
 | Local dos dados brutos | `dados/avaliacao/M2.2.2/` |
-
-### M2.2.3
-
-| Campo | Definição |
-|-------|-----------|
-| Nome | Recuperabilidade de erro do usuário |
-| Medida da ISO/IEC 25023:2016 | UEp-3-S, *User error recoverability* (específica) |
-| Subcaracterística | Proteção contra erro do usuário |
-| Questão / objetivo | Q2.2 / G2 |
-| Definição | Proporção dos erros que o estudante pode cometer no fluxo do escopo e que o VICKY permite desfazer ou corrigir depois, sem recomeçar nem pagar de novo |
-| Procedimento de cálculo | X = A / B, onde A = erros do usuário que podem ser desfeitos ou corrigidos depois e B = erros do usuário que podem ocorrer no fluxo. Lista inicial de B: tema digitado errado, quantidade do Top errada, bases escolhidas erradas, filtro de acesso aberto ativado sem querer, projeto excluído por engano, triagem parada por engano, favorito marcado errado, senha esquecida |
-| Unidade e escala | Razão de 0 a 1, apresentada em % |
-| Fonte dos dados | Telas do VICKY em produção |
-| Procedimento de coleta | Para cada erro da lista, o avaliador tenta corrigi-lo pela interface, sem gastar crédito, e registra se conseguiu e como. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
-| Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.2.3/` |
 
 ### M2.3.1
 
 | Campo | Definição |
 |-------|-----------|
-| Nome | Autodescrição dos pontos de entrada |
-| Medida da ISO/IEC 25023:2016 | UAp-3-S, *Entry point self-descriptiveness* (específica) |
-| Subcaracterística | Autodescritividade |
+| Nome | Consistência operacional |
+| Medida da ISO/IEC 25023:2016 | UOp-1-G, *Operational consistency* (genérica) |
+| Subcaracterística | Operabilidade |
 | Questão / objetivo | Q2.3 / G2 |
-| Definição | Proporção das páginas por onde o estudante entra no VICKY que explicam, na primeira tela visível, para que o produto serve |
-| Procedimento de cálculo | X = A / B, onde A = páginas de entrada que explicam o propósito do produto e B = páginas de entrada: página inicial (`/`), cadastro (`/signup`), login (`/login`) e painel após o login (`/dashboard`) |
-| Unidade e escala | Razão de 0 a 1, apresentada em % |
-| Fonte dos dados | Páginas de entrada do VICKY em produção, em navegador desktop |
-| Procedimento de coleta | O avaliador abre cada página e registra, com captura de tela, se a primeira tela visível, sem rolar, diz o que o VICKY faz: buscar e triar artigos científicos sobre um tema. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Definição | Quanto os padrões de interação que se repetem no VICKY são executados da mesma forma em todas as telas do escopo onde aparecem |
+| Procedimento de cálculo | X = 1 - A / B, onde A = padrões de interação executados de forma inconsistente e B = padrões de interação que precisam ser consistentes. Lista inicial de B (10): acionar a ação principal, confirmar ação irreversível, exibir erro, exibir sucesso, exibir lista vazia, indicar o campo em foco, navegar pelo menu, acompanhar processo longo, preencher formulário, sair da conta. A equipe expressa a medida como 1 - A / B para que, como nas demais medidas do G2, valor maior signifique melhor; a cláusula 2, alínea d, da norma permite modificar uma medida desde que a mudança seja justificada |
+| Unidade e escala | De 0 a 1; 1 significa nenhuma inconsistência |
+| Fonte dos dados | Telas do VICKY em produção e templates do código-fonte |
+| Procedimento de coleta | Para cada padrão, o avaliador registra como ele aparece em cada tela do escopo (captura de tela). Um padrão é inconsistente quando duas ou mais telas o resolvem de forma visual ou comportamental diferente, como um estado vazio com ícone e cor diferentes ou uma confirmação ora em janela própria, ora na caixa nativa do navegador. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
 | Local dos dados brutos | `dados/avaliacao/M2.3.1/` |
 
@@ -262,17 +235,129 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 
 | Campo | Definição |
 |-------|-----------|
+| Nome | Clareza das mensagens |
+| Medida da ISO/IEC 25023:2016 | UOp-2-G, *Message clarity* (genérica) |
+| Subcaracterística | Operabilidade |
+| Questão / objetivo | Q2.3 / G2 |
+| Definição | Proporção das mensagens do sistema (erro, sucesso, aviso e andamento) que comunicam ao estudante o resultado certo ou a instrução certa |
+| Procedimento de cálculo | X = A / B, onde A = mensagens que comunicam o resultado ou a instrução de forma correta e compreensível para o estudante e B = mensagens do fluxo do escopo |
+| Unidade e escala | Razão de 0 a 1, apresentada em % |
+| Fonte dos dados | Mesmo inventário de mensagens da M2.2.2, ampliado com as de sucesso, aviso e andamento da triagem |
+| Procedimento de coleta | Cada mensagem é classificada como clara quando diz o que aconteceu em linguagem do estudante. Mensagem com texto técnico cru do servidor, ou que não diz o resultado, conta como não clara. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
+| Local dos dados brutos | `dados/avaliacao/M2.3.2/` |
+
+### M2.4.1
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Prevenção de erro de operação |
+| Medida da ISO/IEC 25023:2016 | UEp-1-G, *Avoidance of user operation error* (genérica) |
+| Subcaracterística | Proteção contra erro do usuário |
+| Questão / objetivo | Q2.4 / G2 |
+| Definição | Proporção das ações e entradas do estudante que poderiam causar perda de crédito, de trabalho ou de configuração e que estão protegidas contra o engano |
+| Procedimento de cálculo | X = A / B, onde A = ações e entradas protegidas (confirmação antes de executar, aviso explícito do efeito ou bloqueio de entrada inválida) e B = ações e entradas que poderiam ser protegidas. Lista inicial de B: iniciar a triagem completa (consome 1 crédito), excluir projeto, parar a triagem em andamento, definir a quantidade do Top (não pode ser alterada depois), ativar o filtro de acesso aberto, gerar pré-visualização (consome a cota diária) |
+| Unidade e escala | Razão de 0 a 1, apresentada em % |
+| Fonte dos dados | Telas do VICKY em produção e código-fonte |
+| Procedimento de coleta | O avaliador verifica a proteção de cada item pela tela e confirma no código. Na ação de iniciar a triagem, a verificação é feita numa das triagens já previstas no G1, com os créditos de cortesia, sem triagem extra. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Critério de interpretação | Quanto maior, melhor; ação que consome crédito sem proteção tem regra própria nos níveis; ver [níveis de pontuação](niveis-e-julgamento.md) |
+| Local dos dados brutos | `dados/avaliacao/M2.4.1/` |
+
+### M2.4.2
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Correção de erro de entrada |
+| Medida da ISO/IEC 25023:2016 | UEp-2-S, *User entry error correction* (específica) |
+| Subcaracterística | Proteção contra erro do usuário |
+| Questão / objetivo | Q2.4 / G2 |
+| Definição | Proporção dos erros de entrada detectados pelo VICKY para os quais ele sugere ao estudante o valor correto, em vez de só recusar ou corrigir em silêncio |
+| Procedimento de cálculo | X = A / B, onde A = erros de entrada para os quais o sistema sugere o valor correto e B = erros de entrada que o sistema detecta |
+| Unidade e escala | Razão de 0 a 1, apresentada em % |
+| Fonte dos dados | Formulários de cadastro, login, recuperação de senha e criação de projeto, em produção |
+| Procedimento de coleta | O avaliador aplica um roteiro fixo de entradas inválidas (e-mail sem domínio, senha curta, senhas diferentes, tema vazio, quantidade do Top fora de 1 a 30) e registra se o sistema detectou o erro e se sugeriu o valor correto. Correção silenciosa, em que o sistema troca o valor sem avisar, conta como detectada e não sugerida. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
+| Local dos dados brutos | `dados/avaliacao/M2.4.2/` |
+
+### M2.5.1
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Estética da interface |
+| Medida da ISO/IEC 25023:2016 | UIn-1-S, *Appearance aesthetics of user interfaces* (específica) |
+| Subcaracterística | Engajamento do usuário |
+| Questão / objetivo | Q2.5 / G2 |
+| Definição | Proporção das telas do fluxo que os estudantes consideram agradáveis e convidativas |
+| Procedimento de cálculo | X = A / B, onde A = telas consideradas agradáveis pela maioria dos participantes (pelo menos 3 de 5) e B = telas avaliadas: página inicial, novo projeto, detalhe do projeto, lista de artigos e ficha do artigo (5) |
+| Unidade e escala | Razão de 0 a 1, apresentada em % |
+| Fonte dos dados | Questionário aplicado ao fim da sessão de testes com estudantes da M2.7.2 |
+| Procedimento de coleta | Sessão com cinco estudantes de medicina que nunca usaram o VICKY, em desktop, com termo de consentimento, tela gravada e identificação anonimizada (P01 a P05): o participante pensa em voz alta enquanto cria um projeto e gera o PICO para um tema dado (F01 a F04) e depois abre um projeto já triado com os créditos de cortesia, interpreta a lista, favorita artigos, abre o log e exporta (F06 a F09). Ao fim, o participante vê a captura de cada uma das 5 telas e responde, numa escala de 1 a 5, se a tela é agradável e convida a continuar usando; respostas 4 e 5 contam como agradável. A nota 3 da UIn-1-S na norma recomenda que essa medida seja feita por representantes do público-alvo, por isso ela sai dos estudantes e não da equipe |
+| Critério de interpretação | Quanto maior, melhor; prioridade secundária no modelo de qualidade; ver [níveis de pontuação](niveis-e-julgamento.md) |
+| Local dos dados brutos | `dados/avaliacao/M2.5.1/` |
+
+### M2.6.1
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Acessibilidade para usuários com dificuldade motora |
+| Medida da ISO/IEC 25023:2016 | UAc-1-G, *Accessibility for users with disabilities* (genérica), perfil motor |
+| Subcaracterística | Assistência ao usuário |
+| Questão / objetivo | Q2.6 / G2 |
+| Definição | Proporção das funções do escopo que podem ser usadas com sucesso por uma pessoa que não usa mouse |
+| Procedimento de cálculo | X = A / B, onde A = funções concluídas só com teclado (Tab, Shift+Tab, Enter, Espaço e setas), com o foco sempre visível e alvos de clique de pelo menos 24 por 24 pixels (WCAG 2.2, critério 2.5.8), e B = as nove funções do escopo definidas na Fase 1, F01 a F09 ([Objeto de avaliação](../fase-1/objeto-de-avaliacao.md#3-principais-funcionalidades)) |
+| Unidade e escala | Razão de 0 a 1, apresentada em % |
+| Fonte dos dados | Teste do VICKY em produção, em desktop, sem mouse nem trackpad |
+| Procedimento de coleta | O avaliador executa cada função só com o teclado e registra onde o foco sumiu, onde algum controle não pôde ser acionado e quais alvos são menores que o mínimo. A triagem (F05) é testada numa das triagens já previstas no G1. Limitação declarada: o avaliador simula o perfil; não há participante com deficiência motora, e o suporte a pessoas cegas fica fora, como decidido no modelo de qualidade |
+| Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
+| Local dos dados brutos | `dados/avaliacao/M2.6.1/` |
+
+### M2.6.2
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Contraste suficiente entre texto e fundo |
+| Medida da ISO/IEC 25023:2016 | Medida adicional definida pela equipe (ISO/IEC 25023:2016, cláusula 2, alínea e), com base no critério 1.4.3 da WCAG 2.2 |
+| Subcaracterística | Assistência ao usuário |
+| Questão / objetivo | Q2.6 / G2 |
+| Definição | Proporção dos pares de texto e fundo das telas do escopo com contraste suficiente para pessoas com baixa visão |
+| Procedimento de cálculo | X = A / B, onde A = pares de texto e fundo com razão de contraste de pelo menos 4,5:1 (ou 3:1 para texto grande) e B = pares de texto e fundo avaliados |
+| Unidade e escala | Razão de 0 a 1, apresentada em % |
+| Fonte dos dados | Extensão axe DevTools no Chrome, regra de contraste, versão registrada na coleta |
+| Procedimento de coleta | Rodar o axe nas telas de página inicial, cadastro, login, lista de projetos, novo projeto, detalhe do projeto, lista de artigos e ficha do artigo, exportar o relatório de cada tela e conferir manualmente os pares que o axe marcar como incertos. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
+| Local dos dados brutos | `dados/avaliacao/M2.6.2/` |
+
+### M2.7.1
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Autodescrição dos pontos de entrada |
+| Medida da ISO/IEC 25023:2016 | UAp-3-S, *Entry point self-descriptiveness* (específica) |
+| Subcaracterística | Autodescritividade |
+| Questão / objetivo | Q2.7 / G2 |
+| Definição | Proporção das páginas por onde o estudante entra no VICKY que explicam, na primeira tela visível, para que o produto serve |
+| Procedimento de cálculo | X = A / B, onde A = páginas de entrada que explicam o propósito do produto e B = páginas de entrada: página inicial (`/`), cadastro (`/signup`), login (`/login`) e painel após o login (`/dashboard`) |
+| Unidade e escala | Razão de 0 a 1, apresentada em % |
+| Fonte dos dados | Páginas de entrada do VICKY em produção, em navegador desktop |
+| Procedimento de coleta | O avaliador abre cada página e registra, com captura de tela, se a primeira tela visível, sem rolar, diz o que o VICKY faz: buscar e triar artigos científicos sobre um tema. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
+| Local dos dados brutos | `dados/avaliacao/M2.7.1/` |
+
+### M2.7.2
+
+| Campo | Definição |
+|-------|-----------|
 | Nome | Interface autoexplicativa |
 | Medida da ISO/IEC 25023:2016 | ULe-4-S, *Self-explanatory user interface* (específica) |
 | Subcaracterística | Autodescritividade |
-| Questão / objetivo | Q2.3 / G2 |
+| Questão / objetivo | Q2.7 / G2 |
 | Definição | Proporção dos elementos de informação e dos passos do fluxo que um estudante, no primeiro uso, entende e usa corretamente sem estudo prévio, treinamento ou ajuda |
 | Procedimento de cálculo | X = A / B, onde A = elementos e passos entendidos sem ajuda pela maioria dos participantes (pelo menos 3 de 5) e B = elementos e passos necessários para um usuário de primeira vez concluir as tarefas comuns. Lista inicial de B (12): campo do tema, campo de objetivo, tipo de revisão (sistemática ou narrativa), janela de anos, quantidade do Top, escolha das bases, filtro de acesso aberto, diferença entre salvar rascunho, gerar prévia e iniciar a triagem, critérios PICO gerados, Quality Score, log auditável e exportação |
 | Unidade e escala | Razão de 0 a 1, apresentada em % |
 | Fonte dos dados | Testes de cenário com estudantes de medicina e questionário de compreensão, conforme a profundidade definida em [Escopo e profundidade](../fase-1/escopo.md) |
-| Procedimento de coleta | Cinco estudantes de medicina que nunca usaram o VICKY executam, em desktop, dois cenários: criar um projeto e gerar o PICO para um tema dado (F01 a F04), e abrir um projeto já triado, interpretar a lista, favoritar artigos, abrir o log e exportar (F06 a F09). O participante pensa em voz alta e a tela é gravada, com termo de consentimento e identificação anonimizada (P01 a P05). Ao fim, um questionário curto pede que ele explique com as próprias palavras cada elemento da lista B; a resposta é comparada com a definição do elemento no VICKY. Um elemento conta como entendido para o participante se ele o usou sem pedir ajuda e o explicou corretamente |
+| Procedimento de coleta | Sessão com cinco estudantes de medicina que nunca usaram o VICKY, em desktop, com termo de consentimento, tela gravada e identificação anonimizada (P01 a P05): o participante pensa em voz alta enquanto cria um projeto e gera o PICO para um tema dado (F01 a F04) e depois abre um projeto já triado com os créditos de cortesia, interpreta a lista, favorita artigos, abre o log e exporta (F06 a F09). Ao fim, um questionário curto pede que ele explique com as próprias palavras cada elemento da lista B; a resposta é comparada com a definição do elemento no VICKY. Um elemento conta como entendido para o participante se ele o usou sem pedir ajuda e o explicou corretamente |
 | Critério de interpretação | Quanto maior, melhor; o Quality Score tem regra própria nos níveis; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.3.2/` |
+| Local dos dados brutos | `dados/avaliacao/M2.7.2/` |
 
 ### M3.1.1
 
@@ -379,3 +464,4 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | 0.3 | 18/10/2026 | Fichas das métricas do G2 (capacidade de interação), pela ISO/IEC 25023 | Lucas Avelar | Gabriel Fae |
 | 0.4 | 18/10/2026 | Resumo e fichas das oito métricas do objetivo G1 (M1.1.1 a M1.5.2) | Larissa Gomes Silva | - |
 | 0.5 | 18/10/2026 | Fichas das métricas do objetivo G3 (Manutenibilidade) | Guilherme Moura | - |
+| 0.6 | 19/10/2026 | Fichas do G2 realinhadas às sete subcaracterísticas de C2 | Lucas Avelar | Gabriel Fae |

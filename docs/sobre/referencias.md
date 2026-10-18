@@ -6,6 +6,8 @@
 - ISO/IEC 14598-1:1999. Information technology - Software product evaluation - Part 1: General overview.
 - ISO/IEC 25023:2016. Systems and software engineering - Systems and software Quality Requirements and Evaluation (SQuaRE) - Measurement of system and software product quality.
 - BRIAND, L. C.; DIFFERDING, C. M.; ROMBACH, H. D. Practical guidelines for measurement-based process improvement. Software Process: Improvement and Practice, v. 2, n. 4, p. 253-280, 1996.
+- BRASIL. Lei nº 13.146, de 6 de julho de 2015. Institui a Lei Brasileira de Inclusão da Pessoa com Deficiência (Estatuto da Pessoa com Deficiência). Diário Oficial da União, Brasília, 7 jul. 2015.
+- W3C. Web Content Accessibility Guidelines (WCAG) 2.2. W3C Recommendation, 2023.
 - BASILI, V. R.; CALDIERA, G.; ROMBACH, H. D. The Goal Question Metric Approach. In: Encyclopedia of Software Engineering. Wiley, 1994.
 - LANDIS, J. R.; KOCH, G. G. The measurement of observer agreement for categorical data. Biometrics, v. 33, n. 1, p. 159-174, 1977.
 - ZAR, J. H. Significance testing of the Spearman rank correlation coefficient. Journal of the American Statistical Association, v. 67, n. 339, p. 578-580, 1972.

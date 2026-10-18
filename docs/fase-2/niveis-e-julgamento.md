@@ -16,13 +16,18 @@ Cada métrica recebe um de quatro níveis: Insatisfatório (0 ponto), Aceitável
 | M1.4.1 | abaixo de 0,36 | de 0,36 a menos de 0,50 | de 0,50 a menos de 0,70 | 0,70 ou mais | O piso de Aceitável, 0,36, é o valor crítico de ρ com 30 itens a 5% de significância, em teste bilateral (Zar, 1972); abaixo dele o escore não se distingue de ordem aleatória frente à rubrica. Demais faixas por convenção da equipe; o piso de Bom (0,50) coincide com H1.4. |
 | M1.5.1 | abaixo de 80% | de 80% a menos de 93% | de 93% a menos de 100% | 100% | Proposta de G1, a validar pelo grupo. Filtro é regra objetiva, então Excelente só vale sem nenhuma violação; o piso de Bom (93%) coincide com H1.5. |
 | M1.5.2 | abaixo de 0,50 | de 0,50 a menos de 0,70 | de 0,70 a menos de 0,85 | 0,85 ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 0,50 o registro da busca não permite replicar a revisão. |
-| M2.1.1 | < 0,70 | 0,70 a 0,79 | 0,80 a 0,89 | ≥ 0,90 | Com 10 padrões na lista, "Bom" admite até 2 inconsistências; a partir de 4, o estudante precisa reaprender telas do mesmo fluxo |
-| M2.1.2 | < 70% | 70% a 84% | 85% a 94% | ≥ 95% | Texto técnico do servidor é a falha mais grave para quem não é da área de computação, e o estudante não tem suporte em tempo real |
-| M2.2.1 | < 70%, **ou** qualquer ação que consome crédito sem proteção | 70% a 84% | 85% a 99%, com todas as ações que consomem crédito protegidas | 100% | A triagem completa custa R$ 24,90 por execução ([Objeto de avaliação](../fase-1/objeto-de-avaliacao.md#25-restricoes)), e a Fase 1 escolheu C2 justamente para evitar erros no uso dos créditos pagos |
-| M2.2.2 | < 40% | 40% a 59% | 60% a 79% | ≥ 80% | Medida específica; os erros de entrada mais caros estão na configuração do projeto, que define a triagem paga |
-| M2.2.3 | < 40% | 40% a 59% | 60% a 79% | ≥ 80% | Medida específica; erro irrecuperável na configuração do projeto obriga a criar outro projeto e pagar de novo |
-| M2.3.1 | 1 de 4 ou menos | 2 de 4 | 3 de 4 | 4 de 4 | O estudante chega por link de colega, anúncio ou indicação do orientador, em qualquer uma das páginas de entrada |
-| M2.3.2 | < 60%, **ou** Quality Score não entendido | 60% a 74% | 75% a 89% | ≥ 90% | O VICKY não tem tutorial nem suporte em tempo real, e a Fase 1 justificou C2 pela configuração do PICO e pela leitura do Quality Score; se o estudante não entende o score, não consegue defender a lista diante do orientador |
+| M2.1.1 | < 70% | 70% a 89% | 90% a 99% | 100% | O estudante decide sozinho, antes de pagar, se a ferramenta serve para o trabalho dele; com 10 cenários, "Bom" admite um cenário não descrito |
+| M2.2.1 | < 70% | 70% a 87% | 88% a 99% | 100% | O VICKY não tem tutorial nem suporte em tempo real, e o estudante o usa poucas vezes por semestre; com 9 funções, "Bom" admite uma função sem orientação |
+| M2.2.2 | < 50% | 50% a 74% | 75% a 89% | ≥ 90% | Os erros mais prováveis estão no cadastro e na criação do projeto, ou seja, no primeiro uso; mensagem sem solução ali leva ao abandono |
+| M2.3.1 | < 0,70 | 0,70 a 0,79 | 0,80 a 0,89 | ≥ 0,90 | Com 10 padrões na lista, "Bom" admite até 2 inconsistências; a partir de 4, o estudante precisa reaprender telas do mesmo fluxo |
+| M2.3.2 | < 70% | 70% a 84% | 85% a 94% | ≥ 95% | Texto técnico do servidor é a falha mais grave para quem não é da área de computação |
+| M2.4.1 | < 70%, **ou** qualquer ação que consome crédito sem proteção | 70% a 84% | 85% a 99%, com todas as ações que consomem crédito protegidas | 100% | A triagem completa custa R$ 24,90 por execução, e o modelo de qualidade destaca que, na interface paga por crédito, um erro de configuração custa dinheiro e tempo |
+| M2.4.2 | < 40% | 40% a 59% | 60% a 79% | ≥ 80% | Medida específica; os erros de entrada mais caros estão na configuração do projeto, que define a triagem paga |
+| M2.5.1 | < 40% | 40% a 59% | 60% a 79% | ≥ 80% | Prioridade secundária no modelo de qualidade: a aparência influencia a satisfação, mas não decide se o estudante conclui a tarefa |
+| M2.6.1 | < 75%, **ou** F01 (cadastro e login) não concluída | 75% a 87% | 88% a 99% | 100% | A Lei Brasileira de Inclusão (Lei nº 13.146/2015, art. 63) obriga sites de empresas com sede no país a serem acessíveis; com 9 funções, "Bom" admite uma falha, e sem F01 nenhuma outra função é alcançável |
+| M2.6.2 | < 85% | 85% a 94% | 95% a 99% | 100% | Só 100% atende ao nível AA da WCAG 2.2, que é a referência de acessibilidade usada para cumprir o art. 63 da Lei nº 13.146/2015 |
+| M2.7.1 | 1 de 4 ou menos | 2 de 4 | 3 de 4 | 4 de 4 | O estudante chega por link de colega, anúncio ou indicação do orientador, em qualquer uma das páginas de entrada |
+| M2.7.2 | < 60%, **ou** Quality Score não entendido | 60% a 74% | 75% a 89% | ≥ 90% | O modelo de qualidade destaca que o VICKY usa termos técnicos (PICO, Quality Score) e promete que o estudante não precisa saber montar um PICO; se ele não entende o score, não consegue defender a lista diante do orientador |
 | M3.1.1 | > 15 | de 10 a 15 | de 5 a 9 | < 5 | Diretrizes de design de software indicam que módulos com mais de 15 acoplamentos (dependências importadas) frequentemente violam o Princípio da Responsabilidade Única (SRP). |
 | M3.1.2 | < 70% | 70% a 84% | 85% a 94% | ≥ 95% | A orquestração assíncrona exige alta previsibilidade. O piso de Bom (85%) reflete a expectativa de modularidade adequada, enquanto abaixo de 70% o risco de quebra ao modificar é crítico. |
 | M3.2.1 | < 75% | 75% a 89% | 90% a 99% | 100% | O guia PEP8 é o padrão da comunidade. Menos de 75% de adequação indica ausência de automação de linting na esteira de desenvolvimento, causando alto atrito de leitura. |
@@ -62,17 +67,21 @@ As quatro faixas da tabela correspondem aos níveis de pontuação da ISO/IEC 14
 
 | Questão | Medida de referência | Medidas que podem rebaixar |
 |---------|----------------------|----------------------------|
-| Q2.1 | menor nível entre M2.1.1 e M2.1.2 (ambas genéricas) | - |
-| Q2.2 | M2.2.1 (UEp-1-G, genérica) | M2.2.2 (UEp-2-S), M2.2.3 (UEp-3-S) |
-| Q2.3 | M2.3.2 (ULe-4-S), a única medida com estudantes reais | M2.3.1 (UAp-3-S) |
+| Q2.1 | M2.1.1 (UAp-1-G) | - |
+| Q2.2 | M2.2.1 (ULe-1-G) | M2.2.2 (ULe-3-S) |
+| Q2.3 | menor nível entre M2.3.1 e M2.3.2 (ambas genéricas) | - |
+| Q2.4 | M2.4.1 (UEp-1-G) | M2.4.2 (UEp-2-S) |
+| Q2.5 | M2.5.1 (UIn-1-S) | - |
+| Q2.6 | M2.6.1 (UAc-1-G) | M2.6.2 (contraste) |
+| Q2.7 | M2.7.2 (ULe-4-S), a medida com estudantes reais | M2.7.1 (UAp-3-S) |
 
-**3. Da questão para o objetivo.**
+**3. Da questão para o objetivo.** O julgamento usa as seis questões das subcaracterísticas principais (Q2.1 a Q2.4, Q2.6 e Q2.7). A Q2.5, de engajamento, tem prioridade secundária no modelo de qualidade: é relatada e pode gerar recomendação, mas não entra na contagem.
 
-| Situação das três questões | Julgamento do G2 |
-|----------------------------|------------------|
-| Nenhuma em "Insatisfatório" e pelo menos duas em "Bom" ou "Excelente" | Atende |
+| Situação das seis questões principais | Julgamento do G2 |
+|---------------------------------------|------------------|
+| Nenhuma em "Insatisfatório" e pelo menos quatro em "Bom" ou "Excelente" | Atende |
 | No máximo uma em "Insatisfatório" | Atende parcialmente |
-| Duas ou mais em "Insatisfatório", **ou** Q2.2 em "Insatisfatório" por ação que consome crédito sem proteção | Não atende |
+| Duas ou mais em "Insatisfatório", **ou** Q2.4 em "Insatisfatório" por ação que consome crédito sem proteção | Não atende |
 
 A última regra existe porque, entre os problemas de capacidade de interação, o único que tira dinheiro do estudante é o engano numa ação paga.
 
@@ -103,3 +112,4 @@ O objetivo G3 é a média simples das pontuações das três questões (Q3.1 a Q
 | 0.3 | 18/10/2026 | Níveis de pontuação e regras de julgamento do G2 (capacidade de interação) | Lucas Avelar | Gabriel Fae |
 | 0.4 | 18/10/2026 | Níveis das oito métricas de G1 e critérios de julgamento do objetivo G1 | Larissa Gomes Silva | - |
 | 0.5 | 18/10/2026 | Níveis das métricas de G3 e regras de agregação e julgamento do objetivo de Manutenibilidade | Guilherme Moura | - |
+| 0.6 | 19/10/2026 | Níveis e regras do G2 realinhados às sete subcaracterísticas de C2 | Lucas Avelar | Gabriel Fae |

@@ -74,7 +74,7 @@ Pelo método Goal-Question-Metric (Basili; Caldiera; Rombach, 1994), cinco quest
 |----------------------|-----------|
 | Analisar | o website VICKY |
 | com o propósito de | avaliar |
-| com respeito a | capacidade de interação: operabilidade, proteção contra erro do usuário e autodescritividade |
+| com respeito a | capacidade de interação: reconhecimento da adequação, facilidade de aprendizado, operabilidade, proteção contra erro do usuário, engajamento do usuário, assistência ao usuário (contraste e motricidade) e autodescritividade |
 | do ponto de vista de | estudantes de medicina |
 | no contexto de | uso do VICKY em produção, em navegador desktop, no fluxo que vai do cadastro à exportação dos resultados, por inspeção da equipe e por testes de cenário com estudantes de medicina |
 
@@ -82,37 +82,41 @@ Pelo método Goal-Question-Metric (Basili; Caldiera; Rombach, 1994), cinco quest
 
 | Elemento do G2 | Origem na Fase 1 |
 |----------------|------------------|
-| Foco de qualidade: operabilidade, proteção contra erro do usuário e autodescritividade | Subcaracterísticas selecionadas para C2 em [Seleção e priorização das características](../fase-1/caracteristicas.md#2-caracteristicas-selecionadas) |
+| Foco de qualidade: as sete subcaracterísticas mantidas para C2, com engajamento em prioridade secundária e assistência ao usuário reduzida a contraste e motricidade | [Modelo de qualidade, seção 2.2](../fase-1/modelo-de-qualidade.md#22-capacidade-de-interacao-c2) e [Seleção e priorização das características](../fase-1/caracteristicas.md#2-caracteristicas-selecionadas) |
 | Ponto de vista: estudantes de medicina | [Partes interessadas](../fase-1/partes-interessadas.md) |
-| Contexto: desktop, funções F01 a F04 e F06 a F09, testes de cenário e questionários com estudantes | Objetos, profundidade e limites de validade em [Escopo e profundidade](../fase-1/escopo.md) |
-| Ênfase na parametrização do PICO, na leitura do Quality Score e no uso dos créditos pagos | Justificativa da escolha de C2 em [Seleção e priorização das características](../fase-1/caracteristicas.md#2-caracteristicas-selecionadas) |
+| Contexto: desktop, funções F01 a F09, testes de cenário e questionários com estudantes | Objetos, profundidade e limites de validade em [Escopo e profundidade](../fase-1/escopo.md) |
+| Ênfase na configuração do PICO, na leitura do Quality Score e no uso dos créditos pagos | Justificativa da escolha de C2 em [Seleção e priorização das características](../fase-1/caracteristicas.md#2-caracteristicas-selecionadas) e adaptação em [Modelo de qualidade](../fase-1/modelo-de-qualidade.md#22-capacidade-de-interacao-c2) |
 
 ### Abstraction sheet do G2
 
 | Objeto | Propósito | Foco da qualidade | Ponto de vista |
 |--------|-----------|-------------------|----------------|
-| Website VICKY, fluxo do cadastro à exportação | Avaliar | Operabilidade, proteção contra erro do usuário e autodescritividade | Estudantes de medicina |
+| Website VICKY, fluxo do cadastro à exportação | Avaliar | As sete subcaracterísticas de capacidade de interação mantidas no modelo | Estudantes de medicina |
 
 | Foco da qualidade (o que será contado) | Fatores de variação |
 |----------------------------------------|---------------------|
-| Padrões de interação consistentes e inconsistentes; mensagens claras e confusas; ações caras ou destrutivas com e sem proteção; erros de entrada com e sem sugestão de correção; erros recuperáveis e irrecuperáveis; páginas de entrada que explicam ou não o produto; elementos da interface que o estudante entende ou não no primeiro uso | Versão em produção na data da coleta; semestre do estudante e experiência prévia com revisão de literatura; avaliador que conhece ou não o código |
+| Cenários de uso descritos e não descritos; funções com e sem orientação; mensagens com e sem causa e solução; padrões de interação consistentes e inconsistentes; ações caras com e sem proteção; erros de entrada com e sem sugestão de correção; telas consideradas agradáveis ou não; funções utilizáveis só com teclado; pares de cor com contraste suficiente; elementos entendidos ou não no primeiro uso | Versão em produção na data da coleta; semestre do estudante e experiência prévia com revisão de literatura; avaliador que conhece ou não o código |
 
 | Hipóteses de referência | Impacto dos fatores de variação |
 |-------------------------|---------------------------------|
-| As hipóteses H2.1 a H2.3 abaixo, formuladas a partir de uma inspeção preliminar do código-fonte (fork do VICKY, commit `c2ae570`, de 29/09/2026) | Estudante que já fez revisão sistemática tende a entender mais os campos do PICO. Avaliador que conhece o código tende a achar a interface mais clara do que ela é, por isso as métricas de inspeção são coletadas por dois avaliadores, e pelo menos um não leu o código |
+| As hipóteses H2.1 a H2.7 abaixo, formuladas a partir de uma inspeção preliminar do código-fonte (fork do VICKY, commit `c2ae570`, de 29/09/2026) | Estudante que já fez revisão sistemática tende a entender mais os campos do PICO. Avaliador que conhece o código tende a achar a interface mais clara do que ela é, por isso as métricas de inspeção são coletadas por dois avaliadores, e pelo menos um não leu o código |
 
 ### Questões, hipóteses e métricas
 
-As métricas são medidas da **ISO/IEC 25023:2016**, a norma da família SQuaRE que define como medir as características da ISO/IEC 25010. As medidas de capacidade de interação estão na cláusula 8.5, e o código de cada uma (ex.: UOp-1-G) é o da própria norma. **G** indica medida genérica, que a norma recomenda usar para toda subcaracterística selecionada, exigindo justificativa para excluir alguma; **S** indica medida específica, de uso opcional quando relevante (ISO/IEC 25023:2016, cláusula 2). Operabilidade e proteção contra erro do usuário usam todas as suas medidas genéricas.
+As métricas são medidas da **ISO/IEC 25023:2016**, a norma da família SQuaRE que define como medir as características da ISO/IEC 25010. As medidas de capacidade de interação estão na cláusula 8.5, e o código de cada uma (ex.: UOp-1-G) é o da própria norma. **G** indica medida genérica, que a norma recomenda usar para toda subcaracterística selecionada, exigindo justificativa para excluir alguma; **S** indica medida específica, de uso opcional quando relevante (ISO/IEC 25023:2016, cláusula 2). Toda subcaracterística que tem medida genérica na norma usa todas elas.
 
-!!! info "Autodescritividade e a ISO/IEC 25023"
-    A autodescritividade entrou no modelo na edição de 2023 da ISO/IEC 25010 (Foreword), e a ISO/IEC 25023:2016 ainda segue o modelo de 2011, por isso não tem medida própria para ela. A equipe usa duas medidas da 25023 cuja definição coincide com a da subcaracterística, que é apresentar a informação necessária para tornar o uso do produto imediatamente óbvio: **UAp-3-S** (*Entry point self-descriptiveness*) e **ULe-4-S** (*Self-explanatory user interface*). A cláusula 2 da norma admite usar e adaptar medidas desde que a escolha seja justificada.
+!!! info "Subcaracterísticas de 2023 e medidas de 2016"
+    A ISO/IEC 25023:2016 segue o modelo de 2011 da ISO/IEC 25010, e a edição de 2023 renomeou, dividiu e criou subcaracterísticas (Foreword). A equipe associa as medidas assim, como a cláusula 2 da norma admite desde que justificado: **engajamento do usuário**, que substituiu a estética da interface, usa a medida de estética (UIn-1-S); **assistência ao usuário**, que herdou a definição da antiga acessibilidade, usa a medida de acessibilidade (UAc-1-G) e uma medida adicional de contraste; **autodescritividade**, nova em 2023, usa as duas medidas da norma cuja definição coincide com a dela (UAp-3-S e ULe-4-S).
 
 | Questão | Hipótese | Métricas |
 |---------|----------|----------|
-| Q2.1 - O VICKY se comporta de forma previsível de uma tela para outra e informa com clareza o resultado de cada ação? | H2.1 - A consistência operacional fica entre 0,6 e 0,8, porque botões, estados vazios e confirmações são resolvidos de formas diferentes conforme a tela, e entre 85% e 95% das mensagens comunicam o resultado certo; as que falham mostram texto técnico do servidor. | [M2.1.1](especificacao-das-metricas.md#m211) (UOp-1-G), [M2.1.2](especificacao-das-metricas.md#m212) (UOp-2-G) |
-| Q2.2 - Um engano do estudante ao configurar o projeto ou ao acionar uma ação paga pode custar crédito ou trabalho? | H2.2 - Entre 50% e 70% das ações caras ou destrutivas têm proteção, e iniciar a triagem completa, que consome um crédito, não pede confirmação. O sistema corrige valores inválidos em silêncio em vez de sugerir o correto (40% ou menos), e menos da metade dos erros possíveis pode ser desfeita depois. | [M2.2.1](especificacao-das-metricas.md#m221) (UEp-1-G), [M2.2.2](especificacao-das-metricas.md#m222) (UEp-2-S), [M2.2.3](especificacao-das-metricas.md#m223) (UEp-3-S) |
-| Q2.3 - Sem ajuda externa, o estudante entende o que o VICKY faz, como configurar o PICO e como ler o Quality Score? | H2.3 - As quatro páginas de entrada explicam para que serve o produto, mas só entre 60% e 75% dos elementos do fluxo são entendidos no primeiro uso, e o Quality Score está entre os não entendidos. | [M2.3.1](especificacao-das-metricas.md#m231) (UAp-3-S), [M2.3.2](especificacao-das-metricas.md#m232) (ULe-4-S) |
+| Q2.1 - Antes de criar conta, o estudante consegue saber o que o VICKY faz e o que ele não faz? (reconhecimento da adequação) | H2.1 - As páginas públicas descrevem pelo menos 90% dos cenários de uso, incluindo o limite de que o VICKY não substitui a leitura crítica dos artigos. | [M2.1.1](especificacao-das-metricas.md#m211) (UAp-1-G) |
+| Q2.2 - Um estudante sem formação em metodologia aprende a montar o primeiro projeto sozinho? (facilidade de aprendizado) | H2.2 - A orientação dentro das telas cobre pelo menos 85% das funções, mas só entre 50% e 75% das mensagens de erro dizem como resolver o problema. | [M2.2.1](especificacao-das-metricas.md#m221) (ULe-1-G), [M2.2.2](especificacao-das-metricas.md#m222) (ULe-3-S) |
+| Q2.3 - O VICKY se comporta de forma previsível de uma tela para outra e informa com clareza o resultado de cada ação? (operabilidade) | H2.3 - A consistência operacional fica entre 0,6 e 0,8, porque botões, estados vazios e confirmações são resolvidos de formas diferentes conforme a tela, e entre 85% e 95% das mensagens comunicam o resultado certo; as que falham mostram texto técnico do servidor. | [M2.3.1](especificacao-das-metricas.md#m231) (UOp-1-G), [M2.3.2](especificacao-das-metricas.md#m232) (UOp-2-G) |
+| Q2.4 - Um engano ao configurar o projeto ou ao acionar uma ação paga pode custar crédito ao estudante? (proteção contra erro do usuário) | H2.4 - Entre 50% e 70% das ações caras ou destrutivas têm proteção, e iniciar a triagem completa, que consome um crédito, não pede confirmação. O sistema corrige valores inválidos em silêncio em vez de sugerir o correto (40% ou menos). | [M2.4.1](especificacao-das-metricas.md#m241) (UEp-1-G), [M2.4.2](especificacao-das-metricas.md#m242) (UEp-2-S) |
+| Q2.5 - A aparência do VICKY convida o estudante a continuar usando? (engajamento do usuário, prioridade secundária) | H2.5 - A maioria dos participantes considera agradáveis pelo menos 4 das 5 telas avaliadas. | [M2.5.1](especificacao-das-metricas.md#m251) (UIn-1-S) |
+| Q2.6 - Uma pessoa com dificuldade motora ou baixa visão consegue usar o fluxo principal? (assistência ao usuário) | H2.6 - Pelo menos 7 das 9 funções podem ser usadas só com o teclado, e entre 85% e 99% dos pares de texto e fundo têm contraste suficiente; os que falham são textos secundários em cinza claro. | [M2.6.1](especificacao-das-metricas.md#m261) (UAc-1-G), [M2.6.2](especificacao-das-metricas.md#m262) (medida adicional) |
+| Q2.7 - Sem ajuda externa, o estudante entende os termos e elementos do VICKY, como o PICO e o Quality Score? (autodescritividade) | H2.7 - As quatro páginas de entrada explicam para que serve o produto, mas só entre 60% e 75% dos elementos do fluxo são entendidos no primeiro uso, e o Quality Score está entre os não entendidos. | [M2.7.1](especificacao-das-metricas.md#m271) (UAp-3-S), [M2.7.2](especificacao-das-metricas.md#m272) (ULe-4-S) |
 
 !!! note "Por que as hipóteses têm números"
     Os valores vêm de uma leitura preliminar do código-fonte, feita só para formular as hipóteses. A medição da Fase 4 é feita no VICKY em produção e pode confirmar ou refutar cada uma.
@@ -182,3 +186,4 @@ Pelo método Goal-Question-Metric, três questões desdobram o objetivo. A prime
 | 0.3 | 18/10/2026 | GQM de capacidade de interação (G2): objetivo, rastreabilidade com a Fase 1, abstraction sheet, questões e hipóteses | Lucas Avelar | Gabriel Fae |
 | 0.4 | 18/10/2026 | GQM de adequação funcional (G1): objetivo, rastreabilidade com a Fase 1, abstraction sheet, questões e hipóteses | Larissa Gomes Silva | - |
 | 0.5 | 18/10/2026 | GQM de manutenibilidade (G3): objetivo, rastreabilidade com a Fase 1, abstraction sheet, questões e hipóteses | Guilherme Moura | - |
+| 0.6 | 19/10/2026 | G2 realinhado às sete subcaracterísticas de C2 do modelo de qualidade | Lucas Avelar | Gabriel Fae |
