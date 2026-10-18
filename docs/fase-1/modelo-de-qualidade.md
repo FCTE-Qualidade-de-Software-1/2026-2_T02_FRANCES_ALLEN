@@ -48,8 +48,8 @@ O foco é saber se o sistema consegue evoluir, com novas fontes, novos prompts e
 | Subcaracterística | Definição (ISO/IEC 25010:2023) | Adaptação ao VICKY |
 |-------------------|--------------------------------|--------------------|
 | Modularidade | Grau em que o sistema é composto de componentes separados, de modo que a alteração de um tenha impacto mínimo nos demais | Verificar se o VICKY pode *se expandir* (adicionar uma base científica, trocar o provedor de LLM, mudar o pagamento) com alterações isoladas no módulo correspondente, sem quebrar o restante da aplicação |
-| Analisabilidade | Grau de eficácia e eficiência em avaliar o impacto de uma mudança ou diagnosticar falhas e suas causas | Verificar se o repositório é simples de entender e *bem documentado*: estrutura clara, nomes significativos, documentação e *logs* que permitam localizar a origem de uma falha no *pipeline* |
-| Modificabilidade | Grau em que o produto pode ser modificado sem introduzir defeitos ou degradar a qualidade | Mesma perspectiva da analisabilidade, voltada à mudança: verificar se ajustes recorrentes (prompts, regras do Quality Score, critérios de triagem) podem ser feitos com segurança e baixo acoplamento |
+| Analisabilidade | Grau de eficácia e eficiência em avaliar o impacto de uma mudança ou diagnosticar falhas e suas causas | Verificar se o repositório é simples de entender e *bem documentado*: estrutura clara, adesão ao PEP8, ausência de duplicação e *logs* que permitam localizar a origem de uma falha no *pipeline* |
+| Testabilidade | Grau em que se podem estabelecer critérios de teste para um sistema ou produto, e executar testes para determinar se esses critérios foram atendidos | Verificar se o código-fonte possui uma suíte de testes automatizados abrangente (`tests/`) capaz de garantir a estabilidade das funções e lógicas centrais quando o orquestrador for modificado |
 
 ### 2.4 O que ficou de fora do modelo
 
@@ -58,10 +58,7 @@ O foco é saber se o sistema consegue evoluir, com novas fontes, novos prompts e
 | Demais características (desempenho, compatibilidade, confiabilidade, segurança, flexibilidade) | Não mantidas | Priorização registrada em [Seleção e priorização das características](caracteristicas.md#1-analise-das-caracteristicas-candidatas) |
 | Inclusividade (C2) | Não mantida | O público é restrito (estudantes de medicina, produto apenas em português). O recorte de acessibilidade relevante já está coberto pela assistência ao usuário adaptada |
 | Reusabilidade (C3) | Não mantida | A avaliação mira a evolução do próprio VICKY, não o reaproveitamento dos componentes em outros sistemas |
-| Testabilidade (C3) | **Possivelmente fora da análise** | Ver o aviso abaixo |
-
-!!! warning "Testabilidade: possivelmente fora da análise"
-    A testabilidade (grau em que se podem estabelecer critérios de teste e executar testes para verificá-los) **não entra no modelo nesta versão**. O repositório original do VICKY não tem suporte a testes automatizados, o que tornaria a medição apenas uma constatação de ausência. A equipe decidirá na [Fase 2](../fase-2/index.md) se a subcaracterística volta ao modelo, por exemplo para avaliar o quanto os módulos permitem que testes sejam criados, ou se fica registrada apenas como recomendação aos mantenedores.
+| Modificabilidade (C3) | Não mantida | A avaliação deste projeto é puramente estática. Medir a modificabilidade real exigiria monitorar e cronometrar o esforço humano de alteração do código. A Testabilidade a substitui formalmente como métrica para garantir que modificações possam ser feitas com segurança |
 
 ## 3. Representação gráfica
 
@@ -77,7 +74,7 @@ flowchart LR
     subgraph SG3["Código-fonte · pipeline e integrações"]
         S31[" Modularidade"]
         S32[" Analisabilidade"]
-        S33[" Modificabilidade"]
+        S33[" Testabilidade"]
     end
 
     subgraph SG2["Interface de IA paga por crédito"]
@@ -146,3 +143,4 @@ _Figura 1 - Modelo de qualidade da ISO/IEC 25010:2023 adaptado ao VICKY. Fonte: 
 |--------|------|-----------|----------|------------|
 | 0.1 | 16/10/2026 | Página criada a partir da seção "Norma de referência" de Seleção e justificativa | Gabriel Fae | - |
 | 0.2 | 18/10/2026 | Modelo adaptado ao VICKY: subcaracterísticas mantidas e adaptadas, elementos fora do modelo, testabilidade em aberto e novo diagrama | Gabriel Fae | Guilherme Moura |
+| 0.3 | 18/10/2026 | Substituição da modificabilidade pela testabilidade no modelo de C3 e remoção do alerta de pendência | Guilherme Moura | - |

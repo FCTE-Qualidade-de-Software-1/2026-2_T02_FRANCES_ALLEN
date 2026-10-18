@@ -22,6 +22,9 @@ A pontuação final determina a categoria: Must Have (13 a 15 pontos), Should Ha
 | Segurança | 1 | 1 | 5 | Won't Have | Exigiria testes de intrusão complexos, fora do escopo da disciplina. |
 | Confiabilidade | 1 | 1 | 5 | Won't Have | Exigiria simulação de queda de fontes externas (PubMed, Scholar), inviável no momento. |
 
+### Discussão de trade-offs
+
+A seleção das características exigiu escolhas devido às restrições de tempo e recursos da avaliação. A priorização da **Manutenibilidade** em detrimento da **Compatibilidade** ocorreu porque o VICKY depende de integrações externas instáveis (LLMs, bases científicas) e de um orquestrador assíncrono complexo. Garantir que a equipe técnica consiga evoluir, testar e corrigir esse código com segurança tem um impacto maior no projeto do que homologar a interface para múltiplos navegadores e dispositivos móveis. Por outro lado, ao classificar a **Segurança** como *Won't Have* e deixá-la fora do modelo, a avaliação perde a capacidade de diagnosticar vulnerabilidades críticas (como falhas de autenticação, injeção de dados ou vazamento do histórico de pesquisas dos usuários). A equipe assume esse risco temporário pois uma auditoria de segurança técnica exigiria testes de intrusão e ferramentas específicas que fogem da viabilidade e do escopo atual da disciplina.
 
 ## 2. Características selecionadas
 
@@ -31,7 +34,7 @@ A equipe selecionou **três** características de qualidade do produto:
 |---|----------------|----------------------------------------------------|-------------------------------------------------|
 | C1 | **Adequação funcional** | Completude, Correção e Pertinencia. | O VICKY promete poupar o tempo de pesquisa filtrando artigos metodologicamente relevantes. Avaliar a correção e completude garante que o pipeline de LLM e as integrações (PubMed/Scholar) entregam o valor prometido sem falhas nas regras de negócio. |
 | C2 | **Capacidade de interação** | Operabilidade, Proteção contra erro do usuário, Autodescritividade, Reconhecimento e + (ver modelo de qualidade) | Estudantes de medicina precisam configurar critérios complexos (PICO) para iniciar uma revisão. A interface deve guiar o usuário na parametrização correta e na interpretação clara do "Quality Score" para evitar erros no uso dos créditos pagos. |
-| C3 | **Manutenibilidade** | Modularidade, Analisabilidade e Modificabilidade | O sistema possui um orquestrador assíncrono complexo (`pipeline.py`) e integrações externas instáveis por natureza (LLMs, scrapers). Avaliar a modularidade e analisabilidade do código Python garante que os desenvolvedores consigam atualizar as fontes de busca e os prompts facilmente no futuro.  |
+| C3 | **Manutenibilidade** | Modularidade, Analisabilidade e Testabilidade | O sistema possui um orquestrador assíncrono complexo (`pipeline.py`) e integrações externas instáveis por natureza (LLMs, scrapers). Avaliar a modularidade, a analisabilidade e a testabilidade do código Python garante que os desenvolvedores consigam atualizar as fontes de busca com segurança e sem introduzir falhas sistêmicas no futuro.  |
 
 !!! info "Acesso ao código-fonte"
     A equipe que desenvolveu o VICKY, e que continua ativa no projeto, liberou o acesso ao produto. Com isso, o grupo tem **todo o código-fonte** disponível para análise. Esse acesso torna viável avaliar a **manutenibilidade** por análise estática e inspeção do código, além das características observáveis no uso do produto.
@@ -48,3 +51,4 @@ Cada característica selecionada dá origem a um objetivo GQM na [Fase 2](../fas
 | 0.4 | 16/10/2026 | Propósito, escopo, norma e rastreabilidade movidos para páginas próprias | Gabriel Fae | - |
 | 0.5 | 18/10/2026 | Aplicação do método MoSCoW e inclusão de justificativas com foco no público-alvo | Guilherme Moura | - |
 | 0.6 | 18/10/2026 | Revisão das subcaracterísticas selecionadas | Gabriel Fae | Guilherme Moura |
+| 0.7 | 18/10/2026 | Substituição da modificabilidade pela testabilidade na C3, adição da discussão de trade-offs | Guilherme Moura | - |
