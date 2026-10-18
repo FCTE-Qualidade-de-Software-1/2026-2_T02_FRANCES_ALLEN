@@ -76,7 +76,7 @@ _Ainda falta anexar imagens das interfaces do Vicky nas interfaces web e suas ro
 
 | Restrição | Tipo | Impacto para a avaliação |
 |-----------|------|--------------------------|
-| A triagem completa custa 1 crédito (R$ 24,90) | Financeira | Limita o número de execuções completas que a equipe consegue observar sem gasto |
+| A triagem completa custa 1 crédito (R$ 24,90) | Financeira | Limita o número de execuções completas que a equipe consegue observar; a avaliação usa créditos de cortesia, sem compra pela equipe |
 | Limite diário de prévias gratuitas por conta | Uso | Limita repetições de teste da geração do PICO, limita diferentes testes no mesmo dia com usuários |
 | Os Termos proíbem engenharia reversa, *scraping* abusivo e sobrecarga intencional | Legal/contratual | Testes de carga ou automação contra a produção dependem de autorização da equipe do VICKY |
 | A triagem depende de LLM | Técnica | Resultados podem variar entre execuções do mesmo tema |
@@ -92,7 +92,7 @@ Levantadas a partir das páginas públicas, dos Termos de Uso e da Política de 
 | F02 | Criação de projeto | Informar o tema e as observações; ajustar população, período, tipo de estudo e objetivo; escolher o modo de revisão (sistemática/narrativa) | sim |
 | F03 | Geração do protocolo PICO | Geração automática do PICO e dos critérios de inclusão e exclusão a partir do tema, com revisão pelo usuário; gratuita, com limite diário | sim |
 | F04 | Seleção de bases e quantidade | Escolha entre PubMed, SciELO e Google Acadêmico, e do tamanho do resultado (Top 10, 20 ou 30) | sim |
-| F05 | Triagem completa | Busca nas bases, triagem por LLM em duas passadas e *double-check* das exclusões; consome 1 crédito | não |
+| F05 | Triagem completa | Busca nas bases, triagem por LLM em duas passadas e *double-check* das exclusões; consome 1 crédito | sim |
 | F06 | Lista ranqueada por Quality Score | Exibição dos artigos ordenados por Quality Score (0-100), com link para abrir a fonte | sim |
 | F07 | Favoritos | Marcar e desmarcar artigos como favoritos na lista | sim |
 | F08 | Log auditável | Registro das buscas e dos critérios de inclusão e exclusão aplicados, para anexar ao trabalho | sim |
@@ -124,3 +124,4 @@ As partes interessadas estão em [Requisitante e partes interessadas](partes-int
 | 0.2 | 16/10/2026 | Página movida para a Fase 1; partes interessadas movidas para página própria | Gabriel Fae | - |
 | 0.3 | 17/10/2026 | Identificação, descrição estruturada (módulos, interfaces, dependências, restrições) e funcionalidades levantadas a partir do site público | Gabriel Fae | Lucas Avelar |
 | 0.4 | 18/10/2026 | Revisão: modelo de acesso por crédito avulso, papel do Asaas e do Stripe, stack do backend e correções de redação | Lucas Avelar | - |
+| 0.5 | 18/10/2026 | Triagem completa (F05) marcada como dentro do escopo, em linha com a página de escopo; restrição financeira atualizada com os créditos de cortesia | Larissa Gomes Silva | - |
