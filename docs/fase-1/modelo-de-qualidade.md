@@ -5,13 +5,15 @@
 O modelo de referência é o modelo de qualidade do produto da **ISO/IEC 25010:2023** (família SQuaRE - ISO/IEC 25000). A terminologia segue a edição de 2023, em que "usabilidade" passou a se chamar **capacidade de interação**.
 
 !!! note "Modelo adaptado"
-    A equipe não aplica a norma na íntegra. Usamos um **recorte da ISO/IEC 25010:2023 adaptado ao VICKY**, com apenas as características e subcaracterísticas necessárias ao [propósito da avaliação](proposito.md). O significado de cada subcaracterística foi ajustado ao contexto do produto: uma plataforma web de triagem de literatura científica com IA, usada por estudantes de medicina. Os motivos da escolha das três características estão em [Seleção e priorização das características](caracteristicas.md). Esta página descreve **como** cada uma foi adaptada.
+    A equipe não aplica a norma na íntegra. Usamos um **recorte da ISO/IEC 25010:2023 adaptado ao VICKY**, com apenas as características e subcaracterísticas necessárias ao [propósito da avaliação](proposito.md).
 
 ## 2. Adaptação ao VICKY
 
 ### 2.1 Adequação funcional (C1)
 
-No VICKY, a adequação funcional fica concentrada no fluxo principal, que vai do **tema ao PICO, à triagem por IA e à lista ranqueada**. As funções de apoio, como pagamento e configurações, não são o foco. O resultado vem de modelos de linguagem e de bases externas, então "funcionar" significa **entregar a evidência certa ao estudante**, não só concluir a execução sem erro.
+No VICKY, a adequação funcional fica concentrada no fluxo principal, que vai do *tema ao PICO, à triagem por IA e à lista ranqueada*. As funções de apoio, como pagamento e configurações, não são o foco.
+
+ O resultado vem de modelos de linguagem e de bases externas, então "funcionar" significa *entregar a evidência certa ao estudante*, não só concluir a execução sem erro.
 
 | Subcaracterística | Definição (ISO/IEC 25010:2023) | Adaptação ao VICKY |
 |-------------------|--------------------------------|--------------------|
@@ -21,7 +23,9 @@ No VICKY, a adequação funcional fica concentrada no fluxo principal, que vai d
 
 ### 2.2 Capacidade de interação (C2)
 
-A interação no VICKY tem duas particularidades. O usuário precisa entender **conceitos metodológicos** (PICO, revisão sistemática ou narrativa, Quality Score) e opera uma **interface de IA paga por crédito**, em que um erro de configuração custa dinheiro e tempo. A adaptação, por isso, privilegia a compreensão do fluxo e a prevenção de erros, e não a estética.
+A interação no VICKY tem duas particularidades. O usuário precisa entender *conceitos metodológicos* (PICO, revisão sistemática ou narrativa, Quality Score) e opera uma *interface de IA paga por crédito*, em que um erro de configuração custa dinheiro e tempo.
+
+ A adaptação, por isso, privilegia a compreensão do fluxo e a prevenção de erros, e não a estética.
 
 | Subcaracterística | Definição (ISO/IEC 25010:2023) | Adaptação ao VICKY |
 |-------------------|--------------------------------|--------------------|
