@@ -4,10 +4,18 @@ Os níveis são definidos **antes da coleta** para que a interpretação dos res
 
 ## 1. Níveis de pontuação por métrica
 
+Cada métrica recebe um de quatro níveis: Insatisfatório (0 ponto), Aceitável (1), Bom (2) ou Excelente (3). Cada faixa inclui o limite inferior e exclui o superior, de modo que todo valor cai em exatamente um nível.
+
 | Métrica | Insatisfatório | Aceitável | Bom | Excelente | Fonte do limiar |
 |---------|:--------------:|:---------:|:---:|:---------:|-----------------|
-| M1.1.1 | _-_ | _-_ | _-_ | _-_ | _literatura, norma, benchmark ou decisão justificada da equipe_ |
-| M1.2.1 | _-_ | _-_ | _-_ | _-_ | _-_ |
+| M1.1.1 | abaixo de 0,40 | de 0,40 a menos de 0,60 | de 0,60 a menos de 0,80 | 0,80 ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 0,40 o estudante perde a maior parte da evidência; a hipótese H1.1 (0,40 a 0,60) corresponde à faixa Aceitável. |
+| M1.1.2 | abaixo de 0,50 | de 0,50 a menos de 0,70 | de 0,70 a menos de 0,90 | 0,90 ou mais | Proposta de G1, a validar pelo grupo. Cada limiar fica 0,10 acima do de M1.1.1, o ganho previsto em H1.1 ao descontar os estudos que as fontes não indexam. Abaixo de 0,50 a VICKY deixa de fora estudos que as bases têm. |
+| M1.2.1 | abaixo de 70% | de 70% a menos de 85% | de 85% a menos de 95% | 95% ou mais | Proposta de G1, a validar pelo grupo. Com nove funções, Excelente exige todas operantes; uma função parcial (94,4%) ou ausente (88,9%) leva a Bom, o que corresponde a H1.2; três ausentes (66,7%) levam a Insatisfatório. |
+| M1.3.1 | abaixo de 50% | de 50% a menos de 70% | de 70% a menos de 85% | 85% ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 50% mais da metade da lista é ruído; H1.3 (70% a 85%) corresponde a Bom. O resultado só vale com kappa de Cohen de 0,61 ou mais (Landis; Koch, 1977). |
+| M1.3.2 | abaixo de 80% | de 80% a menos de 90% | de 90% a menos de 98% | 98% ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 80% um em cada cinco itens exige correção antes de citar; o piso de Bom (90%) coincide com H1.3. |
+| M1.4.1 | abaixo de 0,36 | de 0,36 a menos de 0,50 | de 0,50 a menos de 0,70 | 0,70 ou mais | O piso de Aceitável, 0,36, é o valor crítico de ρ com 30 itens a 5% de significância, em teste bilateral (Zar, 1972); abaixo dele o escore não se distingue de ordem aleatória frente à rubrica. Demais faixas por convenção da equipe; o piso de Bom (0,50) coincide com H1.4. |
+| M1.5.1 | abaixo de 80% | de 80% a menos de 93% | de 93% a menos de 100% | 100% | Proposta de G1, a validar pelo grupo. Filtro é regra objetiva, então Excelente só vale sem nenhuma violação; o piso de Bom (93%) coincide com H1.5. |
+| M1.5.2 | abaixo de 0,50 | de 0,50 a menos de 0,70 | de 0,70 a menos de 0,85 | 0,85 ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 0,50 o registro da busca não permite replicar a revisão. |
 | M2.1.1 | < 0,70 | 0,70 a 0,79 | 0,80 a 0,89 | ≥ 0,90 | Com 10 padrões na lista, "Bom" admite até 2 inconsistências; a partir de 4, o estudante precisa reaprender telas do mesmo fluxo |
 | M2.1.2 | < 70% | 70% a 84% | 85% a 94% | ≥ 95% | Texto técnico do servidor é a falha mais grave para quem não é da área de computação, e o estudante não tem suporte em tempo real |
 | M2.2.1 | < 70%, **ou** qualquer ação que consome crédito sem proteção | 70% a 84% | 85% a 99%, com todas as ações que consomem crédito protegidas | 100% | A triagem completa custa R$ 24,90 por execução ([Objeto de avaliação](../fase-1/objeto-de-avaliacao.md#25-restricoes)), e a Fase 1 escolheu C2 justamente para evitar erros no uso dos créditos pagos |
@@ -17,23 +25,25 @@ Os níveis são definidos **antes da coleta** para que a interpretação dos res
 | M2.3.2 | < 60%, **ou** Quality Score não entendido | 60% a 74% | 75% a 89% | ≥ 90% | O VICKY não tem tutorial nem suporte em tempo real, e a Fase 1 justificou C2 pela configuração do PICO e pela leitura do Quality Score; se o estudante não entende o score, não consegue defender a lista diante do orientador |
 | M3.1.1 | _-_ | _-_ | _-_ | _-_ | _-_ |
 
-## 2. Critérios de julgamento
+Nas oito métricas de G1, quanto maior o valor, melhor.
+
+## 2. Regras do G1 (adequação funcional)
 
 ### Da métrica para a questão
 
-_Regra explícita, ex.: a hipótese H1.1 é confirmada se M1.1.1 atingir o nível "Bom" ou superior._
+A pontuação de uma questão é a média dos pontos (0 a 3) de suas métricas, classificada em Insatisfatório (de 0,00 a menos de 1,00), Aceitável (de 1,00 a menos de 1,75), Bom (de 1,75 a menos de 2,50) ou Excelente (de 2,50 a 3,00). Duas métricas são críticas, M1.1.1 e M1.3.1: se qualquer uma ficar no nível Insatisfatório, a questão correspondente (Q1.1 ou Q1.3) não passa de Aceitável, pois de nada adianta uma lista bem formatada que perde a evidência ou traz artigos irrelevantes. Uma métrica que não puder ser coletada é declarada não aplicável, sai da média e não recebe nível por estimativa. Cada hipótese de H1.1 a H1.5 é comparada com o valor observado no relatório, mas não entra na pontuação.
 
 ### Da questão para o objetivo
 
-_Regra explícita, ex.: G1 é considerado atingido se todas as questões tiverem hipótese confirmada; parcialmente atingido se ao menos metade; não atingido nos demais casos._
+O objetivo G1 é a média simples das pontuações das cinco questões (Q1.1 a Q1.5), com as mesmas faixas de classificação, e não passa de Bom se alguma questão ficar no nível Insatisfatório. O relatório informa sempre quantas das oito métricas foram medidas e o perfil das cinco questões, para que a nota global não esconda um ponto fraco.
 
 ### Do objetivo para o julgamento do produto
 
 | Situação | Julgamento |
 |----------|------------|
-| _-_ | Atende |
-| _-_ | Atende parcialmente |
-| _-_ | Não atende |
+| G1 em Bom ou Excelente | Atende |
+| G1 em Aceitável | Atende parcialmente |
+| G1 em Insatisfatório | Não atende |
 
 ## 3. Regras do G2 (capacidade de interação)
 
@@ -68,3 +78,4 @@ A última regra existe porque, entre os problemas de capacidade de interação, 
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 18/10/2026 | Níveis de pontuação e regras de julgamento do G2 (capacidade de interação) | Lucas Avelar | Gabriel Fae |
+| 0.4 | 18/10/2026 | Níveis das oito métricas de G1 e critérios de julgamento do objetivo G1 | Larissa Gomes Silva | - |
