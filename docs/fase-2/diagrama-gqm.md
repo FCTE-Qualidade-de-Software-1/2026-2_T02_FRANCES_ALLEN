@@ -10,16 +10,25 @@ flowchart LR
         G3["G3 - Manutenibilidade"]
     end
     subgraph N2["Nível operacional - Questões"]
-        Q11["Q1.1"]
-        Q12["Q1.2"]
+        Q11["Q1.1 - Completude funcional<br/>(estudos da revisão de referência)"]
+        Q12["Q1.2 - Completude funcional<br/>(fluxo prometido)"]
+        Q13["Q1.3 - Correção funcional"]
+        Q14["Q1.4 - Pertinência funcional<br/>(ranking)"]
+        Q15["Q1.5 - Pertinência funcional<br/>(filtros e estabilidade)"]
         Q21["Q2.1 - Operabilidade"]
         Q22["Q2.2 - Proteção contra<br/>erro do usuário"]
         Q23["Q2.3 - Autodescritividade"]
         Q31["Q3.1"]
     end
     subgraph N3["Nível quantitativo - Métricas"]
-        M111["M1.1.1"]
-        M121["M1.2.1"]
+        M111["M1.1.1 · Recall@30 normalizado"]
+        M112["M1.1.2 · Recall restrito às fontes"]
+        M121["M1.2.1 · Funções declaradas operantes"]
+        M131["M1.3.1 · Precisão@30"]
+        M132["M1.3.2 · Metadados e links corretos"]
+        M141["M1.4.1 · Spearman score x rubrica"]
+        M151["M1.5.1 · Conformidade com filtros"]
+        M152["M1.5.2 · Estabilidade entre execuções"]
         M211["M2.1.1 · UOp-1-G"]
         M212["M2.1.2 · UOp-2-G"]
         M221["M2.2.1 · UEp-1-G"]
@@ -29,8 +38,12 @@ flowchart LR
         M232["M2.3.2 · ULe-4-S"]
         M311["M3.1.1"]
     end
-    G1 --> Q11 --> M111
-    G1 --> Q12 --> M121
+    G1 --> Q11 & Q12 & Q13 & Q14 & Q15
+    Q11 --> M111 & M112
+    Q12 --> M121
+    Q13 --> M131 & M132
+    Q14 --> M141
+    Q15 --> M151 & M152
     G2 --> Q21 & Q22 & Q23
     Q21 --> M211 & M212
     Q22 --> M221 & M222 & M223
@@ -47,3 +60,4 @@ _Figura 1 - Hierarquia GQM da avaliação do VICKY: os três objetivos (nível c
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 18/10/2026 | Ramo completo do G2 (capacidade de interação) no diagrama único | Lucas Avelar | Gabriel Fae |
+| 0.4 | 18/10/2026 | Ramo completo do G1 (adequação funcional) no diagrama único | Lucas Avelar | Larissa Gomes Silva |
