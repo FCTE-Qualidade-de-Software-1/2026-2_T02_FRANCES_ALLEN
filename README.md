@@ -10,21 +10,25 @@ O objetivo do trabalho é **avaliar o produto à luz de modelos e métricas de q
 
 | Item | Descrição |
 |------|-----------|
-| **Produto avaliado** | VICKY |
-| **URL do produto** | _A definir_ |
-| **Público-alvo** | Estudantes de medicina |
-| **Responsável / organização** | _A definir_ |
-| **Plataformas avaliadas** | _A definir (web desktop / mobile)_ |
-| **Acesso ao código-fonte** | Completo, liberado pela equipe de desenvolvimento do VICKY, que segue ativa no projeto |
-| **Período da avaliação** | 2026.2 |
+| Nome | VICKY |
+| Tipo | Aplicação web (SaaS) de triagem de literatura científica assistida por IA, acessada pelo navegador |
+| URL | <https://vicky.synaptha.com/> |
+| Organização responsável | Synaptha Inc Ltda (CNPJ 63.642.396/0001-90), Brasília-DF |
+| Versão avaliada / data de acesso | Versão em produção acessada em 17/10/2026 (Termos de Uso e Política de Privacidade na versão 2026-09-29) |
+| Público-alvo | Estudantes de medicina (foco declarado) em iniciação científica, TCC, monografia e artigo de resumo; uso restrito a maiores de 18 anos |
+| Plataformas | Navegador web, desktop e mobile |
+| Exige cadastro ou login | Sim, com nome, e-mail e senha. |
+| Modelo de acesso | Gratuito ou por assinatura |
+| Acesso ao código-fonte | Sim, código-fonte completo, liberado pela equipe de desenvolvimento (ativa no projeto) |
+| Repositório do código | Não pode ser exibido de forma aberta. |
 
 ### Características de qualidade selecionadas (ISO/IEC 25010)
 
 | # | Característica | Justificativa |
 |---|----------------|---------------|
-| C1 | **Adequação funcional** | _A definir_ |
-| C2 | **Capacidade de interação** | _A definir_ |
-| C3 | **Manutenibilidade** | _A definir_ |
+| C1 | **Adequação funcional** |  O VICKY promete poupar o tempo de pesquisa filtrando artigos metodologicamente relevantes. Avaliar a correção e completude garante que o pipeline de LLM e as integrações (PubMed/Scholar) entregam o valor prometido sem falhas nas regras de negócio |
+| C2 | **Capacidade de interação** | Operabilidade, Proteção contra erro do usuário e Autodescritividade | Estudantes de medicina precisam configurar critérios complexos (PICO) para iniciar uma revisão. A interface deve guiar o usuário na parametrização correta e na interpretação clara do "Quality Score" para evitar erros no uso dos créditos pagos. |
+| C3 | **Manutenibilidade** | Modularidade, Analisabilidade e Modificabilidade | O sistema possui um orquestrador assíncrono complexo (`pipeline.py`) e integrações externas instáveis por natureza (LLMs, scrapers). Avaliar a modularidade e analisabilidade do código Python garante que os desenvolvedores consigam atualizar as fontes de busca e os prompts facilmente no futuro.  |
 
 Detalhes em [Fase 1 - Seleção e priorização das características](docs/fase-1/caracteristicas.md).
 
