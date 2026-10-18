@@ -12,7 +12,7 @@
 | Público-alvo | Estudantes de medicina (foco declarado) em iniciação científica, TCC, monografia e artigo de resumo; uso restrito a maiores de 18 anos |
 | Plataformas | Navegador web, desktop e mobile |
 | Exige cadastro ou login | Sim, com nome, e-mail e senha. |
-| Modelo de acesso | Gratuito ou por assinatura |
+| Modelo de acesso | Cadastro, criação de projeto e prévia do PICO gratuitos; triagem completa paga por crédito avulso (1 crédito = 1 triagem, R$ 24,90), sem assinatura nem mensalidade |
 | Acesso ao código-fonte | Sim, código-fonte completo, liberado pela equipe de desenvolvimento (ativa no projeto) |
 | Repositório do código | _link ou forma de acesso - a definir_ |
 
@@ -66,11 +66,11 @@ _Ainda falta anexar imagens das interfaces do Vicky nas interfaces web e suas ro
 |-------------|------|------------|
 | PubMed, SciELO, Google Acadêmico | Fontes de dados externas | Indisponibilidade ou resultados parciais afetam a triagem (Termos, §9) |
 | OpenRouter e provedores de LLM | Serviço externo (EUA) | Núcleo da geração do PICO e da triagem |
-| Asaas / Stripe | Pagamento | Necessários para a triagem completa, se o Stripe cai o vicky não gerencia a assinatura |
+| Asaas / Stripe | Pagamento | Necessários para comprar créditos e, portanto, para a triagem completa. Hoje as compras passam pelo Asaas (Pix e cartão); o Stripe atendeu as compras até 09/2026 |
 | Cloudflare | Proxy, CDN e segurança | Todo o tráfego passa por ele |
 | Hostinger | Hospedagem do servidor e do banco de dados (Brasil) | -- |
 | Alpine.js 3.14.1, Tailwind CSS, Google Fonts | Frontend | Identificados no Frontend do repositório |
-| _Linguagem, framework de backend, banco de dados, bibliotecas_ | Backend | _a confirmar no repositório  |
+| Python 3.11 ou superior, FastAPI, Uvicorn, Jinja2 e PostgreSQL (driver psycopg) | Backend | Identificados no `pyproject.toml` do repositório |
 
 ### 2.5 Restrições
 
@@ -110,9 +110,9 @@ Levantadas a partir das páginas públicas, dos Termos de Uso e da Política de 
 
 ## 5. Implicações para a avaliação
 
-Hoje, possuímos acesso ao código fonte, ao site e à praticamente todos os testes do Vicky.
+Hoje, possuímos acesso ao código fonte, ao site e a praticamente todos os testes do VICKY.
 
-COntudo, ainda somos limitados pelo uso restritivo de LLMS, pesquisas em sites externos, valor monetário e pelas funcionalidades realizadas/dependentes de terceiros.
+Contudo, ainda somos limitados pelo uso restritivo de LLMs, pesquisas em sites externos, valor monetário e pelas funcionalidades realizadas/dependentes de terceiros.
 
 As partes interessadas estão em [Requisitante e partes interessadas](partes-interessadas.md), e o recorte do que será avaliado está em [Escopo e profundidade](escopo.md).
 
@@ -123,3 +123,4 @@ As partes interessadas estão em [Requisitante e partes interessadas](partes-int
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
 | 0.2 | 16/10/2026 | Página movida para a Fase 1; partes interessadas movidas para página própria | Gabriel Fae | - |
 | 0.3 | 17/10/2026 | Identificação, descrição estruturada (módulos, interfaces, dependências, restrições) e funcionalidades levantadas a partir do site público | Gabriel Fae | Lucas Avelar |
+| 0.4 | 18/10/2026 | Revisão: modelo de acesso por crédito avulso, papel do Asaas e do Stripe, stack do backend e correções de redação | Lucas Avelar | - |
