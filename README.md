@@ -71,8 +71,8 @@ Detalhes em [Fase 1 - Seleção e priorização das características](docs/fase-
         </td><td align="center">
             <a href="link do github">
                 <img style="border-radius: 50%;  width: 150px;heigth: 100px" src="https://s2.glbimg.com/M7i2Eovi6zB-rywedhQc355033E=/e.glbimg.com/og/ed/f/original/2019/08/09/hedy_lamarr_-_1940_1.jpg"/>
-                <h5 class="text-center">Nome do integrante</h5>
-                <h5 class="text-center">Matrícula</h5>
+                <h5 class="text-center">Larissa Gomes Silva</h5>
+                <h5 class="text-center">211031092</h5>
             </a>
         </td><td align="center">
             <a href="link do github">
