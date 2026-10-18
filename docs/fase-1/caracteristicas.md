@@ -29,8 +29,8 @@ A equipe selecionou **três** características de qualidade do produto:
 
 | # | Característica | Subcaracterísticas candidatas (ISO/IEC 25010:2023) | Justificativa (produto + objetivo da avaliação) |
 |---|----------------|----------------------------------------------------|-------------------------------------------------|
-| C1 | **Adequação funcional** | Completude funcional e Correção funcional | O VICKY promete poupar o tempo de pesquisa filtrando artigos metodologicamente relevantes. Avaliar a correção e completude garante que o pipeline de LLM e as integrações (PubMed/Scholar) entregam o valor prometido sem falhas nas regras de negócio. |
-| C2 | **Capacidade de interação** | Operabilidade, Proteção contra erro do usuário e Autodescritividade | Estudantes de medicina precisam configurar critérios complexos (PICO) para iniciar uma revisão. A interface deve guiar o usuário na parametrização correta e na interpretação clara do "Quality Score" para evitar erros no uso dos créditos pagos. |
+| C1 | **Adequação funcional** | Completude, Correção e Pertinencia. | O VICKY promete poupar o tempo de pesquisa filtrando artigos metodologicamente relevantes. Avaliar a correção e completude garante que o pipeline de LLM e as integrações (PubMed/Scholar) entregam o valor prometido sem falhas nas regras de negócio. |
+| C2 | **Capacidade de interação** | Operabilidade, Proteção contra erro do usuário, Autodescritividade, Reconhecimento e + (ver modelo de qualidade) | Estudantes de medicina precisam configurar critérios complexos (PICO) para iniciar uma revisão. A interface deve guiar o usuário na parametrização correta e na interpretação clara do "Quality Score" para evitar erros no uso dos créditos pagos. |
 | C3 | **Manutenibilidade** | Modularidade, Analisabilidade e Modificabilidade | O sistema possui um orquestrador assíncrono complexo (`pipeline.py`) e integrações externas instáveis por natureza (LLMs, scrapers). Avaliar a modularidade e analisabilidade do código Python garante que os desenvolvedores consigam atualizar as fontes de busca e os prompts facilmente no futuro.  |
 
 !!! info "Acesso ao código-fonte"
@@ -47,3 +47,4 @@ Cada característica selecionada dá origem a um objetivo GQM na [Fase 2](../fas
 | 0.3 | 05/10/2026 | Registro do acesso ao código-fonte | Gabriel Fae | - |
 | 0.4 | 16/10/2026 | Propósito, escopo, norma e rastreabilidade movidos para páginas próprias | Gabriel Fae | - |
 | 0.5 | 18/10/2026 | Aplicação do método MoSCoW e inclusão de justificativas com foco no público-alvo | Guilherme Moura | - |
+| 0.6 | 18/10/2026 | Revisão das subcaracterísticas selecionadas | Gabriel Fae | Guilherme Moura |

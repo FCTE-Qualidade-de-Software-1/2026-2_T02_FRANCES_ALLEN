@@ -216,6 +216,11 @@
   vertical-align: middle;
 }
 
+/* ---------- Diagramas Mermaid centralizados ---------- */
+.md-typeset .mermaid {
+  text-align: center;
+}
+
 /* ---------- Foco visível (acessibilidade) ---------- */
 .md-typeset a:focus-visible,
 .md-nav__link:focus-visible {
