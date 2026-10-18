@@ -63,7 +63,7 @@ O foco é saber se o sistema consegue evoluir, com novas fontes, novos prompts e
 
 ```mermaid
 flowchart LR
-    Q(["🔬 Qualidade do produto VICKY<br/>ISO/IEC 25010:2023 adaptada"])
+    Q([" Qualidade do produto VICKY<br/>ISO/IEC 25010:2023 adaptada"])
 
     Q ==> C1{{" C1 · Adequação funcional"}}
     Q ==> C2{{" C2 · Capacidade de interação"}}
@@ -96,15 +96,15 @@ flowchart LR
     C2 --> S21 & S22 & S23 & S24 & S25 & S26 & S27
     C3 --> S31 & S32 & S33
 
-    classDef raiz fill:#1E2B31,stroke:#1E2B31,color:#FFFFFF,font-weight:bold
-    classDef c1 fill:#0B5563,stroke:#083F4A,color:#FFFFFF,font-weight:bold
-    classDef c2 fill:#B4531A,stroke:#8A3F14,color:#FFFFFF,font-weight:bold
-    classDef c3 fill:#5B3E96,stroke:#432D70,color:#FFFFFF,font-weight:bold
-    classDef s1 fill:#E6F1F3,stroke:#0B5563,stroke-width:2px,color:#1E2B31
-    classDef s2 fill:#FBEADF,stroke:#B4531A,stroke-width:2px,color:#1E2B31
-    classDef s3 fill:#EEE8F7,stroke:#5B3E96,stroke-width:2px,color:#1E2B31
-    classDef adaptada fill:#FBEADF,stroke:#B4531A,stroke-width:2.5px,stroke-dasharray:6 4,color:#1E2B31
-    classDef secundaria fill:#FDF6F1,stroke:#B4531A,stroke-width:1.5px,stroke-dasharray:2 3,color:#5A6B72
+    classDef raiz fill:#E8EDEF,stroke:#7D8E95,stroke-width:2.5px,color:#1E2B31,font-weight:bold
+    classDef c1 fill:#C8E6EB,stroke:#5FA3AF,stroke-width:2.5px,color:#1E2B31,font-weight:bold
+    classDef c2 fill:#F9D9C4,stroke:#DE9466,stroke-width:2.5px,color:#1E2B31,font-weight:bold
+    classDef c3 fill:#E0D6F2,stroke:#A08BCF,stroke-width:2.5px,color:#1E2B31,font-weight:bold
+    classDef s1 fill:#F1F9FA,stroke:#8CC1CA,stroke-width:1.5px,color:#1E2B31
+    classDef s2 fill:#FEF4ED,stroke:#EDB592,stroke-width:1.5px,color:#1E2B31
+    classDef s3 fill:#F6F2FC,stroke:#BFAEE0,stroke-width:1.5px,color:#1E2B31
+    classDef adaptada fill:#FEF4ED,stroke:#DE9466,stroke-width:2px,stroke-dasharray:6 4,color:#1E2B31
+    classDef secundaria fill:#FFFBF8,stroke:#EDB592,stroke-width:1.5px,stroke-dasharray:2 3,color:#1E2B31
 
     class Q raiz
     class C1 c1
@@ -116,25 +116,25 @@ flowchart LR
     class S25 secundaria
     class S31,S32,S33 s3
 
-    style SG1 fill:#F5FAFB,stroke:#0B5563,stroke-width:1px,color:#0B5563
-    style SG2 fill:#FEF8F4,stroke:#B4531A,stroke-width:1px,color:#B4531A
-    style SG3 fill:#F7F4FC,stroke:#5B3E96,stroke-width:1px,color:#5B3E96
+    style SG1 fill:#FAFDFD,stroke:#B5D8DE,stroke-width:1px,color:#1E2B31
+    style SG2 fill:#FFFCFA,stroke:#F3CDB4,stroke-width:1px,color:#1E2B31
+    style SG3 fill:#FCFAFE,stroke:#D5C9EC,stroke-width:1px,color:#1E2B31
 
-    linkStyle 0,3,4,5 stroke:#0B5563,stroke-width:2px
-    linkStyle 1,6,7,8,9,10,11,12 stroke:#B4531A,stroke-width:2px
-    linkStyle 2,13,14,15 stroke:#5B3E96,stroke-width:2px
+    linkStyle 0,3,4,5 stroke:#7DB6C0,stroke-width:2px
+    linkStyle 1,6,7,8,9,10,11,12 stroke:#E8A77E,stroke-width:2px
+    linkStyle 2,13,14,15 stroke:#B19DD8,stroke-width:2px
 ```
 
 _Figura 1 - Modelo de qualidade da ISO/IEC 25010:2023 adaptado ao VICKY. Fonte: elaborada pela equipe com base na ISO/IEC 25010:2023._
 
 | Elemento | Significado |
 |----------|-------------|
-| <span class="amostra" style="background:#0B5563"></span> Petróleo | C1 - Adequação funcional e suas subcaracterísticas |
-| <span class="amostra" style="background:#B4531A"></span> Terracota | C2 - Capacidade de interação e suas subcaracterísticas |
-| <span class="amostra" style="background:#5B3E96"></span> Roxo | C3 - Manutenibilidade e suas subcaracterísticas |
+| <span class="amostra" style="background:#C8E6EB;border-color:#5FA3AF"></span> Azul-petróleo claro | C1 - Adequação funcional e suas subcaracterísticas |
+| <span class="amostra" style="background:#F9D9C4;border-color:#DE9466"></span> Pêssego | C2 - Capacidade de interação e suas subcaracterísticas |
+| <span class="amostra" style="background:#E0D6F2;border-color:#A08BCF"></span> Lavanda | C3 - Manutenibilidade e suas subcaracterísticas |
 | Hexágono | Característica de qualidade |
 | Borda tracejada | Subcaracterística mantida com escopo reduzido (assistência ao usuário) |
-| Borda pontilhada e texto suave | Subcaracterística mantida com prioridade secundária (engajamento do usuário) |
+| Borda pontilhada | Subcaracterística mantida com prioridade secundária (engajamento do usuário) |
 
 ## Histórico de versão
 
