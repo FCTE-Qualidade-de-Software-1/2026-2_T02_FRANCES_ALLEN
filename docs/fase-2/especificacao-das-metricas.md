@@ -6,8 +6,14 @@ Cada métrica possui uma ficha com os campos exigidos pela Premissa 2: **defini�
 
 | ID | Métrica | Questão | Característica | Fonte dos dados |
 |----|---------|---------|----------------|-----------------|
-| M1.1.1 | _-_ | Q1.1 | C1 | _-_ |
-| M1.2.1 | _-_ | Q1.2 | C1 | _-_ |
+| M1.1.1 | Recall@30 normalizado (adaptada de FCp-1-G) | Q1.1 | C1 | Lista de incluídos da revisão de referência; Top 30 da VICKY |
+| M1.1.2 | Recall restrito às fontes (adaptada de FCp-1-G) | Q1.1 | C1 | Revisão de referência; consulta manual ao PubMed, SciELO e Google Acadêmico; Top 30 |
+| M1.2.1 | Funções declaradas operantes (adaptada de FCp-1-G) | Q1.2 | C1 | Página pública da VICKY; um caso de teste por função |
+| M1.3.1 | Precisão@30 (adaptada de FCr-1-G) | Q1.3 | C1 | Top 30 de cada tema; ficha de julgamento de dois avaliadores |
+| M1.3.2 | Metadados e links corretos (adaptada de FCr-1-G) | Q1.3 | C1 | Amostra de 10 itens por tema; página oficial de cada artigo |
+| M1.4.1 | Spearman entre Quality Score e rubrica (adaptada de FAp-1-G) | Q1.4 | C1 | Quality Score exibido; nota da rubrica de dois avaliadores |
+| M1.5.1 | Conformidade com filtros (adaptada de FAp-1-G) | Q1.5 | C1 | Duas execuções com filtros restritivos; conferência item a item |
+| M1.5.2 | Estabilidade entre execuções (adaptada de FAp-1-G) | Q1.5 | C1 | Dois Top 30 do mesmo tema, com intervalo de 24 horas ou mais |
 | M2.1.1 | Consistência operacional (UOp-1-G) | Q2.1 | C2 | Inspeção das telas |
 | M2.1.2 | Clareza das mensagens (UOp-2-G) | Q2.1 | C2 | Inspeção das telas e do código |
 | M2.2.1 | Prevenção de erro de operação (UEp-1-G) | Q2.2 | C2 | Inspeção das telas e do código |
@@ -17,35 +23,139 @@ Cada métrica possui uma ficha com os campos exigidos pela Premissa 2: **defini�
 | M2.3.2 | Interface autoexplicativa (ULe-4-S) | Q2.3 | C2 | Testes de cenário com estudantes |
 | M3.1.1 | _-_ | Q3.1 | C3 | _-_ |
 
+## Temas de teste de G1
+
+As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfecho clínico bem estudado, uma intervenção não farmacológica, um tema de saúde pública brasileira com literatura no SciELO e um tema estreito com poucos estudos. Cada tema tem uma revisão sistemática recente como referência, e a lista de estudos incluídos dessa revisão serve de padrão para M1.1.1 e M1.1.2. Os mesmos Top 30 alimentam M1.3.1, M1.3.2, M1.4.1 e M1.5.1. A coleta completa exige cerca de oito triagens na ferramenta (estimativa), cada uma consumindo 1 crédito.
+
 ## Fichas
 
 ### M1.1.1
 
 | Campo | Definição |
 |-------|-----------|
-| Nome | _-_ |
+| Nome | Recall@30 normalizado |
+| Medida da ISO/IEC 25023:2016 | FCp-1-G, *Functional coverage* (genérica), adaptada: conta estudos da revisão de referência recuperados, em vez de funções implementadas |
+| Subcaracterística | Completude funcional |
 | Questão / objetivo | Q1.1 / G1 |
-| Definição | _o que a métrica representa_ |
-| Procedimento de cálculo | _fórmula, ex.: X = A / B, onde A = ..., B = ..._ |
-| Unidade e escala | _ex.: segundos, razão_ |
-| Fonte dos dados | _ex.: sessões de teste com usuários, relatório do Lighthouse, inspeção_ |
-| Procedimento de coleta | _passo a passo, ferramenta, ambiente, quem coleta, quando_ |
-| Critério de interpretação | _quanto maior/menor, melhor; ver [níveis de pontuação](niveis-e-julgamento.md)_ |
-| Local dos dados brutos | _ex.: `dados/avaliacao/M1.1.1/`_ |
+| Definição | Proporção dos estudos incluídos na revisão de referência que aparecem no Top 30 da VICKY. O denominador é limitado a 30 para não penalizar a ferramenta quando a revisão de referência é maior que a lista. Métrica crítica de Q1.1. |
+| Procedimento de cálculo | R = N(Top 30 ∩ Ref) / min(N(Ref), 30), onde Top 30 é o conjunto de artigos da lista ranqueada e Ref é o conjunto de estudos incluídos na revisão de referência. Mesmo artigo significa mesmo DOI. O valor final é a média de R em T1 a T4. |
+| Unidade e escala | Razão adimensional, de 0 a 1 |
+| Fonte dos dados | Lista de estudos incluídos de cada revisão de referência; Top 30 gerado pela VICKY para cada tema |
+| Procedimento de coleta | (1) Escolher a revisão de referência de cada tema. (2) Executar a triagem completa na VICKY, em navegador de computador, com janela de busca até a data de corte da revisão. (3) Registrar o Top 30 em planilha. (4) Cruzar o Top 30 com a lista de incluídos por DOI e, na falta de DOI, por título e ano. (5) Calcular R por tema e a média. |
+| Critério de interpretação | Quanto maior, melhor. Ver [níveis de pontuação](niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G1/M1.1.1/` |
+
+### M1.1.2
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Recall restrito às fontes |
+| Medida da ISO/IEC 25023:2016 | FCp-1-G, *Functional coverage* (genérica), adaptada: conta estudos recuperados, restritos aos que as fontes indexam |
+| Subcaracterística | Completude funcional |
+| Questão / objetivo | Q1.1 / G1 |
+| Definição | Mesma proporção de M1.1.1, calculada apenas sobre os estudos da revisão de referência que o PubMed, o SciELO ou o Google Acadêmico indexam. Separa falha de triagem da VICKY de limite das bases. |
+| Procedimento de cálculo | Rr = N(Top 30 ∩ Ref indexada) / min(N(Ref indexada), 30), onde Ref indexada é o subconjunto de Ref presente em ao menos uma das três fontes. O valor final é a média de Rr em T1 a T4. |
+| Unidade e escala | Razão adimensional, de 0 a 1 |
+| Fonte dos dados | Lista de incluídos da revisão de referência; resultado da consulta manual às três fontes; Top 30 de M1.1.1 |
+| Procedimento de coleta | (1) Consultar cada estudo da revisão de referência no PubMed, no SciELO e no Google Acadêmico e anotar se foi encontrado. (2) Montar Ref indexada com os estudos encontrados em ao menos uma fonte. (3) Cruzar com o Top 30 já registrado para M1.1.1. (4) Calcular Rr por tema e a média. |
+| Critério de interpretação | Quanto maior, melhor. A diferença entre M1.1.2 e M1.1.1 mostra o que as bases não cobrem. Ver [níveis de pontuação](niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G1/M1.1.2/` |
 
 ### M1.2.1
 
 | Campo | Definição |
 |-------|-----------|
-| Nome | _-_ |
+| Nome | Funções declaradas operantes |
+| Medida da ISO/IEC 25023:2016 | FCp-1-G, *Functional coverage* (genérica), adaptada: função parcial conta meia |
+| Subcaracterística | Completude funcional |
 | Questão / objetivo | Q1.2 / G1 |
-| Definição | _-_ |
-| Procedimento de cálculo | _-_ |
-| Unidade e escala | _-_ |
-| Fonte dos dados | _-_ |
-| Procedimento de coleta | _-_ |
-| Critério de interpretação | _-_ |
-| Local dos dados brutos | _-_ |
+| Definição | Proporção das funções anunciadas pela VICKY que existem e executam o que prometem. Detecta promessa não cumprida. São 9 funções, F01 a F09 (ver [objeto de avaliação](../fase-1/objeto-de-avaliacao.md#3-principais-funcionalidades)); a inclusão de F05 é proposta pendente de aprovação do grupo. |
+| Procedimento de cálculo | C = (operantes + 0,5 x parciais) / declaradas, com declaradas = 9. Operante é a função que executa o fluxo previsto até o fim; parcial, a que executa só parte dele; ausente, a que não existe ou não executa (definição proposta, a validar pelo grupo). |
+| Unidade e escala | Proporção, de 0% a 100% |
+| Fonte dos dados | Página pública da VICKY e capturas de tela de um caso de teste por função |
+| Procedimento de coleta | (1) Listar as funções anunciadas na página pública. (2) Definir um caso de teste por função. (3) Executar cada caso com uma conta de teste, em navegador de computador, e capturar a tela. (4) Classificar cada função como operante, parcial ou ausente. (5) Calcular C. |
+| Critério de interpretação | Quanto maior, melhor. Ver [níveis de pontuação](niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G1/M1.2.1/` |
+
+### M1.3.1
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Precisão@30 |
+| Medida da ISO/IEC 25023:2016 | FCr-1-G, *Functional correctness* (genérica), adaptada: julga cada artigo da lista, em vez de cada função |
+| Subcaracterística | Correção funcional |
+| Questão / objetivo | Q1.3 / G1 |
+| Definição | Proporção dos 30 artigos da lista julgados relevantes ao PICO. Um artigo é relevante quando corresponde à população, à intervenção e ao desfecho do PICO e ao tipo de estudo pedido. Métrica crítica de Q1.3. |
+| Procedimento de cálculo | P = relevantes / avaliados, sobre os 30 artigos de cada tema. O valor final é a média de P em T1 a T4. O kappa de Cohen entre os dois avaliadores é calculado para cada tema. |
+| Unidade e escala | Proporção, de 0% a 100% |
+| Fonte dos dados | Top 30 de cada tema; ficha de julgamento preenchida por dois avaliadores |
+| Procedimento de coleta | (1) Entregar aos avaliadores título e resumo de cada artigo, sem posição nem Quality Score. (2) Cada avaliador julga a relevância ao PICO do tema e preenche a ficha. (3) Calcular o kappa de Cohen entre os dois. (4) Resolver as discordâncias [PREENCHER FASE 3: regra para discordâncias] e calcular P. |
+| Critério de interpretação | Quanto maior, melhor. O resultado só vale com kappa de 0,61 ou mais, faixa de concordância substancial (Landis; Koch, 1977). Ver [níveis de pontuação](niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G1/M1.3.1/` |
+
+### M1.3.2
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Metadados e links corretos |
+| Medida da ISO/IEC 25023:2016 | FCr-1-G, *Functional correctness* (genérica), adaptada: confere metadados e link de cada artigo, em vez de cada função |
+| Subcaracterística | Correção funcional |
+| Questão / objetivo | Q1.3 / G1 |
+| Definição | Proporção dos itens verificados cujo título, autores, ano, periódico e link estão corretos. Um campo errado torna o item incorreto, porque quebra a citação. |
+| Procedimento de cálculo | K = corretos / verificados, sobre uma amostra de 10 itens do Top 30 por tema (40 itens no total). |
+| Unidade e escala | Proporção, de 0% a 100% |
+| Fonte dos dados | Itens da amostra no Top 30; página oficial de cada artigo |
+| Procedimento de coleta | (1) Selecionar 10 itens por tema [PREENCHER FASE 3: critério de seleção da amostra]. (2) Abrir o link exibido pela VICKY e a página oficial do artigo. (3) Comparar título, autores, ano, periódico e link. (4) Marcar o item como correto só se os cinco campos coincidirem. (5) Calcular K. |
+| Critério de interpretação | Quanto maior, melhor. Ver [níveis de pontuação](niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G1/M1.3.2/` |
+
+### M1.4.1
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Spearman entre Quality Score e rubrica |
+| Medida da ISO/IEC 25023:2016 | FAp-1-G, *Functional appropriateness of usage objective* (genérica), adaptada: verifica se a ordem do ranking serve ao objetivo do estudante |
+| Subcaracterística | Pertinência funcional |
+| Questão / objetivo | Q1.4 / G1 |
+| Definição | Concordância entre a ordem de 0 a 100 do Quality Score e a ordem de uma rubrica metodológica. Como a documentação pública não descreve o cálculo do Quality Score (a confirmar no código-fonte), a métrica indica concordância com a rubrica adotada, não a validade do escore. |
+| Procedimento de cálculo | ρ de Spearman entre o Quality Score e a nota da rubrica nos 30 artigos. A rubrica atribui a cada artigo uma nota de 0 a 10 a partir do nível de evidência do desenho, do tamanho da amostra, da presença de comparador e da revisão por pares; a nota final é a média dos dois avaliadores. O valor final é a média de ρ em T1 e T2. |
+| Unidade e escala | Coeficiente adimensional, de -1 a 1 |
+| Fonte dos dados | Quality Score exibido na lista; notas da rubrica de dois avaliadores |
+| Procedimento de coleta | (1) Registrar o Quality Score de cada artigo do Top 30 de T1 e T2. (2) Dois avaliadores atribuem a nota da rubrica sem ver o escore. (3) Calcular a média das duas notas por artigo. (4) Calcular ρ por tema e a média. |
+| Critério de interpretação | Quanto maior, melhor. Com 30 itens, ρ de cerca de 0,36 é o valor crítico para se distinguir de zero a 5% de significância, em teste bilateral (Zar, 1972). Ver [níveis de pontuação](niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G1/M1.4.1/` |
+
+### M1.5.1
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Conformidade com filtros |
+| Medida da ISO/IEC 25023:2016 | FAp-1-G, *Functional appropriateness of usage objective* (genérica), adaptada: verifica se o resultado obedece à configuração do estudante |
+| Subcaracterística | Pertinência funcional |
+| Questão / objetivo | Q1.5 / G1 |
+| Definição | Proporção dos itens da lista que obedecem aos filtros configurados pelo estudante: janela de tempo, tipo de estudo e fonte. Item fora do filtro é defeito, pois filtro é regra objetiva. |
+| Procedimento de cálculo | F = conformes / avaliados, sobre todos os itens das listas geradas nas duas execuções com filtros restritivos. |
+| Unidade e escala | Proporção, de 0% a 100% |
+| Fonte dos dados | Listas geradas com filtros restritivos; metadados de cada item |
+| Procedimento de coleta | (1) Configurar duas execuções com filtros restritivos de janela de tempo, tipo de estudo e fonte. (2) Registrar a configuração usada. (3) Conferir item a item se ano, tipo de estudo e fonte respeitam a configuração. (4) Calcular F. |
+| Critério de interpretação | Quanto maior, melhor. Ver [níveis de pontuação](niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G1/M1.5.1/` |
+
+### M1.5.2
+
+| Campo | Definição |
+|-------|-----------|
+| Nome | Estabilidade entre execuções |
+| Medida da ISO/IEC 25023:2016 | FAp-1-G, *Functional appropriateness of usage objective* (genérica), adaptada: verifica se o resultado se repete, o que permite registrar e replicar a busca |
+| Subcaracterística | Pertinência funcional |
+| Questão / objetivo | Q1.5 / G1 |
+| Definição | Sobreposição entre os Top 30 de duas execuções idênticas do mesmo tema. Mede se o registro da busca permite replicar a revisão. |
+| Procedimento de cálculo | J = N(A ∩ B) / N(A ∪ B) (índice de Jaccard), onde A e B são os Top 30 das duas execuções, comparados por DOI. O valor final é a média de J nos temas repetidos. |
+| Unidade e escala | Razão adimensional, de 0 a 1 |
+| Fonte dos dados | Dois Top 30 do mesmo tema, com a mesma configuração |
+| Procedimento de coleta | (1) Executar a triagem completa de um tema e registrar o Top 30 (A). (2) Esperar ao menos 24 horas. (3) Repetir a execução com a mesma configuração e registrar o Top 30 (B). (4) Cruzar A e B por DOI e calcular J. |
+| Critério de interpretação | Quanto maior, melhor. Valor abaixo de 1,00 é esperado, porque a triagem depende de modelo de linguagem e pode variar entre execuções. Ver [níveis de pontuação](niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G1/M1.5.2/` |
 
 ### M2.1.1
 
@@ -168,3 +278,4 @@ _Copiar a ficha para cada métrica restante._
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 18/10/2026 | Fichas das métricas do G2 (capacidade de interação), pela ISO/IEC 25023 | Lucas Avelar | Gabriel Fae |
+| 0.4 | 18/10/2026 | Resumo e fichas das oito métricas do objetivo G1 (M1.1.1 a M1.5.2) | Larissa Gomes Silva | - |
