@@ -23,7 +23,12 @@ Cada métrica recebe um de quatro níveis: Insatisfatório (0 ponto), Aceitável
 | M2.2.3 | < 40% | 40% a 59% | 60% a 79% | ≥ 80% | Medida específica; erro irrecuperável na configuração do projeto obriga a criar outro projeto e pagar de novo |
 | M2.3.1 | 1 de 4 ou menos | 2 de 4 | 3 de 4 | 4 de 4 | O estudante chega por link de colega, anúncio ou indicação do orientador, em qualquer uma das páginas de entrada |
 | M2.3.2 | < 60%, **ou** Quality Score não entendido | 60% a 74% | 75% a 89% | ≥ 90% | O VICKY não tem tutorial nem suporte em tempo real, e a Fase 1 justificou C2 pela configuração do PICO e pela leitura do Quality Score; se o estudante não entende o score, não consegue defender a lista diante do orientador |
-| M3.1.1 | _-_ | _-_ | _-_ | _-_ | _-_ |
+| M3.1.1 | > 15 | de 10 a 15 | de 5 a 9 | < 5 | Diretrizes de design de software indicam que módulos com mais de 15 acoplamentos (dependências importadas) frequentemente violam o Princípio da Responsabilidade Única (SRP). |
+| M3.1.2 | < 70% | 70% a 84% | 85% a 94% | ≥ 95% | A orquestração assíncrona exige alta previsibilidade. O piso de Bom (85%) reflete a expectativa de modularidade adequada, enquanto abaixo de 70% o risco de quebra ao modificar é crítico. |
+| M3.2.1 | < 75% | 75% a 89% | 90% a 99% | 100% | O guia PEP8 é o padrão da comunidade. Menos de 75% de adequação indica ausência de automação de linting na esteira de desenvolvimento, causando alto atrito de leitura. |
+| M3.2.2 | > 10% | 5,1% a 10% | 2% a 5% | < 2% | Princípio DRY (*Don't Repeat Yourself*). Acima de 10%, uma correção de *bug* precisará ser replicada em múltiplos arquivos, multiplicando o risco de omissão. |
+| M3.2.3 | < 50% | 50% a 74% | 75% a 89% | ≥ 90% | Em integrações com IA e *scrapers* externos, falhas ocorrem fora do controle da aplicação. Menos de 50% de completude de logs deixa a equipe "cega" em produção. |
+| M3.3.1 | < 50% | 50% a 69% | 70% a 89% | ≥ 90% | O piso de Bom (70%) coincide com a hipótese H3.3. Abaixo de 50% a cobertura é ilusória e modificar lógicas centrais torna-se uma operação de alto risco. |
 
 Nas oito métricas de G1, quanto maior o valor, melhor.
 
@@ -71,6 +76,24 @@ As quatro faixas da tabela correspondem aos níveis de pontuação da ISO/IEC 14
 
 A última regra existe porque, entre os problemas de capacidade de interação, o único que tira dinheiro do estudante é o engano numa ação paga.
 
+## 4. Regras do G3 (manutenibilidade)
+
+### Da métrica para a questão
+
+A pontuação de uma questão é a média dos pontos (0 a 3) de suas métricas, classificada em Insatisfatório (de 0,00 a menos de 1,00), Aceitável (de 1,00 a menos de 1,75), Bom (de 1,75 a menos de 2,50) ou Excelente (de 2,50 a 3,00). Duas métricas possuem caráter bloqueador, M3.1.2 e M3.3.1: se a adequação da complexidade ciclomática (M3.1.2) ficar no nível Insatisfatório, a questão correspondente (Q3.1) não passa de Aceitável, pois um baixo acoplamento não compensa funções intrinsecamente frágeis. A questão Q3.3 é ditada exclusivamente por sua única métrica (M3.3.1). Uma métrica que não puder ser coletada é declarada não aplicável, sai da média e não recebe nível por estimativa. Cada hipótese de H3.1 a H3.3 é comparada com o valor observado no relatório, mas não entra na pontuação.
+
+### Da questão para o objetivo
+
+O objetivo G3 é a média simples das pontuações das três questões (Q3.1 a Q3.3), com as mesmas faixas de classificação, e não passa de Aceitável se a questão de testabilidade (Q3.3) ficar no nível Insatisfatório, pois modificar código assíncrono complexo sem cobertura de testes automatizados é tecnicamente insustentável. O relatório informa sempre quantas das seis métricas foram medidas e o perfil das três questões, para que a nota global não esconda gargalos de dívida técnica.
+
+### Do objetivo para o julgamento do produto
+
+| Situação | Julgamento |
+|----------|------------|
+| G3 em Bom ou Excelente | Atende |
+| G3 em Aceitável | Atende parcialmente |
+| G3 em Insatisfatório | Não atende |
+
 ## Histórico de versão
 
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
@@ -79,3 +102,4 @@ A última regra existe porque, entre os problemas de capacidade de interação, 
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 18/10/2026 | Níveis de pontuação e regras de julgamento do G2 (capacidade de interação) | Lucas Avelar | Gabriel Fae |
 | 0.4 | 18/10/2026 | Níveis das oito métricas de G1 e critérios de julgamento do objetivo G1 | Larissa Gomes Silva | - |
+| 0.5 | 18/10/2026 | Níveis das métricas de G3 e regras de agregação e julgamento do objetivo de Manutenibilidade | Guilherme Moura | - |

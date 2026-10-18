@@ -10,7 +10,7 @@ O **foco de qualidade** de cada objetivo vem da característica selecionada, e o
 |-------------------------|-------------------|--------------|
 | C1 - Adequação funcional | Estudantes de medicina | [G1](#g1) |
 | C2 - Capacidade de interação | Estudantes de medicina (usuário) | [G2](#g2) |
-| C3 - Manutenibilidade | _-_ | [G3](#g3) |
+| C3 - Manutenibilidade | Equipe de desenvolvimento | [G3](#g3) |
 
 ## G1
 
@@ -119,19 +119,55 @@ As métricas são medidas da **ISO/IEC 25023:2016**, a norma da família SQuaRE 
 
 ## G3
 
-**Característica de origem:** C3 - Manutenibilidade · **Parte interessada:** _a definir_
+**Característica de origem:** C3 - Manutenibilidade · **Parte interessada:** Equipe de desenvolvimento
+
+A [Fase 1](../fase-1/caracteristicas.md) classificou a manutenibilidade como Should Have, com 12 pontos no MoSCoW com pesos (impacto 2, viabilidade 3): a facilidade de manter e evoluir o sistema afeta diretamente a equipe de desenvolvimento, e a viabilidade de medição é alta pelo acesso total ao código-fonte. O ponto de vista é o da equipe de desenvolvimento (desenvolvedores e arquitetos). A Fase 1 apontou analisabilidade, modularidade e modificabilidade como subcaracterísticas foco, fundamentais para um sistema com integrações externas instáveis e orquestração assíncrona. As três subcaracterísticas seguem a ISO/IEC 25010:2023.
 
 | Elemento do template | Definição |
 |----------------------|-----------|
-| Analisar | o website VICKY |
-| com o propósito de | _-_ |
-| com respeito a | _-_ |
-| do ponto de vista de | _-_ |
-| no contexto de | _-_ |
+| Analisar | o código-fonte do backend em Python do VICKY (diretórios `src/vicky/` e `tests/`), com foco nas lógicas centrais e no orquestrador `pipeline.py` |
+| com o propósito de | avaliar |
+| com respeito a | manutenibilidade (analisabilidade, modularidade e testabilidade) |
+| do ponto de vista de | equipe de desenvolvimento e arquitetos de software |
+| no contexto de | orquestração do pipeline de triagem e das integrações na versão atual do código |
+
+O propósito é avaliar o código para que a Fase 4 consiga diagnosticar potenciais gargalos técnicos ("dívida técnica") que possam dificultar a implementação de melhorias futuras ou a correção de *bugs*.
+
+### Rastreabilidade com a Fase 1
+
+| Elemento do G3 | Origem na Fase 1 |
+|----------------|------------------|
+| Foco de qualidade: analisabilidade, modularidade e testabilidade | Subcaracterísticas selecionadas para C3 em [Seleção e priorização das características](../fase-1/caracteristicas.md#2-caracteristicas-selecionadas) |
+| Ponto de vista: equipe de desenvolvimento | [Partes interessadas](../fase-1/partes-interessadas.md) |
+| Contexto: backend em Python (`src/vicky/` e `tests/`), análise estática automatizada | Objetos, profundidade e limites de validade em [Escopo e profundidade](../fase-1/escopo.md) |
+| Ênfase na complexidade, padrões de código, estruturação e cobertura | Justificativa da escolha de C3 em [Seleção e priorização das características](../fase-1/caracteristicas.md#2-caracteristicas-selecionadas) |
+
+### Abstraction sheet do G3
+
+| Objeto | Propósito | Foco da qualidade | Ponto de vista |
+|--------|-----------|-------------------|----------------|
+| Código-fonte do backend em Python (VICKY) | Avaliar | Analisabilidade, modularidade e testabilidade | Equipe de desenvolvimento |
+
+| Foco da qualidade (o que será contado) | Fatores de variação |
+|----------------------------------------|---------------------|
+| Chamadas de dependências internas (acoplamento); funções que excedem o limiar de complexidade ciclomática; violações de estilo e formatação (PEP8); blocos de código ou lógicas estruturais duplicadas; funções críticas que registram logs de execução; proporção de linhas cobertas por testes automatizados. | Versão do código-fonte (commit analisado na data da coleta); ferramentas de análise escolhidas (`radon`, `flake8`, `pylint`, `pytest-cov`) e suas configurações de rigor; exclusão de arquivos gerados automaticamente. |
+
+| Hipóteses de referência | Impacto dos fatores de variação |
+|-------------------------|---------------------------------|
+| As hipóteses H3.1 a H3.3 abaixo, formuladas a partir de uma inspeção preliminar da arquitetura do código-fonte. | Ferramentas de *linting* diferem nas regras padrão. Para estabilizar a medição, as métricas definirão o uso da configuração *default* das ferramentas mais adotadas na comunidade Python, limitando o escopo estritamente à pasta principal `src/vicky/`. |
+
+### Questões, hipóteses e métricas
+
+Pelo método Goal-Question-Metric, três questões desdobram o objetivo. A primeira foca na modularidade, investigando o acoplamento e se o sistema concentra lógica excessiva em poucas funções. A segunda foca na analisabilidade: a adesão a padrões comuns da linguagem, a ausência de duplicação que confunda a leitura e a presença de logs que permitam rastrear falhas. A terceira fecha o ciclo focando na testabilidade, verificando se o sistema possui testes para suportar refatorações.
+
+!!! info "A Manutenibilidade e a ISO/IEC 25023"
+    A edição de 2016 da ISO/IEC 25023 provê medidas diretas para a avaliação estrutural do software. O G3 adota estritamente o catálogo normativo: MMo-1-G (acoplamento) e MMo-2-S (complexidade) para modularidade; MRe-2-S (regras de codificação), MRe-1-G (duplicação) e MAn-1-G (logs do sistema) cobrindo analisabilidade e reusabilidade interna; e MTe-1-G garantindo a completude de testes da subcaracterística de testabilidade.
 
 | Questão | Hipótese | Métricas |
 |---------|----------|----------|
-| Q3.1 - _a definir_ | H3.1 - _-_ | M3.1.1 |
+| Q3.1 - Qual é o grau de acoplamento entre os componentes e a adequação da complexidade estrutural do orquestrador? (modularidade) | H3.1 - O sistema possui acoplamento moderado, mas uma porção significativa das funções centrais de orquestração não atinge a adequação, excedendo o limite aceitável de complexidade ciclomática. | [M3.1.1](especificacao-das-metricas.md#m311), [M3.1.2](especificacao-das-metricas.md#m312) |
+| Q3.2 - Qual é o nível de adesão aos padrões da linguagem Python (PEP8), a densidade de duplicação e a completude de logs no sistema? (analisabilidade) | H3.2 - O código não possui duplicação estrutural significativa e cumpre as diretrizes PEP8 na maior parte do pacote, porém apresenta baixa completude de registros de log nas integrações principais. | [M3.2.1](especificacao-das-metricas.md#m321), [M3.2.2](especificacao-das-metricas.md#m322), [M3.2.3](especificacao-das-metricas.md#m323) |
+| Q3.3 - O código-fonte possui uma suíte de testes abrangente que garanta o funcionamento sistêmico? (testabilidade) | H3.3 - A cobertura de testes automatizados abrange 70% ou mais das linhas de código testáveis do backend (`src/vicky/`). | [M3.3.1](especificacao-das-metricas.md#m331) |
 
 !!! tip "Cuidados apontados pela rubrica"
     - As questões não devem ser a própria métrica em forma de pergunta (F2-C2).
@@ -145,3 +181,4 @@ As métricas são medidas da **ISO/IEC 25023:2016**, a norma da família SQuaRE 
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 18/10/2026 | GQM de capacidade de interação (G2): objetivo, rastreabilidade com a Fase 1, abstraction sheet, questões e hipóteses | Lucas Avelar | Gabriel Fae |
 | 0.4 | 18/10/2026 | GQM de adequação funcional (G1): objetivo, rastreabilidade com a Fase 1, abstraction sheet, questões e hipóteses | Larissa Gomes Silva | - |
+| 0.5 | 18/10/2026 | GQM de manutenibilidade (G3): objetivo, rastreabilidade com a Fase 1, abstraction sheet, questões e hipóteses | Guilherme Moura | - |

@@ -21,7 +21,12 @@ Cada métrica possui uma ficha com os campos exigidos pela Premissa 2: **defini�
 | M2.2.3 | Recuperabilidade de erro do usuário (UEp-3-S) | Q2.2 | C2 | Inspeção das telas |
 | M2.3.1 | Autodescrição dos pontos de entrada (UAp-3-S) | Q2.3 | C2 | Inspeção das páginas de entrada |
 | M2.3.2 | Interface autoexplicativa (ULe-4-S) | Q2.3 | C2 | Testes de cenário com estudantes |
-| M3.1.1 | _-_ | Q3.1 | C3 | _-_ |
+| M3.1.1 | Acoplamento de Componentes (MMo-1-G) | Q3.1 | C3 | Código-fonte (`src/vicky/`) e análise de imports |
+| M3.1.2 | Adequação da Complexidade Ciclomática (MMo-2-S) | Q3.1 | C3 | Código-fonte (`pipeline.py`) e `radon cc` |
+| M3.2.1 | Conformidade de Estilo PEP8 (MRe-2-S) | Q3.2 | C3 | Código-fonte (`src/vicky/`) e `flake8` |
+| M3.2.2 | Densidade de Código Duplicado (MRe-1-G) | Q3.2 | C3 | Código-fonte (`src/vicky/`) e `pylint` |
+| M3.2.3 | Completude de Logs do Sistema (MAn-1-G) | Q3.2 | C3 | Código-fonte (`src/vicky/`) e inspeção de código |
+| M3.3.1 | Completude de Testes Automatizados (MTe-1-G) | Q3.3 | C3 | Código-fonte (`tests/`) e `pytest-cov` |
 
 ## Temas de teste de G1
 
@@ -269,7 +274,101 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Critério de interpretação | Quanto maior, melhor; o Quality Score tem regra própria nos níveis; ver [níveis de pontuação](niveis-e-julgamento.md) |
 | Local dos dados brutos | `dados/avaliacao/M2.3.2/` |
 
-_Copiar a ficha para cada métrica restante._
+### M3.1.1
+
+| Campo | Definição |
+| --- | --- |
+| Nome | Acoplamento de Componentes |
+| Medida da ISO/IEC 25023:2016 | MMo-1-G, *Coupling of components* (genérica) |
+| Subcaracterística | Modularidade |
+| Questão / objetivo | Q3.1 / G3 |
+| Definição | Grau de interdependência entre os módulos do código Python. Um alto número de dependências (imports) entre arquivos internos do sistema quebra a modularidade, fazendo com que a modificação de um módulo exija o entendimento e alteração de vários outros. |
+| Procedimento de cálculo | X = A / B, onde A = número de dependências (chamadas de módulos internos importados) identificadas no código e B = número total de módulos (arquivos `.py`) avaliados no pacote. |
+| Unidade e escala | Razão adimensional (média de acoplamento por módulo), de 0 a infinito. |
+| Fonte dos dados | Diretório `src/vicky/` (versão de produção atual). |
+| Procedimento de coleta | (1) Listar todos os arquivos `.py` dentro de `src/vicky/` (B). (2) Em cada arquivo, contar o número de imports locais apontando para outros módulos do próprio projeto (A). (3) Calcular X. |
+| Critério de interpretação | Quanto menor, melhor. Um valor alto indica sistema monolítico e altamente entrelaçado. Ver [níveis de pontuação](https://www.google.com/search?q=niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G3/M3.1.1/` |
+
+### M3.1.2
+
+| Campo | Definição |
+| --- | --- |
+| Nome | Adequação da Complexidade Ciclomática |
+| Medida da ISO/IEC 25023:2016 | MMo-2-S, *Cyclomatic complexity adequacy* (específica) |
+| Subcaracterística | Modularidade e Modificabilidade |
+| Questão / objetivo | Q3.1 / G3 |
+| Definição | Proporção de funções do orquestrador que possuem um limite aceitável de caminhos lógicos independentes (decisões `if`, `while`, `for`). Funções que excedem o limiar de complexidade concentram responsabilidades demais e têm alto risco de falha ao serem modificadas. |
+| Procedimento de cálculo | X = 1 - (A / B), onde A = número de funções/módulos de software cujo score de complexidade ciclomática excede o limiar especificado (CC > 10, notas C, D, E ou F no `radon`) e B = número total de funções/módulos implementados e avaliados. |
+| Unidade e escala | Proporção, de 0 a 1 (apresentada em %). |
+| Fonte dos dados | Arquivo `src/vicky/pipeline.py` (versão de produção atual) e biblioteca `radon cc`. |
+| Procedimento de coleta | (1) Executar o comando `radon cc src/vicky/pipeline.py -s -a` no terminal. (2) Registrar o total de funções avaliadas (B). (3) Contar quantas funções registraram score maior que 10 (A). (4) Calcular a adequação X. |
+| Critério de interpretação | Quanto maior (mais próximo de 1 ou 100%), melhor. Ver [níveis de pontuação](https://www.google.com/search?q=niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G3/M3.1.2/` |
+
+### M3.2.1
+
+| Campo | Definição |
+| --- | --- |
+| Nome | Conformidade de Estilo PEP8 |
+| Medida da ISO/IEC 25023:2016 | MRe-2-S, *Coding rules compliance* (específica), aplicada para avaliar regras de estilo da linguagem que impactam a analisabilidade. |
+| Subcaracterística | Analisabilidade |
+| Questão / objetivo | Q3.2 / G3 |
+| Definição | Proporção de arquivos do código central em Python que cumprem integralmente as diretrizes do guia de estilo PEP8, sem apresentar violações sintáticas ou de formatação que dificultem a leitura por novos desenvolvedores. |
+| Procedimento de cálculo | C = A / B, onde A = arquivos sem violações registradas pelo *linter* e B = total de arquivos analisados dentro da pasta `src/vicky/` (excluindo dependências e testes). |
+| Unidade e escala | Proporção, de 0 a 1 (apresentada em %). |
+| Fonte dos dados | Diretório `src/vicky/` e biblioteca de linting `flake8`. |
+| Procedimento de coleta | (1) Executar `flake8 src/vicky/ --count --statistics` no terminal com as configurações padrão. (2) Contar quantos arquivos únicos retornaram mensagens de erro/aviso. (3) Subtrair esse número do total de arquivos (B) para achar os arquivos em conformidade (A). (4) Calcular C. |
+| Critério de interpretação | Quanto maior, melhor. Baixa conformidade quebra a expectativa visual de mantenedores experientes. Ver [níveis de pontuação](https://www.google.com/search?q=niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G3/M3.2.1/` |
+
+### M3.2.2
+
+| Campo | Definição |
+| --- | --- |
+| Nome | Densidade de Código Duplicado |
+| Medida da ISO/IEC 25023:2016 | MRe-1-G, *Asset reusability* (genérica), adaptada: mede a proporção de blocos repetidos (baixa reutilização) em vez de reuso de componentes sistêmicos. |
+| Subcaracterística | Analisabilidade e Modularidade |
+| Questão / objetivo | Q3.2 / G3 |
+| Definição | Porcentagem do código-fonte que consiste em blocos de lógica copiados e colados estruturalmente idênticos. O código duplicado fere o princípio DRY (*Don't Repeat Yourself*) e aumenta o custo cognitivo de análise e o risco de omissão em modificações. |
+| Procedimento de cálculo | D = (Linhas de código duplicadas apontadas pelo detector / Total de linhas de código avaliadas) * 100. |
+| Unidade e escala | Proporção, de 0% a 100%. |
+| Fonte dos dados | Diretório `src/vicky/` e biblioteca `pylint`. |
+| Procedimento de coleta | (1) Executar comando de detecção de duplicação: `pylint --disable=all --enable=duplicate-code src/vicky/`. (2) Registrar o total de linhas acusadas como clones. (3) Extrair o total de linhas do projeto usando `radon raw`. (4) Calcular D. |
+| Critério de interpretação | Quanto menor, melhor. Taxas altas indicam falha de abstração e necessidade de extração de métodos auxiliares. Ver [níveis de pontuação](https://www.google.com/search?q=niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G3/M3.2.2/` |
+
+### M3.2.3
+
+| Campo | Definição |
+| --- | --- |
+| Nome | Completude de Logs do Sistema |
+| Medida da ISO/IEC 25023:2016 | MAn-1-G, *Completeness of system log* (genérica) |
+| Subcaracterística | Analisabilidade |
+| Questão / objetivo | Q3.2 / G3 |
+| Definição | Proporção das funções críticas do orquestrador (orquestração de APIs, manipulação de banco de dados e scraping) que registram corretamente eventos de sucesso e exceções em *log*. Sem logs detalhados, o diagnóstico de falhas em produção é dificultado ou impossível. |
+| Procedimento de cálculo | X = A / B, onde A = número de funções críticas avaliadas que implementam registros explícitos de *log* para rastreabilidade de negócio ou erro, e B = total de funções críticas mapeadas para avaliação. |
+| Unidade e escala | Proporção, de 0 a 1 (apresentada em %). |
+| Fonte dos dados | Arquivo `src/vicky/pipeline.py` e logs do sistema. |
+| Procedimento de coleta | (1) Selecionar as funções e rotinas responsáveis pelas integrações e pipeline principal (B). (2) Inspecionar o corpo de cada função verificando o uso explícito da biblioteca de `logging` do Python para registrar passos importantes ou blocos `except` (A). (3) Calcular X. |
+| Critério de interpretação | Quanto maior, melhor. Ausência de log em funções complexas cria pontos "cegos" na manutenção. Ver [níveis de pontuação](https://www.google.com/search?q=niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G3/M3.2.3/` |
+
+### M3.3.1
+
+| Campo | Definição |
+| --- | --- |
+| Nome | Completude de Testes Automatizados |
+| Medida da ISO/IEC 25023:2016 | MTe-1-G, *Test completeness* (genérica) |
+| Subcaracterística | Testabilidade (e Modificabilidade) |
+| Questão / objetivo | Q3.3 / G3 |
+| Definição | Proporção de linhas de código estruturais do backend que são efetivamente executadas pela suíte de testes automatizados existente. Uma alta cobertura fornece à equipe de desenvolvimento a segurança técnica necessária para modificar orquestrações complexas sem introduzir regressões. |
+| Procedimento de cálculo | T = (Linhas de código executadas durante a rodada de testes / Total de linhas de código do escopo testável) * 100. |
+| Unidade e escala | Proporção, de 0% a 100%. |
+| Fonte dos dados | Código-fonte (`src/vicky/`), diretório de testes (`tests/`) e ferramenta de cobertura `pytest-cov`. |
+| Procedimento de coleta | (1) Instalar a biblioteca `pytest-cov` no ambiente virtual do projeto. (2) Executar a suíte de testes unitários e de integração através do comando: `pytest --cov=src/vicky/ tests/`. (3) Registrar a porcentagem total de cobertura gerada pelo relatório da ferramenta. |
+| Critério de interpretação | Quanto maior, melhor. Cobertura muito baixa inviabiliza modificações seguras contínuas. Ver [níveis de pontuação](https://www.google.com/search?q=niveis-e-julgamento.md). |
+| Local dos dados brutos | `dados/avaliacao/G3/M3.3.1/` |
 
 ## Histórico de versão
 
@@ -279,3 +378,4 @@ _Copiar a ficha para cada métrica restante._
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 18/10/2026 | Fichas das métricas do G2 (capacidade de interação), pela ISO/IEC 25023 | Lucas Avelar | Gabriel Fae |
 | 0.4 | 18/10/2026 | Resumo e fichas das oito métricas do objetivo G1 (M1.1.1 a M1.5.2) | Larissa Gomes Silva | - |
+| 0.5 | 18/10/2026 | Fichas das métricas do objetivo G3 (Manutenibilidade) | Guilherme Moura | - |
