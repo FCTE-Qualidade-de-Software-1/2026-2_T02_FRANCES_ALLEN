@@ -18,7 +18,7 @@ Realizar uma avaliação em que medida o VICKY atende às necessidades dos estud
 
 A avaliação do VICKY adota uma perspectiva dupla que integra visões externas e internas. A perspectiva externa examina o produto em uso via navegador web, focando na jornada do usuário, como autenticação, parametrização de buscas e exportação dos resultados. Essa visão orienta a análise de Adequação Funcional e Capacidade de Interação, garantindo uma triagem precisa, intuitiva e protegida contra erros.
 
-Já a perspectiva interna debruça-se sobre a estrutura do código-fonte do backend, avaliando a orquestração de consultas e a integração com LLMs. Essa abordagem permite medir a Manutenibilidade, verificando modularidade e complexidade estrutural para assegurar a evolução sustentável do sistema.
+Já a perspectiva interna examina a estrutura do código-fonte do backend, avaliando a orquestração de consultas e a integração com LLMs. Essa abordagem permite medir a Manutenibilidade, verificando modularidade e complexidade estrutural para assegurar a evolução sustentável do sistema.
 
 ## Histórico de versão
 
