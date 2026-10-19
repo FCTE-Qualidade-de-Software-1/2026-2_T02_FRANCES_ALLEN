@@ -16,18 +16,18 @@ Cada métrica recebe um de quatro níveis: Insatisfatório (0 ponto), Aceitável
 | M1.4.1 | abaixo de 0,36 | de 0,36 a menos de 0,50 | de 0,50 a menos de 0,70 | 0,70 ou mais | O piso de Aceitável, 0,36, é o valor crítico de ρ com 30 itens a 5% de significância, em teste bilateral (Zar, 1972); abaixo dele o escore não se distingue de ordem aleatória frente à rubrica. Demais faixas por convenção da equipe; o piso de Bom (0,50) coincide com H1.4. |
 | M1.5.1 | abaixo de 80% | de 80% a menos de 93% | de 93% a menos de 100% | 100% | Proposta de G1, a validar pelo grupo. Filtro é regra objetiva, então Excelente só vale sem nenhuma violação; o piso de Bom (93%) coincide com H1.5. |
 | M1.5.2 | abaixo de 0,50 | de 0,50 a menos de 0,70 | de 0,70 a menos de 0,85 | 0,85 ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 0,50 o registro da busca não permite replicar a revisão. |
-| M2.1.1 | < 70% | 70% a 89% | 90% a 99% | 100% | O estudante decide sozinho, antes de pagar, se a ferramenta serve para o trabalho dele; com 10 cenários, "Bom" admite um cenário não descrito |
-| M2.2.1 | < 70% | 70% a 87% | 88% a 99% | 100% | O VICKY não tem tutorial nem suporte em tempo real, e o estudante o usa poucas vezes por semestre; com 9 funções, "Bom" admite uma função sem orientação |
-| M2.2.2 | < 50% | 50% a 74% | 75% a 89% | ≥ 90% | Os erros mais prováveis estão no cadastro e na criação do projeto, ou seja, no primeiro uso; mensagem sem solução ali leva ao abandono |
-| M2.3.1 | < 0,70 | 0,70 a 0,79 | 0,80 a 0,89 | ≥ 0,90 | Com 10 padrões na lista, "Bom" admite até 2 inconsistências; a partir de 4, o estudante precisa reaprender telas do mesmo fluxo |
-| M2.3.2 | < 70% | 70% a 84% | 85% a 94% | ≥ 95% | Texto técnico do servidor é a falha mais grave para quem não é da área de computação |
-| M2.4.1 | < 70%, **ou** qualquer ação que consome crédito sem proteção | 70% a 84% | 85% a 99%, com todas as ações que consomem crédito protegidas | 100% | A triagem completa custa R$ 24,90 por execução, e o modelo de qualidade destaca que, na interface paga por crédito, um erro de configuração custa dinheiro e tempo |
-| M2.4.2 | < 40% | 40% a 59% | 60% a 79% | ≥ 80% | Medida específica; os erros de entrada mais caros estão na configuração do projeto, que define a triagem paga |
-| M2.5.1 | < 40% | 40% a 59% | 60% a 79% | ≥ 80% | Prioridade secundária no modelo de qualidade: a aparência influencia a satisfação, mas não decide se o estudante conclui a tarefa |
-| M2.6.1 | < 75%, **ou** F01 (cadastro e login) não concluída | 75% a 87% | 88% a 99% | 100% | A Lei Brasileira de Inclusão (Lei nº 13.146/2015, art. 63) obriga sites de empresas com sede no país a serem acessíveis; com 9 funções, "Bom" admite uma falha, e sem F01 nenhuma outra função é alcançável |
-| M2.6.2 | < 85% | 85% a 94% | 95% a 99% | 100% | Só 100% atende ao nível AA da WCAG 2.2, que é a referência de acessibilidade usada para cumprir o art. 63 da Lei nº 13.146/2015 |
+| M2.1.1 | < 70% | 70% a menos de 90% | 90% a menos de 100% | 100% | O estudante decide sozinho, antes de pagar, se a ferramenta serve para o trabalho dele; com 10 cenários, "Bom" admite um cenário não descrito |
+| M2.2.1 | < 70% | 70% a menos de 88% | 88% a menos de 100% | 100% | O VICKY não tem tutorial nem suporte em tempo real, e o estudante o usa poucas vezes por semestre; com 9 funções, "Bom" admite uma função sem orientação |
+| M2.2.2 | < 50% | 50% a menos de 75% | 75% a menos de 90% | ≥ 90% | Os erros mais prováveis estão no cadastro e na criação do projeto, ou seja, no primeiro uso; mensagem sem solução ali leva ao abandono |
+| M2.3.1 | < 0,70 | 0,70 a menos de 0,80 | 0,80 a menos de 0,90 | ≥ 0,90 | Com 10 padrões na lista, "Bom" admite até 2 inconsistências; a partir de 4, o estudante precisa reaprender telas do mesmo fluxo |
+| M2.3.2 | < 70% | 70% a menos de 85% | 85% a menos de 95% | ≥ 95% | Texto técnico do servidor é a falha mais grave para quem não é da área de computação |
+| M2.4.1 | < 70%, **ou** qualquer ação que consome crédito sem proteção | 70% a menos de 85% | 85% a menos de 100%, com todas as ações que consomem crédito protegidas | 100% | A triagem completa custa R$ 24,90 por execução, e o modelo de qualidade destaca que, na interface paga por crédito, um erro de configuração custa dinheiro e tempo |
+| M2.4.2 | < 40% | 40% a menos de 60% | 60% a menos de 80% | ≥ 80% | Medida específica; os erros de entrada mais caros estão na configuração do projeto, que define a triagem paga |
+| M2.5.1 | < 40% | 40% a menos de 60% | 60% a menos de 80% | ≥ 80% | Prioridade secundária no modelo de qualidade: a aparência influencia a satisfação, mas não decide se o estudante conclui a tarefa |
+| M2.6.1 | < 75%, **ou** F01 (cadastro e login) não concluída | 75% a menos de 88% | 88% a menos de 100% | 100% | A Lei Brasileira de Inclusão (Lei nº 13.146/2015, art. 63) obriga sites de empresas com sede no país a serem acessíveis; com 9 funções, "Bom" admite uma falha, e sem F01 nenhuma outra função é alcançável |
+| M2.6.2 | < 85% | 85% a menos de 95% | 95% a menos de 100% | 100% | Só 100% atende ao nível AA da WCAG 2.2, que é a referência de acessibilidade usada para cumprir o art. 63 da Lei nº 13.146/2015 |
 | M2.7.1 | 1 de 4 ou menos | 2 de 4 | 3 de 4 | 4 de 4 | O estudante chega por link de colega, anúncio ou indicação do orientador, em qualquer uma das páginas de entrada |
-| M2.7.2 | < 60%, **ou** Quality Score não entendido | 60% a 74% | 75% a 89% | ≥ 90% | O modelo de qualidade destaca que o VICKY usa termos técnicos (PICO, Quality Score) e promete que o estudante não precisa saber montar um PICO; se ele não entende o score, não consegue defender a lista diante do orientador |
+| M2.7.2 | < 60%, **ou** Quality Score não entendido | 60% a menos de 75% | 75% a menos de 90% | ≥ 90% | O modelo de qualidade destaca que o VICKY usa termos técnicos (PICO, Quality Score) e promete que o estudante não precisa saber montar um PICO; se ele não entende o score, não consegue defender a lista diante do orientador |
 | M3.1.1 | > 15 | de 10 a 15 | de 5 a 9 | < 5 | Diretrizes de design de software indicam que módulos com mais de 15 acoplamentos (dependências importadas) frequentemente violam o Princípio da Responsabilidade Única (SRP). |
 | M3.1.2 | < 70% | 70% a 84% | 85% a 94% | ≥ 95% | A orquestração assíncrona exige alta previsibilidade. O piso de Bom (85%) reflete a expectativa de modularidade adequada, enquanto abaixo de 70% o risco de quebra ao modificar é crítico. |
 | M3.2.1 | < 75% | 75% a 89% | 90% a 99% | 100% | O guia PEP8 é o padrão da comunidade. Menos de 75% de adequação indica ausência de automação de linting na esteira de desenvolvimento, causando alto atrito de leitura. |
@@ -59,7 +59,7 @@ O objetivo G1 é a média simples das pontuações das cinco questões (Q1.1 a Q
 
 A ISO/IEC 25023:2016 define como calcular cada medida, mas não diz qual valor é bom: a cláusula 1 declara que a norma não atribui faixas de valores a níveis de pontuação, porque isso depende do produto e da necessidade de quem o usa. Por isso cada limiar do G2 está justificado na coluna "Fonte do limiar" por uma necessidade do estudante de medicina ou por uma decisão registrada na Fase 1, e foi fixado antes da coleta.
 
-As quatro faixas da tabela correspondem aos níveis de pontuação da ISO/IEC 14598-1:1999 (subcláusula 8.2): **Excelente** = ultrapassa os requisitos, **Bom** = intervalo alvo, **Aceitável** = mínimo aceitável e **Insatisfatório** = inaceitável. Os três primeiros são satisfatórios.
+As quatro faixas seguem a escala clássica de níveis de pontuação da ISO/IEC 14598-1:1999: **Excelente** = ultrapassa os requisitos, **Bom** = intervalo alvo, **Aceitável** = mínimo aceitável e **Insatisfatório** = inaceitável; os três primeiros são satisfatórios. A 14598-1 foi cancelada e substituída pela família SQuaRE; na ISO/IEC 25040:2024 o mesmo papel cabe aos níveis de classificação da qualidade (*quality rating levels*) definidos antes da medição. Cada faixa é um intervalo fechado à esquerda e aberto à direita, para que todo valor medido caia em exatamente um nível.
 
 **1. Da medição para a hipótese.** A hipótese H2.x é **confirmada** quando os valores medidos caem na faixa que ela previu e **refutada** quando não caem. Confirmar ou refutar a hipótese não muda o julgamento do produto: mostra se a leitura preliminar da equipe estava certa.
 
@@ -83,7 +83,7 @@ As quatro faixas da tabela correspondem aos níveis de pontuação da ISO/IEC 14
 | No máximo uma em "Insatisfatório" | Atende parcialmente |
 | Duas ou mais em "Insatisfatório", **ou** Q2.4 em "Insatisfatório" por ação que consome crédito sem proteção | Não atende |
 
-A última regra existe porque, entre os problemas de capacidade de interação, o único que tira dinheiro do estudante é o engano numa ação paga.
+Quando mais de uma linha se aplica, vale a mais severa: "Não atende" prevalece sobre "Atende parcialmente". A regra da Q2.4 existe porque, entre os problemas de capacidade de interação, o único que tira dinheiro do estudante é o engano numa ação paga.
 
 ## 4. Regras do G3 (manutenibilidade)
 
@@ -112,4 +112,4 @@ O objetivo G3 é a média simples das pontuações das três questões (Q3.1 a Q
 | 0.3 | 18/10/2026 | Níveis de pontuação e regras de julgamento do G2 (capacidade de interação) | Lucas Avelar | Gabriel Fae |
 | 0.4 | 18/10/2026 | Níveis das oito métricas de G1 e critérios de julgamento do objetivo G1 | Larissa Gomes Silva | - |
 | 0.5 | 18/10/2026 | Níveis das métricas de G3 e regras de agregação e julgamento do objetivo de Manutenibilidade | Guilherme Moura | - |
-| 0.6 | 19/10/2026 | Níveis e regras do G2 realinhados às sete subcaracterísticas de C2 | Lucas Avelar | Gabriel Fae |
+| 0.6 | 18/10/2026 | Níveis e regras do G2 realinhados às sete subcaracterísticas de C2 | Lucas Avelar | Gabriel Fae |

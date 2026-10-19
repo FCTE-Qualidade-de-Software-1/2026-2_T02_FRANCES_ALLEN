@@ -181,7 +181,7 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Fonte dos dados | Páginas públicas do VICKY em produção (`/`, `/termos`, `/privacidade`) |
 | Procedimento de coleta | Para cada cenário, o avaliador procura nas páginas públicas um trecho que diga o que ele entrega ao estudante e registra o trecho e a captura de tela. Cenário citado só de passagem, sem dizer o que entrega, não conta. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.1.1/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.1.1/` |
 
 ### M2.2.1
 
@@ -197,7 +197,7 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Fonte dos dados | Telas do VICKY em produção, com a conta de cortesia |
 | Procedimento de coleta | Para cada função, o avaliador registra onde está a orientação e se ela diz como executar a função, não só que ela existe. Material fora do produto (vídeo, e-mail, conversa com a equipe do VICKY) não conta. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.2.1/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.2.1/` |
 
 ### M2.2.2
 
@@ -213,7 +213,7 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Fonte dos dados | Inventário das mensagens no código-fonte (fork do VICKY) e disparo das mensagens em produção |
 | Procedimento de coleta | 1) Listar no código as mensagens de erro das rotas do escopo. 2) Disparar em produção as que podem ser provocadas sem gastar crédito, com um roteiro fixo de entradas inválidas (campo vazio, e-mail inválido, senha curta, senhas diferentes, e-mail já cadastrado, senha errada, tema vazio, limite de pré-visualizações), e guardar a captura de tela. 3) Classificar cada mensagem: tem causa? tem solução no texto? Botão ao lado da mensagem não conta como solução escrita. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.2.2/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.2.2/` |
 
 ### M2.3.1
 
@@ -224,12 +224,12 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Subcaracterística | Operabilidade |
 | Questão / objetivo | Q2.3 / G2 |
 | Definição | Quanto os padrões de interação que se repetem no VICKY são executados da mesma forma em todas as telas do escopo onde aparecem |
-| Procedimento de cálculo | X = 1 - A / B, onde A = padrões de interação executados de forma inconsistente e B = padrões de interação que precisam ser consistentes. Lista inicial de B (10): acionar a ação principal, confirmar ação irreversível, exibir erro, exibir sucesso, exibir lista vazia, indicar o campo em foco, navegar pelo menu, acompanhar processo longo, preencher formulário, sair da conta. A equipe expressa a medida como 1 - A / B para que, como nas demais medidas do G2, valor maior signifique melhor; a cláusula 2, alínea d, da norma permite modificar uma medida desde que a mudança seja justificada |
+| Procedimento de cálculo | X = 1 - A / B, onde A = padrões de interação executados de forma inconsistente e B = padrões de interação que precisam ser consistentes. Lista inicial de B (10): acionar a ação principal, confirmar ação irreversível, exibir erro, exibir sucesso, exibir lista vazia, indicar o campo em foco, navegar pelo menu, reabrir um projeto anterior, acompanhar processo longo, preencher formulário. A equipe expressa a medida como 1 - A / B para que, como nas demais medidas do G2, valor maior signifique melhor; a cláusula 2, alínea d, da norma permite modificar uma medida desde que a mudança seja justificada |
 | Unidade e escala | De 0 a 1; 1 significa nenhuma inconsistência |
 | Fonte dos dados | Telas do VICKY em produção e templates do código-fonte |
 | Procedimento de coleta | Para cada padrão, o avaliador registra como ele aparece em cada tela do escopo (captura de tela). Um padrão é inconsistente quando duas ou mais telas o resolvem de forma visual ou comportamental diferente, como um estado vazio com ícone e cor diferentes ou uma confirmação ora em janela própria, ora na caixa nativa do navegador. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.3.1/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.3.1/` |
 
 ### M2.3.2
 
@@ -242,10 +242,10 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Definição | Proporção das mensagens do sistema (erro, sucesso, aviso e andamento) que comunicam ao estudante o resultado certo ou a instrução certa |
 | Procedimento de cálculo | X = A / B, onde A = mensagens que comunicam o resultado ou a instrução de forma correta e compreensível para o estudante e B = mensagens do fluxo do escopo |
 | Unidade e escala | Razão de 0 a 1, apresentada em % |
-| Fonte dos dados | Mesmo inventário de mensagens da M2.2.2, ampliado com as de sucesso, aviso e andamento da triagem |
+| Fonte dos dados | Mesmo inventário de mensagens da M2.2.2, ampliado com as de sucesso, aviso, andamento da triagem e saldo de créditos antes de executar |
 | Procedimento de coleta | Cada mensagem é classificada como clara quando diz o que aconteceu em linguagem do estudante. Mensagem com texto técnico cru do servidor, ou que não diz o resultado, conta como não clara. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.3.2/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.3.2/` |
 
 ### M2.4.1
 
@@ -256,12 +256,12 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Subcaracterística | Proteção contra erro do usuário |
 | Questão / objetivo | Q2.4 / G2 |
 | Definição | Proporção das ações e entradas do estudante que poderiam causar perda de crédito, de trabalho ou de configuração e que estão protegidas contra o engano |
-| Procedimento de cálculo | X = A / B, onde A = ações e entradas protegidas (confirmação antes de executar, aviso explícito do efeito ou bloqueio de entrada inválida) e B = ações e entradas que poderiam ser protegidas. Lista inicial de B: iniciar a triagem completa (consome 1 crédito), excluir projeto, parar a triagem em andamento, definir a quantidade do Top (não pode ser alterada depois), ativar o filtro de acesso aberto, gerar pré-visualização (consome a cota diária) |
+| Procedimento de cálculo | X = A / B, onde A = ações e entradas protegidas (confirmação antes de executar, aviso explícito do efeito ou bloqueio de entrada inválida) e B = ações e entradas que poderiam ser protegidas. Lista inicial de B, a conferir em produção na Fase 3: iniciar a triagem completa (consome 1 crédito), excluir projeto, parar a triagem em andamento, definir a quantidade do Top (não pode ser alterada depois), ativar o filtro de acesso aberto, gerar pré-visualização (consome a cota diária) |
 | Unidade e escala | Razão de 0 a 1, apresentada em % |
 | Fonte dos dados | Telas do VICKY em produção e código-fonte |
 | Procedimento de coleta | O avaliador verifica a proteção de cada item pela tela e confirma no código. Na ação de iniciar a triagem, a verificação é feita numa das triagens já previstas no G1, com os créditos de cortesia, sem triagem extra. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ação que consome crédito sem proteção tem regra própria nos níveis; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.4.1/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.4.1/` |
 
 ### M2.4.2
 
@@ -275,9 +275,9 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Procedimento de cálculo | X = A / B, onde A = erros de entrada para os quais o sistema sugere o valor correto e B = erros de entrada que o sistema detecta |
 | Unidade e escala | Razão de 0 a 1, apresentada em % |
 | Fonte dos dados | Formulários de cadastro, login, recuperação de senha e criação de projeto, em produção |
-| Procedimento de coleta | O avaliador aplica um roteiro fixo de entradas inválidas (e-mail sem domínio, senha curta, senhas diferentes, tema vazio, quantidade do Top fora de 1 a 30) e registra se o sistema detectou o erro e se sugeriu o valor correto. Correção silenciosa, em que o sistema troca o valor sem avisar, conta como detectada e não sugerida. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
+| Procedimento de coleta | O avaliador aplica um roteiro fixo de entradas inválidas (e-mail sem domínio, senha curta, senhas diferentes, tema vazio, quantidade do Top fora dos valores permitidos) e registra se o sistema detectou o erro e se sugeriu o valor correto. Correção silenciosa, em que o sistema troca o valor sem avisar, conta como detectada e não sugerida. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.4.2/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.4.2/` |
 
 ### M2.5.1
 
@@ -293,7 +293,7 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Fonte dos dados | Questionário aplicado ao fim da sessão de testes com estudantes da M2.7.2 |
 | Procedimento de coleta | Sessão com cinco estudantes de medicina que nunca usaram o VICKY, em desktop, com termo de consentimento, tela gravada e identificação anonimizada (P01 a P05): o participante pensa em voz alta enquanto cria um projeto e gera o PICO para um tema dado (F01 a F04) e depois abre um projeto já triado com os créditos de cortesia, interpreta a lista, favorita artigos, abre o log e exporta (F06 a F09). Ao fim, o participante vê a captura de cada uma das 5 telas e responde, numa escala de 1 a 5, se a tela é agradável e convida a continuar usando; respostas 4 e 5 contam como agradável. A nota 3 da UIn-1-S na norma recomenda que essa medida seja feita por representantes do público-alvo, por isso ela sai dos estudantes e não da equipe |
 | Critério de interpretação | Quanto maior, melhor; prioridade secundária no modelo de qualidade; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.5.1/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.5.1/` |
 
 ### M2.6.1
 
@@ -309,7 +309,7 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Fonte dos dados | Teste do VICKY em produção, em desktop, sem mouse nem trackpad |
 | Procedimento de coleta | O avaliador executa cada função só com o teclado e registra onde o foco sumiu, onde algum controle não pôde ser acionado e quais alvos são menores que o mínimo. A triagem (F05) é testada numa das triagens já previstas no G1. Limitação declarada: o avaliador simula o perfil; não há participante com deficiência motora, e o suporte a pessoas cegas fica fora, como decidido no modelo de qualidade |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.6.1/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.6.1/` |
 
 ### M2.6.2
 
@@ -325,7 +325,7 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Fonte dos dados | Extensão axe DevTools no Chrome, regra de contraste, versão registrada na coleta |
 | Procedimento de coleta | Rodar o axe nas telas de página inicial, cadastro, login, lista de projetos, novo projeto, detalhe do projeto, lista de artigos e ficha do artigo, exportar o relatório de cada tela e conferir manualmente os pares que o axe marcar como incertos. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.6.2/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.6.2/` |
 
 ### M2.7.1
 
@@ -341,7 +341,7 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Fonte dos dados | Páginas de entrada do VICKY em produção, em navegador desktop |
 | Procedimento de coleta | O avaliador abre cada página e registra, com captura de tela, se a primeira tela visível, sem rolar, diz o que o VICKY faz: buscar e triar artigos científicos sobre um tema. Dois avaliadores fazem a contagem de forma independente, pelo menos um deles sem ter lido o código; as divergências são resolvidas em conjunto e registradas |
 | Critério de interpretação | Quanto maior, melhor; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.7.1/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.7.1/` |
 
 ### M2.7.2
 
@@ -357,7 +357,7 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | Fonte dos dados | Testes de cenário com estudantes de medicina e questionário de compreensão, conforme a profundidade definida em [Escopo e profundidade](../fase-1/escopo.md) |
 | Procedimento de coleta | Sessão com cinco estudantes de medicina que nunca usaram o VICKY, em desktop, com termo de consentimento, tela gravada e identificação anonimizada (P01 a P05): o participante pensa em voz alta enquanto cria um projeto e gera o PICO para um tema dado (F01 a F04) e depois abre um projeto já triado com os créditos de cortesia, interpreta a lista, favorita artigos, abre o log e exporta (F06 a F09). Ao fim, um questionário curto pede que ele explique com as próprias palavras cada elemento da lista B; a resposta é comparada com a definição do elemento no VICKY. Um elemento conta como entendido para o participante se ele o usou sem pedir ajuda e o explicou corretamente |
 | Critério de interpretação | Quanto maior, melhor; o Quality Score tem regra própria nos níveis; ver [níveis de pontuação](niveis-e-julgamento.md) |
-| Local dos dados brutos | `dados/avaliacao/M2.7.2/` |
+| Local dos dados brutos | `dados/avaliacao/G2/M2.7.2/` |
 
 ### M3.1.1
 
@@ -464,4 +464,4 @@ As métricas de G1 usam quatro temas de teste (T1 a T4): um fármaco com desfech
 | 0.3 | 18/10/2026 | Fichas das métricas do G2 (capacidade de interação), pela ISO/IEC 25023 | Lucas Avelar | Gabriel Fae |
 | 0.4 | 18/10/2026 | Resumo e fichas das oito métricas do objetivo G1 (M1.1.1 a M1.5.2) | Larissa Gomes Silva | - |
 | 0.5 | 18/10/2026 | Fichas das métricas do objetivo G3 (Manutenibilidade) | Guilherme Moura | - |
-| 0.6 | 19/10/2026 | Fichas do G2 realinhadas às sete subcaracterísticas de C2 | Lucas Avelar | Gabriel Fae |
+| 0.6 | 18/10/2026 | Fichas do G2 realinhadas às sete subcaracterísticas de C2 | Lucas Avelar | Gabriel Fae |
