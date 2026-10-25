@@ -1,0 +1,19 @@
+issue,titulo,responsavel,categoria,horas_estimadas,criada_em,fechada_em,status_25_10
+2,Artigo: criar o projeto no Overleaf com o template da SBC,MrBolt2005,artigo,1,2026-10-19,,aberta
+3,Artigo: Introdução e subseção de propósito e partes interessadas,GuilhermeMM3,artigo,3,2026-10-19,,aberta
+4,Artigo: descrição do produto e modelo de qualidade,Faehzin,artigo,3,2026-10-19,,aberta
+5,"Artigo: seleção e priorização, escopo, rastreabilidade e GQM de manutenibilidade",Guilherme-Moura,artigo,4,2026-10-19,,aberta
+6,Artigo: GQM de adequação funcional,larigs,artigo,3,2026-10-19,,aberta
+7,Artigo: GQM de capacidade de interação e figura do gráfico GQM,LucasAvelar2711,artigo,3,2026-10-19,,aberta
+8,Artigo: referencial teórico e metodologia,MrBolt2005,artigo,4,2026-10-19,,aberta
+9,Release E1,GuilhermeMM3,entrega,1,2026-10-19,,aberta
+10,Tabela de contribuição,MrBolt2005,artigo,1,2026-10-19,,aberta
+11,Declaração de uso de IA: completar as linhas de cada parte,GuilhermeMM3,entrega,1,2026-10-19,2026-10-25,fechada
+12,Gestão: primeiro ciclo de medição PSM/CID e atas,MrBolt2005,gestão,4,2026-10-19,,aberta
+13,"Fase 1: ajustes em propósito, partes interessadas e ODS",GuilhermeMM3,fase-1,2,2026-10-19,,aberta
+14,Objeto de avaliação: diagrama de contexto e campos pendentes,Faehzin,fase-1,2,2026-10-19,,aberta
+15,"GitPage: README, rodapé, equipe e ícones",Faehzin,gitpage,1,2026-10-19,2026-10-19,fechada
+16,"G3: medidas da ISO/IEC 25023, links, questões e hipóteses",Guilherme-Moura,fase-2,3,2026-10-19,,aberta
+17,Seleção e escopo: ajustes da Fase 1,Guilherme-Moura,fase-1,2,2026-10-19,,aberta
+18,G1: tirar as marcações de proposta e completar as fichas,larigs,fase-2,2,2026-10-19,,aberta
+19,Referências: anos das normas e fontes que faltam,MrBolt2005,artigo,2,2026-10-19,,aberta

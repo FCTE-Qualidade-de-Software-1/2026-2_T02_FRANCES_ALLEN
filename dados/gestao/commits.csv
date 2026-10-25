@@ -1,0 +1,24 @@
+hash,data,hora,autor,tipo,linhas_adicionadas,linhas_removidas,issue_vinculada,mensagem
+af591c0,2026-10-05,15:37,Faehzin,novo,876,0,False,"Inicialização do projeto, bases de .md e git pages"
+3c7c3f2,2026-10-05,15:46,Faehzin,novo,316,13,False,ajuste visual do mkdocs seguindo artefato previo
+8f6a5af,2026-10-16,09:46,Faehzin,retrabalho,331,122,False,reorganização do gitpages para encaixar com as fases de entrega
+6f54ef3,2026-10-17,17:28,Faehzin,novo,90,17,False,"Tarefa 02: Identifiquei o tipo de produto, descrição e os módulos/dependencias do vicky. AInda falta diagrama de contexto."
+50905bd,2026-10-18,08:33,Guilherme-Moura,novo,22,17,False,aplica método MoSCoW com pesos na priorização das características
+b64aebe,2026-10-18,08:40,Guilherme-Moura,novo,9,5,False,docs: adiciona escopo e profundidade
+51dce2b,2026-10-18,13:37,LucasAvelar2711,novo,218,14,False,Parte 5: GQM de capacidade de interação (G2) pela ISO/IEC 25023 e ramo do G2 no diagrama GQM
+e77c74c,2026-10-18,13:37,LucasAvelar2711,retrabalho,6,5,False,"Revisão do objeto de avaliação: modelo de acesso, pagamento, stack do backend e redação"
+51f2019,2026-10-18,14:33,larigs,novo,220,38,False,"Parte 4: GQM de adequação funcional (G1) com abstraction sheet, medidas adaptadas da ISO/IEC 25023 e F05 no escopo"
+d7019bb,2026-10-18,14:46,Faehzin,novo,14,10,False,Docs: readme inicial atualizado
+88bf344,2026-10-18,15:23,larigs,retrabalho,3,2,False,Fase 1: F05 marcada como dentro do escopo no objeto de avaliação e restrição do crédito atualizada
+0644178,2026-10-18,15:29,Faehzin,novo,135,22,False,T02: finalizada analise de modelo de qualidade com subcaracteristicas com analise por diagrama
+5a8dde8,2026-10-18,15:36,Faehzin,retrabalho,20,20,False,fix: cores do diagrama
+99f5e70,2026-10-18,15:38,Faehzin,retrabalho,7,3,False,fix: correção de ortografia
+af60816,2026-10-18,19:32,GuilhermeMM3,novo,18,16,False,"docs(fase-1): Inicia as informacoes do proposito, partes interessadas e ODS"
+b808f19,2026-10-18,19:49,LucasAvelar2711,novo,20,6,False,Diagrama GQM: ramo completo do G1 (adequação funcional)
+9558d49,2026-10-18,20:13,Guilherme-Moura,retrabalho,14,11,False,docs: substitui modificabilidade por testabilidade em C3 e adiciona discussao de trade-offs
+93ef23b,2026-10-18,20:15,Guilherme-Moura,novo,172,11,False,docs: adiciona GQM de manutenibilidade
+4f3d9f3,2026-10-18,20:34,GuilhermeMM3,retrabalho,1,1,False,docs(fase-1): corrige frase do documento
+8c048e1,2026-10-18,20:38,LucasAvelar2711,retrabalho,212,85,False,G2 realinhado às sete subcaracterísticas de C2 e diagrama GQM completo com os três objetivos
+1ee1f36,2026-10-18,20:55,larigs,novo,2,2,False,Adicionando nome e matricula no README.md
+ef7af41,2026-10-18,21:09,LucasAvelar2711,retrabalho,67,66,False,"Parte 5: faixas de nível sem buracos, precedência do julgamento, operabilidade alinhada ao modelo, pastas de dados do G2 e diagrama GQM com nome e código de todas as métricas"
+63373cc,2026-10-18,21:10,LucasAvelar2711,novo,20,0,False,Parte 5: README da pasta de dados do G2
