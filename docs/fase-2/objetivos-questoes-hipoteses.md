@@ -16,7 +16,7 @@ O **foco de qualidade** de cada objetivo vem da característica selecionada, e o
 
 **Característica de origem:** C1 - Adequação funcional · **Parte interessada:** Estudantes de medicina
 
-A [Fase 1](../fase-1/caracteristicas.md) classificou a adequação funcional como Must Have, com 15 pontos no MoSCoW com pesos (impacto 3, viabilidade 3): o estudante só confia no Top N se a lista trouxer a evidência certa, e a equipe tem acesso a estudantes para os testes. O ponto de vista é o dos estudantes de medicina, usuários listados nas [partes interessadas](../fase-1/partes-interessadas.md). A Fase 1 apontou completude e correção como subcaracterísticas candidatas; G1 mede também a pertinência funcional (Q1.4 e Q1.5), porque a ordem do ranking e o cumprimento dos filtros decidem se o resultado serve à tarefa que o estudante configurou. As três subcaracterísticas seguem a ISO/IEC 25010:2023: completude, correção e pertinência funcional.
+A [Fase 1](../fase-1/caracteristicas.md) classificou a adequação funcional como Must Have, com 15 pontos no MoSCoW com pesos (impacto 3, viabilidade 3): o estudante só confia no Top N se a lista trouxer a evidência certa, e a equipe tem acesso a estudantes para os testes. A Fase 1 apontou completude e correção como subcaracterísticas candidatas; G1 mede também a pertinência funcional (Q1.4 e Q1.5), porque a ordem do ranking e o cumprimento dos filtros decidem se o resultado serve à tarefa que o estudante configurou. As três subcaracterísticas (completude, correção e pertinência funcional) seguem a ISO/IEC 25010:2023.
 
 | Elemento do template | Definição |
 |----------------------|-----------|
@@ -34,7 +34,7 @@ O propósito é entender porque a Fase 4 precisa conhecer o nível atual de adeq
 |----------------|------------------|
 | Foco de qualidade: completude, correção e pertinência funcional | Subcaracterísticas selecionadas para C1 em [Seleção e priorização das características](../fase-1/caracteristicas.md#2-caracteristicas-selecionadas) (completude e correção); a pertinência funcional é acréscimo do G1, justificado acima |
 | Ponto de vista: estudantes de medicina | [Partes interessadas](../fase-1/partes-interessadas.md) |
-| Contexto: navegador desktop, funções F01 a F09 e testes de cenário | Objetos, profundidade e limites de validade em [Escopo e profundidade](../fase-1/escopo.md); a triagem completa (F05) entrou no escopo por decisão do grupo em 18/10/2026, porque a lista ranqueada, os favoritos, o log e a exportação só existem depois de uma triagem |
+| Contexto: navegador desktop, funções F01 a F09 e testes de cenário | Objetos, profundidade e limites em [Escopo e profundidade](../fase-1/escopo.md). A triagem completa (F05) entrou no escopo por decisão do grupo em 18/10/2026: sem ela não existem lista ranqueada, favoritos, log nem exportação. |
 | Ênfase na lista ranqueada (Top 30) | Justificativa da escolha de C1 em [Seleção e priorização das características](../fase-1/caracteristicas.md#2-caracteristicas-selecionadas): o estudante só confia no Top N se a lista trouxer a evidência certa |
 
 ### Abstraction sheet do G1
@@ -49,14 +49,14 @@ O propósito é entender porque a Fase 4 precisa conhecer o nível atual de adeq
 
 | Hipóteses de referência | Impacto dos fatores de variação |
 |-------------------------|---------------------------------|
-| As hipóteses H1.1 a H1.5 abaixo, formuladas antes da coleta como baseline | Tema estreito tem poucos estudos e tende a puxar o recall para baixo; estudo que as bases não indexam não é falha da VICKY, por isso M1.1.2 desconta esses casos; duas execuções do mesmo tema podem trazer listas diferentes, o que M1.5.2 mede com intervalo de 24 horas ou mais; avaliadores divergem no julgamento de relevância, por isso M1.3.1 e M1.4.1 usam dois avaliadores e M1.3.1 só vale com kappa de 0,61 ou mais |
+| As hipóteses H1.1 a H1.5 abaixo, formuladas antes da coleta como baseline | Tema estreito tem poucos estudos e puxa o recall para baixo. Estudo fora das bases não é falha da VICKY: M1.1.2 o desconta. Duas execuções podem dar listas diferentes: M1.5.2 mede isso. Avaliadores divergem: M1.3.1 e M1.4.1 usam dois, e M1.3.1 só vale com kappa de 0,61 ou mais. |
 
 ### Questões, hipóteses e métricas
 
-Pelo método Goal-Question-Metric (Basili; Caldiera; Rombach, 1994), cinco questões desdobram o objetivo. Duas tratam da completude: se a lista contém os estudos que uma revisão de referência incluiria e se o estudante consegue executar o fluxo prometido, do protocolo PICO ao registro da busca. Uma trata da correção: se os artigos respondem ao PICO e vêm com metadados e links corretos. Duas tratam da pertinência: se a ordem do Quality Score acompanha um critério metodológico explícito e se o resultado obedece aos filtros e se repete quando a configuração é repetida. Filtros e repetibilidade entram na pertinência porque determinam se o resultado serve à tarefa configurada e se a busca pode ser registrada e replicada na revisão. Cada hipótese é um baseline, formulado antes da coleta.
+Pelo método Goal-Question-Metric (Basili; Caldiera; Rombach, 1994), cinco questões desdobram o objetivo: duas de completude, uma de correção e duas de pertinência. Filtros e repetibilidade entram na pertinência porque decidem se o resultado serve à tarefa configurada e se a busca pode ser replicada. Cada hipótese é um baseline, formulado antes da coleta.
 
 !!! info "Por que o G1 adapta as medidas da ISO/IEC 25023"
-    As medidas de adequação funcional da ISO/IEC 25023:2016 (subcláusula 8.2) contam funções: a cobertura funcional (FCp-1-G, *Functional coverage*), a correção funcional (FCr-1-G, *Functional correctness*) e a pertinência ao objetivo de uso e ao sistema (FAp-1-G e FAp-2-G, *Functional appropriateness*). Na VICKY, porém, o que o estudante usa é a lista ranqueada, e saber que a função de triagem "funciona" não diz se a lista traz a evidência certa. Por isso o G1 mantém M1.2.1 como contagem de funções, no molde da FCp-1-G, e adapta as demais para o nível do artigo da lista: recall a partir da FCp-1-G, precisão e metadados a partir da FCr-1-G, e ordem do ranking, filtros e estabilidade (adaptação própria do G1) a partir da FAp-1-G. A cláusula 2 da norma admite modificar uma medida desde que a mudança seja justificada. A FAp-2-G, que olha a pertinência do conjunto de funções do sistema, não é medida à parte: o ponto de vista do G1 é o da tarefa do estudante, coberto pela FAp-1-G, e a cláusula 2 pede justificativa para excluir uma medida genérica, que é esta.
+    A ISO/IEC 25023:2016 (subcláusula 8.2) mede adequação funcional contando funções. As medidas usadas são FCp-1-G (*Functional coverage*), FCr-1-G (*Functional correctness*), FAp-1-G (*Functional appropriateness of usage objective*) e FAp-2-G. O G no fim do código indica medida genérica, que a norma recomenda usar e só admite excluir com justificativa. Na VICKY o estudante usa a lista ranqueada, e saber que a triagem "funciona" não diz se a lista traz a evidência certa. Por isso M1.2.1 mantém a contagem de funções (FCp-1-G) e as outras sete medidas descem ao nível do artigo: recall (FCp-1-G), precisão e metadados (FCr-1-G), ordem do ranking, filtros e estabilidade (FAp-1-G, adaptação própria do G1). A cláusula 2 da norma permite modificar uma medida com justificativa. A FAp-2-G, sobre o conjunto de funções do sistema, fica de fora: o ponto de vista do G1 é a tarefa do estudante, já coberta pela FAp-1-G.
 
 | Questão | Hipótese | Métricas |
 |---------|----------|----------|
@@ -186,3 +186,4 @@ Pelo método Goal-Question-Metric, três questões desdobram o objetivo. A prime
 | 0.5 | 18/10/2026 | GQM de manutenibilidade (G3): objetivo, rastreabilidade com a Fase 1, abstraction sheet, questões e hipóteses | Guilherme Moura | - |
 | 0.6 | 18/10/2026 | G2 realinhado às sete subcaracterísticas de C2 do modelo de qualidade | Lucas Avelar | Gabriel Fae |
 | 0.7 | 25/10/2026 | H1.5 reescrita em índice de Jaccard (0,70, cerca de 82% dos artigos em comum) para coincidir com o nível Bom de M1.5.2 | Larissa Gomes Silva | - |
+| 0.8 | 25/10/2026 | G1: texto enxugado, repetição removida entre fichas | Larissa Gomes Silva | - |
