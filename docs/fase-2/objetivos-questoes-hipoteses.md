@@ -64,7 +64,7 @@ Pelo método Goal-Question-Metric (Basili; Caldiera; Rombach, 1994), cinco quest
 | Q1.2 - Que partes do fluxo prometido, do PICO ao registro da busca, o estudante consegue executar? (completude funcional) | H1.2 - No máximo uma das 9 funções declaradas está parcial ou ausente | [M1.2.1](especificacao-das-metricas.md#m121) |
 | Q1.3 - Os artigos respondem ao PICO e vêm descritos de modo que o estudante possa citá-los? (correção funcional) | H1.3 - De 70% a 85% dos 30 artigos são relevantes e 90% ou mais têm metadados e link corretos | [M1.3.1](especificacao-das-metricas.md#m131), [M1.3.2](especificacao-das-metricas.md#m132) |
 | Q1.4 - A ordem do ranking acompanha um critério explícito de qualidade metodológica? (pertinência funcional) | H1.4 - Há correlação positiva de moderada a forte (0,50 ou mais) entre o Quality Score e uma rubrica metodológica | [M1.4.1](especificacao-das-metricas.md#m141) |
-| Q1.5 - O resultado obedece ao que o estudante configurou e se mantém quando a configuração é repetida? (pertinência funcional) | H1.5 - Os filtros são cumpridos em 93% ou mais dos itens; duas execuções do mesmo tema repetem 70% ou mais dos artigos, sem repetir todos | [M1.5.1](especificacao-das-metricas.md#m151), [M1.5.2](especificacao-das-metricas.md#m152) |
+| Q1.5 - O resultado obedece ao que o estudante configurou e se mantém quando a configuração é repetida? (pertinência funcional) | H1.5 - Os filtros são cumpridos em 93% ou mais dos itens; duas execuções do mesmo tema repetem o Top 30 com índice de Jaccard de 0,70 ou mais (cerca de 82% dos artigos em comum), sem repetir todos | [M1.5.1](especificacao-das-metricas.md#m151), [M1.5.2](especificacao-das-metricas.md#m152) |
 
 ## G2
 
@@ -185,3 +185,4 @@ Pelo método Goal-Question-Metric, três questões desdobram o objetivo. A prime
 | 0.4 | 18/10/2026 | GQM de adequação funcional (G1): objetivo, rastreabilidade com a Fase 1, abstraction sheet, questões e hipóteses | Larissa Gomes Silva | - |
 | 0.5 | 18/10/2026 | GQM de manutenibilidade (G3): objetivo, rastreabilidade com a Fase 1, abstraction sheet, questões e hipóteses | Guilherme Moura | - |
 | 0.6 | 18/10/2026 | G2 realinhado às sete subcaracterísticas de C2 do modelo de qualidade | Lucas Avelar | Gabriel Fae |
+| 0.7 | 25/10/2026 | H1.5 reescrita em índice de Jaccard (0,70, cerca de 82% dos artigos em comum) para coincidir com o nível Bom de M1.5.2 | Larissa Gomes Silva | - |
