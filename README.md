@@ -44,41 +44,41 @@ Detalhes em [Fase 1 - Seleção e priorização das características](docs/fase-
 <table style="margin-left: auto; margin-right: auto;">
     <tr>
         <td align="center">
-            <a href="link do github">
-                <img style="border-radius: 50%; width: 100px; heigth: 100px" src="https://github.com/Faehzin" />
+            <a href="https://github.com/Faehzin">
+                <img style="border-radius: 50%; width: 100px; heigth: 100px" src="https://github.com/Faehzin.png" />
                 <h5 class="text-center">Gabriel Sampaio Fae</h5>
                 <h5 class="text-center">231011382</h5>
             </a>
         </td>
         <td align="center">
-            <a href="link do github">
-                <img style="border-radius: 50%;  width: 100px; heigth: 100px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAUi3wIxO1RToN_FhwNdon8Xhiz53UFneKSg&s"/>
-                <h5 class="text-center">Nome do integrante</h5>
-                <h5 class="text-center">Matrícula</h5>
+            <a href="https://github.com/guilhermemm3">
+                <img style="border-radius: 50%;  width: 100px;heigth: 100px" src="https://github.com/guilhermemm3.png" />
+                <h5 class="text-center">Guilherme Maciel de Meneses</h5>
+                <h5 class="text-center">190128160</h5>
             </a>
         </td><td align="center">
-            <a href="link do github">
-                <img style="border-radius: 50%;  width: 80px;heigth: 100px" src="https://www.giantbomb.com/a/uploads/scale_small/13/139866/2783526-roberta.jpg" />
-                <h5 class="text-center">Nome do integrante</h5>
-                <h5 class="text-center">Matrícula</h5>
+            <a href="https://github.com/Guilherme-Moura">
+                <img style="border-radius: 50%;  width: 100px;heigth: 100px" src="https://github.com/Guilherme-Moura.png"/>
+                <h5 class="text-center">Guilherme Moura da Silva Neto</h5>
+                <h5 class="text-center">231012227</h5>
             </a>
         </td><td align="center">
-            <a href="link do github">
-                <img style="border-radius: 50%;  width: 150px;heigth: 100px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Katherine_Johnson_at_NASA%2C_in_1966.jpg/250px-Katherine_Johnson_at_NASA%2C_in_1966.jpg"/>
-                <h5 class="text-center">Nome do integrante</h5>
-                <h5 class="text-center">Matrícula</h5>
+            <a href="https://github.com/MrBolt2005">
+                <img style="border-radius: 50%;  width: 100px;heigth: 100px" src="https://github.com/MrBolt2005.png"/>
+                <h5 class="text-center"> João Felipe Oliveira Alves e Silva</h5>
+                <h5 class="text-center">231011927</h5>
             </a>
         </td><td align="center">
-            <a href="link do github">
-                <img style="border-radius: 50%;  width: 150px;heigth: 100px" src="https://s2.glbimg.com/M7i2Eovi6zB-rywedhQc355033E=/e.glbimg.com/og/ed/f/original/2019/08/09/hedy_lamarr_-_1940_1.jpg"/>
+            <a href="https://github.com/larigs">
+                <img style="border-radius: 50%;  width: 100px;heigth: 100px" src="https://github.com/larigs.png"/>
                 <h5 class="text-center">Larissa Gomes Silva</h5>
                 <h5 class="text-center">211031092</h5>
             </a>
         </td><td align="center">
-            <a href="link do github">
-                <img style="border-radius: 50%;  width: 150px;heigth: 100px" src="https://ik.imagekit.io/smdxc0e2g3/userscontent2-endpoint/images/ef3ac225-0a27-4267-b19c-390ac862caeb/80e4d68dd69eefb7d6fe2d41a0038293.jpg?tr=w-160,rt-0"/>
-                <h5 class="text-center">Nome do integrante</h5>
-                <h5 class="text-center">Matrícula</h5>
+            <a href="https://github.com/LucasAvelar2711">
+                <img style="border-radius: 50%;  width: 100px; heigth: 100px" src="https://github.com/LucasAvelar2711.png"/>
+                <h5 class="text-center">Lucas Antunes de Avelar</h5>
+                <h5 class="text-center">200067095</h5>
             </a>
         </td>
 </table>
@@ -112,3 +112,4 @@ GIT_DATES=false mkdocs serve   # http://127.0.0.1:8000 (GIT_DATES=false só enqu
 | 0.1 | 05/10/2026 | Inicialização do projeto no github | Gabriel Fae |
 | 0.2 | 05/10/2026 | Contexto do projeto (VICKY), características selecionadas e estrutura da documentação | Gabriel Fae |
 | 0.3 | 16/10/2026 | Documentação reorganizada em abas por fase do processo de avaliação | Gabriel Fae |
+| 0.4 | 26/10/2026 | Adição da equipe à tabela de integrantes | Guilherme Moura |
