@@ -15,7 +15,7 @@ Valores medidos a cada ciclo, com interpretação. As fórmulas e faixas de deci
 | CP1 Comprometido x concluído | (--) sem backlog formal | (--) 11,1% concluído (issues criadas com base no artigo.) | (OK) 100% (18 de 18), desvio de 0 p.p., mas concluído **depois** do vencimento |
 | CP2 SPI (hora/valor) | (--) sem linha de base | (AN) 0,05 | (OK) 1,00 na data de corte · 0,05 no vencimento · atraso de 1 a 3 dias |
 | RC1 Variação de esforço | (--) horas não registradas | (--) horas não registradas | (AN) 0 de 6 integrantes registraram horas até o prazo da D05 |
-| RC2 CPI (hora/valor) | (--) horas não registradas | (--) horas não registradas | (--) sem `AC`, por falta das horas reais |
+| RC2 CPI (hora/valor) | (--) horas não registradas | (--) horas não registradas | (--) sem `AC`, por falta das horas reais. Custo planejado da E1: **R$2.100** (42 h × R$50) |
 | RC3 Contribuição individual | (AN) 0% a 34,8% (*proxy*: commits) | (A) 7,1% a 28,6% (carga planejada) | (--) coleta de domingo. A atribuição da E1 ficou desatualizada pelo remanejamento (D08) |
 | DP1 *Lead time* | (--) sem issues | (AN) média de 3,1 dias nas fechadas; abertas com 6,2 dias | (--) coleta de domingo. As datas de conclusão foram declaradas em lote, o que torna o *lead time* um limite superior |
 | DP2 Razão saída/chegada | (--) sem issues | (AN) 0,11 (2 saídas para 18 chegadas) | (A) 16 saídas e 0 chegadas: razão indefinida. WIP de 0 na data de corte |
@@ -94,6 +94,31 @@ _Figura 2 - Commits por integrante no ciclo 0, como proxy do RC3 até o registro
 ---
 config:
   themeVariables:
+    xyChart:
+      plotColorPalette: "#0B5563"
+      titleColor: "#7D8E95"
+      xAxisLabelColor: "#7D8E95"
+      xAxisTitleColor: "#7D8E95"
+      xAxisLineColor: "#7D8E95"
+      xAxisTickColor: "#7D8E95"
+      yAxisLabelColor: "#7D8E95"
+      yAxisTitleColor: "#7D8E95"
+      yAxisLineColor: "#7D8E95"
+      yAxisTickColor: "#7D8E95"
+      backgroundColor: "transparent"
+---
+xychart-beta horizontal
+    title "Linhas alteradas por integrante - ciclo 0 (sem os commits de estruturacao)"
+    x-axis ["LucasAvelar2711", "Faehzin", "larigs", "Guilherme-Moura", "GuilhermeMM3", "MrBolt2005"]
+    y-axis "Linhas adicionadas + removidas" 0 --> 750
+    bar [719, 338, 267, 261, 36, 0]
+```
+
+_Figura 3 - Volume de conteúdo por integrante no ciclo 0, em linhas adicionadas mais removidas, excluídos os três commits de estruturação do repositório (1.658 linhas das 3.279 do ciclo). É o segundo *proxy* do RC3 e corresponde aos percentuais da tabela 2.1: LucasAvelar2711 44,4%, Faehzin 20,9%, larigs 16,5%, Guilherme-Moura 16,1% e GuilhermeMM3 2,2%, de um total de 1.621 linhas. **Não há gráfico de horas nem de custo neste ciclo:** não existia linha de base de horas e nenhum integrante registrou esforço, então RC1 e RC2 não são calculáveis para o período. Fonte: [`commits.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/commits.csv) (colunas `linhas_adicionadas` e `linhas_removidas`)._
+```mermaid
+---
+config:
+  themeVariables:
     pie1: "#0B5563"
     pie2: "#B4531A"
     pieStrokeColor: "#FFFFFF"
@@ -107,7 +132,7 @@ pie showData title Natureza dos commits - ciclo 0
     "Retrabalho" : 9
 ```
 
-_Figura 3 - Proporção de commits de retrabalho no ciclo 0. Indicador DP4. Fonte: `commits.csv` (coluna `tipo`)._
+_Figura 4 - Proporção de commits de retrabalho no ciclo 0. Indicador DP4. Fonte: `commits.csv` (coluna `tipo`)._
 
 ## 3. Ciclo 1: 19/10 a 25/10 (milestone E1)
 
@@ -152,7 +177,7 @@ xychart-beta
     line [1, 1, 1, 1, 1, 1, 2]
 ```
 
-_Figura 4 - Burnup da E1: linha cinza = planejado (18 issues distribuídas de forma linear até 25/10), linha terracota = concluído. Indicador CP1. Fonte: [`linha-de-base-e1.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/linha-de-base-e1.csv)._
+_Figura 5 - Burnup da E1: linha cinza = planejado (18 issues distribuídas de forma linear até 25/10), linha terracota = concluído. Indicador CP1. Fonte: [`linha-de-base-e1.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/linha-de-base-e1.csv)._
 
 ```mermaid
 ---
@@ -179,7 +204,61 @@ xychart-beta
     line [1, 1, 1, 1, 1, 1, 2]
 ```
 
-_Figura 5 - Análise de valor agregado da E1: barras = PV, linha = EV. SPI = EV / PV. Indicador CP2. Fonte: `linha-de-base-e1.csv`._
+_Figura 6 - Análise de valor agregado da E1: barras = PV, linha = EV. SPI = EV / PV. Indicador CP2. Fonte: `linha-de-base-e1.csv`._
+
+```mermaid
+---
+config:
+  themeVariables:
+    xyChart:
+      plotColorPalette: "#0B5563, #B4531A, #8C9BA1"
+      titleColor: "#7D8E95"
+      xAxisLabelColor: "#7D8E95"
+      xAxisTitleColor: "#7D8E95"
+      xAxisLineColor: "#7D8E95"
+      xAxisTickColor: "#7D8E95"
+      yAxisLabelColor: "#7D8E95"
+      yAxisTitleColor: "#7D8E95"
+      yAxisLineColor: "#7D8E95"
+      yAxisTickColor: "#7D8E95"
+      backgroundColor: "transparent"
+---
+xychart-beta
+    title "Horas da E1 por integrante - planejado x entregue no ciclo 1"
+    x-axis ["MrBolt2005", "Guilherme-Moura", "GuilhermeMM3", "Faehzin", "larigs", "LucasAvelar2711"]
+    y-axis "Horas estimadas" 0 --> 13
+    bar [12, 9, 7, 6, 5, 3]
+    line [0, 0, 1, 1, 0, 0]
+    line [7, 7, 7, 7, 7, 7]
+```
+
+_Figura 7 - Carga da E1 por integrante: barras = horas planejadas (42 h no total), linha terracota = horas entregues até 25/10 (2 h, das issues #11 e #15) e linha cinza = distribuição ideal de 7 h por pessoa, ou 16,7%. É o RC3 pela carga planejada somado ao EV do CP2 por integrante. Duas ressalvas: as horas são **estimadas**, porque nenhuma hora real foi registrada, e a atribuição é a de 19/10, anterior ao remanejamento de 28/10 ([D08](decisoes.md#d08-remanejar-as-divisoes-de-trabalho-da-equipe)). Fonte: `linha-de-base-e1.csv`._
+
+```mermaid
+---
+config:
+  themeVariables:
+    xyChart:
+      plotColorPalette: "#B4531A"
+      titleColor: "#7D8E95"
+      xAxisLabelColor: "#7D8E95"
+      xAxisTitleColor: "#7D8E95"
+      xAxisLineColor: "#7D8E95"
+      xAxisTickColor: "#7D8E95"
+      yAxisLabelColor: "#7D8E95"
+      yAxisTitleColor: "#7D8E95"
+      yAxisLineColor: "#7D8E95"
+      yAxisTickColor: "#7D8E95"
+      backgroundColor: "transparent"
+---
+xychart-beta
+    title "Horas estimadas da E1 por categoria de trabalho"
+    x-axis ["artigo", "fase-1", "fase-2", "gestao", "entrega", "gitpage"]
+    y-axis "Horas estimadas" 0 --> 25
+    bar [24, 6, 5, 4, 2, 1]
+```
+
+_Figura 8 - Distribuição das 42 h da E1 por categoria. O artigo concentra 24 h, 57% do valor planejado da entrega, e é o caminho crítico citado na [D03](decisoes.md#d03-recalcular-esforco-pro-artigo): no fim do ciclo 1 nenhuma das suas 9 issues estava fechada, o que por si só explica o SPI de 0,05. Fonte: `linha-de-base-e1.csv` (coluna `categoria`)._
 
 
 ## 4. Ciclo 2 (parcial): 26/10 a 28/10
@@ -239,7 +318,7 @@ xychart-beta
     line [1, 1, 1, 1, 1, 1, 2, 2, 2, 18]
 ```
 
-_Figura 6 - Burnup da E1 estendido até 28/10: linha cinza = planejado, linha terracota = concluído. As 16 issues restantes foram declaradas concluídas em bloco no ponto de controle, três dias após o vencimento da milestone. Indicador CP1. Fonte: [`linha-de-base-e1.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/linha-de-base-e1.csv) e declaração do ponto de controle de 28/10._
+_Figura 9 - Burnup da E1 estendido até 28/10: linha cinza = planejado, linha terracota = concluído. As 16 issues restantes foram declaradas concluídas em bloco no ponto de controle, três dias após o vencimento da milestone. Indicador CP1. Fonte: [`linha-de-base-e1.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/linha-de-base-e1.csv) e declaração do ponto de controle de 28/10._
 
 ```mermaid
 ---
@@ -266,7 +345,7 @@ xychart-beta
     line [1, 1, 1, 1, 1, 1, 2, 2, 2, 42]
 ```
 
-_Figura 7 - Valor planejado (barras) e valor agregado (linha) da E1 até 28/10. O encontro das duas curvas no fim do período é o que faz o SPI ir de 0,05 a 1,00 sem que o atraso desapareça: ele passa a ser lido na variação de prazo em dias. Indicador CP2. Fonte: `linha-de-base-e1.csv`._
+_Figura 10 - Valor planejado (barras) e valor agregado (linha) da E1 até 28/10. O encontro das duas curvas no fim do período é o que faz o SPI ir de 0,05 a 1,00 sem que o atraso desapareça: ele passa a ser lido na variação de prazo em dias. Indicador CP2. Fonte: `linha-de-base-e1.csv`._
 
 ```mermaid
 ---
@@ -293,7 +372,61 @@ xychart-beta
     line [12, 12, 12, 12, 12, 12, 12, 12, 12, 12]
 ```
 
-_Figura 8 - WIP diário (linha azul) contra o limite da equipe de 12 issues, ou 2 por integrante (linha terracota). O WIP ficou acima do limite por nove dias e caiu a zero de uma vez no ponto de controle. Indicador DP2. Fonte: issues da milestone E1 e declaração do ponto de controle._
+_Figura 11 - WIP diário (linha azul) contra o limite da equipe de 12 issues, ou 2 por integrante (linha terracota). O WIP ficou acima do limite por nove dias e caiu a zero de uma vez no ponto de controle. Indicador DP2. Fonte: issues da milestone E1 e declaração do ponto de controle._
+
+```mermaid
+---
+config:
+  themeVariables:
+    xyChart:
+      plotColorPalette: "#0B5563, #B4531A"
+      titleColor: "#7D8E95"
+      xAxisLabelColor: "#7D8E95"
+      xAxisTitleColor: "#7D8E95"
+      xAxisLineColor: "#7D8E95"
+      xAxisTickColor: "#7D8E95"
+      yAxisLabelColor: "#7D8E95"
+      yAxisTitleColor: "#7D8E95"
+      yAxisLineColor: "#7D8E95"
+      yAxisTickColor: "#7D8E95"
+      backgroundColor: "transparent"
+---
+xychart-beta
+    title "Custo da E1 em reais - planejado (PV x VH) x agregado (EV x VH)"
+    x-axis "Dia de outubro" [19, 20, 21, 22, 23, 24, 25, 26, 27, 28]
+    y-axis "Reais (acumulado)" 0 --> 2200
+    bar [300, 600, 900, 1200, 1500, 1800, 2100, 2100, 2100, 2100]
+    line [50, 50, 50, 50, 50, 50, 100, 100, 100, 2100]
+```
+
+_Figura 12 - A curva do CP2 convertida em reais pelo valor-hora de referência de R$50: barras = custo planejado (PV × VH) e linha = valor entregue (EV × VH). A E1 vale **R$2.100** de esforço planejado; no vencimento havia R$100 entregues e, no ponto de controle, os R$2.100 completos. **Isto não é o CPI:** o CPI exige o custo real (`AC` = horas reais × VH) e, com o `esforco.csv` vazio, não há `AC`, então o RC2 segue não mensurável. Fonte: `linha-de-base-e1.csv` e o VH de R$50 do [plano de medição](plano-de-medicao.md)._
+
+```mermaid
+---
+config:
+  themeVariables:
+    xyChart:
+      plotColorPalette: "#0B5563, #8C9BA1"
+      titleColor: "#7D8E95"
+      xAxisLabelColor: "#7D8E95"
+      xAxisTitleColor: "#7D8E95"
+      xAxisLineColor: "#7D8E95"
+      xAxisTickColor: "#7D8E95"
+      yAxisLabelColor: "#7D8E95"
+      yAxisTitleColor: "#7D8E95"
+      yAxisLineColor: "#7D8E95"
+      yAxisTickColor: "#7D8E95"
+      backgroundColor: "transparent"
+---
+xychart-beta
+    title "Simulacao: quanto a E1 pagaria a cada integrante pelas horas planejadas"
+    x-axis ["MrBolt2005", "Guilherme-Moura", "GuilhermeMM3", "Faehzin", "larigs", "LucasAvelar2711"]
+    y-axis "Reais" 0 --> 650
+    bar [600, 450, 350, 300, 250, 150]
+    line [350, 350, 350, 350, 350, 350]
+```
+
+_Figura 13 - Simulação de remuneração da E1 a R$50 por hora: MrBolt2005 R$600 (12 h), Guilherme-Moura R$450 (9 h), GuilhermeMM3 R$350 (7 h), Faehzin R$300 (6 h), larigs R$250 (5 h) e LucasAvelar2711 R$150 (3 h), de um total de R$2.100._
 
 ### 4.4 Leitura do ciclo e decisões disparadas
 
@@ -319,3 +452,4 @@ _Figura 8 - WIP diário (linha azul) contra o limite da equipe de 12 issues, ou 
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 25/10/2026 | Registro dos ciclos 0 (retroativo) e 1, painel de indicadores, gráficos e síntese | Gabriel Fae | - |
 | 0.4 | 28/10/2026 | Coleta parcial do ciclo 2 (CP1, CP2, DP2 e horas retroativas), correção retroativa de DP3 e DP4 do ciclo 1, preenchimento de DP1 e DP2 do ciclo 1 e situação da coleta completa de 01/11 | Gabriel Fae | - |
+| 0.5 | 28/10/2026 | Cinco gráficos de esforço, entrega e custo: volume por integrante no ciclo 0, horas planejadas x entregues e horas por categoria no ciclo 1, custo da E1 em reais e simulação de pagamento por integrante no ciclo 2 | Gabriel Fae | - |
