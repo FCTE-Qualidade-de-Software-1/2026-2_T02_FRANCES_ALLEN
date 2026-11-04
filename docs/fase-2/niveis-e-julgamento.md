@@ -8,14 +8,14 @@ Cada métrica recebe um de quatro níveis: Insatisfatório (0 ponto), Aceitável
 
 | Métrica | Insatisfatório | Aceitável | Bom | Excelente | Fonte do limiar |
 |---------|:--------------:|:---------:|:---:|:---------:|-----------------|
-| M1.1.1 | abaixo de 0,40 | de 0,40 a menos de 0,60 | de 0,60 a menos de 0,80 | 0,80 ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 0,40 o estudante perde a maior parte da evidência; a hipótese H1.1 (0,40 a 0,60) corresponde à faixa Aceitável. |
-| M1.1.2 | abaixo de 0,50 | de 0,50 a menos de 0,70 | de 0,70 a menos de 0,90 | 0,90 ou mais | Proposta de G1, a validar pelo grupo. Cada limiar fica 0,10 acima do de M1.1.1, o ganho previsto em H1.1 ao descontar os estudos que as fontes não indexam. Abaixo de 0,50 a VICKY deixa de fora estudos que as bases têm. |
-| M1.2.1 | abaixo de 70% | de 70% a menos de 85% | de 85% a menos de 95% | 95% ou mais | Proposta de G1, a validar pelo grupo. Com nove funções, Excelente exige todas operantes; uma função parcial (94,4%) ou ausente (88,9%) leva a Bom, o que corresponde a H1.2; três ausentes (66,7%) levam a Insatisfatório. |
-| M1.3.1 | abaixo de 50% | de 50% a menos de 70% | de 70% a menos de 85% | 85% ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 50% mais da metade da lista é ruído; H1.3 (70% a 85%) corresponde a Bom. O resultado só vale com kappa de Cohen de 0,61 ou mais (Landis; Koch, 1977). |
-| M1.3.2 | abaixo de 80% | de 80% a menos de 90% | de 90% a menos de 98% | 98% ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 80% um em cada cinco itens exige correção antes de citar; o piso de Bom (90%) coincide com H1.3. |
+| M1.1.1 | abaixo de 0,40 | de 0,40 a menos de 0,60 | de 0,60 a menos de 0,80 | 0,80 ou mais | Abaixo de 0,40 o estudante perde a maior parte da evidência; a hipótese H1.1 (0,40 a 0,60) corresponde à faixa Aceitável. |
+| M1.1.2 | abaixo de 0,50 | de 0,50 a menos de 0,70 | de 0,70 a menos de 0,90 | 0,90 ou mais | Cada limiar fica 0,10 acima do de M1.1.1, o ganho previsto em H1.1 ao descontar os estudos que as fontes não indexam. Abaixo de 0,50 a VICKY deixa de fora estudos que as bases têm. |
+| M1.2.1 | abaixo de 70% | de 70% a menos de 85% | de 85% a menos de 95% | 95% ou mais | Com nove funções, Excelente exige todas operantes; uma função parcial (94,4%) ou ausente (88,9%) leva a Bom, o que corresponde a H1.2; três ausentes (66,7%) levam a Insatisfatório. |
+| M1.3.1 | abaixo de 50% | de 50% a menos de 70% | de 70% a menos de 85% | 85% ou mais | Abaixo de 50% mais da metade da lista é ruído; H1.3 (70% a 85%) corresponde a Bom. O resultado só vale com kappa de Cohen de 0,61 ou mais (Landis; Koch, 1977). |
+| M1.3.2 | abaixo de 80% | de 80% a menos de 90% | de 90% a menos de 98% | 98% ou mais | Abaixo de 80% um em cada cinco itens exige correção antes de citar; o piso de Bom (90%) coincide com H1.3. |
 | M1.4.1 | abaixo de 0,36 | de 0,36 a menos de 0,50 | de 0,50 a menos de 0,70 | 0,70 ou mais | O piso de Aceitável, 0,36, é o valor crítico de ρ com 30 itens a 5% de significância, em teste bilateral (Zar, 1972); abaixo dele o escore não se distingue de ordem aleatória frente à rubrica. Demais faixas por convenção da equipe; o piso de Bom (0,50) coincide com H1.4. |
-| M1.5.1 | abaixo de 80% | de 80% a menos de 93% | de 93% a menos de 100% | 100% | Proposta de G1, a validar pelo grupo. Filtro é regra objetiva, então Excelente só vale sem nenhuma violação; o piso de Bom (93%) coincide com H1.5. |
-| M1.5.2 | abaixo de 0,50 | de 0,50 a menos de 0,70 | de 0,70 a menos de 0,85 | 0,85 ou mais | Proposta de G1, a validar pelo grupo. Abaixo de 0,50 o registro da busca não permite replicar a revisão. |
+| M1.5.1 | abaixo de 80% | de 80% a menos de 93% | de 93% a menos de 100% | 100% | Filtro é regra objetiva, então Excelente só vale sem nenhuma violação; o piso de Bom (93%) coincide com H1.5. |
+| M1.5.2 | abaixo de 0,50 | de 0,50 a menos de 0,70 | de 0,70 a menos de 0,85 | 0,85 ou mais | Abaixo de 0,50 o registro da busca não permite replicar a revisão. |
 | M2.1.1 | < 70% | 70% a menos de 90% | 90% a menos de 100% | 100% | O estudante decide sozinho, antes de pagar, se a ferramenta serve para o trabalho dele; com 10 cenários, "Bom" admite um cenário não descrito |
 | M2.2.1 | < 70% | 70% a menos de 88% | 88% a menos de 100% | 100% | O VICKY não tem tutorial nem suporte em tempo real, e o estudante o usa poucas vezes por semestre; com 9 funções, "Bom" admite uma função sem orientação |
 | M2.2.2 | < 50% | 50% a menos de 75% | 75% a menos de 90% | ≥ 90% | Os erros mais prováveis estão no cadastro e na criação do projeto, ou seja, no primeiro uso; mensagem sem solução ali leva ao abandono |
@@ -37,11 +37,13 @@ Cada métrica recebe um de quatro níveis: Insatisfatório (0 ponto), Aceitável
 
 Nas oito métricas de G1, quanto maior o valor, melhor.
 
+Os limiares de G1 são proposta da equipe, a validar pelo grupo, exceto M1.4.1 (valor crítico de Zar, 1972).
+
 ## 2. Regras do G1 (adequação funcional)
 
 ### Da métrica para a questão
 
-A pontuação de uma questão é a média dos pontos (0 a 3) de suas métricas, classificada em Insatisfatório (de 0,00 a menos de 1,00), Aceitável (de 1,00 a menos de 1,75), Bom (de 1,75 a menos de 2,50) ou Excelente (de 2,50 a 3,00). Duas métricas são críticas, M1.1.1 e M1.3.1: se qualquer uma ficar no nível Insatisfatório, a questão correspondente (Q1.1 ou Q1.3) não passa de Aceitável, pois de nada adianta uma lista bem formatada que perde a evidência ou traz artigos irrelevantes. Uma métrica que não puder ser coletada é declarada não aplicável, sai da média e não recebe nível por estimativa. Cada hipótese de H1.1 a H1.5 é comparada com o valor observado no relatório, mas não entra na pontuação.
+A pontuação de uma questão é a média dos pontos (0 a 3) de suas métricas, classificada em Insatisfatório (de 0,00 a menos de 1,00), Aceitável (de 1,00 a menos de 1,75), Bom (de 1,75 a menos de 2,50) ou Excelente (de 2,50 a 3,00). Duas métricas são críticas, M1.1.1 e M1.3.1: se qualquer uma ficar no nível Insatisfatório, a questão correspondente (Q1.1 ou Q1.3) não passa de Aceitável, porque uma lista que perde a evidência ou traz artigos irrelevantes não serve, por mais bem formatada que seja. Uma métrica que não puder ser coletada é declarada não aplicável, sai da média e não recebe nível por estimativa. Cada hipótese de H1.1 a H1.5 é comparada com o valor observado no relatório, mas não entra na pontuação.
 
 ### Da questão para o objetivo
 
@@ -113,3 +115,4 @@ O objetivo G3 é a média simples das pontuações das três questões (Q3.1 a Q
 | 0.4 | 18/10/2026 | Níveis das oito métricas de G1 e critérios de julgamento do objetivo G1 | Larissa Gomes Silva | - |
 | 0.5 | 18/10/2026 | Níveis das métricas de G3 e regras de agregação e julgamento do objetivo de Manutenibilidade | Guilherme Moura | - |
 | 0.6 | 18/10/2026 | Níveis e regras do G2 realinhados às sete subcaracterísticas de C2 | Lucas Avelar | Gabriel Fae |
+| 0.7 | 25/10/2026 | G1: texto enxugado, repetição removida entre fichas | Larissa Gomes Silva | - |
