@@ -401,7 +401,7 @@ Em todas as métricas de G1, quanto maior o valor, melhor; os níveis estão em 
 | Medida da ISO/IEC 25023:2016 | MRe-2-S, *Coding rules compliance* (específica), aplicada para avaliar regras de estilo da linguagem que impactam a analisabilidade. |
 | Subcaracterística | Analisabilidade |
 | Questão / objetivo | Q3.2 / G3 |
-| Definição | Proporção de arquivos do código central em Python que cumprem integralmente as diretrizes do guia de estilo PEP8, sem apresentar violações sintáticas ou de formatação que dificultem a leitura por novos desenvolvedores. |
+| Definição | Proporção de arquivos do código central em Python que cumprem integralmente as diretrizes do guia de estilo PEP 8 (VAN ROSSUM; WARSAW; COGHLAN, 2001), sem apresentar violações sintáticas ou de formatação que dificultem a leitura por novos desenvolvedores. |
 | Procedimento de cálculo | C = A / B, onde A = arquivos sem violações registradas pelo *linter* e B = total de arquivos analisados dentro da pasta `src/vicky/` (excluindo dependências e testes). |
 | Unidade e escala | Proporção, de 0 a 1 (apresentada em %). |
 | Fonte dos dados | Diretório `src/vicky/` e biblioteca de linting `flake8`. |

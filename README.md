@@ -6,7 +6,7 @@ Esta página é dedicada à documentação de todos os artefatos criados pela eq
 
 O produto avaliado é o **VICKY**, um website voltado a **estudantes de medicina**, que permite buscar e consultar informações sobre artigos científicos e conteúdos acadêmicos da área da saúde.
 
-O objetivo do trabalho é **avaliar o produto à luz de modelos e métricas de qualidade**, identificando pontos fortes, oportunidades de melhoria e evidências mensuráveis que sustentem as conclusões. A avaliação segue o processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040). Ela usa o modelo de qualidade da **ISO/IEC 25010**, define as métricas pelo método **GQM (Goal-Question-Metric)** e acompanha a gestão do projeto com métricas **PSM/CID**.
+O objetivo do trabalho é **avaliar o produto à luz de modelos e métricas de qualidade**, identificando pontos fortes, oportunidades de melhoria e evidências mensuráveis que sustentem as conclusões. A avaliação segue o processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040:2024). Ela usa o modelo de qualidade da **ISO/IEC 25010:2023**, define as métricas pelo método **GQM (Goal-Question-Metric)** e acompanha a gestão do projeto com métricas **PSM/CID**.
 
 | Item | Descrição |
 |------|-----------|
@@ -22,7 +22,7 @@ O objetivo do trabalho é **avaliar o produto à luz de modelos e métricas de q
 | Acesso ao código-fonte | Sim, código-fonte completo, liberado pela equipe de desenvolvimento (ativa no projeto) |
 | Repositório do código | Não pode ser exibido de forma aberta. |
 
-### Características de qualidade selecionadas (ISO/IEC 25010)
+### Características de qualidade selecionadas (ISO/IEC 25010:2023)
 
 | # | Característica | Justificativa |
 |---|----------------|---------------|
@@ -88,7 +88,7 @@ Detalhes em [Fase 1 - Seleção e priorização das características](docs/fase-
 
 ## Documentação
 
-A documentação é organizada em abas pelas fases do processo de avaliação de produto da SQuaRE (ISO/IEC 25040).
+A documentação é organizada em abas pelas fases do processo de avaliação de produto da SQuaRE (ISO/IEC 25040:2024).
 
 - [Página inicial](docs/index.md)
 - **Fase 1 - Estabelecer os requisitos da avaliação**: [Propósito](docs/fase-1/proposito.md) · [Partes interessadas](docs/fase-1/partes-interessadas.md) · [Objeto de avaliação](docs/fase-1/objeto-de-avaliacao.md) · [Modelo de qualidade](docs/fase-1/modelo-de-qualidade.md) · [Características](docs/fase-1/caracteristicas.md) · [Escopo](docs/fase-1/escopo.md) · [ODS](docs/fase-1/ods.md)

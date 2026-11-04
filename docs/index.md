@@ -10,7 +10,7 @@ Este site documenta a **avaliação da qualidade do produto de software VICKY**,
 
 ## Como navegar
 
-As abas no topo seguem as **fases do processo de avaliação de produto** da família SQuaRE (ISO/IEC 25040). A barra lateral à esquerda mostra as páginas da aba selecionada.
+As abas no topo seguem as **fases do processo de avaliação de produto** da família SQuaRE (ISO/IEC 25040:2024). A barra lateral à esquerda mostra as páginas da aba selecionada.
 
 <div class="grid cards" markdown>
 
@@ -68,7 +68,7 @@ As abas no topo seguem as **fases do processo de avaliação de produto** da fam
 
 Cada fase do processo de avaliação recebe uma aba própria. As premissas obrigatórias da especificação do trabalho se distribuem entre elas:
 
-| Fase do processo (ISO/IEC 25040) | O que define | Premissa atendida | Entrega |
+| Fase do processo (ISO/IEC 25040:2024) | O que define | Premissa atendida | Entrega |
 |----------------------------------|--------------|-------------------|---------|
 | [Fase 1 - Estabelecer os requisitos da avaliação](fase-1/index.md) | Propósito, partes interessadas, modelo de qualidade e características selecionadas | Premissa 1 | Entrega 1 |
 | [Fase 2 - Especificar a avaliação](fase-2/index.md) | Objetivos, questões, hipóteses, métricas e critérios de julgamento (GQM) | Premissa 2 | Entrega 1 |
@@ -91,8 +91,8 @@ flowchart LR
 
 | Entrega | Data | Conteúdo | Release |
 |---------|------|----------|---------|
-| Entrega 1 | 26/10/2026 | Fases 1 e 2, 1ª versão do artigo, tabela de contribuição | _a publicar_ |
-| Entrega 2 | _conforme cronograma da disciplina_ | Fases 3 e 4, ação de melhoria, 2ª versão do artigo | _a publicar_ |
+| Entrega 1 | 26/10/2026 | Fases 1 e 2, 1ª versão do artigo, tabela de contribuição | [v0.1](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/releases/tag/v0.1) |
+| Entrega 2 | Ponto de controle em 16/11/2026, entrega final em 22/11/2026 ([cronograma](fase-3/cronograma.md)) | Fases 3 e 4, ação de melhoria, 2ª versão do artigo | _a publicar_ |
 
 ## Links
 
