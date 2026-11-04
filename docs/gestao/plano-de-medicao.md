@@ -25,7 +25,7 @@ Este plano instancia o **modelo de informação de medição** do PSM para o pro
 | Referência | CID, ICM linha 1; especificação 8.3 *Committed vs. Completed* |
 | Medidas base | `I_comp`: issues comprometidas na milestone · `I_conc`: issues fechadas como prontas até a data de corte |
 | Medidas derivadas | `%Concluído = I_conc / I_comp × 100` · `%Planejado(t)`: fração do período da milestone já decorrida |
-| Indicador | Desvio = `%Planejado(t) − %Concluído`, em pontos percentuais (p.p.), mais o gráfico de *burnup* |
+| Indicador | Desvio = `%Planejado(t) − %Concluído`, em pontos percentuais (p.p.), mais o gráfico de *burnup*. **Leitura no fim do período:** passado o vencimento da milestone, `%Planejado(t)` satura em 100% e o desvio se anula à medida que as issues fecham, ainda que com atraso. A partir daí o prazo deve ser lido no CP2, não no CP1 |
 | Fonte e coleta | Milestone e datas de fechamento das issues no GitHub, coletadas na quarta-feira e no domingo |
 | Critério de decisão | (OK) desvio ≤ 5 p.p. · (REV) 5 a 10 p.p. · (REP) > 10 p.p. (faixas do CID 8.3) |
 | Ação disparada | (REV): Investigar bloqueios na reunião de quarta. (REP) Replanejar: redistribuir issues, dividir escopo ou renegociar o prazo interno |
@@ -38,7 +38,7 @@ Este plano instancia o **modelo de informação de medição** do PSM para o pro
 | Referência | CID, ICM linha 8 (*Earned Value*, *Estimate vs. Actual Schedule*) |
 | Medidas base | `H_est(i)`: horas estimadas da issue *i* · data de fechamento de cada issue |
 | Medidas derivadas | `PV(t)` (valor planejado) = horas estimadas que deveriam estar prontas em *t*, com distribuição linear no período da milestone · `EV(t)` (valor agregado) = soma de `H_est` das issues fechadas até *t* |
-| Indicador | `SPI = EV / PV` e a curva PV x EV |
+| Indicador | `SPI = EV / PV` e a curva PV x EV. **No fechamento da milestone**, complementado pela *variação de prazo em dias* (data da entrega real menos a data de vencimento), porque o SPI converge para 1,00 em toda milestone concluída, por mais atrasada que esteja |
 | Fonte e coleta | `linha-de-base-e1.csv` mais as datas de fechamento no GitHub, coletadas na quarta-feira e no domingo |
 | Critério de decisão | (OK) SPI ≥ 0,90 · (REV) 0,75 ≤ SPI < 0,90 · (REP) SPI < 0,75 |
 | Ação disparada | (REV) Priorizar as issues do caminho crítico (artigo antes da GitPage). (REP) Recalcular a data de entrega e registrar o novo prazo como decisão |
@@ -148,3 +148,4 @@ Este plano instancia o **modelo de informação de medição** do PSM para o pro
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 25/10/2026 | Plano reestruturado pelo modelo de informação do PSM: 10 métricas ligadas ao CID, base hora/valor (SPI e CPI), parâmetros e limitações dos dados | Gabriel Fae | - |
+| 0.4 | 28/10/2026 | Complemento dos indicadores CP1 e CP2 com a leitura de saturação no fim da milestone e com a variação de prazo em dias, recalibração observada na coleta parcial do ciclo 2 | Gabriel Fae | - |
