@@ -4,27 +4,28 @@ As características são escolhidas no [modelo de qualidade](modelo-de-qualidade
 
 ## 1. Análise das características candidatas
 
-A equipe utilizou o método MoSCoW adaptado com pesos para priorizar as características. Os critérios avaliados foram:
+A equipe utilizou o método MoSCoW (CLEGG; BARKER, 1994) adaptado com pesos para priorizar as características. Os critérios avaliados foram:
 
 - Impacto (Peso 3): Relevância direta para o usuário-alvo (estudantes de medicina) ou para o negócio. Escala de 1 (Baixo) a 3 (Alto).
 - Viabilidade (Peso 2): Facilidade de coleta de métricas considerando os recursos da equipe (acesso ao código e ao público-alvo). Escala de 1 (Baixa) a 3 (Alta).
 
 A pontuação final determina a categoria: Must Have (13 a 15 pontos), Should Have (10 a 12 pontos), Could Have (7 a 9 pontos) e Won't Have (< 7 pontos ou cortado por restrição técnica).
 
-| Característica (ISO/IEC 25010) | Impacto (x3) | Viabilidade (x2) | Pontuação Final | Categoria MoSCoW | Justificativa |
+| Característica (ISO/IEC 25010:2023) | Impacto (x3) | Viabilidade (x2) | Pontuação Final | Categoria MoSCoW | Justificativa |
 |-------------------------------|:---:|:---:|:---:|:---|---|
 | Adequação funcional | 3 | 3 | 15 | Must Have | Fundamental para o estudante confiar no Top N. Altamente viável devido ao acesso a estudantes para testes. |
 | Capacidade de interação | 3 | 3 | 15 | Must Have | Crítica para a formulação correta dos critérios PICO. Viável através de questionários com usuários reais. |
 | Manutenibilidade | 2 | 3 | 12 | Should Have | Impacta a evolução pela equipe de desenvolvimento. Altamente viável pelo acesso total ao código e ferramentas de análise estática. |
-| Compatibilidade | 2 | 2 | 10 | Should Have → Won't Have | Rebaixada por restrição de escopo da entrega, priorizando as 3 características principais. |
+| Compatibilidade | 2 | 2 | 10 | Should Have → Won't Have | Interoperabilidade: a troca de dados com PubMed, SciELO e Google Acadêmico e a exportação dos resultados. Rebaixada por restrição de escopo da entrega, priorizando as 3 características principais. |
 | Eficiência de desempenho | 2 | 1 | 8 | Could Have → Won't Have | Baixa viabilidade pois depende da latência e instabilidade de APIs externas. |
-| Portabilidade / flexibilidade | 2 | 1 | 8 | Could Have → Won't Have | O foco atual do produto é o uso em desktop para pesquisa acadêmica. |
-| Segurança | 1 | 1 | 5 | Won't Have | Exigiria testes de intrusão complexos, fora do escopo da disciplina. |
+| Flexibilidade | 2 | 1 | 8 | Could Have → Won't Have | Adaptação a outros ambientes, como navegadores e dispositivos móveis. O foco atual do produto é o uso em desktop para pesquisa acadêmica. |
+| Segurança | 3 | 1 | 11 | Should Have → Won't Have | O produto guarda dados pessoais e histórico de pesquisa e cobra por crédito, então o impacto é alto. Cortada por viabilidade: exigiria testes de intrusão e ferramentas fora do alcance da disciplina. |
 | Confiabilidade | 1 | 1 | 5 | Won't Have | Exigiria simulação de queda de fontes externas (PubMed, Scholar), inviável no momento. |
+| Segurança operacional (*safety*) | 1 | 1 | 5 | Won't Have | O VICKY não controla equipamento nem toma decisão clínica: entrega uma lista de artigos que o estudante lê e julga. O risco à vida, à saúde, ao patrimônio ou ao ambiente é indireto e baixo. |
 
 ### Discussão de trade-offs
 
-A seleção das características exigiu escolhas devido às restrições de tempo e recursos da avaliação. A priorização da **Manutenibilidade** em detrimento da **Compatibilidade** ocorreu porque o VICKY depende de integrações externas instáveis (LLMs, bases científicas) e de um orquestrador assíncrono complexo. Garantir que a equipe técnica consiga evoluir, testar e corrigir esse código com segurança tem um impacto maior no projeto do que homologar a interface para múltiplos navegadores e dispositivos móveis. Por outro lado, ao classificar a **Segurança** como *Won't Have* e deixá-la fora do modelo, a avaliação perde a capacidade de diagnosticar vulnerabilidades críticas (como falhas de autenticação, injeção de dados ou vazamento do histórico de pesquisas dos usuários). A equipe assume esse risco temporário pois uma auditoria de segurança técnica exigiria testes de intrusão e ferramentas específicas que fogem da viabilidade e do escopo atual da disciplina.
+A seleção das características exigiu escolhas devido às restrições de tempo e recursos da avaliação. A priorização da **Manutenibilidade** em detrimento da **Compatibilidade** ocorreu porque o VICKY depende de integrações externas instáveis (LLMs, bases científicas) e de um orquestrador assíncrono complexo. Garantir que a equipe técnica consiga evoluir, testar e corrigir esse código com segurança tem um impacto maior no projeto do que verificar a interoperabilidade com as bases científicas e os formatos de exportação. Por outro lado, ao cortar a **Segurança** por viabilidade, apesar do impacto alto, e deixá-la fora do modelo, a avaliação perde a capacidade de diagnosticar vulnerabilidades críticas (como falhas de autenticação, injeção de dados ou vazamento do histórico de pesquisas dos usuários). A equipe assume esse risco temporário pois uma auditoria de segurança técnica exigiria testes de intrusão e ferramentas específicas que fogem da viabilidade e do escopo atual da disciplina.
 
 ## 2. Características selecionadas
 
@@ -52,3 +53,4 @@ Cada característica selecionada dá origem a um objetivo GQM na [Fase 2](../fas
 | 0.5 | 18/10/2026 | Aplicação do método MoSCoW e inclusão de justificativas com foco no público-alvo | Guilherme Moura | - |
 | 0.6 | 18/10/2026 | Revisão das subcaracterísticas selecionadas | Gabriel Fae | Guilherme Moura |
 | 0.7 | 18/10/2026 | Substituição da modificabilidade pela testabilidade na C3, adição da discussão de trade-offs | Guilherme Moura | - |
+| 0.8 | 04/11/2026 | Nove características da ISO/IEC 25010:2023 (inclusão da segurança operacional), compatibilidade e flexibilidade conforme a norma, segurança cortada por viabilidade e referência do MoSCoW | Lucas Avelar | - |

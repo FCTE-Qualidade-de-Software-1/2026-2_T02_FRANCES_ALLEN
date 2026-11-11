@@ -1,6 +1,6 @@
 # Fase 1 - Estabelecer os requisitos da avaliação
 
-Primeira fase do processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040). Nela se define **por que** o VICKY será avaliado, **para quem**, **o que** será avaliado e **com base em qual modelo de qualidade**: as partes interessadas são identificadas e os requisitos de qualidade do produto são especificados a partir do modelo de referência da ISO/IEC 25010:2023.
+Primeira fase do processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040:2024). Nela se define **por que** o VICKY será avaliado, **para quem**, **o que** será avaliado e **com base em qual modelo de qualidade**: as partes interessadas são identificadas e os requisitos de qualidade do produto são especificados a partir do modelo de referência da ISO/IEC 25010:2023.
 
 > Selecionar de três a quatro características de qualidade do produto, indicando a norma da família SQuaRE. Justificar a seleção em função do produto e dos objetivos da avaliação.
 >

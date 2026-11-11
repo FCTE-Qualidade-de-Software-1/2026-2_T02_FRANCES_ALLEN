@@ -1,6 +1,6 @@
 # Fase 2 - Especificar a avaliação
 
-Segunda fase do processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040). Os requisitos de qualidade definidos na [Fase 1](../fase-1/index.md) são desdobrados, pelo método **GQM (Goal-Question-Metric)**, em objetivos, questões, hipóteses e métricas, com os níveis de pontuação e os critérios de julgamento que serão aplicados aos resultados.
+Segunda fase do processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040:2024). Os requisitos de qualidade definidos na [Fase 1](../fase-1/index.md) são desdobrados, pelo método **GQM (Goal-Question-Metric)**, em objetivos, questões, hipóteses e métricas, com os níveis de pontuação e os critérios de julgamento que serão aplicados aos resultados.
 
 > Utilizar o método Goal-Question-Metric (GQM) para estabelecer a ligação entre objetivos, questões e métricas. Para cada métrica, documentar a definição, o procedimento de cálculo, a fonte dos dados, o procedimento de coleta e os critérios de interpretação.
 >

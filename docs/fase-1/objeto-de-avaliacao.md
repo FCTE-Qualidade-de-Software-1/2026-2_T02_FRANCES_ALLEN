@@ -8,7 +8,7 @@
 | Tipo | Aplicação web (SaaS) de triagem de literatura científica assistida por IA, acessada pelo navegador |
 | URL | <https://vicky.synaptha.com/> |
 | Organização responsável | Synaptha Inc Ltda (CNPJ 63.642.396/0001-90), Brasília-DF |
-| Versão avaliada / data de acesso | Versão em produção acessada em 17/10/2026 (Termos de Uso e Política de Privacidade na versão 2026-09-29) |
+| Versão avaliada / data de acesso | Versão em produção acessada em 17/10/2026 (Termos de Uso e Política de Privacidade na versão 2026-09-29; SYNAPTHA, 2026) |
 | Público-alvo | Estudantes de medicina (foco declarado) em iniciação científica, TCC, monografia e artigo de resumo; uso restrito a maiores de 18 anos |
 | Plataformas | Navegador web, desktop e mobile |
 | Exige cadastro ou login | Sim, com nome, e-mail e senha. |
@@ -125,3 +125,4 @@ As partes interessadas estão em [Requisitante e partes interessadas](partes-int
 | 0.3 | 17/10/2026 | Identificação, descrição estruturada (módulos, interfaces, dependências, restrições) e funcionalidades levantadas a partir do site público | Gabriel Fae | Lucas Avelar |
 | 0.4 | 18/10/2026 | Revisão: modelo de acesso por crédito avulso, papel do Asaas e do Stripe, stack do backend e correções de redação | Lucas Avelar | - |
 | 0.5 | 18/10/2026 | Triagem completa (F05) marcada como dentro do escopo, em linha com a página de escopo; restrição financeira atualizada com os créditos de cortesia | Larissa Gomes Silva | - |
+| - | 04/11/2026 | Citação dos Termos de Uso (SYNAPTHA, 2026) | Lucas Avelar | - |

@@ -31,7 +31,7 @@ theme:
         icon: material/weather-sunny
         name: Alternar para modo claro
   features:
-    # Abas no topo = fases do processo de avaliação (ISO/IEC 25040);
+    # Abas no topo = fases do processo de avaliação (ISO/IEC 25040:2024);
     # a barra lateral esquerda mostra apenas as páginas da aba selecionada
     - navigation.tabs
     - navigation.tabs.sticky
@@ -97,7 +97,14 @@ nav:
       - Especificação das métricas: fase-2/especificacao-das-metricas.md
       - Níveis de pontuação e julgamento: fase-2/niveis-e-julgamento.md
       - Diagrama GQM: fase-2/diagrama-gqm.md
-  - "Fase 3": fase-3/index.md
+  - "Fase 3":
+      - fase-3/index.md
+      - Método do G1: fase-3/metodo-g1.md
+      - Método do G2 por inspeção: fase-3/metodo-g2-inspecao.md
+      - Método do G2 com usuários: fase-3/metodo-g2-usuarios.md
+      - Método do G3: fase-3/metodo-g3.md
+      - Recursos, ambiente e consistência: fase-3/recursos-e-ambiente.md
+      - Cronograma da avaliação: fase-3/cronograma.md
   - "Fase 4": fase-4/index.md
   - Gestão do projeto:
       - gestao/index.md
