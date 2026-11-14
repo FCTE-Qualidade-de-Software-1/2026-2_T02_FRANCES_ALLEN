@@ -93,7 +93,7 @@ Esse fluxo é o que torna as medidas coletáveis. Sem PR não há como medir ret
 | [Decisões de gestão](decisoes.md) | Decisões tomadas a partir das medições e seu efeito no ciclo seguinte |
 | [Atas de reunião](atas.md) | Registro das reuniões, presença e encaminhamentos |
 
-Dados brutos em [`dados/gestao/`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/gestao): `commits.csv` (histórico de commits classificado), `linha-de-base-e1.csv` (issues da E1 com horas estimadas) e `esforco.csv` (horas reais).
+Dados brutos em [`dados/gestao/`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/gestao): `commits.csv` (histórico de commits classificado), `linha-de-base-e1.csv` (issues da E1 com horas estimadas), `linha-de-base-e2.csv` (issues da E2 com horas estimadas) e `esforco.csv` (horas reais).
 
 ## Referências da seção
 

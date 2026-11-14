@@ -2,7 +2,7 @@
 
 Cada decisão cita a medição que a motivou, o que fecha o ciclo exigido pela Premissa 3: **medição → interpretação → decisão**. O efeito de cada decisão é verificado na coleta do ciclo seguinte, na coluna "Resultado".
 
-A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta parcial de 28/10](registro-de-medicoes.md#4-ciclo-2-parcial-2610-a-2810).
+A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta parcial de 28/10](registro-de-medicoes.md#4-ciclo-2-parcial-2610-a-2810). A verificação de D05, D06, D08, D09 e D10 e as decisões D11 e D12 foram feitas na [coleta de 13/11](registro-de-medicoes.md#7-ciclo-4-parcial-0911-a-1311), que também fechou os ciclos 2 e 3.
 
 ## 1. Resumo
 
@@ -12,12 +12,14 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | D02 | 18/10/2026 | DP4 = 42,1% em 18/10 (ciclo 0) | Revisão estrutural do material das Fases 1 e 2 | Executada |
 | D03 | 25/10/2026 | CP1 = 11,1% · CP2 SPI = 0,05 · artigo com 0 de 9 issues (ciclo 1) | Recalcular o prazo de entrega do artigo e priorizar o caminho crítico | **Executada com atraso** (verificada em 28/10) |
 | D04 | 25/10/2026 | DP3 = 82,6% (ciclo 0) · DP2 = 0,11 (ciclo 1) | Readaptar o processo de desenvolvimento e pesquisa: ciclos semanais com ponto de controle e limite de WIP | **Parcialmente executada** (verificada em 28/10) |
-| D05 | 25/10/2026 | RC1 e RC2 não mensuráveis nos ciclos 0 e 1 | Tornar obrigatório o registro de horas e validar a linha de base de 42 h | **Não executada**: 0 de 6 integrantes no prazo de 28/10 |
-| D06 | 25/10/2026 | 0 de 23 commits ligados a issue · 1 PR sem revisão · autor `user` | Adotar o fluxo branch → PR → revisão por par com `Closes #N` e corrigir a identidade do git | **Não executada**: nenhum PR entre 26 e 28/10 |
+| D05 | 25/10/2026 | RC1 e RC2 não mensuráveis nos ciclos 0 e 1 | Tornar obrigatório o registro de horas e validar a linha de base de 42 h | **Parcialmente executada**: 0 de 6 em 28/10; 1 de 6 em 13/11 |
+| D06 | 25/10/2026 | 0 de 23 commits ligados a issue · 1 PR sem revisão · autor `user` | Adotar o fluxo branch → PR → revisão por par com `Closes #N` e corrigir a identidade do git | **Parcialmente executada**: 1 PR (#32) entre 04 e 11/11, integrado sem revisão |
 | D07 | 25/10/2026 | RC3 da carga planejada de 7,1% a 28,6% (ciclo 1) | Rebalancear a distribuição das issues da E2 | Absorvida pela D08 |
-| D08 | 28/10/2026 | CP1 = 100% só após o vencimento · RC3 da carga planejada de 7,1% a 28,6% · remanejamento das divisões no ponto de controle | Registrar o remanejamento das divisões de trabalho e refazer a linha de base da E2 sobre a nova divisão | Em execução |
-| D09 | 28/10/2026 | D05 com 0 de 6 integrantes · ponto de controle realizado fora de sala, com resposta parcial | Mover a decisão do ciclo para um canal assíncrono com prazo de resposta e quórum registrado | Em execução |
-| D10 | 28/10/2026 | DP2 com 0 chegadas e WIP = 0 · nenhuma issue aberta depois de 19/10 · milestone E2 inexistente em 04/11 | Planejar o ciclo no GitHub antes de ele começar: milestone com data, issues estimadas e marco do ciclo | Proposta |
+| D08 | 28/10/2026 | CP1 = 100% só após o vencimento · RC3 da carga planejada de 7,1% a 28,6% · remanejamento das divisões no ponto de controle | Registrar o remanejamento das divisões de trabalho e refazer a linha de base da E2 sobre a nova divisão | **Parcialmente executada**: 2 issues por integrante, sem horas nem ata |
+| D09 | 28/10/2026 | D05 com 0 de 6 integrantes · ponto de controle realizado fora de sala, com resposta parcial | Mover a decisão do ciclo para um canal assíncrono com prazo de resposta e quórum registrado | **Não executada**: nenhuma ata depois de 25/10 |
+| D10 | 28/10/2026 | DP2 com 0 chegadas e WIP = 0 · nenhuma issue aberta depois de 19/10 · milestone E2 inexistente em 04/11 | Planejar o ciclo no GitHub antes de ele começar: milestone com data, issues estimadas e marco do ciclo | **Parcialmente executada**: milestones e issues em 04/11, sem horas; E1 ainda aberta |
+| D11 | 13/11/2026 | CP1 com desvio de 54,0 p.p. · SPI de 0,35 (0,20 por contagem) · 1 de 6 métodos da Fase 3 fechado (ciclo 4) | Recuperar os métodos da Fase 3 antes do ponto de controle de 16/11 | Proposta |
+| D12 | 13/11/2026 | RC3 com 1 de 6 integrantes com commit (ciclo 4) · horas de 5 integrantes impossíveis de obter · CP1 com desvio de 54,0 p.p. | Trabalho não entregue é assumido por outro integrante, combinado em separado pelo WhatsApp, e comunicado à professora | Adotada |
 
 ## 2. Detalhamento
 
@@ -71,7 +73,7 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | Interpretação | Sem horas reais não há custo (AC), CPI nem tabela de contribuição confiável. O *proxy* de commits penaliza quem trabalha no Overleaf |
 | Decisão | (1) Cada integrante registra em `esforco.csv` as horas retroativas dos ciclos 0 e 1 até o ponto de controle de 28/10. (2) A partir do ciclo 2, o registro é feito ao fechar cada issue. (3) A linha de base de 42 h é revisada e aprovada no planejamento do ciclo 2 |
 | Responsável | Cada integrante. A consolidação fica com o gerente de medição |
-| Resultado no ciclo seguinte | **Não executada.** Em 28/10, o [`esforco.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/esforco.csv) continha apenas o cabeçalho: **0 de 6** integrantes registraram as horas retroativas dos ciclos 0 e 1, e a situação seguia igual em 04/11. Consequência: RC1, RC2 e o RC3 por horas reais estão não mensuráveis pelo terceiro ciclo seguido e a linha de base de 42 h não pôde ser revista contra dado real. A causa registrada é de comunicação, não de esforço, e virou a D09 |
+| Resultado no ciclo seguinte | **Não executada.** Em 28/10, o [`esforco.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/esforco.csv) continha apenas o cabeçalho: **0 de 6** integrantes registraram as horas retroativas dos ciclos 0 e 1, e a situação seguia igual em 04/11. Consequência: RC1, RC2 e o RC3 por horas reais estão não mensuráveis pelo terceiro ciclo seguido e a linha de base de 42 h não pôde ser revista contra dado real. A causa registrada é de comunicação, não de esforço, e virou a D09. **Verificação de 13/11: parcialmente executada.** O `esforco.csv` recebeu as primeiras 4 linhas (11 h), todas de um integrante (Faehzin), incluindo horas retroativas dos ciclos 0 e 3. Faltam 5 de 6 integrantes, e a linha de base de 42 h continua sem revisão contra horas reais |
 
 ### D06 - Rastreabilidade do trabalho no repositório
 
@@ -81,7 +83,7 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | Interpretação | O trabalho existe, mas não é atribuível nem verificável. Isso derruba a qualidade dos dados de todas as métricas e explica parte da distância entre o conteúdo produzido e o SPI |
 | Decisão | Toda mudança passa a seguir o fluxo branch → PR com `Closes #N` → revisão por outro integrante → merge. A `main` fica protegida. Cada integrante configura `git config user.name` e `user.email` com a conta do GitHub |
 | Responsável | Toda a equipe. A proteção da `main` fica com quem administra o repositório |
-| Resultado no ciclo seguinte | **Não executada.** Entre 26 e 28/10 houve 3 commits, **nenhum PR** e **nenhum commit com `Closes #N`**; o único PR do repositório segue sendo o #1, de 18/10, sem revisão. O commit [`030f62d`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/commit/030f62d) ainda saiu com o autor genérico `user`. Mais grave: o fechamento das 18 issues da E1 foi declarado no ponto de controle e **não registrado no GitHub** (em 04/11 a milestone E1 constava aberta, com 16 issues em `OPEN`). Isso rebaixa CP1 e CP2 do ciclo 2 de medidos para declarados e mantém o DP4 por PR sem base de cálculo |
+| Resultado no ciclo seguinte | **Não executada.** Entre 26 e 28/10 houve 3 commits, **nenhum PR** e **nenhum commit com `Closes #N`**; o único PR do repositório segue sendo o #1, de 18/10, sem revisão. O commit [`030f62d`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/commit/030f62d) ainda saiu com o autor genérico `user`. Mais grave: o fechamento das 18 issues da E1 foi declarado no ponto de controle e **não registrado no GitHub** (em 04/11 a milestone E1 constava aberta, com 16 issues em `OPEN`). Isso rebaixa CP1 e CP2 do ciclo 2 de medidos para declarados e mantém o DP4 por PR sem base de cálculo. **Verificação de 13/11: parcialmente executada.** O PR #32 foi aberto em 04/11 com `Refs #25` e pedido de revisão por dono de página, mas foi integrado em 11/11 **sem nenhuma revisão registrada**. Dos 6 commits de 04 a 13/11, nenhum tem `Closes #N`, e o `e642ffb` entrou direto no `main`. O autor genérico `user` não voltou a aparecer, mas o mesmo integrante assina como `Faehzin` e como `Gabriel Fae`, e a `commits.csv` unifica os dois pelo login. As issues da E1 só foram fechadas no GitHub em 04/11, e a #21 três dias depois da conclusão declarada |
 
 ### D07 - Rebalancear a distribuição das issues
 
@@ -101,7 +103,7 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | Interpretação | A divisão da E1 não correspondeu ao trabalho real: parte das frentes ficou concentrada em poucos integrantes e a recuperação do artigo foi feita em bloco, fora da atribuição original. Manter a atribuição de 19/10 como base de medição produziria um RC3 falso |
 | Decisão | (1) Registrar o **remanejamento das divisões de trabalho** feito no ponto de controle de 28/10. (2) A coluna `responsavel` da `linha-de-base-e1.csv` passa a valer apenas como registro histórico do planejamento da E1 e **não é usada para julgar contribuição individual**. (3) A linha de base da E2 é montada sobre a nova divisão, com as horas estimadas distribuídas entre 13% e 20% por integrante. (4) Enquanto não houver horas reais, o RC3 é reportado por *proxy*, com a ressalva explícita de que o trabalho em Overleaf não aparece no repositório |
 | Responsável | Equipe no planejamento do ciclo, com a nova divisão registrada em ata. A consolidação fica com o gerente de medição |
-| Resultado no ciclo seguinte | _A verificar: nova divisão registrada em ata e linha de base da E2 com RC3 planejado entre 13% e 20% por integrante_ |
+| Resultado no ciclo seguinte | **Parcialmente executada (verificada em 13/11).** A nova divisão aparece no [cronograma da avaliação](../fase-3/cronograma.md) e nas issues #20 a #31: duas por integrante, ou 16,7% cada pela contagem de issues, dentro da faixa de 13% a 20%. Mas a divisão não foi registrada em ata e não tem horas estimadas, então o RC3 planejado em horas não pode ser conferido. O *proxy* de commits dos ciclos 3 e 4 ficou concentrado em dois integrantes (Faehzin e LucasAvelar2711) |
 
 ### D09 - Canal assíncrono com prazo de resposta
 
@@ -111,7 +113,7 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | Interpretação | As duas decisões que não saíram do papel são justamente as que dependem de **cada integrante agir individualmente** (lançar horas, abrir PR). As que dependiam de uma ação concentrada (fechar o escopo do artigo, publicar a *release*) saíram. O gargalo é de combinação e resposta, não de esforço: sem um canal com prazo, a decisão tomada fora de sala não alcança quem não respondeu |
 | Decisão | (1) As decisões do ciclo passam a ser registradas em canal assíncrono, com **prazo de resposta de 24 h** e quórum anotado na ata. (2) Quem não se manifestar no prazo fica registrado como "sem manifestação", e a decisão segue valendo. (3) O ponto de controle de quarta tem pauta publicada antes e é registrado em ata mesmo quando ocorre fora de sala. (4) As pendências individuais (horas e PR) são cobradas por item, com responsável e prazo nomeados |
 | Responsável | Gerente de medição para a pauta e a ata. Cada integrante pela própria resposta no prazo |
-| Resultado no ciclo seguinte | _A verificar: ata do ponto de controle com quórum registrado e as pendências da D05 e da D06 nomeadas por responsável_ |
+| Resultado no ciclo seguinte | **Não executada (verificada em 13/11).** A última ata em [Atas de reunião](atas.md) é a de 25/10. Os pontos de controle de 28/10, 04/11 e 11/11 não têm ata, quórum nem lista de pendências por responsável no repositório. As pendências da D05 (horas de 5 integrantes) e da D06 (revisão de PR) seguem sem dono nomeado |
 
 ### D10 - Planejar o ciclo no GitHub antes de ele começar
 
@@ -121,7 +123,28 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | Interpretação | O projeto repetiu, em espelho, o problema do ciclo 1. Lá, todo o trabalho entrou de uma vez e não saiu; aqui, tudo saiu de uma vez e nada entrou. Em qualquer dos dois casos o fluxo é imprevisível (CID, ICM linha 30). E o efeito sobre a medição é pior: sem backlog, CP1, CP2, DP1 e DP2 voltam a ser não mensuráveis, como no ciclo 0, e a gestão perde justamente os indicadores que a D01 recuperou |
 | Decisão | (1) Antes do início de cada ciclo, criar no GitHub a **milestone da entrega com data** e abrir as issues do ciclo com responsável, rótulo de categoria e estimativa em horas, respeitando o limite de 2 por integrante. (2) Fechar a milestone E1 e registrar o fechamento das issues já concluídas, para que a coleta volte a sair da API e não de declaração. (3) Nenhum ciclo começa sem linha de base de horas publicada em `dados/gestao/` |
 | Responsável | Quem administra o repositório, no planejamento de domingo. A conferência fica com o gerente de medição no ponto de controle |
-| Resultado no ciclo seguinte | _A verificar: milestone E2 criada com data, backlog do ciclo aberto antes do primeiro dia e milestone E1 fechada no GitHub_ |
+| Resultado no ciclo seguinte | **Parcialmente executada (verificada em 13/11).** (1) As milestones "E2 - Ponto de controle (Fase 3)" (vence em 15/11, 21h) e "E2 - Entrega final" (vence em 21/11, 21h) foram criadas em 04/11, com as issues #20 a #31, responsável, rótulo e limite de 2 por integrante. Mas isso aconteceu no **terceiro dia** do ciclo 3, não antes de ele começar, e **nenhuma issue tem estimativa em horas**. (2) As issues da E1 foram fechadas no GitHub em 04/11, mas a **milestone E1 continua aberta**. (3) A linha de base de horas da E2 não existia no início do ciclo. Ela foi estimada pelo gerente de medição na coleta de 13/11, em [`linha-de-base-e2.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/linha-de-base-e2.csv): 2 h por issue da Fase 3 e de 3 a 5 h por issue da Fase 4, 40 h no total. Efeito na medição: CP1, DP1 e DP2 voltaram a ser mensuráveis, e CP2, RC1 e RC2 passaram a ser calculáveis, mas com uma estimativa feita depois do trabalho, que não serviu para planejar o ciclo |
+
+### D11 - Recuperar os métodos da Fase 3 antes do ponto de controle
+
+| Item | Registro |
+|------|----------|
+| Medição | Ciclo 4 parcial (13/11): CP1 da milestone "E2 - Ponto de controle" com 28,6% concluído e 82,5% do período decorrido, **desvio de 54,0 p.p.** (era 24,7 p.p. em 08/11). SPI por contagem de **0,20**: 1 de 5 issues previstas até 13/11. Os métodos #20, #22 e #23 passaram 1 dia do fim planejado (12/11) e têm rascunho no `main` desde 09/11 |
+| Interpretação | O desvio está na faixa de replanejamento do CP1 (acima de 10 p.p.) e cresce cerca de 6 p.p. por dia. Como os rascunhos existem, o atraso parece estar mais em fechar e registrar do que em produzir. Sem os métodos, as coletas da Fase 4 (#26, #28 e #29), que dependem deles, não podem começar |
+| Decisão | (1) Até o prazo interno de 14/11, cada responsável pelas #20, #22, #23, #24 e #25 abre um PR com o estado atual da página, com `Closes #N`, mesmo que incompleto, e lista o que falta na descrição. (2) A revisão cruzada de 15/11 é feita nesses PRs, por outro integrante, antes do merge. (3) O que não fechar até 15/11 é dividido em issues menores, de até 1 dia (D04), e entra na milestone "E2 - Ponto de controle" com responsável nomeado. (4) Ao fechar cada issue, o responsável registra as horas no `esforco.csv` (D05) |
+| Responsável | Responsáveis pelas #20 e #22 a #25. A conferência fica com o gerente de medição, na coleta de 15/11 |
+| Resultado no ciclo seguinte | _A verificar em 15/11: issues da Fase 3 fechadas por PR revisado e desvio do CP1 no vencimento da milestone_ |
+
+### D12 - Redistribuir o trabalho não entregue
+
+| Item | Registro |
+|------|----------|
+| Medição | Ciclo 4 parcial (13/11): só 1 de 6 integrantes com commit no ciclo e maior participação de 100% (RC3 por *proxy*). Nos ciclos 2 a 4, dois integrantes não têm nenhum commit. CP1 da Fase 3 com desvio de 54,0 p.p. e 5 de 7 issues abertas a dois dias do vencimento. Horas registradas por 1 de 6 integrantes, e o gerente de medição não tem como obter as horas dos outros cinco |
+| Interpretação | A D05 (horas) e a D09 (ata com quórum e pendências por responsável) dependiam de cada integrante responder, e não funcionaram. Com o prazo da E2 curto, esperar a entrega de quem está parado põe em risco o ponto de controle de 16/11 e a entrega final de 22/11. A equipe precisa de uma regra para quando uma parte não chega, em vez de cobrar de novo pelo mesmo canal |
+| Decisão | (1) Quando um integrante não entrega a parte dele no prazo combinado, outro integrante assume o trabalho. (2) A redistribuição é combinada **em separado, pelo WhatsApp**, entre quem assume e o restante da equipe. (3) A **professora é comunicada** de cada redistribuição: qual parte, de quem era e quem assumiu |
+| Responsável | Quem assumir o trabalho, para a combinação e a entrega. Gerente de medição, para a comunicação à professora e o registro na coleta seguinte |
+| Efeito esperado na medição | A issue redistribuída passa a ser do novo responsável, de modo que CP1, DP1 e o RC3 reflitam quem fez o trabalho. Como as horas dos demais integrantes não podem ser obtidas, RC1 e RC2 da equipe ficam fora do alcance desta medição e passam a ser relatados só para quem registra horas |
+| Resultado no ciclo seguinte | _A verificar em 15/11: redistribuições feitas, comunicação à professora e issues reatribuídas no GitHub_ |
 
 ## Histórico de versão
 
@@ -131,3 +154,5 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 25/10/2026 | Registro das decisões D01 a D07 a partir das medições dos ciclos 0 e 1 | Gabriel Fae | - |
 | 0.4 | 28/10/2026 | Verificação de D01 a D07 pela coleta parcial do ciclo 2 e registro das decisões D08 (remanejamento das divisões), D09 (canal assíncrono) e D10 (planejamento do ciclo no GitHub) | Gabriel Fae | - |
+| 0.5 | 13/11/2026 | Verificação de D05, D06, D08, D09 e D10 pela coleta de 13/11 e registro da decisão D11 (recuperar os métodos da Fase 3) | Gabriel Fae | - |
+| 0.6 | 13/11/2026 | Decisão D12 (redistribuir o trabalho não entregue, com comunicação à professora) e D10 atualizada com a linha de base de horas da E2 | Gabriel Fae | - |

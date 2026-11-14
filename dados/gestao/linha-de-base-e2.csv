@@ -1,0 +1,14 @@
+issue,titulo,responsavel,categoria,milestone,horas_estimadas,criada_em,fim_planejado,fechada_em,concluida_em_declarado,status_13_11
+14,Objeto de avaliação: diagrama de contexto e campos pendentes,Faehzin,fase-1,E2 - Ponto de controle (Fase 3),2,2026-10-19,,2026-11-04,,fechada
+20,Fase 3: método de coleta do G1 (adequação funcional),larigs,fase-3,E2 - Ponto de controle (Fase 3),2,2026-11-04,2026-11-12,,,aberta
+21,Fase 3: método do G2 por inspeção (capacidade de interação),Faehzin,fase-3,E2 - Ponto de controle (Fase 3),2,2026-11-04,2026-11-12,2026-11-13,2026-11-10,fechada
+22,Fase 3: método do G2 com usuários,MrBolt2005,fase-3,E2 - Ponto de controle (Fase 3),2,2026-11-04,2026-11-12,,,aberta
+23,Fase 3: método do G3 (manutenibilidade),Guilherme-Moura,fase-3,E2 - Ponto de controle (Fase 3),2,2026-11-04,2026-11-12,,,aberta
+24,"Fase 3: recursos, ambiente e tabela de consistência",GuilhermeMM3,fase-3,E2 - Ponto de controle (Fase 3),2,2026-11-04,2026-11-13,,,aberta
+25,"Fase 3: cronograma, gestão e correções da E1",LucasAvelar2711,fase-3,E2 - Ponto de controle (Fase 3),2,2026-11-04,2026-11-14,,,aberta
+26,Fase 4: coleta e respostas do G1,larigs,fase-4,E2 - Entrega final (Fase 4 e artigo v2),5,2026-11-04,2026-11-18,,,aberta
+27,Fase 4: coleta e respostas do G2 por inspeção,Faehzin,fase-4,E2 - Entrega final (Fase 4 e artigo v2),5,2026-11-04,2026-11-18,,,aberta
+28,Fase 4: coleta e respostas do G2 com usuários,MrBolt2005,fase-4,E2 - Entrega final (Fase 4 e artigo v2),5,2026-11-04,2026-11-18,,,aberta
+29,Fase 4: coleta do G3 e ação de melhoria,Guilherme-Moura,fase-4,E2 - Entrega final (Fase 4 e artigo v2),4,2026-11-04,2026-11-20,,,aberta
+30,Fase 4: julgamento e conclusões,GuilhermeMM3,fase-4,E2 - Entrega final (Fase 4 e artigo v2),3,2026-11-04,2026-11-20,,,aberta
+31,"Artigo v2, página da Fase 4 e release E2",LucasAvelar2711,fase-4,E2 - Entrega final (Fase 4 e artigo v2),4,2026-11-04,2026-11-22,,,aberta
