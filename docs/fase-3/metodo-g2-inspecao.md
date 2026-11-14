@@ -24,7 +24,7 @@ A Fase 2 exige dois avaliadores independentes, com pelo menos um que não tenha 
 | Papel | Pode ver | Responsabilidade |
 |-------|----------|------------------|
 | A1 | Telas e código-fonte | Monta os inventários a partir do código, faz a inspeção e confirma as proteções no código |
-| A2 | Telas e inventários em texto, sem caminho de arquivo nem trecho de código | Faz a inspeção apenas pelo produto. Só pode abrir o código depois que `A2.csv` estiver no repositório |
+| A2 | Telas e inventários em texto, sem caminho de arquivo nem trecho de código | Faz a inspeção apenas pelo produto. Só pode abrir o código depois que `A2.md` estiver no repositório |
 | A3 | Evidências e critério | Decide apenas as divergências que A1 e A2 não resolverem. Não pode ser A1 nem A2 |
 
 Quem leu o código na inspeção preliminar que gerou as hipóteses H2.1 a H2.7 não pode ser A2.
@@ -55,11 +55,15 @@ Quem leu o código na inspeção preliminar que gerou as hipóteses H2.1 a H2.7 
 ```text
 dados/avaliacao/G2/M2.x.y/
 ├── coleta.md            # data, hora, navegador, versão em produção, papéis A1/A2
-├── A1.csv               # classificação independente de A1
-├── A2.csv               # classificação independente de A2
-├── consolidado.csv      # resultado único, com a justificativa das divergências
+├── A1.md                # ficha de A1: itens já listados, colunas da métrica a preencher
+├── A2.md                # ficha de A2, igual à de A1 (sem a coluna de código em M2.4.1)
+├── consolidado.md       # resultado único, com a justificativa das divergências e o cálculo
+├── inventario.md        # só em M2.2.2 e M2.3.2: mensagens em texto, entregues a A2
+├── codigo-a1.md         # só em M2.2.2 e M2.3.2: caminho de cada mensagem no código (A2 não abre)
 └── evidencias/          # AAAAMMDD_A1_<item>.png
 ```
+
+As fichas são tabelas em Markdown, já com os itens de cada métrica, e podem ser preenchidas direto no GitHub: abrir o arquivo, clicar no lápis (*Edit this file*), escrever entre as barras `|` e clicar em *Commit changes*. As capturas sobem pela opção *Add file > Upload files* da pasta `evidencias/`.
 
 Só entram dados reais de coleta. Antes de enviar uma captura, confira que ela não mostra nome ou e-mail de pessoa real, senha ou saldo de outra conta. A relação entre A1, A2 e A3 e as pessoas fica fora do repositório.
 
@@ -75,13 +79,13 @@ A coleta segue esta ordem, para que nenhuma etapa gaste a cota de prévias antes
 | 4 | A1 e A2, separados | Aplica os roteiros de entradas inválidas, com o limite de prévias por último | M2.2.2, M2.4.2 |
 | 5 | A1 e A2, separados | Classifica os inventários | M2.2.2, M2.3.2 |
 | 6 | A1 e A2, separados | Durante a triagem do G1 e no projeto triado, completa as telas de resultado e as ações caras | M2.2.1, M2.3.1, M2.4.1 |
-| 7 | A1, A2 e, se preciso, A3 | Sobe `A1.csv` e `A2.csv`, consolida e calcula | Todas |
+| 7 | A1, A2 e, se preciso, A3 | Sobe `A1.md` e `A2.md`, consolida e calcula | Todas |
 
 **Regra comum.** Sem evidência, o item não conta. Se um item não puder ser observado por causa externa (produto fora do ar ou triagem indisponível), ele é marcado como `nao_coletado`, sai do denominador e é declarado na Fase 4.
 
 ### M2.1.1: completude da descrição
 
-Abra `/` (incluindo o FAQ) e `/termos`. Para cada cenário, procure um trecho que diga o que aquilo entrega ao estudante. Citar o nome da função de passagem não conta.
+Abra `/` (incluindo o FAQ), `/termos` e `/privacidade`, as páginas públicas definidas na ficha da Fase 2. Para cada cenário, procure um trecho que diga o que aquilo entrega ao estudante. Citar o nome da função de passagem não conta.
 
 | ID | Cenário | Conta como descrito quando a página diz |
 |----|---------|------------------------------------------|
@@ -100,7 +104,12 @@ Abra `/` (incluindo o FAQ) e `/termos`. Para cada cenário, procure um trecho qu
 
 ### M2.7.1: autodescrição dos pontos de entrada
 
-Abra cada página com a área visível definida na seção 2.2 e capture a tela sem rolar. A página conta quando o texto visível diz que o VICKY busca e tria artigos científicos sobre um tema. Logotipo, nome do produto ou slogan genérico não contam.
+Abra cada página com a área visível definida na seção 2.2 e capture a tela sem rolar. A página conta quando o texto visível diz que o VICKY busca e tria artigos científicos sobre um tema. Para que os dois avaliadores apliquem a regra do mesmo jeito, o texto precisa dizer, mesmo com outras palavras, as duas coisas:
+
+1. **O que** o produto trata: artigos, estudos ou literatura científica.
+2. **O que** ele faz com isso para o estudante: buscar, triar, selecionar ou ranquear.
+
+Basta um trecho que traga as duas partes, ainda que sem a palavra "científico" quando o contexto da página é acadêmico. Termo técnico sozinho ("Triagem PICO com IA"), sem dizer o que é triado, não conta. Logotipo, nome do produto ou slogan genérico também não contam.
 
 | ID | Página | Condição |
 |----|--------|----------|
@@ -135,23 +144,25 @@ Para cada função, localize dentro do produto uma orientação sobre como execu
 
 | Inventário | Conteúdo | Pasta |
 |------------|----------|-------|
-| Erros | Mensagens de erro do fluxo do escopo | `M2.2.2/inventario.csv` |
-| Ampliado | Os erros, mais sucesso, aviso, andamento da triagem e saldo de créditos antes de executar | `M2.3.2/inventario.csv` |
+| Erros | Mensagens de erro do fluxo do escopo | `M2.2.2/inventario.md` |
+| Ampliado | Os erros, mais sucesso, aviso, andamento da triagem e saldo de créditos antes de executar | `M2.3.2/inventario.md` |
 
 Colunas: `id`, `tipo`, `texto`, `funcao`, `gatilho`. Textos iguais em lugares diferentes contam uma vez, e os lugares ficam em `gatilho`. Um texto com variável conta uma vez. A1 mantém o caminho no código em arquivo separado, que A2 só abre depois de terminar.
 
 **Etapa 4 (A1 e A2).** Cada avaliador dispara as mensagens abaixo em produção e guarda a captura.
 
-| ID | Entrada | Formulário | Observação |
-|----|---------|------------|------------|
-| E01 | Campos vazios | Cadastro | |
-| E02 | E-mail inválido | Cadastro | |
-| E03 | Senha curta | Cadastro | |
-| E04 | Senhas diferentes | Cadastro | |
-| E05 | E-mail já cadastrado | Cadastro | Usa a conta descartável |
-| E06 | Senha errada | Login | |
-| E07 | Tema vazio | Novo projeto | |
-| E08 | Limite de pré-visualizações | Geração do PICO | Sempre por último, pois esgota a cota do dia |
+| ID | Entrada | Formulário | Valor digitado | Observação |
+|----|---------|------------|----------------|------------|
+| E01 | Campos vazios | Cadastro | Todos os campos em branco | |
+| E02 | E-mail inválido | Cadastro | `aluno` | |
+| E03 | Senha curta | Cadastro | `abc12` (5 caracteres) | |
+| E04 | Senhas diferentes | Cadastro | `senha1234` e `senha4321` | |
+| E05 | E-mail já cadastrado | Cadastro | E-mail da conta descartável | Usa a conta descartável |
+| E06 | Senha errada | Login | E-mail da conta descartável e `errada123` | |
+| E07 | Tema vazio | Novo projeto | Tema em branco | |
+| E08 | Limite de pré-visualizações | Geração do PICO | - | Sempre por último, pois esgota a cota do dia |
+
+Os dois avaliadores digitam os mesmos valores, para que as mensagens sejam comparáveis.
 
 A validação nativa do navegador conta como mensagem, porque é o que o estudante vê, e fica marcada como `origem = navegador`. Mensagem que não pode ser disparada sem gastar crédito é classificada pelo texto do inventário, com `origem = inventario`.
 
@@ -201,23 +212,23 @@ Um padrão observado em uma única tela não tem o que comparar: sai de B e fica
 2. A2 verifica cada ação pela tela. A1 verifica pela tela e localiza o trecho que confirma no código.
 3. A01 é observada numa triagem já prevista no G1.
 4. **A03 pode desperdiçar a triagem do G1.** A1 confere no código, antes, se há confirmação. Se houver, A2 clica e cancela. Se não houver, ninguém clica durante uma triagem do G1: A03 é registrada como desprotegida com a evidência do código e a tela do botão.
-5. Se uma ação que consome crédito estiver sem proteção, anote em destaque em `consolidado.csv`: pela Fase 2, isso leva M2.4.1 a Insatisfatório e pode levar o G2 a "Não atende".
+5. Se uma ação que consome crédito estiver sem proteção, anote em destaque em `consolidado.md`: pela Fase 2, isso leva M2.4.1 a Insatisfatório e pode levar o G2 a "Não atende".
 
 **Registro:** `acao`, `consome_credito`, `protecao_encontrada`, `tipo (confirmacao/aviso/bloqueio/nenhuma)`, `protegida (sim/nao)`, `captura`. Somente em A1: `arquivo_e_linha`.
 
 ### M2.4.2: correção de erro de entrada
 
-| ID | Entrada inválida | Formulário |
-|----|------------------|------------|
-| I01 | E-mail sem domínio | Cadastro |
-| I02 | E-mail sem domínio | Login |
-| I03 | E-mail sem domínio | Recuperação de senha |
-| I04 | Senha curta | Cadastro |
-| I05 | Senhas diferentes | Cadastro |
-| I06 | Tema vazio | Novo projeto |
-| I07 | Quantidade do Top fora dos valores permitidos | Novo projeto |
+| ID | Entrada inválida | Formulário | Valor digitado |
+|----|------------------|------------|----------------|
+| I01 | E-mail sem domínio | Cadastro | `aluno@` |
+| I02 | E-mail sem domínio | Login | `aluno@` |
+| I03 | E-mail sem domínio | Recuperação de senha | `aluno@` |
+| I04 | Senha curta | Cadastro | `abc12` (5 caracteres) |
+| I05 | Senhas diferentes | Cadastro | `senha1234` e `senha4321` |
+| I06 | Tema vazio | Novo projeto | Tema em branco |
+| I07 | Quantidade do Top fora dos valores permitidos | Novo projeto | Valor fora de 10, 20 e 30, se o campo aceitar digitação |
 
-Só valem entradas possíveis pela interface normal, sem alterar a página pelo DevTools.
+Só valem entradas possíveis pela interface normal, sem alterar a página pelo DevTools. O valor `aluno@` foi fixado porque o Chrome aceita `aluno@unb` como e-mail válido (não exige ponto no domínio): com esse valor o erro não seria detectado e o item sairia de B.
 
 | Comportamento observado | `detectado` | `sugeriu_valor` | Efeito na métrica |
 |-------------------------|:-----------:|:---------------:|-------------------|
@@ -234,10 +245,10 @@ Só valem entradas possíveis pela interface normal, sem alterar a página pelo 
 | Arquivo | Quem produz | Quando |
 |---------|-------------|--------|
 | `coleta.md` | A1 | Antes da primeira captura, atualizado se algo mudar |
-| `inventario.csv` | A1 | Etapa 1 (M2.2.2 e M2.3.2) |
-| `A1.csv` e `A2.csv` | Cada avaliador | Ao terminar a classificação, com as colunas da métrica |
+| `inventario.md` | A1 | Etapa 1 (M2.2.2 e M2.3.2) |
+| `A1.md` e `A2.md` | Cada avaliador | Ao terminar a classificação, com as colunas da métrica |
 | `evidencias/` | Cada avaliador | Durante a inspeção |
-| `consolidado.csv` | A1 e A2 | Etapa 7, com `valor_a1`, `valor_a2`, `valor_final`, `justificativa` e `decidido_por` |
+| `consolidado.md` | A1 e A2 | Etapa 7, com `valor_a1`, `valor_a2`, `valor_final`, `justificativa` e `decidido_por` |
 
 `coleta.md` traz data e hora de início e fim, versão do Chrome, área visível, commit do código e a versão em produção. Como a tela do VICKY pode não exibir número de versão, a referência é a data e a hora de acesso, junto com a versão dos Termos de Uso exibida no site.
 
@@ -254,15 +265,15 @@ Só valem entradas possíveis pela interface normal, sem alterar a página pelo 
 | M2.4.2 | Erros com `sugeriu_valor = sim` | Erros com `detectado = sim` | - |
 | M2.7.1 | Páginas com `explica_proposito = sim` | 4 | - |
 
-O valor é calculado somente sobre `consolidado.csv`, e o nível sai da tabela de [níveis de pontuação](../fase-2/niveis-e-julgamento.md). Valor, nível e evidência são publicados na [Fase 4](../fase-4/index.md). Os limiares não mudam depois da coleta.
+O valor é calculado somente sobre `consolidado.md`, e o nível sai da tabela de [níveis de pontuação](../fase-2/niveis-e-julgamento.md). Valor, nível e evidência são publicados na Fase 4, em [Resultados do G2 por inspeção](../fase-4/resultados-g2-inspecao.md). Os limiares não mudam depois da coleta.
 
 ## 6. Discordância e repetição
 
 **Como A1 e A2 chegam a um resultado único:**
 
-1. Cada um classifica sozinho. `A1.csv` e `A2.csv` são enviados ao repositório antes da conversa, o que deixa no histórico o julgamento independente.
-2. As duas planilhas são comparadas item a item, e a concordância bruta é registrada em `coleta.md`, apenas como informação.
-3. Em cada divergência, A1 e A2 reabrem a evidência e aplicam o critério desta página. A decisão e o motivo vão para `consolidado.csv`.
+1. Cada um classifica sozinho. `A1.md` e `A2.md` são enviados ao repositório antes da conversa, o que deixa no histórico o julgamento independente. Nenhum avaliador abre a ficha do outro antes de enviar a sua; a ordem dos commits fica no histórico.
+2. As duas fichas são comparadas item a item, e a concordância bruta é registrada em `coleta.md`, apenas como informação.
+3. Em cada divergência, A1 e A2 reabrem a evidência e aplicam o critério desta página. A decisão e o motivo vão para `consolidado.md`.
 4. Sem consenso, A3 decide olhando somente a evidência e o critério, e a linha recebe `decidido_por = A3`.
 5. Se a divergência vier de um critério ambíguo, a interpretação adotada é escrita em `coleta.md` e reaplicada a todos os itens da métrica, não só ao item discutido.
 6. O resultado é sempre sim ou não por item. Não se faz média entre avaliadores.
@@ -273,7 +284,7 @@ O valor é calculado somente sobre `consolidado.csv`, e o nível sai da tabela d
 |----------|-------------|
 | Falha momentânea do site | Tentar de novo em outro horário. Persistindo, marcar `nao_coletado` |
 | Mudança visível em produção durante a coleta | Refazer os itens afetados e anotar a data da mudança em `coleta.md` |
-| Texto diferente entre produção e código | Vale produção. Anotar a diferença em `inventario.csv` |
+| Texto diferente entre produção e código | Vale produção. Anotar a diferença em `inventario.md` |
 | Cota de prévias esgotada | Continuar no dia seguinte |
 | Captura perdida ou com dado pessoal | Refazer a captura. Não editar a imagem para esconder o problema |
 
@@ -290,3 +301,4 @@ O valor é calculado somente sobre `consolidado.csv`, e o nível sai da tabela d
 |--------|------|-----------|----------|------------|
 | 0.1 | 04/11/2026 | Criação da página | Lucas Avelar | - |
 | 0.2 | 09/11/2026 | Método completo de inspeção: papéis, ambiente, roteiro e checklist por métrica, registro, cálculo e regra de discordância | Gabriel Fae | - |
+| 0.3 | 13/11/2026 | Fichas em Markdown preenchíveis no GitHub, `/privacidade` em M2.1.1 como na Fase 2, critério de M2.7.1 detalhado e valores digitados fixos nos roteiros de M2.2.2 e M2.4.2 | Gabriel Fae | - |

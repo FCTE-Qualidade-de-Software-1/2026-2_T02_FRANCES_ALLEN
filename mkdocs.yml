@@ -105,7 +105,9 @@ nav:
       - Método do G3: fase-3/metodo-g3.md
       - Recursos, ambiente e consistência: fase-3/recursos-e-ambiente.md
       - Cronograma da avaliação: fase-3/cronograma.md
-  - "Fase 4": fase-4/index.md
+  - "Fase 4":
+      - fase-4/index.md
+      - Resultados do G2 por inspeção: fase-4/resultados-g2-inspecao.md
   - Gestão do projeto:
       - gestao/index.md
       - Plano de medição: gestao/plano-de-medicao.md

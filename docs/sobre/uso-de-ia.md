@@ -8,6 +8,7 @@ A rubrica da disciplina exige declarar **a ferramenta**, **a tarefa** e **como o
 | Claude (Anthropic) | Inventário das telas, mensagens e ações do código-fonte do VICKY e rascunho do GQM de capacidade de interação (G2) | _a preencher pelo Lucas: o que conferiu nas fontes e o que mudou_ | Lucas Avelar |
 | Claude (Anthropic) | Rascunho do GQM de adequação funcional (G1) | Todo o conteúdo foi lido, ajustado e adaptado pela Larissa, para conferir a veracidade dos fatos | Larissa Gomes Silva |
 | Claude (Anthropic) | Diagrama de modelo de qualidade | Escrevi todas as qualidades analisadas e suas subcaracteristicas e pedi o diagrama desenhado após anexar um desenho feito à mão no caderno | Gabriel Fae |
+| Claude (Anthropic) | Revisão do método do G2 por inspeção, fichas de coleta em Markdown, estrutura da página de resultados do G2 por inspeção e prévia exploratória das páginas públicas (`previa-ia.md`) | _a preencher pelo Gabriel: o que conferiu e o que mudou_ | Gabriel Fae |
 | _-_ | _-_ | _-_ | _-_ |
 
 ## Histórico de versão
