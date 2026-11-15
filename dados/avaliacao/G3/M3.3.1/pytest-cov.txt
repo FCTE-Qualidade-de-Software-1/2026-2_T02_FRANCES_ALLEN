@@ -1,6 +1,6 @@
 ============================= test session starts ==============================
 platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0
-rootdir: /private/tmp/claude-501/-Users-lucasavelar-Luna/9df9f72f-4af7-4fd7-a488-217d53c8421b/scratchpad/vicky-g3/codigo
+rootdir: /tmp/coleta-g3/codigo
 configfile: pyproject.toml
 plugins: cov-7.1.0, anyio-4.14.2
 collected 1034 items
@@ -74,14 +74,14 @@ tests/test_webhook_disputa_e_refund_que_falhou.py ........               [100%]
 
 =============================== warnings summary ===============================
 ../venv-testes/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
-  /private/tmp/claude-501/-Users-lucasavelar-Luna/9df9f72f-4af7-4fd7-a488-217d53c8421b/scratchpad/vicky-g3/venv-testes/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  /tmp/coleta-g3/venv-testes/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
   The CallSpec2 alias will be removed in pytest 10.
   Update imports to use CallSpec instead.
   See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
     from _pytest.python import CallSpec2
 
 ../venv-testes/lib/python3.12/site-packages/passlib/utils/__init__.py:854
-  /private/tmp/claude-501/-Users-lucasavelar-Luna/9df9f72f-4af7-4fd7-a488-217d53c8421b/scratchpad/vicky-g3/venv-testes/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+  /tmp/coleta-g3/venv-testes/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
     from crypt import crypt as _crypt
 
 tests/test_aceite_vigente_pedido_sem_trancar.py: 10 warnings
@@ -130,7 +130,7 @@ tests/test_webhook_ambiente_e_dono_do_credito.py: 6 warnings
 tests/test_webhook_ambiente_thread_e_rastro.py: 2 warnings
 tests/test_webhook_carimbo_e_estorno_fora_de_ordem.py: 9 warnings
 tests/test_webhook_disputa_e_refund_que_falhou.py: 8 warnings
-  /private/tmp/claude-501/-Users-lucasavelar-Luna/9df9f72f-4af7-4fd7-a488-217d53c8421b/scratchpad/vicky-g3/codigo/src/vicky/web/app.py:379: DeprecationWarning: 
+  /tmp/coleta-g3/codigo/src/vicky/web/app.py:379: DeprecationWarning: 
           on_event is deprecated, use lifespan event handlers instead.
   
           Read more about it in the
@@ -184,7 +184,7 @@ tests/test_webhook_ambiente_e_dono_do_credito.py: 6 warnings
 tests/test_webhook_ambiente_thread_e_rastro.py: 2 warnings
 tests/test_webhook_carimbo_e_estorno_fora_de_ordem.py: 9 warnings
 tests/test_webhook_disputa_e_refund_que_falhou.py: 8 warnings
-  /private/tmp/claude-501/-Users-lucasavelar-Luna/9df9f72f-4af7-4fd7-a488-217d53c8421b/scratchpad/vicky-g3/venv-testes/lib/python3.12/site-packages/fastapi/applications.py:4681: DeprecationWarning: 
+  /tmp/coleta-g3/venv-testes/lib/python3.12/site-packages/fastapi/applications.py:4681: DeprecationWarning: 
           on_event is deprecated, use lifespan event handlers instead.
   
           Read more about it in the
