@@ -70,11 +70,11 @@ Não se exige conhecimento de metodologia científica: a promessa do VICKY, regi
 
 | Papel | Quem | Responsabilidade | Não pode |
 |-------|------|------------------|----------|
-| Condutor (C) | João Felipe Oliveira, responsável pela issue #22; na ausência dele, outro integrante que tenha feito o piloto | Lê o termo, entrega os cartões, faz os lembretes neutros, aplica os questionários e decide quando dar ajuda mínima | Explicar a interface, ler rótulos em voz alta, apontar a tela antes do limite de 3 minutos |
+| Condutor (C) | João Felipe Oliveira, responsável pela issue #22; na ausência dele, outro integrante que tenha feito o piloto | Lê o termo, entrega os cartões, faz os lembretes neutros (as três frases fixas da [seção 4.1](#41-sessao-com-o-participante-m272-e-m251), que pedem ao participante que continue pensando em voz alta sem indicar o caminho), aplica os questionários e decide quando dar ajuda mínima | Explicar a interface, ler rótulos em voz alta, apontar a tela antes do limite de 3 minutos |
 | Observador (O) | Um integrante escalado por sessão, registrado em `sessoes.csv` | Preenche a ficha de uso de cada elemento com o momento da gravação, cuida da gravação e anota ocorrências | Falar com o participante durante as tarefas |
 | Terceiro (A3) | Integrante que não esteve na sessão | Decide divergências de classificação que C e O não resolverem, olhando só a gravação e o gabarito | Ver a ficha de C ou de O antes de decidir |
 | Avaliadores de teclado (K1, K2) | Dois integrantes | Executam M2.6.1 de forma independente | Consultar a ficha do outro antes de enviar a sua |
-| Avaliadores de contraste (A1, A2) | Dois integrantes, pelo menos um sem ter lido o código | Executam M2.6.2 de forma independente | Idem |
+| Avaliadores de contraste (A1, A2) | Dois integrantes, pelo menos um sem ter lido o código | Executam M2.6.2 de forma independente | Consultar a ficha do outro antes de enviar a sua |
 
 A relação entre os códigos (C, O, K1, K2, A1, A2, A3) e as pessoas fica em `coleta.md` de cada pasta, sem dado do participante.
 
@@ -367,3 +367,4 @@ Em M2.6.1, uma função em que K1 e K2 divergem é executada de novo pelos dois 
 | 0.2 | 09/11/2026 | Esqueleto com o que a Fase 2 define e os pontos em aberto para o responsável | Gabriel Fae | - |
 | 0.3 | 14/11/2026 | Método completo: justificativa, recrutamento, papéis, contas, limite de prévias, termo e anonimização, roteiro da sessão com tempos, teste com teclado, passo a passo do axe, registro, cálculo e repetição. Incorpora o roteiro de M2.7.2 e o questionário qualitativo escritos por João Felipe Oliveira | Lucas Avelar e João Felipe Oliveira | - |
 | 0.4 | 14/11/2026 | Códigos P06 e P07 para as reservas e relação entre o tempo estimado das partes A e B, o tempo-limite e a duração informada no termo | Lucas Avelar | - |
+| 0.5 | 15/11/2026 | Definição dos lembretes neutros no papel do condutor e "Idem" trocado pelo texto, a partir da revisão do João Felipe | Lucas Avelar | - |

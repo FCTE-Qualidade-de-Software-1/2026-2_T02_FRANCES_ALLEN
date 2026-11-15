@@ -299,7 +299,7 @@ O valor é calculado somente sobre `consolidado.md`, e o nível sai da tabela de
 ## 7. Pendências antes da coleta
 
 - [ ] Definir quem são A1, A2 e A3
-- [ ] Confirmar a conta de cortesia e o número de créditos com a equipe do VICKY
+- [x] Confirmar a conta de cortesia e o número de créditos: 10 créditos em 14/11 ([Método do G1, seção 3.5](metodo-g1.md#35-contas-creditos-e-divisao-das-triagens)); a inspeção não consome créditos
 - [ ] Conferir em produção a lista de ações de M2.4.1
 - [ ] Combinar com o G1 (#26) o horário da triagem observada
 
@@ -312,3 +312,4 @@ O valor é calculado somente sobre `consolidado.md`, e o nível sai da tabela de
 | 0.3 | 13/11/2026 | Fichas em Markdown preenchíveis no GitHub, `/privacidade` em M2.1.1 como na Fase 2, critério de M2.7.1 detalhado e valores digitados fixos nos roteiros de M2.2.2 e M2.4.2 | Gabriel Fae | - |
 | 0.4 | 14/11/2026 | Seção "Por que este método", exigida pela estrutura da Fase 3 | Lucas Avelar | - |
 | 0.5 | 14/11/2026 | "Por que este método" como seção de nível 2, fundamentação ligada às fichas da Fase 2, quantidade do Top de 1 a 30 em A04 e I07 e papéis nomeados em `coleta.md` | Lucas Avelar | - |
+| 0.6 | 15/11/2026 | Pendência de créditos resolvida (10 em 14/11) | Lucas Avelar | - |
