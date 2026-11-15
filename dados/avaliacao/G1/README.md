@@ -1,16 +1,31 @@
 # Dados brutos do objetivo G1 (adequação funcional)
 
-Cada métrica de G1 tem uma pasta própria, com o ID da métrica como nome. A ficha de cada uma está em [Especificação das métricas](../../../docs/fase-2/especificacao-das-metricas.md). Esta pasta só recebe dados reais de coleta; nada aqui é simulado.
+Cada métrica de G1 tem uma pasta própria, com o ID da métrica como nome. A ficha de cada uma está em [Especificação das métricas](../../../docs/fase-2/especificacao-das-metricas.md), e o passo a passo de coleta, com o nome e as colunas de cada planilha, está no [Método do G1](../../../docs/fase-3/metodo-g1.md). Esta pasta só recebe dados reais de coleta; nada aqui é simulado.
 
-| Pasta | Conteúdo esperado |
-|-------|-------------------|
-| `M1.1.1/` | Planilha do Top 30 de cada tema (T1 a T4), lista de estudos incluídos da revisão de referência e o cruzamento por DOI |
-| `M1.1.2/` | Resultado da consulta de cada estudo da revisão de referência no PubMed, SciELO e Google Acadêmico, e o cálculo de Rr |
+| Pasta ou arquivo | Conteúdo esperado |
+|------------------|-------------------|
+| `execucoes.csv` | Uma linha por triagem (T1 a T4, E1, E2, T1-B, T3-B), inclusive as que falharam: configuração, data e hora, créditos antes e depois, versão dos Termos |
+| `M1.1.1/` | Top 30 de cada tema (T1 a T4), lista de estudos incluídos da revisão de referência, PICO gerado, exportação original da VICKY e correspondências manuais |
+| `M1.1.2/` | Resultado da consulta de cada estudo da revisão de referência no PubMed, SciELO e Google Acadêmico |
 | `M1.2.1/` | Caso de teste e captura de tela de cada função (F01 a F09), com a classificação em operante, parcial ou ausente |
-| `M1.3.1/` | Fichas de julgamento de relevância dos dois avaliadores e o cálculo do kappa de Cohen |
+| `M1.3.1/` | Ficha cega e chave de cada tema, piloto de calibração, fichas de julgamento de relevância dos dois avaliadores, consolidado e registro do kappa |
 | `M1.3.2/` | Planilha de conferência dos 10 itens por tema contra a página oficial de cada artigo |
-| `M1.4.1/` | Quality Score de cada artigo, notas da rubrica dos dois avaliadores e o cálculo do ρ de Spearman |
-| `M1.5.1/` | Configuração dos filtros de cada execução e a conferência item a item |
-| `M1.5.2/` | Os dois Top 30 de cada tema repetido, com data e hora, e o cálculo do índice de Jaccard |
+| `M1.4.1/` | Notas da rubrica dos dois avaliadores em T1 e T2 (o Quality Score vem do Top 30 em `M1.1.1/`) |
+| `M1.5.1/` | Lista de cada execução com filtros (E1 e E2), PICO gerado e a conferência item a item |
+| `M1.5.2/` | Segundo Top 30 (B) de cada tema repetido; o primeiro (A) é o de `M1.1.1/` |
+| `modelos/` | Cabeçalho de cada planilha, sem dado. Copiar para a pasta da métrica com o nome indicado no método |
+| `calcular_g1.py` | Script de cálculo de todas as métricas, dos níveis e da agregação do G1 |
 
-Os dados de avaliadores e participantes devem ser anonimizados (A1, A2) antes de entrar no repositório, como pede o [README da pasta de dados](../../README.md). Registre em cada pasta a data da coleta e a versão da VICKY em produção.
+## Cálculo
+
+A partir da raiz do repositório, com Python 3.9 ou superior e sem dependência externa:
+
+```bash
+python3 dados/avaliacao/G1/calcular_g1.py calcular --saida dados/avaliacao/G1/resultados.csv
+python3 dados/avaliacao/G1/calcular_g1.py ficha-cega --tema T1    # ficha cega de M1.3.1 e M1.4.1
+python3 dados/avaliacao/G1/calcular_g1.py amostra --tema T1       # posições da amostra de M1.3.2
+```
+
+Arquivo ausente deixa a métrica como "não coletado"; o script não estima valores. Para testar o script, use uma pasta fora do repositório com `--pasta`; dado de teste não entra aqui.
+
+Os dados de avaliadores e participantes devem ser anonimizados (A1, A2, A3) antes de entrar no repositório, como pede o [README da pasta de dados](../../README.md). Registre a data da coleta e a versão da VICKY em produção em `execucoes.csv`.
