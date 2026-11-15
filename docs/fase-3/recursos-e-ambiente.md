@@ -89,7 +89,7 @@ Todos os métodos registram os dados brutos em `dados/avaliacao/` do [repositór
 |------|-------|-------|
 | Triagens completas necessárias | 8 (T1, T2, T3, T4, E1, E2, T1-B e T3-B), 1 crédito cada | [Método do G1, seção 3.5](metodo-g1.md#35-contas-creditos-e-divisao-das-triagens) |
 | Triagens extras de outros métodos | Nenhuma. A inspeção observa "iniciar triagem" (M2.4.1) e o teste com teclado observa F05 (M2.6.1) em triagens já previstas no G1; as sessões usam o projeto já triado de T1 | Métodos do G2 |
-| Créditos de cortesia disponíveis | A confirmar com a equipe do VICKY antes da etapa 3 do G1 | [Seção 6](#6-decisoes-pendentes-antes-da-coleta) |
+| Créditos de cortesia disponíveis | 10, recebidos da equipe do VICKY em 17/10/2026; saldo de 10 em 14/11/2026, conferido de novo na etapa 2 do G1. Cobrem as 8 triagens e deixam 2 para repetir triagem que falhe | [Método do G1, seção 3.5](metodo-g1.md#35-contas-creditos-e-divisao-das-triagens) |
 | Custo de referência | R$ 24,90 por triagem completa, valor usado na Fase 2 (M2.4.1). Se faltarem créditos de cortesia, a compra de créditos é decisão da equipe; o método não pressupõe compra | [Níveis de pontuação](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica) |
 | Com menos de 8 créditos | Ordem de prioridade do G1: T1, T2, T3, T4, T1-B, E1, T3-B, E2. Execução não feita torna a métrica "não coletada" naquele tema, sem estimativa | Método do G1, seção 3.5 |
 
@@ -153,7 +153,7 @@ A rubrica pede o nível de conhecimento em informática e no domínio da aplica�
 | G2 com usuários, A1 e A2 (contraste) | Rodar o axe, colar script no Console, usar o seletor de cor do DevTools | Critério 1.4.3 da WCAG 2.2 | Ler a seção 4.3 do método |
 | G3, A1 e A2 | Terminal com bash, git básico, leitura de Python (função, `try`/`except`, `logging`, `print`) | Noção de complexidade ciclomática e de cobertura de testes no nível das fichas; não precisa conhecer o domínio do VICKY | Ler o método do G3 |
 
-Os papéis de cada método são independentes, mas há restrições cruzadas: no G1, quem conduz as triagens não julga; na inspeção do G2, quem leu o código na preparação das hipóteses não pode ser A2; em todos os métodos, A3 não pode ser A1 nem A2.
+Os papéis de cada método são independentes, mas há restrições cruzadas: no G1, quem conduz as triagens não julga, e quem escolheu as revisões de referência ou leu a lista de incluídos não é A1 nem A2; na inspeção do G2, quem leu o código na preparação das hipóteses não pode ser A2; em todos os métodos, A3 não pode ser A1 nem A2.
 
 ### 4.2 Participantes das sessões
 
@@ -264,8 +264,8 @@ Itens que dependem de decisão da equipe. Cada um tem o requisito que precisa se
 
 | Item | Requisito | Responsável | Até |
 |------|-----------|-------------|-----|
-| Créditos de cortesia | Confirmar com a equipe do VICKY quantos créditos a conta de cortesia tem; são necessários 8. Com menos, vale a ordem de prioridade do G1 e a decisão de comprar ou não fica com a equipe | Condutor do G1 (#26) | 16/11, antes da etapa 3 do G1 |
-| Avaliadores do G1 | Definir C, A1, A2 e A3, com C fora do julgamento | Equipe, combinado pelo WhatsApp (D12) | 15/11 |
+| Créditos de cortesia | Conferir na etapa 2 do G1 se o saldo continua em 10 (eram 10 em 14/11; são necessários 8). Com menos, vale a ordem de prioridade do G1 e a decisão de comprar ou não fica com a equipe | Condutor do G1 (#26) | 16/11, antes da etapa 3 do G1 |
+| Avaliadores do G1 | Definir C, A1, A2 e A3, com C fora do julgamento e A1 e A2 sem ter escolhido as revisões de referência nem lido as listas de incluídos | Equipe, combinado pelo WhatsApp (D12) | 15/11 |
 | Avaliadores do G2 por inspeção | Definir A1, A2 e A3, com A2 sem ter lido o código | Responsável pela #27 | Já em andamento; registrar em `coleta.md` |
 | Avaliadores do G2 com usuários | Definir C, O e A3 das sessões, K1 e K2 do teclado e A1 e A2 do contraste | Responsável pela #28 | 15/11 |
 | Repetição do G3 | Definir o A2 que repete a coleta em outra máquina e o A3 da inspeção de M3.2.3 | Responsável pela #29 | 16/11 |
@@ -287,3 +287,4 @@ Itens que dependem de decisão da equipe. Cada um tem o requisito que precisa se
 | 0.2 | 09/11/2026 | Esqueleto com os pontos em aberto e a tabela de consistência das 26 métricas, com recurso e ambiente a definir | Gabriel Fae | - |
 | 0.3 | 14/11/2026 | Página completa, assumida pela D12: hardware e software por método com versões, contas, créditos e limites de uso, acesso ao código, massa de dados justificada, conhecimento exigido, tabela de consistência das 26 métricas com a coerência de cada uma, verificação da cobertura e decisões pendentes com responsável | Lucas Avelar | - |
 | 0.4 | 14/11/2026 | Fork privado e verificação sem o fork, independência pela ordem dos commits, cláusula dos Termos de Uso citada, papéis nomeados e só participantes anonimizados, códigos das reservas, M3.2.3 alinhada à ficha, alterações na Fase 2 durante a Fase 3 (seção 5.5), premissas 4, 5 e 6 (seção 5.6) e legendas das tabelas | Lucas Avelar | - |
+| 0.5 | 14/11/2026 | Créditos de cortesia confirmados (10 em 14/11) e restrição de que A1 e A2 do G1 não escolheram as revisões de referência | Larissa Gomes | - |

@@ -317,9 +317,9 @@ def m131(pasta: Path, resultados: list[dict], detalhe: list[str]) -> None:
                        f"{relevantes} de {len(cons)} relevantes; P = {fmt(p)}; {estado}")
         if valido and p is not None:
             p_validos.append(p)
-    v = media(p_validos) if len(p_validos) >= 2 else None
-    if 0 < len(p_validos) < 2:
-        detalhe.append("M1.3.1: menos de dois temas válidos; métrica declarada não aplicável")
+    v = media(p_validos) if len(p_validos) >= 3 else None
+    if 0 < len(p_validos) < 3:
+        detalhe.append("M1.3.1: menos de três temas válidos; métrica declarada não aplicável")
     resultados.append({"metrica": "M1.3.1", "valor": v,
                        "nivel": nivel("M1.3.1", v) if v is not None else "não aplicável" if p_validos else "não coletado",
                        "base": f"{len(p_validos)} de 4 temas válidos"})

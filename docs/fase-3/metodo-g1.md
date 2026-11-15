@@ -23,11 +23,11 @@ São oito triagens completas: T1, T2, T3, T4, E1, E2, T1-B e T3-B. Todas as outr
 
 ### 2.1 Lugar no processo de avaliação
 
-Na ISO/IEC 25040:2024, a terceira atividade do processo de avaliação de produto é projetar a avaliação: escolher como cada medida será aplicada, com que dados, por quem e em que ordem, antes de qualquer medição. Esta página é esse projeto para o G1. Ela não muda nada do que a [Fase 2](../fase-2/index.md) especificou (fórmulas, níveis, regras de agregação); só fecha as decisões que a Fase 2 deixou explicitamente para cá e escolhe a massa de dados.
+Na ISO/IEC 25040:2024, a terceira atividade do processo de avaliação de produto é projetar a avaliação: escolher como cada medida será aplicada, com que dados, por quem e em que ordem, antes de qualquer medição. Esta página é esse projeto para o G1. Ela não muda fórmulas, níveis nem regras de agregação da [Fase 2](../fase-2/index.md); fecha as decisões que a Fase 2 deixou explicitamente para cá, escolhe a massa de dados e declara, na seção 2.6, os três ajustes de procedimento que a coleta exige.
 
 ### 2.2 Revisão sistemática como padrão de referência
 
-Para medir completude (Q1.1) é preciso saber quais estudos a lista deveria conter. Montar esse gabarito do zero exigiria a equipe fazer uma revisão sistemática por tema, o que está fora do alcance e introduziria o julgamento da própria equipe no padrão. Por isso cada tema usa uma revisão sistemática publicada, recente e de acesso aberto, cuja lista de estudos incluídos foi definida por especialistas com protocolo e busca documentados. Esse é o desenho usual para avaliar ferramentas de apoio à identificação de estudos: comparar o que a ferramenta recupera com os estudos incluídos de revisões já publicadas (O'MARA-EVES et al., 2015). A [ficha de M1.1.1](../fase-2/especificacao-das-metricas.md#m111) já prevê esse padrão; o método escolhe as revisões e diz como tratar o que o VICKY não tem como alcançar (seção 3.3).
+Para medir completude (Q1.1) é preciso saber quais estudos a lista deveria conter. Montar esse gabarito do zero exigiria a equipe fazer uma revisão sistemática por tema, o que está fora do alcance e introduziria o julgamento da própria equipe no padrão. Por isso cada tema usa uma revisão sistemática publicada e recente (de 2024 a 2026), cuja lista de estudos incluídos foi definida por especialistas com protocolo e busca documentados. Esse é o desenho usual para avaliar ferramentas de apoio à identificação de estudos: comparar o que a ferramenta recupera com os estudos incluídos de revisões já publicadas (O'MARA-EVES et al., 2015). A [ficha de M1.1.1](../fase-2/especificacao-das-metricas.md#m111) já prevê esse padrão; o método escolhe as revisões e diz como tratar o que o VICKY não tem como alcançar (seção 3.3). Nem todas são de acesso aberto: a cópia de T4 no PMC só é liberada em 12/05/2027, e as listas nominais de T1, T2 e T4 ainda precisam ser baixadas da Cochrane Library na etapa 1. Se a lista de um tema não puder ser obtida, entra o tema reserva (seção 3.2).
 
 Três das quatro revisões são da Cochrane, que publica a lista de estudos incluídos em seção própria e segue o mesmo manual de métodos. A quarta, de saúde pública brasileira, foi publicada em periódico nacional indexado no SciELO, porque a Fase 2 pede um tema em que o SciELO pese.
 
@@ -36,8 +36,9 @@ Três das quatro revisões são da Cochrane, que publica a lista de estudos incl
 Relevância (M1.3.1) e qualidade metodológica (M1.4.1) dependem de julgamento humano. A Fase 2 exige dois avaliadores, e M1.3.1 só vale com kappa de Cohen de 0,61 ou mais (COHEN, 1960; LANDIS; KOCH, 1977). O método acrescenta três controles para que o julgamento não seja influenciado pelo próprio VICKY:
 
 1. **Avaliador não conduz a triagem.** Quem executa a triagem vê a posição e o Quality Score de cada artigo; por isso não julga.
-2. **Ficha cega.** A1 e A2 recebem título, resumo, ano, periódico e DOI em ordem aleatória, sem posição nem Quality Score, como pede a ficha de M1.3.1. A ordem sai de uma semente fixa, então qualquer pessoa gera a mesma ficha.
+2. **Ficha cega.** A1 e A2 recebem título, resumo, ano, periódico e DOI em ordem aleatória, sem posição nem Quality Score. A ficha de M1.3.1 pede título e resumo sem posição nem Quality Score; ano, periódico e DOI entram para ajudar a identificar o artigo e não revelam o ranking. A ordem sai de uma semente fixa, então qualquer pessoa gera a mesma ficha.
 3. **Julgamento independente registrado antes da conversa.** Cada ficha sobe ao repositório antes da comparação, e o histórico de commits prova a independência.
+4. **Avaliador sem contato com o gabarito.** Quem escolheu as revisões de referência ou leu a lista de estudos incluídos de algum tema já sabe quais artigos a revisão aceitou; por isso não é A1 nem A2.
 
 ### 2.4 Decisões que a Fase 2 deixou para esta fase
 
@@ -69,15 +70,25 @@ Nenhuma fórmula, limiar ou regra de agregação muda nesta fase. A tabela mostr
 
 O script de cálculo aplica os níveis da [tabela de níveis](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica) e as [regras do G1](../fase-2/niveis-e-julgamento.md#2-regras-do-g1-adequacao-funcional) (média por questão, métricas críticas, teto do objetivo e julgamento) exatamente como estão escritas, para que a Fase 4 não precise refazer a agregação à mão.
 
+### 2.6 Ajustes de procedimento em relação às fichas da Fase 2
+
+Três passos de coleta das fichas da Fase 2 foram ajustados para que a medição possa ser repetida. Nenhum muda fórmula, limiar ou regra de agregação, e os três são declarados na Fase 4.
+
+| Ficha | O que a Fase 2 diz | O que este método faz | Por que | Seção |
+|-------|--------------------|-----------------------|---------|:-----:|
+| M1.1.1 | Ref é a lista de estudos incluídos da revisão | Sai de Ref o estudo cuja única fonte é registro de ensaio, dado não publicado ou comunicação pessoal | O VICKY busca artigos indexados; um estudo sem relato publicado não pode aparecer em nenhuma lista | 3.3 |
+| M1.2.1 | Listar as funções anunciadas na página pública | Usa a lista F01 a F09 do objeto de avaliação da Fase 1 | A própria ficha fixa o denominador em 9 por essa lista | 4.3 |
+| M1.1.1 e M1.5.2 | Mesmo artigo é mesmo DOI; em M1.1.1, na falta de DOI, título e ano | DOI; sem DOI, PMID; sem os dois, título normalizado e ano, nas duas métricas | O PMID identifica o mesmo registro sem depender da grafia do título, e M1.5.2 passa a usar a mesma regra de M1.1.1 | 4.9 e 6 |
+
 ## 3. Preparação
 
 ### 3.1 Papéis
 
 | Papel | Quem pode ser | Faz | Não pode |
 |-------|---------------|-----|----------|
-| C (condutor) | Responsável pela coleta do G1 (#26) | Prepara o gabarito, executa as oito triagens e os casos de teste de M1.2.1, registra as listas, gera as fichas cegas, roda o script | Julgar relevância ou rubrica |
-| A1 | Integrante da equipe que não conduziu nenhuma triagem do G1 | Julga relevância (M1.3.1) e rubrica (M1.4.1); confere M1.2.1 e revê os itens incorretos de M1.3.2 | Abrir o VICKY, a lista ranqueada ou `chave_Tn.csv` antes de enviar as próprias fichas |
-| A2 | Outro integrante nas mesmas condições de A1 | Julga relevância e rubrica; faz a conferência de M1.3.2 e de M1.5.1 | O mesmo que A1 |
+| C (condutor) | Responsável pela coleta do G1 (#26) | Prepara o gabarito, executa as oito triagens e os casos de teste de M1.2.1, registra as listas, faz a conferência de M1.3.2 e de M1.5.1, gera as fichas cegas, roda o script | Julgar relevância ou rubrica |
+| A1 | Integrante da equipe que não conduziu nenhuma triagem do G1, não escolheu as revisões de referência e não leu a lista de incluídos de nenhum tema | Julga relevância (M1.3.1) e rubrica (M1.4.1); depois de enviar todas as próprias fichas, confere M1.2.1 e revê os itens incorretos de M1.3.2 e os não conformes de M1.5.1 | Abrir o VICKY, as capturas, a lista ranqueada ou `chave_Tn.csv` antes de enviar todas as próprias fichas (T1 a T4 e rubrica) |
+| A2 | Outro integrante nas mesmas condições de A1 | Julga relevância e rubrica | O mesmo que A1 |
 | A3 | Integrante que não é C, A1 nem A2 | Decide só as discordâncias de M1.3.1 sem consenso | Ver posição ou Quality Score do item |
 
 Os papéis são ocupados por integrantes da equipe, e a relação entre papel e integrante (C, A1, A2 e A3) é registrada com o nome em `M1.3.1/coleta.md`. Integrantes podem ser nomeados, porque o histórico do git já identifica quem enviou cada arquivo; só participantes externos são anonimizados, e o G1 não tem participantes ([README da pasta de dados](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/README.md)). Nas planilhas, cada um aparece pelo papel.
@@ -128,7 +139,7 @@ A troca é registrada em `execucoes.csv` (coluna `observacao`) e declarada na Fa
 |------|-----------------------|:---------:|--------------------------|----------------------------------|
 | T1 | EBRAHIMI, F. et al. *Colchicine for the secondary prevention of cardiovascular events*. Cochrane Database of Systematic Reviews, 2025. DOI [10.1002/14651858.CD014808.pub2](https://doi.org/10.1002/14651858.CD014808.pub2). PMID 41224205, PMC12611456 | 12 estudos (22.983 participantes) | Até fevereiro de 2025 | Número de incluídos e data da busca conferidos no resumo do PubMed (PMID 41224205); DOI e PMCID conferidos no conversor de identificadores do PMC. A lista nominal está na seção de estudos incluídos da revisão completa na Cochrane Library e ainda não foi baixada |
 | T2 | MESSER, S. et al. *Yoga for fatigue in people with cancer*. Cochrane Database of Systematic Reviews, 2025. DOI [10.1002/14651858.CD015520](https://doi.org/10.1002/14651858.CD015520). PMID 40421669, PMC12107688 | 21 ECR (2.041 pessoas) | Outubro de 2023 | Número de incluídos e data da busca conferidos no resumo do PubMed (PMID 40421669); DOI e PMCID no conversor do PMC. Lista nominal a baixar da Cochrane Library |
-| T3 | MOCELLIN, L. P. et al. *Gestational diabetes mellitus prevalence in Brazil: a systematic review and meta-analysis*. Cadernos de Saúde Pública, 2024. DOI 10.1590/0102-311XEN064919, acesso pelo [PMC11386532](https://pmc.ncbi.nlm.nih.gov/articles/PMC11386532/). PMID 39258680 | 32 estudos (21.942 mulheres) | Estudos publicados de 2010 a 2021 | Número de incluídos conferido no resumo do PubMed (PMID 39258680) e lista nominal na Tabela 1 do texto completo no PMC, com os 32 estudos. O DOI é o declarado pela revista no SciELO, no PubMed e no PMC, mas não resolvia em doi.org nem tinha registro no Crossref; por isso o link é o do PMC |
+| T3 | MOCELLIN, L. P. et al. *Gestational diabetes mellitus prevalence in Brazil: a systematic review and meta-analysis*. Cadernos de Saúde Pública, 2024. DOI 10.1590/0102-311XEN064919, acesso pelo [PMC11386532](https://pmc.ncbi.nlm.nih.gov/articles/PMC11386532/). PMID 39258680 | 32 estudos (21.942 mulheres) | Não informada no resumo, que delimita os estudos publicados de 2010 a 2021; a data da busca é tirada da seção de métodos do texto completo na etapa 1 | Número de incluídos conferido no resumo do PubMed (PMID 39258680) e lista nominal na Tabela 1 do texto completo no PMC, com os 32 estudos. O DOI é o declarado pela revista no SciELO, no PubMed e no PMC, mas não resolvia em doi.org nem tinha registro no Crossref; por isso o link é o do PMC |
 | T4 | LYONS, S. et al. *Pharmacological treatments for Friedreich ataxia*. Cochrane Database of Systematic Reviews, 2026. DOI [10.1002/14651858.CD007791.pub5](https://doi.org/10.1002/14651858.CD007791.pub5). PMID 42117563, PMC13162314 | 8 ECR | 4 de fevereiro de 2025 | Número de incluídos e data da busca conferidos no resumo do PubMed (PMID 42117563). O registro PMC13162314 ainda não está aberto (liberação informada para 12/05/2027). Lista nominal a baixar da Cochrane Library |
 
 Os identificadores e o número de incluídos de cada revisão, inclusive das reservas, estão em [`dados/avaliacao/G1/referencias/referencias.md`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/avaliacao/G1/referencias/referencias.md), com a fonte de cada conferência.
@@ -173,7 +184,7 @@ O texto é digitado em português porque é assim que o público do VICKY o usa;
 
 | Recurso | Uso no G1 | Situação |
 |---------|-----------|----------|
-| Conta de cortesia (a mesma do G2) | As oito triagens e o projeto rascunho P0 | Número de créditos de cortesia a confirmar com a equipe do VICKY antes da etapa 3. São necessários 8 |
+| Conta de cortesia (a mesma do G2) | As oito triagens e o projeto rascunho P0 | A conta recebeu 10 créditos de cortesia da equipe do VICKY em 17/10/2026, e o saldo era de 10 em 14/11/2026. São necessários 8; sobram 2 para repetir triagem que falhe. O saldo é conferido de novo na etapa 2 |
 | E-mail de teste do G1 | Cadastro e recuperação de senha em M1.2.1 (F01) | Criado só para a coleta; senha fora do repositório |
 | Projeto rascunho P0 | F02, F03 e F04 em M1.2.1 | Nunca recebe triagem completa, para que editar o PICO não altere as listas medidas |
 
@@ -183,7 +194,7 @@ Divisão das oito triagens:
 |----------|:----:|----------------|---------------|
 | T1, T2, T3, T4 | T1 a T4 | M1.1.1, M1.1.2, M1.3.1, M1.3.2; T1 e T2 também em M1.4.1; T1 também em F05 a F09 de M1.2.1 | Uma lista por tema alimenta cinco métricas; a ficha de M1.4.1 pede T1 e T2 |
 | E1, E2 | T1 e T3 com filtros restritivos | M1.5.1; E1 também no subpasso de fonte de F04 | A ficha pede duas execuções; reaproveitar os textos de T1 e T3 evita desenhar temas novos |
-| T1-B, T3-B | T1 e T3 repetidos | M1.5.2 (A é a lista de T1 e de T3 já registrada) | T1 tem literatura grande no PubMed, com muitos candidatos disputando 30 posições: é onde a instabilidade do ranking mais aparece. T3 depende do SciELO e do Google Acadêmico, cuja busca não tem a mesma estabilidade documentada do PubMed. T4 foi descartado porque a lista curta deixaria o índice de Jaccard pouco informativo, e T2 fica entre os dois |
+| T1-B, T3-B | T1 e T3 repetidos | M1.5.2 (A é a lista de T1 e de T3 já registrada) | T1 tem literatura grande no PubMed, com muitos candidatos disputando 30 posições: é onde a instabilidade do ranking mais aparece. T3 depende do SciELO e do Google Acadêmico, cuja busca não tem a mesma estabilidade documentada do PubMed. A estimativa de cerca de oito triagens da Fase 2 comporta dois temas repetidos, e T1 e T3 cobrem as duas situações de fonte; por isso T2 e T4 não são repetidos |
 
 **Se houver menos de oito créditos**, a ordem de prioridade é: T1, T2, T3, T4 (alimentam as duas métricas críticas), T1-B, E1, T3-B, E2. Execução não feita torna a métrica correspondente "não coletada" no tema, como manda a regra do G1 (sem estimativa). Com uma só execução em M1.5.1 ou um só tema em M1.5.2, a métrica é calculada sobre o que existe e a base é declarada. Uma das triagens de T1 a T4 é observada pelo G2 (ação "iniciar triagem" de M2.4.1); C combina o horário com quem executa o G2, sem crédito extra.
 
@@ -203,13 +214,14 @@ Divisão das oito triagens:
 | 8 | Dias 1 a 4 | C | Consulta de cada estudo de Ref às três fontes | M1.1.2 |
 | 9 | Dia 2 | C, A1, A2 | Gerar as fichas cegas de T1 e T2; piloto de calibração de A1 e A2 (usa a lista de E1) | M1.3.1, M1.4.1 |
 | 10 | Dias 2 a 5 | A1, A2 separados | Julgamento de relevância (T1 a T4, cada tema depois da sua ficha cega) e rubrica (T1 e T2); envio das fichas | M1.3.1, M1.4.1 |
-| 11 | Dias 3 a 5 | A2, A1 | Conferência de metadados e links; conferência dos filtros | M1.3.2, M1.5.1 |
+| 11 | Dias 3 a 5 | C | Conferência de metadados e links; conferência dos filtros | M1.3.2, M1.5.1 |
+| 11a | Dia 5, depois de A1 enviar todas as fichas | A1 | Conferência de M1.2.1 pelas capturas; revisão dos itens incorretos de M1.3.2 e dos não conformes de M1.5.1 | M1.2.1, M1.3.2, M1.5.1 |
 | 12 | Dia 5 | A1, A2, A3 | Kappa, discordâncias e consolidado | M1.3.1 |
 | 13 | Dia 5 | C | Cálculo com o script e conferência | Todas |
 
 São no máximo duas triagens por dia, para não concentrar a coleta num dia só e para ficar dentro do limite diário de prévias da conta. Os dias seguem o [cronograma](cronograma.md): dia 1 é 16/11/2026 e dia 5 é 20/11/2026.
 
-A prévia do PICO tem limite diário por conta. Se o limite for atingido num dia, as triagens restantes passam para o dia seguinte; o intervalo de M1.5.2 conta a partir do início da execução A de cada tema.
+A prévia do PICO tem limite diário por conta. Se o limite for atingido num dia, as triagens restantes passam para o dia seguinte; o intervalo de M1.5.2 conta a partir do fim da execução A de cada tema.
 
 ### 4.2 Etapa comum: executar uma triagem e registrar a lista
 
@@ -246,7 +258,7 @@ Em F09, cada formato é baixado pela opção da interface. No commit `c2ae570`, 
 
 Em F02 o subpasso (b) é verificado como prometido, sem supor onde o campo está: se a população ou o tipo de estudo só puderem ser ajustados pelo texto do objetivo ou pela edição dos critérios, o subpasso conta como executado e a forma é anotada; se não houver forma nenhuma, conta como não executado.
 
-**Registro:** uma linha por função em `M1.2.1/casos_funcoes.csv`. C preenche `classificacao_executor`; A1, olhando só as capturas e esta tabela, preenche `classificacao_conferente`. Se as duas coincidirem, `classificacao_final` repete o valor. Se divergirem, C e A1 reabrem a captura e aplicam a regra; a decisão e o motivo vão em `observacao`.
+**Registro:** uma linha por função em `M1.2.1/casos_funcoes.csv`. C preenche `classificacao_executor`; A1, depois de enviar todas as próprias fichas (etapa 11a), olhando só as capturas e esta tabela, preenche `classificacao_conferente`. A espera existe porque as capturas de F05 e F06 mostram a lista de T1 com posição e Quality Score. Se as duas coincidirem, `classificacao_final` repete o valor. Se divergirem, C e A1 reabrem a captura e aplicam a regra; a decisão e o motivo vão em `observacao`.
 
 ### 4.4 M1.3.1: precisão@30
 
@@ -285,18 +297,18 @@ Em F02 o subpasso (b) é verificado como prometido, sem supor onde o campo está
 
     A amostra sistemática cobre o topo, o meio e o fim da lista em partes iguais e não depende de escolha de ninguém. A posição 1 fica de fora por construção, o que é aceitável porque nada indica que os metadados variem com a posição.
 
-2. **Conferência (A2).** Para cada item, abrir o link exibido pelo VICKY e a página oficial do artigo: a página do DOI (`https://doi.org/<DOI>`); sem DOI, o registro no PubMed; sem os dois, o registro no SciELO. Comparar os cinco campos:
+2. **Conferência (C).** Para cada item, abrir o link exibido pelo VICKY e a página oficial do artigo: a página do DOI (`https://doi.org/<DOI>`); sem DOI, o registro no PubMed; sem os dois, o registro no SciELO. Comparar os cinco campos:
 
     | Campo | Correto quando | Incorreto quando |
     |-------|----------------|------------------|
     | Título | Igual ao oficial, ignorando maiúsculas, acentos, pontuação final e tradução oficial registrada na página | Palavra trocada, faltando ou título de outro artigo |
     | Autores | Os nomes exibidos aparecem na mesma ordem na página oficial; lista truncada com "et al." é aceita | Autor trocado, faltando entre os exibidos ou com nome errado |
-    | Ano | Igual ao ano da edição ou ao da publicação on-line na página oficial | Outro ano |
+    | Ano | Igual ao ano que a página oficial usa na citação sugerida do artigo. Quando a publicação on-line antecipada e o fascículo têm anos diferentes, vale o da citação sugerida | Outro ano |
     | Periódico | Mesmo periódico, por extenso ou pela abreviatura oficial | Outro periódico ou ausente |
     | Link | Abre uma página do mesmo artigo (editora, DOI, PubMed, SciELO ou PDF) | Link quebrado, página de busca genérica ou outro artigo |
 
 3. O item é correto só se os cinco campos estiverem corretos. Capturar a tela de cada item incorreto.
-4. **Revisão (A1).** A1 revê, pelas capturas, todos os itens marcados como incorretos. Divergência é reaberta pelos dois, e a decisão vai em `observacao`.
+4. **Revisão (A1).** Depois de enviar todas as próprias fichas (etapa 11a), A1 revê, pelas capturas, todos os itens marcados como incorretos. Divergência é reaberta pelos dois, e a decisão vai em `observacao`.
 
 ### 4.6 M1.4.1: Quality Score e rubrica
 
@@ -323,20 +335,20 @@ Em F02 o subpasso (b) é verificado como prometido, sem supor onde o campo está
 
 Cada execução restringe as três dimensões da ficha (janela, tipo de estudo e fonte), e as duas usam fontes diferentes. Na versão do código consultada não há campo próprio de tipo de estudo; por isso a restrição vai no objetivo, que alimenta os critérios gerados. Se em produção existir campo de tipo de estudo, C usa o campo, mantém o objetivo e anota em `execucoes.csv`.
 
-Para cada item das duas listas, A2 confere e registra em `M1.5.1/conferencia_En.csv`:
+Para cada item das duas listas, C confere e registra em `M1.5.1/conferencia_En.csv`:
 
 | Coluna | Conforme quando | Evidência |
 |--------|-----------------|-----------|
-| `ano_ok` | O ano da edição ou da publicação on-line, na página oficial, está entre o ano inicial da janela e o ano da coleta | `ano_oficial` |
+| `ano_ok` | O ano da citação sugerida na página oficial (a mesma regra de M1.3.2) está entre o ano inicial da janela e o ano da coleta | `ano_oficial` |
 | `tipo_ok` | E1: relato de ensaio randomizado, inclusive análise secundária de ensaio, pelo *Publication Type* do PubMed ou pelo método descrito no resumo. E2: estudo observacional primário (transversal, coorte ou caso-controle). Revisão, protocolo, editorial e relato de caso não são conformes em nenhuma das duas | `tipo_observado` |
-| `fonte_ok` | E1: o artigo tem registro no PubMed (PMID). E2: o artigo tem registro no SciELO (busca por DOI ou título em <https://search.scielo.org/>) | `fonte_verificada` |
+| `fonte_ok` | A fonte exibida pelo VICKY no item (`fonte_exibida`) é a configurada: PubMed em E1, SciELO em E2, como no subpasso (c) de F04. Se a lista não mostrar a fonte do item, vale o registro na base configurada (PMID no PubMed em E1; busca por DOI ou título em <https://search.scielo.org/> em E2); sem registro, o item não é conforme | `fonte_verificada` |
 
-O item é conforme só quando as três colunas são sim. Item fora de qualquer filtro é defeito, como diz a ficha. A1 revê os itens não conformes pelas evidências, como em M1.3.2.
+O item é conforme só quando as três colunas são sim. Item fora de qualquer filtro é defeito, como diz a ficha. A1 revê os itens não conformes pelas evidências, como em M1.3.2, depois de enviar todas as próprias fichas (etapa 11a).
 
 ### 4.8 M1.5.2: estabilidade entre execuções
 
 1. A execução A é a triagem de T1 (e de T3) da etapa 4, já registrada em `M1.1.1/top30_T1.csv`.
-2. A execução B começa entre 24 e 72 horas depois do início de A. O mínimo é o da Fase 2; o máximo reduz a chance de a versão em produção mudar entre as duas.
+2. A execução B começa entre 24 e 72 horas depois do fim de A. O mínimo é o da Fase 2; o máximo reduz a chance de a versão em produção mudar entre as duas.
 3. B usa um projeto novo com a mesma entrada de A: mesmo tipo de revisão, texto do tema e do objetivo copiados desta página, mesma janela, mesmas bases, Top 30. O PICO gerado de novo não é editado, mesmo que difira do de A; a diferença é anotada, porque faz parte do que um estudante que repete a busca encontraria.
 4. Registrar B em `M1.5.2/top30_T1-B.csv` pela etapa comum da seção 4.2.
 5. Se, entre A e B, o VICKY mostrar mudança visível (versão dos Termos, nova opção no formulário), anotar em `execucoes.csv`; a comparação continua válida, e a mudança é declarada na Fase 4.
@@ -442,7 +454,7 @@ Duas observações sobre as fórmulas:
 
 ### 7.1 Discordância em M1.3.1
 
-1. Com as duas fichas no repositório, C calcula o kappa do tema (o script mostra o valor no detalhe) e registra em `M1.3.1/coleta.md`.
+1. Com as duas fichas no repositório, C calcula o kappa do tema (o script mostra o valor e a concordância bruta no detalhe) e registra em `M1.3.1/coleta.md` o kappa, a concordância bruta e a proporção de itens que cada avaliador marcou como relevantes.
 2. Item em que A1 e A2 concordam fica com o julgamento comum (`decidido_por = concordancia`).
 3. Item em que discordam é reaberto pelos dois, que releem título e resumo e aplicam a tabela da seção 4.4. Chegando a acordo, registram `decidido_por = consenso` e o motivo.
 4. Sem acordo, A3 recebe só a linha da ficha cega e o PICO do tema, decide sozinho e a linha recebe `decidido_por = A3`.
@@ -453,13 +465,17 @@ Duas observações sobre as fórmulas:
 A Fase 2 diz que M1.3.1 só vale com kappa de 0,61 ou mais. Quando um tema fica abaixo:
 
 1. C lê a coluna `componente_que_falhou` das duas fichas e identifica o componente que concentra as divergências, sem mostrar aos avaliadores as respostas um do outro item a item.
-2. A1 e A2, com C, reescrevem em `M1.3.1/coleta.md` a regra do componente problemático (por exemplo, se análise secundária de ensaio conta como ensaio randomizado). A regra nova vale para todos os temas daqui em diante.
+2. A1 e A2, com C, reescrevem em `M1.3.1/coleta.md` a regra do componente problemático (por exemplo, se análise secundária de ensaio conta como ensaio randomizado). A regra nova vale para os temas seguintes e é reaplicada aos temas já julgados: se ela mudar o julgamento de algum item já consolidado, o item é reaberto pela seção 7.1 e a mudança é registrada.
 3. A1 e A2 rejulgam o tema inteiro, cada um sozinho, pelo menos 24 horas depois da primeira rodada, com os mesmos itens em nova ordem: C roda `calcular_g1.py ficha-cega --tema Tn --rodada 2`, que gera `ficha_cega_Tn_rodada2.csv` com a semente do tema mais 100 e mantém os códigos dos itens. As fichas vão para `julgamento_A1_Tn_rodada2.csv` e `julgamento_A2_Tn_rodada2.csv`.
 4. Os dois kappas são relatados. Vale o da rodada 2, e o consolidado é refeito sobre ela.
 5. Se a rodada 2 também ficar abaixo de 0,61, o tema é declarado inválido para M1.3.1: sai da média e o motivo é relatado. Não há terceira rodada, para não forçar concordância.
-6. M1.3.1 precisa de pelo menos dois temas válidos. Com menos que isso, a métrica é declarada não aplicável, como prevê a regra do G1 para métrica que não pode ser coletada, e a Fase 4 relata que Q1.3 foi respondida só com M1.3.2.
+6. M1.3.1 precisa de pelo menos três dos quatro temas válidos, para que a média não dependa de metade dos perfis da Fase 2. Com menos que isso, a métrica é declarada não aplicável, como prevê a regra do G1 para métrica que não pode ser coletada, e a Fase 4 relata que Q1.3 foi respondida só com M1.3.2.
 
 Caso particular: se A1 e A2 marcarem todos os itens do tema com a mesma resposta, o kappa é indefinido (concordância esperada igual a 1). Com concordância total, o tema é considerado válido e o relatório registra "kappa indefinido, concordância total".
+
+Quando quase todos os itens de um tema caem numa só classe (quase todos relevantes ou quase todos irrelevantes), o kappa cai mesmo com concordância bruta alta, porque a concordância esperada por acaso fica perto de 1. Por isso a concordância bruta e a proporção de relevantes ficam ao lado do kappa em `coleta.md`, e a Fase 4 explica o caso se ele acontecer. A regra de validade continua a do kappa.
+
+**Risco de prazo.** O rejulgamento exige 24 horas, e o julgamento vai até o dia 5 (20/11). Um tema julgado no dia 5 só seria rejulgado em 21/11, fora da coleta, no dia do artigo v2 pelo [cronograma](cronograma.md). Se a rodada 2 não couber até o fim da coleta, ela é a primeira atividade cortada: o tema fica com o kappa da primeira rodada e, abaixo de 0,61, sai da média pelo passo 5, com o motivo declarado.
 
 ### 7.3 Repetição e falhas
 
@@ -467,7 +483,7 @@ Caso particular: se A1 e A2 marcarem todos os itens do tema com a mesma resposta
 |----------|-------------|
 | Triagem termina com erro ou não termina em 2 horas | Registrar a linha em `execucoes.csv` com `status = falhou`, conferir se o crédito voltou (os Termos preveem devolução por falha) e repetir com a mesma configuração. Depois de três falhas no mesmo tema, a métrica fica "não coletada" naquele tema |
 | Lista com menos de 30 itens | Vale como está; M1.3.1 e M1.4.1 usam os n itens, e a amostra de M1.3.2 segue a fórmula da seção 4.5 |
-| B começou com menos de 24 horas ou mais de 72 horas depois de A | B é descartada e repetida dentro da faixa, se houver crédito; sem crédito, o tema sai de M1.5.2 |
+| B começou com menos de 24 horas ou mais de 72 horas depois do fim de A | B é descartada e repetida dentro da faixa, se houver crédito; sem crédito, o tema sai de M1.5.2 |
 | Lista de incluídos inacessível antes do dia 1 | Trocar pelo tema reserva do mesmo perfil (seção 3.2) |
 | Número de estudos do gabarito diferente do informado pela revisão | Parar, reler a seção de estudos incluídos e anotar a causa (ex.: estudo com dois braços contado como dois) antes de qualquer cálculo |
 | Exportação falha | Transcrever a lista da tela, com captura de cada página |
@@ -496,3 +512,4 @@ As demais referências (ISO/IEC 25040:2024, ISO/IEC 25023:2016, Basili; Caldiera
 | 0.2 | 09/11/2026 | Esqueleto com o que a Fase 2 define e os pontos em aberto para a responsável | Gabriel Fae | - |
 | 0.3 | 14/11/2026 | Método completo: justificativa, temas e revisões de referência, regra do gabarito, papéis e conhecimento exigido, divisão das oito triagens, casos de teste de M1.2.1, critérios de relevância e rubrica, amostra de M1.3.2, filtros de M1.5.1, registro, script de cálculo e regras de discordância e repetição | Lucas Avelar | - |
 | 0.4 | 14/11/2026 | Revisões de referência com PMID e local da conferência (DOI de T3 sem registro em doi.org), exportação a partir do XLSX, quantidade do Top de 1 a 30, justificativa da lista de funções de M1.2.1, fonte da hierarquia de evidências, coluna `versao_chrome`, papéis nomeados e "o VICKY" | Lucas Avelar | - |
+| 0.5 | 14/11/2026 | Revisão: créditos confirmados, conferências fora do período de julgamento, avaliadores sem contato com as revisões, ajustes de procedimento declarados (2.6), ano pela citação sugerida, fonte exibida em M1.5.1, intervalo de M1.5.2 contado do fim de A, regra nova reaplicada aos temas já julgados, três de quatro temas válidos, concordância bruta ao lado do kappa e risco da rodada 2 | Larissa Gomes | - |
