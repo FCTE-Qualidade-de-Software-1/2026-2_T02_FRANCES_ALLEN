@@ -33,4 +33,20 @@ As oito pastas da inspeção (M2.1.1, M2.2.1, M2.2.2, M2.3.1, M2.3.2, M2.4.1, M2
 
 O arquivo `previa-ia.md` é uma prévia exploratória feita com IA, só com as páginas públicas. Não é dado de coleta, e A2 não deve lê-lo antes de enviar as próprias fichas.
 
+## Fichas da coleta com usuários e de acessibilidade
+
+As quatro pastas do [Método do G2 com usuários](../../../docs/fase-3/metodo-g2-usuarios.md) (M2.5.1, M2.6.1, M2.6.2 e M2.7.2) trazem as fichas em branco e os modelos CSV só com o cabeçalho:
+
+| Arquivo | Quem preenche |
+|---------|---------------|
+| `M2.7.2/sessoes.csv` | Observador, ao fim de cada sessão: código do participante, data, duração, local e hash SHA-256 da gravação |
+| `M2.7.2/perfil.csv`, `observacao-uso.csv` e `respostas-compreensao.csv` | Condutor e observador, durante e depois da sessão |
+| `M2.5.1/respostas.csv` e `qualitativo.csv` | Observador, com as notas dadas pelo participante |
+| `M2.7.2/coleta.md` e `consolidado.md` | Condutor, antes do piloto e depois das cinco sessões |
+| `M2.6.1/T1.md`, `T2.md` e `consolidado.md` | Avaliadores do teste com teclado |
+| `M2.6.2/A1.md`, `A2.md`, `consolidado.md` e `relatorios/` | Avaliadores de contraste |
+| `termo-de-consentimento.docx` | Termo em branco para imprimir em duas vias |
+
+**Gravações e termos assinados nunca entram neste repositório, que é público.** Eles ficam na pasta restrita do Google Drive da equipe, compartilhada só com os integrantes e com a professora, e são apagados ao fim do semestre 2026/2. Aqui fica só o registro de cada arquivo (participante anonimizado, data, duração e hash).
+
 Os dados de avaliadores e participantes devem ser anonimizados (A1, A2 e P01 a P05) antes de entrar no repositório, como pede o [README da pasta de dados](../../README.md). Registre em cada pasta a data da coleta e a versão do VICKY em produção.
