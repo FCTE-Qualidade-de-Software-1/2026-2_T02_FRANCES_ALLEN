@@ -163,7 +163,11 @@ O propósito é avaliar o código para que a Fase 4 consiga diagnosticar potenci
 Pelo método Goal-Question-Metric, três questões desdobram o objetivo. A primeira foca na modularidade, investigando o acoplamento e se o sistema concentra lógica excessiva em poucas funções. A segunda foca na analisabilidade: a adesão a padrões comuns da linguagem, a ausência de duplicação que confunda a leitura e a presença de logs que permitam rastrear falhas. A terceira fecha o ciclo focando na testabilidade, verificando se o sistema possui testes para suportar refatorações.
 
 !!! info "A Manutenibilidade e a ISO/IEC 25023"
-    A edição de 2016 da ISO/IEC 25023 provê medidas diretas para a avaliação estrutural do software. O G3 adota estritamente o catálogo normativo: MMo-1-G (acoplamento) e MMo-2-S (complexidade) para modularidade; MRe-2-S (regras de codificação), MRe-1-G (duplicação) e MAn-1-G (logs do sistema) cobrindo analisabilidade e reusabilidade interna; e MTe-1-G garantindo a completude de testes da subcaracterística de testabilidade.
+    A ISO/IEC 25023:2016 (subcláusula 8.8) mede a manutenibilidade por subcaracterística. O G3 usa uma medida da norma sem mudança, três adaptadas e duas adicionais, todas declaradas na [especificação das métricas](especificacao-das-metricas.md):
+
+    - **Modularidade:** MMo-2-S (*Cyclomatic complexity adequacy*) sem mudança em M3.1.2, e MMo-1-G (*Coupling of components*) adaptada em M3.1.1, porque o VICKY não tem a especificação de independência entre componentes que a fórmula da norma pede.
+    - **Analisabilidade:** as medidas da norma são MAn-1-G (*System log completeness*), MAn-2-S e MAn-3-S (funções de diagnóstico). MAn-1-G entra adaptada em M3.2.3, com as funções críticas do orquestrador no lugar da especificação de log. As duas medidas que a versão anterior desta página usava em analisabilidade, MRe-2-S (*Coding rules conformity*) e MRe-1-G (*Reusability of assets*), pertencem à reusabilidade, que o modelo de qualidade não seleciona; por isso M3.2.1 (PEP 8) e M3.2.2 (duplicação) passam a ser medidas adicionais, como a cláusula 2 da norma admite com justificativa.
+    - **Testabilidade:** MTe-1-G (*Test function completeness*) adaptada em M3.3.1, com a cobertura de linhas no lugar das funções de teste especificadas, que o VICKY não documenta.
 
 | Questão | Hipótese | Métricas |
 |---------|----------|----------|
@@ -187,3 +191,4 @@ Pelo método Goal-Question-Metric, três questões desdobram o objetivo. A prime
 | 0.6 | 18/10/2026 | G2 realinhado às sete subcaracterísticas de C2 do modelo de qualidade | Lucas Avelar | Gabriel Fae |
 | 0.7 | 25/10/2026 | H1.5 reescrita em índice de Jaccard (0,70, cerca de 82% dos artigos em comum) para coincidir com o nível Bom de M1.5.2 | Larissa Gomes Silva | - |
 | 0.8 | 25/10/2026 | G1: texto enxugado, repetição removida entre fichas | Larissa Gomes Silva | - |
+| 0.9 | 14/11/2026 | G3: medidas da ISO/IEC 25023 revistas, com MRe-2-S e MRe-1-G trocadas por medidas adicionais em analisabilidade e as adaptações declaradas (#23) | Lucas Avelar | - |

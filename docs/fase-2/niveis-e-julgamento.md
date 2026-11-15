@@ -4,7 +4,7 @@ Os níveis são definidos **antes da coleta** para que a interpretação dos res
 
 ## 1. Níveis de pontuação por métrica
 
-Cada métrica recebe um de quatro níveis: Insatisfatório (0 ponto), Aceitável (1), Bom (2) ou Excelente (3). Cada faixa inclui o limite inferior e exclui o superior, de modo que todo valor cai em exatamente um nível.
+Cada métrica recebe um de quatro níveis: Insatisfatório (0 ponto), Aceitável (1), Bom (2) ou Excelente (3). Cada faixa inclui o limite inferior e exclui o superior, de modo que todo valor cai em exatamente um nível. Nas duas métricas em que menor é melhor (M3.1.1 e M3.2.2), cada célula diz por extenso qual limite entra na faixa.
 
 | Métrica | Insatisfatório | Aceitável | Bom | Excelente | Fonte do limiar |
 |---------|:--------------:|:---------:|:---:|:---------:|-----------------|
@@ -28,12 +28,12 @@ Cada métrica recebe um de quatro níveis: Insatisfatório (0 ponto), Aceitável
 | M2.6.2 | < 85% | 85% a menos de 95% | 95% a menos de 100% | 100% | Só 100% atende ao nível AA da WCAG 2.2, que é a referência de acessibilidade usada para cumprir o art. 63 da Lei nº 13.146/2015 |
 | M2.7.1 | 1 de 4 ou menos | 2 de 4 | 3 de 4 | 4 de 4 | O estudante chega por link de colega, anúncio ou indicação do orientador, em qualquer uma das páginas de entrada |
 | M2.7.2 | < 60%, **ou** Quality Score não entendido | 60% a menos de 75% | 75% a menos de 90% | ≥ 90% | O modelo de qualidade destaca que o VICKY usa termos técnicos (PICO, Quality Score) e promete que o estudante não precisa saber montar um PICO; se ele não entende o score, não consegue defender a lista diante do orientador |
-| M3.1.1 | > 15 | de 10 a 15 | de 5 a 9 | < 5 | Diretrizes de design de software indicam que módulos com mais de 15 acoplamentos (dependências importadas) frequentemente violam o Princípio da Responsabilidade Única (SRP). |
-| M3.1.2 | < 70% | 70% a 84% | 85% a 94% | ≥ 95% | A orquestração assíncrona exige alta previsibilidade. O piso de Bom (85%) reflete a expectativa de modularidade adequada, enquanto abaixo de 70% o risco de quebra ao modificar é crítico. |
-| M3.2.1 | < 75% | 75% a 89% | 90% a 99% | 100% | O guia PEP8 é o padrão da comunidade. Menos de 75% de adequação indica ausência de automação de linting na esteira de desenvolvimento, causando alto atrito de leitura. |
-| M3.2.2 | > 10% | 5,1% a 10% | 2% a 5% | < 2% | Princípio DRY (*Don't Repeat Yourself*). Acima de 10%, uma correção de *bug* precisará ser replicada em múltiplos arquivos, multiplicando o risco de omissão. |
-| M3.2.3 | < 50% | 50% a 74% | 75% a 89% | ≥ 90% | Em integrações com IA e *scrapers* externos, falhas ocorrem fora do controle da aplicação. Menos de 50% de completude de logs deixa a equipe "cega" em produção. |
-| M3.3.1 | < 50% | 50% a 69% | 70% a 89% | ≥ 90% | O piso de Bom (70%) coincide com a hipótese H3.3. Abaixo de 50% a cobertura é ilusória e modificar lógicas centrais torna-se uma operação de alto risco. |
+| M3.1.1 | acima de 15 | de 10 a 15 | de 5 a menos de 10 | abaixo de 5 | Diretrizes de design de software indicam que módulos com mais de 15 acoplamentos (dependências importadas) frequentemente violam o Princípio da Responsabilidade Única (SRP). |
+| M3.1.2 | < 70% | 70% a menos de 85% | 85% a menos de 95% | ≥ 95% | A orquestração assíncrona exige alta previsibilidade. O piso de Bom (85%) reflete a expectativa de modularidade adequada, enquanto abaixo de 70% o risco de quebra ao modificar é crítico. |
+| M3.2.1 | < 75% | 75% a menos de 90% | 90% a menos de 100% | 100% | O guia PEP8 é o padrão da comunidade. Menos de 75% de adequação indica ausência de automação de linting na esteira de desenvolvimento, causando alto atrito de leitura. |
+| M3.2.2 | acima de 10% | acima de 5% até 10% | de 2% a 5% | abaixo de 2% | Princípio DRY (*Don't Repeat Yourself*). Acima de 10%, uma correção de *bug* precisará ser replicada em múltiplos arquivos, multiplicando o risco de omissão. |
+| M3.2.3 | < 50% | 50% a menos de 75% | 75% a menos de 90% | ≥ 90% | Em integrações com IA e *scrapers* externos, falhas ocorrem fora do controle da aplicação. Menos de 50% de completude de logs deixa a equipe "cega" em produção. |
+| M3.3.1 | < 50% | 50% a menos de 70% | 70% a menos de 90% | ≥ 90% | O piso de Bom (70%) coincide com a hipótese H3.3. Abaixo de 50% a cobertura é ilusória e modificar lógicas centrais torna-se uma operação de alto risco. |
 
 Nas oito métricas de G1, quanto maior o valor, melhor.
 
@@ -116,3 +116,4 @@ O objetivo G3 é a média simples das pontuações das três questões (Q3.1 a Q
 | 0.5 | 18/10/2026 | Níveis das métricas de G3 e regras de agregação e julgamento do objetivo de Manutenibilidade | Guilherme Moura | - |
 | 0.6 | 18/10/2026 | Níveis e regras do G2 realinhados às sete subcaracterísticas de C2 | Lucas Avelar | Gabriel Fae |
 | 0.7 | 25/10/2026 | G1: texto enxugado, repetição removida entre fichas | Larissa Gomes Silva | - |
+| 0.8 | 14/11/2026 | G3: faixas fechadas, sem valor fora de nível (ex.: 84,5% em M3.1.2 ou 5,05% em M3.2.2) (#23) | Lucas Avelar | - |
