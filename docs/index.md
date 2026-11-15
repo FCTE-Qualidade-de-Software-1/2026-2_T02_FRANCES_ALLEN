@@ -36,7 +36,7 @@ As abas no topo seguem as **fases do processo de avaliação de produto** da fam
 
     ---
 
-    Futuramente.
+    Método de coleta de cada objetivo (G1, G2 por inspeção, G2 com usuários e G3), instrumentos e termo de consentimento, recursos e ambiente, tabela de consistência com a Fase 2 e cronograma.
 
 -   <span class="rotulo">Fase 4 · Entrega 2</span>
 
@@ -72,7 +72,7 @@ Cada fase do processo de avaliação recebe uma aba própria. As premissas obrig
 |----------------------------------|--------------|-------------------|---------|
 | [Fase 1 - Estabelecer os requisitos da avaliação](fase-1/index.md) | Propósito, partes interessadas, modelo de qualidade e características selecionadas | Premissa 1 | Entrega 1 |
 | [Fase 2 - Especificar a avaliação](fase-2/index.md) | Objetivos, questões, hipóteses, métricas e critérios de julgamento (GQM) | Premissa 2 | Entrega 1 |
-| [Fase 3 - Projetar a avaliação](fase-3/index.md) | Método, recursos, ambiente e cronograma da avaliação | - | Entrega 2 |
+| [Fase 3 - Projetar a avaliação](fase-3/index.md) | Método, recursos, ambiente e cronograma da avaliação | Premissas 4, 5 e 6 (repositório com atas e dados, rastreabilidade dos dados e do cálculo, gravação das sessões com consentimento) | Entrega 2 |
 | [Fase 4 - Executar e concluir a avaliação](fase-4/index.md) | Medições, julgamento, conclusões e ação de melhoria | Premissa 1 (relações entre características) | Entrega 2 |
 | [Gestão do projeto (PSM/CID)](gestao/index.md) | Indicadores de acompanhamento do próprio projeto e decisões de gestão | Premissa 3 | Transversal |
 
@@ -98,7 +98,7 @@ flowchart LR
 
 - Repositório: [FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN)
 - Releases: [página de releases](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/releases)
-- Quadro de tarefas: _link do GitHub Projects_
+- Quadro de tarefas: [issues do repositório](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/issues)
 - Equipe: [Integrantes e papéis](sobre/equipe.md)
 
 ## Histórico de versão
@@ -107,3 +107,4 @@ flowchart LR
 |--------|------|-----------|----------|------------|
 | 0.1 | 05/10/2026 | Criação da estrutura do documento | Gabriel Fae | - |
 | 0.2 | 16/10/2026 | Reorganização da documentação em abas por fase do processo de avaliação | Gabriel Fae | - |
+| 0.3 | 14/11/2026 | Descrição da Fase 3, premissas 4, 5 e 6 na tabela de fases e link das issues como quadro de tarefas | Lucas Avelar | - |

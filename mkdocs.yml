@@ -7,7 +7,7 @@ repo_name: 2026-2_T02_FRANCES_ALLEN
 edit_uri: edit/main/docs/
 
 # Rodapé com versão e data (critério GitPage da rubrica)
-copyright: "FGA0315 Qualidade de Software 1 - 2026.2 - T02 - Grupo Frances Allen | Documentação v0.3 - 16/10/2026"
+copyright: "FGA0315 Qualidade de Software 1 - 2026.2 - T02 - Grupo Frances Allen | Documentação v0.4 - 15/11/2026"
 
 theme:
   name: material
