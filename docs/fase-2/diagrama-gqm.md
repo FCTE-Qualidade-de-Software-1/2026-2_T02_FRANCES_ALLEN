@@ -49,12 +49,12 @@ flowchart LR
         M262["M2.6.2 · Contraste<br/>(medida adicional)"]
         M271["M2.7.1 · Autodescrição da entrada<br/>(UAp-3-S)"]
         M272["M2.7.2 · Interface autoexplicativa<br/>(ULe-4-S)"]
-        M311["M3.1.1 · Acoplamento de componentes<br/>(MMo-1-G)"]
+        M311["M3.1.1 · Acoplamento de componentes<br/>(MMo-1-G adaptada)"]
         M312["M3.1.2 · Complexidade ciclomática<br/>(MMo-2-S)"]
-        M321["M3.2.1 · Conformidade PEP8<br/>(MRe-2-S)"]
-        M322["M3.2.2 · Código duplicado<br/>(MRe-1-G)"]
-        M323["M3.2.3 · Completude de logs<br/>(MAn-1-G)"]
-        M331["M3.3.1 · Completude de testes<br/>(MTe-1-G)"]
+        M321["M3.2.1 · Conformidade PEP 8<br/>(medida adicional)"]
+        M322["M3.2.2 · Código duplicado<br/>(medida adicional)"]
+        M323["M3.2.3 · Completude de logs<br/>(MAn-1-G adaptada)"]
+        M331["M3.3.1 · Completude de testes<br/>(MTe-1-G adaptada)"]
     end
     G1 --> Q11 & Q12 & Q13 & Q14 & Q15
     Q11 --> M111 & M112
@@ -88,3 +88,4 @@ _Figura 2 - Hierarquia GQM da avaliação do VICKY: os três objetivos (nível c
 | 0.4 | 18/10/2026 | Ramo completo do G1 (adequação funcional) no diagrama único | Lucas Avelar | Larissa Gomes Silva |
 | 0.5 | 18/10/2026 | Diagrama completo com os três objetivos: ramo do G3 (manutenibilidade) e ramo do G2 realinhado ao modelo de qualidade | Lucas Avelar | Gabriel Fae |
 | 0.6 | 18/10/2026 | Nome e código da medida em todas as métricas, figura renumerada, chamada no texto e descrição acessível | Lucas Avelar | Gabriel Fae |
+| 0.7 | 14/11/2026 | Ramo do G3 com as medidas revistas: duas adicionais e três adaptadas (#23) | Lucas Avelar | - |

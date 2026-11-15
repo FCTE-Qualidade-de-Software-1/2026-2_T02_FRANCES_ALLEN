@@ -1,0 +1,7 @@
+metrica,nome,valor,A,B,nivel,commit,data_coleta
+M3.1.1,Acoplamento de componentes,"2,05",78,38,Excelente,c2ae570,2026-11-14 21:00 -0300
+M3.1.2,Adequação da complexidade ciclomática,"76,6%",11,47,Aceitável,c2ae570,2026-11-14 21:00 -0300
+M3.2.1,Conformidade de estilo PEP 8,"5,3%",2,38,Insatisfatório,c2ae570,2026-11-14 21:00 -0300
+M3.2.2,Densidade de código duplicado,"0,15%",28,18927,Excelente,c2ae570,2026-11-14 21:00 -0300
+M3.2.3,Completude de logs do sistema,"0,0%",0,33,Insatisfatório,c2ae570,2026-11-14 21:00 -0300
+M3.3.1,Completude de testes automatizados,"63,17%",4750,7519,Aceitável,c2ae570,2026-11-14 21:00 -0300

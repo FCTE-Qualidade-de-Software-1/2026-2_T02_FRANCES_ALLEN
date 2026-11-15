@@ -1,0 +1,273 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0
+rootdir: /tmp/coleta-g3/codigo
+configfile: pyproject.toml
+plugins: cov-7.1.0, anyio-4.14.2
+collected 1034 items
+
+tests/test_aceite_vigente_pedido_sem_trancar.py ..........               [  0%]
+tests/test_acesso_aberto.py ..........................                   [  3%]
+tests/test_achados_da_costura.py .......                                 [  4%]
+tests/test_ajustes_usuaria_2026_08_25.py ..........................      [  6%]
+tests/test_auth_sessao.py ....................................           [ 10%]
+tests/test_backfill_no_postgres.py sss                                   [ 10%]
+tests/test_bordas_de_seguranca.py ........................               [ 12%]
+tests/test_carimbo_do_filtro_da_execucao.py ...............              [ 14%]
+tests/test_checkout_asaas.py ........................................... [ 18%]
+.......................                                                  [ 20%]
+tests/test_checkout_asaas_navegador.py ...                               [ 20%]
+tests/test_checkout_asaas_postgres.py sssssssss                          [ 21%]
+tests/test_checkout_asaas_revisao.py ........................            [ 24%]
+tests/test_checkout_asaas_revisao2.py .....................              [ 26%]
+tests/test_checkout_asaas_revisao3.py ............                       [ 27%]
+tests/test_checkout_asaas_revisao4.py ......                             [ 27%]
+tests/test_classificacao_de_erro_llm.py ...........                      [ 28%]
+tests/test_clique_duplo_no_iniciar.py ...........                        [ 29%]
+tests/test_coerencia_dos_numeros.py .........                            [ 30%]
+tests/test_compra_nao_depende_de_redirect_de_form.py .......             [ 31%]
+tests/test_confirmacao_de_email.py ...........................           [ 34%]
+tests/test_creditos.py ...............................                   [ 37%]
+tests/test_css_buildado_e_prefetch.py .....................              [ 39%]
+tests/test_data_de_acesso_abnt.py .......                                [ 39%]
+tests/test_excluir_conta_nao_apaga_o_livro.py .......                    [ 40%]
+tests/test_identificacao_legal_e_aceite.py ......................        [ 42%]
+tests/test_isolamento_multitenant.py ................................... [ 46%]
+........                                                                 [ 46%]
+tests/test_limite_de_preview.py ....                                     [ 47%]
+tests/test_livro_de_creditos.py ...............                          [ 48%]
+tests/test_livro_no_postgres.py sss                                      [ 48%]
+tests/test_llm_resposta_ilegivel.py ......                               [ 49%]
+tests/test_lockfile_de_dependencias.py ........                          [ 50%]
+tests/test_memoizacao_e_cache_por_tenant.py ..........                   [ 51%]
+tests/test_motor_de_credito_e_copia_fiel.py .s...                        [ 51%]
+tests/test_paginacao_preserva_filtro.py .............                    [ 52%]
+tests/test_pdf_resumo.py .....................                           [ 55%]
+tests/test_permissoes.py ........................................        [ 58%]
+tests/test_pipeline_fora_do_event_loop.py .............                  [ 60%]
+tests/test_pool_de_conexao.py ....sssss                                  [ 61%]
+tests/test_pool_e_threads_nao_discordam.py ........                      [ 61%]
+tests/test_preco_moeda_e_falha_da_stripe.py ........                     [ 62%]
+tests/test_progresso_e_eta.py ......................                     [ 64%]
+tests/test_redefinir_senha.py ...................................        [ 68%]
+tests/test_reembolso_erros_e_preco_publico.py ...................        [ 69%]
+tests/test_referencia_abnt.py .........                                  [ 70%]
+tests/test_registros_filtros.py ....................xx.................. [ 74%]
+...................xx                                                    [ 76%]
+tests/test_retencao_registro_de_acesso_e_coerencia_legal.py ............ [ 77%]
+......                                                                   [ 78%]
+tests/test_rodada_paga_nao_cobra_duas_vezes.py ........                  [ 79%]
+tests/test_rotas_publicas.py ...............x.........                   [ 81%]
+tests/test_saida_do_beco_de_credito.py ................................. [ 84%]
+.........                                                                [ 85%]
+tests/test_stripe_integracao_real.py ssssss                              [ 86%]
+tests/test_stripe_webhook.py ........................................... [ 90%]
+.........                                                                [ 91%]
+tests/test_suite_esta_isolada.py ........                                [ 92%]
+tests/test_teto_de_previa_por_origem.py ................                 [ 93%]
+tests/test_top_n_reage_a_decisao.py ......                               [ 94%]
+tests/test_travas_que_nao_disparavam.py ........                         [ 94%]
+tests/test_uso_da_api_abre_o_projeto.py ..............                   [ 96%]
+tests/test_webhook_ambiente_e_dono_do_credito.py ......                  [ 96%]
+tests/test_webhook_ambiente_thread_e_rastro.py ...............           [ 98%]
+tests/test_webhook_carimbo_e_estorno_fora_de_ordem.py .........          [ 99%]
+tests/test_webhook_disputa_e_refund_que_falhou.py ........               [100%]
+
+=============================== warnings summary ===============================
+../venv-testes/lib/python3.12/site-packages/anyio/pytest_plugin.py:14
+  /tmp/coleta-g3/venv-testes/lib/python3.12/site-packages/anyio/pytest_plugin.py:14: PytestRemovedIn10Warning: _pytest.python.CallSpec2 has been renamed to CallSpec.
+  The CallSpec2 alias will be removed in pytest 10.
+  Update imports to use CallSpec instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#callspec2-renamed
+    from _pytest.python import CallSpec2
+
+../venv-testes/lib/python3.12/site-packages/passlib/utils/__init__.py:854
+  /tmp/coleta-g3/venv-testes/lib/python3.12/site-packages/passlib/utils/__init__.py:854: DeprecationWarning: 'crypt' is deprecated and slated for removal in Python 3.13
+    from crypt import crypt as _crypt
+
+tests/test_aceite_vigente_pedido_sem_trancar.py: 10 warnings
+tests/test_acesso_aberto.py: 3 warnings
+tests/test_achados_da_costura.py: 1 warning
+tests/test_ajustes_usuaria_2026_08_25.py: 3 warnings
+tests/test_auth_sessao.py: 24 warnings
+tests/test_bordas_de_seguranca.py: 5 warnings
+tests/test_carimbo_do_filtro_da_execucao.py: 4 warnings
+tests/test_checkout_asaas.py: 60 warnings
+tests/test_checkout_asaas_navegador.py: 3 warnings
+tests/test_checkout_asaas_revisao.py: 20 warnings
+tests/test_checkout_asaas_revisao2.py: 18 warnings
+tests/test_checkout_asaas_revisao3.py: 8 warnings
+tests/test_checkout_asaas_revisao4.py: 6 warnings
+tests/test_clique_duplo_no_iniciar.py: 6 warnings
+tests/test_coerencia_dos_numeros.py: 9 warnings
+tests/test_compra_nao_depende_de_redirect_de_form.py: 7 warnings
+tests/test_confirmacao_de_email.py: 18 warnings
+tests/test_creditos.py: 16 warnings
+tests/test_css_buildado_e_prefetch.py: 1 warning
+tests/test_identificacao_legal_e_aceite.py: 19 warnings
+tests/test_isolamento_multitenant.py: 43 warnings
+tests/test_limite_de_preview.py: 4 warnings
+tests/test_livro_de_creditos.py: 1 warning
+tests/test_memoizacao_e_cache_por_tenant.py: 10 warnings
+tests/test_paginacao_preserva_filtro.py: 6 warnings
+tests/test_pdf_resumo.py: 10 warnings
+tests/test_permissoes.py: 29 warnings
+tests/test_preco_moeda_e_falha_da_stripe.py: 6 warnings
+tests/test_progresso_e_eta.py: 16 warnings
+tests/test_redefinir_senha.py: 33 warnings
+tests/test_reembolso_erros_e_preco_publico.py: 17 warnings
+tests/test_referencia_abnt.py: 1 warning
+tests/test_registros_filtros.py: 61 warnings
+tests/test_retencao_registro_de_acesso_e_coerencia_legal.py: 6 warnings
+tests/test_rodada_paga_nao_cobra_duas_vezes.py: 5 warnings
+tests/test_rotas_publicas.py: 20 warnings
+tests/test_saida_do_beco_de_credito.py: 42 warnings
+tests/test_stripe_webhook.py: 44 warnings
+tests/test_suite_esta_isolada.py: 1 warning
+tests/test_teto_de_previa_por_origem.py: 7 warnings
+tests/test_top_n_reage_a_decisao.py: 6 warnings
+tests/test_uso_da_api_abre_o_projeto.py: 13 warnings
+tests/test_webhook_ambiente_e_dono_do_credito.py: 6 warnings
+tests/test_webhook_ambiente_thread_e_rastro.py: 2 warnings
+tests/test_webhook_carimbo_e_estorno_fora_de_ordem.py: 9 warnings
+tests/test_webhook_disputa_e_refund_que_falhou.py: 8 warnings
+  /tmp/coleta-g3/codigo/src/vicky/web/app.py:379: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    @app.on_event("startup")
+
+tests/test_aceite_vigente_pedido_sem_trancar.py: 10 warnings
+tests/test_acesso_aberto.py: 3 warnings
+tests/test_achados_da_costura.py: 1 warning
+tests/test_ajustes_usuaria_2026_08_25.py: 3 warnings
+tests/test_auth_sessao.py: 24 warnings
+tests/test_bordas_de_seguranca.py: 5 warnings
+tests/test_carimbo_do_filtro_da_execucao.py: 4 warnings
+tests/test_checkout_asaas.py: 60 warnings
+tests/test_checkout_asaas_navegador.py: 3 warnings
+tests/test_checkout_asaas_revisao.py: 20 warnings
+tests/test_checkout_asaas_revisao2.py: 18 warnings
+tests/test_checkout_asaas_revisao3.py: 8 warnings
+tests/test_checkout_asaas_revisao4.py: 6 warnings
+tests/test_clique_duplo_no_iniciar.py: 6 warnings
+tests/test_coerencia_dos_numeros.py: 9 warnings
+tests/test_compra_nao_depende_de_redirect_de_form.py: 7 warnings
+tests/test_confirmacao_de_email.py: 18 warnings
+tests/test_creditos.py: 16 warnings
+tests/test_css_buildado_e_prefetch.py: 1 warning
+tests/test_identificacao_legal_e_aceite.py: 19 warnings
+tests/test_isolamento_multitenant.py: 43 warnings
+tests/test_limite_de_preview.py: 4 warnings
+tests/test_livro_de_creditos.py: 1 warning
+tests/test_memoizacao_e_cache_por_tenant.py: 10 warnings
+tests/test_paginacao_preserva_filtro.py: 6 warnings
+tests/test_pdf_resumo.py: 10 warnings
+tests/test_permissoes.py: 29 warnings
+tests/test_preco_moeda_e_falha_da_stripe.py: 6 warnings
+tests/test_progresso_e_eta.py: 16 warnings
+tests/test_redefinir_senha.py: 33 warnings
+tests/test_reembolso_erros_e_preco_publico.py: 17 warnings
+tests/test_referencia_abnt.py: 1 warning
+tests/test_registros_filtros.py: 61 warnings
+tests/test_retencao_registro_de_acesso_e_coerencia_legal.py: 6 warnings
+tests/test_rodada_paga_nao_cobra_duas_vezes.py: 5 warnings
+tests/test_rotas_publicas.py: 20 warnings
+tests/test_saida_do_beco_de_credito.py: 42 warnings
+tests/test_stripe_webhook.py: 44 warnings
+tests/test_suite_esta_isolada.py: 1 warning
+tests/test_teto_de_previa_por_origem.py: 7 warnings
+tests/test_top_n_reage_a_decisao.py: 6 warnings
+tests/test_uso_da_api_abre_o_projeto.py: 13 warnings
+tests/test_webhook_ambiente_e_dono_do_credito.py: 6 warnings
+tests/test_webhook_ambiente_thread_e_rastro.py: 2 warnings
+tests/test_webhook_carimbo_e_estorno_fora_de_ordem.py: 9 warnings
+tests/test_webhook_disputa_e_refund_que_falhou.py: 8 warnings
+  /tmp/coleta-g3/venv-testes/lib/python3.12/site-packages/fastapi/applications.py:4681: DeprecationWarning: 
+          on_event is deprecated, use lifespan event handlers instead.
+  
+          Read more about it in the
+          [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+          
+    return self.router.on_event(event_type)  # ty: ignore[deprecated]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /Users/lucasavelar/Projects/2026-2_T02_FRANCES_ALLEN/dados/avaliacao/G3/M3.3.1/junit.xml -
+ATENCAO: 20 teste(s) de Postgres PULADOS. Motivo: Skipped: Postgres de teste não está de pé (make pg-up) | Skipped: Postgres local sem as tabelas do Asaas (make pg-init). | Skipped: Postgres local sem o schema aplicado (make pg-up && make pg-init). Use EXIGIR_PG=1 pra transformar este skip em falha.
+Testes de navegador: nenhum pulado.
+================================ tests coverage ================================
+______________ coverage: platform darwin, python 3.12.13-final-0 _______________
+
+Name                              Stmts   Miss  Cover
+-----------------------------------------------------
+src/vicky/__init__.py                 1      0   100%
+src/vicky/acesso_aberto.py           37      0   100%
+src/vicky/cli.py                    216    174    19%
+src/vicky/config.py                  73      3    96%
+src/vicky/creditos_motor.py         172     67    61%
+src/vicky/db.py                     291    143    51%
+src/vicky/discovery.py              157    117    25%
+src/vicky/llm.py                    125     63    50%
+src/vicky/openrouter_cost.py         29     21    28%
+src/vicky/pdf_report.py             150     26    83%
+src/vicky/pdf_resumo.py             124      5    96%
+src/vicky/pipeline.py              1184    905    24%
+src/vicky/pricing.py                  8      3    62%
+src/vicky/prompts.py                 42     10    76%
+src/vicky/referencias.py             79      4    95%
+src/vicky/report.py                  95     88     7%
+src/vicky/scraper.py                128    103    20%
+src/vicky/sources/__init__.py         2      0   100%
+src/vicky/sources/pubmed.py         166     96    42%
+src/vicky/sources/scholar.py        178    155    13%
+src/vicky/sources/scielo.py         110     89    19%
+src/vicky/storage.py                587    221    62%
+src/vicky/web/__init__.py             0      0   100%
+src/vicky/web/app.py               1371    157    89%
+src/vicky/web/asaas_billing.py      337     64    81%
+src/vicky/web/checkout_asaas.py     618     60    90%
+src/vicky/web/consentimentos.py      21      0   100%
+src/vicky/web/creditos.py           142     23    84%
+src/vicky/web/css_stamp.py           38      6    84%
+src/vicky/web/emails.py              32      8    75%
+src/vicky/web/empresa.py             11      0   100%
+src/vicky/web/progresso.py           84      3    96%
+src/vicky/web/projects.py           103     10    90%
+src/vicky/web/queries.py            361     51    86%
+src/vicky/web/stripe_billing.py     134     15    89%
+src/vicky/web/users.py              179     17    91%
+src/vicky/web/workspaces.py          72     14    81%
+src/vicky/xlsx_report.py             62     48    23%
+-----------------------------------------------------
+TOTAL                              7519   2769    63%
+Coverage JSON written to file /Users/lucasavelar/Projects/2026-2_T02_FRANCES_ALLEN/dados/avaliacao/G3/M3.3.1/coverage.json
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_backfill_no_postgres.py:142: Postgres local sem o schema aplicado (make pg-up && make pg-init). Use EXIGIR_PG=1 pra transformar este skip em falha.
+SKIPPED [1] tests/test_backfill_no_postgres.py:162: Postgres local sem o schema aplicado (make pg-up && make pg-init). Use EXIGIR_PG=1 pra transformar este skip em falha.
+SKIPPED [1] tests/test_backfill_no_postgres.py:208: Postgres local sem o schema aplicado (make pg-up && make pg-init). Use EXIGIR_PG=1 pra transformar este skip em falha.
+SKIPPED [1] tests/test_checkout_asaas_postgres.py:111: Postgres local sem as tabelas do Asaas (make pg-init).
+SKIPPED [1] tests/test_checkout_asaas_postgres.py:152: Postgres local sem as tabelas do Asaas (make pg-init).
+SKIPPED [1] tests/test_checkout_asaas_postgres.py:162: Postgres local sem as tabelas do Asaas (make pg-init).
+SKIPPED [1] tests/test_checkout_asaas_postgres.py:192: Postgres local sem as tabelas do Asaas (make pg-init).
+SKIPPED [1] tests/test_checkout_asaas_postgres.py:208: Postgres local sem as tabelas do Asaas (make pg-init).
+SKIPPED [1] tests/test_checkout_asaas_postgres.py:219: Postgres local sem as tabelas do Asaas (make pg-init).
+SKIPPED [1] tests/test_checkout_asaas_postgres.py:230: Postgres local sem as tabelas do Asaas (make pg-init).
+SKIPPED [1] tests/test_checkout_asaas_postgres.py:240: Postgres local sem as tabelas do Asaas (make pg-init).
+SKIPPED [1] tests/test_checkout_asaas_postgres.py:289: Postgres local sem as tabelas do Asaas (make pg-init).
+SKIPPED [1] tests/test_livro_no_postgres.py:130: Postgres local sem o schema aplicado (make pg-up && make pg-init). Use EXIGIR_PG=1 pra transformar este skip em falha.
+SKIPPED [1] tests/test_livro_no_postgres.py:165: Postgres local sem o schema aplicado (make pg-up && make pg-init). Use EXIGIR_PG=1 pra transformar este skip em falha.
+SKIPPED [1] tests/test_livro_no_postgres.py:179: Postgres local sem o schema aplicado (make pg-up && make pg-init). Use EXIGIR_PG=1 pra transformar este skip em falha.
+SKIPPED [1] tests/test_motor_de_credito_e_copia_fiel.py:45: a fonte só existe na máquina que tem os dois repos
+SKIPPED [1] tests/test_pool_de_conexao.py:106: Postgres de teste não está de pé (make pg-up)
+SKIPPED [1] tests/test_pool_de_conexao.py:131: Postgres de teste não está de pé (make pg-up)
+SKIPPED [1] tests/test_pool_de_conexao.py:156: Postgres de teste não está de pé (make pg-up)
+SKIPPED [1] tests/test_pool_de_conexao.py:186: Postgres de teste não está de pé (make pg-up)
+SKIPPED [1] tests/test_pool_de_conexao.py:230: Postgres de teste não está de pé (make pg-up)
+SKIPPED [1] tests/test_stripe_integracao_real.py:164: sem chave sk_test_ da Stripe no Keychain (máquina sem credencial)
+SKIPPED [1] tests/test_stripe_integracao_real.py:177: sem chave sk_test_ da Stripe no Keychain (máquina sem credencial)
+SKIPPED [1] tests/test_stripe_integracao_real.py:182: sem chave sk_test_ da Stripe no Keychain (máquina sem credencial)
+SKIPPED [1] tests/test_stripe_integracao_real.py:188: sem chave sk_test_ da Stripe no Keychain (máquina sem credencial)
+SKIPPED [1] tests/test_stripe_integracao_real.py:212: sem chave sk_test_ da Stripe no Keychain (máquina sem credencial)
+SKIPPED [1] tests/test_stripe_integracao_real.py:219: sem chave sk_test_ da Stripe no Keychain (máquina sem credencial)
+==== 1002 passed, 27 skipped, 5 xfailed, 1296 warnings in 138.39s (0:02:18) ====
