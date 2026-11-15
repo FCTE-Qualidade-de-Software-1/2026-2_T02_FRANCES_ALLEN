@@ -196,18 +196,20 @@ Divisão das oito triagens:
 | 1 | Antes do dia 1 | C | Obter a lista de incluídos de T1 a T4, preencher `referencia_Tn.csv`, decidir `publicado_ate_coleta` e a janela de cada tema | M1.1.1, M1.1.2 |
 | 2 | Dia 1 | C | Conferir o formulário em produção, anotar créditos, versão dos Termos e do Chrome em `execucoes.csv` | Todas |
 | 3 | Dia 1 | C | Casos de teste F01 a F04 no projeto rascunho P0 | M1.2.1 |
-| 4 | Dia 1 | C | Triagens T1, T2, T3 e T4, nessa ordem; registro de cada lista | M1.1.1, M1.3.1, M1.3.2, M1.4.1 |
+| 4 | Dias 1 a 3 | C | Triagens T1 e T2 no dia 1, T3 no dia 2 e T4 no dia 3; registro de cada lista | M1.1.1, M1.3.1, M1.3.2, M1.4.1 |
 | 5 | Dia 1 | C | Casos de teste F05 a F09 com o projeto T1 | M1.2.1 |
-| 6 | Dia 2, de 24 a 72 horas depois do início de T1 e de T3 | C | Triagens T1-B e T3-B, com a mesma entrada | M1.5.2 |
-| 7 | Dia 2 | C | Triagens E1 e E2 | M1.5.1, M1.2.1 (F04) |
-| 8 | Dias 1 a 3 | C | Consulta de cada estudo de Ref às três fontes | M1.1.2 |
-| 9 | Dia 2 | C, A1, A2 | Gerar as fichas cegas; piloto de calibração de A1 e A2 | M1.3.1, M1.4.1 |
-| 10 | Dias 2 a 4 | A1, A2 separados | Julgamento de relevância (T1 a T4) e rubrica (T1 e T2); envio das fichas | M1.3.1, M1.4.1 |
-| 11 | Dias 2 a 4 | A2, A1 | Conferência de metadados e links; conferência dos filtros | M1.3.2, M1.5.1 |
-| 12 | Dia 4 | A1, A2, A3 | Kappa, discordâncias e consolidado | M1.3.1 |
-| 13 | Dia 4 | C | Cálculo com o script e conferência | Todas |
+| 6 | Dias 3 e 4 | C | Triagens T1-B (dia 3) e T3-B (dia 4), 48 horas depois de T1 e de T3, com a mesma entrada | M1.5.2 |
+| 7 | Dias 2 e 4 | C | Triagens E1 (dia 2) e E2 (dia 4) | M1.5.1, M1.2.1 (F04) |
+| 8 | Dias 1 a 4 | C | Consulta de cada estudo de Ref às três fontes | M1.1.2 |
+| 9 | Dia 2 | C, A1, A2 | Gerar as fichas cegas de T1 e T2; piloto de calibração de A1 e A2 (usa a lista de E1) | M1.3.1, M1.4.1 |
+| 10 | Dias 2 a 5 | A1, A2 separados | Julgamento de relevância (T1 a T4, cada tema depois da sua ficha cega) e rubrica (T1 e T2); envio das fichas | M1.3.1, M1.4.1 |
+| 11 | Dias 3 a 5 | A2, A1 | Conferência de metadados e links; conferência dos filtros | M1.3.2, M1.5.1 |
+| 12 | Dia 5 | A1, A2, A3 | Kappa, discordâncias e consolidado | M1.3.1 |
+| 13 | Dia 5 | C | Cálculo com o script e conferência | Todas |
 
-A prévia do PICO tem limite diário por conta. Se o limite for atingido no dia 1, as triagens restantes passam para o dia seguinte; o intervalo de M1.5.2 conta a partir do início da execução A de cada tema.
+São no máximo duas triagens por dia, para não concentrar a coleta num dia só e para ficar dentro do limite diário de prévias da conta. Os dias seguem o [cronograma](cronograma.md): dia 1 é 16/11/2026 e dia 5 é 20/11/2026.
+
+A prévia do PICO tem limite diário por conta. Se o limite for atingido num dia, as triagens restantes passam para o dia seguinte; o intervalo de M1.5.2 conta a partir do início da execução A de cada tema.
 
 ### 4.2 Etapa comum: executar uma triagem e registrar a lista
 

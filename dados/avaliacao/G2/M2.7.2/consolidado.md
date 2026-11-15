@@ -1,6 +1,6 @@
 # M2.7.2 Interface autoexplicativa: consolidado
 
-> Preencher depois das cinco sessões válidas. Em cada célula P0x, `1` quando o elemento foi entendido pelo participante (`uso = sem_ajuda` em `observacao-uso.csv` **e** `classificacao_final = correta` em `respostas-compreensao.csv`) e `0` nos demais casos. Regra de cálculo: [Método do G2 com usuários](../../../../docs/fase-3/metodo-g2-usuarios.md), seção 6.
+> Preencher depois das cinco sessões válidas. As colunas P01 a P05 recebem os códigos das cinco sessões válidas, que podem incluir as reservas P06 e P07 (troque o cabeçalho pelo código real). Em cada célula, `1` quando o elemento foi entendido pelo participante (`uso = sem_ajuda` em `observacao-uso.csv` **e** `classificacao_final = correta` em `respostas-compreensao.csv`) e `0` nos demais casos. Regra de cálculo: [Método do G2 com usuários](../../../../docs/fase-3/metodo-g2-usuarios.md), seção 6.
 
 | elemento | nome | P01 | P02 | P03 | P04 | P05 | entendido_por_3_ou_mais |
 |---|---|---|---|---|---|---|---|

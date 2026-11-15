@@ -15,6 +15,7 @@ Cada métrica de G1 tem uma pasta própria, com o ID da métrica como nome. A fi
 | `M1.5.2/` | Segundo Top 30 (B) de cada tema repetido; o primeiro (A) é o de `M1.1.1/` |
 | `modelos/` | Cabeçalho de cada planilha, sem dado. Copiar para a pasta da métrica com o nome indicado no método |
 | `calcular_g1.py` | Script de cálculo de todas as métricas, dos níveis e da agregação do G1 |
+| `referencias/referencias.md` | Título, DOI, PMID, PMCID, link e número de incluídos de cada revisão de referência e das reservas, conferidos em 14/11/2026 |
 
 ## Cálculo
 
@@ -26,6 +27,13 @@ python3 dados/avaliacao/G1/calcular_g1.py ficha-cega --tema T1    # ficha cega d
 python3 dados/avaliacao/G1/calcular_g1.py amostra --tema T1       # posições da amostra de M1.3.2
 ```
 
-Arquivo ausente deixa a métrica como "não coletado"; o script não estima valores. Para testar o script, use uma pasta fora do repositório com `--pasta`; dado de teste não entra aqui.
+Arquivo ausente deixa a métrica como "não coletado"; o script não estima valores. Para testar o script, use uma pasta fora do repositório com a opção `--pasta`, que vem **antes** do subcomando:
 
-Os dados de avaliadores e participantes devem ser anonimizados (A1, A2, A3) antes de entrar no repositório, como pede o [README da pasta de dados](../../README.md). Registre a data da coleta e a versão do VICKY em produção em `execucoes.csv`.
+```bash
+python3 dados/avaliacao/G1/calcular_g1.py --pasta /caminho/da/pasta-de-teste calcular
+python3 dados/avaliacao/G1/calcular_g1.py --pasta /caminho/da/pasta-de-teste ficha-cega --tema T1
+```
+
+A pasta de teste precisa ter a mesma estrutura (`M1.1.1/` a `M1.5.2/`). Dado de teste não entra aqui.
+
+O G1 não tem participantes externos. Os avaliadores são integrantes da equipe e aparecem nas planilhas pelo papel (C, A1, A2, A3); a relação entre papel e integrante, com o nome, fica em `M1.3.1/coleta.md`, como descreve o [README da pasta de dados](../../README.md). Registre a data da coleta e a versão do VICKY em produção em `execucoes.csv`.

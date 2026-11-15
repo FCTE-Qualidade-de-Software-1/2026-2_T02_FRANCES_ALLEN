@@ -2,7 +2,7 @@
 
 Termo usado nas sessões com estudantes do [Método do G2 com usuários](metodo-g2-usuarios.md), preenchido a partir do modelo da disciplina. A versão para imprimir, em duas vias, está em [`dados/avaliacao/G2/termo-de-consentimento.docx`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/avaliacao/G2/termo-de-consentimento.docx). O texto abaixo é o mesmo do arquivo.
 
-Antes de imprimir, o aluno responsável preenche o e-mail de contato. O termo assinado não entra no repositório: é digitalizado para a pasta restrita da equipe, separada das gravações, como descreve a [seção 3.6 do método](metodo-g2-usuarios.md#36-termo-gravacao-e-anonimizacao).
+Antes de imprimir, o aluno responsável preenche o e-mail de contato (_a preencher_). O termo assinado não entra no repositório: é digitalizado para a pasta restrita da equipe, separada das gravações, como descreve a [seção 3.6 do método](metodo-g2-usuarios.md#36-termo-gravacao-e-anonimizacao).
 
 ---
 
@@ -16,11 +16,11 @@ Serão coletados: a gravação da tela do computador e da sua voz durante a ativ
 
 A atividade pode causar cansaço ou algum constrangimento por falar em voz alta enquanto usa o site ou por não saber responder a alguma pergunta. Para reduzir isso, a equipe lembra que não há resposta certa ou errada sobre você, pois quem está sendo avaliado é o site; você pode pedir pausa, pular qualquer pergunta ou encerrar a atividade quando quiser.
 
-Os dados serão utilizados para calcular as medidas de qualidade do trabalho da disciplina e para citar, sem identificação, trechos do que foi observado no relatório e no artigo do trabalho. Antes da apresentação dos resultados, os dados serão anonimizados, com remoção de nomes e de informações que permitam identificar você: você será identificado(a) apenas por um código (P01 a P05). O termo de consentimento será guardado separado dos dados da atividade. Terão acesso aos registros apenas os seis alunos da equipe e a professora orientadora. Eles serão guardados em uma pasta de acesso restrito no Google Drive da equipe, compartilhada somente com essas pessoas, durante o semestre letivo 2026/2, e depois excluídos. O repositório do trabalho é público e recebe apenas o código do participante, a data e a duração da sessão, uma impressão digital do arquivo de gravação (hash SHA-256, que não permite reconstruir o conteúdo) e as respostas anonimizadas; nenhum vídeo, áudio ou termo assinado é publicado. Você poderá consultar os resultados por meio da página pública do trabalho, em <https://fcte-qualidade-de-software-1.github.io/2026-2_T02_FRANCES_ALLEN/>, ou pedindo ao aluno responsável.
+Os dados serão utilizados para calcular as medidas de qualidade do trabalho da disciplina e para citar, sem identificação, trechos do que foi observado no relatório e no artigo do trabalho. Antes da apresentação dos resultados, os dados serão anonimizados, com remoção de nomes e de informações que permitam identificar você: você será identificado(a) apenas por um código (de P01 a P07). O termo de consentimento será guardado separado dos dados da atividade. Terão acesso aos registros apenas os seis alunos da equipe e a professora orientadora. Eles serão guardados em uma pasta de acesso restrito no Google Drive da equipe, compartilhada somente com essas pessoas, durante o semestre letivo 2026/2, e depois excluídos. O repositório do trabalho é público e recebe apenas o código do participante, a data e a duração da sessão, uma impressão digital do arquivo de gravação (hash SHA-256, que não permite reconstruir o conteúdo) e as respostas anonimizadas; nenhum vídeo, áudio ou termo assinado é publicado. Você poderá consultar os resultados por meio da página pública do trabalho, em <https://fcte-qualidade-de-software-1.github.io/2026-2_T02_FRANCES_ALLEN/>, ou pedindo ao aluno responsável.
 
 Sua participação é voluntária. Você pode recusar o convite ou interromper a atividade a qualquer momento, sem penalidade ou prejuízo. Se pedir, a sua gravação e as suas respostas serão apagadas. Não haverá despesas para você nem remuneração pela participação.
 
-Para dúvidas, entre em contato com Lucas Antunes de Avelar, pelo e-mail ______________________________.
+A atividade é conduzida por um integrante da equipe. O contato responsável pelo trabalho é Lucas Antunes de Avelar: para dúvidas, escreva para o e-mail ______________________________.
 
 Declaro que compreendi o objetivo e as condições da atividade, tive oportunidade de esclarecer minhas dúvidas e aceito participar. Receberei uma cópia deste termo.
 
@@ -39,3 +39,4 @@ Nome e assinatura do aluno responsável: ______________________________
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 14/11/2026 | Termo preenchido a partir do modelo da disciplina, com gravação de tela e voz, anonimização P01 a P05, guarda em pasta restrita e prazo de exclusão | Lucas Avelar | - |
+| 0.2 | 14/11/2026 | Códigos de P01 a P07, com as reservas; condutor da sessão como integrante da equipe e Lucas Antunes de Avelar como contato responsável | Lucas Avelar | - |

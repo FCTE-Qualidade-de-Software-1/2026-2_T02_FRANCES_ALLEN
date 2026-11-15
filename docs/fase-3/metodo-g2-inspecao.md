@@ -15,9 +15,9 @@ Este método cobre as oito métricas do G2 obtidas por inspeção das telas e do
 | [M2.4.2](../fase-2/especificacao-das-metricas.md#m242) | UEp-2-S | Erros de entrada nos formulários | Erros detectados pelo sistema | `M2.4.2/` |
 | [M2.7.1](../fase-2/especificacao-das-metricas.md#m271) | UAp-3-S | Primeira tela das páginas de entrada | 4 páginas | `M2.7.1/` |
 
-### Por que este método
+## Por que este método
 
-As oito métricas desta página são medidas de atributo do produto: contam elementos que existem ou não nas telas e no código (descrições, orientações, mensagens, proteções contra erro). Para esse tipo de medida a ISO/IEC 25023 prevê a obtenção por inspeção do produto, sem depender de usuário, e a ISO/IEC 25040 coloca a inspeção entre os métodos aceitos na etapa de projeto da avaliação. A inspeção também não consome créditos de triagem, que ficam reservados para o G1 e para as sessões com participantes.
+As oito métricas desta página são medidas de atributo do produto: contam elementos que existem ou não nas telas e no código (descrições, orientações, mensagens, proteções contra erro). As fichas da [Fase 2](../fase-2/especificacao-das-metricas.md) definem a fonte dos dados dessas oito métricas como as páginas e telas do VICKY em produção e, em M2.2.2, M2.3.1, M2.3.2 e M2.4.1, o código-fonte; nenhuma delas depende de usuário. A inspeção é o método que lê exatamente essas fontes, e é a forma de coleta que as próprias fichas descrevem no campo "Procedimento de coleta". A inspeção também não consome créditos de triagem, que ficam reservados para o G1 e para as sessões com participantes.
 
 A Fase 2 define, para cada métrica, o denominador (cenários, funções, inventário de mensagens, ações, páginas) e o critério de contagem. O método transforma esse critério em checklist por métrica (seção 3), para que dois avaliadores cheguem ao mesmo número sem interpretar a ficha de novo.
 
@@ -73,7 +73,7 @@ dados/avaliacao/G2/M2.x.y/
 
 As fichas são tabelas em Markdown, já com os itens de cada métrica, e podem ser preenchidas direto no GitHub: abrir o arquivo, clicar no lápis (*Edit this file*), escrever entre as barras `|` e clicar em *Commit changes*. As capturas sobem pela opção *Add file > Upload files* da pasta `evidencias/`.
 
-Só entram dados reais de coleta. Antes de enviar uma captura, confira que ela não mostra nome ou e-mail de pessoa real, senha ou saldo de outra conta. A relação entre A1, A2 e A3 e as pessoas fica fora do repositório.
+Só entram dados reais de coleta. Antes de enviar uma captura, confira que ela não mostra nome ou e-mail de pessoa real, senha ou saldo de outra conta. A relação entre A1, A2 e A3 e os integrantes é registrada com o nome em `coleta.md`: integrantes da equipe podem ser nomeados nos papéis, porque o histórico do git já os identifica.
 
 ## 3. Passo a passo
 
@@ -212,7 +212,7 @@ Um padrão observado em uma única tela não tem o que comparar: sai de B e fica
 | A01 | Iniciar a triagem completa | Sim | Confirmação ou aviso explícito de que 1 crédito será consumido |
 | A02 | Excluir projeto | Não | Confirmação antes de excluir |
 | A03 | Parar a triagem em andamento | A verificar | Confirmação ou aviso do efeito sobre a execução e o crédito |
-| A04 | Definir a quantidade do Top | A verificar | Aviso de que o valor não pode ser alterado depois |
+| A04 | Definir a quantidade do Top (campo numérico de 1 a 30, padrão 20 no commit `c2ae570`; conferir em produção) | A verificar | Aviso de que o valor não pode ser alterado depois |
 | A05 | Ativar o filtro de acesso aberto | Não | Aviso do efeito sobre o resultado |
 | A06 | Gerar pré-visualização | Não (cota diária) | Aviso do consumo da cota ou do saldo restante |
 
@@ -234,7 +234,7 @@ Um padrão observado em uma única tela não tem o que comparar: sai de B e fica
 | I04 | Senha curta | Cadastro | `abc12` (5 caracteres) |
 | I05 | Senhas diferentes | Cadastro | `senha1234` e `senha4321` |
 | I06 | Tema vazio | Novo projeto | Tema em branco |
-| I07 | Quantidade do Top fora dos valores permitidos | Novo projeto | Valor fora de 10, 20 e 30, se o campo aceitar digitação |
+| I07 | Quantidade do Top fora dos valores permitidos | Novo projeto | `31`. No commit `c2ae570` o campo é numérico, de 1 a 30, com padrão 20 (`templates/projects/new.html`); os limites são conferidos em produção e, se forem outros, o valor digitado é o máximo de produção mais 1, anotado em `coleta.md` |
 
 Só valem entradas possíveis pela interface normal, sem alterar a página pelo DevTools. O valor `aluno@` foi fixado porque o Chrome aceita `aluno@unb` como e-mail válido (não exige ponto no domínio): com esse valor o erro não seria detectado e o item sairia de B.
 
@@ -310,4 +310,5 @@ O valor é calculado somente sobre `consolidado.md`, e o nível sai da tabela de
 | 0.1 | 04/11/2026 | Criação da página | Lucas Avelar | - |
 | 0.2 | 09/11/2026 | Método completo de inspeção: papéis, ambiente, roteiro e checklist por métrica, registro, cálculo e regra de discordância | Gabriel Fae | - |
 | 0.3 | 13/11/2026 | Fichas em Markdown preenchíveis no GitHub, `/privacidade` em M2.1.1 como na Fase 2, critério de M2.7.1 detalhado e valores digitados fixos nos roteiros de M2.2.2 e M2.4.2 | Gabriel Fae | - |
-| 0.4 | 14/11/2026 | Seção "Por que este método", exigida pela estrutura da Fase 3. A revisar pelo autor do método | Lucas Avelar | - |
+| 0.4 | 14/11/2026 | Seção "Por que este método", exigida pela estrutura da Fase 3 | Lucas Avelar | - |
+| 0.5 | 14/11/2026 | "Por que este método" como seção de nível 2, fundamentação ligada às fichas da Fase 2, quantidade do Top de 1 a 30 em A04 e I07 e papéis nomeados em `coleta.md` | Lucas Avelar | - |

@@ -101,7 +101,7 @@ No código consultado (`c2ae570`), a prévia dos critérios tem limite de **20 p
 
 | Método | Prévias previstas | Conta | Regra que evita estourar o limite |
 |--------|-------------------|-------|-----------------------------------|
-| G1 | Uma por triagem (8) e as de F03 no projeto P0; no máximo cerca de 6 no dia 1 | Cortesia | Se o limite da conta for atingido, as triagens restantes passam para o dia seguinte (método do G1, seção 4.1) |
+| G1 | Uma por triagem (8) e as de F03 no projeto P0; no máximo duas triagens por dia | Cortesia | Se o limite da conta for atingido, as triagens restantes passam para o dia seguinte (método do G1, seção 4.1) |
 | G2 por inspeção | Cerca de 20 em E08, que esgota a cota de propósito, e as de F03 em M2.2.1 | Descartável | E08 sempre por último e nunca no mesmo dia nem na mesma rede de uma sessão com participante |
 | G2 com usuários | De 1 a 3 por sessão e 1 ou 2 por avaliador de teclado | Contas novas | No máximo três sessões por dia, em rede do celular do condutor |
 | G3 | Nenhuma | - | Não usa a produção |

@@ -8,10 +8,10 @@ Os instrumentos aplicados aos participantes (cartões de tarefa, ficha de observ
 
 | Métrica | Medida | Quem fornece o dado | Instrumento | Denominador (B) | Pasta em `dados/avaliacao/G2/` |
 |---------|--------|---------------------|-------------|-----------------|--------------------------------|
-| [M2.5.1](../fase-2/especificacao-das-metricas.md#m251) | UIn-1-S | Participantes P01 a P05 | Questionário de estética das 5 telas | 5 telas | `M2.5.1/` |
+| [M2.5.1](../fase-2/especificacao-das-metricas.md#m251) | UIn-1-S | 5 participantes válidos (códigos P01 a P07) | Questionário de estética das 5 telas | 5 telas | `M2.5.1/` |
 | [M2.6.1](../fase-2/especificacao-das-metricas.md#m261) | UAc-1-G | Avaliadores K1 e K2 | Teste só com teclado, por função | 9 funções (F01 a F09) | `M2.6.1/` |
 | [M2.6.2](../fase-2/especificacao-das-metricas.md#m262) | Medida adicional | Avaliadores A1 e A2 | axe DevTools e conferência manual | Pares de texto e fundo avaliados nas 8 telas | `M2.6.2/` |
-| [M2.7.2](../fase-2/especificacao-das-metricas.md#m272) | ULe-4-S | Participantes P01 a P05 | Teste de cenário com pensamento em voz alta e questionário de compreensão | 12 elementos e passos | `M2.7.2/` |
+| [M2.7.2](../fase-2/especificacao-das-metricas.md#m272) | ULe-4-S | 5 participantes válidos (códigos P01 a P07) | Teste de cenário com pensamento em voz alta e questionário de compreensão | 12 elementos e passos | `M2.7.2/` |
 
 M2.5.1 e M2.7.2 saem da mesma sessão com o participante. M2.6.1 e M2.6.2 não usam participantes e podem correr em paralelo às sessões.
 
@@ -56,7 +56,7 @@ Na ISO/IEC 25040:2024, projetar a avaliação inclui definir os métodos de medi
 
 | Item | Definição |
 |------|-----------|
-| Quantos | 5 participantes válidos (P01 a P05), mais 2 reservas convidados desde o início |
+| Quantos | 5 participantes válidos, mais 2 reservas convidados desde o início. Os titulares recebem os códigos P01 a P05, na ordem das sessões, e as reservas, P06 e P07, na ordem em que forem chamadas. Código de sessão interrompida ou retirada não é reaproveitado, de modo que as cinco sessões válidas podem ter, por exemplo, os códigos P01, P02, P04, P05 e P06 |
 | Onde | Estudantes de Medicina da UnB (Faculdade de Medicina, campus Darcy Ribeiro), por contatos pessoais da equipe, ligas acadêmicas e centro acadêmico. Estudantes de Medicina de outras instituições do DF também são elegíveis |
 | Convite | Mensagem curta com o objetivo, a duração (cerca de 1 hora e 15 minutos), a gravação de tela e voz sem rosto e a ausência de remuneração. O termo completo é lido na sessão |
 | Inclusão | 18 anos ou mais (os Termos do VICKY restringem o uso a maiores de 18); matrícula ativa em Medicina; nunca ter usado o VICKY; aceitar o termo, inclusive a gravação |
@@ -118,7 +118,7 @@ Por isso: (1) antes do piloto, o condutor confere em produção o limite vigente
 | Nome do arquivo | `P0x_AAAAMMDD.mkv` (sem nome de pessoa) |
 | Guarda | Logo após a sessão, o observador calcula o hash (`shasum -a 256 P0x_AAAAMMDD.mkv`), envia o arquivo para a pasta restrita no Google Drive da equipe, compartilhada só com os seis integrantes e com a professora, e apaga a cópia local |
 | Repositório público | Recebe só o registro: código do participante, data, duração e hash SHA-256 do arquivo (`M2.7.2/sessoes.csv`), mais as respostas e anotações anonimizadas. Nenhum vídeo, áudio ou termo assinado entra no repositório |
-| Termos assinados | Digitalizados para uma subpasta separada da pasta das gravações, no mesmo Drive restrito. O papel fica com o aluno responsável. A ligação entre nome e código (P01 a P05) existe só no termo |
+| Termos assinados | Digitalizados para uma subpasta separada da pasta das gravações, no mesmo Drive restrito. O papel fica com o aluno responsável. A ligação entre nome e código (P01 a P07) existe só no termo |
 | Anonimato na tela | O participante usa o nome "Participante P0x" e o e-mail de teste; o navegador usa um perfil limpo, sem favoritos, contas ou notificações. Voz não é anonimizável na gravação bruta, e por isso a gravação nunca sai da pasta restrita |
 | Transcrição | Trechos citados no repositório e no relatório não trazem nome, instituição, semestre exato nem outro dado que identifique o participante |
 | Prazo | Gravações e termos digitalizados são excluídos ao fim do semestre 2026/2. A exclusão é registrada em `M2.7.2/coleta.md` |
@@ -149,7 +149,7 @@ Se a sessão for feita fora desse ambiente (por exemplo, em outro computador), a
 
 ### 4.1 Sessão com o participante (M2.7.2 e M2.5.1)
 
-Tempo total estimado: 75 minutos, com folga até 90.
+Tempo total estimado: 75 minutos, com folga até 90. Os 75 minutos somam os tempos estimados dos blocos, e é essa a duração informada no termo (cerca de 1 hora e 15 minutos).
 
 | Bloco | Tempo | Quem | O que acontece | Registro |
 |:-----:|:-----:|:----:|----------------|----------|
@@ -167,7 +167,7 @@ Tempo total estimado: 75 minutos, com folga até 90.
 2. Lembretes permitidos, e só eles: "O que você está pensando agora?", "Continue falando o que pensa", "O que você faria se estivesse sozinho?". Lembrete não é ajuda.
 3. **Ajuda** é qualquer informação sobre a interface: apontar a tela, dizer um rótulo, confirmar se o caminho está certo. Só é dada se o participante ficar 3 minutos sem avanço no mesmo passo ou pedir para desistir dele. A ajuda é a mínima (apontar a região da tela) e todo elemento envolvido recebe `uso = com_ajuda`.
 4. O observador marca, para cada elemento, o código de uso e o momento da gravação (seção 5.2). Se o participante errar e corrigir sozinho, sem ajuda, o uso conta como `sem_ajuda`, com a correção anotada.
-5. Tempo-limite: 25 minutos para a parte A e 20 para a parte B. Esgotado o tempo, o condutor passa ao bloco seguinte, e os elementos não alcançados ficam com `uso = nao_usou`.
+5. Tempo-limite: 25 minutos para a parte A e 20 para a parte B. O tempo da tabela (20 e 15 minutos) é o esperado; o limite é o teto, 5 minutos acima de cada estimativa. Se as duas partes chegarem ao limite, a sessão passa de 75 para 85 minutos, dentro da folga de 90; por isso o termo fala em duração aproximada. Esgotado o tempo, o condutor passa ao bloco seguinte, e os elementos não alcançados ficam com `uso = nao_usou`.
 6. Se o participante clicar em "Criar e iniciar tudo direto" ou equivalente, ninguém interrompe: a conta não tem crédito. O elemento E08 recebe `uso = incorreto`.
 7. Se o participante tentar excluir o projeto da conta de cortesia, o condutor interrompe e registra a ocorrência. Isso não conta como ajuda em nenhum dos 12 elementos.
 
@@ -366,3 +366,4 @@ Em M2.6.1, uma função em que K1 e K2 divergem é executada de novo pelos dois 
 | 0.1 | 04/11/2026 | Criação da página | Lucas Avelar | - |
 | 0.2 | 09/11/2026 | Esqueleto com o que a Fase 2 define e os pontos em aberto para o responsável | Gabriel Fae | - |
 | 0.3 | 14/11/2026 | Método completo: justificativa, recrutamento, papéis, contas, limite de prévias, termo e anonimização, roteiro da sessão com tempos, teste com teclado, passo a passo do axe, registro, cálculo e repetição. Incorpora o roteiro de M2.7.2 e o questionário qualitativo escritos por João Felipe Oliveira | Lucas Avelar e João Felipe Oliveira | - |
+| 0.4 | 14/11/2026 | Códigos P06 e P07 para as reservas e relação entre o tempo estimado das partes A e B, o tempo-limite e a duração informada no termo | Lucas Avelar | - |
