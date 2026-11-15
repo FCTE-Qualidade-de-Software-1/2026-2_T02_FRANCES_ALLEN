@@ -1,6 +1,6 @@
 # Método do G3 (manutenibilidade)
 
-Este método cobre as seis métricas do G3, todas medidas no código-fonte do VICKY por análise estática e pela execução da suíte de testes. Definição, fórmula e níveis são os da [Fase 2](../fase-2/especificacao-das-metricas.md); esta página diz como executar a coleta de forma que qualquer integrante, na própria máquina, chegue ao mesmo número. A coleta inteira roda com um comando, o script [`coletar.sh`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G3), e o cálculo sai das saídas brutas, sem contagem à mão.
+Este método cobre as seis métricas do G3, todas medidas no código-fonte do VICKY por análise estática e pela execução da suíte de testes. Definição, fórmula e níveis são os da [Fase 2](../fase-2/especificacao-das-metricas.md); esta página diz como executar a coleta de forma que qualquer integrante, na própria máquina, chegue ao mesmo número. A coleta inteira roda com um comando, o script [`coletar.sh`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/avaliacao/G3/coletar.sh), e o cálculo sai das saídas brutas, sem contagem à mão.
 
 ## 1. Métricas cobertas
 
@@ -17,7 +17,7 @@ As medidas foram revistas na Fase 2 antes desta coleta (#23): M3.2.1 e M3.2.2 us
 
 ## 2. Por que este método
 
-**O ponto de vista pede medida interna.** O G3 avalia a manutenibilidade do ponto de vista da equipe de desenvolvimento, e a [Fase 1](../fase-1/escopo.md) delimitou o objeto como o código do backend (`src/vicky/` e `tests/`), com análise estática automatizada. As medidas de manutenibilidade da ISO/IEC 25023:2016 (subcláusula 8.8) são calculadas sobre o próprio produto, e todas as fórmulas das fichas do G3 são contagens sobre o código: imports, ramificações, violações de estilo, linhas repetidas, chamadas de log e linhas executadas. Nenhuma delas depende de usuário, de produção ou de opinião, o que permite um método inteiramente automatizado, com inspeção humana só para conferir a regra de M3.2.3.
+**O ponto de vista pede medida interna.** O G3 avalia a manutenibilidade do ponto de vista da equipe de desenvolvimento, e a [Fase 1](../fase-1/escopo.md) delimitou o objeto como o código do backend (`src/vicky/` e `tests/`), com análise estática automatizada. As medidas de manutenibilidade da ISO/IEC 25023:2016, como as fichas da Fase 2 as definem, são calculadas sobre o próprio produto, e todas as fórmulas das fichas do G3 são contagens sobre o código: imports, ramificações, violações de estilo, linhas repetidas, chamadas de log e linhas executadas. Nenhuma delas depende de usuário, de produção ou de opinião, o que permite um método inteiramente automatizado, com inspeção humana só para conferir a regra de M3.2.3.
 
 **Ferramenta no lugar de contagem manual.** Nesta fase o processo da ISO/IEC 25040:2024 projeta a avaliação, e o critério de pronto da #23 é que qualquer integrante rode os comandos e chegue ao mesmo número. Contar à mão 1.916 violações de estilo ou 7.519 linhas executáveis não é repetível; uma ferramenta com versão fixa, configuração fixa e entrada fixa é. Por isso cada métrica tem uma ferramenta, e cada escolha abaixo existe para fechar uma fonte de variação:
 
@@ -48,7 +48,7 @@ As medidas foram revistas na Fase 2 antes desta coleta (#23): M3.2.1 e M3.2.2 us
 | M3.1.2 | X = 1 menos A / B | Funções com CC acima de 10 | Funções e métodos de `pipeline.py` | 85% | Média em Q3.1; bloqueadora |
 | M3.2.1 | C = A / B | Arquivos sem violação | Arquivos `.py` de `src/vicky/` | 90% | Média em Q3.2 |
 | M3.2.2 | D = linhas duplicadas / total, em % | Linhas cobertas por trecho duplicado | LOC do `radon raw` | até 5% | Média em Q3.2 |
-| M3.2.3 | X = A / B | Funções críticas com chamada a `logging` | Funções críticas de `pipeline.py` | 75% | Média em Q3.2 |
+| M3.2.3 | X = A / B | Funções críticas que registram sucesso e exceção com `logging` | Funções críticas de `pipeline.py` | 75% | Média em Q3.2 |
 | M3.3.1 | T = executadas / testáveis, em % | Linhas executáveis executadas | Linhas executáveis de `src/vicky/` | 70% (H3.3) | Única em Q3.3; limita G3 |
 
 **Limites conhecidos.** A cobertura de ramos mostra o lado falso de um `if` que a cobertura de linhas dá como coberto ([coverage.py, *Branch coverage measurement*](https://coverage.readthedocs.io/en/latest/branch.html), consultado em 14/11/2026). A ficha de M3.3.1 pede cobertura de linhas e o método mantém a ficha; a cobertura de ramos fica como sugestão para uma próxima avaliação. Em M3.2.1, o limite de 79 caracteres responde pela maior parte das violações; o método aplica o padrão, como a ficha manda, e a distribuição por código de regra fica registrada em `flake8-statistics.txt` para a análise da Fase 4.
@@ -93,9 +93,11 @@ As versões exatas de todas as dependências, com hash, estão em `dados/avaliac
 
 | Item | Valor |
 |------|-------|
-| Repositório | `https://github.com/LucasAvelar2711/Vicky` (privado; pedir acesso de leitura a Lucas Avelar) |
+| Repositório | `https://github.com/LucasAvelar2711/Vicky` (fork privado; acesso de leitura concedido por Lucas Avelar) |
 | Commit | `c2ae5704b9770fbc33156fb3f457c4e8c63e5007`, de 29/09/2026 20:51 (UTC-3) |
 | Escopo medido | `src/vicky/` (38 arquivos `.py`, incluindo `sources/` e `web/`) e `tests/` |
+
+O código está num fork privado. A equipe concede acesso de leitura à professora mediante solicitação, e o repositório do trabalho guarda as saídas brutas de cada ferramenta e os lockfiles (`ferramentas.lock`, `testes.lock`) em `dados/avaliacao/G3/`, o que permite verificar a origem de cada número sem o fork.
 
 O script confere que o commit existe no clone antes de começar e para com erro se não existir. O clone não é alterado: a cópia de trabalho vai para uma pasta temporária.
 
@@ -223,9 +225,14 @@ grep -rn -E 'import logging|getLogger' src/vicky > $G3/M3.2.3/grep-logging.txt
 
 Função que só chama outra função crítica, sem usar diretamente um desses módulos, não é marcada. Função aninhada conta como parte da função que a contém.
 
-**Quando a função tem log.** A ficha pede o uso explícito da biblioteca `logging` do Python. Conta como log a chamada a `logging.<nível>(...)` ou a um objeto criado por `logging.getLogger` (`logger.info`, `log.exception` e semelhantes). `print`, `traceback.print_exc` e o registro de status do `job` no banco não contam como log pela ficha, mas o inventário os registra (`chamadas_print`, `traceback_print_exc`, `registro_em_job`) para a análise da Fase 4.
+**Quando a função tem log.** A ficha define a métrica pelas funções críticas que registram em *log* eventos de sucesso **e** exceções, com o uso explícito da biblioteca `logging` do Python. Conta como chamada de log a chamada a `logging.<nível>(...)` ou a um objeto criado por `logging.getLogger` (`logger.info`, `log.exception` e semelhantes). A regra tem duas partes:
 
-**Inspeção.** A1 e A2, separados, abrem `pipeline.py` no commit avaliado e conferem cada linha de `funcoes.csv` em `inspecao.md`: se a marcação de crítica está certa pela regra acima e se a contagem de chamadas a `logging` bate com o código. A inspeção confere a regra, não a substitui: se um avaliador achar erro no inventário, a correção vai para `extrair.py` e a coleta inteira roda de novo (seção 7). B é o número de funções com `critica = True` e A, as críticas com `chamadas_logging` maior que zero.
+1. **Condição necessária, contada pelo script:** a função crítica tem pelo menos uma chamada a `logging` (`chamadas_logging` maior que zero em `funcoes.csv`).
+2. **Condição da ficha, conferida na inspeção:** entre essas chamadas há pelo menos uma no caminho de sucesso e pelo menos uma num bloco `except` ou que registre a exceção (`log.exception`, `exc_info`). Função crítica que registra só um dos dois não entra em A.
+
+`print`, `traceback.print_exc` e o registro de status do `job` no banco não contam como log pela ficha, mas o inventário os registra (`chamadas_print`, `traceback_print_exc`, `registro_em_job`) para a análise da Fase 4.
+
+**Inspeção.** A1 e A2, separados, abrem `pipeline.py` no commit avaliado e conferem cada linha de `funcoes.csv` em `inspecao.md`: se a marcação de crítica está certa pela regra acima e se a contagem de chamadas a `logging` bate com o código. A inspeção confere a regra, não a substitui: se um avaliador achar erro no inventário, a correção vai para `extrair.py` e a coleta inteira roda de novo (seção 7). B é o número de funções com `critica = True`. O `calcular.py` calcula A pela condição necessária (críticas com `chamadas_logging` maior que zero), e esse valor é preliminar: o A final é o número de críticas que a inspeção confirma como registrando sucesso e exceção, e a inspeção só pode reduzir o A do script, nunca aumentá-lo.
 
 ### 4.7 M3.3.1: completude de testes automatizados
 
@@ -271,14 +278,14 @@ $F/python -I dados/avaliacao/G3/calcular.py dados/avaliacao/G3
 | M3.1.2 | `radon-cc.json` | 1 menos (funções com CC acima de 10 dividido por funções), em % |
 | M3.2.1 | `flake8-violacoes.txt`, `arquivos-py.txt` | Arquivos sem violação dividido por arquivos, em % |
 | M3.2.2 | `pylint-duplicate-code.txt`, `radon-raw.json` | Linhas duplicadas dividido por LOC, vezes 100 |
-| M3.2.3 | `funcoes.csv` | Críticas com `logging` dividido por críticas, em % |
+| M3.2.3 | `funcoes.csv` | Críticas com alguma chamada a `logging` dividido por críticas, em %; valor preliminar até a inspeção de `inspecao.md` (seção 4.6) |
 | M3.3.1 | `coverage.json`, `junit.xml` | `covered_lines` dividido por `num_statements`, vezes 100; não calcula se houver teste com falha ou erro |
 
 Da métrica para a questão e da questão para o objetivo valem as [regras do G3](../fase-2/niveis-e-julgamento.md#4-regras-do-g3-manutenibilidade), aplicadas na Fase 4: média dos pontos das métricas, M3.1.2 bloqueadora em Q3.1 e Q3.3 limitando o G3.
 
 ### 6.1 Coleta de 14/11/2026
 
-Primeira execução do método, no commit `c2ae570`, repetida do zero na mesma máquina (ambientes novos e outra pasta de trabalho) com os mesmos A, B e valores nas seis métricas e saídas brutas iguais, salvo data, caminho e ordem das chaves do JSON do radon. A repetição por A2 em outra máquina, pedida na seção 7, ainda não foi feita. Os números completos estão em `dados/avaliacao/G3/resultados.csv` e no `resultado.md` de cada pasta.
+Primeira execução do método, no commit `c2ae570`, repetida pelo autor do zero na mesma máquina (ambientes novos e outra pasta de trabalho) com os mesmos A, B e valores nas seis métricas e saídas brutas iguais, salvo data, caminho e ordem das chaves do JSON do radon. O resumo da segunda execução (saída do script, `resultados.csv` e versões) está em [`dados/avaliacao/G3/repeticao-autor-2026-11-14.md`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/avaliacao/G3/repeticao-autor-2026-11-14.md). A repetição independente por A2 em outra máquina, pedida na seção 7, está no [cronograma](cronograma.md) e ainda não foi feita. Os números completos estão em `dados/avaliacao/G3/resultados.csv` e no `resultado.md` de cada pasta.
 
 | Métrica | A | B | Valor | Nível pela Fase 2 |
 |---------|--:|--:|------:|-------------------|
@@ -286,8 +293,10 @@ Primeira execução do método, no commit `c2ae570`, repetida do zero na mesma m
 | M3.1.2 | 11 | 47 | 76,6% | Aceitável |
 | M3.2.1 | 2 | 38 | 5,3% | Insatisfatório |
 | M3.2.2 | 28 | 18.927 | 0,15% | Excelente |
-| M3.2.3 | 0 | 33 | 0,0% | Insatisfatório |
+| M3.2.3 | 0 | 33 | 0,0% (preliminar) | Insatisfatório |
 | M3.3.1 | 4.750 | 7.519 | 63,17% | Aceitável |
+
+O valor de M3.2.3 é preliminar até a inspeção de A1 e A2, mas não muda: nenhum arquivo de `src/vicky/` importa `logging` nem chama `getLogger` (`M3.2.3/grep-logging.txt` vazio), então nenhuma função crítica registra sucesso ou exceção pela biblioteca, e A = 0 pela condição necessária e pela condição da ficha.
 
 A análise desses valores, a comparação com as hipóteses H3.1 a H3.3 e o julgamento do G3 ficam para a Fase 4.
 
@@ -326,3 +335,4 @@ A análise desses valores, a comparação com as hipóteses H3.1 a H3.3 e o julg
 | 0.1 | 04/11/2026 | Criação da página | Lucas Avelar | - |
 | 0.2 | 09/11/2026 | Esqueleto com o que a Fase 2 define e os pontos em aberto para o responsável | Gabriel Fae | - |
 | 0.3 | 14/11/2026 | Método completo: justificativa, ambiente e versões, comando e regra de contagem por métrica, registro, cálculo por script, discordância e repetição, e a coleta de 14/11/2026 no commit `c2ae570` | Lucas Avelar | - |
+| 0.4 | 14/11/2026 | M3.2.3 alinhada à ficha (registro de sucesso e de exceção conferido na inspeção) e valor de 14/11 marcado como preliminar, fork privado e verificação sem o fork, evidência da repetição pelo autor e link direto para o `coletar.sh` | Lucas Avelar | - |

@@ -11,7 +11,7 @@ Na ISO/IEC 25040:2024, projetar a avaliação inclui definir os recursos e as co
 | Item | Valor | Usado por |
 |------|-------|-----------|
 | VICKY em produção | <https://vicky.synaptha.com/>, acessado em navegador de computador. A tela não mostra número de versão; a versão é identificada pela data e hora de acesso e pela versão dos Termos de Uso exibida no site | G1, G2 por inspeção, G2 com usuários |
-| Código-fonte do VICKY | Fork privado `LucasAvelar2711/Vicky`, commit `c2ae5704b9770fbc33156fb3f457c4e8c63e5007` (`c2ae570`), de 29/09/2026 20:51 (horário de Brasília). Escopo: `src/vicky/` (38 arquivos `.py`) e `tests/` | G2 por inspeção (só A1), G3 |
+| Código-fonte do VICKY | Fork privado `LucasAvelar2711/Vicky`, commit `c2ae5704b9770fbc33156fb3f457c4e8c63e5007` (`c2ae570`), de 29/09/2026 20:51 (horário de Brasília). Escopo: `src/vicky/` (38 arquivos `.py`) e `tests/`. O código está num fork privado; a equipe concede acesso de leitura à professora mediante solicitação, e o repositório do trabalho guarda as saídas brutas e os lockfiles, o que permite verificar os resultados sem o fork ([seção 2.4](#24-acesso-ao-codigo-e-aos-dados-restritos)) | G2 por inspeção (só A1), G3 |
 | Versão móvel | Fora do escopo, como decidido na [Fase 1](../fase-1/escopo.md). Nenhuma coleta usa celular ou tablet | - |
 
 Produção e código não são a mesma coisa: o commit é de setembro e a produção pode ter mudado desde então. Os métodos tratam isso do mesmo jeito: o que o estudante vê é medido em produção, o código serve para o inventário de mensagens e a confirmação das proteções no G2 e para todas as medidas do G3, e qualquer diferença observada é anotada no arquivo de coleta da métrica.
@@ -67,7 +67,7 @@ As versões com hash estão em `dados/avaliacao/G3/ferramentas.lock` e `testes.l
 
 ### 1.3 Repositório e registro
 
-Todos os métodos registram os dados brutos em `dados/avaliacao/` do [repositório do trabalho](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN), com permissão de escrita para os seis integrantes. As fichas do G2 são preenchidas direto no GitHub, pelo navegador, e o histórico de commits prova que cada avaliador enviou a sua ficha antes de ver a do outro, que é a condição de independência dos quatro métodos. Data e hora são registradas no horário de Brasília.
+Todos os métodos registram os dados brutos em `dados/avaliacao/` do [repositório do trabalho](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN), com permissão de escrita para os seis integrantes. As fichas do G2 são preenchidas direto no GitHub, pelo navegador. A independência entre avaliadores, condição dos quatro métodos, é garantida pela ordem dos commits: cada avaliador envia a própria ficha antes de abrir a do outro, e o A2 da inspeção envia `A2.md` antes de abrir o código; o histórico de commits mostra essa ordem. Data e hora são registradas no horário de Brasília.
 
 ## 2. Contas, créditos e acesso
 
@@ -106,17 +106,18 @@ No código consultado (`c2ae570`), a prévia dos critérios tem limite de **20 p
 | G2 com usuários | De 1 a 3 por sessão e 1 ou 2 por avaliador de teclado | Contas novas | No máximo três sessões por dia, em rede do celular do condutor |
 | G3 | Nenhuma | - | Não usa a produção |
 
-Os Termos de Uso do VICKY proíbem *scraping* abusivo e sobrecarga. Por isso nenhuma coleta em produção é automatizada: o axe é rodado à mão, uma vez por tela e por avaliador.
+Os Termos de Uso do VICKY, na seção 6 ("Uso proibido") da versão do commit `c2ae570` (`src/vicky/web/templates/terms.html`), vedam *scraping* abusivo e sobrecarregar intencionalmente a infraestrutura da plataforma; a redação vigente em produção é conferida na etapa 2 do G1, com a versão dos Termos. Por isso nenhuma coleta em produção é automatizada: o axe é rodado à mão, uma vez por tela e por avaliador.
 
 ### 2.4 Acesso ao código e aos dados restritos
 
 | Recurso | Quem precisa | Como obter |
 |---------|--------------|------------|
 | Fork privado `LucasAvelar2711/Vicky` | A1 do G2 por inspeção (inventário de mensagens e proteções); A1 e A2 do G3 | Acesso de leitura concedido por Lucas Avelar, dono do fork. O A2 da inspeção **não** recebe o código antes de enviar `A2.md` |
+| Fork privado, para verificação externa | Professora | A equipe concede acesso de leitura à professora mediante solicitação. Sem o fork, os resultados do G3 podem ser verificados pelas saídas brutas, pelos lockfiles e pelos scripts em `dados/avaliacao/G3/` |
 | Repositório do trabalho | Os seis integrantes | Já concedido (organização da disciplina) |
 | Pasta restrita no Google Drive | Os seis integrantes e a professora | Criada pelo condutor do G2 com usuários antes do piloto |
-| Relação entre papéis e pessoas (A1, A2, A3, C, O, K1, K2) | Equipe | Fora do repositório nos métodos G1, G2 por inspeção e G3; em `coleta.md`, sem dado de participante, no G2 com usuários |
-| Relação entre participante e código (P01 a P05) | Aluno responsável pelas sessões | Existe só no termo assinado |
+| Relação entre papéis e integrantes (A1, A2, A3, C, O, K1, K2) | Equipe e professora | No repositório, com o nome de cada integrante, no `coleta.md` de cada método. Integrantes da equipe podem ser nomeados nos papéis, porque o histórico do git já os identifica |
+| Relação entre participante e código (P01 a P07) | Aluno responsável pelas sessões | Existe só no termo assinado, na pasta restrita. Só participantes são anonimizados |
 
 ## 3. Massa de dados
 
@@ -125,7 +126,7 @@ A avaliação usa dados de exemplo definidos antes da coleta. Isso tem dois moti
 | Método | Massa de dados | Onde está definida | Por que esta massa |
 |--------|----------------|--------------------|--------------------|
 | G1 | Quatro temas de teste, um por perfil exigido pela Fase 2: T1 colchicina na prevenção secundária cardiovascular; T2 ioga para fadiga em pessoas com câncer; T3 prevalência de diabetes gestacional no Brasil; T4 tratamento farmacológico da ataxia de Friedreich. Texto do tema e do objetivo digitado literalmente, configuração fixa das triagens e uma reserva por perfil | [Método do G1, seções 3.2 e 3.4](metodo-g1.md#32-temas-de-teste-e-pico) | Cada perfil expõe um fator de variação do abstraction sheet do G1: caso favorável no PubMed (T1), vocabulário variado (T2), peso do SciELO e PICO sem intervenção (T3), literatura escassa (T4) |
-| G1 | Revisões de referência: Ebrahimi et al., Cochrane 2025 (T1, 12 estudos); Messer et al., Cochrane 2025 (T2, 21 ECR); Mocellin et al., Cad. Saúde Pública 2024 (T3, 32 estudos); Lyons et al., Cochrane 2026 (T4, 8 ECR). A lista de estudos incluídos de cada uma é o gabarito de M1.1.1 e M1.1.2, e o PICO de cada uma é o critério de relevância de M1.3.1 | [Método do G1, seção 3.3](metodo-g1.md#33-revisoes-de-referencia-e-regra-do-gabarito) | Gabarito externo, feito por especialistas com protocolo publicado, em vez de um gabarito montado pela equipe. A regra do gabarito fixa o que entra em Ref na data da coleta |
+| G1 | Revisões de referência: Ebrahimi et al., Cochrane 2025 (T1, 12 estudos); Messer et al., Cochrane 2025 (T2, 21 ECR); Mocellin et al., Cad. Saúde Pública 2024 (T3, 32 estudos); Lyons et al., Cochrane 2026 (T4, 8 ECR), com DOI, PMID e PMCID em `dados/avaliacao/G1/referencias/referencias.md`. A lista de estudos incluídos de cada uma é o gabarito de M1.1.1 e M1.1.2, e o PICO de cada uma é o critério de relevância de M1.3.1 | [Método do G1, seção 3.3](metodo-g1.md#33-revisoes-de-referencia-e-regra-do-gabarito) | Gabarito externo, feito por especialistas com protocolo publicado, em vez de um gabarito montado pela equipe. A regra do gabarito fixa o que entra em Ref na data da coleta |
 | G1 | Execuções E1 (texto de T1, só PubMed, 5 anos, ensaios randomizados) e E2 (texto de T3, só SciELO, 5 anos, observacionais primários); T1-B e T3-B repetidos de 24 a 72 horas depois | Método do G1, seções 3.5 e 4.7 | Reaproveitam textos já fixados; E1 e E2 restringem as três dimensões de filtro da ficha de M1.5.1 com fontes diferentes |
 | G2 por inspeção | Listas fechadas: 10 cenários (M2.1.1), 9 funções (M2.2.1), 10 padrões (M2.3.1), 6 ações (M2.4.1), 4 páginas de entrada (M2.7.1); roteiros de entradas inválidas com valores fixos (E01 a E08 e I01 a I07, por exemplo `aluno@` e `abc12`); projeto rascunho criado só para o teste; projeto triado de T1 do G1 | [Método do G2 por inspeção, seção 3](metodo-g2-inspecao.md#3-passo-a-passo) | Os dois avaliadores digitam os mesmos valores e veem as mesmas mensagens. O valor `aluno@` foi escolhido porque o Chrome aceita `aluno@unb` como e-mail válido. O projeto rascunho isola a exclusão de projeto das listas medidas no G1 |
 | G2 com usuários | Tema T1 do G1, escrito em uma frase no cartão A, igual para os cinco; requisitos do cartão (5 anos, no máximo 15 artigos, PubMed e SciELO, só texto gratuito); projeto já triado de T1 na conta de cortesia para a parte B; capturas fixas das 5 telas e recortes dos 12 elementos | [Método do G2 com usuários, seção 3.3](metodo-g2-usuarios.md#33-tema-dado-ao-participante) e [Instrumentos](instrumentos-g2-usuarios.md) | Uma história só (preparar a busca e usar o resultado) sem triagem extra. Os requisitos diferem dos valores padrão da tela para obrigar o participante a mexer em cada controle. As capturas fixas fazem os cinco julgarem o mesmo objeto |
@@ -161,11 +162,11 @@ Os papéis de cada método são independentes, mas há restrições cruzadas: no
 | Perfil | Estudante de Medicina com matrícula ativa, 18 anos ou mais, que nunca usou nem viu o VICKY |
 | Informática | Uso comum de computador e navegador: criar conta em site, preencher formulário, baixar arquivo. Nenhum conhecimento técnico além disso |
 | Domínio | Nenhum conhecimento de metodologia científica é exigido, porque a promessa do VICKY, registrada na Fase 1, é que o estudante não precisa saber montar um PICO. Faixa do curso, experiência com revisão e com ferramenta de triagem são registradas em `perfil.csv` para interpretar o resultado, sem entrar no cálculo |
-| Quantidade | 5 participantes válidos e 2 reservas convidados desde o início |
+| Quantidade | 5 participantes válidos e 2 reservas convidados desde o início; códigos P01 a P05 para os titulares e P06 e P07 para as reservas |
 
 ## 5. Tabela de consistência entre a Fase 2 e a Fase 3
 
-A tabela liga cada métrica da [especificação da Fase 2](../fase-2/especificacao-das-metricas.md) ao método que a coleta, aos recursos e ao ambiente desta página e ao nível de pontuação e à regra de julgamento da [Fase 2](../fase-2/niveis-e-julgamento.md). A coluna "Coerência" diz por que o método mede exatamente o que a ficha define. Nenhuma fórmula, limiar ou regra de agregação muda na Fase 3: os métodos fixam só o que a Fase 2 deixou para esta fase. Nas faixas, "Bom" é o limite inferior do nível Bom; em M3.1.1 e M3.2.2, em que menor é melhor, é o limite superior.
+A tabela liga cada métrica da [especificação da Fase 2](../fase-2/especificacao-das-metricas.md) ao método que a coleta, aos recursos e ao ambiente desta página e ao nível de pontuação e à regra de julgamento da [Fase 2](../fase-2/niveis-e-julgamento.md). A coluna "Coerência" diz por que o método mede exatamente o que a ficha define. Os métodos não mudam o valor de nenhuma fórmula, limiar ou regra de agregação: fixam só o que a Fase 2 deixou para esta fase. A Fase 2 recebeu, durante a Fase 3, correções de redação, de nomenclatura e de fonte dos dados, listadas na [seção 5.5](#55-alteracoes-na-fase-2-durante-a-fase-3); nenhuma delas muda o nível dos valores já medidos. Nas faixas, "Bom" é o limite inferior do nível Bom; em M3.1.1 e M3.2.2, em que menor é melhor, é o limite superior.
 
 ### 5.1 G1 (adequação funcional)
 
@@ -176,11 +177,13 @@ Recursos comuns: Chrome de computador, conta de cortesia, triagens da [seção 2
 | M1.1.1 | Q1.1 | [G1, 4.9](metodo-g1.md#49-m111-e-m112-cruzamento-e-consulta-as-fontes) | Triagens T1 a T4; listas de incluídos das quatro revisões (Cochrane Library e PMC) | [Bom a partir de 0,60](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); crítica em Q1.1 | A ficha define R como estudos da revisão presentes no Top 30 sobre min(Ref, 30); o método cruza exatamente esses dois conjuntos por DOI, PMID e título, e só tira de Ref o que não estava publicado na data da coleta, mantendo o que as fontes não indexam, como a ficha manda |
 | M1.1.2 | Q1.1 | [G1, 4.9](metodo-g1.md#49-m111-e-m112-cruzamento-e-consulta-as-fontes) | As mesmas listas; consulta manual a PubMed, SciELO e Google Acadêmico | [Bom a partir de 0,70](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); média em Q1.1 | A ficha restringe Ref aos estudos que as três fontes indexam; o método consulta cada estudo nas três fontes, com regra escrita de "encontrado", o que separa falha de triagem de limite da base |
 | M1.2.1 | Q1.2 | [G1, 4.3](metodo-g1.md#43-m121-funcoes-declaradas-operantes) | Conta de teste do G1, projeto rascunho P0, projeto T1, execução E1; leitores de PDF, XLSX, CSV e JSON | [Bom a partir de 85%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); única em Q1.2 | A ficha pede um caso de teste por função anunciada e a classificação em operante, parcial ou ausente; o método tira os subpassos da descrição da Fase 1 e aplica uma regra mecânica, conferida por um segundo avaliador |
-| M1.3.1 | Q1.3 | [G1, 4.4](metodo-g1.md#44-m131-precisao30) | Ficha cega gerada pelo script; A1 e A2 sem acesso à VICKY; A3 para discordâncias | [Bom a partir de 70%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica), válida com kappa de 0,61 ou mais; crítica em Q1.3 | A ficha exige título e resumo sem posição nem Quality Score e julgamento de dois avaliadores contra o PICO; o método entrega a ficha cega, fixa o critério por componente do PICO e verifica o kappa antes de aceitar o valor |
+| M1.3.1 | Q1.3 | [G1, 4.4](metodo-g1.md#44-m131-precisao30) | Ficha cega gerada pelo script; A1 e A2 sem acesso ao VICKY; A3 para discordâncias | [Bom a partir de 70%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica), válida com kappa de 0,61 ou mais; crítica em Q1.3 | A ficha exige título e resumo sem posição nem Quality Score e julgamento de dois avaliadores contra o PICO; o método entrega a ficha cega, fixa o critério por componente do PICO e verifica o kappa antes de aceitar o valor |
 | M1.3.2 | Q1.3 | [G1, 4.5](metodo-g1.md#45-m132-metadados-e-links-corretos) | Amostra de 10 itens por tema; página oficial de cada artigo (DOI, PubMed ou SciELO) | [Bom a partir de 90%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); média em Q1.3 | A ficha compara cinco campos com a página oficial e só aceita o item com os cinco corretos; o método fixa a amostra sistemática que a ficha deixou em aberto e a regra de igualdade de cada campo |
 | M1.4.1 | Q1.4 | [G1, 4.6](metodo-g1.md#46-m141-quality-score-e-rubrica) | Top 30 de T1 e T2 com o Quality Score exibido; ficha cega; rubrica de A1 e A2 | [Bom a partir de 0,50](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); única em Q1.4 | A ficha pede ρ de Spearman entre o Quality Score e a média de uma rubrica dada sem ver o escore; o método usa a mesma ficha cega, fixa os pesos dos quatro componentes da ficha e calcula ρ por tema e a média |
 | M1.5.1 | Q1.5 | [G1, 4.7](metodo-g1.md#47-m151-conformidade-com-filtros) | Execuções E1 e E2; página oficial, *Publication Type* do PubMed e busca no SciELO | [Bom a partir de 93%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); média em Q1.5 | A ficha pede duas execuções que restrinjam janela, tipo de estudo e fonte e a conferência item a item; E1 e E2 restringem as três dimensões, e cada uma tem evidência registrada por item |
 | M1.5.2 | Q1.5 | [G1, 4.8](metodo-g1.md#48-m152-estabilidade-entre-execucoes) | Execuções T1-B e T3-B, de 24 a 72 horas depois de T1 e T3, com a mesma entrada | [Bom a partir de 0,70](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); média em Q1.5 | A ficha pede o mesmo tema repetido com 24 horas ou mais e o índice de Jaccard entre os dois Top 30; o método respeita o mínimo, limita o máximo a 72 horas para reduzir a chance de mudança de versão e usa a mesma regra de identidade de M1.1.1 |
+
+_Tabela 1 - Consistência entre a Fase 2 e a Fase 3 no G1: método, recursos, ambiente, nível e julgamento de cada métrica. Fonte: elaborada pela equipe._
 
 ### 5.2 G2 (capacidade de interação)
 
@@ -201,6 +204,8 @@ Recursos comuns: Chrome de computador em 1366 x 768 pixels e zoom de 100%, conta
 | M2.7.1 | Q2.7 | [Inspeção, M2.7.1](metodo-g2-inspecao.md#m271-autodescricao-dos-pontos-de-entrada) | Área visível fixa de 1366 x 768 pixels; `/`, `/signup`, `/login` e `/dashboard` | [Bom com 3 de 4](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); pode rebaixar Q2.7 | A ficha mede o que a primeira tela visível diz, sem rolar, nas 4 páginas de entrada; a área visível fixa torna "sem rolar" igual para os dois avaliadores, e o critério exige dizer o que é tratado e o que é feito |
 | M2.7.2 | Q2.7 | [Usuários, 4.1](metodo-g2-usuarios.md#41-sessao-com-o-participante-m272-e-m251) | 5 participantes; cartões A e B; ficha de uso; questionário com gabarito; gravação | [Bom a partir de 75%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica), Insatisfatório se o Quality Score não for entendido; referência de Q2.7 | A ficha considera entendido o elemento usado sem ajuda e explicado corretamente; o método mede as duas metades separadamente (ficha de uso e questionário contra gabarito escrito antes) e combina as duas para os 12 elementos da lista da ficha |
 
+_Tabela 2 - Consistência entre a Fase 2 e a Fase 3 no G2: método, recursos, ambiente, nível e julgamento de cada métrica. Fonte: elaborada pela equipe._
+
 ### 5.3 G3 (manutenibilidade)
 
 Recursos comuns: máquina macOS ou Linux, Python 3.12, ferramentas com versão fixada por lockfile, fork no commit `c2ae570`, script `coletar.sh`. Julgamento: média dos pontos por questão e do objetivo, M3.1.2 bloqueadora em Q3.1 e Q3.3 limitando o G3 ([regras do G3](../fase-2/niveis-e-julgamento.md#4-regras-do-g3-manutenibilidade)).
@@ -211,8 +216,10 @@ Recursos comuns: máquina macOS ou Linux, Python 3.12, ferramentas com versão f
 | M3.1.2 | Q3.1 | [G3, 4.3](metodo-g3.md#43-m312-adequacao-da-complexidade-ciclomatica) | radon 6.0.1 sobre `src/vicky/pipeline.py` | [Bom a partir de 85%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); média e bloqueadora em Q3.1 | A ficha manda rodar `radon cc` em `pipeline.py` e contar as funções com complexidade acima de 10; o método roda o mesmo comando e define quais linhas da saída são funções |
 | M3.2.1 | Q3.2 | [G3, 4.4](metodo-g3.md#44-m321-conformidade-de-estilo-pep-8) | flake8 7.5.0 com `--isolated` | [Bom a partir de 90%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); média em Q3.2 | A ficha pede o flake8 com configuração padrão e a contagem de arquivos com violação; `--isolated` garante a configuração padrão em qualquer máquina, e a lista por violação dá os arquivos distintos |
 | M3.2.2 | Q3.2 | [G3, 4.5](metodo-g3.md#45-m322-densidade-de-codigo-duplicado) | pylint 4.1.4 (`duplicate-code`) e radon raw | [Bom até 5%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica) (de 2% a 5%); média em Q3.2 | A ficha divide as linhas acusadas pelo pylint pelo total do `radon raw`; o método usa os dois comandos e fixa a soma das linhas (união das ocorrências) e o total (linhas físicas), que a ficha não detalhava |
-| M3.2.3 | Q3.2 | [G3, 4.6](metodo-g3.md#46-m323-completude-de-logs-do-sistema) | `extrair.py` sobre `pipeline.py`; inspeção de A1 e A2 | [Bom a partir de 75%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); média em Q3.2 | A ficha conta as funções críticas do orquestrador que usam a biblioteca `logging`; o método transforma "crítica" em três critérios verificáveis (integração externa, banco, orquestração) e conta só `logging`, como a ficha exige |
+| M3.2.3 | Q3.2 | [G3, 4.6](metodo-g3.md#46-m323-completude-de-logs-do-sistema) | `extrair.py` sobre `pipeline.py`; inspeção de A1 e A2 | [Bom a partir de 75%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); média em Q3.2 | A ficha conta as funções críticas do orquestrador que registram em *log*, com a biblioteca `logging`, eventos de sucesso e exceções; o método transforma "crítica" em três critérios verificáveis (integração externa, banco, orquestração), o script conta as críticas com alguma chamada a `logging` (condição necessária) e a inspeção de A1 e A2 confere se a função registra sucesso e exceção, que é a condição da ficha. O valor de 14/11 (0 de 33) é preliminar até a inspeção, mas não muda, porque nenhum arquivo de `src/vicky/` usa `logging` |
 | M3.3.1 | Q3.3 | [G3, 4.7](metodo-g3.md#47-m331-completude-de-testes-automatizados) | pytest 9.2.0 e pytest-cov 7.1.0; suíte offline, sem Postgres e sem Stripe | [Bom a partir de 70%](../fase-2/niveis-e-julgamento.md#1-niveis-de-pontuacao-por-metrica); única em Q3.3 e limita o G3 | A ficha pede `pytest --cov=src/vicky/ tests/` e a cobertura de linhas; o método roda o mesmo comando, num ambiente sem recursos externos para que qualquer integrante obtenha a mesma suíte, e lê o valor sem arredondamento |
+
+_Tabela 3 - Consistência entre a Fase 2 e a Fase 3 no G3: método, recursos, ambiente, nível e julgamento de cada métrica. Fonte: elaborada pela equipe._
 
 ### 5.4 Verificação da cobertura
 
@@ -224,7 +231,32 @@ Recursos comuns: máquina macOS ou Linux, Python 3.12, ferramentas com versão f
 | [G3](metodo-g3.md) | M3.1.1, M3.1.2, M3.2.1, M3.2.2, M3.2.3, M3.3.1 | 6 |
 | **Total** | | **26** |
 
+_Tabela 4 - Métricas da Fase 2 cobertas por método. Fonte: elaborada pela equipe._
+
 O resumo da [especificação das métricas](../fase-2/especificacao-das-metricas.md#resumo) lista 26 métricas, e as 26 aparecem nas tabelas acima, cada uma em um único método. **Nenhuma métrica fica sem método.** Cada um dos quatro métodos cobre só métricas da Fase 2, sem medida própria fora da especificação. **Nenhum método fica sem métrica.** As 15 questões (Q1.1 a Q1.5, Q2.1 a Q2.7, Q3.1 a Q3.3) têm pelo menos uma métrica com método, e as métricas com regra especial na Fase 2 (críticas M1.1.1 e M1.3.1, bloqueadoras M3.1.2 e M3.3.1, e as regras de M2.4.1, M2.6.1 e M2.7.2) têm essa regra aplicada no cálculo do método correspondente.
+
+### 5.5 Alterações na Fase 2 durante a Fase 3
+
+A Fase 2 foi alterada durante a Fase 3 (comparação de `docs/fase-2/` com a `main` em 14/11/2026). As alterações resolvem as pendências registradas na issue #16 ("G3: medidas da ISO/IEC 25023, links, questões e hipóteses"), corrigem a nomenclatura das medidas da ISO/IEC 25023 e alinham as fichas ao que os métodos medem:
+
+| Página da Fase 2 | O que mudou | Por quê |
+|------------------|-------------|---------|
+| [Especificação das métricas](../fase-2/especificacao-das-metricas.md) | M3.2.1 e M3.2.2 passam de MRe-2-S e MRe-1-G a medidas adicionais; M3.1.1, M3.2.3 e M3.3.1 declaram a adaptação da medida; seis links de níveis que apontavam para uma busca no Google viram links relativos; M3.1.1 e M3.1.2 passam a medir o commit avaliado (`c2ae570`), e não a "versão de produção atual"; M1.2.1 perde a pendência "a validar pelo grupo"; "a VICKY" vira "o VICKY" | Pendências da #16; nomenclatura da ISO/IEC 25023 (MRe-1-G e MRe-2-S pertencem à reusabilidade, que o modelo não seleciona); coerência com o método do G3 e com o método do G1 |
+| [Níveis e julgamento](../fase-2/niveis-e-julgamento.md) | Faixas do G3 reescritas como semiabertas ("70% a menos de 85%" no lugar de "70% a 84%"), sem mudar nenhum limite; frase sobre os limiares do G1 sem a pendência "a validar pelo grupo" | Pendência da #16 (faixas com buracos, como 84,5% em M3.1.2 ou 5,05% em M3.2.2, não caíam em nenhum nível) |
+| [Objetivos, questões e hipóteses](../fase-2/objetivos-questoes-hipoteses.md) | Quadro do G3 sobre a ISO/IEC 25023 reescrito com uma medida sem mudança, três adaptadas e duas adicionais | Pendência da #16: o texto anterior dizia que o G3 adotava "estritamente o catálogo normativo" |
+| [Diagrama GQM](../fase-2/diagrama-gqm.md) | Ramo do G3 com os códigos de medida revistos | Mesma revisão da especificação |
+
+_Tabela 5 - Alterações feitas na Fase 2 durante a Fase 3. Fonte: elaborada pela equipe a partir do histórico do repositório._
+
+**Nenhum limiar se moveu de forma que mude o nível dos valores medidos.** Os números das faixas do G3 são os mesmos; só a redação das fronteiras mudou. Os seis valores da coleta de 14/11/2026 (`dados/avaliacao/G3/resultados.csv`) caem no mesmo nível pelas faixas antigas e pelas novas: M3.1.1 = 2,05 (Excelente nas duas, abaixo de 5); M3.1.2 = 76,6% (Aceitável nas duas, entre 70% e 85%); M3.2.1 = 5,3% (Insatisfatório nas duas, abaixo de 75%); M3.2.2 = 0,15% (Excelente nas duas, abaixo de 2%); M3.2.3 = 0,0% (Insatisfatório nas duas, abaixo de 50%); M3.3.1 = 63,17% (Aceitável nas duas, entre 50% e 70%). Nenhuma métrica do G1 ou do G2 teve fórmula ou limiar alterado.
+
+### 5.6 Premissas 4, 5 e 6
+
+As premissas 4 (repositório), 5 (rastreabilidade dos dados) e 6 (gravação das entrevistas com consentimento) da especificação do trabalho são atendidas assim:
+
+- **Gravações das sessões com participantes.** São feitas só com o consentimento registrado no [termo](termo-de-consentimento.md) e ficam numa pasta restrita do Google Drive da equipe, e não no repositório. O repositório é público, e a premissa 5 manda proteger a identificação dos participantes; a voz não é anonimizável na gravação bruta. O repositório guarda o registro de cada gravação (código do participante, data, duração e hash SHA-256 em `dados/avaliacao/G2/M2.7.2/sessoes.csv`), o que permite verificar que o arquivo da pasta restrita é o mesmo da sessão.
+- **Atas.** As reuniões da equipe, síncronas ou assíncronas, estão em [Atas de reunião](../gestao/atas.md).
+- **Dados e procedimentos de cálculo.** Os dados brutos, as planilhas de coleta e os scripts de cálculo de cada objetivo estão em `dados/avaliacao/` (G1, G2 e G3), com as condições de acesso aos dados de participantes descritas no [README da pasta de dados](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/README.md).
 
 ## 6. Decisões pendentes antes da coleta
 
@@ -244,6 +276,7 @@ Itens que dependem de decisão da equipe. Cada um tem o requisito que precisa se
 | Pasta restrita no Drive | Compartilhada só com os seis integrantes e a professora, com subpastas para gravações e termos | Responsável pela #28 | Antes do piloto |
 | E-mail de contato no termo | Preencher o e-mail do aluno responsável antes de imprimir | Lucas Avelar | Antes do piloto |
 | Acesso ao fork | Leitura para o A1 da inspeção e para A1 e A2 do G3 | Lucas Avelar | Assim que os avaliadores forem definidos |
+| Acesso da professora ao fork | Confirmar com Lucas Avelar a forma de conceder leitura à professora quando ela solicitar | Lucas Avelar | _a confirmar_ |
 | Listas de incluídos | Baixar da Cochrane Library a lista nominal de estudos incluídos de T1, T2 e T4; se não for possível, trocar pelo tema reserva | Condutor do G1 | Etapa 1 do G1, antes da primeira triagem |
 
 ## Histórico de versão
@@ -253,3 +286,4 @@ Itens que dependem de decisão da equipe. Cada um tem o requisito que precisa se
 | 0.1 | 04/11/2026 | Criação da página | Lucas Avelar | - |
 | 0.2 | 09/11/2026 | Esqueleto com os pontos em aberto e a tabela de consistência das 26 métricas, com recurso e ambiente a definir | Gabriel Fae | - |
 | 0.3 | 14/11/2026 | Página completa, assumida pela D12: hardware e software por método com versões, contas, créditos e limites de uso, acesso ao código, massa de dados justificada, conhecimento exigido, tabela de consistência das 26 métricas com a coerência de cada uma, verificação da cobertura e decisões pendentes com responsável | Lucas Avelar | - |
+| 0.4 | 14/11/2026 | Fork privado e verificação sem o fork, independência pela ordem dos commits, cláusula dos Termos de Uso citada, papéis nomeados e só participantes anonimizados, códigos das reservas, M3.2.3 alinhada à ficha, alterações na Fase 2 durante a Fase 3 (seção 5.5), premissas 4, 5 e 6 (seção 5.6) e legendas das tabelas | Lucas Avelar | - |

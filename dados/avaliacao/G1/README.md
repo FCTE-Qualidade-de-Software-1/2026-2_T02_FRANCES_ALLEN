@@ -5,7 +5,7 @@ Cada métrica de G1 tem uma pasta própria, com o ID da métrica como nome. A fi
 | Pasta ou arquivo | Conteúdo esperado |
 |------------------|-------------------|
 | `execucoes.csv` | Uma linha por triagem (T1 a T4, E1, E2, T1-B, T3-B), inclusive as que falharam: configuração, data e hora, créditos antes e depois, versão dos Termos |
-| `M1.1.1/` | Top 30 de cada tema (T1 a T4), lista de estudos incluídos da revisão de referência, PICO gerado, exportação original da VICKY e correspondências manuais |
+| `M1.1.1/` | Top 30 de cada tema (T1 a T4), lista de estudos incluídos da revisão de referência, PICO gerado, exportação original do VICKY e correspondências manuais |
 | `M1.1.2/` | Resultado da consulta de cada estudo da revisão de referência no PubMed, SciELO e Google Acadêmico |
 | `M1.2.1/` | Caso de teste e captura de tela de cada função (F01 a F09), com a classificação em operante, parcial ou ausente |
 | `M1.3.1/` | Ficha cega e chave de cada tema, piloto de calibração, fichas de julgamento de relevância dos dois avaliadores, consolidado e registro do kappa |
@@ -28,4 +28,4 @@ python3 dados/avaliacao/G1/calcular_g1.py amostra --tema T1       # posições d
 
 Arquivo ausente deixa a métrica como "não coletado"; o script não estima valores. Para testar o script, use uma pasta fora do repositório com `--pasta`; dado de teste não entra aqui.
 
-Os dados de avaliadores e participantes devem ser anonimizados (A1, A2, A3) antes de entrar no repositório, como pede o [README da pasta de dados](../../README.md). Registre a data da coleta e a versão da VICKY em produção em `execucoes.csv`.
+Os dados de avaliadores e participantes devem ser anonimizados (A1, A2, A3) antes de entrar no repositório, como pede o [README da pasta de dados](../../README.md). Registre a data da coleta e a versão do VICKY em produção em `execucoes.csv`.

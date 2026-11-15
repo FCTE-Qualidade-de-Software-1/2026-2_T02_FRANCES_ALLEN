@@ -1,6 +1,6 @@
 # M3.2.3 - Inspeção do inventário de funções
 
-Ficha da inspeção da seção 4.6 do [Método do G3](../../../../docs/fase-3/metodo-g3.md). Criada por `extrair.py ficha` a partir de `funcoes.csv` e nunca sobrescrita pelo script. Cada avaliador preenche só a própria coluna com `ok` ou com o erro encontrado (crítica indevida, crítica não marcada, chamada a `logging` não contada), sem ver a coluna do outro.
+Ficha da inspeção da seção 4.6 do [Método do G3](../../../../docs/fase-3/metodo-g3.md). Criada por `extrair.py ficha` a partir de `funcoes.csv` e nunca sobrescrita pelo script. Cada avaliador preenche só a própria coluna com `ok` ou com o erro encontrado (crítica indevida, crítica não marcada, chamada a `logging` não contada, crítica sem registro de sucesso e de exceção), sem ver a coluna do outro. Uma crítica só entra em A se registrar em `logging` o sucesso e a exceção, como pede a ficha.
 
 | Avaliador | Data | Sistema |
 |-----------|------|---------|

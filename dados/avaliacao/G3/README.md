@@ -19,6 +19,7 @@ Cada métrica de G3 tem uma pasta própria, com o ID da métrica como nome. A fi
 | `calcular.py` | Lê só as saídas brutas e gera `resultado.md` em cada pasta e `resultados.csv` |
 | `ferramentas.in` e `ferramentas.lock` | Versões de radon, flake8 e pylint, com hash |
 | `testes.in` e `testes.lock` | Versões de pytest e pytest-cov, com hash, compatíveis com o `requirements.lock` do VICKY |
+| `repeticao-autor-2026-11-14.md` | Resumo da segunda execução da coleta pelo autor, na mesma máquina; a repetição por A2 vai para `repeticao.md` |
 
 ## Conteúdo das pastas
 

@@ -6,7 +6,7 @@ Os dados brutos ficam em [`dados/avaliacao/G1/`](https://github.com/FCTE-Qualida
 
 ## 1. Métricas cobertas
 
-| Métrica | Questão | Insumo | Execuções da VICKY usadas | Pasta em `dados/avaliacao/G1/` |
+| Métrica | Questão | Insumo | Execuções do VICKY usadas | Pasta em `dados/avaliacao/G1/` |
 |---------|:-------:|--------|---------------------------|--------------------------------|
 | [M1.1.1](../fase-2/especificacao-das-metricas.md#m111) Recall@30 normalizado | Q1.1 | Top 30 de T1 a T4 e lista de incluídos de cada revisão de referência | T1, T2, T3, T4 | `M1.1.1/` |
 | [M1.1.2](../fase-2/especificacao-das-metricas.md#m112) Recall restrito às fontes | Q1.1 | Consulta manual de cada estudo incluído no PubMed, SciELO e Google Acadêmico | T1, T2, T3, T4 (sem triagem nova) | `M1.1.2/` |
@@ -27,13 +27,13 @@ Na ISO/IEC 25040:2024, a terceira atividade do processo de avaliação de produt
 
 ### 2.2 Revisão sistemática como padrão de referência
 
-Para medir completude (Q1.1) é preciso saber quais estudos a lista deveria conter. Montar esse gabarito do zero exigiria a equipe fazer uma revisão sistemática por tema, o que está fora do alcance e introduziria o julgamento da própria equipe no padrão. Por isso cada tema usa uma revisão sistemática publicada, recente e de acesso aberto, cuja lista de estudos incluídos foi definida por especialistas com protocolo e busca documentados. Esse é o desenho usual para avaliar ferramentas de apoio à identificação de estudos: comparar o que a ferramenta recupera com os estudos incluídos de revisões já publicadas (O'MARA-EVES et al., 2015). A [ficha de M1.1.1](../fase-2/especificacao-das-metricas.md#m111) já prevê esse padrão; o método escolhe as revisões e diz como tratar o que a VICKY não tem como alcançar (seção 3.3).
+Para medir completude (Q1.1) é preciso saber quais estudos a lista deveria conter. Montar esse gabarito do zero exigiria a equipe fazer uma revisão sistemática por tema, o que está fora do alcance e introduziria o julgamento da própria equipe no padrão. Por isso cada tema usa uma revisão sistemática publicada, recente e de acesso aberto, cuja lista de estudos incluídos foi definida por especialistas com protocolo e busca documentados. Esse é o desenho usual para avaliar ferramentas de apoio à identificação de estudos: comparar o que a ferramenta recupera com os estudos incluídos de revisões já publicadas (O'MARA-EVES et al., 2015). A [ficha de M1.1.1](../fase-2/especificacao-das-metricas.md#m111) já prevê esse padrão; o método escolhe as revisões e diz como tratar o que o VICKY não tem como alcançar (seção 3.3).
 
 Três das quatro revisões são da Cochrane, que publica a lista de estudos incluídos em seção própria e segue o mesmo manual de métodos. A quarta, de saúde pública brasileira, foi publicada em periódico nacional indexado no SciELO, porque a Fase 2 pede um tema em que o SciELO pese.
 
 ### 2.3 Julgamento por dois avaliadores, às cegas
 
-Relevância (M1.3.1) e qualidade metodológica (M1.4.1) dependem de julgamento humano. A Fase 2 exige dois avaliadores, e M1.3.1 só vale com kappa de Cohen de 0,61 ou mais (COHEN, 1960; LANDIS; KOCH, 1977). O método acrescenta três controles para que o julgamento não seja influenciado pela própria VICKY:
+Relevância (M1.3.1) e qualidade metodológica (M1.4.1) dependem de julgamento humano. A Fase 2 exige dois avaliadores, e M1.3.1 só vale com kappa de Cohen de 0,61 ou mais (COHEN, 1960; LANDIS; KOCH, 1977). O método acrescenta três controles para que o julgamento não seja influenciado pelo próprio VICKY:
 
 1. **Avaliador não conduz a triagem.** Quem executa a triagem vê a posição e o Quality Score de cada artigo; por isso não julga.
 2. **Ficha cega.** A1 e A2 recebem título, resumo, ano, periódico e DOI em ordem aleatória, sem posição nem Quality Score, como pede a ficha de M1.3.1. A ordem sai de uma semente fixa, então qualquer pessoa gera a mesma ficha.
@@ -49,8 +49,8 @@ Relevância (M1.3.1) e qualidade metodológica (M1.4.1) dependem de julgamento h
 | Pesos da rubrica de M1.4.1 | Ficha de M1.4.1 (componentes sem pesos) | Desenho 4, amostra 3, comparador 2, revisão por pares 1 | 4.6 |
 | Configuração dos filtros de M1.5.1 | Ficha de M1.5.1 | E1 só PubMed, 5 anos, ensaios randomizados; E2 só SciELO, 5 anos, observacionais primários | 4.7 |
 | Temas repetidos em M1.5.2 | Ficha de M1.5.2 ("temas repetidos") | T1 e T3 | 3.5 |
-| Janela de busca até a data de corte da revisão | Ficha de M1.1.1, passo 2 | A VICKY só oferece janela relativa ao ano atual; regra na seção 3.3 | 3.3 |
-| Definição de função operante, parcial e ausente | Ficha de M1.2.1 ("a validar pelo grupo") | Subpassos fixos por função; regra mecânica | 4.3 |
+| Janela de busca até a data de corte da revisão | Ficha de M1.1.1, passo 2 | O VICKY só oferece janela relativa ao ano atual; regra na seção 3.3 | 3.3 |
+| Definição de função operante, parcial e ausente | Ficha de M1.2.1 (definição sem caso de teste por função) | Subpassos fixos por função; regra mecânica | 4.3 |
 
 ### 2.5 Coerência com métricas, níveis e julgamento da Fase 2
 
@@ -76,11 +76,11 @@ O script de cálculo aplica os níveis da [tabela de níveis](../fase-2/niveis-e
 | Papel | Quem pode ser | Faz | Não pode |
 |-------|---------------|-----|----------|
 | C (condutor) | Responsável pela coleta do G1 (#26) | Prepara o gabarito, executa as oito triagens e os casos de teste de M1.2.1, registra as listas, gera as fichas cegas, roda o script | Julgar relevância ou rubrica |
-| A1 | Integrante da equipe que não conduziu nenhuma triagem do G1 | Julga relevância (M1.3.1) e rubrica (M1.4.1); confere M1.2.1 e revê os itens incorretos de M1.3.2 | Abrir a VICKY, a lista ranqueada ou `chave_Tn.csv` antes de enviar as próprias fichas |
+| A1 | Integrante da equipe que não conduziu nenhuma triagem do G1 | Julga relevância (M1.3.1) e rubrica (M1.4.1); confere M1.2.1 e revê os itens incorretos de M1.3.2 | Abrir o VICKY, a lista ranqueada ou `chave_Tn.csv` antes de enviar as próprias fichas |
 | A2 | Outro integrante nas mesmas condições de A1 | Julga relevância e rubrica; faz a conferência de M1.3.2 e de M1.5.1 | O mesmo que A1 |
 | A3 | Integrante que não é C, A1 nem A2 | Decide só as discordâncias de M1.3.1 sem consenso | Ver posição ou Quality Score do item |
 
-A relação entre A1, A2, A3 e as pessoas fica fora do repositório, como pede o [README da pasta de dados](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/README.md). C é identificado pelo papel nas planilhas.
+Os papéis são ocupados por integrantes da equipe, e a relação entre papel e integrante (C, A1, A2 e A3) é registrada com o nome em `M1.3.1/coleta.md`. Integrantes podem ser nomeados, porque o histórico do git já identifica quem enviou cada arquivo; só participantes externos são anonimizados, e o G1 não tem participantes ([README da pasta de dados](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/README.md)). Nas planilhas, cada um aparece pelo papel.
 
 **Conhecimento exigido.** A equipe é de engenharia de software, não de medicina, e o método não pede formação clínica: o julgamento é feito contra um PICO escrito e critérios operacionais (seções 4.4 e 4.6). Pede-se de A1 e A2:
 
@@ -89,7 +89,7 @@ A relação entre A1, A2, A3 e as pessoas fica fora do repositório, como pede o
 - distinguir os desenhos de estudo usados nos critérios: revisão sistemática, ensaio clínico randomizado, coorte, caso-controle, transversal, série ou relato de caso, revisão narrativa e editorial;
 - localizar o tamanho da amostra e o grupo de comparação num resumo.
 
-Antes do julgamento, A1 e A2 leem as seções 4.4 e 4.6 (cerca de 20 minutos) e fazem o piloto de calibração da etapa 9 da seção 4. De C se pede familiaridade com a interface da VICKY, consulta ao PubMed, ao SciELO e ao Google Acadêmico e execução de um script Python pelo terminal. A falta de formação clínica dos avaliadores é declarada como limitação na Fase 4; o kappa mede se, apesar dela, o critério foi aplicado de forma consistente.
+Antes do julgamento, A1 e A2 leem as seções 4.4 e 4.6 (cerca de 20 minutos) e fazem o piloto de calibração da etapa 9 da seção 4. De C se pede familiaridade com a interface do VICKY, consulta ao PubMed, ao SciELO e ao Google Acadêmico e execução de um script Python pelo terminal. A falta de formação clínica dos avaliadores é declarada como limitação na Fase 4; o kappa mede se, apesar dela, o critério foi aplicado de forma consistente.
 
 ### 3.2 Temas de teste e PICO
 
@@ -97,12 +97,12 @@ A Fase 2 definiu quatro perfis de tema. Cada perfil existe para expor um fator d
 
 | Tema | Perfil exigido pela Fase 2 | Tema escolhido | Por que este tema |
 |------|----------------------------|----------------|-------------------|
-| T1 | Fármaco com desfecho clínico bem estudado | Colchicina na prevenção secundária de eventos cardiovasculares | Fármaco único, desfecho duro e padronizado, ensaios grandes e bem indexados no PubMed: é o caso favorável, em que a base ideal está entre as fontes da VICKY |
+| T1 | Fármaco com desfecho clínico bem estudado | Colchicina na prevenção secundária de eventos cardiovasculares | Fármaco único, desfecho duro e padronizado, ensaios grandes e bem indexados no PubMed: é o caso favorável, em que a base ideal está entre as fontes do VICKY |
 | T2 | Intervenção não farmacológica | Ioga para fadiga em pessoas com câncer | A literatura usa termos variados (*yoga*, *Hatha*, *mind-body*), o que testa se a busca derivada do PICO cobre sinônimos |
 | T3 | Saúde pública brasileira com literatura no SciELO | Prevalência de diabetes mellitus gestacional no Brasil | Revisão publicada em periódico brasileiro do SciELO, com estudos regionais; o PICO é de prevalência (sem intervenção), o que também testa a geração do PICO |
-| T4 | Tema estreito, com poucos estudos | Tratamento farmacológico da ataxia de Friedreich | Doença rara, oito ensaios: mede se a VICKY acha o pouco que existe e quanto ruído completa a lista |
+| T4 | Tema estreito, com poucos estudos | Tratamento farmacológico da ataxia de Friedreich | Doença rara, oito ensaios: mede se o VICKY acha o pouco que existe e quanto ruído completa a lista |
 
-O PICO abaixo é o da revisão de referência e é o critério de relevância de M1.3.1. Ele não é digitado na VICKY: C digita apenas o texto do tema e do objetivo (seção 3.4), e o PICO que a VICKY gerar é registrado como gerado.
+O PICO abaixo é o da revisão de referência e é o critério de relevância de M1.3.1. Ele não é digitado no VICKY: C digita apenas o texto do tema e do objetivo (seção 3.4), e o PICO que o VICKY gerar é registrado como gerado.
 
 | Tema | P (população) | I (intervenção ou exposição) | C (comparador) | O (desfecho) | Desenho pedido |
 |------|---------------|------------------------------|----------------|--------------|----------------|
@@ -124,26 +124,28 @@ A troca é registrada em `execucoes.csv` (coluna `observacao`) e declarada na Fa
 
 ### 3.3 Revisões de referência e regra do gabarito
 
-| Tema | Revisão de referência | Incluídos | Data da busca da revisão | Situação conferida em 14/11/2026 |
+| Tema | Revisão de referência | Incluídos | Data da busca da revisão | O que foi conferido e onde (14/11/2026) |
 |------|-----------------------|:---------:|--------------------------|----------------------------------|
-| T1 | EBRAHIMI, F. et al. *Colchicine for the secondary prevention of cardiovascular events*. Cochrane Database of Systematic Reviews, 2025. DOI [10.1002/14651858.CD014808.pub2](https://doi.org/10.1002/14651858.CD014808.pub2). PMC12611456 | 12 estudos (22.983 participantes) | Até fevereiro de 2025 | Número confirmado no resumo publicado no PMC. O PMC traz só o resumo; a lista nominal está na seção de estudos incluídos da revisão completa na Cochrane Library e ainda não foi baixada |
-| T2 | MESSER, S. et al. *Yoga for fatigue in people with cancer*. Cochrane Database of Systematic Reviews, 2025. DOI [10.1002/14651858.CD015520](https://doi.org/10.1002/14651858.CD015520). PMC12107688 | 21 ECR (2.041 pessoas) | Outubro de 2023 | Idem: número confirmado no resumo do PMC; lista nominal a baixar da Cochrane Library |
-| T3 | MOCELLIN, L. P. et al. *Gestational diabetes mellitus prevalence in Brazil: a systematic review and meta-analysis*. Cadernos de Saúde Pública, 2024. DOI [10.1590/0102-311XEN064919](https://doi.org/10.1590/0102-311XEN064919). PMC11386532 | 32 estudos (21.942 mulheres) | Estudos publicados de 2010 a 2021 | Lista nominal confirmada: a Tabela 1 do texto completo no PMC traz os 32 estudos |
-| T4 | LYONS, S. et al. *Pharmacological treatments for Friedreich ataxia*. Cochrane Database of Systematic Reviews, 2026. DOI [10.1002/14651858.CD007791.pub5](https://doi.org/10.1002/14651858.CD007791.pub5). PMC13162314 | 8 ECR | 4 de fevereiro de 2025 | Número confirmado no resumo do PMC; lista nominal a baixar da Cochrane Library |
+| T1 | EBRAHIMI, F. et al. *Colchicine for the secondary prevention of cardiovascular events*. Cochrane Database of Systematic Reviews, 2025. DOI [10.1002/14651858.CD014808.pub2](https://doi.org/10.1002/14651858.CD014808.pub2). PMID 41224205, PMC12611456 | 12 estudos (22.983 participantes) | Até fevereiro de 2025 | Número de incluídos e data da busca conferidos no resumo do PubMed (PMID 41224205); DOI e PMCID conferidos no conversor de identificadores do PMC. A lista nominal está na seção de estudos incluídos da revisão completa na Cochrane Library e ainda não foi baixada |
+| T2 | MESSER, S. et al. *Yoga for fatigue in people with cancer*. Cochrane Database of Systematic Reviews, 2025. DOI [10.1002/14651858.CD015520](https://doi.org/10.1002/14651858.CD015520). PMID 40421669, PMC12107688 | 21 ECR (2.041 pessoas) | Outubro de 2023 | Número de incluídos e data da busca conferidos no resumo do PubMed (PMID 40421669); DOI e PMCID no conversor do PMC. Lista nominal a baixar da Cochrane Library |
+| T3 | MOCELLIN, L. P. et al. *Gestational diabetes mellitus prevalence in Brazil: a systematic review and meta-analysis*. Cadernos de Saúde Pública, 2024. DOI 10.1590/0102-311XEN064919, acesso pelo [PMC11386532](https://pmc.ncbi.nlm.nih.gov/articles/PMC11386532/). PMID 39258680 | 32 estudos (21.942 mulheres) | Estudos publicados de 2010 a 2021 | Número de incluídos conferido no resumo do PubMed (PMID 39258680) e lista nominal na Tabela 1 do texto completo no PMC, com os 32 estudos. O DOI é o declarado pela revista no SciELO, no PubMed e no PMC, mas não resolvia em doi.org nem tinha registro no Crossref; por isso o link é o do PMC |
+| T4 | LYONS, S. et al. *Pharmacological treatments for Friedreich ataxia*. Cochrane Database of Systematic Reviews, 2026. DOI [10.1002/14651858.CD007791.pub5](https://doi.org/10.1002/14651858.CD007791.pub5). PMID 42117563, PMC13162314 | 8 ECR | 4 de fevereiro de 2025 | Número de incluídos e data da busca conferidos no resumo do PubMed (PMID 42117563). O registro PMC13162314 ainda não está aberto (liberação informada para 12/05/2027). Lista nominal a baixar da Cochrane Library |
+
+Os identificadores e o número de incluídos de cada revisão, inclusive das reservas, estão em [`dados/avaliacao/G1/referencias/referencias.md`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/avaliacao/G1/referencias/referencias.md), com a fonte de cada conferência.
 
 Nas revisões Cochrane, a lista que vale é a seção *Characteristics of included studies* e as referências em *References to studies included in this review*. Cada estudo pode ter vários relatos (artigo principal, análises secundárias, resumo de congresso); a planilha guarda todos, agrupados pelo estudo. Em T3 a lista é a Tabela 1, com a referência completa de cada estudo na lista de referências do artigo.
 
-**Regra do gabarito (Ref).** As revisões são de 2024 a 2026, e a VICKY consulta as bases no dia da triagem. Para que Ref seja a mesma para qualquer pessoa que repita a coleta:
+**Regra do gabarito (Ref).** As revisões são de 2024 a 2026, e o VICKY consulta as bases no dia da triagem. Para que Ref seja a mesma para qualquer pessoa que repita a coleta:
 
 1. **Unidade é o estudo.** Ref é o conjunto de estudos incluídos na revisão. Um estudo conta como recuperado quando qualquer um dos seus relatos listados pela revisão aparece no Top 30. O denominador conta estudos, não relatos.
 2. **Só entra o que estava publicado e indexado até a data da coleta.** Fica em Ref o estudo que tem ao menos um relato publicado (artigo, resumo em anais ou tese com referência bibliográfica) e indexado em alguma base bibliográfica até a data da triagem do tema. Sai de Ref, com o motivo anotado, o estudo cuja única fonte é registro de ensaio (ClinicalTrials.gov, ICTRP), dado não publicado ou comunicação pessoal com os autores. A coluna `publicado_ate_coleta` registra essa decisão.
-3. **Estudo fora das três fontes fica em M1.1.1 e sai de M1.1.2.** É a regra da Fase 2: em M1.1.1 o estudo que a VICKY não tem como alcançar (não indexado no PubMed, no SciELO nem no Google Acadêmico) continua no denominador, porque o estudante perde aquela evidência de fato; em M1.1.2 ele sai, porque o objetivo é separar falha de triagem de limite das bases.
-4. **Estudo publicado antes do início da janela da VICKY fica nas duas métricas.** A janela é limite da configuração oferecida pela própria VICKY, não das bases; por isso não é descontada. A coluna `antes_da_janela` permite relatar esses casos à parte na Fase 4.
-5. **Artigo do Top 30 posterior à data de corte da revisão** não conta como acerto nem altera o denominador. A ficha de M1.1.1 pede janela "até a data de corte da revisão", mas a VICKY só oferece janelas relativas ao ano atual (seção 3.4); por isso a lista pode trazer estudos que a revisão não tinha como incluir. Eles continuam na lista para M1.3.1, M1.3.2 e M1.4.1.
+3. **Estudo fora das três fontes fica em M1.1.1 e sai de M1.1.2.** É a regra da Fase 2: em M1.1.1 o estudo que o VICKY não tem como alcançar (não indexado no PubMed, no SciELO nem no Google Acadêmico) continua no denominador, porque o estudante perde aquela evidência de fato; em M1.1.2 ele sai, porque o objetivo é separar falha de triagem de limite das bases.
+4. **Estudo publicado antes do início da janela do VICKY fica nas duas métricas.** A janela é limite da configuração oferecida pelo próprio VICKY, não das bases; por isso não é descontada. A coluna `antes_da_janela` permite relatar esses casos à parte na Fase 4.
+5. **Artigo do Top 30 posterior à data de corte da revisão** não conta como acerto nem altera o denominador. A ficha de M1.1.1 pede janela "até a data de corte da revisão", mas o VICKY só oferece janelas relativas ao ano atual (seção 3.4); por isso a lista pode trazer estudos que a revisão não tinha como incluir. Eles continuam na lista para M1.3.1, M1.3.2 e M1.4.1.
 
 ### 3.4 Configuração das triagens
 
-Na versão do código consultada para preparar este método, o formulário de novo projeto tem: tipo de revisão (sistemática ou narrativa), tema, objetivo, janela temporal (últimos 3, 5, 7, 10 ou 20 anos, contados a partir do ano corrente, inclusive), meta de artigos no Top (até 30), bases (PubMed, SciELO, Google Acadêmico) e o filtro "só artigos com texto completo gratuito". Na etapa 2 da seção 4, C confere o formulário em produção; se houver diferença, vale o que está em produção e a diferença vai para `execucoes.csv`.
+Na versão do código consultada para preparar este método, o formulário de novo projeto tem: tipo de revisão (sistemática ou narrativa), tema, objetivo, janela temporal (últimos 3, 5, 7, 10 ou 20 anos, contados a partir do ano corrente, inclusive), meta de artigos no Top (campo numérico de 1 a 30, com padrão 20, em `templates/projects/new.html` no commit `c2ae570`; conferir em produção), bases (PubMed, SciELO, Google Acadêmico) e o filtro "só artigos com texto completo gratuito". Na etapa 2 da seção 4, C confere o formulário em produção; se houver diferença, vale o que está em produção e a diferença vai para `execucoes.csv`.
 
 Configuração comum às execuções T1 a T4, T1-B e T3-B:
 
@@ -165,13 +167,13 @@ Texto digitado, literalmente, em cada tema:
 | T3 | Prevalência de diabetes mellitus gestacional no Brasil | Estimar a prevalência de diabetes mellitus gestacional em gestantes brasileiras a partir de estudos observacionais |
 | T4 | Tratamento farmacológico da ataxia de Friedreich | Avaliar o efeito de fármacos, como omaveloxolona e idebenona, comparados a placebo, sobre a progressão neurológica medida por escalas de ataxia, em ensaios clínicos randomizados |
 
-O texto é digitado em português porque é assim que o público da VICKY a usa; a busca nas bases é responsabilidade da ferramenta.
+O texto é digitado em português porque é assim que o público do VICKY o usa; a busca nas bases é responsabilidade da ferramenta.
 
 ### 3.5 Contas, créditos e divisão das triagens
 
 | Recurso | Uso no G1 | Situação |
 |---------|-----------|----------|
-| Conta de cortesia (a mesma do G2) | As oito triagens e o projeto rascunho P0 | Número de créditos de cortesia a confirmar com a equipe da VICKY antes da etapa 3. São necessários 8 |
+| Conta de cortesia (a mesma do G2) | As oito triagens e o projeto rascunho P0 | Número de créditos de cortesia a confirmar com a equipe do VICKY antes da etapa 3. São necessários 8 |
 | E-mail de teste do G1 | Cadastro e recuperação de senha em M1.2.1 (F01) | Criado só para a coleta; senha fora do repositório |
 | Projeto rascunho P0 | F02, F03 e F04 em M1.2.1 | Nunca recebe triagem completa, para que editar o PICO não altere as listas medidas |
 
@@ -216,25 +218,29 @@ Vale para T1 a T4, T1-B, T3-B, E1 e E2.
 3. Gerar os critérios. Copiar o PICO e os critérios gerados, sem editar, para `M1.1.1/pico_Tn.md` (`M1.5.1/pico_En.md` em E1 e E2, `M1.5.2/pico_Tn-B.md` em T1-B e T3-B). Capturar a tela.
 4. Iniciar a triagem completa. Anotar data e hora de início. Não usar o botão de parar.
 5. Ao terminar, anotar data e hora de fim, status e `creditos_depois`. Capturar a tela da lista.
-6. Exportar a lista em CSV e em JSON (F09). Guardar os arquivos sem nenhuma edição em `exportacao/` da pasta da métrica, com o nome `Tn_AAAAMMDD.csv` (ou `.json`).
-7. Preencher a planilha da lista (`top30_Tn.csv`) a partir da exportação, uma linha por artigo, na ordem exibida. A coluna `fonte_exibida` é a base que a VICKY mostra no item. A coluna `resumo` é copiada da exportação; se a exportação não trouxer o resumo, C o copia do PubMed ou da página oficial do artigo. Se a exportação falhar, a planilha é preenchida pela tela, com captura de cada página da lista.
+6. Exportar a lista em XLSX pelo menu "Exportar" do detalhe do projeto (F09). No commit `c2ae570` o menu oferece PDF resumo, PDF completo e XLSX; CSV e JSON, citados na Fase 1, só são baixados se a interface em produção oferecer a opção (a conferir na etapa 2). Guardar os arquivos sem nenhuma edição em `exportacao/` da pasta da métrica, com o nome `Tn_AAAAMMDD.xlsx` (e `.csv` ou `.json`, se existirem).
+7. Preencher a planilha da lista (`top30_Tn.csv`) a partir da exportação XLSX, uma linha por artigo, na ordem exibida. A coluna `fonte_exibida` é a base que o VICKY mostra no item. A coluna `resumo` é copiada da exportação; se a exportação não trouxer o resumo, C o copia do PubMed ou da página oficial do artigo. Se a exportação falhar, a planilha é preenchida pela tela, com captura de cada página da lista.
 8. Se a lista tiver menos de 30 itens, registrar todos e anotar o número em `observacao`. A lista vale como está.
 
 ### 4.3 M1.2.1: funções declaradas operantes
 
-Cada função tem subpassos fixos, tirados da descrição declarada em [objeto de avaliação](../fase-1/objeto-de-avaliacao.md#3-principais-funcionalidades). A classificação é mecânica: **operante** quando todos os subpassos executam até o fim; **parcial** quando ao menos um executa e outro não; **ausente** quando nenhum executa ou a função não é encontrada. Cada subpasso exige captura de tela.
+Cada função tem subpassos fixos, tirados da descrição declarada em [objeto de avaliação](../fase-1/objeto-de-avaliacao.md#3-principais-funcionalidades).
+
+**Por que a lista da Fase 1, e não a página pública.** O procedimento da ficha de M1.2.1 começa por listar as funções anunciadas na página pública. O método usa a lista F01 a F09 do objeto de avaliação da Fase 1 porque a própria ficha fixa o denominador em 9 e define as funções por essa lista (campo "Definição"), e porque a lista da Fase 1 já reúne o que o VICKY anuncia no site, nos Termos de Uso e no código. Listar de novo na página pública poderia mudar o denominador entre a Fase 2 e a coleta. Na etapa 2, C confere em produção se cada função continua anunciada e anota a diferença em `execucoes.csv`, sem mudar o denominador. A classificação é mecânica: **operante** quando todos os subpassos executam até o fim; **parcial** quando ao menos um executa e outro não; **ausente** quando nenhum executa ou a função não é encontrada. Cada subpasso exige captura de tela.
 
 | Função | Onde | Subpassos (cada um é sim ou não) |
 |--------|------|----------------------------------|
 | F01 Cadastro e login | Janela anônima, e-mail de teste do G1 | (a) criar conta com nome, e-mail, senha e aceite dos Termos; (b) entrar com a conta criada; (c) pedir recuperação de senha, receber o e-mail e definir senha nova que permite entrar |
 | F02 Criação de projeto | Projeto P0, com o texto de T1 | (a) criar projeto com tema e objetivo; (b) ajustar população, período, tipo de estudo e objetivo, como a descrição promete; (c) escolher o modo de revisão; (d) reabrir o projeto e ver os valores salvos |
 | F03 Protocolo PICO | Projeto P0 | (a) gerar PICO com os quatro componentes; (b) gerar critérios de inclusão e de exclusão; (c) alterar um critério e ver a alteração salva |
-| F04 Bases e quantidade | Projeto P0 e execução E1 | (a) escolher bases e ver a escolha salva em P0; (b) escolher a quantidade do Top (campo numérico de 1 a 30, padrão 20) e ver salva; (c) em E1, configurada só com PubMed, a lista exibe apenas itens com fonte PubMed |
+| F04 Bases e quantidade | Projeto P0 e execução E1 | (a) escolher bases e ver a escolha salva em P0; (b) escolher a quantidade do Top (campo numérico de 1 a 30, padrão 20 no commit `c2ae570`; conferir em produção) e ver salva; (c) em E1, configurada só com PubMed, a lista exibe apenas itens com fonte PubMed |
 | F05 Triagem completa | Execução T1 | (a) iniciar a triagem e o saldo cair 1 crédito; (b) acompanhar o andamento na tela; (c) a triagem terminar com lista; (d) o resultado mostrar os artigos excluídos com o motivo, que é a evidência visível da dupla checagem prometida |
 | F06 Lista ranqueada | Lista de T1 | (a) itens em ordem decrescente de Quality Score; (b) cada item com Quality Score de 0 a 100; (c) os links dos itens nas posições 1 a 5 abrem a fonte do artigo |
 | F07 Favoritos | Lista de T1 | (a) marcar um artigo; (b) desmarcar; (c) a marcação persistir depois de recarregar a página |
 | F08 Log auditável | Projeto T1 | (a) o log é acessível pela interface; (b) traz os termos de busca usados; (c) traz os critérios de inclusão e exclusão aplicados |
-| F09 Exportação | Projeto T1 | (a) PDF, (b) XLSX, (c) CSV e (d) JSON baixam, abrem e trazem os mesmos artigos da tela |
+| F09 Exportação | Projeto T1 | (a) PDF, (b) XLSX, (c) CSV e (d) JSON baixam pela interface, abrem e trazem os mesmos artigos da tela |
+
+Em F09, cada formato é baixado pela opção da interface. No commit `c2ae570`, o menu "Exportar" (`templates/projects/detail.html`) oferece PDF resumo, PDF completo e XLSX; a rota `/projetos/{id}/export` (`web/app.py`) também aceita CSV e JSON, mas sem opção na tela. Como no G2 por inspeção, só vale o que o estudante consegue fazer pela interface normal: formato sem opção na tela em produção conta como subpasso não executado, e a forma de acesso observada é anotada.
 
 Em F02 o subpasso (b) é verificado como prometido, sem supor onde o campo está: se a população ou o tipo de estudo só puderem ser ajustados pelo texto do objetivo ou pela edição dos critérios, o subpasso conta como executado e a forma é anotada; se não houver forma nenhuma, conta como não executado.
 
@@ -277,7 +283,7 @@ Em F02 o subpasso (b) é verificado como prometido, sem supor onde o campo está
 
     A amostra sistemática cobre o topo, o meio e o fim da lista em partes iguais e não depende de escolha de ninguém. A posição 1 fica de fora por construção, o que é aceitável porque nada indica que os metadados variem com a posição.
 
-2. **Conferência (A2).** Para cada item, abrir o link exibido pela VICKY e a página oficial do artigo: a página do DOI (`https://doi.org/<DOI>`); sem DOI, o registro no PubMed; sem os dois, o registro no SciELO. Comparar os cinco campos:
+2. **Conferência (A2).** Para cada item, abrir o link exibido pelo VICKY e a página oficial do artigo: a página do DOI (`https://doi.org/<DOI>`); sem DOI, o registro no PubMed; sem os dois, o registro no SciELO. Comparar os cinco campos:
 
     | Campo | Correto quando | Incorreto quando |
     |-------|----------------|------------------|
@@ -301,8 +307,8 @@ Em F02 o subpasso (b) é verificado como prometido, sem supor onde o campo está
     | Presença de comparador | 0 a 2 | 2: grupo controle concorrente (placebo, cuidado usual ou outra intervenção); 1: comparador não concorrente (histórico, antes e depois); 0: sem comparador |
     | Revisão por pares | 0 a 1 | 1: publicado em periódico científico com revisão por pares; 0: *preprint*, resumo de congresso, tese ou relatório |
 
-2. **Por que esses pesos.** O desenho é o componente que mais determina o nível de evidência nas hierarquias usadas em medicina baseada em evidências, por isso recebe 40% da nota. Amostra e comparador medem precisão e controle de viés dentro do desenho (30% e 20%). A revisão por pares separa o publicado do não revisado, mas quase todos os itens de uma busca no PubMed e no SciELO a têm, por isso pesa 10%. Os pesos são convenção da equipe, registrados antes da coleta, como os demais limiares da Fase 2.
-3. Na falta de informação no resumo, o avaliador pode abrir o texto completo para achar o desenho e o tamanho da amostra. Não pode abrir a VICKY.
+2. **Por que esses pesos.** A ordem dos desenhos segue a tabela de níveis de evidência do Oxford Centre for Evidence-Based Medicine para benefício de tratamento (OCEBM, 2011): revisão sistemática de ensaios randomizados no nível 1, ensaio randomizado no nível 2, coorte controlada não randomizada no nível 3 e série de casos, caso-controle ou controle histórico no nível 4. A rubrica agrupa os níveis 3 e 4 de forma própria (caso-controle com coorte, em 2 pontos) e dá 0 ao que a tabela não classifica como estudo clínico; esse agrupamento e o peso de 40% para o desenho são convenção da equipe. Amostra e comparador medem precisão e controle de viés dentro do desenho (30% e 20%). A revisão por pares separa o publicado do não revisado, mas quase todos os itens de uma busca no PubMed e no SciELO a têm, por isso pesa 10%. Os pesos são convenção da equipe, registrados antes da coleta, como os demais limiares da Fase 2.
+3. Na falta de informação no resumo, o avaliador pode abrir o texto completo para achar o desenho e o tamanho da amostra. Não pode abrir o VICKY.
 4. Cada avaliador salva `M1.4.1/rubrica_A1_Tn.csv` (ou `A2`), uma linha por item, com os quatro componentes. A nota é a soma, recalculada pelo script.
 5. Não há consenso: como define a Fase 2, a nota do artigo é a média das notas de A1 e A2. O script informa, sem efeito na métrica, a correlação entre as notas dos dois avaliadores.
 
@@ -331,7 +337,7 @@ O item é conforme só quando as três colunas são sim. Item fora de qualquer f
 2. A execução B começa entre 24 e 72 horas depois do início de A. O mínimo é o da Fase 2; o máximo reduz a chance de a versão em produção mudar entre as duas.
 3. B usa um projeto novo com a mesma entrada de A: mesmo tipo de revisão, texto do tema e do objetivo copiados desta página, mesma janela, mesmas bases, Top 30. O PICO gerado de novo não é editado, mesmo que difira do de A; a diferença é anotada, porque faz parte do que um estudante que repete a busca encontraria.
 4. Registrar B em `M1.5.2/top30_T1-B.csv` pela etapa comum da seção 4.2.
-5. Se, entre A e B, a VICKY mostrar mudança visível (versão dos Termos, nova opção no formulário), anotar em `execucoes.csv`; a comparação continua válida, e a mudança é declarada na Fase 4.
+5. Se, entre A e B, o VICKY mostrar mudança visível (versão dos Termos, nova opção no formulário), anotar em `execucoes.csv`; a comparação continua válida, e a mudança é declarada na Fase 4.
 
 ### 4.9 M1.1.1 e M1.1.2: cruzamento e consulta às fontes
 
@@ -362,7 +368,7 @@ dados/avaliacao/G1/
 │   ├── top30_Tn.csv                # lista das execuções T1 a T4
 │   ├── correspondencia_manual_Tn.csv   # só se houver par manual
 │   ├── pico_Tn.md                  # PICO e critérios gerados, sem edição
-│   └── exportacao/Tn_AAAAMMDD.csv  # exportação original da VICKY (e .json)
+│   └── exportacao/Tn_AAAAMMDD.xlsx # exportação original do VICKY (e .csv ou .json, se a produção oferecer)
 ├── M1.1.2/consulta_fontes_Tn.csv
 ├── M1.2.1/
 │   ├── casos_funcoes.csv
@@ -382,7 +388,7 @@ dados/avaliacao/G1/
 
 | Planilha | Modelo | Colunas |
 |----------|--------|---------|
-| `execucoes.csv` | `execucoes.csv` | `id_execucao` (T1, T1-B, E1...), `tema`, `finalidade`, `data_hora_inicio`, `data_hora_fim`, `condutor` (papel), `conta`, `texto_tema`, `texto_objetivo`, `tipo_revisao`, `janela_anos`, `ano_inicio`, `ano_fim`, `fontes`, `top`, `so_acesso_aberto`, `status`, `creditos_antes`, `creditos_depois`, `versao_termos`, `observacao` |
+| `execucoes.csv` | `execucoes.csv` | `id_execucao` (T1, T1-B, E1...), `tema`, `finalidade`, `data_hora_inicio`, `data_hora_fim`, `condutor` (papel), `conta`, `texto_tema`, `texto_objetivo`, `tipo_revisao`, `janela_anos`, `ano_inicio`, `ano_fim`, `fontes`, `top`, `so_acesso_aberto`, `status`, `creditos_antes`, `creditos_depois`, `versao_termos`, `versao_chrome`, `observacao` |
 | `top30_Tn.csv`, `top_En.csv`, `top30_Tn-B.csv` | `top30_TEMA.csv` | `posicao`, `quality_score`, `titulo`, `autores`, `ano`, `periodico`, `doi`, `pmid`, `link`, `fonte_exibida`, `resumo` |
 | `referencia_Tn.csv` | `referencia_TEMA.csv` | `estudo_id`, `relato_id`, `relato_principal`, `autores`, `titulo`, `ano`, `periodico`, `doi`, `pmid`, `publicado_ate_coleta` (sim/nao), `antes_da_janela` (sim/nao), `observacao` |
 | `correspondencia_manual_Tn.csv` | `correspondencia_manual_TEMA.csv` | `posicao`, `relato_id`, `justificativa` |
@@ -397,8 +403,8 @@ dados/avaliacao/G1/
 Regras de registro:
 
 - Data e hora em horário de Brasília, no formato `AAAA-MM-DD HH:MM`.
-- A versão da VICKY é identificada pela data e hora de acesso e pela versão dos Termos de Uso exibida no site, como no G2, porque a tela não mostra número de versão.
-- A exportação original da VICKY nunca é editada. Correção de transcrição é feita na planilha, com commit que diga o que mudou.
+- A versão do VICKY é identificada pela data e hora de acesso e pela versão dos Termos de Uso exibida no site, como no G2, porque a tela não mostra número de versão.
+- A exportação original do VICKY nunca é editada. Correção de transcrição é feita na planilha, com commit que diga o que mudou.
 - Só entra dado real de coleta. Antes de enviar uma captura, conferir que ela não mostra nome ou e-mail de pessoa real, senha ou saldo de outra conta.
 - As planilhas aceitam vírgula ou ponto e vírgula como separador e devem ser salvas em UTF-8.
 
@@ -474,7 +480,8 @@ Caso particular: se A1 e A2 marcarem todos os itens do tema com a mesma resposta
 - LANDIS, J. R.; KOCH, G. G. The measurement of observer agreement for categorical data. *Biometrics*, v. 33, n. 1, p. 159-174, 1977.
 - LYONS, S. et al. Pharmacological treatments for Friedreich ataxia. *Cochrane Database of Systematic Reviews*, 2026. DOI: 10.1002/14651858.CD007791.pub5.
 - MESSER, S. et al. Yoga for fatigue in people with cancer. *Cochrane Database of Systematic Reviews*, 2025. DOI: 10.1002/14651858.CD015520.
-- MOCELLIN, L. P. et al. Gestational diabetes mellitus prevalence in Brazil: a systematic review and meta-analysis. *Cadernos de Saúde Pública*, 2024. DOI: 10.1590/0102-311XEN064919.
+- MOCELLIN, L. P. et al. Gestational diabetes mellitus prevalence in Brazil: a systematic review and meta-analysis. *Cadernos de Saúde Pública*, v. 40, n. 8, e00064919, 2024. DOI: 10.1590/0102-311XEN064919 (não resolvia em doi.org em 14/11/2026). Disponível em: <https://pmc.ncbi.nlm.nih.gov/articles/PMC11386532/>.
+- OCEBM LEVELS OF EVIDENCE WORKING GROUP. *The Oxford 2011 Levels of Evidence*. Oxford Centre for Evidence-Based Medicine, 2011. Disponível em: <https://www.cebm.ox.ac.uk/resources/levels-of-evidence/ocebm-levels-of-evidence>.
 - O'MARA-EVES, A. et al. Using text mining for study identification in systematic reviews: a systematic review of current approaches. *Systematic Reviews*, v. 4, n. 5, 2015. DOI: 10.1186/2046-4053-4-5.
 
 As demais referências (ISO/IEC 25040:2024, ISO/IEC 25023:2016, Basili; Caldiera; Rombach, 1994) estão em [Referências](../sobre/referencias.md).
@@ -486,3 +493,4 @@ As demais referências (ISO/IEC 25040:2024, ISO/IEC 25023:2016, Basili; Caldiera
 | 0.1 | 04/11/2026 | Criação da página | Lucas Avelar | - |
 | 0.2 | 09/11/2026 | Esqueleto com o que a Fase 2 define e os pontos em aberto para a responsável | Gabriel Fae | - |
 | 0.3 | 14/11/2026 | Método completo: justificativa, temas e revisões de referência, regra do gabarito, papéis e conhecimento exigido, divisão das oito triagens, casos de teste de M1.2.1, critérios de relevância e rubrica, amostra de M1.3.2, filtros de M1.5.1, registro, script de cálculo e regras de discordância e repetição | Lucas Avelar | - |
+| 0.4 | 14/11/2026 | Revisões de referência com PMID e local da conferência (DOI de T3 sem registro em doi.org), exportação a partir do XLSX, quantidade do Top de 1 a 30, justificativa da lista de funções de M1.2.1, fonte da hierarquia de evidências, coluna `versao_chrome`, papéis nomeados e "o VICKY" | Lucas Avelar | - |
