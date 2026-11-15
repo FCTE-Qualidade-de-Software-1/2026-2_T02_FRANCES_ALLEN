@@ -115,7 +115,7 @@ Aplicado no fim da sessão. O condutor mostra a captura fixa de cada tela, na or
 | Participante: P0__ | Data: ___/___/2026 | | | | | |
 |---|---|:-:|:-:|:-:|:-:|:-:|
 | **Ordem** | **Tela (captura em `M2.5.1/telas/`)** | **1** | **2** | **3** | **4** | **5** |
-| 1 | Página inicial (`inicial.png`) | ( ) | ( ) | ( ) | ( ) | ( ) |
+| 1 | Página inicial, o painel após o login (`inicial.png`) | ( ) | ( ) | ( ) | ( ) | ( ) |
 | 2 | Novo projeto (`novo_projeto.png`) | ( ) | ( ) | ( ) | ( ) | ( ) |
 | 3 | Detalhe do projeto (`detalhe_projeto.png`) | ( ) | ( ) | ( ) | ( ) | ( ) |
 | 4 | Lista de artigos (`lista_artigos.png`) | ( ) | ( ) | ( ) | ( ) | ( ) |

@@ -173,7 +173,7 @@ Tempo total estimado: 75 minutos, com folga até 90.
 
 **Regras do questionário de compreensão.** Os recortes mostram só o rótulo e o controle, sem o texto de ajuda que o VICKY exibe ao lado, para que o participante não leia a resposta. A ordem é a do fluxo (E01 a E12). O condutor pode pedir uma única vez "Pode explicar um pouco mais?". Não comenta se a resposta está certa.
 
-**Regras do questionário de estética.** As capturas são da página inteira, mostradas na ordem do fluxo (página inicial, novo projeto, detalhe do projeto, lista de artigos, ficha do artigo), uma de cada vez. O participante responde com um número inteiro de 1 a 5. Se der um valor fracionado, o condutor pede que escolha um inteiro.
+**Regras do questionário de estética.** As capturas são da página inteira, mostradas na ordem do fluxo (página inicial, novo projeto, detalhe do projeto, lista de artigos, ficha do artigo), uma de cada vez. A "página inicial" é o painel que o usuário logado vê (`/dashboard`), e não a página pública de apresentação (`/`): a medida avalia o produto em uso, e a página pública é material de divulgação, que o participante não usa durante as tarefas. As capturas são tiradas da versão em produção no dia da primeira sessão, com a data registrada, porque a produção pode diferir do commit `c2ae570`. O participante responde com um número inteiro de 1 a 5. Se der um valor fracionado, o condutor pede que escolha um inteiro.
 
 ### 4.2 Teste só com teclado (M2.6.1)
 
