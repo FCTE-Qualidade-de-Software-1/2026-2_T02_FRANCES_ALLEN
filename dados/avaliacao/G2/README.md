@@ -43,7 +43,7 @@ As quatro pastas do [Método do G2 com usuários](../../../docs/fase-3/metodo-g2
 | `M2.7.2/perfil.csv`, `observacao-uso.csv` e `respostas-compreensao.csv` | Condutor e observador, durante e depois da sessão |
 | `M2.5.1/respostas.csv` e `qualitativo.csv` | Observador, com as notas dadas pelo participante |
 | `M2.7.2/coleta.md` e `consolidado.md` | Condutor, antes do piloto e depois das cinco sessões |
-| `M2.6.1/T1.md`, `T2.md` e `consolidado.md` | Avaliadores do teste com teclado |
+| `M2.6.1/K1.md`, `K2.md` e `consolidado.md` | Avaliadores do teste com teclado (K1 e K2) |
 | `M2.6.2/A1.md`, `A2.md`, `consolidado.md` e `relatorios/` | Avaliadores de contraste |
 | `termo-de-consentimento.docx` | Termo em branco para imprimir em duas vias |
 

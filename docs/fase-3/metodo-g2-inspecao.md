@@ -15,6 +15,14 @@ Este método cobre as oito métricas do G2 obtidas por inspeção das telas e do
 | [M2.4.2](../fase-2/especificacao-das-metricas.md#m242) | UEp-2-S | Erros de entrada nos formulários | Erros detectados pelo sistema | `M2.4.2/` |
 | [M2.7.1](../fase-2/especificacao-das-metricas.md#m271) | UAp-3-S | Primeira tela das páginas de entrada | 4 páginas | `M2.7.1/` |
 
+### Por que este método
+
+As oito métricas desta página são medidas de atributo do produto: contam elementos que existem ou não nas telas e no código (descrições, orientações, mensagens, proteções contra erro). Para esse tipo de medida a ISO/IEC 25023 prevê a obtenção por inspeção do produto, sem depender de usuário, e a ISO/IEC 25040 coloca a inspeção entre os métodos aceitos na etapa de projeto da avaliação. A inspeção também não consome créditos de triagem, que ficam reservados para o G1 e para as sessões com participantes.
+
+A Fase 2 define, para cada métrica, o denominador (cenários, funções, inventário de mensagens, ações, páginas) e o critério de contagem. O método transforma esse critério em checklist por métrica (seção 3), para que dois avaliadores cheguem ao mesmo número sem interpretar a ficha de novo.
+
+Os dois avaliadores independentes respondem a um risco apontado nas hipóteses H2.1 a H2.7: quem conhece o código tende a achar a interface mais clara do que ela é. Por isso A2 inspeciona só pelo produto, e a divergência entre A1 e A2 é tratada pela regra da seção 6, com A3 como desempate.
+
 ## 2. Preparação
 
 ### 2.1 Papéis
@@ -302,3 +310,4 @@ O valor é calculado somente sobre `consolidado.md`, e o nível sai da tabela de
 | 0.1 | 04/11/2026 | Criação da página | Lucas Avelar | - |
 | 0.2 | 09/11/2026 | Método completo de inspeção: papéis, ambiente, roteiro e checklist por métrica, registro, cálculo e regra de discordância | Gabriel Fae | - |
 | 0.3 | 13/11/2026 | Fichas em Markdown preenchíveis no GitHub, `/privacidade` em M2.1.1 como na Fase 2, critério de M2.7.1 detalhado e valores digitados fixos nos roteiros de M2.2.2 e M2.4.2 | Gabriel Fae | - |
+| 0.4 | 14/11/2026 | Seção "Por que este método", exigida pela estrutura da Fase 3. A revisar pelo autor do método | Lucas Avelar | - |

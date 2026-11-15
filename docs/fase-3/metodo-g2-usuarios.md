@@ -9,7 +9,7 @@ Os instrumentos aplicados aos participantes (cartões de tarefa, ficha de observ
 | Métrica | Medida | Quem fornece o dado | Instrumento | Denominador (B) | Pasta em `dados/avaliacao/G2/` |
 |---------|--------|---------------------|-------------|-----------------|--------------------------------|
 | [M2.5.1](../fase-2/especificacao-das-metricas.md#m251) | UIn-1-S | Participantes P01 a P05 | Questionário de estética das 5 telas | 5 telas | `M2.5.1/` |
-| [M2.6.1](../fase-2/especificacao-das-metricas.md#m261) | UAc-1-G | Avaliadores T1 e T2 | Teste só com teclado, por função | 9 funções (F01 a F09) | `M2.6.1/` |
+| [M2.6.1](../fase-2/especificacao-das-metricas.md#m261) | UAc-1-G | Avaliadores K1 e K2 | Teste só com teclado, por função | 9 funções (F01 a F09) | `M2.6.1/` |
 | [M2.6.2](../fase-2/especificacao-das-metricas.md#m262) | Medida adicional | Avaliadores A1 e A2 | axe DevTools e conferência manual | Pares de texto e fundo avaliados nas 8 telas | `M2.6.2/` |
 | [M2.7.2](../fase-2/especificacao-das-metricas.md#m272) | ULe-4-S | Participantes P01 a P05 | Teste de cenário com pensamento em voz alta e questionário de compreensão | 12 elementos e passos | `M2.7.2/` |
 
@@ -73,12 +73,12 @@ Não se exige conhecimento de metodologia científica: a promessa do VICKY, regi
 | Condutor (C) | João Felipe Oliveira, responsável pela issue #22; na ausência dele, outro integrante que tenha feito o piloto | Lê o termo, entrega os cartões, faz os lembretes neutros, aplica os questionários e decide quando dar ajuda mínima | Explicar a interface, ler rótulos em voz alta, apontar a tela antes do limite de 3 minutos |
 | Observador (O) | Um integrante escalado por sessão, registrado em `sessoes.csv` | Preenche a ficha de uso de cada elemento com o momento da gravação, cuida da gravação e anota ocorrências | Falar com o participante durante as tarefas |
 | Terceiro (A3) | Integrante que não esteve na sessão | Decide divergências de classificação que C e O não resolverem, olhando só a gravação e o gabarito | Ver a ficha de C ou de O antes de decidir |
-| Avaliadores de teclado (T1, T2) | Dois integrantes | Executam M2.6.1 de forma independente | Consultar a ficha do outro antes de enviar a sua |
+| Avaliadores de teclado (K1, K2) | Dois integrantes | Executam M2.6.1 de forma independente | Consultar a ficha do outro antes de enviar a sua |
 | Avaliadores de contraste (A1, A2) | Dois integrantes, pelo menos um sem ter lido o código | Executam M2.6.2 de forma independente | Idem |
 
-A relação entre os códigos (C, O, T1, T2, A1, A2, A3) e as pessoas fica em `coleta.md` de cada pasta, sem dado do participante.
+A relação entre os códigos (C, O, K1, K2, A1, A2, A3) e as pessoas fica em `coleta.md` de cada pasta, sem dado do participante.
 
-**Conhecimento exigido dos condutores e avaliadores.** C e O leem esta página e os instrumentos, fazem a sessão piloto juntos e conhecem o gabarito antes da primeira sessão. T1 e T2 sabem navegar por teclado no Chrome e conhecem os critérios 2.1.1, 2.4.7 e 2.5.8 da WCAG 2.2. A1 e A2 sabem rodar o axe, usar o seletor de cor do DevTools e conhecem o critério 1.4.3 da WCAG 2.2.
+**Conhecimento exigido dos condutores e avaliadores.** C e O leem esta página e os instrumentos, fazem a sessão piloto juntos e conhecem o gabarito antes da primeira sessão. K1 e K2 sabem navegar por teclado no Chrome e conhecem os critérios 2.1.1, 2.4.7 e 2.5.8 da WCAG 2.2. A1 e A2 sabem rodar o axe, usar o seletor de cor do DevTools e conhecem o critério 1.4.3 da WCAG 2.2.
 
 ### 3.3 Tema dado ao participante
 
@@ -92,7 +92,7 @@ O tema vai no cartão da parte A escrito em uma frase, em linguagem de estudante
 |-----------------|-------|:--------:|---------|
 | Parte A (F01 a F04) | Conta nova, criada pelo próprio participante durante a sessão, com nome "Participante P0x", e-mail de teste da equipe com sufixo do participante (ex.: `caixa+p01@...`) e senha entregue no cartão | 0 | Nenhum dado pessoal do participante entra no VICKY. No código consultado (`c2ae570`), conta nova começa sem crédito, então "Criar e iniciar tudo direto" não gasta dinheiro mesmo se clicado por engano; isso é conferido em produção antes do piloto |
 | Parte B (F06 a F09) | Conta de cortesia da equipe, já logada pelo condutor antes de o participante sentar, aberta na lista de projetos | 0 consumidos | O projeto triado do G1 só é usado depois que o Top 30 e o log desse projeto foram exportados e guardados em `dados/avaliacao/G1/`. O condutor impede a exclusão do projeto se o participante tentar (registrado como ocorrência). Ao fim de cada sessão, o condutor desmarca os favoritos feitos pelo participante, para a próxima sessão começar do mesmo estado |
-| M2.6.1 | Conta nova criada pelo próprio T1 (e por T2) no teste de F01, usada para F02 a F04; conta de cortesia para F06 a F09 | 0 | F05 é observada numa triagem já prevista no G1 |
+| M2.6.1 | Conta nova criada pelo próprio K1 (e por K2) no teste de F01, usada para F02 a F04; conta de cortesia para F06 a F09 | 0 | F05 é observada numa triagem já prevista no G1 |
 | M2.6.2 | Janela anônima nas telas públicas; conta de cortesia nas internas | 0 | Nenhuma |
 
 As sessões não consomem crédito. A dependência é um projeto triado do G1, como já previsto no [índice da Fase 3](index.md#cobertura-das-metricas).
@@ -177,7 +177,7 @@ Tempo total estimado: 75 minutos, com folga até 90.
 
 ### 4.2 Teste só com teclado (M2.6.1)
 
-Feito por T1 e T2, cada um sozinho, no ambiente da [seção 2.2 da inspeção](metodo-g2-inspecao.md#22-ambiente) (Chrome em computador, 1366 por 768 pixels, zoom de 100%), com o mouse e o trackpad desconectados ou desativados. Teclas permitidas: Tab, Shift+Tab, Enter, Espaço e setas, como na ficha da Fase 2. Se um passo só puder ser feito com outra tecla (por exemplo, Esc para fechar um menu), isso é anotado e o passo conta como não acionável.
+Feito por K1 e K2, cada um sozinho, no ambiente da [seção 2.2 da inspeção](metodo-g2-inspecao.md#22-ambiente) (Chrome em computador, 1366 por 768 pixels, zoom de 100%), com o mouse e o trackpad desconectados ou desativados. Teclas permitidas: Tab, Shift+Tab, Enter, Espaço e setas, como na ficha da Fase 2. Se um passo só puder ser feito com outra tecla (por exemplo, Esc para fechar um menu), isso é anotado e o passo conta como não acionável.
 
 **Critério de sucesso.** Uma função conta em A só quando, em **todos** os passos do caminho abaixo:
 
@@ -187,23 +187,23 @@ Feito por T1 e T2, cada um sozinho, no ambiente da [seção 2.2 da inspeção](m
 
 | Função | Caminho testado (do início ao resultado) | Conta e momento |
 |--------|------------------------------------------|-----------------|
-| F01 | Abrir `/signup`, preencher nome, e-mail, senha e confirmação, marcar o aceite, enviar; sair; entrar por `/login`; abrir a recuperação de senha e enviar o pedido | Conta nova de T1 ou T2 |
+| F01 | Abrir `/signup`, preencher nome, e-mail, senha e confirmação, marcar o aceite, enviar; sair; entrar por `/login`; abrir a recuperação de senha e enviar o pedido | Conta nova de K1 ou K2 |
 | F02 | Abrir "Novo projeto", escolher o tipo de revisão, preencher tema e objetivo, escolher a janela de anos, salvar como rascunho | Conta nova |
 | F03 | Gerar a prévia dos critérios, chegar aos critérios gerados e editar um deles | Conta nova; gasta 1 prévia |
 | F04 | Em novo projeto, marcar e desmarcar cada base, ligar o filtro de acesso aberto e alterar a quantidade do Top | Conta nova |
-| F05 | Iniciar a triagem completa, confirmar se houver confirmação e acompanhar o andamento até a lista | Triagem prevista do G1, feita por T1 com o teclado e T2 observando. Combinado com quem executa o G1 |
+| F05 | Iniciar a triagem completa, confirmar se houver confirmação e acompanhar o andamento até a lista | Triagem prevista do G1, feita por K1 com o teclado e K2 observando. Combinado com quem executa o G1 |
 | F06 | Abrir a lista de artigos do projeto triado, ler o Quality Score de um artigo, abrir a ficha dele e o link da fonte | Conta de cortesia |
 | F07 | Favoritar e desfavoritar um artigo na lista e na ficha | Conta de cortesia |
 | F08 | Chegar ao registro da busca e dos critérios aplicados (log) do projeto triado | Conta de cortesia |
 | F09 | Abrir o menu de exportação e baixar um arquivo em cada formato oferecido | Conta de cortesia |
 
-F05 é observada uma única vez, porque cada triagem custa um crédito; por isso não há segunda execução independente dessa função, e a evidência é a gravação da tela de T1. As demais funções são executadas por T1 e T2.
+F05 é observada uma única vez, porque cada triagem custa um crédito; por isso não há segunda execução independente dessa função, e a evidência é a gravação da tela de K1. As demais funções são executadas por K1 e K2.
 
 #### 4.2.1 Como medir o alvo
 
 Com o controle visível, abrir o DevTools (F12, que é tecla do avaliador e não do teste), escolher o controle com o seletor de elementos e ler largura e altura na aba *Computed*. O avaliador mede todo controle do caminho que pareça menor que um ícone comum (setas, estrelas de favorito, "x", links curtos). Abaixo de 24 por 24 pixels, verificar as exceções do critério 2.5.8 e anotar qual se aplica.
 
-**Registro por função** (`M2.6.1/T1.md` e `T2.md`): `funcao`, `passo`, `acionavel (sim/nao)`, `foco_visivel (sim/nao)`, `alvos_abaixo_de_24px` (controle e tamanho), `excecao_2_5_8`, `concluida (sim/nao)`, `captura`.
+**Registro por função** (`M2.6.1/K1.md` e `K2.md`): `funcao`, `passo`, `acionavel (sim/nao)`, `foco_visivel (sim/nao)`, `alvos_abaixo_de_24px` (controle e tamanho), `excecao_2_5_8`, `concluida (sim/nao)`, `captura`.
 
 ### 4.3 axe DevTools (M2.6.2)
 
@@ -272,8 +272,8 @@ dados/avaliacao/G2/
 │   ├── qualitativo.csv           # bloco opcional, fora do cálculo
 │   └── telas/                    # as 5 capturas fixas mostradas aos participantes
 ├── M2.6.1/
-│   ├── coleta.md                 # data, Chrome, área visível, papéis T1 e T2, projeto triado usado
-│   ├── T1.md e T2.md             # ficha por função e passo
+│   ├── coleta.md                 # data, Chrome, área visível, papéis K1 e K2, projeto triado usado
+│   ├── K1.md e K2.md             # ficha por função e passo
 │   ├── consolidado.md            # resultado único por função e cálculo
 │   └── evidencias/               # AAAAMMDD_T1_F0x_<passo>.png
 ├── M2.6.2/
@@ -344,7 +344,7 @@ Seguem a [regra da inspeção](metodo-g2-inspecao.md#6-discordancia-e-repeticao)
 
 Em M2.6.2, as contagens do axe-core devem coincidir entre A1 e A2, porque a ferramenta é determinística. Se não coincidirem, a causa é o estado da tela (menu aberto, aviso, conteúdo diferente). Os dois rodam de novo, juntos, no estado da tabela da seção 4.3, e vale essa execução. Nos pares incertos, a divergência se resolve medindo juntos no mesmo ponto do fundo.
 
-Em M2.6.1, uma função em que T1 e T2 divergem é executada de novo pelos dois juntos, com gravação da tela, e vale o que a gravação mostra.
+Em M2.6.1, uma função em que K1 e K2 divergem é executada de novo pelos dois juntos, com gravação da tela, e vale o que a gravação mostra.
 
 ### 7.4 Quando a sessão não termina como previsto
 

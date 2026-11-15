@@ -79,7 +79,7 @@ Todos os métodos registram os dados brutos em `dados/avaliacao/` do [repositór
 | Conta de teste do G1 | Cadastro e recuperação de senha em M1.2.1 (F01) | G1 | 0 | E-mail criado só para a coleta |
 | Conta descartável da inspeção | Roteiro de erros de cadastro e login, inclusive "e-mail já cadastrado" (E05) e o limite de prévias (E08) | G2 por inspeção | 0 | Esgota de propósito a cota de prévias dela; não é a conta de cortesia |
 | Contas novas dos participantes | Parte A das sessões, criadas pelo próprio participante como "Participante P0x" | G2 com usuários | 0 (conta nova começa sem crédito, a conferir em produção antes do piloto) | E-mail de teste da equipe com sufixo do participante; nenhum dado pessoal entra no VICKY |
-| Contas novas de T1 e T2 | F01 a F04 no teste com teclado | G2 com usuários | 0 | Criadas pelo próprio avaliador |
+| Contas novas de K1 e K2 | F01 a F04 no teste com teclado | G2 com usuários | 0 | Criadas pelo próprio avaliador |
 
 **E-mail de teste.** As contas de teste usam uma caixa de e-mail criada pela equipe só para a avaliação, que aceite endereço com sufixo (`caixa+p01@...`), como o Gmail aceita. A mesma caixa serve para confirmar e-mail, se a produção exigir isso para gerar a prévia, e para receber a recuperação de senha em F01. A senha da caixa e das contas fica fora do repositório.
 
@@ -115,7 +115,7 @@ Os Termos de Uso do VICKY proíbem *scraping* abusivo e sobrecarga. Por isso nen
 | Fork privado `LucasAvelar2711/Vicky` | A1 do G2 por inspeção (inventário de mensagens e proteções); A1 e A2 do G3 | Acesso de leitura concedido por Lucas Avelar, dono do fork. O A2 da inspeção **não** recebe o código antes de enviar `A2.md` |
 | Repositório do trabalho | Os seis integrantes | Já concedido (organização da disciplina) |
 | Pasta restrita no Google Drive | Os seis integrantes e a professora | Criada pelo condutor do G2 com usuários antes do piloto |
-| Relação entre papéis e pessoas (A1, A2, A3, C, O, T1, T2) | Equipe | Fora do repositório nos métodos G1, G2 por inspeção e G3; em `coleta.md`, sem dado de participante, no G2 com usuários |
+| Relação entre papéis e pessoas (A1, A2, A3, C, O, K1, K2) | Equipe | Fora do repositório nos métodos G1, G2 por inspeção e G3; em `coleta.md`, sem dado de participante, no G2 com usuários |
 | Relação entre participante e código (P01 a P05) | Aluno responsável pelas sessões | Existe só no termo assinado |
 
 ## 3. Massa de dados
@@ -148,7 +148,7 @@ A rubrica pede o nível de conhecimento em informática e no domínio da aplica�
 | G2 por inspeção, A1 | Ler templates HTML e Python para montar o inventário de mensagens e achar a proteção no código; usar o DevTools | Saber o que o estudante faz no VICKY (funções F01 a F09) | Ler o método da inspeção |
 | G2 por inspeção, A2 | Usuário de navegador e do modo responsivo do DevTools; **não** pode ter lido o código | O mesmo de A1 | Ler o método da inspeção |
 | G2 com usuários, condutor e observador | Operar o OBS Studio, o Chrome e o visualizador de imagens; calcular hash | Conhecer o gabarito dos 12 elementos; não precisa de formação clínica | Ler o método e os instrumentos e fazer a sessão piloto juntos |
-| G2 com usuários, T1 e T2 (teclado) | Navegar só por teclado no Chrome; medir elemento no DevTools | Critérios 2.1.1, 2.4.7 e 2.5.8 da WCAG 2.2 | Ler a seção 4.2 do método |
+| G2 com usuários, K1 e K2 (teclado) | Navegar só por teclado no Chrome; medir elemento no DevTools | Critérios 2.1.1, 2.4.7 e 2.5.8 da WCAG 2.2 | Ler a seção 4.2 do método |
 | G2 com usuários, A1 e A2 (contraste) | Rodar o axe, colar script no Console, usar o seletor de cor do DevTools | Critério 1.4.3 da WCAG 2.2 | Ler a seção 4.3 do método |
 | G3, A1 e A2 | Terminal com bash, git básico, leitura de Python (função, `try`/`except`, `logging`, `print`) | Noção de complexidade ciclomática e de cobertura de testes no nível das fichas; não precisa conhecer o domínio do VICKY | Ler o método do G3 |
 
@@ -235,7 +235,7 @@ Itens que dependem de decisão da equipe. Cada um tem o requisito que precisa se
 | Créditos de cortesia | Confirmar com a equipe do VICKY quantos créditos a conta de cortesia tem; são necessários 8. Com menos, vale a ordem de prioridade do G1 e a decisão de comprar ou não fica com a equipe | Condutor do G1 (#26) | 16/11, antes da etapa 3 do G1 |
 | Avaliadores do G1 | Definir C, A1, A2 e A3, com C fora do julgamento | Equipe, combinado pelo WhatsApp (D12) | 15/11 |
 | Avaliadores do G2 por inspeção | Definir A1, A2 e A3, com A2 sem ter lido o código | Responsável pela #27 | Já em andamento; registrar em `coleta.md` |
-| Avaliadores do G2 com usuários | Definir C, O e A3 das sessões, T1 e T2 do teclado e A1 e A2 do contraste | Responsável pela #28 | 15/11 |
+| Avaliadores do G2 com usuários | Definir C, O e A3 das sessões, K1 e K2 do teclado e A1 e A2 do contraste | Responsável pela #28 | 15/11 |
 | Repetição do G3 | Definir o A2 que repete a coleta em outra máquina e o A3 da inspeção de M3.2.3 | Responsável pela #29 | 16/11 |
 | Recrutamento | 5 estudantes de Medicina e 2 reservas que cumpram os critérios de inclusão | Responsável pela #28 | 16/11 |
 | Local das sessões | Sala reservada e silenciosa, registrada por sessão | Responsável pela #28 | Antes do piloto |

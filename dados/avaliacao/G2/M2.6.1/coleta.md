@@ -5,7 +5,7 @@
 | Campo | Valor |
 |---|---|
 | Métrica | M2.6.1 Acessibilidade para usuários com dificuldade motora (UAc-1-G) |
-| Avaliadores | T1, T2 (A3 só se houver desempate) |
+| Avaliadores | K1, K2 (A3 só se houver desempate) |
 | Data e hora de início | |
 | Data e hora de fim | |
 | Navegador e versão | Google Chrome |

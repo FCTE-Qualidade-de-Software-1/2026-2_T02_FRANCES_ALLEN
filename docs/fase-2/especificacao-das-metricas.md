@@ -30,7 +30,7 @@ Cada métrica possui uma ficha com os campos exigidos pela Premissa 2: **defini�
 | M3.1.2 | Adequação da Complexidade Ciclomática (MMo-2-S) | Q3.1 | C3 | Código-fonte (`pipeline.py`) e `radon cc` |
 | M3.2.1 | Conformidade de estilo PEP 8 (medida adicional) | Q3.2 | C3 | Código-fonte (`src/vicky/`) e `flake8` |
 | M3.2.2 | Densidade de código duplicado (medida adicional) | Q3.2 | C3 | Código-fonte (`src/vicky/`) e `pylint` |
-| M3.2.3 | Completude de logs do sistema (adaptada de MAn-1-G) | Q3.2 | C3 | Código-fonte (`src/vicky/`) e inspeção de código |
+| M3.2.3 | Completude de logs do sistema (adaptada de MAn-1-G) | Q3.2 | C3 | Código-fonte (`src/vicky/pipeline.py`) e inspeção de código |
 | M3.3.1 | Completude de testes automatizados (adaptada de MTe-1-G) | Q3.3 | C3 | Código-fonte (`tests/`) e `pytest-cov` |
 
 ## Temas de teste de G1

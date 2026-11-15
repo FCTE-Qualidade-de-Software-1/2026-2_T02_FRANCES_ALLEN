@@ -47,7 +47,7 @@ A versão 0.2 replaneja as datas a partir da situação de 14/11/2026. Os métod
 | Coleta do G1, dias 2 a 4: julgamento de A1 e A2, conferências, kappa, discordâncias e cálculo | Larissa Gomes, com A1, A2 e A3 | #26 | 17/11 | 19/11 | fichas cegas |
 | Recrutamento, piloto e preparação das sessões | João Felipe Oliveira | #28 | 14/11 | 16/11 | #22; projeto T1 triado e exportado (16/11) |
 | Sessões com participantes (P01 a P05), no máximo três por dia | João Felipe Oliveira | #28 | 16/11 | 18/11 | recrutamento; piloto; termo |
-| Teste com teclado e contraste (M2.6.1 e M2.6.2) | João Felipe Oliveira, com T1, T2, A1 e A2 | #28 | 16/11 | 18/11 | #22; uma triagem do G1 para F05 |
+| Teste com teclado e contraste (M2.6.1 e M2.6.2) | João Felipe Oliveira, com K1, K2, A1 e A2 | #28 | 16/11 | 18/11 | #22; uma triagem do G1 para F05 |
 | Ação de melhoria: refatoração de `run_full_pipeline` em `src/vicky/pipeline.py`, com `logging` no lugar de `print` | Guilherme Moura | #29 | 18/11 | 20/11 | coleta do G3 (linha de base de 14/11) |
 | Medida depois da melhoria: método do G3 no commit da melhoria (`COMMIT=<hash> coletar.sh`) | Guilherme Moura | #29 | 20/11 | 20/11 | ação de melhoria |
 | Julgamento e conclusões | Guilherme Maciel | #30 | 18/11 | 20/11 | G3 (14/11), G2 (18/11), G1 (19/11) |

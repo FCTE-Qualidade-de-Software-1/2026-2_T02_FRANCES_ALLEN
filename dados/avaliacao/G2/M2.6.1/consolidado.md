@@ -1,6 +1,6 @@
 # M2.6.1 Teste só com teclado: consolidado
 
-> Preencher depois que `T1.md` e `T2.md` estiverem no repositório. Divergência: os dois executam a função juntos, com gravação da tela, e vale o que a gravação mostra; sem consenso, A3 decide ([Método do G2 com usuários](../../../../docs/fase-3/metodo-g2-usuarios.md), seção 7.3).
+> Preencher depois que `K1.md` e `K2.md` estiverem no repositório. Divergência: os dois executam a função juntos, com gravação da tela, e vale o que a gravação mostra; sem consenso, A3 decide ([Método do G2 com usuários](../../../../docs/fase-3/metodo-g2-usuarios.md), seção 7.3).
 
 | funcao | valor_t1 | valor_t2 | valor_final | justificativa | decidido_por |
 |---|---|---|---|---|---|
