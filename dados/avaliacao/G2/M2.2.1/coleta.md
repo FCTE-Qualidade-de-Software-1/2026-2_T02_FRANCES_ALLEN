@@ -5,12 +5,12 @@ Preenchido por A1 antes da primeira captura e atualizado se algo mudar. Método:
 | Item | Valor |
 |------|-------|
 | Avaliadores | A1 e A2 (A3 se houver divergência sem consenso) |
-| Início (data e hora) | |
-| Fim (data e hora) | |
-| Navegador | Google Chrome, versão: |
+| Início (data e hora) | A1: 17/11/2026, 16:00. A2: |
+| Fim (data e hora) | A1: em andamento (primeira sessão terminou em 17/11/2026, 19:00). A2: |
+| Navegador | A1: `chrome://version` mostra "1.99.57 Chromium: 157.0.8103.79 (Versão oficial) 64 bits". A2: Google Chrome, versão: |
 | Área visível | 1366 x 768 pixels, zoom de 100% (modo responsivo do DevTools) |
 | Produto | VICKY em produção, <https://vicky.synaptha.com/> |
-| Versão em produção | Data e hora de acesso; versão dos Termos exibida no site: ; versão exibida no menu lateral: |
+| Versão em produção | A1: acesso em 17/11/2026, das 16:00 às 19:00; versão dos Termos exibida no site: 2026-09-29; versão exibida no menu lateral: não registrada. A2: |
 | Código de referência (só A1) | Fork `LucasAvelar2711/Vicky`, commit `c2ae570` (29/09/2026) |
 
 ## Arquivos
