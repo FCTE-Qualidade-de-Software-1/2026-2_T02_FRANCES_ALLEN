@@ -1,0 +1,8 @@
+id,formulario,entrada,comportamento,detectado,sugeriu_valor,mensagem_literal,captura
+I01,Cadastro,E-mail sem domínio,,,,,
+I02,Login,E-mail sem domínio,,,,,
+I03,Recuperação de senha,E-mail sem domínio,,,,,
+I04,Cadastro,Senha curta,,,,,
+I05,Cadastro,Senhas diferentes,,,,,
+I06,Novo projeto,Tema vazio,,,,,
+I07,Novo projeto,Quantidade do Top fora dos valores permitidos,,,,,
