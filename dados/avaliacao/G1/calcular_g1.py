@@ -253,9 +253,9 @@ def m111_m112(pasta: Path, resultados: list[dict], detalhe: list[str]) -> None:
         if consulta is None:
             detalhe.append(f"M1.1.2 {tema}: não coletado (falta consulta_fontes_{tema}.csv)")
             continue
-        indexados_relatos = {c["relato_id"] for c in consulta
+        indexados_relatos = {(c["estudo_id"], c["relato_id"]) for c in consulta
                              if sim(c.get("pubmed", "")) or sim(c.get("scielo", "")) or sim(c.get("scholar", ""))}
-        estudos_idx = {r["estudo_id"] for r in ref if r.get("relato_id") in indexados_relatos}
+        estudos_idx = {r["estudo_id"] for r in ref if (r["estudo_id"], r.get("relato_id")) in indexados_relatos}
         if not estudos_idx:
             detalhe.append(f"M1.1.2 {tema}: nenhum estudo indexado nas três fontes; tema não calculado")
             continue
