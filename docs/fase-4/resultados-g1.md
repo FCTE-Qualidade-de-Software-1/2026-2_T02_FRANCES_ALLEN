@@ -15,12 +15,12 @@ Esta página reúne o resultado das oito métricas do G1, conforme o [Método do
 | Navegador | Google Chrome 157.0.8103.79 |
 | Condutor (C) | Larissa Gomes Silva |
 | Avaliadores | A1 Gabriel Fae, A2 Lucas Avelar; A3 João Felipe Oliveira só nos desempates |
-| Triagens feitas | T1 e T2 (dia 1); T3, E1, T1-B, T4, T3-B e E2 _a preencher_ |
-| Créditos | 10 antes de T1; 8 depois de T2 |
+| Triagens feitas | T1 e T2 (dia 1); T3 e E1 (dia 2); T1-B, T4, T3-B e E2 _a preencher_ |
+| Créditos | 10 antes de T1; 6 depois de E1 |
 | Itens não coletados | _a preencher_ (ou "nenhum") |
 | Desvios do método | _a preencher_ (ou "nenhum") |
 
-A coleta do dia 1 (17/11) terminou às 21:30, horário de Brasília. Como o `screencapture` não está disponível por SSH, as evidências que guardamos são texto do DOM, não imagem.
+Como o `screencapture` não está disponível por SSH, as evidências que guardamos são texto do DOM, não imagem.
 
 ## 2. Valores medidos
 
@@ -55,6 +55,24 @@ Em T1 foram 528 artigos, todos do PubMed. SciELO e Google Acadêmico retornaram 
 Em T2 foram 517 artigos analisados, todos do PubMed, com 96 incluídos. As strings PubMed do endpoint vieram fragmentadas: as posições 0 a 2 estavam quebradas e as demais terminavam em `AND (` sem o intervalo de datas. SciELO e Google Acadêmico, de novo, retornaram 0.
 
 A lista `decision=include` difere da ordem do Top nos empates, e o Top real é `include_top`.
+
+### Dia 2 (T3 e E1)
+
+#### T3
+
+Em T3 (prevalência de diabetes gestacional no Brasil, com SciELO e Google Acadêmico marcados) só o PubMed retornou resultado. SciELO e Google Acadêmico retornaram 0, e as strings iniciais tiveram 12 erros de Google Acadêmico. Foram 1500 artigos analisados (422 não analisados) e 25 incluídos, então o Top veio com 25 itens, menos de 30. Houve 5 rotações de termos. A janela foi de 20 anos, e o relato mais antigo da referência é de 2010. A lista de referência tem 32 estudos (Tabela 1 de Mocellin). Pelo método, uma lista com menos de 30 itens vale como está, e as métricas usam os n itens.
+
+#### E1
+
+Em E1 (só PubMed, 5 anos, ensaios randomizados escritos no objetivo) foram 550 artigos analisados, todos do PubMed, e 102 incluídos. O Top 30 ficou com 72 incluídos abaixo do corte. Pelo Publication Type do PubMed, só 1 dos 30 é ensaio randomizado, e os outros 29 são meta-análises ou revisões. Ano e fonte estão conformes nos 30, então a conformidade desta execução é 1 de 30. As strings geradas trazem blocos de Google Acadêmico e SciELO mesmo com só o PubMed marcado, mas a lista só mostra PubMed. O formulário não tem campo de tipo de estudo, então a restrição ficou no objetivo.
+
+#### Google Acadêmico na consulta às fontes (M1.1.2)
+
+Essa conferência é feita à parte da busca do VICKY: buscamos o título de cada relato direto nas fontes. Na consulta de T3, conferimos os 32 relatos da referência também no Google Acadêmico, e todos apareceram. No SciELO, a busca por Nehab 2019 devolveu outro artigo, então contou como não encontrado. Quatro relatos (Santos 2012, Ayach 2010, Oliveira 2015 e Alves 2014) contaram como encontrados no SciELO, pelo mesmo artigo com título em português.
+
+#### Execução e créditos do dia 2
+
+Em 18/11 (dia 2) executamos T3 e E1. Tínhamos 8 créditos antes de T3 e sobraram 6 depois de E1.
 
 ### Formulário, exportação e cadastro
 
@@ -105,7 +123,6 @@ O objetivo G1 é a média das cinco questões e não passa de Bom se alguma fica
 ## 6. Limitações
 
 - A coleta do dia 1 não tem capturas de imagem, só texto do DOM.
-- O Google Acadêmico foi consultado aos poucos, com pausas, para evitar bloqueio por excesso de consultas.
 - _a preencher_: itens não coletados, mudanças em produção durante a coleta e diferenças entre as execuções.
 
 ## Histórico de versão
@@ -113,3 +130,4 @@ O objetivo G1 é a média das cinco questões e não passa de Bom se alguma fica
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 17/11/2026 | Estrutura da página de resultados do G1 e relato do dia 1 da coleta | Larissa Gomes Silva | - |
+| 0.2 | 18/11/2026 | Relato do dia 2 (T3 e E1) | Larissa Gomes Silva | - |
