@@ -1,0 +1,115 @@
+# Resultados do G1 (adequação funcional)
+
+!!! warning "Coleta em andamento (#26)"
+    A coleta do G1 segue por quatro dias. Os campos marcados com _a preencher_ recebem os valores calculados pelo `calcular_g1.py` quando a coleta terminar. Nenhum valor desta página é estimado.
+
+Esta página reúne o resultado das oito métricas do G1, conforme o [Método do G1](../fase-3/metodo-g1.md). Os níveis seguem a tabela de [níveis de pontuação](../fase-2/niveis-e-julgamento.md), fixada antes da coleta.
+
+## 1. Execução da coleta
+
+| Campo | Valor |
+|-------|-------|
+| Período | início em 17/11/2026; fim _a preencher_ |
+| Produto | VICKY em produção, <https://vicky.synaptha.com/> |
+| Versão de referência | Termos de Uso de 29/09/2026 |
+| Navegador | Google Chrome 157.0.8103.79 |
+| Condutor (C) | Larissa Gomes Silva |
+| Avaliadores | A1 Gabriel Fae, A2 Lucas Avelar; A3 João Felipe Oliveira só nos desempates |
+| Triagens feitas | T1 e T2 (dia 1); T3, E1, T1-B, T4, T3-B e E2 _a preencher_ |
+| Créditos | 10 antes de T1; 8 depois de T2 |
+| Itens não coletados | _a preencher_ (ou "nenhum") |
+| Desvios do método | _a preencher_ (ou "nenhum") |
+
+A coleta do dia 1 (17/11) terminou às 21:30, horário de Brasília. Como o `screencapture` não está disponível por SSH, as evidências que guardamos são texto do DOM, não imagem.
+
+## 2. Valores medidos
+
+| Métrica | Medida | Valor | Nível | Dados brutos |
+|---------|--------|:-----:|:-----:|--------------|
+| M1.1.1 | Recall@30 normalizado (T1 a T4) | _a preencher_ | _a preencher_ | [M1.1.1/](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G1/M1.1.1) |
+| M1.1.2 | Recall restrito às fontes (T1 a T4) | _a preencher_ | _a preencher_ | [M1.1.2/](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G1/M1.1.2) |
+| M1.2.1 | Funções declaradas operantes (F01 a F09) | _a preencher_ | _a preencher_ | [M1.2.1/](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G1/M1.2.1) |
+| M1.3.1 | Precisão@30 (T1 a T4) e kappa | _a preencher_ | _a preencher_ | [M1.3.1/](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G1/M1.3.1) |
+| M1.3.2 | Metadados e links corretos | _a preencher_ | _a preencher_ | [M1.3.2/](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G1/M1.3.2) |
+| M1.4.1 | Spearman entre Quality Score e rubrica (T1 e T2) | _a preencher_ | _a preencher_ | [M1.4.1/](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G1/M1.4.1) |
+| M1.5.1 | Conformidade com filtros (E1 e E2) | _a preencher_ | _a preencher_ | [M1.5.1/](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G1/M1.5.1) |
+| M1.5.2 | Estabilidade entre execuções (T1 e T3) | _a preencher_ | _a preencher_ | [M1.5.2/](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G1/M1.5.2) |
+
+### Concordância entre os avaliadores (M1.3.1)
+
+O kappa de Cohen mínimo é 0,61. Abaixo disso, o tema passa por um rejulgamento independente e, persistindo, sai da média.
+
+| Tema | Itens avaliados | Itens iguais | Kappa | Decididos por A3 |
+|------|:---------------:|:------------:|:-----:|:----------------:|
+| T1 | _a preencher_ | _a preencher_ | _a preencher_ | _a preencher_ |
+| T2 | _a preencher_ | _a preencher_ | _a preencher_ | _a preencher_ |
+| T3 | _a preencher_ | _a preencher_ | _a preencher_ | _a preencher_ |
+| T4 | _a preencher_ | _a preencher_ | _a preencher_ | _a preencher_ |
+
+## 3. Principais achados
+
+### Dia 1 (T1 e T2)
+
+Em T1 foram 528 artigos, todos do PubMed. SciELO e Google Acadêmico retornaram 0, e as strings tiveram 24 erros de Google Acadêmico. O Top 30 inclui a própria revisão Cochrane de referência, na posição 14, e é majoritariamente meta-análise. Só 3 dos 12 estudos da referência aparecem no Top.
+
+Em T2 foram 517 artigos analisados, todos do PubMed, com 96 incluídos. As strings PubMed do endpoint vieram fragmentadas: as posições 0 a 2 estavam quebradas e as demais terminavam em `AND (` sem o intervalo de datas. SciELO e Google Acadêmico, de novo, retornaram 0.
+
+A lista `decision=include` difere da ordem do Top nos empates, e o Top real é `include_top`.
+
+### Formulário, exportação e cadastro
+
+| Ponto | O que observamos |
+|-------|------------------|
+| Tipo de estudo | O formulário não tem esse campo; a restrição vai dentro do objetivo |
+| Janela de busca | Só aceita 3, 5, 7, 10 ou 20 anos; usamos 20 anos em T1 e T2, e em T1 o relato mais antigo é de 1992 |
+| Projeto reaberto | O objetivo e as bases não aparecem, os critérios não podem ser editados e o PICO não vem com P, I, C e O rotulados |
+| Google Acadêmico | A fonte é gerada nas strings mesmo desmarcada |
+| Créditos | A prévia é gratuita; cada triagem consome 1 crédito (10 para 9 em T1; 9 para 8 em T2) |
+| Exportação | PDF resumo, PDF completo e XLSX; sem CSV nem JSON; o download pela interface não concluiu no Chrome do Mac |
+| Tempo na tela | A estimativa é inconsistente, e a própria tela pede para não fechar a aba |
+| Cadastro | Cria a conta e entra direto, sem verificação de e-mail e com 0 créditos |
+| Recuperação de senha | Depende de um e-mail manual do atendimento, porque o envio automático está indisponível |
+
+### Achados dos dias seguintes
+
+| Métrica | Achado | Evidência |
+|---------|--------|-----------|
+| _a preencher_ | _a preencher_ | _a preencher_ (nome do arquivo em `dados/avaliacao/G1/`) |
+
+## 4. Hipóteses
+
+Uma hipótese é confirmada quando o valor medido cai na faixa que ela previu. Isso não muda o julgamento: mostra se a leitura preliminar da equipe estava certa. As previsões de H1.1 a H1.5 estão em [níveis e julgamento](../fase-2/niveis-e-julgamento.md).
+
+| Hipótese | Medido | Resultado |
+|----------|--------|-----------|
+| H1.1 | _a preencher_ | _confirmada ou refutada_ |
+| H1.2 | _a preencher_ | _confirmada ou refutada_ |
+| H1.3 | _a preencher_ | _confirmada ou refutada_ |
+| H1.4 | _a preencher_ | _confirmada ou refutada_ |
+| H1.5 | _a preencher_ | _confirmada ou refutada_ |
+
+## 5. Respostas às questões
+
+A pontuação de cada questão é a média dos pontos (0 a 3) das suas métricas. M1.1.1 e M1.3.1 são críticas: em Insatisfatório, a questão correspondente não passa de Aceitável. Regras completas em [níveis e julgamento](../fase-2/niveis-e-julgamento.md#2-regras-do-g1-adequacao-funcional).
+
+| Questão | Métricas | Nível | Resposta |
+|---------|----------|:-----:|----------|
+| Q1.1 | M1.1.1 e M1.1.2 | _a preencher_ | _a preencher_ |
+| Q1.2 | M1.2.1 | _a preencher_ | _a preencher_ |
+| Q1.3 | M1.3.1 e M1.3.2 | _a preencher_ | _a preencher_ |
+| Q1.4 | M1.4.1 | _a preencher_ | _a preencher_ |
+| Q1.5 | M1.5.1 e M1.5.2 | _a preencher_ | _a preencher_ |
+
+O objetivo G1 é a média das cinco questões e não passa de Bom se alguma ficar em Insatisfatório. Métricas medidas: _a preencher_ de 8.
+
+## 6. Limitações
+
+- A coleta do dia 1 não tem capturas de imagem, só texto do DOM.
+- O Google Acadêmico foi consultado aos poucos, com pausas, para evitar bloqueio por excesso de consultas.
+- _a preencher_: itens não coletados, mudanças em produção durante a coleta e diferenças entre as execuções.
+
+## Histórico de versão
+
+| Versão | Data | Descrição | Autor(a) | Revisor(a) |
+|--------|------|-----------|----------|------------|
+| 0.1 | 17/11/2026 | Estrutura da página de resultados do G1 e relato do dia 1 da coleta | Larissa Gomes Silva | - |
