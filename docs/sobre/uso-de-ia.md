@@ -13,6 +13,7 @@ A rubrica da disciplina exige declarar **a ferramenta**, **a tarefa** e **como o
 | Claude (Anthropic) | Scripts `coletar.sh`, `extrair.py` e `calcular.py` (G3) e `calcular_g1.py` (G1) | Os números do G3 foram conferidos contra as saídas brutas das ferramentas. O `calcular_g1.py` foi testado contra o scipy e o scikit-learn | Lucas Avelar |
 | Claude (Anthropic) | Execução das ferramentas do G3 sobre o commit `c2ae570` do VICKY | Os valores foram conferidos contra as saídas brutas, e a coleta foi rodada duas vezes, com os mesmos resultados (`dados/avaliacao/G3/repeticao-autor-2026-11-14.md`) | Lucas Avelar |
 | Claude (Anthropic) | Pesquisa das revisões sistemáticas de referência do G1 | DOI, PMID, PMCID e número de incluídos de cada revisão conferidos no PubMed e no PMC em 14/11/2026 (`dados/avaliacao/G1/referencias/referencias.md`) | Lucas Avelar |
+| Claude (Anthropic) | Montagem das fichas cegas dos testes do G1 (`ficha_cega_Tn.csv`, em ordem aleatória, sem posição nem Quality Score) | A ordem vem do `calcular_g1.py`, com a semente do método, e foi conferida pela Larissa contra o Top 30 de cada tema | Larissa Gomes Silva |
 
 ## Histórico de versão
 

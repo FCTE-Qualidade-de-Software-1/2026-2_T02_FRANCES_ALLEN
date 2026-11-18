@@ -265,7 +265,7 @@ Itens que dependem de decisão da equipe. Cada um tem o requisito que precisa se
 | Item | Requisito | Responsável | Até |
 |------|-----------|-------------|-----|
 | Créditos de cortesia | Conferir na etapa 2 do G1 se o saldo continua em 10 (eram 10 em 14/11; são necessários 8). Com menos, vale a ordem de prioridade do G1 e a decisão de comprar ou não fica com a equipe | Condutor do G1 (#26) | 16/11, antes da etapa 3 do G1 |
-| Avaliadores do G1 | Definidos em 14/11 no PR #33: C Larissa Gomes, A1 João Felipe Oliveira, A2 Gabriel Fae e A3 Lucas Avelar. Atendem às restrições: C fora do julgamento; A1 e A2 não escolheram as revisões nem leram as listas de incluídos; A3 (quem escolheu as revisões) só desempata | Equipe | Resolvido em 14/11 |
+| Avaliadores do G1 | C Larissa Gomes, A1 Gabriel Fae, A2 Lucas Avelar e A3 João Felipe Oliveira. Definição inicial de 14/11 (PR #33) trocada por decisão da Larissa em 17/11/2026 | Equipe | Resolvido em 17/11 |
 | Avaliadores do G2 por inspeção | Definir A1, A2 e A3, com A2 sem ter lido o código | Responsável pela #27 | Já em andamento; registrar em `coleta.md` |
 | Avaliadores do G2 com usuários | Definir C, O e A3 das sessões, K1 e K2 do teclado e A1 e A2 do contraste | Responsável pela #28 | 15/11 |
 | Repetição do G3 | Definir o A2 que repete a coleta em outra máquina e o A3 da inspeção de M3.2.3 | Responsável pela #29 | 16/11 |

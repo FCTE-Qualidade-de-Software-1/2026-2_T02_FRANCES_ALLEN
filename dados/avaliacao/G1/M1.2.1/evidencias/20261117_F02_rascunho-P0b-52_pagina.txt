@@ -1,0 +1,46 @@
+V
+Vicky
+TRIAGEM COM IA
+NAVEGAR
+Dashboard
+Projetos
+Favoritos
+Configurações
+V0.1.0
+OPERACIONAL
+PROJETO #52 · CRIADO EM 17/11/2026
+Colchicina na prevenção secundária de eventos cardiovasculares em adultos com doença aterosclerótica
+10
+CRÉDITOS
+Comprar mais créditos
+L
+[TITULAR DA CONTA]
+Voltar
+RASCUNHO
+🔬 Revisão sistemática
+Ver todos os artigos (0)
+Só texto completo gratuito 
+▶ Iniciar pipeline
+CONSOME 1 CRÉDITO
+⚙️ Pipeline (sequência de ações executadas)
+Pipeline ainda não iniciado. Clique em Iniciar pipeline acima.
+🎯 Performance das strings de busca (taxa de inclusão por substring)
+
+Cada substring busca um ângulo diferente do tema. Após a primeira passada de análise, as substrings com maior taxa de inclusão ganham orçamento adicional ("expand winners"); as que retornam 0 inclusões em ≥30 análises são "queimadas" e não rodam mais.
+
+Aguardando geração de substrings pelo Discovery agent…
+🎯 META DO TOP
+0/10
+Aguardando análise
+Resumo
+Artigos
+0
+Incluídos
+0
+Excluídos
+0
+VICKY · TRIAGEM ASSISTIDA POR IA
+[TITULAR DA CONTA]
+Synaptha Inc Ltda · CNPJ 63.642.396/0001-90
+Quadra SIG Quadra 4, nº 75, Bloco C, Sala 09 e 10, Parte 36, Edifício Capital Financial Center, Zona Industrial, Brasília - DF, CEP 70610-440
+Atendimento: vickyangel@gmail.com · Termos de Uso · Política de Privacidade
