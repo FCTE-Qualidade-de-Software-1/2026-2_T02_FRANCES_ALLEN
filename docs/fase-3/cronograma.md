@@ -14,7 +14,7 @@ A versão 0.2 replaneja as datas a partir da situação de 14/11/2026. Os métod
 | 14/11/2026 (sáb) | Métodos da Fase 3 fechados (G1, G2 por inspeção, G2 com usuários e G3), recursos e consistência; coleta do G3 | Feito |
 | 15/11/2026 (dom) | Revisão de cada página pelo dono original; release da Fase 3 até 23h59 | Previsto |
 | **16/11/2026 (seg), 14h** | **Ponto de controle da disciplina: Fase 3 completa e correções da Entrega 1** | Previsto |
-| 18/11/2026 (qua) | Ponto de controle interno: inspeção do G2 e sessões com participantes fechadas; seis das oito triagens do G1 feitas; dados brutos no repositório | Previsto |
+| 18/11/2026 (qua) | Ponto de controle interno: inspeção do G2 e sessões com participantes fechadas; seis das oito triagens do G1 feitas; dados brutos no repositório | Previsto; sessões replanejadas para 19 a 21/11 pela D13 |
 | 19/11/2026 (qui) | Últimas triagens do G1 (T3-B e E2) | Previsto |
 | 20/11/2026 (sex) | Fim da coleta do G1 (conferências, kappa e cálculo); julgamento, conclusões e ação de melhoria medida antes e depois | Previsto |
 | 21/11/2026 (sáb) | Artigo v2 fechado; revisão cruzada do artigo e da GitPage | Previsto |
@@ -52,7 +52,9 @@ _Tabela 2 - Atividades da Fase 3, com responsável, issue, datas, dependências 
 | Coleta do G1, dia 4: triagens T3-B (48 horas depois de T3) e E2 | Larissa Gomes | #26 | 19/11 | 19/11 | dia 2 |
 | Coleta do G1, dias 2 a 5: julgamento de A1 e A2, conferências, kappa, discordâncias e cálculo | Larissa Gomes, com A1, A2 e A3 | #26 | 17/11 | 20/11 | fichas cegas de cada tema |
 | Recrutamento, piloto e preparação das sessões | João Felipe Oliveira | #28 | 14/11 | 16/11 | #22; projeto T1 triado e exportado (16/11) |
-| Sessões com participantes (cinco válidas, códigos P01 a P07), no máximo três por dia | João Felipe Oliveira | #28 | 16/11 | 18/11 | recrutamento; piloto; termo |
+| Sessões com participantes (cinco válidas, códigos P01 a P07), no máximo três por dia | João Felipe Oliveira | #28 | 16/11 | 18/11 | recrutamento; piloto; termo. **Não realizadas**: substituídas pelas duas linhas seguintes ([D13](../gestao/decisoes.md#d13-adaptar-a-coleta-com-usuarios-ao-prazo-da-entrega-2)) |
+| Piloto remoto, formulário de estética montado e novo convite | Condutores do G2 com usuários | #28 | 19/11 | 19/11 | método do G2 com usuários v0.6 |
+| Sessões remotas (três válidas, P01 a P05) e formulário de estética (cinco respostas válidas, R01 a R05) | Condutores escalados por sessão | #28 | 19/11 | 21/11 | piloto remoto; formulário aberto |
 | Teste com teclado e contraste (M2.6.1 e M2.6.2) | João Felipe Oliveira, com K1, K2, A1 e A2 | #28 | 16/11 | 18/11 | #22; uma triagem do G1 para F05 |
 | Ação de melhoria: refatoração de `run_full_pipeline` em `src/vicky/pipeline.py`, com `logging` no lugar de `print` | Guilherme Moura | #29 | 18/11 | 20/11 | coleta do G3 (linha de base de 14/11) |
 | Medida depois da melhoria: método do G3 no commit da melhoria (`COMMIT=<hash> coletar.sh`) | Guilherme Moura | #29 | 20/11 | 20/11 | ação de melhoria |
@@ -67,7 +69,7 @@ _Tabela 3 - Atividades da Fase 4, com responsável, issue, datas e dependências
 
 - **O G3 vem primeiro e já foi feito.** Não usa a produção nem créditos, e a coleta de 14/11 é a linha de base da ação de melhoria.
 - **O G1 começa em 16/11 pela triagem T1 e tem no máximo duas triagens por dia.** T1 libera a etapa 6 da inspeção, a parte B das sessões e F05 a F09 do teste com teclado. O dia 16 tem também o ponto de controle das 14h, por isso recebe só T1 e T2; as outras seis triagens se dividem de 17 a 19/11, duas por dia, o que também respeita o limite diário de prévias por conta. T1-B e T3-B ficam 48 horas depois de T1 e T3, no meio da faixa de 24 a 72 horas. Conferências, kappa e cálculo fecham em 20/11, porque E2 só sai em 19/11.
-- **As sessões ficam entre 16 e 18/11.** O piloto e a primeira sessão só acontecem depois que o projeto T1 foi triado e exportado; com no máximo três sessões por dia, as cinco cabem em 17 e 18/11, e 16/11 fica para o piloto e uma sessão, se houver participante.
+- **As sessões ficam entre 16 e 18/11.** O piloto e a primeira sessão só acontecem depois que o projeto T1 foi triado e exportado; com no máximo três sessões por dia, as cinco cabem em 17 e 18/11, e 16/11 fica para o piloto e uma sessão, se houver participante. **Replanejado em 19/11 ([D13](../gestao/decisoes.md#d13-adaptar-a-coleta-com-usuarios-ao-prazo-da-entrega-2)):** nenhuma sessão aconteceu até 18/11, e a coleta com usuários passou para 19 a 21/11, com formulário de estética assíncrono e três sessões remotas.
 - **Julgamento e ação de melhoria correm juntos, de 18 a 20/11.** O julgamento começa pelo G3 e pela inspeção do G2, que fecham primeiro; o G1 entra em 20/11. A melhoria toca as métricas M3.1.2 e M3.2.3 e é medida antes e depois pelo mesmo método do G3, só trocando o commit.
 - **O artigo v2 começa em 19/11** com o rascunho do julgamento e fecha em 21/11, a tempo da revisão cruzada.
 
@@ -89,7 +91,7 @@ gantt
     Inspeção do G2 (#27)                       :active, f4c, 2026-11-13, 2026-11-19
     Coleta do G1 (#26)                         :f4d, 2026-11-16, 2026-11-21
     Recrutamento e piloto (#28)                :f4e, 2026-11-14, 2026-11-17
-    Sessões, teclado e contraste (#28)         :f4f, 2026-11-16, 2026-11-19
+    Sessões, teclado e contraste (#28)         :f4f, 2026-11-16, 2026-11-22
     Ação de melhoria (#29)                     :f4g, 2026-11-18, 2026-11-21
     Julgamento e conclusões (#30)              :f4h, 2026-11-18, 2026-11-21
     Artigo v2 e página da Fase 4 (#31)         :f4i, 2026-11-19, 2026-11-22
@@ -113,7 +115,7 @@ A coleta da medição do projeto segue o [plano de medição](../gestao/plano-de
 |-------|--------|----------|
 | Créditos de cortesia insuficientes para as oito triagens do G1 | Métricas do G1 sem coleta em algum tema | Saldo de 10 créditos confirmado em 14/11 (8 necessários, 2 de reserva); reconferir na etapa 2 do G1, em 16/11; com menos de oito, seguir a ordem de prioridade do [método do G1](metodo-g1.md#35-contas-creditos-e-divisao-das-triagens), que preserva as métricas críticas |
 | Triagem T1 atrasada ou com falha em 16/11 | Inspeção (etapa 6), sessões (parte B) e teste com teclado (F06 a F09) parados | T1 é a primeira triagem do G1; se falhar, repetir com a mesma configuração (método do G1, seção 7.3). Se T1 não estiver triado na véspera da P01, as sessões usam o projeto triado mais antigo do G1, como prevê o método do G2 com usuários |
-| Menos de cinco participantes válidos até 18/11 | M2.5.1 e M2.7.2 não coletadas | Duas reservas (P06 e P07) convidadas desde o início. Com menos de cinco sessões válidas, o método **não calcula** as duas métricas e a Fase 4 as declara não coletadas, sem proporção sobre quatro |
+| Menos de cinco participantes válidos até 18/11 | M2.5.1 e M2.7.2 não coletadas | **Ocorreu**: nenhuma sessão até 18/11, porque os estudantes recrutados estavam no Intermed. Resposta pela [D13](../gestao/decisoes.md#d13-adaptar-a-coleta-com-usuarios-ao-prazo-da-entrega-2): formulário assíncrono para M2.5.1 e sessões remotas com três participantes para M2.7.2, até 21/11. Sem três sessões ou cinco respostas válidas até a Fase 4, a métrica correspondente não é calculada |
 | Limite de prévias por IP atingido no mesmo dia | Sessão ou triagem bloqueada | Sessões na rede do celular do condutor, no máximo três por dia; a etapa E08 da inspeção em outro dia e outra rede ([recursos e ambiente, seção 2.3](recursos-e-ambiente.md#23-limites-de-uso-do-vicky)) |
 | Rodada 2 do julgamento do G1 cair em 21/11 | Rejulgamento depois de kappa baixo fora do período de coleta, no dia do artigo v2 | Julgar primeiro os temas com triagem mais antiga; se a rodada 2 não couber até 20/11, registrar o desvio e usar a regra de temas válidos do [Método do G1](metodo-g1.md#7-discordancia-e-repeticao) |
 | Avaliadores não definidos ou sem a independência exigida | Julgamento de M1.3.1, M1.4.1 e das fichas do G2 sem validade | Definir os papéis até 15/11 ([decisões pendentes](recursos-e-ambiente.md#6-decisoes-pendentes-antes-da-coleta)); pela D12, papel sem dono é assumido por outro integrante |
@@ -132,3 +134,4 @@ _Tabela 4 - Riscos do cronograma, efeito e resposta prevista. Fonte: elaborada p
 | 0.2 | 14/11/2026 | Replanejamento a partir de 14/11: fim da Fase 3 com revisão dos donos em 15/11, partes da Fase 3 assumidas pela D12, Fase 4 com o G3 já coletado, G1 de 16 a 19/11, sessões de 16 a 18/11, julgamento e ação de melhoria de 18 a 20/11, artigo v2 de 19 a 21/11, gantt e riscos atualizados | Lucas Avelar | - |
 | 0.3 | 14/11/2026 | G1 com no máximo duas triagens por dia, de 16 a 19/11, e cálculo em 20/11; atraso medido contra o ponto de controle de 11/11; risco do recrutamento no fim de semana; legendas das tabelas e da figura, com descrição do gantt | Lucas Avelar | - |
 | 0.4 | 15/11/2026 | Saldo de créditos confirmado e risco da rodada 2 do G1 em 21/11, a partir da revisão da Larissa | Lucas Avelar | - |
+| 0.5 | 19/11/2026 | Sessões de 16 a 18/11 não realizadas; coleta com usuários replanejada para 19 a 21/11 pela D13 (formulário de estética e sessões remotas) e risco de participantes marcado como ocorrido | Gabriel Fae | - |

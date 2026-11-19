@@ -2,7 +2,7 @@
 
 Cada decisão cita a medição que a motivou, o que fecha o ciclo exigido pela Premissa 3: **medição → interpretação → decisão**. O efeito de cada decisão é verificado na coleta do ciclo seguinte, na coluna "Resultado".
 
-A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta parcial de 28/10](registro-de-medicoes.md#4-ciclo-2-parcial-2610-a-2810). A verificação de D05, D06, D08, D09 e D10 e as decisões D11 e D12 foram feitas na [coleta de 13/11](registro-de-medicoes.md#7-ciclo-4-parcial-0911-a-1311), que também fechou os ciclos 2 e 3.
+A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta parcial de 28/10](registro-de-medicoes.md#4-ciclo-2-parcial-2610-a-2810). A verificação de D05, D06, D08, D09 e D10 e as decisões D11 e D12 foram feitas na [coleta de 13/11](registro-de-medicoes.md#7-ciclo-4-parcial-0911-a-1311), que também fechou os ciclos 2 e 3. A D13 foi tomada em 19/11, a partir do cronograma da coleta com usuários.
 
 ## 1. Resumo
 
@@ -20,6 +20,7 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | D10 | 28/10/2026 | DP2 com 0 chegadas e WIP = 0 · nenhuma issue aberta depois de 19/10 · milestone E2 inexistente em 04/11 | Planejar o ciclo no GitHub antes de ele começar: milestone com data, issues estimadas e marco do ciclo | **Parcialmente executada**: milestones e issues em 04/11, sem horas; E1 ainda aberta |
 | D11 | 13/11/2026 | CP1 com desvio de 54,0 p.p. · SPI de 0,35 (0,20 por contagem) · 1 de 6 métodos da Fase 3 fechado (ciclo 4) | Recuperar os métodos da Fase 3 antes do ponto de controle de 16/11 | Proposta |
 | D12 | 13/11/2026 | RC3 com 1 de 6 integrantes com commit (ciclo 4) · horas de 5 integrantes impossíveis de obter · CP1 com desvio de 54,0 p.p. | Trabalho não entregue é assumido por outro integrante, combinado em separado pelo WhatsApp, e comunicado à professora | Adotada |
+| D13 | 19/11/2026 | 0 de 5 sessões com participantes realizadas no período previsto (16 a 18/11) · público-alvo indisponível até a entrega (Intermed) | Adaptar a coleta com usuários: M2.5.1 em formulário assíncrono e M2.7.2 em sessões remotas com três participantes | Adotada |
 
 ## 2. Detalhamento
 
@@ -146,6 +147,17 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | Efeito esperado na medição | A issue redistribuída passa a ser do novo responsável, de modo que CP1, DP1 e o RC3 reflitam quem fez o trabalho. Como as horas dos demais integrantes não podem ser obtidas, RC1 e RC2 da equipe ficam fora do alcance desta medição e passam a ser relatados só para quem registra horas |
 | Resultado no ciclo seguinte | _A verificar em 15/11: redistribuições feitas, comunicação à professora e issues reatribuídas no GitHub_ |
 
+### D13 - Adaptar a coleta com usuários ao prazo da Entrega 2
+
+| Item | Registro |
+|------|----------|
+| Medição | Cronograma da Fase 4 (#28): as cinco sessões de M2.5.1 e M2.7.2 estavam previstas de 16 a 18/11, e **0 de 5** foram realizadas até 18/11 (`dados/avaliacao/G2/M2.7.2/sessoes.csv` só com o cabeçalho). A entrega final é em 22/11 |
+| Interpretação | O risco "menos de cinco participantes válidos até 18/11", previsto no [cronograma](../fase-3/cronograma.md#4-riscos-do-cronograma), ocorreu. A causa é externa e não se resolve até a entrega: os estudantes de Medicina recrutados estavam comprometidos com o Intermed, e os integrantes têm aula nos horários em que uma sessão presencial de 75 minutos caberia. Pela regra do método (versão 0.5), M2.5.1 e M2.7.2 não seriam calculadas, e Q2.5 ficaria sem resposta |
+| Decisão | Antes de qualquer sessão: (1) M2.5.1 passa a um **formulário online assíncrono**, com cinco respondentes e o mesmo limiar; (2) M2.7.2 passa a **sessões remotas individuais** pelo Google Meet, de cerca de 1 hora, com **três participantes válidos** e regra da maioria (2 de 3); (3) o condutor deixa de ser uma pessoa fixa (qualquer integrante que tenha conduzido ou assistido ao piloto) e o observador passa a ser opcional. Alternativas descartadas: declarar as duas métricas não coletadas; usar estudantes de outros cursos; passar também a compreensão para formulário. Detalhes em [Método do G2 com usuários, seção 2.8](../fase-3/metodo-g2-usuarios.md#28-adaptacao-da-versao-06-d13) |
+| Responsável | Gabriel Fae, pela atualização do método, dos instrumentos, do termo e da Fase 2; condutores escalados por sessão, pela coleta. A mudança foi comunicada a João Felipe Oliveira, autor do roteiro de M2.7.2 |
+| Efeito esperado na medição | M2.5.1 calculável com n = 5 e M2.7.2 com n = 3 até 21/11, com o resultado de M2.7.2 apresentado como indicativo. Ameaças à validade (amostra de três, estética sem uso prévio, ambiente remoto não controlado) declaradas na Fase 4 |
+| Resultado no ciclo seguinte | _A verificar na entrega de 22/11: sessões e respostas válidas obtidas e métricas calculadas ou declaradas não coletadas_ |
+
 ## Histórico de versão
 
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
@@ -156,3 +168,4 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | 0.4 | 28/10/2026 | Verificação de D01 a D07 pela coleta parcial do ciclo 2 e registro das decisões D08 (remanejamento das divisões), D09 (canal assíncrono) e D10 (planejamento do ciclo no GitHub) | Gabriel Fae | - |
 | 0.5 | 13/11/2026 | Verificação de D05, D06, D08, D09 e D10 pela coleta de 13/11 e registro da decisão D11 (recuperar os métodos da Fase 3) | Gabriel Fae | - |
 | 0.6 | 13/11/2026 | Decisão D12 (redistribuir o trabalho não entregue, com comunicação à professora) e D10 atualizada com a linha de base de horas da E2 | Gabriel Fae | - |
+| 0.7 | 19/11/2026 | Decisão D13 (adaptar a coleta com usuários: formulário assíncrono para M2.5.1 e sessões remotas com três participantes para M2.7.2) | Gabriel Fae | - |
