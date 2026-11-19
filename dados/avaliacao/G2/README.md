@@ -31,6 +31,15 @@ As oito pastas da inspeção (M2.1.1, M2.2.1, M2.2.2, M2.3.1, M2.3.2, M2.4.1, M2
 
 **Como preencher pelo GitHub:** abra o arquivo, clique no lápis (*Edit this file*), escreva entre as barras `|` de cada linha e clique em *Commit changes*. Para as capturas, entre em `evidencias/` e use *Add file > Upload files*.
 
+**Etapa 7 (consolidação).** Depois que `A1.md` e `A2.md` estiverem no repositório, a partir da raiz:
+
+```bash
+python3 dados/avaliacao/G2/calcular_g2_inspecao.py comparar   # preenche valor_a1, valor_a2 e os consensos; lista as divergências
+python3 dados/avaliacao/G2/calcular_g2_inspecao.py calcular   # lê só valor_final e escreve o "Resultado" de cada consolidado.md
+```
+
+Em cada divergência, A1 e A2 preenchem `valor_final`, `justificativa` e `decidido_por` no `consolidado.md` antes de rodar `calcular`. Os inventários foram entregues a A2 em 17/11 também como planilhas (`modelo.csv` e `inventario.csv`, no branch `docs/fase-3-cronograma-e-correcoes-e1`); se a ficha de A2 vier como `A2.csv` nesse modelo, o script lê a planilha no lugar de `A2.md`.
+
 ## Fichas da coleta com usuários e de acessibilidade
 
 As quatro pastas do [Método do G2 com usuários](../../../docs/fase-3/metodo-g2-usuarios.md) (M2.5.1, M2.6.1, M2.6.2 e M2.7.2) trazem as fichas em branco e os modelos CSV só com o cabeçalho:

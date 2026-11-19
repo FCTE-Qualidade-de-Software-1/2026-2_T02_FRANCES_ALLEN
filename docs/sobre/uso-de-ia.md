@@ -12,6 +12,7 @@ A rubrica da disciplina exige declarar **a ferramenta**, **a tarefa** e **como o
 | Claude (Anthropic) | Redação dos métodos do G1, do G2 com usuários e do G3, da página de recursos e ambiente, do cronograma, da tabela de consistência, dos instrumentos do G2 com usuários e do termo de consentimento (Fase 3) | Lucas Avelar conferiu cada método contra as fichas da Fase 2 e contra o código do VICKY. Cada dono original revisa a sua página em 15/11/2026; até essa revisão, as páginas constam como escritas, não revisadas | Lucas Avelar |
 | Claude (Anthropic) | Scripts `coletar.sh`, `extrair.py` e `calcular.py` (G3) e `calcular_g1.py` (G1) | Os números do G3 foram conferidos contra as saídas brutas das ferramentas. O `calcular_g1.py` foi testado contra o scipy e o scikit-learn | Lucas Avelar |
 | Claude (Anthropic) | Execução das ferramentas do G3 sobre o commit `c2ae570` do VICKY | Os valores foram conferidos contra as saídas brutas, e a coleta foi rodada duas vezes, com os mesmos resultados (`dados/avaliacao/G3/repeticao-autor-2026-11-14.md`) | Lucas Avelar |
+| Claude (Anthropic) | Coleta de A1 do G2 por inspeção (#27): inventários das mensagens a partir do código, transcrição das anotações de campo para as fichas, classificação das mensagens na etapa 5, complemento da etapa 6 com os registros de texto do G1 e o código, recapturas das páginas públicas com navegador sem interface e o script `calcular_g2_inspecao.py` | A1 fez a inspeção em produção em 17/11 e decidiu os pontos de dúvida daquela sessão. Cada mudança de 19/11 está justificada nas notas da ficha `A1.md` da métrica e foi revisada e aprovada por A1 no mesmo dia. O script foi testado com fichas simuladas, inclusive com a planilha antiga de A2 | Gabriel Fae |
 | Claude (Anthropic) | Pesquisa das revisões sistemáticas de referência do G1 | DOI, PMID, PMCID e número de incluídos de cada revisão conferidos no PubMed e no PMC em 14/11/2026 (`dados/avaliacao/G1/referencias/referencias.md`) | Lucas Avelar |
 
 ## Histórico de versão
@@ -22,3 +23,4 @@ A rubrica da disciplina exige declarar **a ferramenta**, **a tarefa** e **como o
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 18/10/2026 | Declaração do uso de IA no objetivo G1 | Larissa Gomes Silva | - |
 | 0.4 | 14/11/2026 | Declaração do uso de IA na Fase 3, linha do G2 marcada a confirmar e correções de texto | Lucas Avelar | - |
+| 0.5 | 19/11/2026 | Declaração do uso de IA na coleta de A1 do G2 por inspeção | Gabriel Fae | - |
