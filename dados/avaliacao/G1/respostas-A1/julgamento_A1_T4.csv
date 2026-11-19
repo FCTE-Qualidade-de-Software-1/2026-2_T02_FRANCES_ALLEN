@@ -1,0 +1,31 @@
+item,relevante,componente_que_falhou,justificativa
+T4-01,nao,desfecho,Estudo de interação farmacocinética da vatiquinona; não mede progressão neurológica ou funcional.
+T4-02,nao,desenho,Extensão aberta de 12 meses após o ensaio IONIA; o resultado avaliado vem da fase não randomizada.
+T4-03,sim,,"Ensaio randomizado duplo-cego controlado por placebo (MOXIe) com omaveloxolona em pacientes com ataxia de Friedreich, com escala neurológica (mFARS)."
+T4-04,sim,,"Ensaio randomizado duplo-cego controlado por placebo com luvadaxistat em adultos com ataxia de Friedreich, com desfecho funcional (teste de nove pinos)."
+T4-05,nao,populacao,Estudo de intervalo QT em voluntários sadios.
+T4-06,sim,,"Ensaio randomizado duplo-cego de fase I/II com RT001 em pacientes com ataxia de Friedreich, com desfechos funcionais secundários (carga máxima no exercício e marcha cronometrada)."
+T4-07,nao,populacao,Estudo farmacocinético em primatas.
+T4-08,nao,desfecho,Estudo sobre níveis de interleucina-6 em pacientes tratados; não mede progressão neurológica ou funcional.
+T4-09,nao,populacao,Estudo de biodisponibilidade em voluntários sadios.
+T4-10,sim,,"Ensaio randomizado duplo-cego controlado por placebo com idebenona em 48 pacientes com ataxia de Friedreich, com efeito neurológico como desfecho."
+T4-11,nao,desfecho,"Ensaio fatorial cujo desfecho é a aptidão cardiopulmonar, e não a progressão neurológica ou funcional pela escala de ataxia."
+T4-12,nao,desenho,Análise de início tardio da extensão aberta do MOXIe; a comparação não é randomizada.
+T4-13,nao,desfecho,Série de cinco pacientes com marcadores de estresse oxidativo como desfecho.
+T4-14,nao,desenho,Revisão narrativa de terapias em desenvolvimento.
+T4-15,nao,desfecho,"Ensaio randomizado cujo desfecho primário é a área da medula espinhal na ressonância magnética, e não escala neurológica ou funcional."
+T4-16,nao,desenho,"Estudo piloto aberto com oito pacientes, sem grupo controle."
+T4-17,nao,populacao,Triagem de reposicionamento de fármacos em modelos celulares.
+T4-18,nao,desenho,"Coorte prospectiva de vida real, sem grupo controle randomizado."
+T4-19,nao,desfecho,Estudo de efeito do alimento e de esquema posológico sobre a biodisponibilidade da vatiquinona.
+T4-20,nao,desenho,Relato de experiência clínica com cinco pacientes.
+T4-21,nao,desenho,Revisão sistemática com meta-análise; o desenho pedido é ensaio clínico randomizado.
+T4-22,nao,populacao,Ensaio com pacientes com ataxia espinocerebelar ou de Friedreich (2:1); a população é mais ampla que a do tema.
+T4-23,nao,desenho,Comparação por escore de propensão entre a extensão aberta e dados de história natural; não é ensaio randomizado.
+T4-24,nao,desenho,Revisão de especialistas sobre os ensaios da omaveloxolona.
+T4-25,nao,desfecho,"Estudos de fase I com desfechos de segurança, farmacocinética e níveis de frataxina."
+T4-26,sim,,"Ensaio randomizado controlado por placebo de fase 2 com omaveloxolona em 69 pacientes com ataxia de Friedreich, com a escala mFARS entre os desfechos."
+T4-27,sim,,"Ensaio randomizado duplo-cego controlado por placebo com EPI-743, com a escala FARS entre os desfechos."
+T4-28,nao,desfecho,Estudo em modelo celular e de fase I com segurança e marcadores substitutos como desfechos.
+T4-29,nao,populacao,Estudo em modelos celulares.
+T4-30,nao,desfecho,Estudo piloto aberto com níveis de frataxina como desfecho primário.
