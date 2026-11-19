@@ -34,3 +34,30 @@ bfe32c2,2026-11-04,14:38,LucasAvelar2711,novo,167,4,False,Fase 3: estrutura das 
 3dd61ca,2026-11-04,14:39,Faehzin,retrabalho,141,7,False,fix: adição dos graficos corretamente
 818062c,2026-11-09,11:07,Faehzin,novo,497,10,False,adição da fase 03 em rascunho
 e642ffb,2026-11-13,21:39,Faehzin,novo,1380,39,False,"ajustes fase 03, adição de base pra fase 04 e correção fase 02."
+3486398,2026-11-13,22:19,Faehzin,novo,524,30,False,ajuste PSM ciclos anteriores. Graficos de comparação de ciclos
+9965705,2026-11-14,21:06,LucasAvelar2711,novo,6440,61,False,Fase 3: método do G3 e coleta de M3.1.1 a M3.3.1 no commit c2ae570
+239b103,2026-11-14,21:15,LucasAvelar2711,novo,876,33,False,"Fase 3: método do G2 com usuários, instrumentos e termo de consentimento"
+9426431,2026-11-14,21:16,LucasAvelar2711,retrabalho,2,2,False,Fase 3: define a página inicial do M2.5.1 como o painel após o login
+4487a18,2026-11-14,21:18,LucasAvelar2711,novo,1090,44,False,docs(fase-3): método completo de coleta do G1 e script de cálculo
+fbf1f76,2026-11-14,21:26,LucasAvelar2711,novo,330,95,False,"Fase 3: recursos, ambiente e consistência; cronograma replanejado"
+c293789,2026-11-14,21:28,LucasAvelar2711,retrabalho,38,29,False,"Fase 3: coerência entre métodos (avaliadores K1/K2, Top 1 a 30, versão do Chrome, termo, fonte de M3.2.3) e justificativa do método por inspeção"
+01a1ecc,2026-11-14,21:43,LucasAvelar2711,novo,146,15,False,"Gestão e apresentação: atas da E2, declaração de uso de IA na Fase 3, rodapé v0.4 e página inicial"
+93b1f01,2026-11-14,21:48,LucasAvelar2711,retrabalho,217,77,False,"Fase 3: revisões de referência conferidas, fork privado, alterações na Fase 2 e M3.2.3 alinhada à ficha"
+82ae64e,2026-11-14,21:52,LucasAvelar2711,retrabalho,149,64,False,"Fase 3: coerência entre métodos, cronograma replanejado, glossário e dados de participantes"
+9d74637,2026-11-14,21:56,LucasAvelar2711,retrabalho,6,6,False,Coleta do G3: caminhos locais da máquina de coleta normalizados
+6b2cdf2,2026-11-14,22:00,LucasAvelar2711,retrabalho,9,9,False,Uso de IA: ferramenta descrita de forma genérica
+81df37d,2026-11-14,22:02,LucasAvelar2711,retrabalho,9,9,False,"Uso de IA: ferramenta identificada pelo nome, como pede a rubrica"
+31438fb,2026-11-14,23:13,larigs,retrabalho,50,31,False,Método do G1: revisão da versão 0.4
+b7dba8c,2026-11-15,19:03,LucasAvelar2711,retrabalho,13,7,False,Fase 3: revisões da Larissa e do João propagadas para as demais páginas
+798d72a,2026-11-17,16:27,Faehzin,novo,618,0,False,"A1: análise de inventário completa, enviando para A2"
+1f2b47e,2026-11-17,19:46,Faehzin,novo,33,33,False,"A1: registro de ambiente da coleta do G2 por inspeção, em processo de finalização"
+0aed6ec,2026-11-17,22:07,larigs,novo,10129,1,False,"G1: dados do dia 1 da coleta (T1 e T2), papéis dos avaliadores e declaração de uso de IA nas fichas cegas"
+e3c06d2,2026-11-17,22:26,larigs,novo,116,0,False,Página de resultados do G1 (v0.1)
+92f0777,2026-11-18,13:04,larigs,novo,415,0,False,Dados do dia 2 do G1 (18/11): T3 e E1
+e605653,2026-11-18,15:26,larigs,novo,18,18,False,"G1: Scholar de T3 conferido (M1.1.2, complemento do dia 2)"
+3622c7a,2026-11-18,15:27,larigs,retrabalho,2,2,False,G1: corrige chave do M1.1.2 em calcular_g1.py (estudo_id e relato_id)
+998f526,2026-11-18,15:30,larigs,novo,2,0,False,Gestão: horas da coleta do G1 (dias 1 e 2) no esforço
+3c7d86a,2026-11-18,15:34,larigs,retrabalho,1,1,False,Gestão: ajusta horas do dia 1 da coleta do G1 (20:00 a 22:30)
+b398fc9,2026-11-18,15:35,LucasAvelar2711,novo,47,2,True,"Fase 4: estrutura da página com resultados por objetivo, caminho da medida ao julgamento e registro de desvios (#31)"
+ec0671e,2026-11-18,15:37,larigs,novo,22,4,False,Página de resultados do G1: dia 2 (T3 e E1) e conferência no Google Acadêmico
+bbd77f9,2026-11-19,00:42,Faehzin,retrabalho,247,130,False,G2 com usuários: coleta adaptada pela D13 (formulário de estética e sessões remotas)
