@@ -9,14 +9,14 @@ Esta página reúne o resultado das oito métricas do G1, conforme o [Método do
 
 | Campo | Valor |
 |-------|-------|
-| Período | início em 17/11/2026; fim _a preencher_ |
+| Período | início em 17/11/2026; fim previsto em 20/11/2026 (_a preencher_ quando o dia 4 fechar) |
 | Produto | VICKY em produção, <https://vicky.synaptha.com/> |
-| Versão de referência | Termos de Uso de 29/09/2026 |
-| Navegador | Google Chrome 157.0.8103.79 |
+| Versão de referência | Termos de Uso de 29/09/2026, acessados em 17/11/2026 |
+| Navegador | Google Chrome 157.0.8103.79; área visível e zoom não registrados |
 | Condutor (C) | Larissa Gomes Silva |
 | Avaliadores | A1 Gabriel Fae, A2 Lucas Avelar; A3 João Felipe Oliveira só nos desempates |
-| Triagens feitas | T1 e T2 (dia 1); T3 e E1 (dia 2); T1-B, T4, T3-B e E2 _a preencher_ |
-| Créditos | 10 antes de T1; 6 depois de E1 |
+| Triagens feitas | T1 e T2 (dia 1); T3 e E1 (dia 2); T4 (dia 3); T1-B, T3-B e E2 _a preencher_ |
+| Créditos | 10 antes de T1; 5 depois de T4 |
 | Itens não coletados | _a preencher_ (ou "nenhum") |
 | Desvios do método | _a preencher_ (ou "nenhum") |
 
@@ -50,7 +50,7 @@ O kappa de Cohen mínimo é 0,61. Abaixo disso, o tema passa por um rejulgamento
 
 ### Dia 1 (T1 e T2)
 
-Em T1 foram 528 artigos, todos do PubMed. SciELO e Google Acadêmico retornaram 0, e as strings tiveram 24 erros de Google Acadêmico. O Top 30 inclui a própria revisão Cochrane de referência, na posição 14, e é majoritariamente meta-análise. Só 3 dos 12 estudos da referência aparecem no Top.
+Em T1 foram 528 artigos, todos do PubMed, com 144 incluídos. SciELO e Google Acadêmico retornaram 0, e as strings tiveram 24 erros de Google Acadêmico. O Top 30 inclui a própria revisão Cochrane de referência, na posição 14, e é majoritariamente meta-análise. Só 3 dos 12 estudos da referência aparecem no Top.
 
 Em T2 foram 517 artigos analisados, todos do PubMed, com 96 incluídos. As strings PubMed do endpoint vieram fragmentadas: as posições 0 a 2 estavam quebradas e as demais terminavam em `AND (` sem o intervalo de datas. SciELO e Google Acadêmico, de novo, retornaram 0.
 
@@ -73,6 +73,14 @@ Essa conferência é feita à parte da busca do VICKY: buscamos o título de cad
 #### Execução e créditos do dia 2
 
 Em 18/11 (dia 2) executamos T3 e E1. Tínhamos 8 créditos antes de T3 e sobraram 6 depois de E1.
+
+### Dia 3 (T4)
+
+Em 19/11 (dia 3) executamos T4 (tratamento farmacológico da ataxia de Friedreich, com PubMed, SciELO e Google Acadêmico marcados e janela de 20 anos, porque o relato mais antigo da referência é de 2003 e nenhuma janela menor o cobre). Foram 557 artigos analisados e 106 incluídos, e o Top 30 veio todo do PubMed, com 76 incluídos abaixo do corte. SciELO e Google Acadêmico retornaram 0, e as strings tiveram 53 erros de Google Acadêmico. A lista de referência tem 8 estudos e 23 relatos, dos quais 14 relatos (7 estudos) estavam publicados até a coleta. Dois estudos da referência aparecem no Top 30 (Lynch 2021 e Pandolfo 2022), o que dá R = 0,286. Tínhamos 6 créditos antes de T4 e sobraram 5. T1-B estava prevista para 19/11 e T3-B e E2 para 20/11.
+
+#### Consulta às fontes de T4 (M1.1.2)
+
+Buscamos o título de cada um dos 14 relatos publicados no PubMed, no SciELO e no Google Acadêmico. O Google Acadêmico trouxe os 14, e o SciELO nenhum. Dois relatos são resumos em anais sem PMID (Lynch 2021, relatos 6 e 7), e a busca por título no PubMed não os achou. Casamos o título por similaridade de 0,85 ou mais e guardamos o valor em cada linha; o método não fixava esse limiar, então tratamos como um refinamento de M1.1.2.
 
 ### Formulário, exportação e cadastro
 
@@ -131,3 +139,4 @@ O objetivo G1 é a média das cinco questões e não passa de Bom se alguma fica
 |--------|------|-----------|----------|------------|
 | 0.1 | 17/11/2026 | Estrutura da página de resultados do G1 e relato do dia 1 da coleta | Larissa Gomes Silva | - |
 | 0.2 | 18/11/2026 | Relato do dia 2 (T3 e E1) | Larissa Gomes Silva | - |
+| 0.3 | 19/11/2026 | Relato do dia 3 (T4), campos de execução e incluídos de T1 | Larissa Gomes Silva | - |

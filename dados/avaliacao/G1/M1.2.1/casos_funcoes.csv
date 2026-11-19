@@ -11,7 +11,7 @@ F03,b,2026-11-17,criterios de inclusao e exclusao gerados,sim,,,,
 F03,c,2026-11-17,nao ha edicao de criterios,nao,,,,
 F04,a,2026-11-17,escolha de bases persiste no banco,sim,,,,
 F04,b,2026-11-17,quantidade do Top persiste,sim,,,,
-F04,c,,depende de E1 (dia 2),pendente,,,,
+F04,c,2026-11-18,E1 so com PubMed: os 30 itens da lista exibem fonte PubMed e nenhum exibe SciELO ou Scholar,sim,,,capturas/E1_lista_tela.txt,"projeto #56; 550 analisados, todos PubMed"
 F05,a,2026-11-17,creditos 10 para 9,sim,,,,T1 #53
 F05,b,2026-11-17,andamento exibido na tela,sim,,,,
 F05,c,2026-11-17,terminou com lista de 30,sim,,,,
