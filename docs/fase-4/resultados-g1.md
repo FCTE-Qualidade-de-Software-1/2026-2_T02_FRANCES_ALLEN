@@ -15,8 +15,8 @@ Esta página reúne o resultado das oito métricas do G1, conforme o [Método do
 | Navegador | Google Chrome 157.0.8103.79; área visível e zoom não registrados |
 | Condutor (C) | Larissa Gomes Silva |
 | Avaliadores | A1 Gabriel Fae, A2 Lucas Avelar; A3 João Felipe Oliveira só nos desempates |
-| Triagens feitas | T1 e T2 (dia 1); T3 e E1 (dia 2); T4 (dia 3); T1-B, T3-B e E2 _a preencher_ |
-| Créditos | 10 antes de T1; 5 depois de T4 |
+| Triagens feitas | T1 e T2 (dia 1); T3 e E1 (dia 2); T4 e T1-B (dia 3); T3-B e E2 _a preencher_ |
+| Créditos | 10 antes de T1; 5 depois de T4; 4 depois de T1-B |
 | Itens não coletados | _a preencher_ (ou "nenhum") |
 | Desvios do método | _a preencher_ (ou "nenhum") |
 
@@ -82,6 +82,10 @@ Em 19/11 (dia 3) executamos T4 (tratamento farmacológico da ataxia de Friedreic
 
 Buscamos o título de cada um dos 14 relatos publicados no PubMed, no SciELO e no Google Acadêmico. O Google Acadêmico trouxe os 14, e o SciELO nenhum. Dois relatos são resumos em anais sem PMID (Lynch 2021, relatos 6 e 7), e a busca por título no PubMed não os achou. Casamos o título por similaridade de 0,85 ou mais e guardamos o valor em cada linha; o método não fixava esse limiar, então tratamos como um refinamento de M1.1.2.
 
+#### T1-B (repetição de T1, dia 3)
+
+Em 19/11 (dia 3) executamos T1-B, a repetição de T1: a mesma entrada (projeto #81), feita 48 h depois do fim de T1 e com a mesma configuração (revisão sistemática, janela de 20 anos, PubMed, SciELO e Google Acadêmico marcados, Top 30). O PubMed recuperou 584 artigos, contra 636 em T1. SciELO e Google Acadêmico retornaram 0 nas duas, e as strings de Google Acadêmico tiveram 12 erros, contra 24 em T1. Foram 500 artigos analisados (528 em T1) e 144 incluídos, o mesmo número das duas execuções. O Top 30 veio completo nas duas, e a maturidade ficou moderada nas duas. O texto do PICO e o das strings mudaram de uma execução para a outra, mas a estrutura é a mesma. Pelo PMID, 22 dos 30 estudos do Top aparecem em T1 e em T1-B (73%), e a união dos dois Tops tem 38 estudos. Tínhamos 5 créditos antes de T1-B e sobraram 4. Ainda não há julgamento de relevância dos itens, então esta página só registra a sobreposição e não a interpreta. T3-B e E2 estão previstas para 20/11.
+
 ### Formulário, exportação e cadastro
 
 | Ponto | O que observamos |
@@ -140,3 +144,4 @@ O objetivo G1 é a média das cinco questões e não passa de Bom se alguma fica
 | 0.1 | 17/11/2026 | Estrutura da página de resultados do G1 e relato do dia 1 da coleta | Larissa Gomes Silva | - |
 | 0.2 | 18/11/2026 | Relato do dia 2 (T3 e E1) | Larissa Gomes Silva | - |
 | 0.3 | 19/11/2026 | Relato do dia 3 (T4), campos de execução e incluídos de T1 | Larissa Gomes Silva | - |
+| 0.4 | 19/11/2026 | Relato de T1-B (dia 3) e comparação com T1 | Larissa Gomes Silva | - |
