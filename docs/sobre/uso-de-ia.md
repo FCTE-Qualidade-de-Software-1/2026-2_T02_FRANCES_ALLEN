@@ -22,3 +22,4 @@ A rubrica da disciplina exige declarar **a ferramenta**, **a tarefa** e **como o
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 18/10/2026 | Declaração do uso de IA no objetivo G1 | Larissa Gomes Silva | - |
 | 0.4 | 14/11/2026 | Declaração do uso de IA na Fase 3, linha do G2 marcada a confirmar e correções de texto | Lucas Avelar | - |
+| 0.5 | 19/11/2026 | Declaração do uso de IA na coleta de A1 do G2 por inspeção | Gabriel Fae | - |

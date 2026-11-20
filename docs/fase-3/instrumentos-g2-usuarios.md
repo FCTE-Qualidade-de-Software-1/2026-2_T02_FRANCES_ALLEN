@@ -1,12 +1,12 @@
 # Instrumentos do G2 com usuários
 
-Instrumentos aplicados nas sessões com estudantes descritas no [Método do G2 com usuários](metodo-g2-usuarios.md): os cartões de tarefa e a ficha de uso (M2.7.2), o questionário de compreensão com o gabarito (M2.7.2), o questionário de estética (M2.5.1) e o bloco qualitativo opcional. O texto dos cartões e das perguntas é lido igual para todos os participantes.
+Instrumentos aplicados aos estudantes conforme o [Método do G2 com usuários](metodo-g2-usuarios.md): na sessão remota, os cartões de tarefa e a ficha de uso (M2.7.2) e o questionário de compreensão com o gabarito (M2.7.2); no formulário online assíncrono, o questionário de estética (M2.5.1) e o bloco qualitativo opcional. Desde a versão 0.6 do método ([D13](../gestao/decisoes.md#d13-adaptar-a-coleta-com-usuarios-ao-prazo-da-entrega-2)), o questionário de estética não é mais aplicado na sessão. O texto dos cartões e das perguntas é lido igual para todos os participantes.
 
 Os rótulos citados vêm das telas do VICKY no código-fonte do fork usado pela equipe (commit `c2ae570`, de 29/09/2026) e da descrição das funções na [Fase 1](../fase-1/objeto-de-avaliacao.md#3-principais-funcionalidades). Como a produção pode ter mudado desde esse commit, cada rótulo e cada definição do gabarito são conferidos em produção antes do piloto, e a conferência é registrada em `dados/avaliacao/G2/M2.7.2/coleta.md`.
 
 ## 1. Cartões de tarefa (M2.7.2)
 
-Os cartões descrevem a necessidade do estudante sem usar o nome dos controles do VICKY. É isso que obriga o participante a encontrar e entender cada elemento sozinho.
+Os cartões descrevem a necessidade do estudante sem usar o nome dos controles do VICKY. É isso que obriga o participante a encontrar e entender cada elemento sozinho. Na sessão remota, o condutor envia o texto de cada cartão pelo chat da chamada, já com o e-mail e a senha preenchidos, e o lê em voz alta.
 
 ### Cartão A: preparar a busca
 
@@ -16,7 +16,7 @@ Os cartões descrevem a necessidade do estudante sem usar o nome dos controles d
 >
 > **O que você quer descobrir com a revisão:** frase do desfecho do T1, fixada junto com o tema.
 >
-> 1. Crie uma conta com estes dados. Nome: Participante P0__. E-mail e senha: os que o condutor escreveu abaixo.
+> 1. Crie uma conta com estes dados. Nome: Participante P0__. E-mail e senha: os que estão abaixo.
 > 2. Crie um projeto para o seu tema. Você quer:
 >     - registrar no projeto o que você quer descobrir com a revisão;
 >     - só artigos publicados nos últimos 5 anos;
@@ -31,7 +31,7 @@ Os valores pedidos (5 anos, 15 artigos, duas bases, só texto gratuito) foram es
 
 ### Cartão B: usar o resultado
 
-> **Situação.** Um colega já rodou a busca completa sobre o mesmo tema e deixou o resultado nesta conta, no projeto de nome ______________________. Fale em voz alta o que está pensando.
+> **Situação.** Um colega já rodou a busca completa sobre o mesmo tema e deixou o resultado nesta conta (e-mail e senha enviados pelo condutor), no projeto de nome igual ao seu tema anterior. Fale em voz alta o que está pensando.
 >
 > 1. Escolha os 3 artigos que você levaria primeiro ao orientador e diga por que escolheu esses. Marque os 3 para encontrá-los fácil depois.
 > 2. Seu orientador quer saber como a busca foi feita e por que alguns artigos ficaram de fora. Mostre onde o VICKY registra isso.
@@ -39,7 +39,7 @@ Os valores pedidos (5 anos, 15 artigos, duas bases, só texto gratuito) foram es
 
 ## 2. Ficha de uso dos 12 elementos (observador)
 
-O observador registra, para cada elemento, um código de uso em `observacao-uso.csv`, com o momento da gravação. O uso é correto quando o participante faz o que a coluna "Uso correto" descreve.
+O observador registra, para cada elemento, um código de uso em `observacao-uso.csv`, com o momento da gravação. Quando não há observador, o condutor faz o mesmo registro depois da sessão, a partir da gravação. O uso é correto quando o participante faz o que a coluna "Uso correto" descreve.
 
 | ID | Elemento (lista B da Fase 2) | Tarefa | Uso correto | Exemplo de uso incorreto |
 |----|------------------------------|:------:|-------------|--------------------------|
@@ -60,7 +60,7 @@ Códigos de uso: `sem_ajuda` (uso correto sem ajuda, inclusive depois de corrigi
 
 ## 3. Questionário de compreensão (M2.7.2)
 
-Aplicado depois das partes A e B. Para cada elemento, o condutor mostra o recorte da tela (rótulo e controle, sem o texto de ajuda ao lado) e pergunta:
+Aplicado depois das partes A e B. Para cada elemento, o condutor compartilha a tela dele e mostra o recorte da tela (rótulo e controle, sem o texto de ajuda ao lado) e pergunta:
 
 > **"Com suas palavras, o que é isto e para que serve?"**
 
@@ -68,7 +68,7 @@ Só para E08 a pergunta muda, porque o elemento é a diferença entre três bot�
 
 > **"Qual é a diferença entre estes três botões?"**
 
-O condutor pode pedir uma vez "Pode explicar um pouco mais?" e não diz se a resposta está certa. A resposta é falada; o observador anota a parte essencial em `respostas-compreensao.csv`, e a gravação é a evidência.
+O condutor pode pedir uma vez "Pode explicar um pouco mais?" e não diz se a resposta está certa. A resposta é falada; o observador (ou o condutor, pela gravação) anota a parte essencial em `respostas-compreensao.csv`, e a gravação é a evidência.
 
 | Ordem | ID | Recorte mostrado (rótulo no código `c2ae570`) |
 |:-----:|----|-----------------------------------------------|
@@ -106,13 +106,13 @@ Uma resposta é **correta** quando traz o ponto essencial e não comete o erro q
 
 ## 5. Questionário de estética (M2.5.1)
 
-Aplicado no fim da sessão. O condutor mostra a captura fixa de cada tela, na ordem abaixo, uma por vez, e lê a frase.
+Aplicado por formulário online assíncrono ([método, seção 4.4](metodo-g2-usuarios.md#44-formulario-de-estetica-m251)). Cada captura fixa ocupa uma página do formulário, na ordem abaixo, com a frase e a escala.
 
 > **"Olhando esta tela, quanto você concorda com a frase: esta tela é agradável e me convida a continuar usando o VICKY?"**
 >
 > 1 = discordo totalmente; 2 = discordo; 3 = nem concordo nem discordo; 4 = concordo; 5 = concordo totalmente
 
-| Participante: P0__ | Data: ___/___/2026 | | | | | |
+| Respondente: R0__ | Data: ___/___/2026 | | | | | |
 |---|---|:-:|:-:|:-:|:-:|:-:|
 | **Ordem** | **Tela (captura em `M2.5.1/telas/`)** | **1** | **2** | **3** | **4** | **5** |
 | 1 | Página inicial, o painel após o login (`inicial.png`) | ( ) | ( ) | ( ) | ( ) | ( ) |
@@ -121,7 +121,7 @@ Aplicado no fim da sessão. O condutor mostra a captura fixa de cada tela, na or
 | 4 | Lista de artigos (`lista_artigos.png`) | ( ) | ( ) | ( ) | ( ) | ( ) |
 | 5 | Ficha do artigo (`ficha_artigo.png`) | ( ) | ( ) | ( ) | ( ) | ( ) |
 
-Se o participante comentar a nota espontaneamente, o observador anota o comentário. O condutor não pede justificativa, para não alongar a sessão nem induzir a nota.
+Cada página tem um campo opcional de comentário, que vai para a coluna `comentario`. O formulário não pede justificativa da nota, para não alongar o preenchimento nem induzir a nota.
 
 **Registro:** uma linha por participante e tela em `dados/avaliacao/G2/M2.5.1/respostas.csv`, com o cabeçalho:
 
@@ -129,11 +129,11 @@ Se o participante comentar a nota espontaneamente, o observador anota o comentá
 participante,tela,nota,comentario
 ```
 
-**Contagem:** a tela é agradável para o participante quando a nota é 4 ou 5, e entra em A quando é agradável para pelo menos 3 dos 5 participantes ([cálculo](metodo-g2-usuarios.md#6-calculo)).
+**Contagem:** a tela é agradável para o participante quando a nota é 4 ou 5, e entra em A quando é agradável para pelo menos 3 dos 5 respondentes ([cálculo](metodo-g2-usuarios.md#6-calculo)).
 
 ## 6. Bloco qualitativo opcional
 
-Fora do cálculo de M2.5.1. Aplicado só se a sessão estiver dentro do tempo e o participante aceitar. Serve para explicar, na Fase 4, as notas de estética e para apoiar recomendações. As afirmações foram propostas por João Felipe Oliveira e valem para a interface como um todo, com a mesma escala de 1 a 5.
+Fora do cálculo de M2.5.1. É a última página do formulário, de resposta opcional. Serve para explicar, na Fase 4, as notas de estética e para apoiar recomendações. As afirmações foram propostas por João Felipe Oliveira e valem para a interface como um todo, com a mesma escala de 1 a 5.
 
 | ID | Afirmação |
 |----|-----------|
@@ -156,3 +156,4 @@ Fora do cálculo de M2.5.1. Aplicado só se a sessão estiver dentro do tempo e 
 |--------|------|-----------|----------|------------|
 | 0.1 | 14/11/2026 | Cartões de tarefa, ficha de uso, questionário de compreensão com gabarito, questionário de estética das 5 telas e bloco qualitativo. O questionário qualitativo e o roteiro de origem são de João Felipe Oliveira | Lucas Avelar e João Felipe Oliveira | - |
 | 0.2 | 14/11/2026 | E05 com o campo de 1 a 30 (padrão 20) e E12 com os formatos do menu "Exportar", coerentes com o método do G1 | Lucas Avelar | - |
+| 0.3 | 19/11/2026 | Adaptação pela D13: cartões e recortes passados pela chamada remota, ficha de uso preenchida pela gravação quando não houver observador, questionário de estética e bloco qualitativo em formulário online, com respondentes R01 a R05 | Gabriel Fae | - |

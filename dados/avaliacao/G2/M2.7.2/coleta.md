@@ -1,12 +1,14 @@
-# M2.7.2 e M2.5.1 Sessões com estudantes: registro da coleta
+# M2.7.2 Sessões remotas com estudantes: registro da coleta
 
 > Roteiro: [Método do G2 com usuários](../../../../docs/fase-3/metodo-g2-usuarios.md). Os instrumentos estão em [Instrumentos do G2 com usuários](../../../../docs/fase-3/instrumentos-g2-usuarios.md). Este arquivo não recebe nome nem contato de participante.
 
 | Campo | Valor |
 |---|---|
-| Métricas | M2.7.2 Interface autoexplicativa (ULe-4-S) e M2.5.1 Estética da interface (UIn-1-S) |
+| Métricas | M2.7.2 Interface autoexplicativa (ULe-4-S). Desde a D13, M2.5.1 tem registro próprio em `../M2.5.1/coleta.md` |
 | Papéis (C, O, A3) e pessoas | |
-| Navegador e versão | Google Chrome |
+| Formato | Remoto, pelo Google Meet (método v0.6) |
+| Gravador e versão (Meet ou OBS) | |
+| Navegador e versão | Do participante, registrados em `sessoes.csv` (`observacao`) |
 | Projeto triado usado na parte B | |
 | Limite de prévias em produção (por conta e por IP) | |
 | Conta nova começa com 0 crédito? | |
@@ -50,4 +52,4 @@ Critério que gerou dúvida, a interpretação escolhida e a confirmação de qu
 
 ## Exclusão das gravações
 
-Data em que gravações e termos digitalizados foram apagados da pasta restrita:
+Data em que gravações e aceites foram apagados da pasta restrita:

@@ -8,21 +8,22 @@ Valores medidos a cada ciclo, com interpretação. As fórmulas e faixas de deci
 | 1 | 19/10 a 25/10/2026 | Milestone E1 (vence em 25/10, 21h) | 25/10/2026, às 20h30. Três commits do ciclo entraram depois dessa hora e foram incorporados retroativamente na coleta de 28/10 |
 | 2 | 26/10 a 01/11/2026 | Fechamento da E1 (*release* `v0.1`) | Parcial em 28/10/2026. A coleta de 01/11 não foi feita no dia e foi **fechada retroativamente em 13/11**, a partir do `git log` e da API do GitHub |
 | 3 (retroativo) | 02/11 a 08/11/2026 | Abertura da E2: milestones e issues da Fase 3 e da Fase 4 (04/11) | Coletas de 04/11 e 08/11 não feitas no dia. **Medido retroativamente em 13/11**, a partir do `git log` e da API do GitHub |
-| 4 (em curso) | 09/11 a 15/11/2026 | Ponto de controle interno de 11/11 e prazo interno da Fase 3 (14/11) | **Parcial em 13/11/2026, às 21h46** (data de corte), a partir do `git log` e da API do GitHub. A coleta completa é em 15/11 |
+| 4 | 09/11 a 15/11/2026 | Ponto de controle interno de 11/11 e prazo interno da Fase 3 (14/11) | Parcial em 13/11/2026, às 21h46. A coleta de 15/11 não foi feita no dia e foi **fechada retroativamente em 19/11**, a partir do `git log` e da API do GitHub |
+| 5 (em curso) | 16/11 a 22/11/2026 | Entrega final da E2 (milestone vence em 21/11, às 21h; entrega em 22/11) | **Parcial em 19/11/2026, às 10h55** (data de corte), a partir do `git log` de todos os branches publicados e da API do GitHub. A coleta completa é em 22/11 |
 
 ## 1. Painel dos ciclos
 
-| Métrica | Ciclo 0 | Ciclo 1 | Ciclo 2 | Ciclo 3 | Ciclo 4 (parcial, até 13/11) |
-|---------|---------|---------|---------|---------|------------------------------|
-| CP1 Comprometido x concluído | (--) sem backlog formal | (--) 11,1% concluído (issues criadas com base no artigo.) | (OK) 100% (18 de 18), desvio de 0 p.p., mas concluído **depois** do vencimento | (AN) E2 Fase 3: 1 de 7 (14,3%) com 39,0% do período, desvio de 24,7 p.p. | (AN) E2 Fase 3: 2 de 7 (28,6%) com 82,5% do período, desvio de 54,0 p.p. |
-| CP2 SPI (hora/valor) | (--) sem linha de base | (AN) 0,05 | (OK) 1,00 na data de corte · 0,05 no vencimento · atraso de 1 a 3 dias | (AN) 0,37 (PV 5,5 h · EV 2 h) | (AN) 0,35 (PV 11,6 h · EV 4 h); 0,20 por contagem de issues |
-| RC1 Variação de esforço | (--) horas não registradas | (--) horas não registradas | (AN) 0 de 6 integrantes registraram horas até o prazo da D05 | (--) nenhuma issue fechada com horas registradas | (AN) +50% na #21 (3 h reais / 2 h estimadas); equipe não mensurável |
-| RC2 CPI (hora/valor) | (--) horas não registradas | (--) horas não registradas | (--) sem `AC`, por falta das horas reais. Custo planejado da E1: **R$2.100** (42 h × R$50) | (--) `AC` de 2 h (R$100) sem relação com a issue fechada | (AN) 0,67 nas entregas do ciclo (EV 2 h / AC 3 h = R$150), só de 1 integrante |
-| RC3 Contribuição individual | (AN) 0% a 34,8% (*proxy*: commits) | (A) 7,1% a 28,6% (carga planejada) | (AN) larigs 66,7% · Guilherme-Moura 33,3% · demais 0% (*proxy*: commits) | (AN) Faehzin 50% · LucasAvelar2711 50% · demais 0% (*proxy*: commits) | (AN) Faehzin 100% (*proxy*: commits) |
-| DP1 *Lead time* | (--) sem issues | (AN) média de 3,1 dias nas fechadas; abertas com 6,2 dias | (AN) 9,3 dias nas 16 declaradas em 28/10; nenhuma fechada no GitHub no ciclo | (AN) 16,0 dias no GitHub (9,3 declarados) nas 16 fechadas; abertas com 4,4 dias | (AN) #21 com cerca de 6 dias; abertas com 9,3 dias |
-| DP2 Razão saída/chegada | (--) sem issues | (AN) 0,11 (2 saídas para 18 chegadas) | (A) 16 saídas e 0 chegadas: razão indefinida. WIP de 0 na data de corte | (OK) 1,33 (16 saídas, 12 chegadas), mas as saídas só regularizam o ciclo 2. WIP de 12 (2,0 por integrante) | (A) 1 saída e 0 chegadas: razão indefinida. WIP de 11 (1,8 por integrante) |
-| DP3 Índice de pico | (AN) 82,6% em 18/10 | (AN) 100% em 25/10 (3 commits, medido retroativamente) | (AN) 66,7% em 28/10, 2 dias ativos em 7 | (AN) 100% em 04/11, 1 dia ativo em 7 | (A) 50%, 2 dias ativos em 5 |
-| DP4 Retrabalho | (AN) 39,1% | (AN) 66,7% (2 de 3 commits, medido retroativamente) | (AN) 66,7% (2 de 3 commits) · nenhum PR no período | (AN) 50% (2 de 4 commits) | (OK) 0% por commit (0 de 2) · PR #32 integrado sem revisão |
+| Métrica | Ciclo 0 | Ciclo 1 | Ciclo 2 | Ciclo 3 | Ciclo 4 | Ciclo 5 (parcial, até 19/11) |
+|---------|---------|---------|---------|---------|---------|------------------------------|
+| CP1 Comprometido x concluído | (--) sem backlog formal | (--) 11,1% concluído (issues criadas com base no artigo.) | (OK) 100% (18 de 18), desvio de 0 p.p., mas concluído **depois** do vencimento | (AN) E2 Fase 3: 1 de 7 (14,3%) com 39,0% do período, desvio de 24,7 p.p. | (AN) E2 Fase 3: 6 de 7 (85,7%) com 100% do período, desvio de 14,3 p.p. | (AN) E2 Entrega final: 0 de 6 com 86,0% do período, desvio de 86,0 p.p.; #25 ainda aberta |
+| CP2 SPI (hora/valor) | (--) sem linha de base | (AN) 0,05 | (OK) 1,00 na data de corte · 0,05 no vencimento · atraso de 1 a 3 dias | (AN) 0,37 (PV 5,5 h · EV 2 h) | (A) 0,86 (PV 14 h · EV 12 h); 0,83 por contagem de issues | (AN) 0,00 (PV 22,4 h · EV 0 h); 0 de 3 por contagem |
+| RC1 Variação de esforço | (--) horas não registradas | (--) horas não registradas | (AN) 0 de 6 integrantes registraram horas até o prazo da D05 | (--) nenhuma issue fechada com horas registradas | (AN) +100% na #20 (4 h reais / 2 h estimadas) e +50% na #21; equipe não mensurável | (--) nenhuma issue fechada; a #27 já tem 7 h das 5 h estimadas |
+| RC2 CPI (hora/valor) | (--) horas não registradas | (--) horas não registradas | (--) sem `AC`, por falta das horas reais. Custo planejado da E1: **R$2.100** (42 h × R$50) | (--) `AC` de 2 h (R$100) sem relação com a issue fechada | (AN) 0,57 nas entregas com horas (EV 4 h / AC 7 h = R$350) | (--) sem EV no ciclo; AC de 7 h no `main` (R$350) e 5,8 h só em branch |
+| RC3 Contribuição individual | (AN) 0% a 34,8% (*proxy*: commits) | (A) 7,1% a 28,6% (carga planejada) | (AN) larigs 66,7% · Guilherme-Moura 33,3% · demais 0% (*proxy*: commits) | (AN) Faehzin 50% · LucasAvelar2711 50% · demais 0% (*proxy*: commits) | (AN) LucasAvelar2711 76,5% · Faehzin 17,6% · larigs 5,9% (*proxy*: commits) | (AN) larigs 66,7% · Faehzin 25,0% · LucasAvelar2711 8,3% (*proxy*: commits, todos os branches) |
+| DP1 *Lead time* | (--) sem issues | (AN) média de 3,1 dias nas fechadas; abertas com 6,2 dias | (AN) 9,3 dias nas 16 declaradas em 28/10; nenhuma fechada no GitHub no ciclo | (AN) 16,0 dias no GitHub (9,3 declarados) nas 16 fechadas; abertas com 4,4 dias | (AN) 10,8 dias nas 5 fechadas; abertas com 11,4 dias | (AN) nenhuma fechada; 7 abertas com 14,9 dias |
+| DP2 Razão saída/chegada | (--) sem issues | (AN) 0,11 (2 saídas para 18 chegadas) | (A) 16 saídas e 0 chegadas: razão indefinida. WIP de 0 na data de corte | (OK) 1,33 (16 saídas, 12 chegadas), mas as saídas só regularizam o ciclo 2. WIP de 12 (2,0 por integrante) | (A) 5 saídas e 0 chegadas: razão indefinida. WIP de 7 (1,2 por integrante) | (A) 0 saídas e 0 chegadas: razão indefinida. WIP de 7 (1,2 por integrante) |
+| DP3 Índice de pico | (AN) 82,6% em 18/10 | (AN) 100% em 25/10 (3 commits, medido retroativamente) | (AN) 66,7% em 28/10, 2 dias ativos em 7 | (AN) 100% em 04/11, 1 dia ativo em 7 | (AN) 76,5% em 14/11, 4 dias ativos em 7 | (A) 58,3% em 18/11, 3 dias ativos em 4 |
+| DP4 Retrabalho | (AN) 39,1% | (AN) 66,7% (2 de 3 commits, medido retroativamente) | (AN) 66,7% (2 de 3 commits) · nenhum PR no período | (AN) 50% (2 de 4 commits) | (AN) 52,9% por commit (9 de 17) · PR #33 sem revisão formal, revisado em comentário | (A) 25,0% por commit (3 de 12) · nenhum PR; 11 commits em branches sem PR |
 
 ## 2. Ciclo 0 (retroativo): 05/10 a 18/10
 
@@ -626,44 +627,238 @@ _Figura 17 - Commits por integrante desde o fim da E1, sem os de merge (9 commit
 4. **O PR foi usado, a revisão não.** O #32 é o primeiro PR desde o #1 e foi integrado sem nenhuma revisão, apesar do pedido na descrição. O DP4 por PR dá 0%, mas esse número só mostra que não houve revisão.
 5. **O fechamento continua sendo declarado.** A E1 foi registrada no GitHub 6,7 dias depois da conclusão declarada, e a #21, 3 dias depois. Enquanto o fechamento não sair do PR (`Closes #N`), CP1 e DP1 dependem de declaração.
 
-## 8. Próxima coleta
+## 8. Ciclo 4 (fechamento retroativo): 14/11 e 15/11
+
+A coleta completa de domingo, 15/11, não foi feita no dia. Ela foi fechada em 19/11, como a do ciclo 2, com o `git log` e a API do GitHub, que guardam data e hora de cada evento. Data de corte: **15/11/2026, 23h59**. Os valores abaixo substituem os da coleta parcial de 13/11 (seção 7) no painel.
+
+### 8.1 Contexto
+
+| Item | Registro |
+|------|----------|
+| PR #33 | Aberto por LucasAvelar2711 em 14/11, às 21h54, com os métodos do G1, do G2 com usuários e do G3, recursos, consistência e cronograma. Integrado em 15/11, às 19h54, **1h06 antes do vencimento** da milestone "E2 - Ponto de controle" (15/11, 21h). É o **primeiro PR com `Closes`**: o merge fechou sozinho as #20, #22, #23 e #24 |
+| Autoria pela D12 | As páginas das #20, #22, #23 e #24 foram escritas por LucasAvelar2711, que assumiu o trabalho pela [D12](decisoes.md#d12-redistribuir-o-trabalho-nao-entregue); os donos originais revisaram ([cronograma](../fase-3/cronograma.md), Tabela 2) |
+| Revisão | **Nenhuma revisão formal no GitHub.** A larigs registrou a revisão do método do G1 em comentário no PR (14/11, 23h35) e subiu os ajustes num commit no branch do PR ([`31438fb`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/commit/31438fb)); as revisões dela e do João foram propagadas às outras páginas em [`b7dba8c`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/commit/b7dba8c) (15/11) |
+| #25 | Continua aberta (cronograma, página da Fase 3 e correções da E1). É a única issue da milestone sem fechamento |
+| Horas | A larigs registrou 4 h na #20 (revisão do método do G1, 14/11): segunda integrante com horas no `esforco.csv`. LucasAvelar2711, que escreveu quatro métodos, não tem horas registradas |
+
+### 8.2 Medições
+
+| Métrica | Valor | Limite | Situação | Interpretação |
+|---------|-------|--------|:--------:|---------------|
+| CP1 Comprometido x concluído | Milestone "E2 - Ponto de controle": `I_conc` = 6 (#14 e #20 a #24) de `I_comp` = 7 = **85,7%**, com 100% do período decorrido: **desvio de 14,3 p.p.** | ≤ 5 p.p. | (AN) | O desvio caiu de 54,0 p.p. (13/11) para 14,3 p.p. no vencimento: cinco métodos da Fase 3 fecharam até 15/11, quatro de uma vez pelo PR #33. Só a #25 ficou aberta |
+| CP2 SPI (hora/valor) | `PV` = 14 h (100%) · `EV` = 12 h · **SPI = 0,86** | ≥ 0,90 | (A) | Melhor SPI da E2 e o primeiro sem efeito de saturação: o valor foi entregue antes do vencimento. Falta a #25 (2 h) |
+| CP2 SPI por contagem | Pelo [cronograma](../fase-3/cronograma.md), 6 issues da Fase 3 (#20 a #25) com fim até 15/11; 5 fechadas: **SPI = 0,83** | ≥ 0,90 | (A) | Mesma leitura do SPI em horas |
+| CP2 Variação de prazo | #20, #22 e #23: **3 dias** após o fim planejado (12/11). #24: **2 dias** (13/11). #25: aberta | - | (A) | As quatro fecharam dentro do vencimento da milestone, mas depois das datas do cronograma |
+| RC1 Variação de esforço | #20 (larigs): `H_real` = 4 h, `H_est` = 2 h, **TVE = +100%** · #21 (Faehzin): **+50%** | -20% a +20% | (AN) | As duas issues com horas estouraram a estimativa. As 4 h da #20 são de revisão; a escrita, feita por LucasAvelar2711, não tem horas, então o custo real da #20 é maior. As #22 a #24 não têm horas |
+| RC2 CPI | Issues fechadas com horas (#20 e #21): `EV` = 4 h · `AC` = 7 h = **R$350** · **CPI = 0,57** | ≥ 0,90 | (AN) | Cada hora registrada entregou 34 min de valor planejado. O CPI da equipe continua fora de alcance (D12) |
+| RC3 (*proxy*: commits) | LucasAvelar2711 13 (**76,5%**) · Faehzin 3 (**17,6%**) · larigs 1 (**5,9%**) · demais 0 | 13% a 20% | (AN) | Efeito direto da D12: um integrante escreveu quatro métodos. É a redistribuição funcionando, mas o trabalho registrado continua concentrado |
+| RC3 (horas registradas) | larigs 4 h (**57,1%**) · Faehzin 3 h (**42,9%**) · demais 0 | 13% a 20% | (AN) | Só 2 de 6 integrantes registram horas |
+| DP1 *Lead time* | 5 fechadas no ciclo: #21 com 9,3 dias e #20, #22, #23 e #24 com 11,2 dias cada: média de **10,8 dias** (10,2 com a data declarada da #21). Abertas em 15/11: 7, com idade média de **11,4 dias** | ≤ 3 dias | (AN) | Cada issue de método ocupou o prazo inteiro da milestone. Pela D04, deveriam estar divididas em partes de até 1 dia |
+| DP2 Razão saída/chegada | **0 chegadas** e **5 saídas**: razão indefinida | ≥ 0,90 | (A) | Melhor vazão da E2: 5 saídas no ciclo, contra 1 na coleta parcial |
+| DP2 WIP | **7 abertas** em 15/11 (#25 a #31), **1,2 por integrante** | ≤ 2 por integrante | (OK) | Dentro do limite |
+| DP3 Índice de pico | 13 de 17 commits em 14/11 = **76,5%**. 4 dias ativos em 7 (09, 13, 14 e 15/11) | ≤ 40% | (AN) | Os 13 commits de 14/11 entraram entre 21h06 e 23h13, na véspera do vencimento: a rajada dos ciclos 0 e 1 se repetiu |
+| DP4 Retrabalho | Por commit: 9 de 17 = **52,9%**: oito de LucasAvelar2711 (coerência entre métodos, revisões de referência, caminhos normalizados, ida e volta na declaração de IA e propagação das revisões) e a revisão da larigs. Por PR: 2 integrados no ciclo (#32 e #33), **0 revisões formais**; o #33 teve revisão em comentário e 1 commit de ajuste | ≤ 20% | (AN) | Boa parte do retrabalho é a revisão cruzada de 15/11 feita dentro do PR, que é o uso esperado do fluxo. O número alto vem de a revisão acontecer na véspera, e não ao longo do ciclo |
+| Rastreabilidade | 4 issues fechadas por `Closes` no PR #33; a #21 foi fechada à mão. 0 commits com `Closes #N` (o vínculo está no PR) | 100% dos PRs ligados a issue e revisados | (A) | **Primeira vez** que o fechamento sai do PR, como pediam a D06 e a D11. Falta a revisão formal |
+
+### 8.3 Verificação da D11
+
+| Item da [D11](decisoes.md#d11-recuperar-os-metodos-da-fase-3-antes-do-ponto-de-controle) | Resultado |
+|------|-----------|
+| (1) Um PR por responsável, com `Closes #N`, até 14/11 | Feito de forma coletiva: **um PR (#33)** para as #20, #22, #23 e #24, aberto em 14/11, às 21h54, por quem escreveu as páginas (D12) |
+| (2) Revisão cruzada no PR, antes do merge | **Parcial**: revisão da larigs em comentário e commit no PR; revisões do João levadas por fora (`b7dba8c`). Nenhuma revisão formal do GitHub |
+| (3) O que não fechou vira issue menor, de até 1 dia | **Não feito**: a #25 continua aberta e inteira |
+| (4) Horas registradas ao fechar | **1 de 4** issues fechadas pelo PR com horas (#20) |
+
+### 8.4 Gráfico
+
+```mermaid
+---
+config:
+  themeVariables:
+    xyChart:
+      plotColorPalette: "#8C9BA1, #B4531A"
+      titleColor: "#7D8E95"
+      xAxisLabelColor: "#7D8E95"
+      xAxisTitleColor: "#7D8E95"
+      xAxisLineColor: "#7D8E95"
+      xAxisTickColor: "#7D8E95"
+      yAxisLabelColor: "#7D8E95"
+      yAxisTitleColor: "#7D8E95"
+      yAxisLineColor: "#7D8E95"
+      yAxisTickColor: "#7D8E95"
+      backgroundColor: "transparent"
+---
+xychart-beta
+    title "Burnup da milestone E2 - Ponto de controle ate o vencimento (issues)"
+    x-axis "Dia de novembro" [04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15]
+    y-axis "Issues concluidas (acumulado)" 0 --> 7
+    line [0, 0.6, 1.3, 1.9, 2.5, 3.2, 3.8, 4.5, 5.1, 5.7, 6.2, 7]
+    line [1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 6]
+```
+
+_Figura 18 - Burnup da milestone "E2 - Ponto de controle (Fase 3)" até o vencimento, em 15/11, às 21h: linha cinza = planejado (7 issues distribuídas de forma linear) e linha terracota = concluído (#14 em 04/11, #21 em 10/11, data declarada, e #20, #22, #23 e #24 em 15/11, pelo PR #33). A #25 ficou aberta. Indicador CP1. Fonte: API de issues do GitHub e [`linha-de-base-e2.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/linha-de-base-e2.csv)._
+
+## 9. Ciclo 5 (parcial): 16/11 a 19/11
+
+Coleta parcial do ciclo da entrega final. A coleta de quarta-feira, 18/11, não foi feita no dia; ela foi feita em **19/11, com data de corte às 10h55**, a partir do `git log` de todos os branches publicados, da API do GitHub e do `esforco.csv`. Além do escopo previsto para a quarta-feira (CP1, CP2, DP2 e horas), a coleta traz uma prévia das demais métricas, que fecham em 22/11.
+
+### 9.1 Contexto
+
+| Item | Registro |
+|------|----------|
+| Milestone "E2 - Entrega final" | 6 issues (#26 a #31), **26 h** estimadas (R$1.300), com vencimento em 21/11, às 21h; a entrega na disciplina é em 22/11. Nenhuma fechada na data de corte |
+| Trabalho fora do `main` | 11 dos 12 commits do ciclo estão em **três branches sem PR**: `larissa/g1-dia1` (8 commits, coleta do G1, #26), `fase-4/p6-pagina-e-gestao` (1, estrutura da página da Fase 4, #31) e `docs/fase-3-cronograma-e-correcoes-e1` (2, inventários do G2 por inspeção, #27, num branch antigo já integrado pelo PR #32). Só o [`bbd77f9`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/commit/bbd77f9) (adaptação da D13) entrou no `main` |
+| Trabalho feito e não fechado | #26: dias 1 e 2 do G1 (T1, T2, T3 e E1) e página de resultados v0.1, no branch. #27: parte de A1 concluída em 19/11, guardada sem commit até a ficha de A2, para preservar a independência dos avaliadores. #28: coleta replanejada para 19 a 21/11 pela D13. #31: estrutura da página da Fase 4, no branch |
+| Decisão do ciclo | [D13](decisoes.md#d13-adaptar-a-coleta-com-usuarios-ao-prazo-da-entrega-2), em 19/11: nenhuma das cinco sessões com usuários previstas de 16 a 18/11 aconteceu, e a coleta passou a formulário assíncrono e sessões remotas |
+| Horas | Faehzin: 3 h (17/11) e 4 h (19/11) na #27, no `main`. larigs: 2,5 h (17/11) e 3,3 h (18/11) na #26, só no branch `larissa/g1-dia1` |
+
+### 9.2 Medições
+
+| Métrica | Valor | Limite | Situação | Interpretação |
+|---------|-------|--------|:--------:|---------------|
+| CP1 Comprometido x concluído | Milestone "E2 - Entrega final": `I_conc` = 0 de `I_comp` = 6, com **86,0%** do período decorrido (de 04/11, 14h26, a 21/11, 21h): **desvio de 86,0 p.p.** A #25, da milestone anterior, segue aberta | ≤ 5 p.p. | (AN) | Pior desvio desde a E1. Pela distribuição linear, a milestone devia ter cerca de 5 issues prontas. Há trabalho feito nas #26, #27 e #31, mas em branch ou local, sem fechamento |
+| CP2 SPI (hora/valor) | `PV` = 86,0% × 26 h = **22,4 h** · `EV` = 0 h · **SPI = 0,00**. Na E2 inteira (40 h): `PV` = 36,4 h, `EV` = 12 h, **SPI = 0,33** | ≥ 0,90 | (AN) | Nenhum valor da entrega final virou entrega registrada |
+| CP2 SPI por contagem | Pela linha de base, #26, #27 e #28 terminavam em 18/11: 0 de 3 fechadas, **SPI = 0,00** | ≥ 0,90 | (AN) | O cronograma foi replanejado (G1 até 20/11 e usuários de 19 a 21/11, pela D13), mas a linha de base não muda depois de o ciclo começar |
+| CP2 Variação de prazo | #26, #27 e #28 passaram do fim planejado (18/11). #25: **4,5 dias** após o fim planejado (14/11) | - | (A) | Faltam 2,4 dias para o vencimento da milestone |
+| RC1 Variação de esforço | Nenhuma issue fechada no ciclo | -20% a +20% | (--) | Prévia: a #27 já soma **7 h** das 5 h estimadas (+40%) e ainda tem a consolidação pela frente; a #26 soma **5,8 h** das 5 h (+16%), registradas só no branch |
+| RC2 CPI | Sem `EV` no ciclo. `AC` registrado: 7 h no `main` (R$350) e 5,8 h só em branch (R$290) | ≥ 0,90 | (--) | Sem entrega não há CPI. Total registrado no `main` desde 18/10: **22 h = R$1.100**, de 2 integrantes |
+| RC3 (*proxy*: commits, todos os branches) | larigs 8 (**66,7%**) · Faehzin 3 (**25,0%**) · LucasAvelar2711 1 (**8,3%**) · demais 0 | 13% a 20% | (AN) | Três integrantes com commit. Guilherme-Moura não tem commit desde 26/10, GuilhermeMM3 desde 18/10, e MrBolt2005 nunca teve; parte do trabalho deles foi assumida pela D12 |
+| DP1 *Lead time* | Nenhuma fechada no ciclo. Abertas: 7 (#25 a #31), com idade média de **14,9 dias** | ≤ 3 dias | (AN) | As issues da Fase 4 estão abertas desde 04/11, de propósito (D10), mas já vencem nesta semana |
+| DP2 Razão saída/chegada | **0 chegadas** e **0 saídas**: razão indefinida e vazão zero | ≥ 0,90 | (A) | Nenhuma issue andou no GitHub no ciclo, embora o repositório tenha 12 commits |
+| DP2 WIP | **7 abertas**, **1,2 por integrante** | ≤ 2 por integrante | (OK) | Dentro do limite, mas todas vencem até 22/11 |
+| DP3 Índice de pico | 7 de 12 commits em 18/11 = **58,3%**. 3 dias ativos em 4 (17, 18 e 19/11) | ≤ 40% | (A) | Melhor distribuição dos ciclos medidos, ainda acima do limite |
+| DP4 Retrabalho | Por commit: 3 de 12 = **25,0%** ([`3622c7a`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/commit/3622c7a), correção de chave no script do G1; [`3c7d86a`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/commit/3c7d86a), ajuste de horas; `bbd77f9`, realinhamento à D13). Por PR: nenhum PR no ciclo | ≤ 20% | (A) | Retrabalho perto do limite. Sem PR, os três branches não passam por revisão |
+| Rastreabilidade | 1 de 12 commits cita issue ([`b398fc9`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/commit/b398fc9), #31). 0 PRs abertos | 100% dos PRs ligados a issue e revisados | (AN) | O fluxo de PR do ciclo 4 não se repetiu: o trabalho do ciclo está em branches sem PR, invisível ao CP1 até o merge |
+
+### 9.3 Gráficos
+
+```mermaid
+---
+config:
+  themeVariables:
+    xyChart:
+      plotColorPalette: "#B4531A"
+      titleColor: "#7D8E95"
+      xAxisLabelColor: "#7D8E95"
+      xAxisTitleColor: "#7D8E95"
+      xAxisLineColor: "#7D8E95"
+      xAxisTickColor: "#7D8E95"
+      yAxisLabelColor: "#7D8E95"
+      yAxisTitleColor: "#7D8E95"
+      yAxisLineColor: "#7D8E95"
+      yAxisTickColor: "#7D8E95"
+      backgroundColor: "transparent"
+---
+xychart-beta
+    title "Commits por dia (09/11 a 19/11/2026)"
+    x-axis "Dia" ["09/11", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19"]
+    y-axis "Commits" 0 --> 14
+    bar [1, 0, 0, 0, 2, 13, 1, 0, 4, 7, 1]
+```
+
+_Figura 19 - Commits por dia nos ciclos 4 e 5, sem os commits de merge, em todos os branches publicados (29 commits; 19/11 até as 10h55). O pico de 14/11 é o PR #33, na véspera do vencimento da Fase 3. Dos 12 commits de 17 a 19/11, 11 estão em branches sem PR. Indicador DP3. Fonte: [`commits.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/commits.csv)._
+
+```mermaid
+---
+config:
+  themeVariables:
+    xyChart:
+      plotColorPalette: "#8C9BA1, #B4531A"
+      titleColor: "#7D8E95"
+      xAxisLabelColor: "#7D8E95"
+      xAxisTitleColor: "#7D8E95"
+      xAxisLineColor: "#7D8E95"
+      xAxisTickColor: "#7D8E95"
+      yAxisLabelColor: "#7D8E95"
+      yAxisTitleColor: "#7D8E95"
+      yAxisLineColor: "#7D8E95"
+      yAxisTickColor: "#7D8E95"
+      backgroundColor: "transparent"
+---
+xychart-beta
+    title "Burnup da milestone E2 - Entrega final (issues)"
+    x-axis "Dia de novembro" [04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+    y-axis "Issues concluidas (acumulado)" 0 --> 6
+    line [0.1, 0.5, 0.8, 1.2, 1.5, 1.9, 2.2, 2.6, 2.9, 3.3, 3.6, 4.0, 4.3, 4.7, 5.0, 5.3]
+    line [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+```
+
+_Figura 20 - Burnup da milestone "E2 - Entrega final (Fase 4 e artigo v2)" até a data de corte: linha cinza = planejado (6 issues distribuídas de forma linear de 04/11 até o vencimento, em 21/11, às 21h) e linha terracota = concluído. Em 19/11 o plano previa 5,3 issues, e nenhuma fechou. Indicador CP1. Fonte: API de issues do GitHub e `linha-de-base-e2.csv`._
+
+```mermaid
+---
+config:
+  themeVariables:
+    xyChart:
+      plotColorPalette: "#0B5563, #B4531A"
+      titleColor: "#7D8E95"
+      xAxisLabelColor: "#7D8E95"
+      xAxisTitleColor: "#7D8E95"
+      xAxisLineColor: "#7D8E95"
+      xAxisTickColor: "#7D8E95"
+      yAxisLabelColor: "#7D8E95"
+      yAxisTitleColor: "#7D8E95"
+      yAxisLineColor: "#7D8E95"
+      yAxisTickColor: "#7D8E95"
+      backgroundColor: "transparent"
+---
+xychart-beta
+    title "Horas da E2 por integrante - planejadas x registradas ate 19/11"
+    x-axis ["Faehzin", "larigs", "MrBolt2005", "Guilherme-Moura", "LucasAvelar2711", "GuilhermeMM3"]
+    y-axis "Horas" 0 --> 13
+    bar [9, 7, 7, 6, 6, 5]
+    line [12, 9.8, 0, 0, 0, 0]
+```
+
+_Figura 21 - Horas da E2 por integrante: barras = horas estimadas nas issues de cada um (40 h; Faehzin com #14, #21 e #27) e linha = horas registradas no `esforco.csv` desde 04/11, incluindo as 5,8 h da larigs que estão só no branch `larissa/g1-dia1`. Faehzin já passou da estimativa, e LucasAvelar2711, que escreveu quatro métodos pela D12, não tem nenhuma hora registrada. Indicadores RC1 e RC3. Fonte: [`esforco.csv`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/blob/main/dados/gestao/esforco.csv) e `linha-de-base-e2.csv`._
+
+### 9.4 Leitura dos ciclos 4 e 5
+
+1. **A Fase 3 foi recuperada no vencimento.** A D11 e a D12 tiveram efeito: o desvio do CP1 caiu de 54,0 para 14,3 p.p., o SPI subiu de 0,35 para 0,86, e quatro issues fecharam por `Closes` num PR. O custo foi a rajada (13 commits na véspera) e a concentração (76,5% dos commits do ciclo em um integrante).
+2. **A entrega final repete o padrão da E1.** Com 86% do período decorrido, 0 de 6 issues fechadas e SPI de 0,00. Há trabalho real (dados do G1, parte de A1 do G2, página da Fase 4), mas fora do `main` e sem fechamento. Se nada fechar até 21/11, todo o valor da E2 entra no último dia, como aconteceu na E1.
+3. **O trabalho voltou para branches, mas sem PR.** É melhor que commitar direto no `main`, mas sem PR não há revisão nem `Closes`, e o CP1 não enxerga o que foi feito.
+4. **As horas seguem vindo de 2 de 6 integrantes,** e as duas issues medidas estouraram a estimativa (+100% e +50%). A #27 já passou da estimativa antes de fechar.
+5. **Ações sugeridas para a equipe antes da coleta de 22/11:** abrir um PR com `Closes #N` para cada branch até 20/11; dividir ou fechar a #25 e fechar a milestone "E2 - Ponto de controle"; registrar as horas ao fechar cada issue.
+
+## 10. Próxima coleta
 
 | Ciclo | Data | O que coletar | Situação |
 |-------|------|---------------|----------|
 | 2 (completo) | Domingo, 01/11/2026 | Todas as métricas | **Realizada retroativamente em 13/11.** Registrada na seção 5 |
 | 3 | 04/11 e 08/11/2026 | Todas as métricas, mais a verificação da D08, D09 e D10 | **Realizada retroativamente em 13/11.** Registrada na seção 6 |
 | 4 (parcial) | 11/11/2026 | CP1, CP2 e DP2 | **Realizada em 13/11**, com o valor de 11/11 recalculado. Registrada na seção 7 |
-| 4 (completo) | Domingo, 15/11/2026 | Todas as métricas, o fechamento da milestone "E2 - Ponto de controle" e a verificação da D11 | Pendente |
-| 5 (parcial) | Quarta-feira, 18/11/2026 | CP1 e DP2 da milestone "E2 - Entrega final" e horas das issues fechadas | Pendente |
+| 4 (completo) | Domingo, 15/11/2026 | Todas as métricas, o fechamento da milestone "E2 - Ponto de controle" e a verificação da D11 | **Realizada retroativamente em 19/11.** Registrada na seção 8 |
+| 5 (parcial) | Quarta-feira, 18/11/2026 | CP1 e DP2 da milestone "E2 - Entrega final" e horas das issues fechadas | **Realizada em 19/11**, com corte às 10h55. Registrada na seção 9 |
+| 5 (completo) | Domingo, 22/11/2026 | Todas as métricas, o fechamento das milestones "E2 - Ponto de controle" e "E2 - Entrega final", e a verificação da D12 e da D13 | Pendente |
 
-## 9. Evolução entre os ciclos
+## 11. Evolução entre os ciclos
 
-Comparação dos ciclos 0 a 4 em cada indicador, para mostrar o que melhorou, o que piorou e o que ficou igual. O ciclo 4 é parcial (até 13/11), e a comparação será refeita na coleta completa de 15/11. Os valores são os das seções 2 a 7; quando um ciclo tem dois valores (declarado e registrado, por exemplo), vale o que está no painel da seção 1.
+Comparação dos ciclos 0 a 5 em cada indicador, para mostrar o que melhorou, o que piorou e o que ficou igual. O ciclo 4 aparece com os valores do fechamento (seção 8); o ciclo 5 é parcial (até 19/11) e será refeito na coleta completa de 22/11. Quando um ciclo tem dois valores (declarado e registrado, por exemplo), vale o que está no painel da seção 1.
 
-### 9.1 Tendência por indicador
+### 11.1 Tendência por indicador
 
-| Indicador | C0 | C1 | C2 | C3 | C4 (parcial) | Limite | Tendência |
-|-----------|:--:|:--:|:--:|:--:|:------------:|:------:|-----------|
-| Métricas mensuráveis (de 9) | 3 | 6 | 8 | 7 | **9** | 9 | **Melhora.** Pela primeira vez as nove métricas têm valor, graças às milestones da E2, à estimativa de horas e ao primeiro registro de horas |
-| Métricas em ação necessária (AN) | 3 | 5 | 5 | 6 | 6 | 0 | **Piora e depois estabiliza.** Medir mais revelou mais problemas; de C3 para C4 o número parou de subir |
-| Métricas em OK | 0 | 0 | 2 | 1 | 1 | 9 | **Constante em nível baixo** |
-| CP1 desvio (p.p.) | - | 88,9 | 0,0 | 24,7 | 54,0 | ≤ 5 | **Piora dentro da E2.** O 0,0 de C2 é a saturação depois do vencimento da E1, não recuperação |
-| CP2 SPI | - | 0,05 | 1,00 | 0,37 | 0,35 | ≥ 0,90 | **Constante em nível ruim.** O 1,00 de C2 é a convergência da E1 já vencida |
-| RC1 TVE | - | - | - | - | +50% | ±20% | **Primeira medição**, só da #21 |
-| RC2 CPI | - | - | - | - | 0,67 | ≥ 0,90 | **Primeira medição**, só da #21 |
-| RC3 maior participação (*proxy*: commits) | 34,8% | 66,7% | 66,7% | 50,0% | 100% | 13% a 20% | **Piora.** O trabalho no repositório se concentra cada vez mais |
-| RC3 integrantes com commit no ciclo | 5 de 6 | 2 de 6 | 2 de 6 | 2 de 6 | 1 de 6 | 6 de 6 | **Piora** |
-| RC3 carga planejada dentro de 13% a 20% | - | 2 de 6 | - | 6 de 6 | 6 de 6 | 6 de 6 | **Melhora.** A E2 foi distribuída por igual |
-| DP1 *lead time* das fechadas (dias) | - | 3,1 | 9,3 | 16,0 | 6,0 | ≤ 3 | **Melhora em C4**, ainda o dobro do limite |
-| DP2 WIP por integrante | - | 2,7 | 0,0 | 2,0 | 1,8 | ≤ 2 | **Melhora.** Dentro do limite desde C3 |
-| DP3 índice de pico | 82,6% | 100% | 66,7% | 100% | 50,0% | ≤ 40% | **Oscila.** C4 é o melhor valor, mas com só 2 commits |
-| DP3 dias ativos | 4 de 14 (29%) | 1 de 7 (14%) | 2 de 7 (29%) | 1 de 7 (14%) | 2 de 5 (40%) | - | **Leve melhora em C4** |
-| DP4 retrabalho (por commit) | 39,1% | 66,7% | 66,7% | 50,0% | 0,0% | ≤ 20% | **Melhora**, sobre uma base pequena de commits |
-| Commits no ciclo | 23 | 3 | 3 | 4 | 2 | - | **Queda de volume** depois do ciclo 0 |
-| Horas registradas com data no ciclo | 6 | 0 | 0 | 2 | 3 | - | **Começou a entrar**, de um só integrante |
-| PRs integrados / revisados | 1 / 0 | 0 / 0 | 0 / 0 | 0 / 0 | 1 / 0 | todos revisados | **Constante.** Nenhuma revisão registrada em nenhum ciclo |
+| Indicador | C0 | C1 | C2 | C3 | C4 | C5 (parcial) | Limite | Tendência |
+|-----------|:--:|:--:|:--:|:--:|:--:|:------------:|:------:|-----------|
+| Métricas mensuráveis (de 9) | 3 | 6 | 8 | 7 | **9** | 7 | 9 | **Cai em C5** porque nenhuma issue fechou: RC1 e RC2 dependem de entrega com horas |
+| Métricas em ação necessária (AN) | 3 | 5 | 5 | 6 | 7 | 4 | 0 | **Piora em C4.** A queda de C5 vem de métricas que deixaram de ser medidas, não de melhora |
+| Métricas em OK | 0 | 0 | 2 | 1 | 0 | 0 | 9 | **Nenhuma desde C4** |
+| CP1 desvio (p.p.) | - | 88,9 | 0,0 | 24,7 | 14,3 | 86,0 | ≤ 5 | **Recupera em C4** (54,0 p.p. em 13/11, 14,3 no vencimento) e **dispara em C5**, já na milestone da entrega final |
+| CP2 SPI | - | 0,05 | 1,00 | 0,37 | 0,86 | 0,00 | ≥ 0,90 | **Melhor valor real em C4.** O 1,00 de C2 é saturação; C5 não tem entrega |
+| RC1 TVE | - | - | - | - | +100% (#20) e +50% (#21) | - | ±20% | **Estouro** nas duas issues com horas |
+| RC2 CPI | - | - | - | - | 0,57 | - | ≥ 0,90 | **Um valor só**, abaixo do limite |
+| RC3 maior participação (*proxy*: commits) | 34,8% | 66,7% | 66,7% | 50,0% | 76,5% | 66,7% | 13% a 20% | **Concentração alta e constante.** Muda quem concentra, conforme a D12 |
+| RC3 integrantes com commit no ciclo | 5 de 6 | 2 de 6 | 2 de 6 | 2 de 6 | 3 de 6 | 3 de 6 | 6 de 6 | **Leve melhora** depois de C3 |
+| RC3 carga planejada dentro de 13% a 20% | - | 2 de 6 | - | 6 de 6 | 6 de 6 | 6 de 6 | 6 de 6 | **Constante.** O plano está equilibrado, a execução registrada não |
+| DP1 *lead time* das fechadas (dias) | - | 3,1 | 9,3 | 16,0 | 10,8 | - | ≤ 3 | **Acima do limite em todo ciclo** com fechamento |
+| DP2 WIP por integrante | - | 2,7 | 0,0 | 2,0 | 1,2 | 1,2 | ≤ 2 | **Dentro do limite** desde C3 |
+| DP3 índice de pico | 82,6% | 100% | 66,7% | 100% | 76,5% | 58,3% | ≤ 40% | **Melhor valor em C5**, ainda acima do limite |
+| DP3 dias ativos | 4 de 14 (29%) | 1 de 7 (14%) | 2 de 7 (29%) | 1 de 7 (14%) | 4 de 7 (57%) | 3 de 4 (75%) | - | **Melhora** desde C4 |
+| DP4 retrabalho (por commit) | 39,1% | 66,7% | 66,7% | 50,0% | 52,9% | 25,0% | ≤ 20% | **Melhor valor em C5** entre os ciclos com mais de 3 commits |
+| Commits no ciclo | 23 | 3 | 3 | 4 | 17 | 12 | - | **Volume volta a subir** na Fase 3 e na Fase 4 |
+| Horas registradas com data no ciclo | 6 | 0 | 0 | 2 | 7 | 7 (+5,8 em branch) | - | **Dois integrantes** registram desde C4 |
+| PRs integrados / revisados | 1 / 0 | 0 / 0 | 0 / 0 | 0 / 0 | 2 / 0 | 0 / 0 | todos revisados | **Nenhuma revisão formal em nenhum ciclo.** O #33 (C4) teve revisão em comentário |
 
-### 9.2 Gráficos
+### 11.2 Gráficos
 
 ```mermaid
 ---
@@ -684,14 +879,14 @@ config:
 ---
 xychart-beta
     title "Situação das métricas em cada ciclo"
-    x-axis "Ciclo" ["C0", "C1", "C2", "C3", "C4 (parcial)"]
+    x-axis "Ciclo" ["C0", "C1", "C2", "C3", "C4", "C5 (parcial)"]
     y-axis "Métricas (de 9)" 0 --> 9
-    line [3, 6, 8, 7, 9]
-    line [3, 5, 5, 6, 6]
-    line [0, 0, 2, 1, 1]
+    line [3, 6, 8, 7, 9, 7]
+    line [3, 5, 5, 6, 7, 4]
+    line [0, 0, 2, 1, 0, 0]
 ```
 
-_Figura 18 - Linha azul = métricas mensuráveis, linha terracota = métricas em ação necessária (AN), linha cinza = métricas em OK. A distância entre a azul e a terracota é o que está medido e sob controle: ela cresceu de 0 para 3 métricas, enquanto o número de AN se estabilizou em 6. Fonte: painel da seção 1._
+_Figura 22 - Linha azul = métricas mensuráveis, linha terracota = métricas em ação necessária (AN), linha cinza = métricas em OK. Em C4 todas as nove métricas tiveram valor, e sete ficaram em AN. Em C5, RC1 e RC2 deixam de ser mensuráveis porque nenhuma issue fechou. Fonte: painel da seção 1._
 
 ```mermaid
 ---
@@ -712,13 +907,13 @@ config:
 ---
 xychart-beta
     title "CP1 - desvio entre planejado e concluído (p.p.)"
-    x-axis "Ciclo" ["C1", "C2", "C3", "C4 (parcial)"]
+    x-axis "Ciclo" ["C1", "C2", "C3", "C4", "C5 (parcial)"]
     y-axis "Desvio (p.p.)" 0 --> 100
-    bar [88.9, 0, 24.7, 54.0]
-    line [5, 5, 5, 5]
+    bar [88.9, 0, 24.7, 14.3, 86.0]
+    line [5, 5, 5, 5, 5]
 ```
 
-_Figura 19 - Barras = desvio do CP1 em pontos percentuais, linha = limite de 5 p.p. C1 e C2 se referem à milestone E1; C3 e C4, à milestone "E2 - Ponto de controle". O zero de C2 é a saturação da E1 depois do vencimento. Indicador CP1._
+_Figura 23 - Barras = desvio do CP1 em pontos percentuais, linha = limite de 5 p.p. C1 e C2 se referem à milestone E1; C3 e C4, à "E2 - Ponto de controle"; C5, à "E2 - Entrega final". O zero de C2 é a saturação da E1 depois do vencimento. Indicador CP1._
 
 ```mermaid
 ---
@@ -739,13 +934,13 @@ config:
 ---
 xychart-beta
     title "CP2 - SPI por ciclo"
-    x-axis "Ciclo" ["C1", "C2", "C3", "C4 (parcial)"]
+    x-axis "Ciclo" ["C1", "C2", "C3", "C4", "C5 (parcial)"]
     y-axis "SPI" 0 --> 1.1
-    bar [0.05, 1.00, 0.37, 0.35]
-    line [0.9, 0.9, 0.9, 0.9]
+    bar [0.05, 1.00, 0.37, 0.86, 0.00]
+    line [0.9, 0.9, 0.9, 0.9, 0.9]
 ```
 
-_Figura 20 - Barras = SPI em horas, linha = limite de 0,90. C1 e C2 são da E1 (42 h), e C3 e C4 da "E2 - Ponto de controle" (14 h, estimadas em 13/11). Fora o 1,00 de C2, que é convergência depois do vencimento, nenhum ciclo passou de 0,40. Indicador CP2._
+_Figura 24 - Barras = SPI em horas, linha = limite de 0,90. C1 e C2 são da E1 (42 h); C3 e C4, da "E2 - Ponto de controle" (14 h); C5, da "E2 - Entrega final" (26 h). O 0,86 de C4 é o melhor valor medido antes do vencimento. Indicador CP2._
 
 ```mermaid
 ---
@@ -766,14 +961,14 @@ config:
 ---
 xychart-beta
     title "RC3 - concentração do trabalho no repositório"
-    x-axis "Ciclo" ["C0", "C1", "C2", "C3", "C4 (parcial)"]
+    x-axis "Ciclo" ["C0", "C1", "C2", "C3", "C4", "C5 (parcial)"]
     y-axis "Participação (%)" 0 --> 100
-    bar [34.8, 66.7, 66.7, 50.0, 100]
-    line [20, 20, 20, 20, 20]
-    line [16.7, 16.7, 16.7, 16.7, 16.7]
+    bar [34.8, 66.7, 66.7, 50.0, 76.5, 66.7]
+    line [20, 20, 20, 20, 20, 20]
+    line [16.7, 16.7, 16.7, 16.7, 16.7, 16.7]
 ```
 
-_Figura 21 - Barras = maior participação de um integrante nos commits do ciclo, linha azul = limite superior da faixa OK (20%), linha cinza = participação ideal (16,7%). A barra subiu de 34,8% para 100%, enquanto a carga planejada da E2 está entre 13,2% e 18,4% para todos: o plano está equilibrado, a execução registrada não. Indicador RC3 (*proxy*: commits)._
+_Figura 25 - Barras = maior participação de um integrante nos commits do ciclo, linha azul = limite superior da faixa OK (20%), linha cinza = participação ideal (16,7%). A concentração fica acima de 50% desde C1, enquanto a carga planejada da E2 está entre 13,2% e 18,4% para todos. Indicador RC3 (*proxy*: commits)._
 
 ```mermaid
 ---
@@ -794,13 +989,13 @@ config:
 ---
 xychart-beta
     title "Commits e dias ativos por ciclo"
-    x-axis "Ciclo" ["C0", "C1", "C2", "C3", "C4 (parcial)"]
+    x-axis "Ciclo" ["C0", "C1", "C2", "C3", "C4", "C5 (parcial)"]
     y-axis "Quantidade" 0 --> 25
-    bar [23, 3, 3, 4, 2]
-    line [4, 1, 2, 1, 2]
+    bar [23, 3, 3, 4, 17, 12]
+    line [4, 1, 2, 1, 4, 3]
 ```
 
-_Figura 22 - Barras = commits do ciclo (sem merge), linha = dias com pelo menos um commit. Depois do ciclo 0, o repositório recebeu de 2 a 4 commits por ciclo, em 1 ou 2 dias. O ciclo 0 tem 14 dias, os demais 7, e o ciclo 4 parcial tem 5. Indicador DP3._
+_Figura 26 - Barras = commits do ciclo (sem merge), linha = dias com pelo menos um commit. O volume voltou a subir em C4 e C5. O ciclo 0 tem 14 dias, os demais 7, e o ciclo 5 parcial tem 4. Indicador DP3._
 
 ```mermaid
 ---
@@ -821,15 +1016,15 @@ config:
 ---
 xychart-beta
     title "DP3 e DP4 - pico de atividade e retrabalho (%)"
-    x-axis "Ciclo" ["C0", "C1", "C2", "C3", "C4 (parcial)"]
+    x-axis "Ciclo" ["C0", "C1", "C2", "C3", "C4", "C5 (parcial)"]
     y-axis "Percentual" 0 --> 100
-    line [82.6, 100, 66.7, 100, 50.0]
-    line [39.1, 66.7, 66.7, 50.0, 0]
-    line [40, 40, 40, 40, 40]
-    line [20, 20, 20, 20, 20]
+    line [82.6, 100, 66.7, 100, 76.5, 58.3]
+    line [39.1, 66.7, 66.7, 50.0, 52.9, 25.0]
+    line [40, 40, 40, 40, 40, 40]
+    line [20, 20, 20, 20, 20, 20]
 ```
 
-_Figura 23 - Linha terracota = índice de pico (DP3), linha azul = retrabalho por commit (DP4), linha cinza = limite do pico (40%), linha cinza-clara = limite do retrabalho (20%). As duas curvas caem em C4, mas com 2 commits no ciclo cada commit vale 50 pontos, então a queda ainda não é tendência. Indicadores DP3 e DP4._
+_Figura 27 - Linha terracota = índice de pico (DP3), linha azul = retrabalho por commit (DP4), linha cinza = limite do pico (40%), linha cinza-clara = limite do retrabalho (20%). C5 tem os melhores valores das duas curvas, ainda acima dos limites. Indicadores DP3 e DP4._
 
 ```mermaid
 ---
@@ -850,13 +1045,13 @@ config:
 ---
 xychart-beta
     title "DP1 - lead time médio das issues fechadas (dias)"
-    x-axis "Ciclo" ["C1", "C2", "C3", "C4 (parcial)"]
+    x-axis "Ciclo" ["C1", "C2", "C3", "C4"]
     y-axis "Dias" 0 --> 18
-    bar [3.1, 9.3, 16.0, 6.0]
+    bar [3.1, 9.3, 16.0, 10.8]
     line [3, 3, 3, 3]
 ```
 
-_Figura 24 - Barras = *lead time* médio das issues fechadas no ciclo, linha = limite de 3 dias. O pico de C3 (16,0 dias) é o fechamento no GitHub, em 04/11, das issues da E1 declaradas prontas em 28/10. C4 é só a #21, pela data declarada. Indicador DP1._
+_Figura 28 - Barras = *lead time* médio das issues fechadas no ciclo, linha = limite de 3 dias. O pico de C3 (16,0 dias) é o fechamento no GitHub, em 04/11, das issues da E1 declaradas prontas em 28/10. C4 são as cinco issues de método da Fase 3. C5 não aparece porque nenhuma issue fechou até o corte. Indicador DP1._
 
 ```mermaid
 ---
@@ -877,19 +1072,19 @@ config:
 ---
 xychart-beta
     title "DP2 - trabalho em andamento por integrante"
-    x-axis "Ciclo" ["C1", "C2", "C3", "C4 (parcial)"]
+    x-axis "Ciclo" ["C1", "C2", "C3", "C4", "C5 (parcial)"]
     y-axis "Issues abertas por integrante" 0 --> 3
-    bar [2.7, 0, 2.0, 1.8]
-    line [2, 2, 2, 2]
+    bar [2.7, 0, 2.0, 1.2, 1.2]
+    line [2, 2, 2, 2, 2]
 ```
 
-_Figura 25 - Barras = issues abertas por integrante na data de corte, linha = limite de 2 da D04. C2 é zero porque o backlog da E1 esvaziou e o da E2 ainda não existia; a partir de C3 o WIP fica no limite ou abaixo dele. Indicador DP2._
+_Figura 29 - Barras = issues abertas por integrante na data de corte, linha = limite de 2 da D04. C2 é zero porque o backlog da E1 esvaziou e o da E2 ainda não existia; a partir de C3 o WIP fica no limite ou abaixo dele. Indicador DP2._
 
-### 9.3 Síntese
+### 11.3 Síntese
 
-- **Melhorou:** a capacidade de medir (9 de 9 métricas com valor em C4, contra 3 em C0), o WIP (dentro do limite desde C3), a distribuição planejada (6 de 6 integrantes na faixa) e, com a ressalva de poucos commits, o pico e o retrabalho em C4.
-- **Piorou:** o cumprimento de prazo dentro da E2 (desvio do CP1 de 24,7 para 54,0 p.p.) e a concentração do trabalho registrado (de 5 para 1 integrante com commit no ciclo).
-- **Ficou igual:** o SPI abaixo de 0,40 em todo ciclo que não está saturado, nenhuma revisão de PR em nenhum ciclo e as horas vindas de um único integrante.
+- **Melhorou:** o cumprimento da Fase 3 no vencimento (CP1 com 14,3 p.p. e SPI de 0,86, os melhores da E2), o primeiro fechamento de issues pelo PR (`Closes`), a distribuição dos commits no tempo (3 dias ativos em 4 em C5) e o WIP (dentro do limite desde C3).
+- **Piorou:** a milestone da entrega final (0 de 6 issues com 86% do período) e o esforço das issues medidas (TVE de +100% e +50%, CPI de 0,57).
+- **Ficou igual:** nenhuma revisão formal de PR, horas de só 2 de 6 integrantes, concentração do trabalho registrado acima de 50% e a rajada de commits na véspera dos vencimentos.
 
 ## Histórico de versão
 
@@ -902,3 +1097,4 @@ _Figura 25 - Barras = issues abertas por integrante na data de corte, linha = li
 | 0.5 | 28/10/2026 | Cinco gráficos de esforço, entrega e custo: volume por integrante no ciclo 0, horas planejadas x entregues e horas por categoria no ciclo 1, custo da E1 em reais e simulação de pagamento por integrante no ciclo 2 | Gabriel Fae | - |
 | 0.6 | 13/11/2026 | Fechamento retroativo do ciclo 2, ciclo 3 medido retroativamente e coleta parcial do ciclo 4 a partir do `git log` e da API do GitHub, com painel estendido e três gráficos novos | Gabriel Fae | - |
 | 0.7 | 13/11/2026 | Linha de base de horas da E2 (40 h) aplicada a CP2, RC1 e RC2 dos ciclos 3 e 4, e seção 9 com a evolução entre os ciclos: tabela de tendências e oito gráficos | Gabriel Fae | - |
+| 0.8 | 19/11/2026 | Fechamento retroativo do ciclo 4 com a verificação da D11, coleta parcial do ciclo 5 (corte em 19/11, às 10h55), quatro gráficos novos e evolução estendida até o ciclo 5 | Gabriel Fae | - |
