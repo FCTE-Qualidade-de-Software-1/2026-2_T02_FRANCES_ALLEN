@@ -31,7 +31,7 @@ Os valores pedidos (5 anos, 15 artigos, duas bases, só texto gratuito) foram es
 
 ### Cartão B: usar o resultado
 
-> **Situação.** Um colega já rodou a busca completa sobre o mesmo tema e deixou o resultado nesta conta (e-mail e senha enviados pelo condutor), no projeto de nome ______________________. Fale em voz alta o que está pensando.
+> **Situação.** Um colega já rodou a busca completa sobre o mesmo tema e deixou o resultado nesta conta (e-mail e senha enviados pelo condutor), no projeto de nome igual ao seu tema anterior. Fale em voz alta o que está pensando.
 >
 > 1. Escolha os 3 artigos que você levaria primeiro ao orientador e diga por que escolheu esses. Marque os 3 para encontrá-los fácil depois.
 > 2. Seu orientador quer saber como a busca foi feita e por que alguns artigos ficaram de fora. Mostre onde o VICKY registra isso.
