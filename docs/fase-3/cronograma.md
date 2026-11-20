@@ -45,7 +45,7 @@ _Tabela 2 - Atividades da Fase 3, com responsável, issue, datas, dependências 
 |-----------|-------------|:-----:|:------:|:---:|------------|
 | Coleta do G3 no commit `c2ae570` | Lucas Avelar, pela D12 | #29 | 14/11 | 14/11 | #23. **Feita** |
 | Repetição do G3 por A2 e inspeção de M3.2.3 | Guilherme Moura | #29 | 16/11 | 17/11 | coleta de 14/11; acesso ao fork |
-| Inspeção do G2 | Gabriel Fae | #27 | 13/11 | 18/11 | #21; triagem T1 do G1 (16/11) para a etapa 6. **A1 concluída em 19/11**; faltam A2 e a consolidação |
+| Inspeção do G2 | Gabriel Fae | #27 | 13/11 | 18/11 | #21; triagem T1 do G1 (16/11) para a etapa 6. **A1 e A2 concluídas em 19/11; consolidação e cálculo em 20/11** ([resultados](../fase-4/resultados-g2-inspecao.md)); faltam a ratificação de A2 em 13 linhas e capturas de A1 |
 | Coleta do G1, dia 1: casos F01 a F04, triagens T1 e T2, casos F05 a F09 e exportação de T1 | Larissa Gomes | #26 | 16/11 | 16/11 | #20; créditos confirmados; listas de incluídos; avaliadores definidos |
 | Coleta do G1, dia 2: triagens T3 e E1, fichas cegas de T1 e T2 e piloto de calibração | Larissa Gomes | #26 | 17/11 | 17/11 | dia 1 |
 | Coleta do G1, dia 3: triagens T1-B (48 horas depois de T1) e T4 | Larissa Gomes | #26 | 18/11 | 18/11 | dia 1 |
@@ -136,3 +136,4 @@ _Tabela 4 - Riscos do cronograma, efeito e resposta prevista. Fonte: elaborada p
 | 0.4 | 15/11/2026 | Saldo de créditos confirmado e risco da rodada 2 do G1 em 21/11, a partir da revisão da Larissa | Lucas Avelar | - |
 | 0.5 | 19/11/2026 | Sessões de 16 a 18/11 não realizadas; coleta com usuários replanejada para 19 a 21/11 pela D13 (formulário de estética e sessões remotas) e risco de participantes marcado como ocorrido | Gabriel Fae | - |
 | 0.6 | 19/11/2026 | Situação da inspeção do G2: parte de A1 concluída | Gabriel Fae | - |
+| 0.7 | 20/11/2026 | Situação da inspeção do G2: consolidação e cálculo feitos | Gabriel Fae | - |
