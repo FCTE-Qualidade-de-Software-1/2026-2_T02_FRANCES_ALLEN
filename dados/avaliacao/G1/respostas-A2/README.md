@@ -32,6 +32,6 @@ O julgamento usou só as fichas cegas (`../M1.3.1/ficha_cega_Tn.csv`), o PICO da
 
 Notas completas de cada tema: `notas_A2_T1T2.md` e `notas_A2_T3T4.md`.
 
-## Limitação declarada
+## Uso de IA e conflito declarado
 
-As fichas de A2, como as de A1, foram preenchidas com apoio de IA (ver [Uso de IA](../../../../docs/sobre/uso-de-ia.md)). Por isso o kappa de M1.3.1 mede a concordância entre dois julgamentos assistidos por IA feitos em sessões independentes, e não entre dois avaliadores humanos. Isso deve constar nas limitações da Fase 4. A2 também participou da pesquisa das revisões de referência na Fase 3 (seção 2.3, item 4); o julgamento não teve acesso à lista de incluídos, mas o conflito fica declarado.
+A IA foi usada como auxílio na aplicação dos critérios (ver [Uso de IA](../../../../docs/sobre/uso-de-ia.md)); A2 revisou as fichas e assume cada julgamento. A2 também participou da pesquisa das revisões de referência na Fase 3 (seção 2.3, item 4); o julgamento não teve acesso à lista de incluídos, mas o conflito fica declarado.

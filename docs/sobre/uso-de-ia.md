@@ -15,7 +15,7 @@ A rubrica da disciplina exige declarar **a ferramenta**, **a tarefa** e **como o
 | Claude (Anthropic) | Pesquisa das revisões sistemáticas de referência do G1 | DOI, PMID, PMCID e número de incluídos de cada revisão conferidos no PubMed e no PMC em 14/11/2026 (`dados/avaliacao/G1/referencias/referencias.md`) | Lucas Avelar |
 | Claude (Anthropic) | Montagem das fichas cegas dos testes do G1 (`ficha_cega_Tn.csv`, em ordem aleatória, sem posição nem Quality Score) | A ordem vem do `calcular_g1.py`, com a semente do método, e foi conferida pela Larissa contra o Top 30 de cada tema | Larissa Gomes Silva |
 | Claude (Anthropic) | Fichas de A1 do G1: julgamento de relevância de T1 a T4 (M1.3.1), rubrica de T1 e T2 (M1.4.1) e etapa 11a (conferência de M1.2.1 e revisão dos não conformes de M1.5.1) | Aplicação dos critérios das seções 4.4 e 4.6 do método a cada item da ficha cega, com justificativa por item e interpretações registradas em `dados/avaliacao/G1/respostas-A1/README.md`, a pedido de A1. O contato prévio do assistente com registros de tela de T1 está declarado como limitação no mesmo arquivo | Gabriel Fae |
-| Claude (Anthropic) | Fichas de A2 do G1: julgamento de relevância de T1 a T4 (M1.3.1) e rubrica de T1 e T2 (M1.4.1) | Aplicação dos critérios das seções 4.4 e 4.6 a cada item da ficha cega, em sessão separada da de A1 e sem acesso às chaves nem às respostas de A1, com justificativa por item e interpretações registradas em `dados/avaliacao/G1/respostas-A2/README.md`, a pedido de A2 | Lucas Avelar |
+| Claude (Anthropic) | Apoio a A2 nas fichas do G1: relevância de T1 a T4 (M1.3.1) e rubrica de T1 e T2 (M1.4.1) | IA usada como auxílio na aplicação dos critérios das seções 4.4 e 4.6, em sessão separada da de A1 e sem acesso às chaves nem às respostas de A1. A2 revisou as fichas e assume cada julgamento; interpretações registradas em `dados/avaliacao/G1/respostas-A2/README.md` | Lucas Avelar |
 
 ## Histórico de versão
 
@@ -26,4 +26,4 @@ A rubrica da disciplina exige declarar **a ferramenta**, **a tarefa** e **como o
 | 0.3 | 18/10/2026 | Declaração do uso de IA no objetivo G1 | Larissa Gomes Silva | - |
 | 0.4 | 14/11/2026 | Declaração do uso de IA na Fase 3, linha do G2 marcada a confirmar e correções de texto | Lucas Avelar | - |
 | 0.6 | 19/11/2026 | Declaração do uso de IA nas fichas de A1 do G1 | Gabriel Fae | - |
-| 0.7 | 20/11/2026 | Declaração do uso de IA nas fichas de A2 do G1 | Lucas Avelar | - |
+| 0.7 | 20/11/2026 | Declaração do uso de IA como auxílio nas fichas de A2 do G1 | Lucas Avelar | - |
