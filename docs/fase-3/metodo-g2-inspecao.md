@@ -301,7 +301,7 @@ O valor é calculado somente sobre `consolidado.md`, e o nível sai da tabela de
 - [x] Definir quem são A1, A2 e A3 (17/11)
 - [x] Confirmar a conta de cortesia e o número de créditos: 10 créditos em 14/11 ([Método do G1, seção 3.5](metodo-g1.md#35-contas-creditos-e-divisao-das-triagens)); a inspeção não consome créditos
 - [x] Conferir em produção a lista de ações de M2.4.1: A1 não encontrou ação nova (17 e 19/11)
-- [ ] Combinar com o G1 (#26) o horário da triagem observada. A1 não acompanhou a triagem e usou os registros de texto do G1 de 17/11, como consta nos desvios da [Fase 4](../fase-4/resultados-g2-inspecao.md)
+- [x] Combinar com o G1 (#26) o horário da triagem observada. A1 não acompanhou a triagem e usou os registros de texto do G1 de 17/11; A2 observou a A03 e a P09 numa triagem do G1 em 19/11 (projeto #81), por intermédio da frente do G1. Os dois casos constam nos desvios da [Fase 4](../fase-4/resultados-g2-inspecao.md)
 
 ## Histórico de versão
 
@@ -314,3 +314,4 @@ O valor é calculado somente sobre `consolidado.md`, e o nível sai da tabela de
 | 0.5 | 14/11/2026 | "Por que este método" como seção de nível 2, fundamentação ligada às fichas da Fase 2, quantidade do Top de 1 a 30 em A04 e I07 e papéis nomeados em `coleta.md` | Lucas Avelar | - |
 | 0.6 | 15/11/2026 | Pendência de créditos resolvida (10 em 14/11) | Lucas Avelar | - |
 | 0.7 | 19/11/2026 | Pendências antes da coleta atualizadas (papéis, lista de ações e triagem observada) | Gabriel Fae | - |
+| 0.8 | 20/11/2026 | Pendência da triagem observada fechada com a observação de A2 | Gabriel Fae | - |
