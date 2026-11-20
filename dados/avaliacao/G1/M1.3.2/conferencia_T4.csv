@@ -1,0 +1,11 @@
+posicao,doi,pagina_oficial,titulo_ok,autores_ok,ano_ok,periodico_ok,link_ok,observacao
+3,10.1002/acn3.51971,https://pubmed.ncbi.nlm.nih.gov/38311797/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+6,10.1002/mds.27604,https://pubmed.ncbi.nlm.nih.gov/30624801/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+9,10.1016/S1474-4422(26)00082-7,https://pubmed.ncbi.nlm.nih.gov/42009009/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+12,10.1007/s00415-011-6174-y,https://pubmed.ncbi.nlm.nih.gov/21779958/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+15,10.1111/cts.70139,https://pubmed.ncbi.nlm.nih.gov/39976332/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+18,10.1007/s40263-024-01113-z,https://pubmed.ncbi.nlm.nih.gov/39115603/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+21,10.1042/BCJ20200331,https://pubmed.ncbi.nlm.nih.gov/33305808/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+24,10.2147/DDDT.S193889,https://pubmed.ncbi.nlm.nih.gov/31118567/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+27,10.1002/ana.24260,https://pubmed.ncbi.nlm.nih.gov/25159818/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+30,10.1016/S1474-4422(07)70220-X,https://pubmed.ncbi.nlm.nih.gov/17826341/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta

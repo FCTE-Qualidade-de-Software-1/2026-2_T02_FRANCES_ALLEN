@@ -1,0 +1,31 @@
+item,relevante,componente_que_falhou,justificativa
+T2-01,nao,desenho,"revisao sistematica ou metanalise; desenho pedido e ECR; sobreviventes de cancer, ioga YOCAS, fadiga"
+T2-02,nao,desenho,metanalise de ECR de ioga com fadiga; desenho pedido e ECR
+T2-03,nao,desenho,metanalise em rede de ECR de exercicio incluindo ioga; desenho pedido e ECR
+T2-04,nao,desenho,"revisao sistematica ou metanalise; desenho pedido e ECR; pacientes em quimio ou radioterapia, ioga, fadiga"
+T2-05,sim,,"ECR, cancer de mama metastatico, ioga integrada vs terapia de suporte, inventario de fadiga"
+T2-06,nao,desenho,"revisao sistematica ou metanalise; desenho pedido e ECR; cancer de mama em quimioterapia, ioga, fadiga"
+T2-07,nao,desenho,metanalise em rede de 12 intervencoes incluindo ioga; desenho pedido e ECR
+T2-08,nao,desenho,"revisao sistematica ou metanalise; desenho pedido e ECR; cancer de mama, ioga, fadiga"
+T2-09,nao,desenho,revisao sistematica de ECR com sintese narrativa; desenho pedido e ECR
+T2-10,nao,desenho,"revisao sistematica ou metanalise; desenho pedido e ECR; cancer de mama, ioga, fadiga"
+T2-11,nao,desenho,metanalise em rede e dose-resposta de exercicio incluindo ioga; desenho pedido e ECR
+T2-12,nao,desenho,"revisao sistematica ou metanalise; desenho pedido e ECR; cancer de mama, ioga, fadiga"
+T2-13,sim,,"estudo randomizado, cancer de mama em radio ou quimioterapia, ioga adicional vs tratamento usual, fadiga medida"
+T2-14,nao,desenho,piloto pre e pos sem grupo controle; nao e ECR
+T2-15,sim,,ECR fase III multicentrico (YOCAS) vs cuidado padrao; fadiga medida pelo MFSI e sua interferencia
+T2-16,sim,,"ECR, varios tipos de cancer, ioga vs lista de espera, desfecho primario fadiga"
+T2-17,sim,,"ECR, cancer de mama em radioterapia, pranayama (pratica respiratoria da ioga) vs controle, escala de fadiga"
+T2-18,nao,intervencao,"ECR de pacote com exercicio fisico, pranayama e dieta; ioga so como cointervencao"
+T2-19,nao,desenho,revisao narrativa de ECR; desenho pedido e ECR
+T2-20,nao,desenho,metanalise em rede de ECR de exercicio incluindo ioga; desenho pedido e ECR
+T2-21,nao,desenho,metanalise bayesiana dose-resposta de ECR; desenho pedido e ECR
+T2-22,sim,,"analise secundaria de ECR fase III em sobreviventes com 60 anos ou mais, YOCAS vs cuidado padrao, fadiga; subgrupo da populacao com comparacao randomizada"
+T2-23,nao,desenho,"serie retrospectiva pre e pos de uma sessao de ioga por telessaude, sem controle"
+T2-24,nao,intervencao,"ECR compara e-mail lembrete vs sem lembrete apos ioga; ambos os bracos fizeram ioga, a intervencao randomizada nao e a ioga"
+T2-25,sim,,"ECR fase III multicentrico, YOCAS vs cuidado padrao, desfecho fadiga (MFSI)"
+T2-26,nao,desenho,revisao sistematica e metanalise em rede de ECR; desenho pedido e ECR
+T2-27,nao,desenho,"revisao sistematica ou metanalise; desenho pedido e ECR; quimio ou radioterapia, ioga, fadiga"
+T2-28,sim,,"ECR, sobreviventes de cancer de mama com fadiga persistente, ioga Iyengar vs educacao em saude, desfecho fadiga"
+T2-29,nao,desenho,revisao de revisoes sistematicas de reabilitacao; desenho pedido e ECR
+T2-30,nao,desenho,"analise secundaria de ECR que compara idosos e jovens dentro do braco ioga, com melhora intragrupo; sem comparacao randomizada contra controle (inferido)"

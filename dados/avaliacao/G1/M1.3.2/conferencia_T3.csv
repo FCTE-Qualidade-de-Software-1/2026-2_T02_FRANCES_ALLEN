@@ -1,0 +1,11 @@
+posicao,doi,pagina_oficial,titulo_ok,autores_ok,ano_ok,periodico_ok,link_ok,observacao
+2,10.1590/0102-311XEN064919,https://pubmed.ncbi.nlm.nih.gov/39258680/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+5,10.61622/rbgo/2026rbgo102,https://pubmed.ncbi.nlm.nih.gov/41815930/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+8,10.20945/2359-3997000000605,https://pubmed.ncbi.nlm.nih.gov/37252694/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+10,10.1016/j.midw.2022.103428,https://pubmed.ncbi.nlm.nih.gov/35870228/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+12,10.1590/1806-9282.66.2.139,https://pubmed.ncbi.nlm.nih.gov/32428147/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+15,10.1590/1516-3180.2016.0332190317,https://pubmed.ncbi.nlm.nih.gov/28793129/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+18,10.1590/1983-1447.2024.20230304.en,https://pubmed.ncbi.nlm.nih.gov/39699433/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+20,10.1590/s0102-311x2009000500021,https://pubmed.ncbi.nlm.nih.gov/19488499/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+22,,https://pubmed.ncbi.nlm.nih.gov/22488492/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+25,10.1590/s0004-27302011000600005,https://pubmed.ncbi.nlm.nih.gov/22011855/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta

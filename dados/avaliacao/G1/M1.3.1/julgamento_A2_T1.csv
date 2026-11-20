@@ -1,0 +1,31 @@
+item,relevante,componente_que_falhou,justificativa
+T1-01,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; populacao DAC, colchicina e MACE atendidos"
+T1-02,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC, colchicina vs placebo, MACCE"
+T1-03,sim,,"ECR duplo-cego (COLCOT) pos-IAM, colchicina vs placebo, desfecho composto de morte CV, IAM, AVC"
+T1-04,sim,,analise do ECR LoDoCo2 por historia de SCA mantendo comparacao randomizada colchicina vs placebo; desfecho MACE
+T1-05,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC, MACE"
+T1-06,nao,populacao,"inclui alto risco CV e doencas nao ateroscleroticas (pericardite, fibrilacao atrial); populacao mais ampla que a do tema; alem disso e revisao sistematica"
+T1-07,sim,,"ECR (LoDoCo) randomizado com desfecho cego, doenca coronariana estavel, colchicina vs sem colchicina; SCA, parada, AVC isquemico"
+T1-08,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC, AVC e eventos CV"
+T1-09,nao,desenho,"revisao sistematica Cochrane de ECR; DCV estabelecida, colchicina, IAM e AVC"
+T1-10,nao,desenho,"artigo de racional, desenho e caracteristicas basais do LoDoCo2, sem resultado de desfecho; equivale a protocolo"
+T1-11,nao,populacao,"inclui pericardite, fibrilacao atrial e insuficiencia cardiaca, fora da populacao aterosclerotica; alem disso e revisao sistematica"
+T1-12,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DCV coronariana ou cerebrovascular, MACE"
+T1-13,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC, IAM e MACE"
+T1-14,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DCV aterosclerotica, morte CV, IAM, AVC"
+T1-15,nao,desenho,"metanalise de ensaios randomizados; AVC previo ou DAC, AVC isquemico e MACE"
+T1-16,sim,,"ECR duplo-cego (LoDoCo2), doenca coronariana cronica, colchicina vs placebo, morte CV, IAM, AVC"
+T1-17,nao,desenho,revisao sistematica com metanalise de ECR; desenho pedido e ECR assistida por ChatGPT; MACE
+T1-18,nao,desfecho,"analise post hoc do ECR LoDoCo2 cujo desfecho e efeito colateral e descontinuacao, nao eventos CV maiores"
+T1-19,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; prevencao secundaria, MACE"
+T1-20,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; doenca coronariana, MACE"
+T1-21,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DCV aterosclerotica estabelecida, MACE"
+T1-22,nao,desenho,revisao narrativa (purpose of review); desenho nao e ECR
+T1-23,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC, MACE"
+T1-24,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC aguda ou cronica, MACE"
+T1-25,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC, desfecho AVC"
+T1-26,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC, IAM e AVC"
+T1-27,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC, MACE"
+T1-28,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; DAC, morte CV, IAM, AVC"
+T1-29,nao,desenho,"revisao sistematica com metanalise de ECR; desenho pedido e ECR; doenca vascular manifesta, MACE"
+T1-30,sim,,analise secundaria do ECR LoDoCo2 por risco basal mantendo comparacao randomizada colchicina vs placebo; desfecho MACE
