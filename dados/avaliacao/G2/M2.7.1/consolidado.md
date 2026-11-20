@@ -4,19 +4,19 @@
 
 | item | valor_a1 | valor_a2 | valor_final | justificativa | decidido_por |
 |---|---|---|---|---|---|
-| E1 |  |  |  |  |  |
-| E2 |  |  |  |  |  |
-| E3 |  |  |  |  |  |
-| E4 |  |  |  |  |  |
+| E1 | sim | sim | sim |  | consenso |
+| E2 | sim | sim | sim |  | consenso |
+| E3 | nao | nao | nao |  | consenso |
+| E4 | sim | sim | sim |  | consenso |
 
 ## Resultado
 
 | Campo | Valor |
 |---|---|
-| A: páginas que explicam o propósito |  |
-| B: páginas coletadas (de 4) |  |
-| Resultado (A de B) |  |
-| Nível |  |
-| Itens fora de B e motivo |  |
+| A: páginas que explicam o propósito | 3 |
+| B: páginas coletadas (de 4) | 4 |
+| Resultado (A de B) | 3 de 4 |
+| Nível | Bom |
+| Itens fora de B e motivo | nenhum |
 
 Nível pela tabela de [níveis de pontuação](../../../../docs/fase-2/niveis-e-julgamento.md). O valor sai somente deste arquivo e é publicado na Fase 4.

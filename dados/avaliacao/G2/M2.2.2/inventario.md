@@ -5,6 +5,8 @@
 > Textos iguais em lugares diferentes contam uma vez (os lugares vão em `gatilho`). Texto com variável conta uma vez. Se produção e código divergirem, vale produção e a diferença é anotada em `observacao`.
 >
 > A2 recebeu este inventário em 17/11 como `inventario.csv` (branch `docs/fase-3-cronograma-e-correcoes-e1`), com os mesmos `id`, textos e gatilhos.
+>
+> Na consolidação (20/11/2026), entraram NAV02 a NAV04, mensagens do navegador vistas por A2 na etapa 4, e as observações de produção de ERR05 e ERR18.
 
 `tipo`: `erro`. `origem`: `servidor`, `navegador` ou `inventario`.
 
@@ -16,7 +18,7 @@ Na coluna `texto`, `//` separa linhas da mesma caixa, `{...}` marca parte variá
 | ERR02 | erro | E-mail inválido. | F01 | Cadastro com e-mail que tem @ mas não tem ponto depois dele (ex.: nome@gmail) | servidor |  |
 | ERR03 | erro | A senha deve ter ao menos 8 caracteres. | F01 | Cadastro ou redefinição de senha com menos de 8 caracteres | servidor | Em produção (17/11) quem responde é o navegador, com o balão "Aumente este texto para 8 caracteres ou mais. No momento, você está usando 5 caracteres)."; o texto do servidor não chega a aparecer |
 | ERR04 | erro | As senhas não coincidem. | F01 | Cadastro com senha e confirmação diferentes | servidor |  |
-| ERR05 | erro | Para criar a conta e preciso aceitar os Termos de Uso e a Politica de Privacidade. | F01 | Cadastro sem marcar a caixa de aceite dos Termos | servidor |  |
+| ERR05 | erro | Para criar a conta e preciso aceitar os Termos de Uso e a Politica de Privacidade. | F01 | Cadastro sem marcar a caixa de aceite dos Termos | servidor | Em produção, a caixa de aceite é obrigatória, e o navegador barra o envio antes, com a NAV02 (E01 de A2, 19/11); o texto do servidor não chega a aparecer |
 | ERR06 | erro | Este e-mail já está cadastrado. | F01 | Cadastro com e-mail de uma conta que já existe | servidor |  |
 | ERR07 | erro | E-mail ou senha incorretos. | F01 | Login com senha errada ou com e-mail sem conta | servidor |  |
 | ERR08 | erro | Esse link de confirmação expirou. Entre e peca um novo. | F01 | Abrir o link de confirmação de e-mail depois de 48 horas (aparece na tela de login) | servidor |  |
@@ -29,7 +31,7 @@ Na coluna `texto`, `//` separa linhas da mesma caixa, `{...}` marca parte variá
 | ERR15 | erro | Esse link de redefinição não vale mais: ele já foi usado, a senha foi trocada depois que ele saiu, ou o endereço chegou incompleto. [botão: Pedir um link novo] | F01 | Abrir um link de redefinição já usado, antigo ou incompleto | servidor |  |
 | ERR16 | erro | A confirmação não é igual à senha nova. | F01 | Redefinir senha com confirmação diferente da senha nova | servidor |  |
 | ERR17 | erro | Confirme seu e-mail para gerar a pré-visualização. Reenviamos o link se você pedir no painel. | F03 | Pré-visualizar critérios com o e-mail ainda não confirmado, quando o VICKY exige confirmação | servidor |  |
-| ERR18 | erro | Limite de 20 pré-visualizações por dia atingido. Inicie o pipeline ou tente amanhã. | F03 | Pedir a 21ª pré-visualização de critérios em 24 horas (é o E08 do roteiro) | servidor |  |
+| ERR18 | erro | Limite de 20 pré-visualizações por dia atingido. Inicie o pipeline ou tente amanhã. | F03 | Pedir a 21ª pré-visualização de critérios em 24 horas (é o E08 do roteiro) | servidor | Em produção (E08 de A2, 19/11), a 21ª prévia foi recusada e o texto foi só para o endereço da página (`/projetos?error=...`); a tela não mostrou mensagem |
 | ERR19 | erro | Você já gerou muitas pré-visualizações hoje. Inicie o pipeline ou tente amanhã. | F03 | Pedir mais de 60 pré-visualizações em 24 horas na mesma conta, contando as de projetos já excluídos | servidor |  |
 | ERR20 | erro | Limite de pré-visualizações por dia atingido nesta rede. Inicie o pipeline ou tente amanhã. | F03 | Mais de 60 pré-visualizações em 24 horas vindas da mesma rede, somando todas as contas | servidor |  |
 | ERR21 | erro | ⚠️ Sem créditos // Se continuar, escreva para vickyangel@gmail.com. [botão: Comprar créditos] | F05 | Iniciar a triagem completa (ou "Criar e iniciar tudo direto") com saldo zero | servidor |  |
@@ -45,3 +47,6 @@ Na coluna `texto`, `//` separa linhas da mesma caixa, `{...}` marca parte variá
 | ERR31 | erro | Página não encontrada // Esta página não existe // O endereço que você acessou não existe ou foi removido. Pode ser um link antigo ou um typo. [botões: Voltar ao Dashboard, Ver projetos] | F02 | Abrir projeto ou artigo que não existe, foi excluído ou é de outra conta | servidor |  |
 | ERR32 | erro | Acesso negado // Você não tem permissão // Esta área é restrita. Se você acredita que deveria ter acesso, fale com o administrador do workspace. [botão: Voltar ao Dashboard] | F02 | Ação que a conta não tem permissão de fazer | servidor |  |
 | NAV01 | erro | Preencha este campo. | F01 | Balão do navegador ao enviar um formulário com campo obrigatório em branco (visto no cadastro, no E01) | navegador | Acrescentada por A1 na etapa 4: mensagem do navegador vista em produção, que não vem do código do VICKY |
+| NAV02 | erro | Marque esta caixa se deseja continuar. | F01 | Balão do navegador ao enviar o cadastro sem marcar a caixa de aceite dos Termos | navegador | Acrescentada na consolidação (20/11), a partir do E01 de A2, que conferiu o texto em português no Chrome (sem captura própria). Encobre a ERR05 |
+| NAV03 | erro | Aumente este texto para 8 caracteres ou mais. No momento, você está usando {n} caracteres). | F01 | Balão do navegador com senha de menos de 8 caracteres | navegador | Acrescentada na consolidação (20/11), a partir do E03 de A1 e de A2. Encobre a ERR03 |
+| NAV04 | erro | O valor deve ser menor ou igual a 30. | F04 | Balão do navegador com a quantidade do Top acima de 30, no Novo projeto | navegador | Acrescentada na consolidação (20/11), a partir do I07 de A2, que viu o texto em inglês ("Value must be less than or equal to 30."); texto em português do Chrome |
