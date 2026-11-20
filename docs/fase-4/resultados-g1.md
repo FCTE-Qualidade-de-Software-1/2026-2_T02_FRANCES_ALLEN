@@ -4,6 +4,69 @@ A coleta do G1 terminou em 20/11/2026. Os valores desta página saem do `calcula
 
 Esta página reúne o resultado das oito métricas do G1, conforme o [Método do G1](../fase-3/metodo-g1.md). Os níveis seguem a tabela de [níveis de pontuação](../fase-2/niveis-e-julgamento.md), fixada antes da coleta.
 
+## Como ler esta página
+
+As siglas desta página são as do [Método do G1](../fase-3/metodo-g1.md) e das [hipóteses da Fase 2](../fase-2/objetivos-questoes-hipoteses.md). As tabelas abaixo trazem o que cada uma quer dizer, e o resto da página usa só o código.
+
+**Métricas**
+
+| Sigla | O que mede |
+|-------|------------|
+| M1.1.1 | Recall do Top 30 contra a revisão de referência |
+| M1.1.2 | Recall descontadas as fontes que não indexam o estudo |
+| M1.2.1 | Funções do fluxo que operam |
+| M1.3.1 | Precisão: itens do Top 30 relevantes para o PICO |
+| M1.3.2 | Metadados e links corretos |
+| M1.4.1 | Correlação entre Quality Score e rubrica metodológica |
+| M1.5.1 | Conformidade com os filtros |
+| M1.5.2 | Estabilidade entre duas execuções, por Jaccard |
+
+**Hipóteses (formuladas antes da coleta)**
+
+| Sigla | O que a equipe esperava |
+|-------|-------------------------|
+| H1.1 | Recall do Top 30 de 40% a 60%, com ganho de 10 pontos ou mais descontadas as fontes |
+| H1.2 | No máximo 1 das 9 funções parcial ou ausente |
+| H1.3 | 70% a 85% dos itens relevantes e 90% ou mais com metadados e link corretos |
+| H1.4 | Correlação de 0,50 ou mais entre Quality Score e rubrica |
+| H1.5 | Filtros cumpridos em 93% ou mais e Jaccard de 0,70 ou mais entre duas execuções |
+
+**Questões**
+
+| Sigla | Pergunta |
+|-------|----------|
+| Q1.1 | A lista contém os estudos que uma revisão de referência incluiria |
+| Q1.2 | Que partes do fluxo o estudante consegue executar |
+| Q1.3 | Os artigos respondem ao PICO e vêm bem descritos |
+| Q1.4 | A ordem do ranking acompanha um critério de qualidade metodológica |
+| Q1.5 | O resultado obedece à configuração e se mantém ao repetir |
+
+**Temas e execuções**
+
+| Sigla | O que é |
+|-------|---------|
+| T1 | Colchicina na prevenção secundária de eventos cardiovasculares |
+| T2 | Ioga para fadiga em pessoas com câncer |
+| T3 | Prevalência de diabetes mellitus gestacional no Brasil |
+| T4 | Tratamento farmacológico da ataxia de Friedreich |
+| T1-B e T3-B | Repetição de T1 e de T3, com a mesma entrada, para medir a estabilidade |
+| E1 | Teste de filtros sobre o tema da colchicina: só PubMed, 5 anos, ensaios randomizados |
+| E2 | Teste de filtros sobre o tema do diabetes gestacional: só SciELO, 5 anos, estudos observacionais |
+
+**Funções do VICKY avaliadas na M1.2.1**
+
+| Sigla | Função |
+|-------|--------|
+| F01 | Cadastro e login |
+| F02 | Criação de projeto |
+| F03 | Geração do PICO |
+| F04 | Seleção de bases e quantidade |
+| F05 | Triagem completa |
+| F06 | Lista por Quality Score |
+| F07 | Favoritos |
+| F08 | Log auditável |
+| F09 | Exportação |
+
 ## 1. Execução da coleta
 
 | Campo | Valor |
@@ -151,8 +214,6 @@ Objetivo G1: 0,60 ponto, Insatisfatório, julgamento "Não atende". Métricas me
 - O SciELO retornou 0 artigos em todas as execuções; o Google Acadêmico retornou 0 com erros de strings. Por isso M1.1.2 coincide com M1.1.1 e a E2 (só SciELO) não gerou lista; M1.5.1 foi calculada só sobre a E1 (seção 3).
 - O formulário não tem campo de tipo de estudo; nos testes de filtro a restrição foi escrita no objetivo.
 - M1.3.2: conferência feita por código contra o registro oficial do PubMed (título, autores, ano, periódico) e por requisição HTTP ao link, sem abrir a página do DOI; os itens com PMID correspondem a artigos indexados no PubMed.
-- M1.2.1: os subpassos F02 passo d, F03 passo a e F04 passo a foram conferidos pelo A1 em 20/11/2026, olhando só as capturas e a tabela de subpassos; os três saíram "não" (resposta do A1 por mensagem à Larissa em 20/11, folha de marcação não anexada). Motivos: em F02 (d), a página reaberta mostra o tema, mas não o objetivo, e a janela exibida é a recomendada pela IA, não um valor salvo, e as bases aparecem só como origem das strings; em F03 (a), a tela não traz blocos rotulados P, I, C e O; em F04 (a), não há campo com as bases escolhidas e salvas no projeto.
-- M1.2.1, capturas de tela dos subpassos (PNG em `M1.2.1/evidencias/`, Chrome 1366x768, zoom 100%, 20/11/2026): F01 tela do formulário de cadastro `20261120_F01_formulario_cadastro.png` e `20261120_F01_formulario_cadastro_fim.png`; F02 a, b e c `20261120_F02_a_b_c_formulario_criacao_topo.png`; F02 d `20261120_F02_d_reabrir_projeto_P0_topo.png` e `20261120_F02_d_reabrir_rascunho_P0b.png`; F03 a e b `20261120_F03_a_b_criterios_PICO_P0.png` e `20261120_F03_b_criterios_texto_P0.png`; F04 a `20261120_F04_a_strings_por_base_P0.png` e `20261120_F04_a_b_formulario_bases_e_top.png`; F04 c `20261120_F04_c_E1_topo.png` e `20261120_F04_c_E1_lista_fonte.png`; F05 a, c e d `20261120_F05_b_andamento.png` (b), `20261120_F05_a_dashboard_creditos.png`, `20261120_F05_c_T1_concluida_topo.png`, `20261120_F05_d_T1_excluidos_motivo.png`. F06 a F09 seguem com as capturas de 19/11 em `para_A2/prints/`.
 - T3 e T3-B ficaram com Top menor que 30 (25 e 18 itens).
 
 ## Histórico de versão
