@@ -1,25 +1,135 @@
 # M2.3.2: Inventário ampliado das mensagens
 
-> Etapa 1, feita por A1. Os erros de `../M2.2.2/inventario.md` (mesmos `id`), mais sucesso, aviso, andamento da triagem e saldo de créditos antes de executar. Este arquivo é o texto entregue a A2: **sem caminho de arquivo nem trecho de código**. Os caminhos ficam em `codigo-a1.md`, que A2 só abre depois de enviar `A2.md`.
+> Etapa 1, feita por A1 em 17/11/2026. Os erros de `../M2.2.2/inventario.md` (mesmos `id`), mais sucesso, aviso, andamento da triagem e saldo de créditos antes de executar. Este arquivo é o texto entregue a A2: **sem caminho de arquivo nem trecho de código**. Os caminhos ficam em `codigo-a1.md`, que A2 só abre depois de enviar `A2.md`.
 >
 > Textos iguais em lugares diferentes contam uma vez (os lugares vão em `gatilho`). Texto com variável conta uma vez. Se produção e código divergirem, vale produção e a diferença é anotada em `observacao`.
+>
+> A2 recebeu este inventário em 17/11 como `inventario.csv` (branch `docs/fase-3-cronograma-e-correcoes-e1`), com os mesmos `id`, textos e gatilhos. Fora do corte: selos de estado, rótulos de botão durante o carregamento e as telas de F10 e F11.
+>
+> Na consolidação (20/11/2026), entraram NAV02 a NAV04, mensagens do navegador vistas por A2 na etapa 4, e as observações de produção de ERR05 e ERR18.
 
 `tipo`: `erro`, `sucesso`, `aviso`, `andamento` ou `saldo`. `origem`: `servidor`, `navegador` ou `inventario`.
 
+Na coluna `texto`, `//` separa linhas da mesma caixa, `{...}` marca parte variável e `[...]` descreve botão ou trecho omitido. `origem` diz de onde vem o texto: `servidor` (VICKY) ou `navegador` (validação nativa do Chrome).
+
 | id | tipo | texto | funcao | gatilho | origem | observacao |
 |---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |
+| ERR01 | erro | Informe seu nome. | F01 | Cadastro com o nome preenchido só com espaços (nome vazio é barrado antes pelo navegador) | servidor |  |
+| ERR02 | erro | E-mail inválido. | F01 | Cadastro com e-mail que tem @ mas não tem ponto depois dele (ex.: nome@gmail) | servidor |  |
+| ERR03 | erro | A senha deve ter ao menos 8 caracteres. | F01 | Cadastro ou redefinição de senha com menos de 8 caracteres | servidor | Em produção (17/11) quem responde é o navegador, com o balão "Aumente este texto para 8 caracteres ou mais. No momento, você está usando 5 caracteres)."; o texto do servidor não chega a aparecer |
+| ERR04 | erro | As senhas não coincidem. | F01 | Cadastro com senha e confirmação diferentes | servidor |  |
+| ERR05 | erro | Para criar a conta e preciso aceitar os Termos de Uso e a Politica de Privacidade. | F01 | Cadastro sem marcar a caixa de aceite dos Termos | servidor | Em produção, a caixa de aceite é obrigatória, e o navegador barra o envio antes, com a NAV02 (E01 de A2, 19/11); o texto do servidor não chega a aparecer |
+| ERR06 | erro | Este e-mail já está cadastrado. | F01 | Cadastro com e-mail de uma conta que já existe | servidor |  |
+| ERR07 | erro | E-mail ou senha incorretos. | F01 | Login com senha errada ou com e-mail sem conta | servidor |  |
+| ERR08 | erro | Esse link de confirmação expirou. Entre e peca um novo. | F01 | Abrir o link de confirmação de e-mail depois de 48 horas (aparece na tela de login) | servidor |  |
+| ERR09 | erro | Link de confirmação inválido. | F01 | Abrir um link de confirmação adulterado ou de um e-mail que foi trocado (aparece na tela de login) | servidor |  |
+| ERR10 | erro | Já mandei alguns links agora há pouco. Confira a caixa de entrada e o spam, e tente de novo daqui a uma hora. | F01 | Painel: pedir o reenvio do link de confirmação mais de 3 vezes em 1 hora | servidor |  |
+| ERR11 | erro | Não consegui enviar o e-mail agora. Tente de novo em alguns minutos. | F01 | Painel: pedir o reenvio do link quando o envio de e-mail falha | servidor |  |
+| ERR12 | erro | Informe o e-mail da sua conta. | F01 | Esqueci minha senha com e-mail sem @ | servidor |  |
+| ERR13 | erro | Muitos pedidos de redefinição em pouco tempo. Espere uma hora e tente de novo. | F01 | Esqueci minha senha: mais de 3 pedidos para o mesmo e-mail (ou 10 da mesma rede) em 1 hora | servidor |  |
+| ERR14 | erro | Esse link de redefinição expirou. Ele vale por 60 minutos. [botão: Pedir um link novo] | F01 | Abrir o link de redefinição de senha depois de 60 minutos | servidor |  |
+| ERR15 | erro | Esse link de redefinição não vale mais: ele já foi usado, a senha foi trocada depois que ele saiu, ou o endereço chegou incompleto. [botão: Pedir um link novo] | F01 | Abrir um link de redefinição já usado, antigo ou incompleto | servidor |  |
+| ERR16 | erro | A confirmação não é igual à senha nova. | F01 | Redefinir senha com confirmação diferente da senha nova | servidor |  |
+| ERR17 | erro | Confirme seu e-mail para gerar a pré-visualização. Reenviamos o link se você pedir no painel. | F03 | Pré-visualizar critérios com o e-mail ainda não confirmado, quando o VICKY exige confirmação | servidor |  |
+| ERR18 | erro | Limite de 20 pré-visualizações por dia atingido. Inicie o pipeline ou tente amanhã. | F03 | Pedir a 21ª pré-visualização de critérios em 24 horas (é o E08 do roteiro) | servidor | Em produção (E08 de A2, 19/11), a 21ª prévia foi recusada e o texto foi só para o endereço da página (`/projetos?error=...`); a tela não mostrou mensagem |
+| ERR19 | erro | Você já gerou muitas pré-visualizações hoje. Inicie o pipeline ou tente amanhã. | F03 | Pedir mais de 60 pré-visualizações em 24 horas na mesma conta, contando as de projetos já excluídos | servidor |  |
+| ERR20 | erro | Limite de pré-visualizações por dia atingido nesta rede. Inicie o pipeline ou tente amanhã. | F03 | Mais de 60 pré-visualizações em 24 horas vindas da mesma rede, somando todas as contas | servidor |  |
+| ERR21 | erro | ⚠️ Sem créditos // Se continuar, escreva para vickyangel@gmail.com. [botão: Comprar créditos] | F05 | Iniciar a triagem completa (ou "Criar e iniciar tudo direto") com saldo zero | servidor |  |
+| ERR22 | erro | ⚠️ Erro no pipeline: Sem créditos | F05 | Triagem ou prévia interrompida porque o serviço de IA usado pelo próprio VICKY ficou sem saldo (não é o saldo do estudante) | servidor |  |
+| ERR23 | erro | ⚠️ Erro no pipeline: Discovery falhou: {nome técnico do erro} | F03 | Falha interna na geração dos critérios PICO | servidor |  |
+| ERR24 | erro | ⚠️ Erro no pipeline: Análise falhou em {x}/{total} artigos. Último erro: {texto técnico do erro} | F05 | Triagem interrompida quando a análise falha em todos os artigos | servidor |  |
+| ERR25 | erro | ⚠️ Erro no pipeline: {texto técnico do erro} | F05 | Qualquer outra falha não prevista durante a triagem | servidor |  |
+| ERR26 | erro | ⚠️ Erro no pipeline: Workspace não encontrado | F05 | Triagem iniciada num projeto cujo espaço de trabalho não existe mais | servidor |  |
+| ERR27 | erro | ⚠️ {texto técnico do erro} // Se continuar, escreva para vickyangel@gmail.com. | F05 | Falha ao parar a triagem | servidor |  |
+| ERR28 | erro | Não passou: {lista das verificações reprovadas} | F08 | Painel "Pipeline" do projeto: a etapa "Verificação final (checklist)" reprova | servidor |  |
+| ERR29 | erro | {TipoDoErro}: {mensagem técnica} | F08 | Painel "Pipeline": uma etapa da triagem falha | servidor |  |
+| ERR30 | erro | iter{n} {base}: erro {mensagem técnica} | F08 | Painel "Pipeline": falha numa rodada de expansão da busca | servidor |  |
+| ERR31 | erro | Página não encontrada // Esta página não existe // O endereço que você acessou não existe ou foi removido. Pode ser um link antigo ou um typo. [botões: Voltar ao Dashboard, Ver projetos] | F02 | Abrir projeto ou artigo que não existe, foi excluído ou é de outra conta | servidor |  |
+| ERR32 | erro | Acesso negado // Você não tem permissão // Esta área é restrita. Se você acredita que deveria ter acesso, fale com o administrador do workspace. [botão: Voltar ao Dashboard] | F02 | Ação que a conta não tem permissão de fazer | servidor |  |
+| MSG01 | sucesso | E-mail confirmado! Agora é só entrar. | F01 | Tela de login depois de clicar no link de confirmação | servidor |  |
+| MSG02 | aviso | Esse e-mail já estava confirmado. | F01 | Clicar de novo num link de confirmação já usado | servidor |  |
+| MSG03 | sucesso | Senha redefinida. Agora é só entrar com a senha nova. | F01 | Tela de login depois de salvar a senha nova | servidor |  |
+| MSG04 | sucesso | Se existir uma conta com esse e-mail, enviamos um link para redefinir a senha. Ele vale por 60 minutos e funciona uma vez só. Confira também a caixa de spam. | F01 | Esqueci minha senha, com o envio de e-mail ligado (mesma tela exista ou não a conta) | servidor |  |
+| MSG05 | aviso | Recebemos seu pedido. No momento o envio automático de e-mail está indisponível, então o link de redefinição é enviado pelo atendimento: escreva para vickyangel@gmail.com a partir do e-mail da sua conta pedindo a redefinição de senha. | F01 | Esqueci minha senha, com o envio de e-mail desligado | servidor |  |
+| MSG06 | aviso | Seu e-mail já está confirmado | F01 | Painel: pedir reenvio do link com o e-mail já confirmado | servidor |  |
+| MSG07 | sucesso | Link reenviado. Confira sua caixa de entrada | F01 | Painel: reenvio do link de confirmação | servidor |  |
+| MSG08 | aviso | Confirme seu e-mail ({e-mail}). Mandamos um link pra voce. [botão: Reenviar link] | F01 | Faixa amarela no topo das telas internas enquanto o e-mail não foi confirmado | servidor |  |
+| MSG09 | aviso | Atualizamos os Termos de Uso e a Política de Privacidade (versão {versão}). Dê uma olhada e confirme quando puder. [botão: Li e concordo] | F01 | Faixa no topo das telas internas quando a conta não aceitou a versão vigente dos Termos | servidor |  |
+| MSG10 | saldo | Você só gasta 1 crédito quando inicia a triagem. | F02 | Subtítulo da tela Novo projeto | servidor |  |
+| MSG11 | saldo | 💡 Pré-visualizar critérios é grátis. O crédito só é debitado quando você inicia a triagem completa (geração de critérios + busca + análise + double-check). | F02 | Rodapé da tela Novo projeto, abaixo dos botões | servidor |  |
+| MSG12 | saldo | grátis · 0 créditos | F03 | Rótulo do botão "Pré-visualizar critérios" (Novo projeto) | servidor |  |
+| MSG13 | saldo | consome 1 crédito | F05 | Rótulo dos botões "▶ Criar e iniciar tudo direto" (Novo projeto) e "▶ Iniciar pipeline" (projeto) | servidor |  |
+| MSG14 | saldo | {n} créditos [ao passar o mouse: {n} crédito(s) restante(s). 1 crédito equivale a 1 pipeline. Clique para comprar mais.] | F05 | Pílula de saldo no cabeçalho de todas as telas internas | servidor |  |
+| MSG15 | aviso | Só artigos com texto completo gratuito: Descarta o que está atrás de paywall antes mesmo da análise. O filtro é conservador: quando a fonte não comprova que o texto é livre, o artigo fica de fora, então a busca traz bem menos resultados. SciELO é aberta por definição; no PubMed vale o depósito no PubMed Central; no Google Scholar, só quando há PDF direto. O filtro age na hora de coletar: ligar depois não apaga o que já entrou, e desligar não traz de volta o que foi descartado. | F04 | Explicação ao lado da caixa do filtro de acesso aberto (Novo projeto) | servidor |  |
+| MSG16 | aviso | ⏳ No total, isso costuma levar de 30 minutos a 1 hora. Não é lentidão: é trabalho de verdade. A inteligência artificial lê artigo por artigo, um de cada vez, e ainda passa uma segunda vez por cima de cada exclusão. Projeto com muitos resultados passa de 1 hora. | F05 | Quadro "O que vai acontecer" da tela Novo projeto | servidor |  |
+| MSG17 | aviso | ⚠️ Não feche esta aba enquanto o pipeline estiver rodando, porque fechar interrompe o processo. | F05 | Tela Novo projeto e faixa de andamento da triagem | servidor |  |
+| MSG18 | sucesso | Projeto excluído | F02 | Depois de excluir um projeto | servidor |  |
+| MSG19 | aviso | Tem certeza? Isso apaga {n} artigos e {m} análises. Não pode ser desfeito. [botões: Sim, excluir / Cancelar] | F02 | Menu ⋮ do projeto > Excluir projeto | servidor |  |
+| MSG20 | andamento | ✓ Gerando critérios PICO... aguarde ~30s | F03 | Depois de clicar em "Pré-visualizar critérios" | servidor |  |
+| MSG21 | aviso | Critérios PICO prontos. Revise antes de iniciar o pipeline. // Esses são os filtros que a IA vai aplicar em cada artigo encontrado. Revise abaixo, edite se quiser, e quando estiver pronta clique em "Iniciar pipeline" no topo da página (cobra 1 crédito). | F03 | Projeto com critérios prontos e triagem ainda não iniciada | servidor |  |
+| MSG22 | aviso | Iniciar pipeline completo assim que os critérios ficarem prontos? Vamos consumir 1 crédito agora e disparar a busca automaticamente quando a discovery terminar (sem regerar critérios). [caixa do navegador: OK / Cancelar] | F05 | Clicar em "Iniciar pipeline" enquanto a pré-visualização ainda está gerando os critérios | servidor |  |
+| MSG23 | sucesso | ✓ Pipeline iniciado! Acompanhe o progresso abaixo | F05 | Depois de iniciar a triagem | servidor |  |
+| MSG24 | sucesso | ✓ Pipeline completo agendado! Vamos iniciar a busca assim que os critérios ficarem prontos (sem regerar) | F05 | Iniciar a triagem durante a pré-visualização | servidor |  |
+| MSG25 | aviso | ✓ Pipeline completo já está agendado. Vamos iniciar a busca assim que os critérios ficarem prontos | F05 | Clicar de novo em iniciar quando a triagem já foi agendada | servidor |  |
+| MSG26 | aviso | ✓ Pipeline já está rodando | F05 | Clicar em iniciar com a triagem já em andamento | servidor |  |
+| MSG27 | aviso | Parar o pipeline em andamento? Etapa 1 de 2 // O pipeline está rodando agora — buscando, analisando e auditando artigos. Parar agora vai: Interromper a coleta e a análise em andamento. Preservar os artigos já analisados até aqui. Cessar qualquer chamada de IA — não haverá mais consumo nesse projeto. Você precisará reiniciar o pipeline depois pra continuar. [botões: Cancelar / Parar pipeline] | F05 | Clicar em "Parar pipeline" durante a triagem | servidor |  |
+| MSG28 | aviso | Confirmação final. Etapa 2 de 2 // Tem certeza absoluta? Esta é a última confirmação. Ao clicar em "Sim, parar agora", o pipeline será cancelado imediatamente e nenhuma nova ação será executada nesse projeto. [botões: Cancelar / Sim, parar agora] | F05 | Segunda etapa da confirmação de parar a triagem | servidor |  |
+| MSG29 | sucesso | ✓ Pipeline cancelado. Você pode editar os critérios e reiniciar | F05 | Depois de parar a triagem | servidor |  |
+| MSG30 | aviso | ✓ Pipeline não está rodando | F05 | Clicar em parar quando a triagem já terminou | servidor |  |
+| MSG31 | andamento | Pipeline rodando · {etapa atual} // {x} de {y} etapas concluídas // {tempo} tempo decorrido // {pct}% | F05 | Faixa rosa de andamento no topo do projeto durante a triagem | servidor |  |
+| MSG32 | andamento | ⏳ Esta triagem costuma levar de 30 minutos a 1 hora. Não é lentidão: é trabalho de verdade. A inteligência artificial lê artigo por artigo, e projeto grande passa de 1 hora. Prefira alguns minutos de espera a semanas de leitura manual. [...] Estamos varrendo centenas de artigos, aplicando critérios PICO em duas passadas independentes e calibrando a busca em tempo real. [...] Pode deixar rodando que avisamos quando terminar. | F05 | Faixa de andamento durante a triagem | servidor |  |
+| MSG33 | andamento | ⏱️ Faltam {tempo}. {a} de {b} artigos analisados · {base da estimativa} | F05 | Faixa de andamento, depois dos primeiros artigos analisados | servidor |  |
+| MSG34 | andamento | ⏱️ Calculando o tempo restante… a estimativa aparece assim que os primeiros artigos forem analisados. | F05 | Faixa de andamento, no começo da triagem | servidor |  |
+| MSG35 | andamento | [conjunto de 20 frases que se alternam] ex.: Interpretando o tema da pesquisa em linguagem natural… / Sondando candidatos a termos MeSH e qualificadores… | F05 | Linha que muda sozinha na faixa de andamento, durante a etapa "discovery" | servidor |  |
+| MSG36 | andamento | [conjunto de 22 frases que se alternam] ex.: Negociando conexão segura com eutils.ncbi.nlm.nih.gov… / Respeitando teto de 3 requisições por segundo da API do NCBI… | F05 | Linha que muda sozinha na faixa de andamento, durante a etapa "search_pubmed" | servidor |  |
+| MSG37 | andamento | [conjunto de 18 frases que se alternam] ex.: Estabelecendo sessão HTTPS com search.scielo.org… / Carregando a árvore do documento no leitor BeautifulSoup… | F05 | Linha que muda sozinha na faixa de andamento, durante a etapa "search_scielo" | servidor |  |
+| MSG38 | andamento | [conjunto de 17 frases que se alternam] ex.: Iniciando navegador Chromium em modo invisível via Playwright… / Aplicando atraso humanizado entre requisições para parecer orgânico… | F05 | Linha que muda sozinha na faixa de andamento, durante a etapa "search_scholar" | servidor |  |
+| MSG39 | andamento | [conjunto de 10 frases que se alternam] ex.: Indexando artigos por DOI canônico… / Aplicando normalização Unicode (NFKD + caixa baixa)… | F05 | Linha que muda sozinha na faixa de andamento, durante a etapa "dedup" | servidor |  |
+| MSG40 | andamento | [conjunto de 23 frases que se alternam] ex.: Avaliando aderência à População do estudo… / Estimando o custo da chamada (tokens de entrada e de saída)… | F05 | Linha que muda sozinha na faixa de andamento, durante a etapa "analyze" | servidor |  |
+| MSG41 | andamento | [conjunto de 12 frases que se alternam] ex.: Reabrindo cada exclusão da primeira passada… / Limpando o contexto do modelo de linguagem (sem viés da decisão prévia)… | F05 | Linha que muda sozinha na faixa de andamento, durante a etapa "double_check" | servidor |  |
+| MSG42 | andamento | [conjunto de 4 frases que se alternam] ex.: Ranqueando incluídos por Quality Score em ordem decrescente… / Aplicando o corte determinístico no Top final… | F05 | Linha que muda sozinha na faixa de andamento, durante a etapa "finalize" | servidor |  |
+| MSG43 | andamento | [conjunto de 10 frases que se alternam] ex.: Rodando lista de verificação final de integridade… / Selando o relatório auditável… | F05 | Linha que muda sozinha na faixa de andamento, durante a etapa "verify" | servidor |  |
+| MSG44 | andamento | Critérios + search strings gerados{ (fallback)}{ · n substrings ativas} ({justificativa da IA, até 120 caracteres}) | F03 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG45 | aviso | ⚠ Fallback ativado (LLM indisponível ou retornou lixo) · avisos: {lista} | F03 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG46 | andamento | Buscando em {n} substring(s) × {m} estratégia(s) | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG47 | andamento | Acumulado: {n} ({estratégias}) | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG48 | andamento | {n} artigos de {base} ({estratégias}) [se houver: ⚠ {k} erro(s): {erros técnicos}] | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG49 | andamento | Expansão iter {i} — motivo: {motivos} | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG50 | andamento | iter{i} {base}: +{n} brutos{recusa} | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG51 | andamento | Expansão iter {i}: +{n} artigos brutos{recusa} | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG52 | andamento | {n} duplicados marcados ({a} por DOI, {b} por título) | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG53 | andamento | Nada a analisar | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG54 | andamento | Cap de {N} análises atingido — pulando | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG55 | andamento | {s}✓ {f}✗ ({d}/{total}) | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG56 | andamento | {n} artigos analisados{ (lote de x)}{ (f falharam)} | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG57 | andamento | Nenhuma exclusão limítrofe para auditar | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG58 | andamento | {n} exclusões auditadas | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG59 | andamento | Janela ampliada: {a}→{b} anos · busca refeita | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG60 | andamento | Sub #{n}: {k} substring(s) PubMed válida(s) de {m} | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG61 | andamento | Rotação #{n}: todas as substitutas PubMed tiveram count=0 após {k} sub-tentativas — pulando busca. | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG62 | andamento | Rotação #{n}: {base+n} substring(s) novas + busca refeita | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG63 | andamento | Top {n} marcado - {m} incluidos abaixo do corte | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG64 | andamento | [{"check": "{nome da verificação}", "ok": true, "detail": "{detalhe}"}, ...] | F08 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG65 | aviso | cancelado pelo usuário | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG66 | aviso | Pipeline encerrado | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto | servidor |  |
+| MSG67 | andamento | Pipeline ainda não iniciado. Clique em Iniciar pipeline acima. | F05 | Painel "⚙️ Pipeline (sequência de ações executadas)" na tela do projeto, antes de iniciar a triagem | servidor |  |
+| MSG68 | andamento | Aguardando geração de substrings pelo Discovery agent… | F08 | Painel "🎯 Performance das strings de busca" na tela do projeto, antes de as buscas começarem | servidor |  |
+| MSG69 | sucesso | ✓ Revisão sistemática concluída com sucesso. A Vicky varreu {n} artigos, aplicou critérios PICO e de qualidade metodológica em duas passadas e elegeu os {k} melhores, atingindo a sua meta de {meta}. | F06 | Projeto de revisão sistemática concluído com o Top completo | servidor |  |
+| MSG70 | sucesso | ✓ Modo artigo de resumo concluído com sucesso. A Vicky varreu {n} artigos, analisou em duas passadas independentes e separou os {k} mais úteis para o seu texto, atingindo a sua meta de {meta}. | F06 | Projeto de revisão narrativa concluído com o Top completo | servidor |  |
+| MSG71 | aviso | ⚠️ Análise completa. A Vicky varreu o universo disponível e chegou no Top {k}. A sua meta era {meta}. // Isso significa que o tema é exigente: poucos estudos atendem simultaneamente aos critérios PICO e ao patamar de qualidade metodológica. É um resultado válido e auditável. // 💡 Sugestão: rode o mesmo tema com uma janela temporal mais ampla. Você usou {a} anos — experimente os últimos {b} anos. [...] Crie um novo projeto com o mesmo tema e ajuste a janela temporal no formulário. | F06 | Revisão sistemática concluída sem atingir a meta, depois de analisar todo o universo, com janela menor que 20 anos | servidor |  |
+| MSG72 | aviso | ⚠️ Análise completa. [...] // 💡 Você já rodou com a janela máxima de {a} anos. Não dá pra ampliar mais sem perder relevância clínica. Considere o Top {k} como resultado final — a Vicky aplicou exatamente os critérios pedidos e o tema simplesmente tem poucos estudos que sobrevivem ao crivo metodológico. | F06 | Mesmo caso, com janela de 20 anos | servidor |  |
+| MSG73 | aviso | ⚠️ Análise completa. [...] // Para chegar perto da sua meta, considere afrouxar os critérios ou aceitar o Top {k} como resultado final. | F06 | Mesmo caso, em revisão narrativa | servidor |  |
+| MSG74 | aviso | ℹ️ Análise completa: literatura limitada para esse tema. // As bases científicas (PubMed, SciELO e Google Acadêmico) retornaram apenas {n} artigos sobre esse tema, e {k} atendem aos critérios. A sua meta era {meta}. // Isso não é falha da ferramenta. [...] // 💡 Sugestão: rode o mesmo tema com uma janela temporal mais ampla. [...] | F06 | Concluído sem atingir a meta porque as bases trouxeram poucos artigos (sistemática, janela menor que 20 anos) | servidor |  |
+| MSG75 | aviso | ℹ️ Análise completa: literatura limitada para esse tema. [...] // 💡 Você já rodou com a janela máxima de {a} anos. Ampliar mais não traria ganho real — a literatura disponível para esse tema é mesmo limitada. [...] | F06 | Mesmo caso, com janela de 20 anos | servidor |  |
+| MSG76 | aviso | ℹ️ Análise completa: literatura limitada para esse tema. [...] // Para encontrar mais artigos, considere reformular o tema com termos mais amplos. | F06 | Mesmo caso, em revisão narrativa | servidor |  |
+| MSG77 | aviso | ℹ️ A Vicky encontrou {n} artigos que atendem aos critérios. A sua meta era {meta}. O tema é exigente; poucos estudos cumprem PICO + qualidade metodológica. O sistema nunca inclui artigos que não atendem aos critérios. | F06 | Quadro do Top na tela do projeto, quando o Top ficou menor que a meta | servidor |  |
+| MSG78 | aviso | Nenhum registro encontrado // Tente ajustar os filtros. | F06 | Lista de artigos sem resultado para os filtros escolhidos | servidor |  |
+| MSG79 | sucesso | ✓ Copiado | F06 | Depois de clicar em "Copiar" na referência ABNT do artigo | servidor |  |
+| MSG80 | aviso | Nenhum favorito ainda // Marque um projeto ou artigo com a ⭐ estrela pra ele aparecer aqui pra acesso rápido. [botão: Ver meus projetos] | F07 | Tela Favoritos sem nenhum favorito | servidor |  |
+| MSG81 | aviso | Você ainda não marcou nenhum artigo deste projeto como favorito. [link: Ver todos os artigos do projeto →] | F07 | Favoritos de um projeto sem artigo favorito | servidor |  |
+| MSG82 | aviso | Nenhum projeto ainda // Crie seu primeiro projeto para começar a triar artigos a partir de um tema. [botão: Criar projeto] | F02 | Tela Projetos de uma conta sem projetos | servidor |  |
+| MSG83 | aviso | Você ainda não criou nenhum projeto // Comece colando o tema da sua pesquisa. A Vicky gera os critérios e cuida de toda a triagem pra você. [botão: Criar primeiro projeto] | F02 | Dashboard de uma conta sem projetos | servidor |  |
+| NAV01 | erro | Preencha este campo. | F01 | Balão do navegador ao enviar um formulário com campo obrigatório em branco (visto no cadastro, no E01) | navegador | Acrescentada por A1 na etapa 4: mensagem do navegador vista em produção, que não vem do código do VICKY |
+| NAV02 | erro | Marque esta caixa se deseja continuar. | F01 | Balão do navegador ao enviar o cadastro sem marcar a caixa de aceite dos Termos | navegador | Acrescentada na consolidação (20/11), a partir do E01 de A2, que conferiu o texto em português no Chrome (sem captura própria). Encobre a ERR05 |
+| NAV03 | erro | Aumente este texto para 8 caracteres ou mais. No momento, você está usando {n} caracteres). | F01 | Balão do navegador com senha de menos de 8 caracteres | navegador | Acrescentada na consolidação (20/11), a partir do E03 de A1 e de A2. Encobre a ERR03 |
+| NAV04 | erro | O valor deve ser menor ou igual a 30. | F04 | Balão do navegador com a quantidade do Top acima de 30, no Novo projeto | navegador | Acrescentada na consolidação (20/11), a partir do I07 de A2, que viu o texto em inglês ("Value must be less than or equal to 30."); texto em português do Chrome |
