@@ -13,8 +13,9 @@ Uso, a partir da raiz do repositório:
     python3 dados/avaliacao/G2/calcular_g2_inspecao.py calcular
 
 `comparar` preenche, em cada `consolidado.md`, as colunas `item`, `valor_a1` e `valor_a2`; nas linhas iguais, também
-`valor_final` e `decidido_por = consenso`. Linhas já decididas não são apagadas, então dá para rodar de novo. Mostra
-as divergências e a concordância bruta, que vai para `coleta.md`.
+`valor_final` e `decidido_por = consenso`. Linhas já decididas não são apagadas, então dá para rodar de novo. Linhas
+acrescentadas na consolidação, que nenhuma ficha tem, ficam como estão e não entram na concordância. Mostra as
+divergências e a concordância bruta, que vai para `coleta.md`.
 
 `calcular` lê só a coluna `valor_final` do consolidado, como manda o método, e escreve a tabela "Resultado" de cada
 métrica. Item com `valor_final` vazio interrompe o cálculo daquela métrica. Valores que tiram o item de B:
@@ -138,12 +139,18 @@ def comparar(pasta: str):
             print(f"{m}: falta {'A1' if not a1 else 'A2'} preenchida; nada a comparar.")
             continue
         cons = ler_consolidado(os.path.join(pasta, m, "consolidado.md"))
-        itens = sorted(set(a1) | set(a2), key=item_ordem)
+        itens = sorted(set(a1) | set(a2) | set(cons), key=item_ordem)
         linhas, iguais, divergentes = [], 0, []
         for it in itens:
-            v1, v2 = a1.get(it, "ausente"), a2.get(it, "ausente")
             ant = cons.get(it, {})
             final, just, dec = ant.get("valor_final", ""), ant.get("justificativa", ""), ant.get("decidido_por", "")
+            if it not in a1 and it not in a2:
+                # item acrescentado na consolidação (nenhuma ficha o tem): a linha fica como está
+                linhas.append([it, "ausente", "ausente", final, just, dec])
+                if not final:
+                    divergentes.append((it, "ausente", "ausente"))
+                continue
+            v1, v2 = a1.get(it, "ausente"), a2.get(it, "ausente")
             if v1 != v2 and dec == "consenso" and ant.get("valor_a1") == ant.get("valor_a2"):
                 final, dec = "", ""  # a ficha mudou depois da última comparação: a divergência volta a ser decidida
             if v1 == v2:
@@ -217,7 +224,7 @@ def calcular(pasta: str):
         linhas = [f"{a}", f"{b}", valor]
         if m == "M2.4.1":
             linhas.append("Sim" if credito else "Não")
-        linhas += [nv, ", ".join(fora) if fora else "nenhum"]
+        linhas += [nv, ", ".join(fora) + " (motivo na justificativa de cada item)" if fora else "nenhum"]
         escrever_resultado(os.path.join(pasta, m, "consolidado.md"), linhas)
         print(f"{m}: A={a} B={b} valor={valor} nível={nv}" + (" (ação paga sem proteção)" if credito else ""))
     if resultado:
