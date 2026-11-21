@@ -1,0 +1,31 @@
+item,relevante,componente_que_falhou,justificativa
+T2-01,nao,desenho,Revisão sistemática de ensaios randomizados do programa YOCAS; o desenho pedido é ensaio clínico randomizado.
+T2-02,nao,desenho,Revisão sistemática com meta-análise de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-03,nao,desenho,"Meta-análise em rede de ensaios randomizados de modalidades de exercício, entre elas a ioga; o desenho pedido é ensaio clínico randomizado."
+T2-04,nao,desenho,Revisão sistemática com meta-análise de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-05,sim,,"Ensaio randomizado com 91 mulheres com câncer de mama metastático, ioga integrada contra terapia de suporte e educação, com medida de fadiga."
+T2-06,nao,desenho,Revisão sistemática com meta-análise de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-07,nao,desenho,Meta-análise em rede de intervenções diversas para fadiga no câncer de mama; o desenho pedido é ensaio clínico randomizado.
+T2-08,nao,desenho,Revisão sistemática com meta-análise de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-09,nao,desenho,Revisão sistemática com síntese narrativa de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-10,nao,desenho,Revisão sistemática com meta-análise de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-11,nao,desenho,Meta-análise em rede e de dose-resposta de modalidades de exercício; o desenho pedido é ensaio clínico randomizado.
+T2-12,nao,desenho,Revisão sistemática com meta-análise de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-13,sim,,"Ensaio randomizado com 96 pacientes com câncer de mama em radioterapia ou quimioterapia, ioga contra ausência de ioga, com medida de fadiga relacionada ao câncer."
+T2-14,nao,desenho,"Estudo piloto pré e pós-intervenção, sem grupo controle; o desenho pedido é ensaio clínico randomizado."
+T2-15,sim,,"Ensaio randomizado multicêntrico de fase III (YOCAS) com 410 sobreviventes de câncer, ioga contra cuidado padrão, com medida da fadiga e da sua interferência."
+T2-16,sim,,"Ensaio randomizado com 173 pacientes com câncer, ioga contra lista de espera, com fadiga como desfecho primário."
+T2-17,sim,,"Ensaio randomizado em pacientes com câncer de mama em radioterapia; o pranayama é prática respiratória da ioga, e o desfecho é a fadiga relacionada ao câncer."
+T2-18,nao,intervencao,A ioga (pranayama) aparece combinada com exercício físico e suplementação alimentar; o efeito da ioga não é avaliado isoladamente.
+T2-19,nao,desenho,Revisão narrativa de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-20,nao,desenho,Meta-análise em rede de ensaios randomizados de modalidades de exercício; o desenho pedido é ensaio clínico randomizado.
+T2-21,nao,desenho,Meta-análise bayesiana de dose-resposta de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-22,sim,,"Análise secundária do ensaio randomizado YOCAS em 97 sobreviventes com 60 anos ou mais, que preserva a comparação entre ioga e cuidado padrão sobre a fadiga relacionada ao câncer."
+T2-23,nao,desenho,"Série de atendimentos com avaliação pré e pós uma sessão, sem grupo controle; o desenho pedido é ensaio clínico randomizado."
+T2-24,nao,intervencao,"A comparação randomizada é entre receber ou não lembretes por e-mail após a ioga, e não entre ioga e controle."
+T2-25,sim,,"Ensaio randomizado multicêntrico de fase III (YOCAS) com 410 sobreviventes de câncer, ioga contra cuidado padrão, com fadiga relacionada ao câncer como desfecho."
+T2-26,nao,desenho,Meta-análise em rede de ensaios randomizados de exercícios; o desenho pedido é ensaio clínico randomizado.
+T2-27,nao,desenho,Revisão sistemática com meta-análise de ensaios randomizados; o desenho pedido é ensaio clínico randomizado.
+T2-28,sim,,"Ensaio randomizado com 31 sobreviventes de câncer de mama com fadiga persistente, ioga Iyengar contra educação em saúde, com fadiga como desfecho primário."
+T2-29,nao,desenho,Revisão sistemática de revisões sistemáticas sobre reabilitação após câncer de mama; o desenho pedido é ensaio clínico randomizado.
+T2-30,sim,,"Análise secundária do ensaio randomizado YOCAS de fase III, por faixa etária, com fadiga relacionada ao câncer como desfecho."

@@ -1,0 +1,10 @@
+# F07 T1 #53, linha 1 da lista Top (PMID 40314333). 2026-11-17
+ANTES: /projetos/53/registros | titulo: Marcar como favorito | aria: Marcar como favorito | classe: amarela | on-visivel: false
+APOS MARCAR (sem recarregar? pode ter navegado): /projetos/53/registros | titulo: Remover dos favoritos | aria: Remover dos favoritos | classe: amarela | on-visivel: true
+APOS RECARREGAR: /projetos/53/registros | titulo: Remover dos favoritos | aria: Remover dos favoritos | classe: amarela | on-visivel: true
+200 false
+APOS DESMARCAR: /projetos/53/registros | titulo: Marcar como favorito | on-visivel: false
+APOS RECARREGAR (desmarcado): /projetos/53/registros | titulo: Marcar como favorito | on-visivel: false
+favoritos pagina apos desmarcar contem artigo: false
+FAVORITOS COM O ARTIGO MARCADO:  Concluído 📐 Sistemática ⭐ 1 Colchicina na prevenção secundária de eventos cardiovasculares em adultos com doença aterosclerótica #53 · 17/11/2026 Ver favoritos → 
+ESTADO FINAL (desmarcado): Marcar como favorito

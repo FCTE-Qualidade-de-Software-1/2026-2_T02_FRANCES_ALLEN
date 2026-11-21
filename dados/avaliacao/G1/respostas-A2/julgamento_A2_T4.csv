@@ -1,0 +1,31 @@
+item,relevante,componente_que_falhou,justificativa
+T4-01,nao,desfecho,"Estudo de interacao farmacocinetica da vatiquinona com itraconazol e rifampicina; desfecho farmacocinetico, sem escala neurologica"
+T4-02,nao,desenho,Relato principal e extensao aberta de 12 meses sem grupo placebo concorrente (IONIA-E); o ECR de 6 meses aparece so como fase anterior combinada
+T4-03,sim,,ECR duplo-cego controlado por placebo com omaveloxolona (MOXIe parte 2); desfecho primario mFARS
+T4-04,sim,,ECR duplo-cego controlado por placebo com luvadaxistat em adultos com AF; desfecho funcional 9-HPT
+T4-05,nao,populacao,Voluntarios saudaveis em estudo de QTc da omaveloxolona
+T4-06,sim,,ECR fase I/II duplo-cego com RT001 versus comparador nao deuterado em pacientes com AF; inclui desfecho funcional (caminhada de 25 pes e teste de exercicio)
+T4-07,nao,populacao,"Estudo farmacocinetico e farmacodinamico em macacos, com comparacao a dados de pacientes; preclinico"
+T4-08,nao,desenho,"Coorte de vida real de 20 pacientes tratados com omaveloxolona, sem grupo controle randomizado"
+T4-09,nao,populacao,Voluntarios saudaveis em estudo de biodisponibilidade da omaveloxolona
+T4-10,sim,,"ECR duplo-cego controlado por placebo com idebenona em criancas com AF; ICARS, FARS e AVD como desfechos secundarios"
+T4-11,nao,desfecho,"ECR fatorial com nicotinamida ribosideo e exercicio; desfecho e VO2 pico (aptidao cardiopulmonar), nao progressao neurologica ou escala de ataxia"
+T4-12,nao,desenho,Analise de inicio tardio da extensao aberta do MOXIe; periodo analisado sem placebo concorrente
+T4-13,nao,desfecho,"Cinco pacientes com tocotrienol associado a idebenona, sem controle; desfechos sao marcadores de estresse oxidativo e cardiacos"
+T4-14,nao,desenho,Revisao narrativa de terapias farmacologicas e genicas
+T4-15,nao,desfecho,"ECR com leriglitazona; desfecho primario area da medula por RM e secundarios de imagem e espectroscopia, sem escala de ataxia ou desfecho funcional"
+T4-16,nao,desenho,"Estudo piloto aberto com 8 pacientes e eritropoetina, sem grupo controle"
+T4-17,nao,populacao,Triagem de farmacos em celulas derivadas de pacientes; estudo in vitro
+T4-18,nao,desenho,"Coorte prospectiva de vida real com omaveloxolona, sem grupo controle randomizado"
+T4-19,nao,desfecho,Estudos farmacocineticos de efeito alimentar e posologia da vatiquinona; desfecho farmacocinetico
+T4-20,nao,desenho,Relato de experiencia clinica com 5 pacientes em deferiprona mais idebenona; serie de casos
+T4-21,nao,desenho,Revisao sistematica com metanalise
+T4-22,nao,populacao,"ECR com riluzol em ataxias cerebelares hereditarias; maioria com ataxia espinocerebelar e so 17 com AF, sem resultado separado para AF no resumo"
+T4-23,nao,desenho,Comparacao por escore de propensao da extensao aberta com coorte de historia natural; nao e ECR
+T4-24,nao,desenho,Revisao com opiniao de especialista sobre omaveloxolona
+T4-25,nao,desfecho,"ECR fase 1 controlado por placebo com nomlabofusp; desfechos de seguranca, farmacocinetica e frataxina, sem escala neurologica"
+T4-26,sim,,ECR fase 2 controlado por placebo com omaveloxolona (parte de doses); mFARS como desfecho secundario
+T4-27,sim,,ECR duplo-cego controlado por placebo com EPI-743 por 6 meses; desfecho FARS
+T4-28,nao,desfecho,Modelo in vitro e fase I com RG2833; desfechos sao expressao de FXN e marcas epigeneticas
+T4-29,nao,populacao,Estudo em modelos celulares (neuronios de ganglio e linhagens linfoblastoides)
+T4-30,nao,desfecho,Piloto aberto com eritropoetina; desfecho primario e nivel de frataxina e marcadores oxidativos

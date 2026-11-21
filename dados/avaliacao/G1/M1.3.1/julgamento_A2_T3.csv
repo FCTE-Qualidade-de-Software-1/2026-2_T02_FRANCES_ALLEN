@@ -1,0 +1,26 @@
+item,relevante,componente_que_falhou,justificativa
+T3-01,nao,desfecho,"Coorte so de gestantes com hiperglicemia em unidade de DMG em SP; compara DMG e DIP, nao estima prevalencia de DMG entre gestantes"
+T3-02,sim,,"Transversal com todas as gestantes do SUS em Caxias do Sul; prevalencia de DMG 5,4% (n=2.313)"
+T3-03,nao,desfecho,"Amostra so de gestantes com DMG no Maranhao; desfecho e RN grande para idade gestacional, nao prevalencia"
+T3-04,sim,,"Transversal com gestantes do Norte do Brasil (Vigitel); estima prevalencia de diabetes na gestacao (9%), autorreferida"
+T3-05,nao,desfecho,Coorte LINDA-Brasil so de gestantes com DMG; desfecho e ganho de peso gestacional
+T3-06,nao,desfecho,Duas coortes so de mulheres com DMG; desfechos sao ganho de peso e peso ao nascer
+T3-07,nao,populacao,Hospital da Senhora da Oliveira e sistemas Sclinico/Obscare indicam servico portugues (inferido); alem disso a amostra e so de gestantes com DMG e o desfecho e neonatal
+T3-08,nao,desenho,Revisao sistematica com metanalise de prevalencia de DMG no Brasil; desenho pedido e estudo primario observacional
+T3-09,nao,desfecho,Transversal so com gestantes com DMG no RJ; desfecho e peso ao nascer conforme padrao alimentar
+T3-10,sim,,"Coorte de nascimentos de Pelotas 2004 (n=4.243 puerperas); prevalencia de DMG autorreferido 2,95%"
+T3-11,nao,desfecho,"Serie so de gestacoes com DMG; mede perfil e preditores de insulina, nao prevalencia de DMG"
+T3-12,sim,,Transversal com 2.262 parturientes de maternidade publica brasileira; prevalencia de hiperglicemia gestacional por quatro criterios diagnosticos de DMG
+T3-13,nao,desfecho,Coorte so de gestantes com DMG; desfechos sao controle glicemico e hipoglicemia neonatal por ultraprocessados
+T3-14,nao,desfecho,"Coorte de 114 gestantes selecionadas pela glicemia de jejum no 1o trimestre; compara desfechos de DMG precoce, sem estimativa de prevalencia na populacao"
+T3-15,nao,desfecho,Amostra de conveniencia DMG (72) versus normoglicemicas (211) em SP; desfecho e massa gorda do RN
+T3-16,nao,desfecho,"Duas coortes so de mulheres com DMG em Porto Alegre; compara caracteristicas clinicas, nao estima prevalencia"
+T3-17,sim,,"Transversal com 120 prontuarios de gestantes em servico universitario brasileiro; prevalencia de DMG 12,5% e 5,8% por dois criterios"
+T3-18,nao,desfecho,"Caso-controle DMG versus controles; mede polimorfismo VDR e vitamina D, nao prevalencia"
+T3-19,sim,,"Coorte prospectiva de gestantes no 3o trimestre; prevalencia de DMG 8,7% e 8% por dois criterios; pais nao citado no resumo (nao reprova pela regra 4.4)"
+T3-20,nao,desfecho,Coorte so de gestantes com disglicemia; proporcao DMG versus diabetes franco entre elas nao e prevalencia entre gestantes
+T3-21,sim,,"Estudo longitudinal com 204 gestantes de maternidade publica do Nordeste; relata frequencia de DMG de 3,4% na coorte"
+T3-22,nao,desfecho,Estudo de biomarcadores 50 DMG versus 50 controles; nao estima prevalencia e o pais nao e citado
+T3-23,sim,,"Transversal com 1.618 parturientes de maternidade brasileira nao selecionadas por DMG; relata proporcao com DMG (11,74% isolado e 7,48% com obesidade)"
+T3-24,nao,desenho,Revisao sistematica com metanalise de prevalencia de DMG no Brasil; desenho pedido e estudo primario observacional
+T3-25,nao,desfecho,"Transversal pareado 52 DMG e 52 sem DMG; mede associacao com ganho de peso, nao prevalencia"
