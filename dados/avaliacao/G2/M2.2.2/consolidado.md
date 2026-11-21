@@ -6,9 +6,9 @@
 |---|---|---|---|---|---|
 | ERR01 | sim/sim | nao/sim | nao/sim | "Informe seu nome." só manda preencher; não diz o que estava errado (o nome tinha só espaços). Interpretação de `tem_causa` adotada na consolidação (`coleta.md`). | consenso (A1 adotou A2) |
 | ERR02 | sim/nao | sim/nao | sim/nao |  | consenso |
-| ERR03 | sim/sim | sim/sim | fora_de_B | Nos disparos de A1 e de A2 (E03), o navegador barra a senha curta antes e mostra o próprio balão (NAV03); o texto do servidor não chega ao estudante. Pela regra das mensagens que não chegam à tela (`coleta.md`), sai de B, e a NAV03 conta no lugar. | regra de consolidação, a ratificar por A2 |
+| ERR03 | sim/sim | sim/sim | fora_de_B | Nos disparos de A1 e de A2 (E03), o navegador barra a senha curta antes e mostra o próprio balão (NAV03); o texto do servidor não chega ao estudante. Pela regra das mensagens que não chegam à tela (`coleta.md`), sai de B, e a NAV03 conta no lugar. | regra de consolidação (A2 ratificou em 20/11) |
 | ERR04 | sim/nao | sim/nao | sim/nao |  | consenso |
-| ERR05 | sim/sim | sim/sim | fora_de_B | A caixa de aceite é obrigatória: o navegador barra o envio antes com "Marque esta caixa se deseja continuar." (NAV02, visto por A2 no E01), e o texto do servidor não chega ao estudante. Mesma regra da ERR03. | regra de consolidação, a ratificar por A2 |
+| ERR05 | sim/sim | sim/sim | fora_de_B | A caixa de aceite é obrigatória: o navegador barra o envio antes com "Marque esta caixa se deseja continuar." (NAV02, visto por A2 no E01), e o texto do servidor não chega ao estudante. Mesma regra da ERR03. | regra de consolidação (A2 ratificou em 20/11) |
 | ERR06 | sim/nao | sim/nao | sim/nao |  | consenso |
 | ERR07 | sim/nao | sim/nao | sim/nao |  | consenso |
 | ERR08 | sim/sim | sim/sim | sim/sim |  | consenso |
@@ -21,7 +21,7 @@
 | ERR15 | sim/nao | sim/nao | sim/nao |  | consenso |
 | ERR16 | sim/nao | sim/nao | sim/nao |  | consenso |
 | ERR17 | sim/sim | sim/sim | sim/sim |  | consenso |
-| ERR18 | sim/sim | sim/sim | nao/nao | No E08 de A2, a 21ª prévia foi recusada, e o texto foi só para o endereço da página (`/projetos?error=...`); a tela não mostrou mensagem (`20261119_A2_E08.png`). Vale produção (seção 6 do método): o estudante não recebe causa nem solução. Regra das mensagens que não chegam à tela (`coleta.md`). | regra de consolidação, a ratificar por A2 |
+| ERR18 | sim/sim | sim/sim | nao/nao | No E08 de A2, a 21ª prévia foi recusada, e o texto foi só para o endereço da página (`/projetos?error=...`); a tela não mostrou mensagem (`20261119_A2_E08.png`). Vale produção (seção 6 do método): o estudante não recebe causa nem solução. Regra das mensagens que não chegam à tela (`coleta.md`). | regra de consolidação (A2 ratificou em 20/11) |
 | ERR19 | sim/sim | sim/sim | sim/sim |  | consenso |
 | ERR20 | sim/sim | sim/sim | sim/sim |  | consenso |
 | ERR21 | sim/sim | sim/sim | sim/sim |  | consenso |
@@ -41,7 +41,7 @@
 | NAV03 | ausente | sim/sim | sim/sim | Balão do navegador na senha curta (E03 de A1 e de A2): diz o mínimo exigido e quantos caracteres foram digitados. A1 tinha registrado esse balão como observação da ERR03; passa a item próprio, como fez A2. | consenso (A1 adotou A2) |
 | NAV04 | ausente | sim/sim | sim/sim | Balão do navegador com a quantidade do Top acima de 30 (I07 de A2, pasta M2.4.2): diz o limite aceito. Item acrescentado por A2; A1 classifica igual. | consenso (A1 adotou A2) |
 
-**Rótulos de `decidido_por`.** `consenso`: A1 e A2 deram o mesmo valor. `consenso (A1 adotou A2)`: na consolidação, A1 reabriu a evidência e adotou o valor de A2. `A1, a ratificar por A2`: valor de A1 numa divergência de fato, ou item que A2 não classificou; espera a confirmação de A2. `regra de consolidação, a ratificar por A2`: item em que A1 e A2 concordavam e que mudou pela regra escrita em `coleta.md`. Se A2 discordar de um item a ratificar, A3 decide, e a linha recebe `decidido_por = A3`.
+**Rótulos de `decidido_por`.** `consenso`: A1 e A2 deram o mesmo valor. `consenso (A1 adotou A2)`: na consolidação, A1 reabriu a evidência e adotou o valor de A2. `consenso (A2 ratificou em 20/11)`: valor de A1 numa divergência de fato, ou item que A2 não classificou, confirmado por A2 em 20/11/2026. `regra de consolidação (A2 ratificou em 20/11)`: item em que A1 e A2 concordavam e que mudou pela regra escrita em `coleta.md`, confirmado por A2. A2 não recusou nenhum item, e A3 não foi acionado.
 
 ## Resultado
 

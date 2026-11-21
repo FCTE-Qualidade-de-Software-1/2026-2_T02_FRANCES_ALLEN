@@ -6,9 +6,9 @@
 |---|---|---|---|---|---|
 | ERR01 | sim | sim | sim |  | consenso |
 | ERR02 | sim | sim | sim |  | consenso |
-| ERR03 | sim | sim | fora_de_B | Encoberta pelo balão do navegador (NAV03), como na M2.2.2. Regra das mensagens que não chegam à tela (`coleta.md`). | regra de consolidação, a ratificar por A2 |
+| ERR03 | sim | sim | fora_de_B | Encoberta pelo balão do navegador (NAV03), como na M2.2.2. Regra das mensagens que não chegam à tela (`coleta.md`). | regra de consolidação (A2 ratificou em 20/11) |
 | ERR04 | sim | sim | sim |  | consenso |
-| ERR05 | sim | sim | fora_de_B | Encoberta pelo balão do navegador (NAV02), como na M2.2.2. Mesma regra. | regra de consolidação, a ratificar por A2 |
+| ERR05 | sim | sim | fora_de_B | Encoberta pelo balão do navegador (NAV02), como na M2.2.2. Mesma regra. | regra de consolidação (A2 ratificou em 20/11) |
 | ERR06 | sim | sim | sim |  | consenso |
 | ERR07 | sim | sim | sim |  | consenso |
 | ERR08 | sim | sim | sim |  | consenso |
@@ -21,7 +21,7 @@
 | ERR15 | sim | sim | sim |  | consenso |
 | ERR16 | sim | sim | sim |  | consenso |
 | ERR17 | sim | sim | sim |  | consenso |
-| ERR18 | sim | sim | nao | A tela não mostra a mensagem (E08 de A2, pasta M2.2.2): o estudante não fica sabendo o que aconteceu. Mesma regra. | regra de consolidação, a ratificar por A2 |
+| ERR18 | sim | sim | nao | A tela não mostra a mensagem (E08 de A2, pasta M2.2.2): o estudante não fica sabendo o que aconteceu. Mesma regra. | regra de consolidação (A2 ratificou em 20/11) |
 | ERR19 | sim | sim | sim |  | consenso |
 | ERR20 | sim | sim | sim |  | consenso |
 | ERR21 | sim | sim | sim |  | consenso |
@@ -56,7 +56,7 @@
 | MSG18 | sim | sim | sim |  | consenso |
 | MSG19 | sim | sim | sim |  | consenso |
 | MSG20 | sim | sim | sim |  | consenso |
-| MSG21 | nao | sim | nao | Manda revisar e "editar se quiser" os critérios, mas a tela do projeto não tem como editá-los: na captura de A2 com o painel aberto (`20261119_A2_F03_pico_aberto.png`, pasta M2.2.1) e no registro do G1 do projeto #51, os critérios aparecem só para leitura, sem botão de editar ou salvar; no código, nenhuma tela chama a rota de edição. Não é a instrução certa (Fase 2). Divergência de fato: decide a evidência. | A1, a ratificar por A2 |
+| MSG21 | nao | sim | nao | Manda revisar e "editar se quiser" os critérios, mas a tela do projeto não tem como editá-los: na captura de A2 com o painel aberto (`20261119_A2_F03_pico_aberto.png`, pasta M2.2.1) e no registro do G1 do projeto #51, os critérios aparecem só para leitura, sem botão de editar ou salvar; no código, nenhuma tela chama a rota de edição. Não é a instrução certa (Fase 2). Divergência de fato: decide a evidência. | consenso (A2 ratificou em 20/11) |
 | MSG22 | sim | sim | sim |  | consenso |
 | MSG23 | sim | sim | sim |  | consenso |
 | MSG24 | sim | sim | sim |  | consenso |
@@ -64,7 +64,7 @@
 | MSG26 | sim | sim | sim |  | consenso |
 | MSG27 | sim | sim | sim |  | consenso |
 | MSG28 | sim | sim | sim |  | consenso |
-| MSG29 | nao | sim | nao | Diz que o estudante pode editar os critérios depois de cancelar, o que a tela do projeto não permite (mesma evidência da MSG21). | A1, a ratificar por A2 |
+| MSG29 | nao | sim | nao | Diz que o estudante pode editar os critérios depois de cancelar, o que a tela do projeto não permite (mesma evidência da MSG21). | consenso (A2 ratificou em 20/11) |
 | MSG30 | sim | sim | sim |  | consenso |
 | MSG31 | sim | sim | sim |  | consenso |
 | MSG32 | sim | sim | sim |  | consenso |
@@ -119,12 +119,12 @@
 | MSG81 | sim | sim | sim |  | consenso |
 | MSG82 | sim | sim | sim |  | consenso |
 | MSG83 | sim | sim | sim |  | consenso |
-| NAV01 | sim | ausente | sim | Balão do navegador em campo obrigatório vazio (E01 de A1; E01 e E07 de A2): diz o que fazer. É erro do inventário da M2.2.2 e entra no inventário ampliado com o mesmo id; A2 recebeu o inventário antes de a NAV01 ser acrescentada e não a classificou nesta métrica. | A1, a ratificar por A2 |
-| NAV02 | ausente | ausente | sim | Balão do navegador na caixa de aceite (E01 de A2): diz o que fazer para continuar. Acrescentado na consolidação, com o mesmo id da M2.2.2. | A1, a ratificar por A2 |
-| NAV03 | ausente | ausente | sim | Balão do navegador na senha curta (E03 de A1 e de A2): diz o mínimo exigido e quantos caracteres foram digitados. Acrescentado na consolidação, com o mesmo id da M2.2.2. | A1, a ratificar por A2 |
-| NAV04 | ausente | ausente | sim | Balão do navegador com a quantidade do Top acima de 30 (I07 de A2): diz o limite aceito. Acrescentado na consolidação, com o mesmo id da M2.2.2. | A1, a ratificar por A2 |
+| NAV01 | sim | ausente | sim | Balão do navegador em campo obrigatório vazio (E01 de A1; E01 e E07 de A2): diz o que fazer. É erro do inventário da M2.2.2 e entra no inventário ampliado com o mesmo id; A2 recebeu o inventário antes de a NAV01 ser acrescentada e não a classificou nesta métrica. | consenso (A2 ratificou em 20/11) |
+| NAV02 | ausente | ausente | sim | Balão do navegador na caixa de aceite (E01 de A2): diz o que fazer para continuar. Acrescentado na consolidação, com o mesmo id da M2.2.2. | consenso (A2 ratificou em 20/11) |
+| NAV03 | ausente | ausente | sim | Balão do navegador na senha curta (E03 de A1 e de A2): diz o mínimo exigido e quantos caracteres foram digitados. Acrescentado na consolidação, com o mesmo id da M2.2.2. | consenso (A2 ratificou em 20/11) |
+| NAV04 | ausente | ausente | sim | Balão do navegador com a quantidade do Top acima de 30 (I07 de A2): diz o limite aceito. Acrescentado na consolidação, com o mesmo id da M2.2.2. | consenso (A2 ratificou em 20/11) |
 
-**Rótulos de `decidido_por`.** `consenso`: A1 e A2 deram o mesmo valor. `consenso (A1 adotou A2)`: na consolidação, A1 reabriu a evidência e adotou o valor de A2. `A1, a ratificar por A2`: valor de A1 numa divergência de fato, ou item que A2 não classificou; espera a confirmação de A2. `regra de consolidação, a ratificar por A2`: item em que A1 e A2 concordavam e que mudou pela regra escrita em `coleta.md`. Se A2 discordar de um item a ratificar, A3 decide, e a linha recebe `decidido_por = A3`.
+**Rótulos de `decidido_por`.** `consenso`: A1 e A2 deram o mesmo valor. `consenso (A1 adotou A2)`: na consolidação, A1 reabriu a evidência e adotou o valor de A2. `consenso (A2 ratificou em 20/11)`: valor de A1 numa divergência de fato, ou item que A2 não classificou, confirmado por A2 em 20/11/2026. `regra de consolidação (A2 ratificou em 20/11)`: item em que A1 e A2 concordavam e que mudou pela regra escrita em `coleta.md`, confirmado por A2. A2 não recusou nenhum item, e A3 não foi acionado.
 
 ## Resultado
 

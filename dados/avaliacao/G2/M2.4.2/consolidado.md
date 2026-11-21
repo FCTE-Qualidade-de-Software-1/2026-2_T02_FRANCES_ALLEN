@@ -12,7 +12,7 @@
 | I06 | sim/sim | sim/nao | sim/nao | Em produção aparece o balão "Preencha este campo." (captura de A2; A1 não o viu em 17/11), que manda preencher sem sugerir um tema. Mesma interpretação da I01. | consenso (A1 adotou A2) |
 | I07 | sim/sim | sim/sim | sim/sim | O balão do navegador diz o limite aceito (menor ou igual a 30), na captura de A2. A1 não viu o balão em 17/11 e chegou ao mesmo valor pela ajuda do campo; vale a captura. | consenso |
 
-**Rótulos de `decidido_por`.** `consenso`: A1 e A2 deram o mesmo valor. `consenso (A1 adotou A2)`: na consolidação, A1 reabriu a evidência e adotou o valor de A2. `A1, a ratificar por A2`: valor de A1 numa divergência de fato, ou item que A2 não classificou; espera a confirmação de A2. `regra de consolidação, a ratificar por A2`: item em que A1 e A2 concordavam e que mudou pela regra escrita em `coleta.md`. Se A2 discordar de um item a ratificar, A3 decide, e a linha recebe `decidido_por = A3`.
+**Rótulos de `decidido_por`.** `consenso`: A1 e A2 deram o mesmo valor. `consenso (A1 adotou A2)`: na consolidação, A1 reabriu a evidência e adotou o valor de A2. `consenso (A2 ratificou em 20/11)`: valor de A1 numa divergência de fato, ou item que A2 não classificou, confirmado por A2 em 20/11/2026. `regra de consolidação (A2 ratificou em 20/11)`: item em que A1 e A2 concordavam e que mudou pela regra escrita em `coleta.md`, confirmado por A2. A2 não recusou nenhum item, e A3 não foi acionado.
 
 ## Resultado
 

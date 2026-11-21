@@ -1,7 +1,7 @@
 # Resultados do G2 por inspeção (capacidade de interação)
 
 !!! note "Situação em 20/11/2026"
-    Os valores desta página saem dos `consolidado.md` de 20/11/2026, calculados com `dados/avaliacao/G2/calcular_g2_inspecao.py`. A consolidação foi feita por A1. As 13 linhas marcadas "a ratificar por A2" nos consolidados de M2.2.1, M2.2.2 e M2.3.2 esperam a confirmação de A2, e A3 decide as que ela recusar. Só uma delas pode mudar um nível: F09, da M2.2.1 (ver a seção 6).
+    Os valores desta página saem dos `consolidado.md` de 20/11/2026, calculados com `dados/avaliacao/G2/calcular_g2_inspecao.py`. A consolidação foi feita por A1, e A2 ratificou em 20/11/2026 as 13 linhas que não seguiam o valor dela (M2.2.1, M2.2.2 e M2.3.2): nenhuma foi recusada, e A3 não foi acionado. O item F09 da M2.2.1 se apoia na captura do menu Exportar aberto (ver a seção 6).
 
 Esta página reúne o resultado das oito métricas do G2 coletadas por inspeção, conforme o [Método do G2 por inspeção](../fase-3/metodo-g2-inspecao.md). As métricas com participantes (M2.5.1, M2.6.1, M2.6.2 e M2.7.2) vêm da #28. Os níveis seguem a tabela de [níveis de pontuação](../fase-2/niveis-e-julgamento.md), fixada antes da coleta.
 
@@ -30,8 +30,8 @@ Esta página reúne o resultado das oito métricas do G2 coletadas por inspeçã
 | 19/11/2026 | Recapturas de páginas públicas com navegador sem interface comandado por script, com apoio de IA | Corrigir a área visível da M2.7.1 e refazer capturas que mostravam dado pessoal do avaliador | 7 aberturas de página e 3 envios de formulário recusados pelo servidor, sem login e sem criar conta. Foge da coleta manual da seção 2.2 do método, sem sobrecarga ao site |
 | 19/11/2026 | A2 coletou com o Chrome 154 sem interface, do Playwright, comandado por script | A captura de tela pelo Chrome com interface (MacBook, tela Retina) falhou | Foge da coleta manual da seção 2.2 do método. Os balões do navegador saíram em inglês e foram classificados pelo texto em português, que é o que o estudante vê |
 | 19/11/2026 | F06 a F09 (M2.2.1), A03 (M2.4.1) e parte da P09 (M2.3.1) observados por A2 por intermédio da frente do G1, só pelo texto da tela, no projeto #53 (concluído) e numa triagem em andamento (projeto #81) | A2 não acompanhou a triagem do G1 ao vivo | O julgamento é de A2. Nas imagens tiradas depois, o nome e o e-mail da titular da conta foram substituídos na página antes da captura, e não na imagem. A2 não abriu o menu Exportar (F09) |
-| 17 a 20/11/2026 | Transcrição das anotações, classificação da etapa 5, complemento da etapa 6 e consolidação (etapa 7) feitos por A1 com apoio de IA, a pedido de A1 | Prazo da coleta | O método prevê dois avaliadores humanos. A independência de A2 se mantém, porque A2 classificou sem ver nada de A1; as decisões da consolidação que não seguem o valor de A2 esperam a ratificação dela |
-| 20/11/2026 | Consolidação feita por A1, sem reunião com A2, pela regra de decisão escrita em cada `coleta.md`: divergência de fato vai pela evidência; divergência de julgamento sobre a clareza de um texto fica com a leitura de A2, que inspecionou sem ler o código | Prazo da E2 | 21 das 25 divergências ficaram com o valor de A2, e 4 com o de A1 (F09, MSG21, MSG29 e a NAV01 da M2.3.2). Com as 6 linhas mudadas pela regra das mensagens que não chegam à tela e as 3 mensagens do navegador acrescentadas na M2.3.2, 13 linhas esperam a ratificação de A2; se ela recusar alguma, A3 decide e a métrica é recalculada |
+| 17 a 20/11/2026 | Transcrição das anotações, classificação da etapa 5, complemento da etapa 6 e consolidação (etapa 7) feitos por A1 com apoio de IA, a pedido de A1 | Prazo da coleta | O método prevê dois avaliadores humanos. A independência de A2 se mantém, porque A2 classificou sem ver nada de A1; as decisões da consolidação que não seguem o valor de A2 foram ratificadas por ela |
+| 20/11/2026 | Consolidação feita por A1, sem reunião com A2, pela regra de decisão escrita em cada `coleta.md`: divergência de fato vai pela evidência; divergência de julgamento sobre a clareza de um texto fica com a leitura de A2, que inspecionou sem ler o código | Prazo da E2 | 21 das 25 divergências ficaram com o valor de A2, e 4 com o de A1 (F09, MSG21, MSG29 e a NAV01 da M2.3.2). Com as 6 linhas mudadas pela regra das mensagens que não chegam à tela e as 3 mensagens do navegador acrescentadas na M2.3.2, 13 linhas foram ratificadas por A2 em 20/11/2026, sem nenhuma recusa |
 
 ### Concordância entre os avaliadores
 
@@ -112,7 +112,7 @@ Q2.5 e Q2.6 dependem só das métricas com participantes (#28). O julgamento do 
 ## 6. Limitações
 
 - A1 julgou as telas de resultado pelos registros de texto do G1 e pelo código, sem ver a triagem ao vivo; A2 viu parte delas por intermédio da frente do G1, só pelo texto da tela (ver os desvios).
-- A consolidação foi feita por A1, sem reunião com A2, e 13 linhas esperam a ratificação dela. Se todas fossem recusadas, M2.2.2 iria a 13/36 (36,1%) e M2.3.2 a 78/115 (67,8%), sem mudar o nível. A única que muda um nível é F09.
+- A consolidação foi feita por A1, sem reunião com A2, que depois ratificou as 13 linhas que não seguiam o valor dela. Mesmo que todas tivessem ficado com o valor de A2, M2.2.2 iria a 13/36 (36,1%) e M2.3.2 a 78/115 (67,8%), sem mudar o nível; só F09 mudaria um nível.
 - F09 (M2.2.1) conta pelo texto do menu Exportar, que A2 não abriu. O texto vem do código, e a captura do menu aberto em produção é a evidência que fecha o item. Se ela mostrar outro texto, M2.2.1 vai a 7 de 9 (77,8%, Aceitável), e a Q2.2 a Insatisfatório.
 - Mensagens que nenhum avaliador provocou foram classificadas pelo texto do inventário, como manda o método. Pelo código, onze delas não chegam à tela (ver os achados). Se a regra aplicada à ERR18 fosse estendida a elas, M2.2.2 iria a 6/34 (17,6%) e M2.3.2 a 66/117 (56,4%), sem mudar o nível.
 - Na M2.3.1, a regra de tela única deixa fora da medida a inconsistência entre as três confirmações da tela do projeto (P02), registrada como achado.
@@ -127,3 +127,4 @@ Q2.5 e Q2.6 dependem só das métricas com participantes (#28). O julgamento do 
 | 0.1 | 13/11/2026 | Estrutura da página de resultados do G2 por inspeção, a preencher com a coleta da #27 | Gabriel Fae | - |
 | 0.2 | 19/11/2026 | Execução da coleta de A1, desvios do método e limitações conhecidas antes da consolidação | Gabriel Fae | - |
 | 0.3 | 20/11/2026 | Consolidação de A1 e A2: concordância, valores, níveis, achados, hipóteses, respostas Q2.1 a Q2.4 e parte da Q2.7, desvios de A2 e limitações | Gabriel Fae | - |
+| 0.4 | 20/11/2026 | Ratificação de A2 nas 13 linhas decididas por A1, sem recusa | Gabriel Fae | - |
