@@ -45,7 +45,7 @@ _Tabela 2 - Atividades da Fase 3, com responsável, issue, datas, dependências 
 |-----------|-------------|:-----:|:------:|:---:|------------|
 | Coleta do G3 no commit `c2ae570` | Lucas Avelar, pela D12 | #29 | 14/11 | 14/11 | #23. **Feita** |
 | Repetição do G3 por A2 e inspeção de M3.2.3 | Guilherme Moura | #29 | 16/11 | 17/11 | coleta de 14/11; acesso ao fork |
-| Inspeção do G2 | Gabriel Fae | #27 | 13/11 | 18/11 | #21; triagem T1 do G1 (16/11) para a etapa 6. **A1 e A2 concluídas em 19/11; consolidação e cálculo em 20/11** ([resultados](../fase-4/resultados-g2-inspecao.md)); decisões de A1 ratificadas por A2 em 20/11; faltam capturas de A1 |
+| Inspeção do G2 | Gabriel Fae | #27 | 13/11 | 18/11 | #21; triagem T1 do G1 (16/11) para a etapa 6. **A1 e A2 concluídas em 19/11; consolidação e cálculo em 20/11** ([resultados](../fase-4/resultados-g2-inspecao.md)); decisões de A1 ratificadas por A2 e capturas de A1 incluídas em 20/11 |
 | Coleta do G1, dia 1: casos F01 a F04, triagens T1 e T2, casos F05 a F09 e exportação de T1 | Larissa Gomes | #26 | 16/11 | 16/11 | #20; créditos confirmados; listas de incluídos; avaliadores definidos |
 | Coleta do G1, dia 2: triagens T3 e E1, fichas cegas de T1 e T2 e piloto de calibração | Larissa Gomes | #26 | 17/11 | 17/11 | dia 1 |
 | Coleta do G1, dia 3: triagens T1-B (48 horas depois de T1) e T4 | Larissa Gomes | #26 | 18/11 | 18/11 | dia 1 |

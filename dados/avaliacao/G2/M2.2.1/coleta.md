@@ -33,7 +33,7 @@ Critério que gerou dúvida, a interpretação escolhida e a confirmação de qu
 
 - **Regra de decisão das divergências (20/11/2026, todas as métricas).** Divergência de fato, sobre o que a tela mostra ou permite, é decidida pela evidência. Divergência de julgamento sobre a clareza ou a suficiência de um texto, sem fato novo na evidência, fica com a leitura de A2, que inspecionou sem ler o código: a seção 1 do método cria esse papel porque quem conhece o código tende a achar a interface mais clara do que ela é. A decisão de cada item está em `consolidado.md`, e os rótulos de `decidido_por` estão explicados abaixo da tabela.
 - **Orientação de função de consulta (F06 e F08).** Conta o texto que explica como usar o que a tela mostra para o fim da função na Fase 1; texto que só nomeia o painel, ou que explica o funcionamento interno do sistema, não conta. Reaplicada a todos os itens: F06 continua `sim` (explica como ler o Quality Score e a decisão de cada artigo); F08 passa a `nao`.
-- **Orientação de ação com opções (F04 e F09).** Conta a ajuda que explica cada opção da ação, leitura que A1 e A2 aplicaram a F04. F09 fica `sim` pelo texto do menu Exportar, que A2 não abriu; a captura de A1 do menu aberto em produção confirma o item e, se mostrar outro texto, F09 passa a `nao` (X = 7/9).
+- **Orientação de ação com opções (F04 e F09).** Conta a ajuda que explica cada opção da ação, leitura que A1 e A2 aplicaram a F04. F09 fica `sim` pelo texto do menu Exportar, que A2 não abriu; a captura de A1 do menu aberto em produção (`20261120_A1_F09.png`, 20/11) confirma o texto.
 
 ## Ocorrências
 

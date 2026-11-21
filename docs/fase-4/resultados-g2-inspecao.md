@@ -1,7 +1,7 @@
 # Resultados do G2 por inspeção (capacidade de interação)
 
 !!! note "Situação em 20/11/2026"
-    Os valores desta página saem dos `consolidado.md` de 20/11/2026, calculados com `dados/avaliacao/G2/calcular_g2_inspecao.py`. A consolidação foi feita por A1, e A2 ratificou em 20/11/2026 as 13 linhas que não seguiam o valor dela (M2.2.1, M2.2.2 e M2.3.2): nenhuma foi recusada, e A3 não foi acionado. O item F09 da M2.2.1 se apoia na captura do menu Exportar aberto (ver a seção 6).
+    Os valores desta página saem dos `consolidado.md` de 20/11/2026, calculados com `dados/avaliacao/G2/calcular_g2_inspecao.py`. A consolidação foi feita por A1, e A2 ratificou em 20/11/2026 as 13 linhas que não seguiam o valor dela (M2.2.1, M2.2.2 e M2.3.2): nenhuma foi recusada, e A3 não foi acionado. As capturas de A1 que faltavam foram incluídas em 20/11/2026, entre elas a do menu Exportar aberto, que confirma o item F09 da M2.2.1.
 
 Esta página reúne o resultado das oito métricas do G2 coletadas por inspeção, conforme o [Método do G2 por inspeção](../fase-3/metodo-g2-inspecao.md). As métricas com participantes (M2.5.1, M2.6.1, M2.6.2 e M2.7.2) vêm da #28. Os níveis seguem a tabela de [níveis de pontuação](../fase-2/niveis-e-julgamento.md), fixada antes da coleta.
 
@@ -113,7 +113,7 @@ Q2.5 e Q2.6 dependem só das métricas com participantes (#28). O julgamento do 
 
 - A1 julgou as telas de resultado pelos registros de texto do G1 e pelo código, sem ver a triagem ao vivo; A2 viu parte delas por intermédio da frente do G1, só pelo texto da tela (ver os desvios).
 - A consolidação foi feita por A1, sem reunião com A2, que depois ratificou as 13 linhas que não seguiam o valor dela. Mesmo que todas tivessem ficado com o valor de A2, M2.2.2 iria a 13/36 (36,1%) e M2.3.2 a 78/115 (67,8%), sem mudar o nível; só F09 mudaria um nível.
-- F09 (M2.2.1) conta pelo texto do menu Exportar, que A2 não abriu. O texto vem do código, e a captura do menu aberto em produção é a evidência que fecha o item. Se ela mostrar outro texto, M2.2.1 vai a 7 de 9 (77,8%, Aceitável), e a Q2.2 a Insatisfatório.
+- F09 (M2.2.1) conta pelo texto do menu Exportar, que A2 não abriu; a captura de A1 do menu aberto em produção (`20261120_A1_F09.png`) confirma as três descrições. Sem F09, M2.2.1 iria a 7 de 9 (77,8%, Aceitável), e a Q2.2 a Insatisfatório.
 - Mensagens que nenhum avaliador provocou foram classificadas pelo texto do inventário, como manda o método. Pelo código, onze delas não chegam à tela (ver os achados). Se a regra aplicada à ERR18 fosse estendida a elas, M2.2.2 iria a 6/34 (17,6%) e M2.3.2 a 66/117 (56,4%), sem mudar o nível.
 - Na M2.3.1, a regra de tela única deixa fora da medida a inconsistência entre as três confirmações da tela do projeto (P02), registrada como achado.
 - Os balões do navegador de A2 saíram em inglês. NAV03 foi classificada pelo texto em português visto por A1; a versão em português da NAV04 não foi observada.
@@ -128,3 +128,4 @@ Q2.5 e Q2.6 dependem só das métricas com participantes (#28). O julgamento do 
 | 0.2 | 19/11/2026 | Execução da coleta de A1, desvios do método e limitações conhecidas antes da consolidação | Gabriel Fae | - |
 | 0.3 | 20/11/2026 | Consolidação de A1 e A2: concordância, valores, níveis, achados, hipóteses, respostas Q2.1 a Q2.4 e parte da Q2.7, desvios de A2 e limitações | Gabriel Fae | - |
 | 0.4 | 20/11/2026 | Ratificação de A2 nas 13 linhas decididas por A1, sem recusa | Gabriel Fae | - |
+| 0.5 | 20/11/2026 | Capturas de A1 incluídas; F09 confirmado pela captura do menu Exportar | Gabriel Fae | - |
