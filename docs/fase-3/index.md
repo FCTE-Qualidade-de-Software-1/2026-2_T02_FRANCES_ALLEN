@@ -53,11 +53,12 @@ As páginas da Fase 3 usam códigos curtos para papéis, temas, execuções e it
 | C1, C2, C3 | Características de qualidade do modelo da Fase 1 | Fase 1 e Fase 2 |
 | F01 a F09 | Funções do VICKY no escopo, listadas no objeto de avaliação da Fase 1 | G1 (M1.2.1), G2 por inspeção e G2 com usuários |
 | C | Condutor: executa as triagens (G1) ou conduz a sessão com o participante (G2 com usuários). No PICO do G1, C é também o comparador | G1, G2 com usuários |
-| O | Observador da sessão com participante | G2 com usuários |
+| O | Observador da sessão com participante, opcional desde a D13 | G2 com usuários |
 | A1, A2 | Avaliadores independentes; cada método diz o que cada um pode ver | G1, G2 por inspeção, G2 com usuários (contraste), G3 |
 | A3 | Terceiro avaliador, que decide só as divergências que A1 e A2 não resolvem | G1, G2 por inspeção, G2 com usuários, G3 |
 | K1, K2 | Avaliadores do teste só com teclado (M2.6.1) | G2 com usuários |
-| P01 a P07 | Participantes das sessões: P01 a P05 titulares, P06 e P07 reservas | G2 com usuários e termo de consentimento |
+| P01 a P05 | Participantes das sessões remotas: P01 a P03 titulares, P04 e P05 reservas | G2 com usuários e termo de consentimento |
+| R01 a R05 | Respondentes válidos do formulário de estética (M2.5.1) | G2 com usuários e termo de consentimento |
 | P01 a P10 | Padrões de interação comparados entre telas (M2.3.1) | G2 por inspeção |
 | P0 | Projeto rascunho usado nos casos de teste F02 a F04, sem triagem completa | G1 |
 | T1 a T4 | Temas de teste; T1-B e T3-B são as repetições de T1 e T3 para M1.5.2 | G1 (T1 também no G2) |
@@ -82,3 +83,4 @@ _Tabela 1 - Siglas e códigos usados na Fase 3. Fonte: elaborada pela equipe._
 | 0.3 | 09/11/2026 | Cobertura das 26 métricas nos quatro métodos | Gabriel Fae | - |
 | 0.4 | 14/11/2026 | Páginas de instrumentos e termo de consentimento no conteúdo, "Por que este método" na estrutura comum e responsáveis atualizados pela D12 | Lucas Avelar | - |
 | 0.5 | 14/11/2026 | Siglas e códigos da Fase 3, com a distinção dos códigos repetidos por página | Lucas Avelar | - |
+| 0.6 | 19/11/2026 | Códigos P01 a P05 e R01 a R05 e observador opcional, pela D13 | Gabriel Fae | - |
