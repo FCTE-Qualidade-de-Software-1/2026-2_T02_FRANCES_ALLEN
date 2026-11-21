@@ -1,0 +1,15 @@
+estudo_id,relato_id,titulo,doi,pubmed,scielo,scholar,data_consulta,observacao
+Cooper 2008,1,Coenzyme Q10 and vitamin E deficiency in Friedreich's ataxia: predictor of efficacy of vitamin E and coenzyme Q10 therapy,10.1111/j.1468-1331.2008.02318.x,sim,nao,sim,2026-11-19,Scholar: similaridade 1.00
+Lynch 2021,1,Safety and efficacy of omaveloxalone in Friedreich ataxia (MOXIe study),10.1002/ana.25934,sim,nao,sim,2026-11-19,Scholar: similaridade 0.99
+Lynch 2021,2,Omaveloxolone for the treatment of Friedreich ataxia: clinical trial results and practical considerations,10.1080/14737175.2024.2310617,sim,nao,sim,2026-11-19,Scholar: similaridade 1.00
+Lynch 2021,3,Correction to safety and efficacy of omaveloxolone in Friedreich ataxia (MOXIe Study),10.1002/ana.26808,sim,nao,sim,2026-11-19,Scholar: similaridade 1.00
+Lynch 2021,4,"Safety, pharmacodynamics, and potential benefit of omaveloxolone in Friedreich ataxia",10.1002/acn3.660,sim,nao,sim,2026-11-19,Scholar: similaridade 1.00
+Lynch 2021,5,"Omaveloxolone for the treatment of Friedreich ataxia: efficacy, safety, and future perspectives",10.1002/mds.30070,sim,nao,sim,2026-11-19,Scholar: similaridade 1.00
+Lynch 2021,6,Assessment of cardiac safety in patients with Friedreich's ataxia in the MOXIe trial of omaveloxolone,,nao,nao,sim,2026-11-19,Scholar: similaridade 0.96; PubMed: busca por titulo sem resultado
+Lynch 2021,7,Kidney effects in the MOXIE trial: a study of omavoloxolone in patients with Friedreich's ataxia,10.1093/ndt/gfaa142.p022,nao,nao,sim,2026-11-19,Scholar: similaridade 0.94; PubMed: busca por titulo sem resultado
+Lynch 2022,1,Double blind trial of a deuterated form of linoleic acid (RT001) in Friedreich ataxia,10.1007/s00415-022-11501-4,sim,nao,sim,2026-11-19,Scholar: similaridade 1.00
+Mariotti 2003,1,Idebenone treatment in Friedreich patients: one-year-long randomized placebo-controlled trial,10.1212/01.wnl.0000055872.50364.fc,sim,nao,sim,2026-11-19,Scholar: similaridade 1.00
+MICONOS 2016,4,"The heart in Friedreich ataxia: definition of cardiomyopathy, disease severity, and correlation with neurological symptoms",10.1161/circulationaha.111.059477,sim,nao,sim,2026-11-19,Scholar: similaridade 1.00
+Pandolfo 2022,1,Efficacy and safety of leriglitazone in patients with Friedreich ataxia,10.1212/nxg.0000000000200034,sim,nao,sim,2026-11-19,Scholar: similaridade 1.00
+Pandolfo 2022,3,Leriglitazone reduces iron accumulation in the dentate nucleus and improves further relevant disease biomarkers and clinical parameters in a phase 2 clinical study in Friedreich's ataxia (FRDA),10.1002/ana.26180,sim,nao,sim,2026-11-19,Scholar: similaridade 0.85
+Sacca 2016,1,Long-term effect of epoetin alfa on clinical and biochemical markers in Friedreich ataxia,10.1002/mds.26552,sim,nao,sim,2026-11-19,Scholar: similaridade 0.99

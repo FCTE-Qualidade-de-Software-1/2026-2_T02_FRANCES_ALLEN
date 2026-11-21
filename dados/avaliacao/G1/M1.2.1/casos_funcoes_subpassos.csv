@@ -1,0 +1,27 @@
+funcao,caso,data_hora,resultado_observado,classificacao_executor,classificacao_conferente,classificacao_final,captura,observacao
+F01,a,2026-11-17,"signup com e-mail de teste do G1, aceite dos Termos 2026-09-29: conta criada e login automatico, sem verificacao de e-mail (0 creditos)",sim,sim,sim,,conta 'Teste G1 QSW1'; A1 (19/11): sem captura no repositório; aceito pelo registro do condutor
+F01,b,2026-11-17,logout e login com a conta criada: entrou no dashboard,sim,sim,sim,,A1 (19/11): sem captura no repositório; aceito pelo registro do condutor
+F01,c,2026-11-17,"pedido de recuperacao: a tela diz que o envio automatico de e-mail esta indisponivel e que o link e enviado pelo atendimento (vickyangel@gmail.com), a pedido do e-mail da conta",nao executado,nao,nao,,nao contatado o atendimento (terceiro); sem e-mail nao ha link para definir senha nova; A1 (19/11): o link de redefinição não é enviado pela interface
+F02,a,2026-11-17,criou projeto com tema e objetivo,operante (subpasso sim),sim,sim,,P0 #51; A1 (19/11): registro de tela em evidencias/20261117_F02-F03_projeto-P0-51_pagina-completa.txt
+F02,b,2026-11-17,"ajuste de populacao, periodo e objetivo so no formulario de criacao",sim com ressalva,sim,sim,,sem campo de tipo de estudo; forma anotada; A1 (19/11): ajuste pelo formulário de criação conta como executado (seção 4.3 do método)
+F02,c,2026-11-17,modo de revisao (sistematica/narrativa) escolhido no formulario,sim (escolha aparece no projeto),sim,sim,,A1 (19/11): o projeto exibe 'Revisão sistemática'
+F02,d,2026-11-17,"ao reabrir, tema e janela aparecem; objetivo e bases nao",com ressalva,nao,,,"A1 (19/11): ao reabrir, objetivo e bases não aparecem (registro do P0 #51), então os valores salvos não são vistos; divergência a decidir com C"
+F03,a,2026-11-17,"tela nao mostra P, I, C e O rotulados; ha protocolo e strings",discutivel,nao,,,"ver pico_T1.md; A1 (19/11): a tela mostra protocolo em estágios e strings, sem P, I, C e O rotulados; divergência a decidir com C"
+F03,b,2026-11-17,criterios de inclusao e exclusao gerados,sim,sim,sim,,A1 (19/11): critérios de inclusão e exclusão no registro do P0 #51
+F03,c,2026-11-17,nao ha edicao de criterios,nao,nao,nao,,A1 (19/11): a tela não oferece edição dos critérios
+F04,a,2026-11-17,escolha de bases persiste no banco,sim,nao,,,A1 (19/11): a escolha de bases não aparece na tela ao reabrir o projeto; o registro no banco não é visível ao estudante; divergência a decidir com C
+F04,b,2026-11-17,quantidade do Top persiste,sim,sim,sim,,"A1 (19/11): T1 #53 exibe meta 0/30, igual à configurada; P0 #51 exibe 0/25 e P0b #52 exibe 0/10, diferente do Top 30 anotado em execucoes.csv para P0: conferir"
+F04,c,2026-11-18,E1 so com PubMed: os 30 itens da lista exibem fonte PubMed e nenhum exibe SciELO ou Scholar,sim,sim,sim,capturas/E1_lista_tela.txt,"projeto #56; 550 analisados, todos PubMed; A1 (19/11): a captura citada (capturas/E1_lista_tela.txt) não está no repositório; a conferência de M1.5.1 registra fonte PubMed nos 30 itens"
+F05,a,2026-11-17,creditos 10 para 9,sim,sim,sim,,T1 #53; A1 (19/11): saldo de 10 no P0b #52 e de 9 no T1 #53
+F05,b,2026-11-17,andamento exibido na tela,sim,sim,sim,,A1 (19/11): registro de tela em evidencias/20261117_F05b_T1-andamento-2005.txt
+F05,c,2026-11-17,terminou com lista de 30,sim,sim,sim,,A1 (19/11): registro de tela em evidencias/20261117_F05_T1-pagina-concluida.txt
+F05,d,2026-11-17,excluidos com motivo (Resumo IA),sim,sim,sim,,A1 (19/11): registro de tela em evidencias/20261117_F05d_T1-excluido-com-motivo.txt
+F06,a,2026-11-17,"scores 88, 88, 85, 85, 85... decrescente",sim,sim,sim,,include_top; A1 (19/11): scores decrescentes no registro da página concluída do T1
+F06,b,2026-11-17,scores entre 0 e 100,sim,sim,sim,,A1 (19/11): scores entre 0 e 100 no registro da página concluída do T1
+F06,c,,URLs das posicoes 1 a 5 de T1 e T2 respondem HTTP 200 no PubMed (checado por requisicao); abertura visual a conferir por A1,sim (HTTP 200),sim,sim,,"A1 (19/11): em 19/11, os PMIDs das posições 1 a 5 de T1 resolvem no PubMed (E-utilities) para os mesmos DOIs da lista"
+F07,a-c,2026-11-17,"marcar, desmarcar e persistir apos recarregar",sim,sim,sim,,estado final desmarcado; A1 (19/11): registro de tela em evidencias/20261117_F07_T1-favoritos.txt
+F08,a-c,2026-11-17,log em Pipeline e Criterios traz strings e criterios,sim,sim,sim,,A1 (19/11): registro de tela em evidencias/20261117_F08_T1-log-pipeline-e-criterios.txt
+F09,a,2026-11-17,PDF resumo e completo obtidos (40104 e 692020 bytes),sim (via rota),sim,sim,,download UI nao concluiu; A1 (19/11): o menu Exportar oferece PDF; o arquivo foi obtido pela mesma rota do menu
+F09,b,2026-11-17,"XLSX 136569 bytes, abas Resumo, Top 30 (30 itens), Incluidos fora do Top, Excluidos",sim (via rota),sim,sim,,A1 (19/11): o menu Exportar oferece XLSX; o arquivo foi obtido pela mesma rota do menu
+F09,c,,sem opcao CSV na tela,nao executado,nao,nao,,A1 (19/11): sem opção de CSV na tela
+F09,d,,sem opcao JSON na tela,nao executado,nao,nao,,A1 (19/11): sem opção de JSON na tela

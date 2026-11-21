@@ -1,0 +1,11 @@
+posicao,doi,pagina_oficial,titulo_ok,autores_ok,ano_ok,periodico_ok,link_ok,observacao
+3,10.1002/cam4.70816,https://pubmed.ncbi.nlm.nih.gov/40145635/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+6,10.1016/j.ejon.2024.102594,https://pubmed.ncbi.nlm.nih.gov/38795438/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+9,10.6004/jnccn.2022.7080,https://pubmed.ncbi.nlm.nih.gov/36791754/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+12,10.1007/s00520-020-05794-2,https://pubmed.ncbi.nlm.nih.gov/33026490/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+15,10.1177/1534735420959882,https://pubmed.ncbi.nlm.nih.gov/33073636/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+18,10.4103/IJPC.IJPC_95_17,https://pubmed.ncbi.nlm.nih.gov/28827926/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+21,10.1002/cncr.26702,https://pubmed.ncbi.nlm.nih.gov/22180393/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+24,10.1007/s00520-024-08821-8,https://pubmed.ncbi.nlm.nih.gov/39207544/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+27,10.21037/apm-20-1484,https://pubmed.ncbi.nlm.nih.gov/33440970/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta
+30,10.1186/s12885-019-5648-7,https://pubmed.ncbi.nlm.nih.gov/31109309/,sim,sim,sim,sim,sim,conferido por código contra o registro oficial do PubMed (efetch por PMID); link por requisição HTTP; página do DOI não aberta

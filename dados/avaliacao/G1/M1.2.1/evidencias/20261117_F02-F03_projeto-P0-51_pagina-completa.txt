@@ -1,0 +1,218 @@
+V
+Vicky
+TRIAGEM COM IA
+NAVEGAR
+Dashboard
+Projetos
+Favoritos
+Configurações
+V0.1.0
+OPERACIONAL
+PROJETO #51 · CRIADO EM 17/11/2026
+Colchicina na prevenção secundária de eventos cardiovasculares em adultos com doença aterosclerótica
+10
+CRÉDITOS
+Comprar mais créditos
+L
+[TITULAR DA CONTA]
+Voltar
+CRITÉRIOS PRONTOS
+🔬 Revisão sistemática
+✦ maturidade moderada
+Ver todos os artigos (0)
+Só texto completo gratuito 
+▶ Iniciar pipeline
+CONSOME 1 CRÉDITO
+🗑 Excluir projeto
+Critérios PICO prontos. Revise antes de iniciar o pipeline.
+
+Esses são os filtros que a IA vai aplicar em cada artigo encontrado. Revise abaixo, edite se quiser, e quando estiver pronta clique em "Iniciar pipeline" no topo da página (cobra 1 crédito).
+
+⚙️ Pipeline (sequência de ações executadas)
+Discovery agent (gera critérios)
+100%
+Critérios + search strings gerados · 18 substrings ativas (A maturidade do tema foi classificada como moderada devido à heterogeneidade dos estudos disponíveis, que incluem ensaio)
+📋 Critérios PICO + Strings de busca (geradas pela IA)
+STRINGS DE BUSCA
+pubmed · 6 substrings
+#1
+(colchicina AND (prevenção secundária OR eventos cardiovasculares)) AND (infarto OR AVC OR morte cardiovascular) AND (placebo OR cuidado usual) AND (2022[Date - Publication] : 2026[Date - Publication])
+#2
+(colchicina AND eventos cardiovasculares) AND (placebo OR cuidado usual) AND (2022[Date - Publication] : 2026[Date - Publication])
+#3
+(colchicina[MeSH] OR colchicine) AND (cardiovascular events OR heart attack OR stroke OR cardiovascular death) AND (2022[Date - Publication] : 2026[Date - Publication])
+#4
+(colchicina OR colchicine) AND (prevenção secundária OR secondary prevention) AND (2022[Date - Publication] : 2026[Date - Publication])
+#5
+(colchicina AND (adultos OR pacientes)) AND (infarto OR AVC OR morte cardiovascular) AND (2022[Date - Publication] : 2026[Date - Publication])
+#6
+(colchicina AND (RCT OR ensaio clínico randomizado OR clinical trial)) AND (2022[Date - Publication] : 2026[Date - Publication])
+scielo · 6 substrings
+#1
+(colchicina AND (prevenção secundária OR eventos cardiovasculares)) AND (infarto OR AVC OR morte cardiovascular) AND (placebo OR cuidado usual)
+#2
+(colchicina AND eventos cardiovasculares) AND (placebo OR cuidado usual)
+#3
+(colchicina OR colchicine) AND (eventos cardiovasculares OR infarto OR AVC OR morte cardiovascular)
+#4
+(colchicina OR colchicine) AND (prevenção secundária OR secondary prevention)
+#5
+(colchicina AND (adultos OR pacientes)) AND (infarto OR AVC OR morte cardiovascular)
+#6
+(colchicina AND (RCT OR ensaio clínico randomizado))
+scholar · 6 substrings
+#1
+colchicina prevenção secundária eventos cardiovasculares infarto AVC morte cardiovascular placebo cuidado usual
+#2
+colchicina eventos cardiovasculares placebo cuidado usual
+#3
+colchicina infarto AVC morte cardiovascular
+#4
+colchicina prevenção secundária
+#5
+colchicina adultos infarto AVC morte cardiovascular
+#6
+colchicina RCT ensaio clínico randomizado
+CRITÉRIOS
+# Protocolo de Triagem (Revisão Sistemática Padrão) — Colchicina na prevenção secundária de eventos cardiovasculares em adultos com doença aterosclerótica
+
+## Maturidade do tema
+moderate — A literatura sobre o uso da colchicina na prevenção secundária de eventos cardiovasculares é ativa, mas apresenta heterogeneidade, com uma mistura de estudos de diferentes desenhos e tamanhos.
+
+## Janela temporal recomendada
+2022–2026 (5 anos, proporcional à maturidade)
+
+## 1. Elegibilidade de Escopo (obrigatória — exclui se falha) ✅
+
+### 1.1 Tema central
+- O artigo aborda diretamente o efeito da colchicina na prevenção secundária de eventos cardiovasculares em adultos com doença aterosclerótica.
+
+### 1.2 Tipo de publicação
+- Estudo primário ou secundário com dados (RCT, coorte, caso-controle, transversal, qualitativo, revisão sistemática, meta-análise, guideline, consenso). Exclui editoriais puros, cartas ao editor, comentários sem dados, abstracts de congresso isolados.
+
+### 1.3 Idioma
+- Inglês, português ou espanhol.
+
+### 1.4 Disponibilidade
+- Texto completo OU abstract estruturado disponível.
+
+### 1.5 Janela temporal
+- Publicação entre 2022 e 2026. Estudos clássicos/fundacionais anteriores podem entrar se forem altamente citados ou conceitualmente indispensáveis.
+
+## 2. Piso Metodológico Mínimo (obrigatório, mas amplo) ✅
+
+### 2.1 Metodologia descrita
+- O método é descrito (qualquer desenho aceito). NÃO exige RCT, validação externa ou multi-centro.
+
+### 2.2 Amostra coerente com desenho
+- O N é coerente com o tipo de estudo (sem cap fixo). Estudos pequenos com desenho justificado entram.
+
+### 2.3 Métrica/desfecho relevante
+- Pelo menos UM desfecho ou métrica relacionada ao tema é reportado.
+
+### 2.4 Coerência interna
+- Há coerência entre objetivo, método, resultados e conclusão.
+
+## 3. Quality Score (0–100, NÃO exclui)
+
+### 3.1 Universal (50 pts — aplicável a qualquer tema)
+| Atributo | Peso |
+|---|---|
+| Clareza da pergunta científica / definição da população | 10 |
+| Adequação do desenho ao objetivo | 15 |
+| Controle de viés, confundidores, análise estatística adequada | 15 |
+| Atualidade e relevância prática | 10 |
+
+### 3.2 Específico do tema (50 pts — pesos adaptados à maturidade moderate)
+| Atributo específico | Peso |
+|---|---|
+| Validação externa (se disponível) | 10 |
+| Comparação com placebo ou cuidado usual | 15 |
+| Desfechos primários relacionados a eventos cardiovasculares (infarto, AVC, morte) | 15 |
+| Tipo de estudo (RCT preferencialmente) | 10 |
+| Coerência entre intervenção e desfechos | 10 |
+
+### Interpretação do score
+- **80–100**: prioridade máxima de leitura.
+- **60–79**: alta prioridade.
+- **40–59**: incluído mas leitura secundária.
+- **0–39**: incluído (passou Stage 1+2) mas baixa prioridade — só lido se tiver tempo.
+
+## 4. Ranking Top N
+- Os artigos incluídos são ordenados por quality_score DESC.
+- Top N (definido pela meta do usuário) recebem prioridade.
+- Os demais incluídos continuam acessíveis na lista completa — em revisão sistemática REAL todos os elegíveis devem ser considerados.
+🎯 Performance das strings de busca (taxa de inclusão por substring)
+
+Cada substring busca um ângulo diferente do tema. Após a primeira passada de análise, as substrings com maior taxa de inclusão ganham orçamento adicional ("expand winners"); as que retornam 0 inclusões em ≥30 análises são "queimadas" e não rodam mais.
+
+SOURCE	#	STRING	TAXA
+pubmed	#1	
+(colchicina AND (prevenção secundária OR eventos cardiovasculares)) AND (infarto OR AVC OR morte cardiovascular) AND (placebo OR cuidado usual) AND (2022[Date - Publication] : 2026[Date - Publication])
+	—
+pubmed	#2	
+(colchicina AND eventos cardiovasculares) AND (placebo OR cuidado usual) AND (2022[Date - Publication] : 2026[Date - Publication])
+	—
+pubmed	#3	
+(colchicina[MeSH] OR colchicine) AND (cardiovascular events OR heart attack OR stroke OR cardiovascular death) AND (2022[Date - Publication] : 2026[Date - Publication])
+	—
+pubmed	#4	
+(colchicina OR colchicine) AND (prevenção secundária OR secondary prevention) AND (2022[Date - Publication] : 2026[Date - Publication])
+	—
+pubmed	#5	
+(colchicina AND (adultos OR pacientes)) AND (infarto OR AVC OR morte cardiovascular) AND (2022[Date - Publication] : 2026[Date - Publication])
+	—
+pubmed	#6	
+(colchicina AND (RCT OR ensaio clínico randomizado OR clinical trial)) AND (2022[Date - Publication] : 2026[Date - Publication])
+	—
+scholar	#1	
+colchicina prevenção secundária eventos cardiovasculares infarto AVC morte cardiovascular placebo cuidado usual
+	—
+scholar	#2	
+colchicina eventos cardiovasculares placebo cuidado usual
+	—
+scholar	#3	
+colchicina infarto AVC morte cardiovascular
+	—
+scholar	#4	
+colchicina prevenção secundária
+	—
+scholar	#5	
+colchicina adultos infarto AVC morte cardiovascular
+	—
+scholar	#6	
+colchicina RCT ensaio clínico randomizado
+	—
+scielo	#1	
+(colchicina AND (prevenção secundária OR eventos cardiovasculares)) AND (infarto OR AVC OR morte cardiovascular) AND (placebo OR cuidado usual)
+	—
+scielo	#2	
+(colchicina AND eventos cardiovasculares) AND (placebo OR cuidado usual)
+	—
+scielo	#3	
+(colchicina OR colchicine) AND (eventos cardiovasculares OR infarto OR AVC OR morte cardiovascular)
+	—
+scielo	#4	
+(colchicina OR colchicine) AND (prevenção secundária OR secondary prevention)
+	—
+scielo	#5	
+(colchicina AND (adultos OR pacientes)) AND (infarto OR AVC OR morte cardiovascular)
+	—
+scielo	#6	
+(colchicina AND (RCT OR ensaio clínico randomizado))
+	—
+🎯 META DO TOP
+0/25
+Aguardando análise
+Resumo
+Artigos
+0
+Incluídos
+0
+Excluídos
+0
+VICKY · TRIAGEM ASSISTIDA POR IA
+[TITULAR DA CONTA]
+Synaptha Inc Ltda · CNPJ 63.642.396/0001-90
+Quadra SIG Quadra 4, nº 75, Bloco C, Sala 09 e 10, Parte 36, Edifício Capital Financial Center, Zona Industrial, Brasília - DF, CEP 70610-440
+Atendimento: vickyangel@gmail.com · Termos de Uso · Política de Privacidade

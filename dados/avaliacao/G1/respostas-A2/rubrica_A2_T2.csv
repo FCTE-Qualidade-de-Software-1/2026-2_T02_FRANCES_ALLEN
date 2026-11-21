@@ -1,0 +1,31 @@
+item,desenho,amostra,comparador,revisao_pares,nota,justificativa
+T2-01,4,3,2,1,10,revisao sistematica de ECR; 1717 participantes somados; grupos controle concorrentes; periodico
+T2-02,4,3,2,1,10,revisao sistematica de ECR; 1828 participantes somados; grupos controle concorrentes; periodico
+T2-03,4,0,2,1,7,revisao sistematica de ECR; soma de participantes nao informada no resumo; grupos controle concorrentes; periodico
+T2-04,4,0,2,1,7,revisao sistematica de ECR; soma de participantes nao informada no resumo; grupos controle concorrentes; periodico
+T2-05,3,1,2,1,7,"ECR 91 participantes, terapia de suporte como controle, periodico"
+T2-06,4,2,2,1,9,revisao sistematica de ECR; 693 participantes somados; grupos controle concorrentes; periodico
+T2-07,4,0,2,1,7,revisao sistematica de ECR; soma de participantes nao informada no resumo; grupos controle concorrentes; periodico
+T2-08,4,0,2,1,7,revisao sistematica de ECR; soma de participantes nao informada no resumo; grupos controle concorrentes; periodico
+T2-09,4,0,2,1,7,revisao sistematica de ECR; soma de participantes nao informada no resumo; grupos controle concorrentes; periodico
+T2-10,4,3,2,1,10,revisao sistematica de ECR; 2183 participantes somados; grupos controle concorrentes; periodico
+T2-11,4,3,2,1,10,revisao sistematica de ECR; 6916 participantes somados; grupos controle concorrentes; periodico
+T2-12,4,0,2,1,7,revisao sistematica de ECR; soma de participantes nao informada no resumo; grupos controle concorrentes; periodico
+T2-13,3,1,2,1,7,"estudo randomizado 96 participantes, controle sem ioga, periodico"
+T2-14,1,1,1,1,4,"piloto pre e pos sem grupo controle, 82 participantes, periodico"
+T2-15,3,2,2,1,8,"ECR 410 participantes, cuidado padrao, periodico"
+T2-16,3,2,2,1,8,"ECR 173 participantes, lista de espera, periodico"
+T2-17,3,0,2,1,6,ECR; tamanho da amostra nao informado no resumo; grupo controle; periodico
+T2-18,3,1,2,1,7,"ECR 52 randomizados, cuidado padrao, periodico"
+T2-19,0,0,0,1,1,revisao narrativa; sem amostra somada nem comparador proprio; periodico
+T2-20,4,0,2,1,7,revisao sistematica de ECR; soma de participantes nao informada no resumo; grupos controle concorrentes; periodico
+T2-21,4,3,2,1,10,revisao sistematica de ECR; 2423 participantes somados; grupos controle concorrentes; periodico
+T2-22,3,1,2,1,7,"analise secundaria de ECR, 97 participantes, cuidado padrao concorrente, periodico"
+T2-23,1,1,1,1,4,"serie retrospectiva pre e pos, 95 atendimentos, sem controle concorrente, periodico"
+T2-24,3,2,2,1,8,"ECR 102 participantes, grupo sem lembrete concorrente, periodico"
+T2-25,3,2,2,1,8,"ECR fase III 410 participantes, cuidado padrao, periodico"
+T2-26,4,3,2,1,10,revisao sistematica de ECR; 5747 participantes somados; grupos controle concorrentes; periodico
+T2-27,4,0,2,1,7,revisao sistematica de ECR; soma de participantes nao informada no resumo; grupos controle concorrentes; periodico
+T2-28,3,1,2,1,7,"ECR 31 participantes, educacao em saude como controle, periodico"
+T2-29,4,0,2,1,7,revisao de revisoes sistematicas de ensaios controlados; soma de participantes nao informada no resumo; grupos controle concorrentes; periodico
+T2-30,2,2,1,1,6,analise secundaria de ECR com comparacao nao randomizada entre faixas etarias no braco ioga; 177 participantes; melhora antes e depois; periodico
