@@ -7,13 +7,13 @@ Quarta e última fase do processo de avaliação de produto da família **SQuaRE
 
 ## Conteúdo desta fase
 
-| Página | Conteúdo | Responsável | Issue | Estado em 20/11/2026 |
+| Página | Conteúdo | Responsável | Issue | Estado em 22/11/2026 |
 |--------|----------|-------------|:-----:|----------------------|
-| [Resultados do G1](resultados-g1.md) (adequação funcional) | Triagens T1 a T4, julgamento de A1 e A2, kappa, M1.1.1 a M1.5.2 e respostas de Q1.1 a Q1.5 | Larissa Gomes | #26 | Triagens e fichas de A1 e A2 no repositório; kappa e cálculo em andamento |
-| [Resultados do G2 por inspeção](resultados-g2-inspecao.md) | M2.1.1 a M2.4.2 e M2.7.1, concordância entre avaliadores e respostas das questões | Gabriel Fae | #27 | Fichas de A2 no repositório (PR #34); fichas de A1 e consolidação (etapa 7) pendentes |
-| Resultados do G2 com usuários | Formulário de estética, sessões remotas, teste com teclado e axe DevTools: M2.5.1, M2.6.1, M2.6.2 e M2.7.2 | João Felipe Oliveira | #28 | Coleta replanejada pela [D13](../gestao/decisoes.md#d13-adaptar-a-coleta-com-usuarios-ao-prazo-da-entrega-2), sessões de 19 a 21/11 |
+| [Resultados do G1](resultados-g1.md) (adequação funcional) | Triagens T1 a T4, julgamento de A1 e A2, kappa, M1.1.1 a M1.5.2 e respostas de Q1.1 a Q1.5 | Larissa Gomes | #26 | Concluído (PR #36): oito métricas, kappa de T1 a T4 e respostas de Q1.1 a Q1.5 |
+| [Resultados do G2 por inspeção](resultados-g2-inspecao.md) | M2.1.1 a M2.4.2 e M2.7.1, concordância entre avaliadores e respostas das questões | Gabriel Fae | #27 | Concluído (PRs #34 e #37): consolidação de A1 e A2, oito métricas e respostas de Q2.1 a Q2.4 e parte da Q2.7 |
+| Resultados do G2 com usuários | Formulário de estética, sessões remotas, teste com teclado e axe DevTools: M2.5.1, M2.6.1, M2.6.2 e M2.7.2 | João Felipe Oliveira | #28 | Coleta replanejada pela [D13](../gestao/decisoes.md#d13-adaptar-a-coleta-com-usuarios-ao-prazo-da-entrega-2); sessões em andamento em 22/11 |
 | [Resultados do G3](resultados-g3.md) (manutenibilidade) e ação de melhoria | M3.1.1 a M3.3.1 na linha de base de 14/11, repetição por A2, julgamento do G3 e candidata de melhoria | Guilherme Moura | #29 | Linha de base, repetição e julgamento concluídos (PR #35); ação de melhoria e medida depois pendentes |
-| Julgamento e conclusões | Julgamento por característica, relação entre as características, ligação com o propósito da Fase 1 e sugestões ao requisitante | Guilherme Maciel | #30 | A iniciar; depende do G1 e do G2 |
+| Julgamento e conclusões | Julgamento por característica, relação entre as características, ligação com o propósito da Fase 1 e sugestões ao requisitante | Guilherme Maciel | #30 | Primeira versão no repositório (PR #38); falta incorporar o G1 e o G2 com usuários |
 
 ## Como os resultados viram julgamento
 
@@ -29,58 +29,57 @@ O caminho de cada número até a conclusão segue as regras da Fase 2, sem mudan
 
 | Objetivo | Métricas medidas | Perfil das questões | Pontuação do objetivo | Nível | Julgamento do VICKY | Fonte |
 |----------|:----------------:|---------------------|:---------------------:|:-----:|---------------------|-------|
-| G1 - Adequação funcional | [PENDENTE: kappa e cálculo do G1] | [PENDENTE: kappa e cálculo do G1] | [PENDENTE: kappa e cálculo do G1] | [PENDENTE] | [PENDENTE] | [Resultados do G1](resultados-g1.md) |
-| G2 - Capacidade de interação | [PENDENTE: consolidação da inspeção e coleta com usuários] | [PENDENTE] | [PENDENTE] | [PENDENTE] | [PENDENTE] | [Resultados do G2 por inspeção](resultados-g2-inspecao.md) |
+| G1 - Adequação funcional | 8 de 8 | Q1.1 Insatisfatório (0,00) · Q1.2 Aceitável (1,00) · Q1.3 Aceitável (1,50) · Q1.4 Insatisfatório (0,00) · Q1.5 Insatisfatório (0,50) | 0,60 | Insatisfatório | **Não atende** | [Resultados do G1](resultados-g1.md) |
+| G2 - Capacidade de interação | 8 por inspeção; 4 com usuários [PENDENTE: #28] | Q2.1 Bom · Q2.2 Aceitável · Q2.3 Insatisfatório · Q2.4 Insatisfatório · Q2.5 a Q2.7 [PENDENTE: #28] | [PENDENTE: #28] | [PENDENTE: #28] | [PENDENTE: #30] | [Resultados do G2 por inspeção](resultados-g2-inspecao.md) |
 | G3 - Manutenibilidade | 6 de 6 | Q3.1 Bom (2,00) · Q3.2 Aceitável (1,00) · Q3.3 Aceitável (1,00) | 1,33 | Aceitável | **Atende parcialmente** | [Resultados do G3](resultados-g3.md) |
 
 _Tabela 1 - Síntese do julgamento por objetivo. Fonte: elaborada pela equipe a partir das páginas de resultados de cada objetivo._
 
 ### G1 - Adequação funcional
 
-!!! warning "[PENDENTE: kappa e cálculo do G1]"
-    A coleta do G1 (#26) fecha em 20/11/2026 com as conferências, o kappa de Cohen de cada tema e o cálculo por `dados/avaliacao/G1/calcular_g1.py`. Nenhum valor desta seção é estimado.
+Coleta de 17 a 20/11/2026 nos temas T1 a T4, com repetição de T1 e T3 e as execuções de filtro E1 e E2. Valores, kappa e respostas da [página de resultados do G1](resultados-g1.md), seções 2 a 5.
 
 | Métrica | Medida | Valor | Nível | Pontos |
 |---------|--------|:-----:|:-----:|:------:|
-| M1.1.1 (crítica) | Recall@30 normalizado (T1 a T4) | [PENDENTE] | [PENDENTE] | [PENDENTE] |
-| M1.1.2 | Recall restrito às fontes (T1 a T4) | [PENDENTE] | [PENDENTE] | [PENDENTE] |
-| M1.2.1 | Funções declaradas operantes (F01 a F09) | [PENDENTE] | [PENDENTE] | [PENDENTE] |
-| M1.3.1 (crítica) | Precisão@30 (T1 a T4) | [PENDENTE] | [PENDENTE] | [PENDENTE] |
-| M1.3.2 | Metadados e links corretos | [PENDENTE] | [PENDENTE] | [PENDENTE] |
-| M1.4.1 | Spearman entre Quality Score e rubrica (T1 e T2) | [PENDENTE] | [PENDENTE] | [PENDENTE] |
-| M1.5.1 | Conformidade com filtros (E1 e E2) | [PENDENTE] | [PENDENTE] | [PENDENTE] |
-| M1.5.2 | Estabilidade entre execuções (T1 e T3) | [PENDENTE] | [PENDENTE] | [PENDENTE] |
+| M1.1.1 (crítica) | Recall@30 normalizado (T1 a T4) | 0,195 | Insatisfatório | 0 |
+| M1.1.2 | Recall restrito às fontes (T1 a T4) | 0,195 | Insatisfatório | 0 |
+| M1.2.1 | Funções declaradas operantes (F01 a F09) | 72,2% | Aceitável | 1 |
+| M1.3.1 (crítica) | Precisão@30 (T1 a T4) | 24,7% | Insatisfatório | 0 |
+| M1.3.2 | Metadados e links corretos | 100% (40 de 40) | Excelente | 3 |
+| M1.4.1 | Spearman entre Quality Score e rubrica (T1 e T2) | 0,034 | Insatisfatório | 0 |
+| M1.5.1 | Conformidade com filtros (E1 e E2) | 3,3% (base: E1) | Insatisfatório | 0 |
+| M1.5.2 | Estabilidade entre execuções (T1 e T3) | 0,586 | Aceitável | 1 |
 
 | Tema | Kappa de Cohen (mínimo 0,61) |
 |------|:----------------------------:|
-| T1 a T4 | [PENDENTE: kappa e cálculo do G1] |
+| T1 a T4 | 1,000; 0,918; 0,905; 1,000 (todos acima do mínimo, nenhum item decidido por A3) |
 
 | Questão | Métricas | Pontuação | Nível |
 |---------|----------|:---------:|:-----:|
-| Q1.1 | M1.1.1 e M1.1.2 | [PENDENTE] | [PENDENTE] |
-| Q1.2 | M1.2.1 | [PENDENTE] | [PENDENTE] |
-| Q1.3 | M1.3.1 e M1.3.2 | [PENDENTE] | [PENDENTE] |
-| Q1.4 | M1.4.1 | [PENDENTE] | [PENDENTE] |
-| Q1.5 | M1.5.1 e M1.5.2 | [PENDENTE] | [PENDENTE] |
+| Q1.1 | M1.1.1 e M1.1.2 | 0,00 | Insatisfatório |
+| Q1.2 | M1.2.1 | 1,00 | Aceitável |
+| Q1.3 | M1.3.1 e M1.3.2 | 1,50 | Aceitável |
+| Q1.4 | M1.4.1 | 0,00 | Insatisfatório |
+| Q1.5 | M1.5.1 e M1.5.2 | 0,50 | Insatisfatório |
 
-**Julgamento do G1:** [PENDENTE: kappa e cálculo do G1]. O objetivo é a média das cinco questões e não passa de Bom se alguma ficar em Insatisfatório ([níveis e julgamento, seção 2](../fase-2/niveis-e-julgamento.md#2-regras-do-g1-adequacao-funcional)).
+**Julgamento do G1:** a adequação funcional do VICKY **não atende** (0,60, Insatisfatório). Os pontos fortes são os metadados (M1.3.2, 100%) e a operação da maior parte do fluxo (M1.2.1); recall, precisão, correlação do ranking com a rubrica e conformidade com filtros ficaram em Insatisfatório. O objetivo é a média das cinco questões e não passa de Bom se alguma ficar em Insatisfatório ([níveis e julgamento, seção 2](../fase-2/niveis-e-julgamento.md#2-regras-do-g1-adequacao-funcional)).
 
 ### G2 - Capacidade de interação
 
-!!! warning "[PENDENTE: fichas de A1 e consolidação da inspeção; coleta com usuários]"
-    Em 20/11/2026, as fichas de A2 das oito métricas da inspeção estão no repositório, com capturas de 19/11 (PR #34, `dados/avaliacao/G2/M2.*/A2.md`). As fichas de A1 ainda não foram publicadas, e o `consolidado.md` de cada métrica está em branco. Pelo método, o valor de cada métrica sai só do consolidado (etapa 7, `dados/avaliacao/G2/calcular_g2_inspecao.py`), por isso nenhum valor do G2 aparece aqui. As métricas com usuários (M2.5.1, M2.6.1, M2.6.2 e M2.7.2) seguem a D13.
+!!! warning "[PENDENTE: coleta com usuários (#28)]"
+    A inspeção foi consolidada em 20/11/2026 por A1 e ratificada por A2 (concordância de 42,9% a 100% por métrica, nenhum item decidido por A3). Os níveis de Q2.1 a Q2.4 vêm da [página do G2 por inspeção](resultados-g2-inspecao.md), seção 5. Q2.5, Q2.6 e Q2.7 dependem das métricas com usuários (M2.5.1, M2.6.1, M2.6.2 e M2.7.2), que seguem a D13.
 
 | Questão | Como o nível é obtido | Nível |
 |---------|-----------------------|:-----:|
-| Q2.1 | Nível de M2.1.1 | [PENDENTE] |
-| Q2.2 | Nível de M2.2.1, um nível abaixo se M2.2.2 for Insatisfatório | [PENDENTE] |
-| Q2.3 | Menor nível entre M2.3.1 e M2.3.2 | [PENDENTE] |
-| Q2.4 | Nível de M2.4.1, um nível abaixo se M2.4.2 for Insatisfatório; Insatisfatório se ação paga estiver desprotegida | [PENDENTE] |
-| Q2.5 | Nível de M2.5.1 (formulário de estética, D13); relatada, fora da contagem do julgamento | [PENDENTE] |
-| Q2.6 | Nível de M2.6.1, com M2.6.2 (contraste) como complementar | [PENDENTE] |
-| Q2.7 | Nível de M2.7.2, um nível abaixo se M2.7.1 for Insatisfatório | [PENDENTE] |
+| Q2.1 | Nível de M2.1.1 | Bom |
+| Q2.2 | Nível de M2.2.1, um nível abaixo se M2.2.2 for Insatisfatório | Aceitável |
+| Q2.3 | Menor nível entre M2.3.1 e M2.3.2 | Insatisfatório |
+| Q2.4 | Nível de M2.4.1, um nível abaixo se M2.4.2 for Insatisfatório; Insatisfatório se ação paga estiver desprotegida | Insatisfatório |
+| Q2.5 | Nível de M2.5.1 (formulário de estética, D13); relatada, fora da contagem do julgamento | [PENDENTE: #28] |
+| Q2.6 | Nível de M2.6.1, com M2.6.2 (contraste) como complementar | [PENDENTE: #28] |
+| Q2.7 | Nível de M2.7.2, um nível abaixo se M2.7.1 for Insatisfatório | [PENDENTE: #28]; M2.7.1 = Bom (3 de 4), não rebaixa |
 
-**Julgamento do G2:** [PENDENTE], pelas regras da [seção 3 de níveis e julgamento](../fase-2/niveis-e-julgamento.md#3-regras-do-g2-capacidade-de-interacao).
+**Julgamento do G2:** [PENDENTE: #28 e #30], pelas regras da [seção 3 de níveis e julgamento](../fase-2/niveis-e-julgamento.md#3-regras-do-g2-capacidade-de-interacao).
 
 ### G3 - Manutenibilidade
 
@@ -138,7 +137,7 @@ Toda diferença entre o que a Fase 3 previu e o que foi executado é registrada 
 | 19/11/2026 | G1 | Casamento de título na consulta às fontes de M1.1.2 por similaridade de 0,85 ou mais, limiar que o método não fixava | Relatos sem PMID e títulos em português | [PENDENTE: confirmação da condutora do G1] |
 | 14 e 18/11/2026 | G3 | Nenhum | - | - |
 
-_Os dois desvios do G1 vêm da página de resultados do G1 em construção (branch `larissa/g1-dia1`) e ficam a confirmar até o fechamento da #26._
+_Os dois desvios do G1 vêm da página de resultados do G1; o registro completo da execução está na seção 3 dela._
 
 ## Histórico de versão
 
@@ -147,3 +146,4 @@ _Os dois desvios do G1 vêm da página de resultados do G1 em construção (bran
 | 0.1 | 16/10/2026 | Criação da página | Gabriel Fae | - |
 | 0.2 | 18/11/2026 | Estrutura da Fase 4: páginas de resultados por objetivo, caminho da medida ao julgamento, questões a responder e registro de desvios | Lucas Avelar | - |
 | 0.3 | 20/11/2026 | Síntese dos resultados: G3 completo, G1 e G2 com marcadores de pendência, ação de melhoria e desvios registrados até 20/11 | Lucas Avelar | - |
+| 0.4 | 22/11/2026 | G1 completo e G2 por inspeção (Q2.1 a Q2.4) na síntese; estado das páginas atualizado | Lucas Avelar | - |
