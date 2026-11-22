@@ -15,8 +15,9 @@ M2.7.2: o elemento é entendido pelo participante quando `uso = sem_ajuda` (obse
 `classificacao_final = correta` (respostas-compreensao.csv); entra em A quando entendido pela maioria dos
 participantes válidos (2 de 3, ou 3 de 5). Quality Score (E10) fora da maioria leva a Insatisfatório.
 
-M2.5.1: a tela é agradável para o respondente com nota 4 ou 5; entra em A quando agradável para a maioria dos
-respondentes válidos (3 de 5 pela Fase 2; 2 de 3 pela D14, com só três respostas).
+M2.5.1: usa as cinco primeiras respostas válidas, na ordem dos códigos R01 a R05 (método, seção 6), ou todas, quando
+há menos de cinco. A tela é agradável para o respondente com nota 4 ou 5; entra em A quando agradável para a maioria
+dos respondentes usados (3 de 5 pela Fase 2; 2 de 3 pela D14, com só três respostas).
 """
 
 from __future__ import annotations
@@ -78,7 +79,7 @@ def m272():
 
 def m251():
     linhas = ler("M2.5.1/respostas.csv")
-    resp = sorted({r["participante"] for r in linhas})
+    resp = sorted({r["participante"] for r in linhas})[:5]  # as cinco primeiras, por código (seção 6)
     telas = ["inicial", "novo_projeto", "detalhe_projeto", "lista_artigos", "ficha_artigo"]
     nota = {(r["participante"], r["tela"]): int(r["nota"]) for r in linhas}
     corte = maioria(len(resp))

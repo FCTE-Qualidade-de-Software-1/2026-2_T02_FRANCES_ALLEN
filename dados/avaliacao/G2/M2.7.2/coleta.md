@@ -8,7 +8,7 @@
 | Papéis (C, O, A3) e pessoas | P01 (19/11): C = João Felipe Oliveira; O = Gabriel Fae. P02 e P03 (20/11): C = Gabriel Fae, sem observador; segunda classificação das explicações (`classificacao_o`) por Lucas Avelar, que não conduziu as sessões, pela gravação (método, seção 3.2). A3 não foi acionado: as duas classificações coincidiram nos 36 itens |
 | Formato | Remoto, pelo Google Meet (método v0.6) |
 | Gravador e versão (Meet ou OBS) | Não registrado pela equipe. Os três arquivos são `.mkv`, o formato do OBS pela seção 3.6 do método, com muxer libavformat 61.7.100 e vídeo de 1920 por 1080 pixels (metadados lidos em 22/11/2026) |
-| Navegador e versão | Google Chrome do participante, nas três sessões; versão, sistema e resolução não registrados (`sessoes.csv`, coluna `observacao`) |
+| Navegador e versão | Vistos nas gravações em 22/11/2026: P01 num iPad com Safari (contra a seção 3.7 do método, que pede computador), P02 num Mac com Safari e P03 num computador com navegador não identificado, porque a gravação mostra só a aba compartilhada. Versões e resolução não registradas (`sessoes.csv`, coluna `observacao`) |
 | Projeto triado usado na parte B | Projeto já triado sobre "O uso de células-tronco para restauração de tecido", na mesma conta da equipe usada na parte A |
 | Limite de prévias em produção (por conta e por IP) | Não conferido antes das sessões. Por conta, 20 por dia, confirmado na inspeção do G2 (E08, 19/11) |
 | Conta nova começa com 0 crédito? | Sim. As sessões, porém, usaram uma conta da equipe com créditos (ver Ocorrências), e nenhum participante iniciou a triagem |
@@ -20,7 +20,7 @@
 
 Tema (cartão A): O uso de células-tronco para restauração de tecido
 
-Objetivo (cartão A): não registrado
+Objetivo (cartão A): nenhuma frase de objetivo foi fixada junto com o tema. Na P01, o texto do cartão enviado pelo chat trouxe só o tema e os dados de acesso; nas P02 e P03, o chat trouxe só o link e os dados de acesso (gravações conferidas em 22/11/2026). O que foi lido em voz alta não foi conferido
 
 Nome do projeto (cartão B): O uso de células-tronco para restauração de tecido (mesmo tema da parte A)
 
@@ -63,7 +63,7 @@ Os recortes guardam no repositório o que cada elemento mostra, sem o texto de a
 
 Critério que gerou dúvida, a interpretação escolhida e a confirmação de que ela foi reaplicada a todos os participantes.
 
-1. **Coluna `resposta_literal` nas P02 e P03.** O condutor informou a classificação de cada explicação, e não a fala transcrita, e registrou só as exceções. Os elementos que ele não citou foram classificados como corretos, e a coluna traz uma síntese compatível com o ponto essencial do gabarito, marcada com `[síntese]`. As exceções trazem a anotação do condutor, marcada com `[anotação do condutor]`. A evidência de cada resposta é a gravação. Na P01, a coluna traz a fala do participante, com a grafia corrigida.
+1. **Coluna `resposta_literal` nas P02 e P03.** O condutor informou a classificação de cada explicação, e não a fala transcrita, e registrou só as exceções. Os elementos que ele não citou foram marcados como `sem_ajuda` (uso) e `correta` (explicação) por padrão, e a coluna `resposta_literal` fica vazia neles: 21 das 24 linhas dessas duas sessões. As 3 exceções (E11 de P02, E09 e E11 de P03), assim como E11 e E12 de P01, trazem a anotação do condutor com a etiqueta `[síntese]`, porque não são a fala literal. Nas demais linhas de P01, a coluna traz a fala do participante, com a grafia corrigida. A única checagem independente das P02 e P03 é a segunda classificação das explicações, feita por Lucas Avelar pela gravação; o código de uso não teve segunda conferência.
 2. **P01, E02 ("Onde descrevo as coisas do meu TCC").** Lida como o que o trabalho quer investigar, e não como o resumo do trabalho, que é o erro do gabarito. C e O classificaram como correta.
 3. **P01, E03 ("funciona pra diferenciar o objetivo do que eu vou fazer no fim").** Lida como a escolha que muda conforme o trabalho final (banca ou resumo de disciplina), e não como formato de arquivo. C e O classificaram como correta.
 4. **P01, E10 ("Nota que o sistema deu ao artigo").** Não diz que a nota mede qualidade, mas também não comete nenhum erro do gabarito (decidir a inclusão, medir relevância ou fator de impacto). C e O classificaram como correta.
@@ -98,6 +98,7 @@ Registrados para a Fase 4, fora do cálculo.
 | 19 e 20/11/2026 | Hora de início e de fim, versão do navegador e momento de uso de cada elemento não anotados (só E11 e E12 da P01 têm o trecho da gravação) | A gravação continua sendo a evidência de cada código |
 | 20/11/2026 | P02: o arquivo XLSX exportado não abriu no macOS | Achado sobre a exportação, levado à Fase 4; não muda o código de uso (interpretação 6) |
 | 22/11/2026 | Gravações com o nome `Participante0x.mkv`, e não `P0x_AAAAMMDD` | Só de nome; o hash SHA-256 de cada arquivo está em `sessoes.csv` |
+| 22/11/2026 | Conferência parcial das gravações (campo Objetivo e dispositivo): P01 usou um iPad, e não um computador; P01 e P02 deixaram vazio o campo Objetivo (E02), que estava marcado como uso correto; P03 escreveu um objetivo com as próprias palavras | O dispositivo foi corrigido em `sessoes.csv`. A ficha de uso dá "deixa vazio" como uso incorreto de E02, mas o cartão não trouxe frase de objetivo (ver acima), e o texto lido em voz alta não foi conferido. A reclassificação de E02 para P01 e P02 está **pendente de decisão da equipe**: se aplicada, E02 sai de A e M2.7.2 vai a 10/12 = 83,3% (Bom) |
 | 22/11/2026 | Recortes de `elementos/` montados depois das sessões, com as capturas da inspeção | Registram o que cada elemento mostra; não há registro das imagens exatas exibidas nas chamadas |
 
 ## Exclusão das gravações

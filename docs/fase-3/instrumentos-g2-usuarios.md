@@ -14,8 +14,6 @@ Os cartões descrevem a necessidade do estudante sem usar o nome dos controles d
 >
 > **Tema:** O uso de células-tronco para restauração de tecido.
 >
-> **O que você quer descobrir com a revisão:** frase do desfecho do T1, fixada junto com o tema.
->
 > 1. Entre no VICKY com o e-mail e a senha que estão abaixo.
 > 2. Crie um projeto para o seu tema. Você quer:
 >     - registrar no projeto o que você quer descobrir com a revisão;
@@ -27,7 +25,7 @@ Os cartões descrevem a necessidade do estudante sem usar o nome dos controles d
 >
 > E-mail: ______________________ Senha: ______________
 
-Antes da primeira sessão (19/11/2026), o tema passou a ser o acima, e o passo 1, que pedia criar uma conta nova, passou a ser a entrada numa conta da equipe, a mesma da parte B ([método, seção 2.9](metodo-g2-usuarios.md#29-ajustes-feitos-antes-da-primeira-sessao)).
+Antes da primeira sessão (19/11/2026), o tema passou a ser o acima, e o passo 1, que pedia criar uma conta nova, passou a ser a entrada numa conta da equipe, a mesma da parte B ([método, seção 2.9](metodo-g2-usuarios.md#29-ajustes-feitos-antes-da-primeira-sessao)). A versão anterior do cartão trazia também uma frase de objetivo, a do desfecho do tema T1 do G1; com a troca de tema, nenhuma frase de objetivo foi fixada, e o chat das sessões trouxe só o tema e os dados de acesso (P01) ou só o link e os dados de acesso (P02 e P03). Sem a frase, o participante decide sozinho o que escrever no campo de objetivo (E02), e o efeito disso na marcação de uso está em [método, seção 2.10](metodo-g2-usuarios.md#210-execucao-das-sessoes-e-do-formulario).
 
 Os valores pedidos (5 anos, 15 artigos, duas bases, só texto gratuito) foram escolhidos diferentes dos valores padrão da tela, para que o participante precise mexer em cada controle. No código consultado, o padrão é 10 anos, 20 artigos, as três bases marcadas e o filtro desligado.
 
@@ -165,3 +163,4 @@ Fora do cálculo de M2.5.1. É a última página do formulário, de resposta opc
 | 0.3 | 19/11/2026 | Adaptação pela D13: cartões e recortes passados pela chamada remota, ficha de uso preenchida pela gravação quando não houver observador, questionário de estética e bloco qualitativo em formulário online, com respondentes R01 a R05 | Gabriel Fae | - |
 | 0.4 | 22/11/2026 | Cartões A e B como foram usados nas sessões: tema das células-tronco e entrada numa conta da equipe, a mesma da parte B | Gabriel Fae | - |
 | 0.5 | 22/11/2026 | Local e origem dos recortes dos 12 elementos e contagem da M2.5.1 com três respondentes (D14) | Gabriel Fae | - |
+| 0.6 | 22/11/2026 | Cartão A sem a frase de objetivo do tema T1, que não foi usada nas sessões (revisão do PR #40) | Gabriel Fae | - |
