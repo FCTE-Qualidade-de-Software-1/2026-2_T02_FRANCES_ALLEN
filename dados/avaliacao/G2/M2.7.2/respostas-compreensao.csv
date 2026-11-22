@@ -1,1 +1,37 @@
 participante,elemento,resposta_literal,classificacao_c,classificacao_o,classificacao_final,decidido_por
+P01,E01,É onde insiro o tema da pesquisa,correta,correta,correta,consenso
+P01,E02,Onde descrevo as coisas do meu TCC,correta,correta,correta,consenso
+P01,E03,"É bem legal, funciona pra diferenciar o objetivo do que eu vou fazer no fim",correta,correta,correta,consenso
+P01,E04,"É o tempo em que os artigos escritos vão ser filtrados, tipo, 15 anos são artigos dentro de 15 anos, e por aí vai",correta,correta,correta,consenso
+P01,E05,Número dos artigos que vão pra lista final,correta,correta,correta,consenso
+P01,E06,Quais bases que vão ser usadas pra pesquisa,correta,correta,correta,consenso
+P01,E07,Se tem só artigos de graça que eu possa ler depois,correta,correta,correta,consenso
+P01,E08,"Só iniciar a triagem gasta crédito e faz a busca completa; a prévia mostra os critérios de graça, e depois tem que pagar",correta,correta,correta,consenso
+P01,E09,Critérios que o sistema usou pra achar tudo,correta,correta,correta,consenso
+P01,E10,Nota que o sistema deu ao artigo,correta,correta,correta,consenso
+P01,E11,[anotação do condutor] Não achou o elemento na sessão e não entendeu o que é,incorreta,incorreta,incorreta,consenso
+P01,E12,[anotação do condutor] Não achou o elemento na sessão e desistiu,incorreta,incorreta,incorreta,consenso
+P02,E01,"[síntese] Campo onde se escreve o tema da pesquisa, que o VICKY usa para montar os critérios e a busca",correta,correta,correta,consenso
+P02,E02,"[síntese] O que se quer descobrir com a revisão, que orienta os critérios",correta,correta,correta,consenso
+P02,E03,"[síntese] Escolha do tipo de revisão: a sistemática tem critérios mais rigorosos, para trabalho apresentado em banca; a narrativa é mais flexível",correta,correta,correta,consenso
+P02,E04,[síntese] Período de publicação dos artigos considerados; os mais antigos ficam de fora,correta,correta,correta,consenso
+P02,E05,[síntese] Número máximo de artigos que entram na lista final,correta,correta,correta,consenso
+P02,E06,[síntese] Bases em que o VICKY procura os artigos,correta,correta,correta,consenso
+P02,E07,"[síntese] Mantém só artigos com texto completo gratuito, o que diminui o resultado",correta,correta,correta,consenso
+P02,E08,[síntese] A prévia mostra os critérios de graça; só iniciar a triagem gasta crédito e faz a busca completa; o rascunho só guarda o projeto,correta,correta,correta,consenso
+P02,E09,"[síntese] Critérios que o VICKY usa para decidir se cada artigo entra ou sai, que podem ser revisados antes de iniciar",correta,correta,correta,consenso
+P02,E10,"[síntese] Nota de qualidade do artigo, de 0 a 100, usada para ordenar os incluídos",correta,correta,correta,consenso
+P02,E11,[anotação do condutor] Disse que nem encontrou como a busca foi feita e que não conseguiria explicar o elemento,incorreta,incorreta,incorreta,consenso
+P02,E12,[síntese] Salva o resultado do projeto num arquivo (PDF ou planilha) para usar fora do VICKY,correta,correta,correta,consenso
+P03,E01,"[síntese] Campo onde se escreve o tema da pesquisa, que o VICKY usa para montar os critérios e a busca",correta,correta,correta,consenso
+P03,E02,"[síntese] O que se quer descobrir com a revisão, que orienta os critérios",correta,correta,correta,consenso
+P03,E03,"[síntese] Escolha do tipo de revisão: a sistemática tem critérios mais rigorosos, para trabalho apresentado em banca; a narrativa é mais flexível",correta,correta,correta,consenso
+P03,E04,[síntese] Período de publicação dos artigos considerados; os mais antigos ficam de fora,correta,correta,correta,consenso
+P03,E05,[síntese] Número máximo de artigos que entram na lista final,correta,correta,correta,consenso
+P03,E06,[síntese] Bases em que o VICKY procura os artigos,correta,correta,correta,consenso
+P03,E07,"[síntese] Mantém só artigos com texto completo gratuito, o que diminui o resultado",correta,correta,correta,consenso
+P03,E08,[síntese] A prévia mostra os critérios de graça; só iniciar a triagem gasta crédito e faz a busca completa; o rascunho só guarda o projeto,correta,correta,correta,consenso
+P03,E09,[anotação do condutor] Disse que é um resumo dos artigos encontrados,incorreta,incorreta,incorreta,consenso
+P03,E10,"[síntese] Nota de qualidade do artigo, de 0 a 100, usada para ordenar os incluídos",correta,correta,correta,consenso
+P03,E11,"[síntese do condutor] É o registro de como a busca foi feita (termos de busca em cada base e critérios aplicados) e de por que cada artigo foi excluído, para prestar contas ao orientador",correta,correta,correta,consenso
+P03,E12,[síntese] Salva o resultado do projeto num arquivo (PDF ou planilha) para usar fora do VICKY,correta,correta,correta,consenso

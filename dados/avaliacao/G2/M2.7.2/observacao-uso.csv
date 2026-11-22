@@ -1,1 +1,37 @@
 participante,elemento,uso,momento_gravacao,observacao
+P01,E01,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E02,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E03,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E04,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E05,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E06,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E07,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E08,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E09,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E10,sem_ajuda,,Uso correto sem ajuda; minuto não anotado
+P01,E11,incorreto,36:30-40:32,"Explorou a tela do projeto e não encontrou onde o VICKY registra como a busca foi feita e por que artigos ficaram de fora, sem identificar o que mostraria isso (critérios PICO, histórico ou outro registro); desistiu, sem ajuda"
+P01,E12,nao_usou,36:30-40:32,"Não encontrou o botão Exportar, mesmo explorando o produto, e desistiu da tarefa, sem ajuda"
+P02,E01,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E02,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E03,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E04,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E05,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E06,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E07,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E08,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E09,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E10,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P02,E11,incorreto,,"Não encontrou como a busca foi feita nem por que artigos ficaram de fora e terminou a tarefa sem mostrar o registro, sem ajuda; minuto não anotado"
+P02,E12,sem_ajuda,,"Baixou o arquivo de planilha pelo menu Exportar, sem ajuda; o arquivo não abriu no computador usado na sessão (macOS), falha do arquivo ou do sistema registrada como achado, e não do uso do elemento; minuto não anotado"
+P03,E01,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E02,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E03,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E04,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E05,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E06,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E07,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E08,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E09,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E10,sem_ajuda,,Uso correto sem ajuda (a ficha do condutor registra só as exceções); minuto não anotado
+P03,E11,sem_ajuda,,Encontrou sozinho onde o VICKY registra como a busca foi feita e por que artigos ficaram de fora; minuto não anotado
+P03,E12,sem_ajuda,,"Baixou a planilha pelo menu Exportar, sem ajuda, e o arquivo abriu normalmente; minuto não anotado"
