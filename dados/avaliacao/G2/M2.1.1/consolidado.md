@@ -4,25 +4,25 @@
 
 | item | valor_a1 | valor_a2 | valor_final | justificativa | decidido_por |
 |---|---|---|---|---|---|
-| C01 |  |  |  |  |  |
-| C02 |  |  |  |  |  |
-| C03 |  |  |  |  |  |
-| C04 |  |  |  |  |  |
-| C05 |  |  |  |  |  |
-| C06 |  |  |  |  |  |
-| C07 |  |  |  |  |  |
-| C08 |  |  |  |  |  |
-| C09 |  |  |  |  |  |
-| C10 |  |  |  |  |  |
+| C01 | sim | sim | sim |  | consenso |
+| C02 | sim | sim | sim |  | consenso |
+| C03 | sim | sim | sim |  | consenso |
+| C04 | sim | sim | sim |  | consenso |
+| C05 | sim | sim | sim |  | consenso |
+| C06 | sim | sim | sim |  | consenso |
+| C07 | nao | nao | nao |  | consenso |
+| C08 | sim | sim | sim |  | consenso |
+| C09 | sim | sim | sim |  | consenso |
+| C10 | sim | sim | sim |  | consenso |
 
 ## Resultado
 
 | Campo | Valor |
 |---|---|
-| A: cenários descritos |  |
-| B: cenários coletados (de 10) |  |
-| X = A / B |  |
-| Nível |  |
-| Itens fora de B e motivo |  |
+| A: cenários descritos | 9 |
+| B: cenários coletados (de 10) | 10 |
+| X = A / B | 0,900 |
+| Nível | Bom |
+| Itens fora de B e motivo | nenhum |
 
 Nível pela tabela de [níveis de pontuação](../../../../docs/fase-2/niveis-e-julgamento.md). O valor sai somente deste arquivo e é publicado na Fase 4.

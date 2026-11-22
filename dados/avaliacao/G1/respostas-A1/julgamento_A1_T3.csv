@@ -1,0 +1,26 @@
+item,relevante,componente_que_falhou,justificativa
+T3-01,nao,desfecho,"Coorte de gestantes já atendidas em ambulatório de diabetes gestacional, que compara critérios diagnósticos; não estima a prevalência de diabetes gestacional entre gestantes."
+T3-02,sim,,"Estudo transversal com todas as gestantes atendidas no SUS em Caxias do Sul, com estimativa da prevalência de diabetes gestacional."
+T3-03,nao,desfecho,"Estudo restrito a gestantes com diabetes gestacional, sobre recém-nascidos grandes para a idade gestacional; não estima prevalência."
+T3-04,sim,,"Estudo transversal com gestantes da Região Norte do Brasil (Vigitel), com estimativa da prevalência de diabetes na gestação."
+T3-05,nao,desfecho,"Coorte restrita a gestantes com diabetes gestacional, sobre ganho de peso; não estima prevalência."
+T3-06,nao,desfecho,"Coortes restritas a mulheres com diabetes gestacional, sobre ganho de peso e peso ao nascer; não estima prevalência."
+T3-07,nao,populacao,"Coorte de um hospital em Guimarães, Portugal; a população do tema são gestantes no Brasil."
+T3-08,nao,desenho,Revisão sistemática com meta-análise da prevalência; o desenho pedido é estudo observacional primário.
+T3-09,nao,desfecho,"Estudo restrito a gestantes com diabetes gestacional, sobre padrão alimentar e peso ao nascer; não estima prevalência."
+T3-10,sim,,"Coorte de nascimentos de Pelotas (2004) com 4.243 puérperas, com estimativa da prevalência de diabetes gestacional (2,95%)."
+T3-11,nao,desfecho,"Série de gestações com diabetes gestacional, sobre perfil e tratamento; não estima prevalência."
+T3-12,sim,,"Estudo transversal com parturientes de maternidade pública brasileira, com estimativa da prevalência de hiperglicemia gestacional por diferentes critérios."
+T3-13,nao,desfecho,"Coorte restrita a gestantes com diabetes gestacional, sobre consumo de ultraprocessados; não estima prevalência."
+T3-14,nao,desfecho,Coorte sobre desfechos da gestação conforme a glicemia de jejum no primeiro trimestre; não estima a prevalência de diabetes gestacional.
+T3-15,nao,desfecho,Estudo sobre a massa gorda de recém-nascidos de mães com e sem diabetes gestacional; não estima prevalência.
+T3-16,nao,desfecho,Comparação de características de mulheres com diabetes gestacional em duas coortes; não estima a prevalência entre gestantes.
+T3-17,sim,,"Estudo transversal com 120 gestantes de serviço universitário brasileiro, com proporção de diagnóstico de diabetes gestacional por critério do TOTG (12,5%)."
+T3-18,nao,desfecho,Estudo caso-controle sobre polimorfismo do receptor de vitamina D; não estima prevalência.
+T3-19,sim,,"Coorte prospectiva de gestantes no terceiro trimestre, com estimativa da prevalência de diabetes gestacional por dois critérios; o resumo não contradiz a população do tema."
+T3-20,nao,desfecho,Coorte restrita a gestantes com disglicemia em centro de referência; a proporção entre diabetes gestacional e diabetes franco não é prevalência entre gestantes.
+T3-21,sim,,"Estudo longitudinal com 204 gestantes de maternidade pública do Nordeste, que relata a frequência de diabetes gestacional (3,4%)."
+T3-22,nao,desfecho,Estudo de biomarcadores em gestantes com e sem diabetes gestacional; não estima prevalência.
+T3-23,nao,desfecho,Estudo sobre desfechos perinatais segundo obesidade e diabetes gestacional; o objetivo não é estimar a prevalência.
+T3-24,nao,desenho,Revisão sistemática com meta-análise da prevalência; o desenho pedido é estudo observacional primário.
+T3-25,nao,desfecho,"Estudo com amostra pareada de 52 gestantes com e 52 sem diabetes gestacional, sobre ganho de peso; o desenho pareado não permite estimar prevalência."

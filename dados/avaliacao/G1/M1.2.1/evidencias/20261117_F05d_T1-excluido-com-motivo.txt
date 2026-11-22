@@ -1,0 +1,82 @@
+# F05(d) T1 #53: detalhe de um artigo excluido (texto do DOM, 2026-11-17 ~20:15 BRT)
+Colchicine mitigates arterial stiffness in high-risk... · Vicky
+V
+Vicky
+Triagem com IA
+Navegar
+Dashboard
+Projetos
+Favoritos
+Configurações
+v0.1.0
+Operacional
+← Registros do projeto #53
+Detalhe do registro
+9
+cr
+éditos
+.
+Comprar mais créditos
+ L
+Larissa Gomes Silva
+[email protected]
+Créditos
+9
+Créditos
+Configurações
+Sair
+ Voltar
+ Abrir Link
+—
+Excluir
+PubMed
+· 2026
+Colchicine mitigates arterial stiffness in high-risk patients with type 2 diabetes: a randomized placebo-controlled trial
+Baier JM, Funck KL, Vernstrøm L, Gullaksen S, Laugesen E, Poulsen PL
+European journal of preventive cardiology
+ { this.copied = true; setTimeout(() => { this.copied = false; }, 2000); }); }}">
+📚 Referência ABNT
+Formato NBR 6023:2018 — pronto para copiar para o seu trabalho.
+Copiar
+✓ Copiado
+BAIER, J. M.; FUNCK, K. L.; VERNSTRØM, L.; GULLAKSEN, S.; LAUGESEN, E.; POULSEN, P. L. Colchicine mitigates arterial stiffness in high-risk patients with type 2 diabetes: a randomized placebo-controlled trial. 
+European journal of preventive cardiology
+, 2026. DOI: 
+10.1093/eurjpc/zwaf143
+. Disponível em: <https://pubmed.ncbi.nlm.nih.gov/40083306/>. Acesso em: 17 nov. 2026.
+Sua decisão (override)
+Sobrescreve a decisão da IA.
+ Incluir
+ Excluir
+ Marcar incerto
+Resumo (IA)
+O estudo investiga o efeito da colchicina na rigidez arterial em pacientes com diabetes tipo 2, mas não aborda a prevenção secundária de eventos cardiovasculares em adultos com doença aterosclerótica.
+Resumo do artigo (original)
+AIMS: The anti-inflammatory drug colchicine has been shown to reduce the risk of cardiovascular disease (CVD) in patients with and without diabetes. The underlying mechanisms are, however, elusive. In this trial, we investigated the effect of colchicine on arterial stiffness, ambulatory blood pressure, and albuminuria in patients with type 2 diabetes.
+METHODS AND RESULTS: We conducted a double-blind, randomized, placebo-controlled trial in individuals with type 2 diabetes with a history of CVD or a high risk thereof. One hundred participants were assigned in a 1:1 ratio to receive colchicine 0.5 mg once daily or placebo for 26 weeks. The primary outcome was change in arterial stiffness assessed as carotid-femoral pulse wave velocity (cfPWV). Secondary outcomes included 24-h ambulatory BP and urine albumin-to-creatinine ratio (UACR). Treatment with colchicine significantly mitigated arterial stiffness progression compared with placebo [mean arterial pressure (MAP)-adjusted change in cfPWV: -0.7 m/s, 95% CI: -1.3; -0.1, P = 0.03]. Crude analyses without MAP adjustment showed a non-significant reduction in cfPWV of -0.3 m/s (95% CI: -1.0; 0.4, P = 0.45). Colchicine had no significant effect on 24-h systolic ambulatory BP (change: 3.0 mmHg, 95% CI: -0.5; 6.5 mmHg, P = 0.10) or UACR (percentage change: 0.5, 95% CI: -29.5; 40.4, P = 0.98).
+CONCLUSION: This study suggests that low-dose colchicine may reduce arterial stiffness in high risk patients with type 2 diabetes. While these findings indicate that mitigating arterial stiffness contributes to the observed reduction in cardiovascular events in outcome trials, further research is needed to confirm these effects and understand the underlying mechanisms. Clinical trial registration information: EudraCT-no.: 2021-003525-30.Link: https://www.clinicaltrialsregister.eu/ctr-search/trial/2021-003525-30/DK.
+Análise da IA
+Motivo
+Stage 1 falha — fora do escopo
+Critérios violados
+✗
+FORA DO TEMA: o artigo trata de Colchicina na rigidez arterial em pacientes com diabetes tipo 2, não de Colchicina na prevenção secundária de eventos cardiovasculares em adultos com doença aterosclerótica
+Metadados
+Fonte
+PubMed
+External ID
+40083306
+DOI
+10.1093/eurjpc/zwaf143
+Link externo
+ Abrir Link
+Vicky · Triagem assistida por IA
+Larissa Gomes Silva
+Synaptha Inc Ltda · CNPJ 63.642.396/0001-90
+Quadra SIG Quadra 4, nº 75, Bloco C, Sala 09 e 10, Parte 36, Edifício Capital Financial Center, Zona Industrial, Brasília - DF, CEP 70610-440
+ Atendimento:
+[email protected]
+ ·
+Termos de Uso
+ ·
+Política de Privacidade
