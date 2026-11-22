@@ -8,7 +8,7 @@
 | Papéis (C, O, A3) e pessoas | P01 (19/11): C = João Felipe Oliveira; O = Gabriel Fae. P02 e P03 (20/11): C = Gabriel Fae, sem observador; segunda classificação das explicações (`classificacao_o`) por Lucas Avelar, que não conduziu as sessões, pela gravação (método, seção 3.2). A3 não foi acionado: as duas classificações coincidiram nos 36 itens |
 | Formato | Remoto, pelo Google Meet (método v0.6) |
 | Gravador e versão (Meet ou OBS) | Não registrado pela equipe. Os três arquivos são `.mkv`, o formato do OBS pela seção 3.6 do método, com muxer libavformat 61.7.100 e vídeo de 1920 por 1080 pixels (metadados lidos em 22/11/2026) |
-| Navegador e versão | Vistos nas gravações em 22/11/2026: P01 num iPad com Safari (contra a seção 3.7 do método, que pede computador), P02 num Mac com Safari e P03 num computador com navegador não identificado, porque a gravação mostra só a aba compartilhada. Versões e resolução não registradas (`sessoes.csv`, coluna `observacao`) |
+| Navegador e versão | Vistos nas gravações em 22/11/2026: Safari na P01 e na P02 (esta num Mac); na P03, navegador não identificado, porque a gravação mostra só a aba compartilhada. Versões, sistema e resolução não registrados (`sessoes.csv`, coluna `observacao`) |
 | Projeto triado usado na parte B | Projeto já triado sobre "O uso de células-tronco para restauração de tecido", na mesma conta da equipe usada na parte A |
 | Limite de prévias em produção (por conta e por IP) | Não conferido antes das sessões. Por conta, 20 por dia, confirmado na inspeção do G2 (E08, 19/11) |
 | Conta nova começa com 0 crédito? | Sim. As sessões, porém, usaram uma conta da equipe com créditos (ver Ocorrências), e nenhum participante iniciou a triagem |
@@ -20,7 +20,7 @@
 
 Tema (cartão A): O uso de células-tronco para restauração de tecido
 
-Objetivo (cartão A): nenhuma frase de objetivo foi fixada junto com o tema. Na P01, o texto do cartão enviado pelo chat trouxe só o tema e os dados de acesso; nas P02 e P03, o chat trouxe só o link e os dados de acesso (gravações conferidas em 22/11/2026). O que foi lido em voz alta não foi conferido
+Objetivo (cartão A): nenhuma frase de objetivo foi fixada junto com o tema novo. O condutor leu os cartões em voz alta, e o chat trouxe só o tema e os dados de acesso (P01) ou só o link e os dados de acesso (P02 e P03). A frase deveria ter sido definida junto com o tema, como pede a seção 3.3 do método, e precisa ser fixada numa próxima aplicação
 
 Nome do projeto (cartão B): O uso de células-tronco para restauração de tecido (mesmo tema da parte A)
 
@@ -70,8 +70,9 @@ Critério que gerou dúvida, a interpretação escolhida e a confirmação de qu
 5. **Uso de E11 sem encontrar o registro.** Quem termina a tarefa sem mostrar o registro recebe `uso = incorreto`, porque a ficha de uso dá "desiste" como exemplo de uso incorreto de E11. Aplicado a P01 e P02.
 6. **P02, E12: planilha que não abriu.** O participante baixou o XLSX pelo menu Exportar, que é o uso correto da ficha ("baixa um arquivo do projeto num formato de planilha"). O arquivo não abriu no computador usado na sessão (macOS). Isso foi registrado como achado sobre o arquivo exportado, e não como falha de uso do elemento: `uso = sem_ajuda`.
 7. **P03, E09.** O participante usou o bloco sem ajuda, mas o explicou como "um resumo dos artigos encontrados", que é exatamente o erro que invalida no gabarito: `classificacao_final = incorreta`.
+8. **Campo Objetivo vazio (E02).** Conferidas as gravações em 22/11/2026, P01 e P02 deixaram vazio o campo Objetivo, e P03 escreveu um objetivo com as próprias palavras. A ficha de uso dá "deixa vazio" como uso incorreto de E02, e o uso de P01 e P02 passou de `sem_ajuda` para `incorreto`. Pela seção 7.1 do método, a gravação prevalece sobre o registro. Ressalva: o cartão A não trazia frase de objetivo, e deveria trazer.
 
-As interpretações 2 a 4 não mudam o resultado: P02 e P03 acertaram E02, E03 e E10 (ver a margem em `consolidado.md`).
+As interpretações 2 a 4 não mudam o resultado: E02 ficou fora de A pelo uso (interpretação 8), e P02 e P03 acertaram E03 e E10 (ver a margem em `consolidado.md`).
 
 ## Comentários espontâneos nas sessões
 
@@ -98,7 +99,7 @@ Registrados para a Fase 4, fora do cálculo.
 | 19 e 20/11/2026 | Hora de início e de fim, versão do navegador e momento de uso de cada elemento não anotados (só E11 e E12 da P01 têm o trecho da gravação) | A gravação continua sendo a evidência de cada código |
 | 20/11/2026 | P02: o arquivo XLSX exportado não abriu no macOS | Achado sobre a exportação, levado à Fase 4; não muda o código de uso (interpretação 6) |
 | 22/11/2026 | Gravações com o nome `Participante0x.mkv`, e não `P0x_AAAAMMDD` | Só de nome; o hash SHA-256 de cada arquivo está em `sessoes.csv` |
-| 22/11/2026 | Conferência parcial das gravações (campo Objetivo e dispositivo): P01 usou um iPad, e não um computador; P01 e P02 deixaram vazio o campo Objetivo (E02), que estava marcado como uso correto; P03 escreveu um objetivo com as próprias palavras | O dispositivo foi corrigido em `sessoes.csv`. A ficha de uso dá "deixa vazio" como uso incorreto de E02, mas o cartão não trouxe frase de objetivo (ver acima), e o texto lido em voz alta não foi conferido. A reclassificação de E02 para P01 e P02 está **pendente de decisão da equipe**: se aplicada, E02 sai de A e M2.7.2 vai a 10/12 = 83,3% (Bom) |
+| 22/11/2026 | Conferência das gravações no campo Objetivo (E02): P01 e P02 deixaram o campo vazio, marcado antes como uso correto; P03 escreveu um objetivo próprio | Uso de E02 de P01 e P02 reclassificado como `incorreto` (interpretação 8). E02 sai de A, e M2.7.2 vai de 11/12 (91,7%, Excelente) para 10/12 (83,3%, Bom) |
 | 22/11/2026 | Recortes de `elementos/` montados depois das sessões, com as capturas da inspeção | Registram o que cada elemento mostra; não há registro das imagens exatas exibidas nas chamadas |
 
 ## Exclusão das gravações

@@ -105,7 +105,7 @@ As regras são as da seção 3 de [níveis e julgamento](../fase-2/niveis-e-julg
 | Q2.2 | Nível de M2.2.1, um nível abaixo se M2.2.2 for Insatisfatório | Aceitável | A orientação dentro do produto cobre 8 das 9 funções (Bom), mas as mensagens de erro raramente dizem a causa e o que fazer (M2.2.2 Insatisfatório), o que rebaixa a questão |
 | Q2.3 | Menor nível entre M2.3.1 e M2.3.2 | Insatisfatório | As telas resolvem de formas diferentes seis dos oito padrões comparáveis, e cerca de um terço das mensagens não é claro, sobretudo no acompanhamento da triagem |
 | Q2.4 | Nível de M2.4.1, um nível abaixo se M2.4.2 for Insatisfatório; Insatisfatório se ação paga estiver desprotegida | Insatisfatório | A ação paga está protegida por aviso, mas duas das seis ações sem proteção deixam M2.4.1 abaixo de 70%, e o VICKY raramente indica o valor aceito depois de um erro de entrada |
-| Q2.7 | Nível de M2.7.2 (#28), um nível abaixo se M2.7.1 for Insatisfatório | Excelente (indicativo) | M2.7.1 = Bom (3 de 4): não rebaixa a Q2.7. M2.7.2 = 91,7% (Excelente, com três participantes), em [Resultados do G2 com usuários](resultados-g2-usuarios.md) |
+| Q2.7 | Nível de M2.7.2 (#28), um nível abaixo se M2.7.1 for Insatisfatório | Bom (indicativo) | M2.7.1 = Bom (3 de 4): não rebaixa a Q2.7. M2.7.2 = 83,3% (Bom, com três participantes), em [Resultados do G2 com usuários](resultados-g2-usuarios.md) |
 
 Q2.5 e Q2.6 dependem só das métricas com participantes (#28), em [Resultados do G2 com usuários](resultados-g2-usuarios.md). O julgamento do G2 é feito na #30, com as seis questões principais.
 
