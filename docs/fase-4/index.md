@@ -111,7 +111,7 @@ O principal achado é a concentração da dívida técnica em `src/vicky/pipelin
 
 ## Ação de melhoria
 
-| Campo | Situação em 20/11/2026 |
+| Campo | Situação em 22/11/2026 |
 |-------|------------------------|
 | Alvo | `run_full_pipeline` em `src/vicky/pipeline.py`, com `logging` no lugar de `print` ([candidata do G3](resultados-g3.md#7-sugestao-de-acao-de-melhoria-candidata-do-g3)) |
 | Métricas de verificação | M3.1.2, M3.2.3 e M3.3.1, pelo mesmo método do G3 com outro commit (`COMMIT=<hash> coletar.sh`) |
@@ -133,11 +133,12 @@ Toda diferença entre o que a Fase 3 previu e o que foi executado é registrada 
 | Data | Método | Desvio | Motivo | Efeito na medida |
 |------|--------|--------|--------|------------------|
 | 19/11/2026 | G2 com usuários | M2.5.1 passa a formulário online assíncrono com cinco respondentes; M2.7.2 passa a sessões remotas com três participantes válidos e regra da maioria ([D13](../gestao/decisoes.md#d13-adaptar-a-coleta-com-usuarios-ao-prazo-da-entrega-2)) | 0 de 5 sessões presenciais realizadas até 18/11, por indisponibilidade dos estudantes recrutados | M2.7.2 apresentada como indicativa (n = 3); ameaças à validade declaradas nos resultados |
-| 17/11/2026 | G1 | Evidências da coleta guardadas como texto do DOM, sem captura de imagem | `screencapture` indisponível por SSH | [PENDENTE: confirmação da condutora do G1 e efeito na conferência de M1.2.1] |
-| 19/11/2026 | G1 | Casamento de título na consulta às fontes de M1.1.2 por similaridade de 0,85 ou mais, limiar que o método não fixava | Relatos sem PMID e títulos em português | [PENDENTE: confirmação da condutora do G1] |
+| 18 e 20/11/2026 | G1 | E1 e E2 sem filtro de tipo de estudo no formulário; a restrição foi escrita no objetivo | O formulário não tem campo de tipo de estudo | M1.5.1 mede o cumprimento da restrição pelo objetivo; com a E2 sem lista, a base é só a E1 (30 itens) |
+| 20/11/2026 | G1 | Amostra de M1.3.2 conferida por código contra o registro oficial do PubMed, sem abrir a página do DOI | Conferência reprodutível dos 40 itens | Metadados e links conferidos por título, autores, ano, periódico e requisição HTTP ao link |
+| 19/11/2026 | G1 | Casamento de título na consulta às fontes de M1.1.2 por similaridade de 0,85 ou mais, limiar que o método não fixava | Relatos sem PMID e títulos em português | Tratado como refinamento de M1.1.2; o valor de similaridade fica em cada linha |
 | 14 e 18/11/2026 | G3 | Nenhum | - | - |
 
-_Os dois desvios do G1 vêm da página de resultados do G1; o registro completo da execução está na seção 3 dela._
+_Os desvios do G1 vêm da página de resultados do G1; o registro completo está nas seções 1 e 3 dela._
 
 ## Histórico de versão
 
