@@ -2,7 +2,7 @@
 
 Cada decisão cita a medição que a motivou, o que fecha o ciclo exigido pela Premissa 3: **medição → interpretação → decisão**. O efeito de cada decisão é verificado na coleta do ciclo seguinte, na coluna "Resultado".
 
-A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta parcial de 28/10](registro-de-medicoes.md#4-ciclo-2-parcial-2610-a-2810). A verificação de D05, D06, D08, D09 e D10 e as decisões D11 e D12 foram feitas na [coleta de 13/11](registro-de-medicoes.md#7-ciclo-4-parcial-0911-a-1311), que também fechou os ciclos 2 e 3. A D13 foi tomada em 19/11, a partir do cronograma da coleta com usuários.
+A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta parcial de 28/10](registro-de-medicoes.md#4-ciclo-2-parcial-2610-a-2810). A verificação de D05, D06, D08, D09 e D10 e as decisões D11 e D12 foram feitas na [coleta de 13/11](registro-de-medicoes.md#7-ciclo-4-parcial-0911-a-1311), que também fechou os ciclos 2 e 3. A D13 foi tomada em 19/11, a partir do cronograma da coleta com usuários, e verificada em 22/11, quando foi tomada a D14, sobre o formulário de estética.
 
 ## 1. Resumo
 
@@ -20,7 +20,8 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | D10 | 28/10/2026 | DP2 com 0 chegadas e WIP = 0 · nenhuma issue aberta depois de 19/10 · milestone E2 inexistente em 04/11 | Planejar o ciclo no GitHub antes de ele começar: milestone com data, issues estimadas e marco do ciclo | **Parcialmente executada**: milestones e issues em 04/11, sem horas; E1 ainda aberta |
 | D11 | 13/11/2026 | CP1 com desvio de 54,0 p.p. · SPI de 0,35 (0,20 por contagem) · 1 de 6 métodos da Fase 3 fechado (ciclo 4) | Recuperar os métodos da Fase 3 antes do ponto de controle de 16/11 | Proposta |
 | D12 | 13/11/2026 | RC3 com 1 de 6 integrantes com commit (ciclo 4) · horas de 5 integrantes impossíveis de obter · CP1 com desvio de 54,0 p.p. | Trabalho não entregue é assumido por outro integrante, combinado em separado pelo WhatsApp, e comunicado à professora | Adotada |
-| D13 | 19/11/2026 | 0 de 5 sessões com participantes realizadas no período previsto (16 a 18/11) · público-alvo indisponível até a entrega (Intermed) | Adaptar a coleta com usuários: M2.5.1 em formulário assíncrono e M2.7.2 em sessões remotas com três participantes | Adotada |
+| D13 | 19/11/2026 | 0 de 5 sessões com participantes realizadas no período previsto (16 a 18/11) · público-alvo indisponível até a entrega (Intermed) | Adaptar a coleta com usuários: M2.5.1 em formulário assíncrono e M2.7.2 em sessões remotas com três participantes | **Executada**: 3 de 3 sessões válidas; formulário com 3 de 5 respostas (verificada em 22/11) |
+| D14 | 22/11/2026 | Formulário de estética com 3 de 5 respostas, todas dos participantes das sessões | Calcular M2.5.1 com as três respostas, pela maioria de 2 de 3, com resultado indicativo | Adotada |
 
 ## 2. Detalhamento
 
@@ -156,7 +157,18 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | Decisão | Antes de qualquer sessão: (1) M2.5.1 passa a um **formulário online assíncrono**, com cinco respondentes e o mesmo limiar; (2) M2.7.2 passa a **sessões remotas individuais** pelo Google Meet, de cerca de 1 hora, com **três participantes válidos** e regra da maioria (2 de 3); (3) o condutor deixa de ser uma pessoa fixa (qualquer integrante que tenha conduzido ou assistido ao piloto) e o observador passa a ser opcional. Alternativas descartadas: declarar as duas métricas não coletadas; usar estudantes de outros cursos; passar também a compreensão para formulário. Detalhes em [Método do G2 com usuários, seção 2.8](../fase-3/metodo-g2-usuarios.md#28-adaptacao-da-versao-06-d13) |
 | Responsável | Gabriel Fae, pela atualização do método, dos instrumentos, do termo e da Fase 2; condutores escalados por sessão, pela coleta. A mudança foi comunicada a João Felipe Oliveira, autor do roteiro de M2.7.2 |
 | Efeito esperado na medição | M2.5.1 calculável com n = 5 e M2.7.2 com n = 3 até 21/11, com o resultado de M2.7.2 apresentado como indicativo. Ameaças à validade (amostra de três, estética sem uso prévio, ambiente remoto não controlado) declaradas na Fase 4 |
-| Resultado no ciclo seguinte | _A verificar na entrega de 22/11: sessões e respostas válidas obtidas e métricas calculadas ou declaradas não coletadas_ |
+| Resultado no ciclo seguinte | Verificado em 22/11: **3 de 3** sessões válidas (P01 em 19/11, P02 e P03 em 20/11), e M2.7.2 calculada (11 de 12, 91,7%, Excelente, indicativo). O formulário de estética teve **3 de 5** respostas, todas dos participantes das sessões; M2.5.1 foi calculada com elas pela D14. Resultados em [Resultados do G2 com usuários](../fase-4/resultados-g2-usuarios.md) |
+
+### D14 - Calcular M2.5.1 com as três respostas obtidas
+
+| Item | Registro |
+|------|----------|
+| Medição | Formulário de estética (M2.5.1) em 22/11: **3 de 5** respostas válidas previstas pela D13, todas dos três participantes das sessões da M2.7.2, dadas depois da chamada. Nenhum outro estudante respondeu (`dados/avaliacao/G2/M2.5.1/coleta.md`) |
+| Interpretação | Pela seção 7.4 do método, com menos de cinco respostas a M2.5.1 não seria calculada, e a Q2.5 ficaria sem resposta na entrega de 22/11. Não há prazo para buscar mais respondentes. As três respostas existentes vêm do público-alvo, passaram pela triagem da sessão e trazem as cinco notas |
+| Decisão | Considerar válidas as três respostas e calcular M2.5.1 com a regra da maioria dos respondentes, **2 de 3**, pela mesma lógica que a D13 aplicou à M2.7.2 (a ficha fala em "maioria"; 3 de 5 era a maioria para n = 5). Os limiares de nível não mudam, e a ficha da Fase 2 não é alterada depois da coleta: o desvio é declarado no método (seção 2.10), na pasta de dados e na Fase 4, com o resultado como **indicativo** e a sensibilidade à regra (com unanimidade, 0%). Alternativa descartada: declarar a métrica não coletada, porque deixaria a Q2.5 sem resposta havendo dado do público certo |
+| Responsável | Gabriel Fae, pelo cálculo e pelo registro |
+| Efeito esperado na medição | M2.5.1 calculada (2 de 5 telas, 40,0%, Aceitável) e Q2.5 respondida com ressalva. A Q2.5 não entra no julgamento do G2, e por isso a decisão não muda o julgamento |
+| Resultado no ciclo seguinte | _A verificar na revisão da Fase 4: ressalva e sensibilidade declaradas junto do valor_ |
 
 ## Histórico de versão
 
@@ -169,3 +181,4 @@ A verificação de D01 a D07 e as decisões D08 a D10 foram feitas na [coleta pa
 | 0.5 | 13/11/2026 | Verificação de D05, D06, D08, D09 e D10 pela coleta de 13/11 e registro da decisão D11 (recuperar os métodos da Fase 3) | Gabriel Fae | - |
 | 0.6 | 13/11/2026 | Decisão D12 (redistribuir o trabalho não entregue, com comunicação à professora) e D10 atualizada com a linha de base de horas da E2 | Gabriel Fae | - |
 | 0.7 | 19/11/2026 | Decisão D13 (adaptar a coleta com usuários: formulário assíncrono para M2.5.1 e sessões remotas com três participantes para M2.7.2) | Gabriel Fae | - |
+| 0.8 | 22/11/2026 | Verificação da D13 e decisão D14 (calcular M2.5.1 com as três respostas obtidas, com maioria de 2 de 3) | Gabriel Fae | - |

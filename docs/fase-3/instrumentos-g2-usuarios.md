@@ -12,11 +12,11 @@ Os cartões descrevem a necessidade do estudante sem usar o nome dos controles d
 
 > **Situação.** Você vai fazer o seu TCC, que será apresentado em banca, e precisa de uma primeira lista de artigos para mostrar ao orientador. Use o VICKY para preparar essa busca. Fale em voz alta o que está pensando.
 >
-> **Tema:** frase do tema T1 do G1, fixada em `M2.7.2/coleta.md` antes do piloto.
+> **Tema:** O uso de células-tronco para restauração de tecido.
 >
 > **O que você quer descobrir com a revisão:** frase do desfecho do T1, fixada junto com o tema.
 >
-> 1. Crie uma conta com estes dados. Nome: Participante P0__. E-mail e senha: os que estão abaixo.
+> 1. Entre no VICKY com o e-mail e a senha que estão abaixo.
 > 2. Crie um projeto para o seu tema. Você quer:
 >     - registrar no projeto o que você quer descobrir com a revisão;
 >     - só artigos publicados nos últimos 5 anos;
@@ -27,11 +27,13 @@ Os cartões descrevem a necessidade do estudante sem usar o nome dos controles d
 >
 > E-mail: ______________________ Senha: ______________
 
+Antes da primeira sessão (19/11/2026), o tema passou a ser o acima, e o passo 1, que pedia criar uma conta nova, passou a ser a entrada numa conta da equipe, a mesma da parte B ([método, seção 2.9](metodo-g2-usuarios.md#29-ajustes-feitos-antes-da-primeira-sessao)).
+
 Os valores pedidos (5 anos, 15 artigos, duas bases, só texto gratuito) foram escolhidos diferentes dos valores padrão da tela, para que o participante precise mexer em cada controle. No código consultado, o padrão é 10 anos, 20 artigos, as três bases marcadas e o filtro desligado.
 
 ### Cartão B: usar o resultado
 
-> **Situação.** Um colega já rodou a busca completa sobre o mesmo tema e deixou o resultado nesta conta (e-mail e senha enviados pelo condutor), no projeto de nome igual ao seu tema anterior. Fale em voz alta o que está pensando.
+> **Situação.** Um colega já rodou a busca completa sobre o mesmo tema e deixou o resultado nesta mesma conta, no projeto de nome igual ao seu tema anterior. Fale em voz alta o que está pensando.
 >
 > 1. Escolha os 3 artigos que você levaria primeiro ao orientador e diga por que escolheu esses. Marque os 3 para encontrá-los fácil depois.
 > 2. Seu orientador quer saber como a busca foi feita e por que alguns artigos ficaram de fora. Mostre onde o VICKY registra isso.
@@ -85,6 +87,8 @@ O condutor pode pedir uma vez "Pode explicar um pouco mais?" e não diz se a res
 | 11 | E11 | O lugar do registro das buscas e critérios no detalhe do projeto (a confirmar na interface, ver gabarito) |
 | 12 | E12 | O botão "Exportar" fechado |
 
+Os recortes estão em `dados/avaliacao/G2/M2.7.2/elementos/` (`E01.png` a `E12.png`). Foram montados em 22/11/2026, depois das sessões, com as capturas de produção da inspeção do G2, sem o texto de ajuda ao lado; a origem e o ajuste de cada um estão em `M2.7.2/coleta.md` ([método, seção 2.10](metodo-g2-usuarios.md#210-execucao-das-sessoes-e-do-formulario)). Em produção, o bloco de E09 é o painel "Critérios PICO + Strings de busca (geradas pela IA)", que mostra o protocolo de triagem sem os rótulos P, I, C e O, e o lugar de E11 são os painéis "Pipeline" e "Critérios PICO + Strings de busca" da tela do projeto.
+
 ## 4. Gabarito dos 12 elementos
 
 Uma resposta é **correta** quando traz o ponto essencial e não comete o erro que invalida. Vocabulário diferente do da tela não torna a resposta errada; detalhe a mais também não, desde que não contradiga o ponto essencial.
@@ -131,6 +135,8 @@ participante,tela,nota,comentario
 
 **Contagem:** a tela é agradável para o participante quando a nota é 4 ou 5, e entra em A quando é agradável para pelo menos 3 dos 5 respondentes ([cálculo](metodo-g2-usuarios.md#6-calculo)).
 
+Em 2026/2, o formulário foi respondido só pelos três participantes das sessões, depois da chamada. Pela [D14](../gestao/decisoes.md#d14-calcular-m251-com-as-tres-respostas-obtidas), as três respostas foram aceitas e a tela entra em A quando é agradável para pelo menos 2 dos 3.
+
 ## 6. Bloco qualitativo opcional
 
 Fora do cálculo de M2.5.1. É a última página do formulário, de resposta opcional. Serve para explicar, na Fase 4, as notas de estética e para apoiar recomendações. As afirmações foram propostas por João Felipe Oliveira e valem para a interface como um todo, com a mesma escala de 1 a 5.
@@ -157,3 +163,5 @@ Fora do cálculo de M2.5.1. É a última página do formulário, de resposta opc
 | 0.1 | 14/11/2026 | Cartões de tarefa, ficha de uso, questionário de compreensão com gabarito, questionário de estética das 5 telas e bloco qualitativo. O questionário qualitativo e o roteiro de origem são de João Felipe Oliveira | Lucas Avelar e João Felipe Oliveira | - |
 | 0.2 | 14/11/2026 | E05 com o campo de 1 a 30 (padrão 20) e E12 com os formatos do menu "Exportar", coerentes com o método do G1 | Lucas Avelar | - |
 | 0.3 | 19/11/2026 | Adaptação pela D13: cartões e recortes passados pela chamada remota, ficha de uso preenchida pela gravação quando não houver observador, questionário de estética e bloco qualitativo em formulário online, com respondentes R01 a R05 | Gabriel Fae | - |
+| 0.4 | 22/11/2026 | Cartões A e B como foram usados nas sessões: tema das células-tronco e entrada numa conta da equipe, a mesma da parte B | Gabriel Fae | - |
+| 0.5 | 22/11/2026 | Local e origem dos recortes dos 12 elementos e contagem da M2.5.1 com três respondentes (D14) | Gabriel Fae | - |
