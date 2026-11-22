@@ -12,7 +12,7 @@ Os limiares e regras de julgamento seguem [Níveis de pontuação e critérios d
 
 > **Situação dos insumos na consolidação:**
 > - **G3 (Manutenibilidade):** dados consolidados presentes (`resultados-g3.md`, commit `c2ae570`, 6 de 6 métricas medidas).
-> - **G2 (Capacidade de interação):** dados por inspeção presentes (`resultados-g2-inspecao.md`, 8 métricas inspecionadas); métricas com usuários (`M2.5.1`, `M2.6.1`, `M2.6.2` e `M2.7.2`, ligadas à #28) constam como **A definir** até a incorporação dos resultados completos.
+> - **G2 (Capacidade de interação):** dados por inspeção presentes (`resultados-g2-inspecao.md`, 8 métricas inspecionadas) e com usuários (`resultados-g2-usuarios.md`: `M2.5.1` e `M2.7.2`, com três participantes, resultados indicativos). `M2.6.1` e `M2.6.2` (#28) não foram coletadas até 22/11/2026 e constam como **A definir**.
 > - **G1 (Adequação funcional):** resultados da Fase 4 ainda não incorporados nesta versão (`M1.1.1` a `M1.5.2`, `Q1.1` a `Q1.5` e julgamento global marcados como **A definir**).
 
 ---
@@ -35,7 +35,7 @@ Sem colapsar as características em uma nota única global, cada objetivo é ava
 
 ### 2.2 Objetivo G2 — Capacidade de interação
 
-A consolidação atual contempla as 8 métricas obtidas por inspeção (`resultados-g2-inspecao.md`), enquanto as métricas dependentes de participantes (`M2.5.1`, `M2.6.1`, `M2.6.2` e `M2.7.2`) permanecem **A definir** até a conclusão/incorporação da frente com usuários (#28).
+A consolidação atual contempla as 8 métricas obtidas por inspeção (`resultados-g2-inspecao.md`) e as duas medidas com estudantes (`M2.5.1` e `M2.7.2`, em `resultados-g2-usuarios.md`), calculadas com três participantes e por isso indicativas. `M2.6.1` e `M2.6.2` permanecem **A definir** até a coleta (#28).
 
 | Questão / Métrica | Valor / Resultado observado | Nível / Situação | Evidências e regras aplicadas |
 | :--- | :---: | :---: | :--- |
@@ -43,10 +43,10 @@ A consolidação atual contempla as 8 métricas obtidas por inspeção (`resulta
 | **Q2.2** — Facilidade de aprendizado (`M2.2.1`, `M2.2.2`) | `M2.2.1`: 8/9 (88,9%, Bom); `M2.2.2`: 10/34 (29,4%, Insatisfatório) | **Aceitável** | Orientação cobre 8/9 funções (F08 sem orientação de uso/paginação); `M2.2.2` em Insatisfatório rebaixa Q2.2 de Bom para Aceitável |
 | **Q2.3** — Operabilidade (`M2.3.1`, `M2.3.2`) | `M2.3.1`: 0,25 (6/8, Insatisfatório); `M2.3.2`: 77/117 (65,8%, Insatisfatório) | **Insatisfatório** | Menor nível entre M2.3.1 e M2.3.2; 6/8 padrões comparáveis variam entre telas e 40/117 mensagens não são claras |
 | **Q2.4** — Proteção contra erro (`M2.4.1`, `M2.4.2`) | `M2.4.1`: 4/6 (66,7%, Insatisfatório); `M2.4.2`: 2/6 (33,3%, Insatisfatório) | **Insatisfatório** | Ação paga (`A01`) traz aviso explícito ("CONSOME 1 CRÉDITO"), sem ação paga desprotegida; falhas em ações/entradas deixam Q2.4 em Insatisfatório |
-| **Q2.5** — Engajamento do usuário (`M2.5.1`) | A definir | **A definir** | Métrica com participantes (prioridade secundária; não entra na contagem das 6 questões principais) |
-| **Q2.6** — Assistência ao usuário (`M2.6.1`, `M2.6.2`) | A definir | **A definir** | Métricas com participantes (`M2.6.1` e `M2.6.2`); regra exige atenção especial a `M2.6.1` (F01) e `M2.6.2` (contraste) |
-| **Q2.7** — Autodescritividade (`M2.7.1`, `M2.7.2`) | `M2.7.1`: 3 de 4 (Bom); `M2.7.2`: A definir | **A definir** | `M2.7.1` não rebaixa Q2.7; nível final de Q2.7 depende de `M2.7.2` com estudantes |
-| **Julgamento do objetivo G2** | Parcial (inspeção consolidada) | **A definir** | Depende da consolidação das 6 questões principais (`Q2.1`–`Q2.4`, `Q2.6`, `Q2.7`) após inclusão dos dados de usuários |
+| **Q2.5** — Engajamento do usuário (`M2.5.1`) | `M2.5.1`: 2/5 (40,0%, Aceitável, indicativo) | **Aceitável** | Três respostas, com maioria de 2 de 3 pela D14; só a página inicial e o Novo projeto foram agradáveis para a maioria. Prioridade secundária: não entra na contagem das 6 questões principais |
+| **Q2.6** — Assistência ao usuário (`M2.6.1`, `M2.6.2`) | A definir (não coletadas até 22/11/2026) | **A definir** | Métricas executadas pelos avaliadores (`M2.6.1` e `M2.6.2`); regra exige atenção especial a `M2.6.1` (F01) e `M2.6.2` (contraste) |
+| **Q2.7** — Autodescritividade (`M2.7.1`, `M2.7.2`) | `M2.7.1`: 3 de 4 (Bom); `M2.7.2`: 11/12 (91,7%, Excelente, indicativo) | **Excelente** | `M2.7.2` é a medida de referência, e `M2.7.1` em Bom não rebaixa Q2.7. Quality Score entendido pelos 3 participantes; o log auditável (E11) só por 1 de 3 |
+| **Julgamento do objetivo G2** | 5 de 6 questões principais com nível (`Q2.6` pendente) | **Não atende** | `Q2.3` e `Q2.4` em Insatisfatório. Pela regra da Fase 2, duas ou mais questões principais em Insatisfatório levam a "Não atende", qualquer que venha a ser o nível de `Q2.6` |
 
 ### 2.3 Objetivo G3 — Manutenibilidade
 
@@ -75,7 +75,7 @@ Avaliado no commit `c2ae570` (`resultados-g3.md`, `src/vicky/` com 38 arquivos `
 
 | Dimensão / Fonte | Limitação identificada | Efeito na análise das relações |
 | :--- | :--- | :--- |
-| **Cobertura de dados da Fase 4** | Resultados de **G1** e métricas de **G2 com usuários** (`M2.5.1`, `M2.6.1`, `M2.6.2`, `M2.7.2`) ainda não incorporados | Impede concluir relações cruzadas completas entre adequação funcional (G1), experiência/acessibilidade com usuários (G2) e manutenibilidade (G3) |
+| **Cobertura de dados da Fase 4** | Resultados de **G1** ainda não incorporados; no **G2 com usuários**, `M2.6.1` e `M2.6.2` não coletadas, e `M2.5.1` e `M2.7.2` calculadas com três participantes (indicativas) | Impede concluir relações cruzadas completas entre adequação funcional (G1), experiência/acessibilidade com usuários (G2) e manutenibilidade (G3) |
 | **Fotografia estática e recorte de código** | Medições de G3 e inspeção de G2 referem-se ao estado observado no período/commit de referência (`c2ae570`, 29/09/2026, e coletas de 14–20/11/2026) | Mudanças posteriores em produção ou no código alteram os valores observados |
 | **Coleta e consolidação em G2 (inspeção)** | Observação indireta/não ao vivo de parte da triagem por A1 e A2, ausência de provocação de algumas mensagens no ambiente (classificadas pelo inventário) e consolidação por A1 com ratificação posterior de A2 | Exige cautela ao extrapolar estados não exercitados diretamente na interface |
 | **Cobertura e métricas em G3** | `M3.3.1` mede cobertura de linhas (não de ramos/decisões) e registra 27 testes pulados por dependências externas; `M3.2.1` avalia conformidade por arquivo | A cobertura de linhas não garante ausência de falhas em ramificações não testadas, e a métrica por arquivo em `M3.2.1` penaliza igualmente violações isoladas e múltiplas |
@@ -90,7 +90,7 @@ Conforme `docs/fase-1/proposito.md`, a avaliação busca verificar em que medida
 | :--- | :--- | :--- | :--- |
 | **Priorizar correções e otimizações no pipeline de LLM e integrações (PubMed/Scholar)** | Synaptha e equipe de desenvolvimento do VICKY | Evidências de gargalos no orquestrador `pipeline.py` (CC até 84, 0% de `logging` nas 33 funções críticas e 24% de cobertura de testes) e exposição de mensagens técnicas/imprecisas no fluxo de triagem em G2 | Falta integrar os resultados de **G1** (completude, precisão, metadados, ranking e filtros/repetibilidade) para avaliar diretamente a qualidade da triagem entregue |
 | **Garantir evolução e facilidade de manutenção do código-fonte** | Equipe de desenvolvimento do VICKY | Diagnóstico objetivo de G3 (`1,33`, Aceitável — *Atende parcialmente*): baixo acoplamento (`2,05`) e baixa duplicação (`0,15%`), mas alta concentração de complexidade, ausência de `logging` e cobertura desigual entre `web/` (`87,8%`) e núcleo (`41,7%`) | Acompanhar evolução pós-refatoração nas métricas G3 |
-| **Aprimorar experiência de uso e proteção contra erros na interface** | Equipe de desenvolvimento do VICKY (interface) | Inspeção de G2 aponta `Q2.1` em Bom (`90,0%`), `Q2.2` em Aceitável (rebaixada por `M2.2.2` em `29,4%`), e `Q2.3` e `Q2.4` em Insatisfatório, com confirmação de que a ação paga (`A01`) exibe aviso de consumo de crédito | Falta incorporar os resultados com usuários (`M2.5.1`, `M2.6.1`, `M2.6.2`, `M2.7.2`) para concluir o julgamento de G2 |
+| **Aprimorar experiência de uso e proteção contra erros na interface** | Equipe de desenvolvimento do VICKY (interface) | Inspeção de G2 aponta `Q2.1` em Bom (`90,0%`), `Q2.2` em Aceitável (rebaixada por `M2.2.2` em `29,4%`), e `Q2.3` e `Q2.4` em Insatisfatório, com confirmação de que a ação paga (`A01`) exibe aviso de consumo de crédito | Com estudantes, `M2.7.2` em Excelente (91,7%) e `M2.5.1` em Aceitável (40,0%), ambas indicativas; o registro da busca (E11) foi o elemento menos entendido. Faltam `M2.6.1` e `M2.6.2` |
 | **Validar nível de qualidade frente ao GQM e à ISO/IEC 25040:2024** | Equipe Frances Allen | Rastreabilidade estabelecida para G2 (inspeção) e G3 frente às regras da Fase 2 | A definir o fechamento completo de G1 e das métricas de usuários de G2 |
 
 ---
@@ -122,3 +122,4 @@ Conforme `docs/fase-1/proposito.md`, a avaliação busca verificar em que medida
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
 |--------|------|-----------|----------|------------|
 | 0.1 | 21/11/2026 | Estrutura da página de julgamento e conclusões da Fase 4 | Guilherme Maciel | - |
+| 0.2 | 22/11/2026 | Q2.5 e Q2.7 com os resultados do G2 com usuários (M2.5.1 e M2.7.2) e julgamento do G2 pela regra das questões em Insatisfatório | Gabriel Fae | - |
