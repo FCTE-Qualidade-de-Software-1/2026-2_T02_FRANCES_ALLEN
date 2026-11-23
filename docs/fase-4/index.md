@@ -1,9 +1,9 @@
 # Fase 4 - Executar e concluir a avaliação
 
-Quarta e última fase do processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040:2024). Os métodos da [Fase 3](../fase-3/index.md) são executados, as medidas são obtidas, as questões do GQM da [Fase 2](../fase-2/index.md) são respondidas e a qualidade do VICKY é julgada contra os níveis e critérios definidos antes da coleta. A fase fecha com as conclusões e com uma ação de melhoria proposta e sua medida de verificação; a medida depois da melhoria não foi feita até a entrega (ver os desvios). 
+Quarta e última fase do processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040:2024). Os métodos da [Fase 3](../fase-3/index.md) são executados, as medidas são obtidas, as questões do GQM da [Fase 2](../fase-2/index.md) são respondidas e a qualidade do VICKY é julgada contra os níveis e critérios definidos antes da coleta. A fase fecha com as conclusões e com uma ação de melhoria proposta e sua medida de verificação; executada e medida antes e depois. 
 
 !!! note "Fase concluída na Entrega 2"
-    Coleta de 14 a 20/11/2026 e entrega final em 22/11/2026, conforme o [cronograma](../fase-3/cronograma.md). Esta página só mostra valor que está em arquivo do repositório. O que não foi medido até a entrega está declarado como desvio: M2.6.1 e M2.6.2 (Q2.6 sem nível) e a medida depois da ação de melhoria.
+    Coleta de 14 a 20/11/2026 e entrega final em 22/11/2026, conforme o [cronograma](../fase-3/cronograma.md). Esta página só mostra valor que está em arquivo do repositório. O que não foi medido até a entrega está declarado como desvio: M2.6.1 e M2.6.2 (Q2.6 sem nível).
 
 ## Conteúdo desta fase
 
@@ -116,7 +116,7 @@ O principal achado é a concentração da dívida técnica em `src/vicky/pipelin
 | Alvo | `run_full_pipeline` em `src/vicky/pipeline.py`, com `logging` no lugar de `print` ([candidata do G3](resultados-g3.md#7-sugestao-de-acao-de-melhoria-candidata-do-g3)) |
 | Métricas de verificação | M3.1.2, M3.2.3 e M3.3.1, pelo mesmo método do G3 com outro commit (`COMMIT=<hash> coletar.sh`) |
 | Antes | M3.1.2 = 76,6%; M3.2.3 = 0,0%; M3.3.1 = 63,17% (`dados/avaliacao/G3/resultados.csv`) |
-| Depois | Não medido até a entrega: a ação fica como proposta, com a verificação definida acima (ver os desvios) |
+| Depois | Executada no PR #1 do fork da Vicky (commit `7e9ccd8`, suíte offline com 1.067 testes aprovados): M3.1.2 = 85,5% (Bom); M3.2.3 = 100,0% (Excelente); M3.3.1 = 65,22% (Aceitável). Dados em [`dados/avaliacao/G3-depois/`](https://github.com/FCTE-Qualidade-de-Software-1/2026-2_T02_FRANCES_ALLEN/tree/main/dados/avaliacao/G3-depois) |
 
 ## Questões a responder
 
@@ -137,7 +137,7 @@ Toda diferença entre o que a Fase 3 previu e o que foi executado é registrada 
 | 19/11/2026 | G2 com usuários | Ajustes antes da P01: tema do cartão A trocado para "O uso de células-tronco para restauração de tecido", conta da equipe com créditos no lugar de conta nova e nenhuma sessão piloto ([método, seção 2.9](../fase-3/metodo-g2-usuarios.md#29-ajustes-feitos-antes-da-primeira-sessao)) | Preparo das sessões remotas no prazo | Nenhum nos 12 elementos de M2.7.2; a criação de conta (F01) saiu da sessão |
 | 22/11/2026 | G2 com usuários | M2.5.1 calculada com três respostas, e não cinco, com maioria de 2 de 3 ([D14](../gestao/decisoes.md#d14-calcular-m251-com-as-tres-respostas-obtidas)) | Só três respostas ao formulário até a entrega | Resultado indicativo; respondentes já tinham usado o produto na sessão |
 | 22/11/2026 | G2 com usuários | M2.6.1 e M2.6.2 não coletadas | Coleta não concluída até a entrega | Q2.6 sem nível; o julgamento do G2 não muda (Q2.3 e Q2.4 em Insatisfatório) |
-| 22/11/2026 | Ação de melhoria | Medida depois da melhoria não feita | Prazo da Entrega 2 | A ação fica como proposta, com alvo, métricas de verificação e valores antes registrados |
+| 23/11/2026 | Ação de melhoria | Medida depois feita em 23/11, um dia depois do prazo original, com o prazo prorrogado pela professora | Prazo da Entrega 2 | Nenhum: mesmo método e mesmos scripts do G3, em pasta separada da linha de base |
 | 18 e 20/11/2026 | G1 | E1 e E2 sem filtro de tipo de estudo no formulário; a restrição foi escrita no objetivo | O formulário não tem campo de tipo de estudo | M1.5.1 mede o cumprimento da restrição pelo objetivo; com a E2 sem lista, a base é só a E1 (30 itens) |
 | 20/11/2026 | G1 | Amostra de M1.3.2 conferida por código contra o registro oficial do PubMed, sem abrir a página do DOI | Conferência reprodutível dos 40 itens | Metadados e links conferidos por título, autores, ano, periódico e requisição HTTP ao link |
 | 19/11/2026 | G1 | Casamento de título na consulta às fontes de M1.1.2 por similaridade de 0,85 ou mais, limiar que o método não fixava | Relatos sem PMID e títulos em português | Tratado como refinamento de M1.1.2; o valor de similaridade fica em cada linha |

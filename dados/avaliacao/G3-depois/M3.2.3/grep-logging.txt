@@ -1,0 +1,2 @@
+src/vicky/pipeline.py:11:import logging
+src/vicky/pipeline.py:41:logger = logging.getLogger(__name__)

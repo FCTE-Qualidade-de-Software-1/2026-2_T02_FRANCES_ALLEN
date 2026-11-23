@@ -1,0 +1,14 @@
+data_coleta=2026-11-23 12:23 -0300
+commit_vicky=7e9ccd81a49693d4f811ae074200de4884f4afe8
+data_commit=2026-11-23 12:17:43 -0300
+so=Darwin 27.2.0 arm64
+macos=27.2.1
+uv=uv 0.12.5 (210d1f678 2026-08-14 aarch64-apple-darwin)
+python=Python 3.12.13
+radon=6.0.1
+flake8=7.5.0 (mccabe: 0.7.0, pycodestyle: 2.15.0, pyflakes: 4.1.0, radon: 6.0.1)
+pylint=pylint 4.1.4
+pytest=pytest 9.2.0
+pytest-cov=7.1.0
+coverage=7.17.3
+codigo_saida_pytest=0

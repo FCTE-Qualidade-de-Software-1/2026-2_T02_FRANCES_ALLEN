@@ -1,0 +1,167 @@
+arquivo,linha,import,modulo_destino
+src/vicky/cli.py,14,"from .config import Config, ENV_PATH",vicky.config
+src/vicky/cli.py,14,"from .config import Config, ENV_PATH",vicky.config
+src/vicky/cli.py,15,"from .llm import analyze_with_raw, double_check_with_raw, make_client",vicky.llm
+src/vicky/cli.py,15,"from .llm import analyze_with_raw, double_check_with_raw, make_client",vicky.llm
+src/vicky/cli.py,15,"from .llm import analyze_with_raw, double_check_with_raw, make_client",vicky.llm
+src/vicky/cli.py,16,from .report import generate as generate_report,vicky.report
+src/vicky/cli.py,17,"from .scraper import RayyanCreds, scrape as scrape_async",vicky.scraper
+src/vicky/cli.py,17,"from .scraper import RayyanCreds, scrape as scrape_async",vicky.scraper
+src/vicky/cli.py,18,"from .storage import articles_without_analysis, connect, excluded_without_double_check, insert_analysis, insert_double_check, stats as db_stats",vicky.storage
+src/vicky/cli.py,18,"from .storage import articles_without_analysis, connect, excluded_without_double_check, insert_analysis, insert_double_check, stats as db_stats",vicky.storage
+src/vicky/cli.py,18,"from .storage import articles_without_analysis, connect, excluded_without_double_check, insert_analysis, insert_double_check, stats as db_stats",vicky.storage
+src/vicky/cli.py,18,"from .storage import articles_without_analysis, connect, excluded_without_double_check, insert_analysis, insert_double_check, stats as db_stats",vicky.storage
+src/vicky/cli.py,18,"from .storage import articles_without_analysis, connect, excluded_without_double_check, insert_analysis, insert_double_check, stats as db_stats",vicky.storage
+src/vicky/cli.py,18,"from .storage import articles_without_analysis, connect, excluded_without_double_check, insert_analysis, insert_double_check, stats as db_stats",vicky.storage
+src/vicky/cli.py,41,"from .web import users as web_users, workspaces as web_workspaces",vicky.web.users
+src/vicky/cli.py,41,"from .web import users as web_users, workspaces as web_workspaces",vicky.web.workspaces
+src/vicky/cli.py,222,from .web import workspaces as web_workspaces,vicky.web.workspaces
+src/vicky/cli.py,285,from .web import users as web_users,vicky.web.users
+src/vicky/cli.py,315,from .web import users as web_users,vicky.web.users
+src/vicky/cli.py,345,"from .storage import backfill_acesso_aberto, connect",vicky.storage
+src/vicky/cli.py,345,"from .storage import backfill_acesso_aberto, connect",vicky.storage
+src/vicky/cli.py,254,from .sources.pubmed import count_results,vicky.sources.pubmed
+src/vicky/cli.py,263,from .sources import REGISTRY,vicky.sources
+src/vicky/db.py,47,from .config import DB_PATH,vicky.config
+src/vicky/db.py,559,from . import storage as _storage,vicky.storage
+src/vicky/discovery.py,11,from .llm import is_fatal_error,vicky.llm
+src/vicky/discovery.py,653,from .llm import _safe_parse_json,vicky.llm
+src/vicky/discovery.py,776,from .llm import _safe_parse_json,vicky.llm
+src/vicky/llm.py,12,from .config import Config,vicky.config
+src/vicky/llm.py,13,"from .prompts import analyzer_system_prompt, analyzer_user_prompt, double_check_system_prompt, double_check_user_prompt",vicky.prompts
+src/vicky/llm.py,13,"from .prompts import analyzer_system_prompt, analyzer_user_prompt, double_check_system_prompt, double_check_user_prompt",vicky.prompts
+src/vicky/llm.py,13,"from .prompts import analyzer_system_prompt, analyzer_user_prompt, double_check_system_prompt, double_check_user_prompt",vicky.prompts
+src/vicky/llm.py,13,"from .prompts import analyzer_system_prompt, analyzer_user_prompt, double_check_system_prompt, double_check_user_prompt",vicky.prompts
+src/vicky/llm.py,19,"from .storage import Analysis, Article, DoubleCheck",vicky.storage
+src/vicky/llm.py,19,"from .storage import Analysis, Article, DoubleCheck",vicky.storage
+src/vicky/llm.py,19,"from .storage import Analysis, Article, DoubleCheck",vicky.storage
+src/vicky/pdf_report.py,15,from . import referencias,vicky.referencias
+src/vicky/pdf_resumo.py,38,from . import referencias,vicky.referencias
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pdf_resumo.py,39,"from .pdf_report import _styles, _esc, _source_label, _score_pill_color, BRAND_700, BRAND_50, SLATE_500, SLATE_200, SLATE_100, SLATE_50, ROSE_700, EMERALD_700",vicky.pdf_report
+src/vicky/pipeline.py,15,from .config import Config,vicky.config
+src/vicky/pipeline.py,16,"from .discovery import rotate_search_strings, run_discovery_with_fallback, verify_discovery",vicky.discovery
+src/vicky/pipeline.py,16,"from .discovery import rotate_search_strings, run_discovery_with_fallback, verify_discovery",vicky.discovery
+src/vicky/pipeline.py,16,"from .discovery import rotate_search_strings, run_discovery_with_fallback, verify_discovery",vicky.discovery
+src/vicky/pipeline.py,21,"from .llm import analyze_with_raw, double_check_with_raw, is_fatal_error, make_client",vicky.llm
+src/vicky/pipeline.py,21,"from .llm import analyze_with_raw, double_check_with_raw, is_fatal_error, make_client",vicky.llm
+src/vicky/pipeline.py,21,"from .llm import analyze_with_raw, double_check_with_raw, is_fatal_error, make_client",vicky.llm
+src/vicky/pipeline.py,21,"from .llm import analyze_with_raw, double_check_with_raw, is_fatal_error, make_client",vicky.llm
+src/vicky/pipeline.py,22,from .sources import REGISTRY,vicky.sources
+src/vicky/pipeline.py,23,from .openrouter_cost import fetch_real_cost,vicky.openrouter_cost
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,24,"from .storage import articles_without_analysis, compute_string_stats, connect, create_job, excluded_without_double_check, insert_analysis, insert_double_check, list_search_strings, project_stats, record_llm_call, seed_search_strings, update_job, update_llm_usage_real_cost, upsert_article",vicky.storage
+src/vicky/pipeline.py,78,from .web import projects as projects_module,vicky.web.projects
+src/vicky/pipeline.py,79,from .web import workspaces as workspaces_module,vicky.web.workspaces
+src/vicky/pipeline.py,772,"from .web.queries import EFFECTIVE_DECISION_SQL, EFFECTIVE_JOIN",vicky.web.queries
+src/vicky/pipeline.py,772,"from .web.queries import EFFECTIVE_DECISION_SQL, EFFECTIVE_JOIN",vicky.web.queries
+src/vicky/pipeline.py,1894,from .sources.pubmed import count_results as pubmed_count,vicky.sources.pubmed
+src/vicky/pipeline.py,2183,"from .web.queries import EFFECTIVE_DECISION_SQL as _EFFECTIVE_DECISION, EFFECTIVE_JOIN as _EFFECTIVE_JOIN",vicky.web.queries
+src/vicky/pipeline.py,2183,"from .web.queries import EFFECTIVE_DECISION_SQL as _EFFECTIVE_DECISION, EFFECTIVE_JOIN as _EFFECTIVE_JOIN",vicky.web.queries
+src/vicky/pipeline.py,2072,"from .web.queries import EFFECTIVE_DECISION_SQL, EFFECTIVE_JOIN",vicky.web.queries
+src/vicky/pipeline.py,2072,"from .web.queries import EFFECTIVE_DECISION_SQL, EFFECTIVE_JOIN",vicky.web.queries
+src/vicky/report.py,9,"from .storage import connect, stats",vicky.storage
+src/vicky/report.py,9,"from .storage import connect, stats",vicky.storage
+src/vicky/scraper.py,36,from .config import Config,vicky.config
+src/vicky/scraper.py,37,"from .storage import Article, connect, upsert_article",vicky.storage
+src/vicky/scraper.py,37,"from .storage import Article, connect, upsert_article",vicky.storage
+src/vicky/scraper.py,37,"from .storage import Article, connect, upsert_article",vicky.storage
+src/vicky/sources/__init__.py,3,"from . import pubmed, scielo, scholar",vicky.sources.pubmed
+src/vicky/sources/__init__.py,3,"from . import pubmed, scielo, scholar",vicky.sources.scielo
+src/vicky/sources/__init__.py,3,"from . import pubmed, scielo, scholar",vicky.sources.scholar
+src/vicky/sources/pubmed.py,17,from ..storage import Article,vicky.storage
+src/vicky/sources/scholar.py,27,from ..storage import Article,vicky.storage
+src/vicky/sources/scielo.py,15,from ..storage import Article,vicky.storage
+src/vicky/storage.py,16,from .db import connect,vicky.db
+src/vicky/storage.py,1115,"from .acesso_aberto import LIVRE, classificar",vicky.acesso_aberto
+src/vicky/storage.py,1115,"from .acesso_aberto import LIVRE, classificar",vicky.acesso_aberto
+src/vicky/storage.py,1515,"from .acesso_aberto import classificar, passa_no_filtro",vicky.acesso_aberto
+src/vicky/storage.py,1515,"from .acesso_aberto import classificar, passa_no_filtro",vicky.acesso_aberto
+src/vicky/storage.py,2000,from .pricing import calc_cost_usd,vicky.pricing
+src/vicky/web/app.py,20,from ..config import Config,vicky.config
+src/vicky/web/app.py,21,"from ..pipeline import is_pipeline_zombie, recalcular_top_n, reset_zombie_pipeline, resume_interrupted_pipelines, schedule_pipeline, set_main_loop",vicky.pipeline
+src/vicky/web/app.py,21,"from ..pipeline import is_pipeline_zombie, recalcular_top_n, reset_zombie_pipeline, resume_interrupted_pipelines, schedule_pipeline, set_main_loop",vicky.pipeline
+src/vicky/web/app.py,21,"from ..pipeline import is_pipeline_zombie, recalcular_top_n, reset_zombie_pipeline, resume_interrupted_pipelines, schedule_pipeline, set_main_loop",vicky.pipeline
+src/vicky/web/app.py,21,"from ..pipeline import is_pipeline_zombie, recalcular_top_n, reset_zombie_pipeline, resume_interrupted_pipelines, schedule_pipeline, set_main_loop",vicky.pipeline
+src/vicky/web/app.py,21,"from ..pipeline import is_pipeline_zombie, recalcular_top_n, reset_zombie_pipeline, resume_interrupted_pipelines, schedule_pipeline, set_main_loop",vicky.pipeline
+src/vicky/web/app.py,21,"from ..pipeline import is_pipeline_zombie, recalcular_top_n, reset_zombie_pipeline, resume_interrupted_pipelines, schedule_pipeline, set_main_loop",vicky.pipeline
+src/vicky/web/app.py,29,"from ..storage import add_favorite, add_project_favorite, clear_user_decision, connect, project_stats, remove_favorite, remove_project_favorite, upsert_user_decision",vicky.storage
+src/vicky/web/app.py,29,"from ..storage import add_favorite, add_project_favorite, clear_user_decision, connect, project_stats, remove_favorite, remove_project_favorite, upsert_user_decision",vicky.storage
+src/vicky/web/app.py,29,"from ..storage import add_favorite, add_project_favorite, clear_user_decision, connect, project_stats, remove_favorite, remove_project_favorite, upsert_user_decision",vicky.storage
+src/vicky/web/app.py,29,"from ..storage import add_favorite, add_project_favorite, clear_user_decision, connect, project_stats, remove_favorite, remove_project_favorite, upsert_user_decision",vicky.storage
+src/vicky/web/app.py,29,"from ..storage import add_favorite, add_project_favorite, clear_user_decision, connect, project_stats, remove_favorite, remove_project_favorite, upsert_user_decision",vicky.storage
+src/vicky/web/app.py,29,"from ..storage import add_favorite, add_project_favorite, clear_user_decision, connect, project_stats, remove_favorite, remove_project_favorite, upsert_user_decision",vicky.storage
+src/vicky/web/app.py,29,"from ..storage import add_favorite, add_project_favorite, clear_user_decision, connect, project_stats, remove_favorite, remove_project_favorite, upsert_user_decision",vicky.storage
+src/vicky/web/app.py,29,"from ..storage import add_favorite, add_project_favorite, clear_user_decision, connect, project_stats, remove_favorite, remove_project_favorite, upsert_user_decision",vicky.storage
+src/vicky/web/app.py,39,from . import projects as projects_module,vicky.web.projects
+src/vicky/web/app.py,40,from .. import referencias,vicky.referencias
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.asaas_billing
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.checkout_asaas
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.consentimentos
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.creditos
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.css_stamp
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.emails
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.empresa
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.progresso
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.queries
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.stripe_billing
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.users
+src/vicky/web/app.py,41,"from . import asaas_billing, checkout_asaas, consentimentos, creditos, css_stamp, emails, empresa, progresso, queries, stripe_billing, users, workspaces",vicky.web.workspaces
+src/vicky/web/app.py,44,from .users import User,vicky.web.users
+src/vicky/web/app.py,45,from .workspaces import Workspace,vicky.web.workspaces
+src/vicky/web/app.py,216,from .. import db as db_module,vicky.db
+src/vicky/web/app.py,251,from .. import storage as _storage,vicky.storage
+src/vicky/web/app.py,386,from .. import db as _db,vicky.db
+src/vicky/web/app.py,1128,from .. import db as _db,vicky.db
+src/vicky/web/app.py,1095,from .. import storage as _storage,vicky.storage
+src/vicky/web/app.py,1537,from ..pipeline import schedule_discovery_only,vicky.pipeline
+src/vicky/web/app.py,1581,from ..pdf_resumo import generate_summary_pdf,vicky.pdf_resumo
+src/vicky/web/app.py,1600,from ..pdf_report import generate_project_pdf,vicky.pdf_report
+src/vicky/web/app.py,1621,from ..xlsx_report import generate_project_xlsx,vicky.xlsx_report
+src/vicky/web/app.py,1936,from ..pipeline import request_cancel,vicky.pipeline
+src/vicky/web/app.py,1938,from ..storage import connect as _connect,vicky.storage
+src/vicky/web/asaas_billing.py,36,from .stripe_billing import MAX_CREDITOS_POR_COMPRA,vicky.web.stripe_billing
+src/vicky/web/asaas_billing.py,222,from ..referencias import BRT,vicky.referencias
+src/vicky/web/checkout_asaas.py,46,from . import asaas_billing as asaas,vicky.web.asaas_billing
+src/vicky/web/checkout_asaas.py,47,from . import creditos,vicky.web.creditos
+src/vicky/web/checkout_asaas.py,48,from ..storage import connect,vicky.storage
+src/vicky/web/consentimentos.py,16,from ..db import connect,vicky.db
+src/vicky/web/creditos.py,42,from .. import creditos_motor as motor,vicky.creditos_motor
+src/vicky/web/creditos.py,43,from ..db import is_unique_violation,vicky.db
+src/vicky/web/creditos.py,44,from ..storage import connect,vicky.storage
+src/vicky/web/emails.py,31,from ..config import Config,vicky.config
+src/vicky/web/progresso.py,34,"from .queries import EFFECTIVE_DECISION_SQL, EFFECTIVE_JOIN, connect",vicky.web.queries
+src/vicky/web/progresso.py,34,"from .queries import EFFECTIVE_DECISION_SQL, EFFECTIVE_JOIN, connect",vicky.web.queries
+src/vicky/web/progresso.py,34,"from .queries import EFFECTIVE_DECISION_SQL, EFFECTIVE_JOIN, connect",vicky.web.queries
+src/vicky/web/progresso.py,43,from ..pipeline import ANALYZE_CONCURRENCY as WORKERS_DE_ANALISE,vicky.pipeline
+src/vicky/web/progresso.py,44,from ..pipeline import DOUBLE_CHECK_SCORE_CEILING as TETO_DO_DOUBLE_CHECK,vicky.pipeline
+src/vicky/web/progresso.py,45,from ..pipeline import DOUBLE_CHECK_SCORE_FLOOR as PISO_DO_DOUBLE_CHECK,vicky.pipeline
+src/vicky/web/progresso.py,124,from .queries import get_jobs,vicky.web.queries
+src/vicky/web/projects.py,10,from ..storage import connect,vicky.storage
+src/vicky/web/queries.py,9,from ..storage import connect,vicky.storage
+src/vicky/web/users.py,12,from ..storage import connect,vicky.storage
+src/vicky/web/users.py,307,from . import creditos as creditos_livro,vicky.web.creditos
+src/vicky/web/users.py,224,from . import creditos as creditos_livro,vicky.web.creditos
+src/vicky/web/workspaces.py,8,from ..storage import connect,vicky.storage
