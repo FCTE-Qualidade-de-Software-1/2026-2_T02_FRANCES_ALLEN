@@ -1,1 +1,37 @@
 participante,elemento,resposta_literal,classificacao_c,classificacao_o,classificacao_final,decidido_por
+P01,E01,É onde insiro o tema da pesquisa,correta,correta,correta,consenso
+P01,E02,Onde descrevo as coisas do meu TCC,correta,correta,correta,consenso
+P01,E03,"É bem legal, funciona pra diferenciar o objetivo do que eu vou fazer no fim",correta,correta,correta,consenso
+P01,E04,"É o tempo em que os artigos escritos vão ser filtrados, tipo, 15 anos são artigos dentro de 15 anos, e por aí vai",correta,correta,correta,consenso
+P01,E05,Número dos artigos que vão pra lista final,correta,correta,correta,consenso
+P01,E06,Quais bases que vão ser usadas pra pesquisa,correta,correta,correta,consenso
+P01,E07,Se tem só artigos de graça que eu possa ler depois,correta,correta,correta,consenso
+P01,E08,"Só iniciar a triagem gasta crédito e faz a busca completa; a prévia mostra os critérios de graça, e depois tem que pagar",correta,correta,correta,consenso
+P01,E09,Critérios que o sistema usou pra achar tudo,correta,correta,correta,consenso
+P01,E10,Nota que o sistema deu ao artigo,correta,correta,correta,consenso
+P01,E11,[síntese] Não achou o elemento na sessão e não entendeu o que é,incorreta,incorreta,incorreta,consenso
+P01,E12,[síntese] Não achou o elemento na sessão e desistiu,incorreta,incorreta,incorreta,consenso
+P02,E01,,correta,correta,correta,consenso
+P02,E02,,correta,correta,correta,consenso
+P02,E03,,correta,correta,correta,consenso
+P02,E04,,correta,correta,correta,consenso
+P02,E05,,correta,correta,correta,consenso
+P02,E06,,correta,correta,correta,consenso
+P02,E07,,correta,correta,correta,consenso
+P02,E08,,correta,correta,correta,consenso
+P02,E09,,correta,correta,correta,consenso
+P02,E10,,correta,correta,correta,consenso
+P02,E11,[síntese] Disse que nem encontrou como a busca foi feita e que não conseguiria explicar o elemento,incorreta,incorreta,incorreta,consenso
+P02,E12,,correta,correta,correta,consenso
+P03,E01,,correta,correta,correta,consenso
+P03,E02,,correta,correta,correta,consenso
+P03,E03,,correta,correta,correta,consenso
+P03,E04,,correta,correta,correta,consenso
+P03,E05,,correta,correta,correta,consenso
+P03,E06,,correta,correta,correta,consenso
+P03,E07,,correta,correta,correta,consenso
+P03,E08,,correta,correta,correta,consenso
+P03,E09,[síntese] Disse que é um resumo dos artigos encontrados,incorreta,incorreta,incorreta,consenso
+P03,E10,,correta,correta,correta,consenso
+P03,E11,"[síntese] É o registro de como a busca foi feita (termos de busca em cada base e critérios aplicados) e de por que cada artigo foi excluído, para prestar contas ao orientador",correta,correta,correta,consenso
+P03,E12,,correta,correta,correta,consenso

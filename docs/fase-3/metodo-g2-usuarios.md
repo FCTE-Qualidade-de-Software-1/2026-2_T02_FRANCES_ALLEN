@@ -6,6 +6,8 @@ Os instrumentos aplicados aos participantes (cartões de tarefa, ficha de observ
 
 > **Versão 0.6 ([D13](../gestao/decisoes.md#d13-adaptar-a-coleta-com-usuarios-ao-prazo-da-entrega-2)).** M2.5.1 passou a ser coletada por um formulário online assíncrono, com cinco respondentes, e M2.7.2 por sessões remotas individuais, com três participantes válidos. O condutor deixou de ser uma pessoa fixa e o observador passou a ser opcional. O que mudou, por que e com quais consequências está na [seção 2.8](#28-adaptacao-da-versao-06-d13).
 
+> **Execução (19 a 22/11/2026).** As três sessões válidas foram feitas em 19 e 20/11, e o formulário de estética teve três respostas, todas dos participantes das sessões. A M2.5.1 foi calculada com elas pela [D14](../gestao/decisoes.md#d14-calcular-m251-com-as-tres-respostas-obtidas). Os ajustes e desvios estão nas seções [2.9](#29-ajustes-feitos-antes-da-primeira-sessao) e [2.10](#210-execucao-das-sessoes-e-do-formulario), e os valores, em [Resultados do G2 com usuários](../fase-4/resultados-g2-usuarios.md).
+
 ## 1. Métricas cobertas
 
 | Métrica | Medida | Quem fornece o dado | Instrumento | Denominador (B) | Pasta em `dados/avaliacao/G2/` |
@@ -79,6 +81,34 @@ As sessões estavam previstas para 16 a 18/11, e nenhuma aconteceu: os estudante
 
 Os limiares de nível da [Fase 2](../fase-2/niveis-e-julgamento.md) não mudaram. Mudaram a regra de agregação de M2.7.2 (de "3 de 5" para "maioria dos participantes válidos") e a fonte dos dados de M2.5.1, e as duas fichas da [especificação](../fase-2/especificacao-das-metricas.md) foram atualizadas, como registra a [seção 5.5 de recursos e ambiente](recursos-e-ambiente.md#55-alteracoes-na-fase-2-durante-a-fase-3).
 
+### 2.9 Ajustes feitos antes da primeira sessão
+
+Antes da P01 (19/11/2026), a equipe mudou três pontos da sessão, mas só os registrou nestas páginas em 22/11/2026. Nenhum dado foi reinterpretado: os ajustes valeram igualmente para todos os participantes.
+
+| O que mudou | Previsto | Feito nas sessões | Efeito |
+|-------------|----------|-------------------|--------|
+| Tema do cartão A | Tema T1 do G1 | "O uso de células-tronco para restauração de tecido", com um projeto já triado desse tema para a parte B | Nenhum nos 12 elementos, que não dependem do tema |
+| Conta da parte A | Conta nova criada pelo participante, com 0 crédito | Conta da equipe com créditos, com login enviado pelo condutor; a parte B usa a mesma conta | A criação de conta (F01) saiu da sessão. Havia risco de gastar crédito se o participante iniciasse a triagem; nenhum iniciou |
+| Piloto (seção 3.8) | Uma sessão piloto antes da P01 | Não houve | Os cartões não foram calibrados antes; o texto foi o mesmo para todos |
+
+O registro de cada ajuste está em `M2.7.2/coleta.md`.
+
+### 2.10 Execução das sessões e do formulário
+
+As três sessões válidas foram feitas em 19/11 (P01) e 20/11/2026 (P02 e P03), sem chamar reservas. O registro de cada uma está em `M2.7.2/sessoes.csv`, e as ocorrências, em `M2.7.2/coleta.md`.
+
+| O que aconteceu | Previsto | Feito | Efeito |
+|-----------------|----------|-------|--------|
+| Observador | Opcional (seção 3.2) | P01 com observador. P02 e P03 sem, com a segunda classificação das explicações feita por outro integrante, pela gravação | Nenhum: é o caminho previsto para sessão sem observador |
+| Duração | 63 minutos estimados, com folga até 75 | 43, 19 e 24 minutos | Nenhum tempo-limite foi atingido, e nenhum elemento ficou sem uso por tempo |
+| Registro das explicações | Resposta literal anotada pela gravação (seção 4.1, bloco 4) | P01 com a fala do participante. P02 e P03 com a classificação informada pelo condutor, que só detalhou as exceções; os elementos não citados foram marcados como sem ajuda e corretos por padrão, com `resposta_literal` vazia, e as anotações do condutor levam a etiqueta `[síntese]` | As duas classificações das explicações coincidiram nos 36 itens; o código de uso não teve segunda conferência. A gravação continua sendo a evidência de cada resposta |
+| Objetivo no cartão A | Frase de objetivo fixada junto com o tema (seção 3.3) | Cartões lidos em voz alta pelo condutor, sem frase de objetivo junto com o tema novo; o chat trouxe só o tema e os dados de acesso (P01) ou só o link e os dados de acesso (P02 e P03). P01 e P02 deixaram o campo Objetivo vazio, e P03 escreveu um objetivo próprio | Uso de E02 de P01 e P02 marcado como incorreto pela gravação (seção 7.1), e M2.7.2 foi de 11/12 para 10/12. A frase deveria ter sido definida junto com o tema e precisa ser fixada numa próxima aplicação |
+| Recortes dos 12 elementos | Feitos antes do piloto e guardados em `M2.7.2/elementos/` (seção 3.8) | Montados em 22/11, depois das sessões, com as capturas de produção da inspeção do G2 | Registram o que cada elemento mostra. As imagens exatas exibidas nas chamadas não foram guardadas |
+| Respondentes da M2.5.1 | 5 respostas válidas; com menos de 5, a métrica não é calculada (seção 7.4) | 3 respostas, todas dos participantes das sessões, dadas depois da chamada | Pela D14, a métrica foi calculada com maioria de 2 de 3, com resultado indicativo. Os respondentes julgaram as telas depois de usá-las |
+| Capturas do formulário | Guardadas em `M2.5.1/telas/`, com a data (seção 4.4) | Não guardadas | A imagem julgada em cada tela não pode ser conferida no repositório |
+
+**Regra de agregação da M2.5.1 pela D14.** A regra de 2 de 3 repete a lógica que a D13 aplicou à M2.7.2: a ficha da Fase 2 fala em "maioria dos respondentes", e 3 de 5 era a maioria para cinco. A ficha da Fase 2 não foi alterada, porque a coleta já tinha acontecido: o desvio fica declarado aqui, em `M2.5.1/coleta.md` e na Fase 4, junto com a sensibilidade à regra (exigindo os três respondentes, nenhuma tela entraria em A).
+
 ## 3. Preparação
 
 ### 3.1 Recrutamento e critérios de inclusão
@@ -113,7 +143,7 @@ A relação entre os códigos (C, O, K1, K2, A1, A2, A3) e as pessoas fica em `c
 
 ### 3.3 Tema dado ao participante
 
-O participante cria o projeto sobre o **tema T1 do G1** (fármaco com desfecho clínico bem estudado, definido no [Método do G1](metodo-g1.md)). Na parte B ele abre o projeto já triado desse mesmo tema. Assim as duas partes contam uma história só (o estudante prepara a busca e depois recebe o resultado), e a parte B não exige nenhuma triagem além das que o G1 já faz.
+Nas sessões, o tema foi outro, pelo ajuste da [seção 2.9](#29-ajustes-feitos-antes-da-primeira-sessao). Pelo plano, o participante cria o projeto sobre o **tema T1 do G1** (fármaco com desfecho clínico bem estudado, definido no [Método do G1](metodo-g1.md)). Na parte B ele abre o projeto já triado desse mesmo tema. Assim as duas partes contam uma história só (o estudante prepara a busca e depois recebe o resultado), e a parte B não exige nenhuma triagem além das que o G1 já faz.
 
 O tema vai no cartão da parte A escrito em uma frase, em linguagem de estudante, igual para todos os participantes, e o cartão também traz os requisitos que obrigam o uso dos 12 elementos (janela de anos, quantidade, bases, acesso aberto). O texto final do cartão é fixado em `M2.7.2/coleta.md` antes do piloto e não muda entre participantes. Se o T1 não estiver triado até a véspera da P01, usa-se o projeto triado mais antigo do G1, com o tema dele no cartão, e a troca é registrada em `coleta.md`.
 
@@ -318,6 +348,7 @@ dados/avaliacao/G2/
 │   ├── coleta.md                 # link e datas do formulário, data das capturas, respostas inválidas ou excedentes
 │   ├── respostas.csv             # participante (R01 a R05), tela, nota (1 a 5), comentario
 │   ├── qualitativo.csv           # bloco opcional, fora do cálculo
+│   ├── consolidado.md            # tela agradável por respondente e cálculo (acrescentado com a D14)
 │   └── telas/                    # as 5 capturas fixas mostradas aos participantes
 ├── M2.6.1/
 │   ├── coleta.md                 # data, Chrome, área visível, papéis K1 e K2, projeto triado usado
@@ -356,7 +387,7 @@ As fichas `.md` seguem o formato da inspeção: tabela com os itens já listados
 
 ## 6. Cálculo
 
-As fórmulas estão nas [fichas da Fase 2](../fase-2/especificacao-das-metricas.md) e os níveis em [níveis de pontuação](../fase-2/niveis-e-julgamento.md). M2.7.2 usa só sessões com `situacao = valida` e é calculada com três sessões válidas, ou com cinco, se houver. Com quatro, usam-se as três primeiras em ordem cronológica, porque a maioria de quatro admite empate (2 a 2). M2.5.1 usa as cinco primeiras respostas válidas do formulário (seção 4.4).
+As fórmulas estão nas [fichas da Fase 2](../fase-2/especificacao-das-metricas.md) e os níveis em [níveis de pontuação](../fase-2/niveis-e-julgamento.md). M2.7.2 usa só sessões com `situacao = valida` e é calculada com três sessões válidas, ou com cinco, se houver. Com quatro, usam-se as três primeiras em ordem cronológica, porque a maioria de quatro admite empate (2 a 2). M2.5.1 usa as cinco primeiras respostas válidas do formulário, na ordem dos códigos R01 a R05 (seção 4.4); o script `dados/avaliacao/G2/calcular_g2_usuarios.py` lê `M2.5.1/respostas.csv` e usa os cinco primeiros códigos, ou todos, quando há menos de cinco. Na coleta de 2026/2, que teve só três respostas, a M2.5.1 foi calculada com as três e com maioria de 2 de 3, pela [D14](../gestao/decisoes.md#d14-calcular-m251-com-as-tres-respostas-obtidas) (seção 2.10).
 
 | Métrica | Regra por item | A | B | Regra especial nos níveis |
 |---------|----------------|---|---|---------------------------|
@@ -408,7 +439,7 @@ Em M2.6.1, uma função em que K1 e K2 divergem é executada de novo pelos dois 
 | Queda da chamada ou da internet do participante | Antes da parte A, a sessão é remarcada. Depois, retoma-se na mesma chamada em até 10 minutos, do passo em que parou, com o tempo parado anotado em `observacao`; se não voltar, a sessão é interrompida e chama-se uma reserva |
 | Mudança visível em produção entre sessões | Registrar a data em `coleta.md`. Se a mudança atingir um dos 12 elementos ou uma das 5 telas, as sessões anteriores e posteriores não são comparáveis naquele item, e o caso é declarado na Fase 4 |
 | Menos de três sessões válidas até a data da Fase 4 | **Não calcular** M2.7.2. Não se aplica proporção sobre dois participantes. O desvio é registrado em `M2.7.2/coleta.md` e declarado na Fase 4 como métrica não coletada, sem nível por estimativa |
-| Menos de cinco respostas válidas no formulário até a data da Fase 4 | **Não calcular** M2.5.1, pelo mesmo motivo. O desvio é registrado em `M2.5.1/coleta.md` e declarado na Fase 4 |
+| Menos de cinco respostas válidas no formulário até a data da Fase 4 | **Não calcular** M2.5.1, pelo mesmo motivo. O desvio é registrado em `M2.5.1/coleta.md` e declarado na Fase 4. Exceção em 2026/2: a D14 calculou a métrica com três respostas (seção 2.10) |
 | Falha no teste de teclado por causa externa | Repetir em outro horário. Persistindo, a função fica `nao_coletado`, sai de B e é declarada na Fase 4 |
 
 ## Histórico de versão
@@ -421,3 +452,6 @@ Em M2.6.1, uma função em que K1 e K2 divergem é executada de novo pelos dois 
 | 0.4 | 14/11/2026 | Códigos P06 e P07 para as reservas e relação entre o tempo estimado das partes A e B, o tempo-limite e a duração informada no termo | Lucas Avelar | - |
 | 0.5 | 15/11/2026 | Definição dos lembretes neutros no papel do condutor e "Idem" trocado pelo texto, a partir da revisão do João Felipe | Lucas Avelar | - |
 | 0.6 | 19/11/2026 | Adaptação pela D13, antes de qualquer sessão: M2.5.1 em formulário online assíncrono (seção 4.4); M2.7.2 em sessão remota pelo Meet, de cerca de 1 hora, com 3 participantes válidos e regra da maioria; condutor sem nome fixo e observador opcional; seção 2.8 com alternativas descartadas e ameaças à validade | Gabriel Fae | - |
+| 0.7 | 22/11/2026 | Seção 2.9 com os ajustes feitos antes da primeira sessão: tema das células-tronco, conta da equipe com créditos nas partes A e B e sessões sem piloto | Gabriel Fae | - |
+| 0.8 | 22/11/2026 | Seção 2.10 com a execução das três sessões e do formulário: sessões sem observador, durações, registro das explicações, recortes montados depois e M2.5.1 calculada com três respostas pela D14 | Gabriel Fae | - |
+| 0.9 | 22/11/2026 | Seção 2.10 com as marcações por padrão das P02 e P03 e o cartão A sem frase de objetivo, com o uso de E02 de P01 e P02 corrigido pela gravação; seção 6 alinhada ao script quanto às respostas usadas na M2.5.1 (revisão do PR #40) | Gabriel Fae | - |
