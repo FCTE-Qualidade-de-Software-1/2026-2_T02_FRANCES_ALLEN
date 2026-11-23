@@ -9,7 +9,7 @@
 | Guilherme Moura da Silva Neto | 231012227 | [@Guilherme-Moura](https://github.com/Guilherme-Moura) | Seleção, escopo e GQM de manutenibilidade (G3); ação de melhoria |
 | João Felipe Oliveira Alves e Silva | 231011927 | [@MrBolt2005](https://github.com/MrBolt2005) | Referencial teórico, metodologia e montagem do artigo; G2 com usuários na Entrega 2 |
 | Larissa Gomes Silva | 211031092 | [@larigs](https://github.com/larigs) | GQM de adequação funcional (G1) |
-| Lucas Antunes de Avelar | 200067095 | [@LucasAvelar2711](https://github.com/LucasAvelar2711) | GQM de capacidade de interação (G2) e diagrama GQM; cronograma e artigo da Entrega 2 |
+| Lucas Antunes de Avelar | 200067095 | [@LucasAvelar2711](https://github.com/LucasAvelar2711) | GQM de capacidade de interação (G2) e diagrama GQM; métodos da Fase 3, coleta do G3, página da Fase 4 e artigo da Entrega 2 |
 
 ## 2. Tabela de contribuição
 
@@ -35,6 +35,18 @@ Cada integrante tem 1/6 do esforço (16,666...%). Com uma casa decimal, seis par
 
 Preenchida a partir das horas registradas em `dados/gestao/esforco.csv`, com o percentual de cada integrante calculado sobre o total de horas da equipe.
 
+Horas lançadas de 27/10 a 22/11/2026, conferidas em 23/11/2026 (56,2 h no total). A linha repetida de 19/11 da Larissa (inspeção do G2, 2 h) foi contada uma vez. O percentual mede as horas registradas, e não o valor entregue: quem lançou pouco aparece com menos.
+
+| Integrante | Atividades realizadas na Entrega 2 | Horas | Esforço (%) |
+|------------|------------------------------------|:-----:|:-----------:|
+| Larissa Gomes Silva | Revisão do método do G1; coleta completa do G1 (T1 a T4, repetições e filtros), julgamentos e página de resultados; inspeção do G2 como A2 | 22,2 | 39,5 |
+| Gabriel Sampaio Fae | PSM e ciclos de medição; método do G2 por inspeção; inspeção do G2 como A1 e consolidação; sessão P01 do G2 com usuários | 16,0 | 28,5 |
+| Lucas Antunes de Avelar | Correções da E1; métodos da Fase 3 (D12), recursos, ambiente e cronograma; coleta do G3; fichas de A2 do G1; página da Fase 4; artigo v2 | 10,0 | 17,8 |
+| Guilherme Moura da Silva Neto | Repetição independente da coleta do G3 (A2), inspeção de M3.2.3 e consolidação dos resultados do G3 | 4,0 | 7,1 |
+| Guilherme Maciel de Meneses | Julgamento e conclusões da Fase 4 | 3,0 | 5,3 |
+| João Felipe Oliveira Alves e Silva | Sessão P01 do G2 com usuários como condutor | 1,0 | 1,8 |
+| **Total** | | **56,2** | **100,0** |
+
 ## Histórico de versão
 
 | Versão | Data | Descrição | Autor(a) | Revisor(a) |
@@ -44,3 +56,4 @@ Preenchida a partir das horas registradas em `dados/gestao/esforco.csv`, com o p
 | 0.3 | 17/10/2026 | Adições de esforço | Gabriel Fae | - |
 | 0.4 | 04/11/2026 | Seis integrantes com matrícula, GitHub e papel; tabela de contribuição da Entrega 1 | Lucas Avelar | - |
 | 0.5 | 20/11/2026 | Tabela da Entrega 1 somando 100,0%: arredondamento de 1/6 pelo método dos maiores restos, com a regra explicada (#31) | Lucas Avelar | - |
+| 0.6 | 23/11/2026 | Tabela da Entrega 2 pelas horas de `esforco.csv` (56,2 h, de 27/10 a 22/11) e papel do Lucas atualizado | Lucas Avelar | - |
