@@ -48,11 +48,19 @@ As quatro pastas do [Método do G2 com usuários](../../../docs/fase-3/metodo-g2
 |---------|---------------|
 | `M2.7.2/sessoes.csv` | Observador (ou o condutor, se não houver observador), ao fim de cada sessão: código do participante, data, duração, local e hash SHA-256 da gravação |
 | `M2.7.2/perfil.csv`, `observacao-uso.csv` e `respostas-compreensao.csv` | Condutor e observador, durante e depois da sessão; sem observador, o condutor pela gravação e um segundo classificador para `classificacao_o` |
-| `M2.5.1/coleta.md`, `respostas.csv` e `qualitativo.csv` | Quem montou o formulário, a partir das respostas válidas exportadas do Google Forms |
+| `M2.5.1/coleta.md`, `respostas.csv`, `qualitativo.csv` e `consolidado.md` | Quem montou o formulário, a partir das respostas válidas exportadas do Google Forms; `consolidado.md` com o cálculo (acrescentado com a D14) |
 | `M2.7.2/coleta.md` e `consolidado.md` | Condutor, antes do piloto e depois das três sessões válidas |
 | `M2.6.1/K1.md`, `K2.md` e `consolidado.md` | Avaliadores do teste com teclado (K1 e K2) |
 | `M2.6.2/A1.md`, `A2.md`, `consolidado.md` e `relatorios/` | Avaliadores de contraste |
 | `termo-de-consentimento.docx` | Texto do termo da sessão, lido no início da chamada |
+
+**Cálculo de M2.7.2 e M2.5.1.** Depois que os CSVs estiverem preenchidos, a partir da raiz:
+
+```bash
+python3 dados/avaliacao/G2/calcular_g2_usuarios.py   # imprime as tabelas dos dois consolidado.md, para conferência
+```
+
+Em 22/11/2026, as três sessões válidas (P01 a P03) e as três respostas ao formulário (R01 a R03) já estão nas pastas, com os recortes dos 12 elementos em `M2.7.2/elementos/`.
 
 **Gravações, aceites e a planilha bruta do formulário nunca entram neste repositório, que é público.** Eles ficam na pasta restrita do Google Drive da equipe, compartilhada só com os integrantes e com a professora, e são apagados ao fim do semestre 2026/2. Aqui fica só o registro de cada arquivo (participante anonimizado, data, duração e hash).
 
