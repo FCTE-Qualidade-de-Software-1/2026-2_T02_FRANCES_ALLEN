@@ -19,15 +19,17 @@ O percentual de esforço é calculado a partir do registro de horas da [gestão 
 
 Na Entrega 1 só um integrante registrou horas (Gabriel Fae, 5 h), o que impede calcular o esforço pelas horas (ver a [retrospectiva da Entrega 1](../gestao/retrospectivas/Retrospectiva-E1.docx)). A equipe declarou divisão igual do esforço, a mesma da tabela de contribuição do artigo.
 
+Cada integrante tem 1/6 do esforço (16,666...%). Com uma casa decimal, seis parcelas iguais não somam 100%: seis vezes 16,7% dá 100,2%. Para o total fechar em 100,0% sem mudar a divisão declarada, o arredondamento segue o método dos maiores restos: todos os restos são iguais, então o desempate é a ordem da tabela, e as quatro primeiras linhas recebem 16,7% e as duas últimas 16,6% (4 x 16,7 + 2 x 16,6 = 100,0). A diferença de 0,1 ponto percentual entre as linhas é só de arredondamento: a contribuição declarada continua igual para todos.
+
 | Integrante | Atividades realizadas | Esforço (%) |
 |------------|-----------------------|:-----------:|
 | Gabriel Sampaio Fae | Descrição do produto e modelo de qualidade adaptado, com diagramas (Fase 1); estrutura do GitHub Pages | 1/6 (16,7%) |
 | Guilherme Maciel de Meneses | Propósito da avaliação, partes interessadas e ODS (Fase 1); introdução; declaração de uso de IA e release da Entrega 1 | 1/6 (16,7%) |
 | Guilherme Moura da Silva Neto | Seleção e priorização das características, escopo (Fase 1); rastreabilidade entre as Fases 1 e 2 e GQM de manutenibilidade (Fase 2) | 1/6 (16,7%) |
 | João Felipe Oliveira Alves e Silva | Referencial teórico, metodologia e gestão PSM/CID; montagem do artigo no modelo SBC e revisão das referências | 1/6 (16,7%) |
-| Larissa Gomes Silva | GQM de adequação funcional: objetivo, questões, hipóteses, métricas, níveis e critérios de julgamento (Fase 2) | 1/6 (16,7%) |
-| Lucas Antunes de Avelar | GQM de capacidade de interação e diagrama GQM consolidado (Fase 2) | 1/6 (16,7%) |
-| **Total** | | **100%** |
+| Larissa Gomes Silva | GQM de adequação funcional: objetivo, questões, hipóteses, métricas, níveis e critérios de julgamento (Fase 2) | 1/6 (16,6%) |
+| Lucas Antunes de Avelar | GQM de capacidade de interação e diagrama GQM consolidado (Fase 2) | 1/6 (16,6%) |
+| **Total** | | **6/6 (100,0%)** |
 
 ### Entrega 2
 
@@ -41,3 +43,4 @@ Preenchida a partir das horas registradas em `dados/gestao/esforco.csv`, com o p
 | 0.2 | 16/10/2026 | Reorganização da documentação por fases do processo de avaliação | Gabriel Fae | - |
 | 0.3 | 17/10/2026 | Adições de esforço | Gabriel Fae | - |
 | 0.4 | 04/11/2026 | Seis integrantes com matrícula, GitHub e papel; tabela de contribuição da Entrega 1 | Lucas Avelar | - |
+| 0.5 | 20/11/2026 | Tabela da Entrega 1 somando 100,0%: arredondamento de 1/6 pelo método dos maiores restos, com a regra explicada (#31) | Lucas Avelar | - |

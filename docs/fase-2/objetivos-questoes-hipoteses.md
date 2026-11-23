@@ -123,7 +123,7 @@ As métricas são medidas da **ISO/IEC 25023:2016**, a norma da família SQuaRE 
 
 **Característica de origem:** C3 - Manutenibilidade · **Parte interessada:** Equipe de desenvolvimento
 
-A [Fase 1](../fase-1/caracteristicas.md) classificou a manutenibilidade como Should Have, com 12 pontos no MoSCoW com pesos (impacto 2, viabilidade 3): a facilidade de manter e evoluir o sistema afeta diretamente a equipe de desenvolvimento, e a viabilidade de medição é alta pelo acesso total ao código-fonte. O ponto de vista é o da equipe de desenvolvimento (desenvolvedores e arquitetos). A Fase 1 apontou analisabilidade, modularidade e modificabilidade como subcaracterísticas foco, fundamentais para um sistema com integrações externas instáveis e orquestração assíncrona. As três subcaracterísticas seguem a ISO/IEC 25010:2023.
+A [Fase 1](../fase-1/caracteristicas.md) classificou a manutenibilidade como Should Have, com 12 pontos no MoSCoW com pesos (impacto 2, viabilidade 3): a facilidade de manter e evoluir o sistema afeta diretamente a equipe de desenvolvimento, e a viabilidade de medição é alta pelo acesso total ao código-fonte. O ponto de vista é o da equipe de desenvolvimento (desenvolvedores e arquitetos). A Fase 1 apontou analisabilidade, modularidade e testabilidade como subcaracterísticas foco, fundamentais para um sistema com integrações externas instáveis e orquestração assíncrona. As três subcaracterísticas seguem a ISO/IEC 25010:2023.
 
 | Elemento do template | Definição |
 |----------------------|-----------|
@@ -192,3 +192,4 @@ Pelo método Goal-Question-Metric, três questões desdobram o objetivo. A prime
 | 0.7 | 25/10/2026 | H1.5 reescrita em índice de Jaccard (0,70, cerca de 82% dos artigos em comum) para coincidir com o nível Bom de M1.5.2 | Larissa Gomes Silva | - |
 | 0.8 | 25/10/2026 | G1: texto enxugado, repetição removida entre fichas | Larissa Gomes Silva | - |
 | 0.9 | 14/11/2026 | G3: medidas da ISO/IEC 25023 revistas, com MRe-2-S e MRe-1-G trocadas por medidas adicionais em analisabilidade e as adaptações declaradas (#23) | Lucas Avelar | - |
+| 1.0 | 20/11/2026 | G3: subcaracterísticas da Fase 1 citadas como na versão 0.7 de `caracteristicas.md` (testabilidade no lugar de modificabilidade) (#31) | Lucas Avelar | - |
