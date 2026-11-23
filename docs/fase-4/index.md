@@ -30,7 +30,7 @@ O caminho de cada número até a conclusão segue as regras da Fase 2, sem mudan
 | Objetivo | Métricas medidas | Perfil das questões | Pontuação do objetivo | Nível | Julgamento do VICKY | Fonte |
 |----------|:----------------:|---------------------|:---------------------:|:-----:|---------------------|-------|
 | G1 - Adequação funcional | 8 de 8 | Q1.1 Insatisfatório (0,00) · Q1.2 Aceitável (1,00) · Q1.3 Aceitável (1,50) · Q1.4 Insatisfatório (0,00) · Q1.5 Insatisfatório (0,50) | 0,60 | Insatisfatório | **Não atende** | [Resultados do G1](resultados-g1.md) |
-| G2 - Capacidade de interação | 8 de 8 por inspeção; 2 de 4 com usuários (M2.6.1 e M2.6.2 não coletadas) | Q2.1 Bom · Q2.2 Aceitável · Q2.3 Insatisfatório · Q2.4 Insatisfatório · Q2.5 Aceitável (indicativo) · Q2.6 sem nível · Q2.7 Excelente (indicativo) | - | - | **Não atende** | [Resultados do G2 por inspeção](resultados-g2-inspecao.md) e [com usuários](resultados-g2-usuarios.md) |
+| G2 - Capacidade de interação | 8 de 8 por inspeção; 2 de 4 com usuários (M2.6.1 e M2.6.2 não coletadas) | Q2.1 Bom · Q2.2 Aceitável · Q2.3 Insatisfatório · Q2.4 Insatisfatório · Q2.5 Aceitável (indicativo) · Q2.6 sem nível · Q2.7 Bom (indicativo) | - | - | **Não atende** | [Resultados do G2 por inspeção](resultados-g2-inspecao.md) e [com usuários](resultados-g2-usuarios.md) |
 | G3 - Manutenibilidade | 6 de 6 | Q3.1 Bom (2,00) · Q3.2 Aceitável (1,00) · Q3.3 Aceitável (1,00) | 1,33 | Aceitável | **Atende parcialmente** | [Resultados do G3](resultados-g3.md) |
 
 _Tabela 1 - Síntese do julgamento por objetivo. Fonte: elaborada pela equipe a partir das páginas de resultados de cada objetivo._
@@ -77,7 +77,7 @@ Coleta de 17 a 20/11/2026 nos temas T1 a T4, com repetição de T1 e T3 e as exe
 | Q2.4 | Nível de M2.4.1, um nível abaixo se M2.4.2 for Insatisfatório; Insatisfatório se ação paga estiver desprotegida | Insatisfatório |
 | Q2.5 | Nível de M2.5.1 (formulário de estética, D13); relatada, fora da contagem do julgamento | Aceitável (40,0%, indicativo) |
 | Q2.6 | Nível de M2.6.1, com M2.6.2 (contraste) como complementar | Sem nível (M2.6.1 e M2.6.2 não coletadas) |
-| Q2.7 | Nível de M2.7.2, um nível abaixo se M2.7.1 for Insatisfatório | Excelente (M2.7.2 = 91,7%, indicativo); M2.7.1 = Bom (3 de 4), não rebaixa |
+| Q2.7 | Nível de M2.7.2, um nível abaixo se M2.7.1 for Insatisfatório | Bom (M2.7.2 = 10/12, 83,3%, indicativo); M2.7.1 = Bom (3 de 4), não rebaixa |
 
 **Julgamento do G2:** a capacidade de interação do VICKY **não atende**. Q2.3 e Q2.4 ficaram em Insatisfatório, e duas ou mais questões principais em Insatisfatório levam a "Não atende" qualquer que fosse o nível da Q2.6; detalhe em [julgamento e conclusões](julgamento-e-conclusoes.md). Regras pelas regras da [seção 3 de níveis e julgamento](../fase-2/niveis-e-julgamento.md#3-regras-do-g2-capacidade-de-interacao).
 
