@@ -1,0 +1,25 @@
+************* Module vicky.sources.scielo
+src/vicky/sources/scielo.py:1:0: R0801: Similar lines in 2 files
+==vicky.web.app:[1706:1714]
+==vicky.xlsx_report:[63:71]
+            r.get("source") or "",
+            r.get("year") or "",
+            r.get("title") or "",
+            r.get("authors") or "",
+            r.get("journal") or "",
+            r.get("doi") or "",
+            r.get("external_url") or "",
+            r.get("summary_pt") or "", (duplicate-code)
+src/vicky/sources/scielo.py:1:0: R0801: Similar lines in 2 files
+==vicky.pdf_report:[275:281]
+==vicky.pdf_resumo:[175:181]
+        ("BACKGROUND", (0, 0), (-1, -1), BRAND_50),
+        ("BOX", (0, 0), (-1, -1), 0.5, SLATE_200),
+        ("INNERGRID", (0, 0), (-1, -1), 0.5, SLATE_200),
+        ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
+        ("ALIGN", (0, 0), (-1, -1), "CENTER"),
+    ])) (duplicate-code)
+
+--------------------------------------------------------------------
+Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+

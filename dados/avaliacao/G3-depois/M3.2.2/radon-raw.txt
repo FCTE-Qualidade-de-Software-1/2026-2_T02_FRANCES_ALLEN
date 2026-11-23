@@ -1,0 +1,468 @@
+src/vicky/db.py
+    LOC: 604
+    LLOC: 327
+    SLOC: 321
+    Comments: 70
+    Single comments: 74
+    Multi: 77
+    Blank: 132
+    - Comment Stats
+        (C % L): 12%
+        (C % S): 22%
+        (C + M % L): 24%
+src/vicky/scraper.py
+    LOC: 239
+    LLOC: 147
+    SLOC: 166
+    Comments: 18
+    Single comments: 20
+    Multi: 14
+    Blank: 39
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 11%
+        (C + M % L): 13%
+src/vicky/acesso_aberto.py
+    LOC: 98
+    LLOC: 41
+    SLOC: 38
+    Comments: 8
+    Single comments: 8
+    Multi: 30
+    Blank: 22
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 21%
+        (C + M % L): 39%
+src/vicky/config.py
+    LOC: 205
+    LLOC: 104
+    SLOC: 126
+    Comments: 63
+    Single comments: 64
+    Multi: 2
+    Blank: 13
+    - Comment Stats
+        (C % L): 31%
+        (C % S): 50%
+        (C + M % L): 32%
+src/vicky/discovery.py
+    LOC: 965
+    LLOC: 194
+    SLOC: 721
+    Comments: 25
+    Single comments: 22
+    Multi: 24
+    Blank: 198
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 3%
+        (C + M % L): 5%
+src/vicky/openrouter_cost.py
+    LOC: 56
+    LLOC: 32
+    SLOC: 38
+    Comments: 0
+    Single comments: 0
+    Multi: 10
+    Blank: 8
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 18%
+src/vicky/__init__.py
+    LOC: 3
+    LLOC: 2
+    SLOC: 1
+    Comments: 0
+    Single comments: 1
+    Multi: 0
+    Blank: 1
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+src/vicky/llm.py
+    LOC: 336
+    LLOC: 144
+    SLOC: 260
+    Comments: 24
+    Single comments: 26
+    Multi: 17
+    Blank: 33
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 9%
+        (C + M % L): 12%
+src/vicky/pdf_report.py
+    LOC: 369
+    LLOC: 173
+    SLOC: 293
+    Comments: 21
+    Single comments: 22
+    Multi: 14
+    Blank: 40
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 7%
+        (C + M % L): 9%
+src/vicky/prompts.py
+    LOC: 444
+    LLOC: 46
+    SLOC: 316
+    Comments: 1
+    Single comments: 3
+    Multi: 9
+    Blank: 116
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 2%
+src/vicky/xlsx_report.py
+    LOC: 145
+    LLOC: 66
+    SLOC: 109
+    Comments: 7
+    Single comments: 7
+    Multi: 7
+    Blank: 22
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 6%
+        (C + M % L): 10%
+src/vicky/cli.py
+    LOC: 378
+    LLOC: 237
+    SLOC: 299
+    Comments: 8
+    Single comments: 17
+    Multi: 10
+    Blank: 52
+    - Comment Stats
+        (C % L): 2%
+        (C % S): 3%
+        (C + M % L): 5%
+src/vicky/pipeline.py
+    LOC: 2761
+    LLOC: 1528
+    SLOC: 1928
+    Comments: 294
+    Single comments: 279
+    Multi: 250
+    Blank: 304
+    - Comment Stats
+        (C % L): 11%
+        (C % S): 15%
+        (C + M % L): 20%
+src/vicky/storage.py
+    LOC: 2042
+    LLOC: 673
+    SLOC: 1532
+    Comments: 57
+    Single comments: 61
+    Multi: 228
+    Blank: 221
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 4%
+        (C + M % L): 14%
+src/vicky/pricing.py
+    LOC: 34
+    LLOC: 11
+    SLOC: 21
+    Comments: 1
+    Single comments: 1
+    Multi: 4
+    Blank: 8
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 5%
+        (C + M % L): 15%
+src/vicky/creditos_motor.py
+    LOC: 476
+    LLOC: 193
+    SLOC: 259
+    Comments: 35
+    Single comments: 42
+    Multi: 97
+    Blank: 78
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 14%
+        (C + M % L): 28%
+src/vicky/referencias.py
+    LOC: 161
+    LLOC: 97
+    SLOC: 95
+    Comments: 10
+    Single comments: 14
+    Multi: 27
+    Blank: 25
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 11%
+        (C + M % L): 23%
+src/vicky/report.py
+    LOC: 137
+    LLOC: 104
+    SLOC: 113
+    Comments: 2
+    Single comments: 1
+    Multi: 0
+    Blank: 23
+    - Comment Stats
+        (C % L): 1%
+        (C % S): 2%
+        (C + M % L): 1%
+src/vicky/pdf_resumo.py
+    LOC: 273
+    LLOC: 138
+    SLOC: 194
+    Comments: 19
+    Single comments: 21
+    Multi: 25
+    Blank: 33
+    - Comment Stats
+        (C % L): 7%
+        (C % S): 10%
+        (C + M % L): 16%
+src/vicky/web/stripe_billing.py
+    LOC: 473
+    LLOC: 156
+    SLOC: 212
+    Comments: 164
+    Single comments: 130
+    Multi: 72
+    Blank: 59
+    - Comment Stats
+        (C % L): 35%
+        (C % S): 77%
+        (C + M % L): 50%
+src/vicky/web/users.py
+    LOC: 391
+    LLOC: 208
+    SLOC: 240
+    Comments: 44
+    Single comments: 45
+    Multi: 44
+    Blank: 62
+    - Comment Stats
+        (C % L): 11%
+        (C % S): 18%
+        (C + M % L): 23%
+src/vicky/web/creditos.py
+    LOC: 564
+    LLOC: 164
+    SLOC: 280
+    Comments: 44
+    Single comments: 46
+    Multi: 146
+    Blank: 92
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 16%
+        (C + M % L): 34%
+src/vicky/web/progresso.py
+    LOC: 243
+    LLOC: 98
+    SLOC: 145
+    Comments: 25
+    Single comments: 24
+    Multi: 42
+    Blank: 32
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 17%
+        (C + M % L): 28%
+src/vicky/web/emails.py
+    LOC: 77
+    LLOC: 36
+    SLOC: 34
+    Comments: 3
+    Single comments: 2
+    Multi: 25
+    Blank: 16
+    - Comment Stats
+        (C % L): 4%
+        (C % S): 9%
+        (C + M % L): 36%
+src/vicky/web/__init__.py
+    LOC: 1
+    LLOC: 1
+    SLOC: 0
+    Comments: 0
+    Single comments: 1
+    Multi: 0
+    Blank: 0
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+src/vicky/web/asaas_billing.py
+    LOC: 650
+    LLOC: 385
+    SLOC: 388
+    Comments: 28
+    Single comments: 34
+    Multi: 89
+    Blank: 139
+    - Comment Stats
+        (C % L): 4%
+        (C % S): 7%
+        (C + M % L): 18%
+src/vicky/web/empresa.py
+    LOC: 53
+    LLOC: 14
+    SLOC: 24
+    Comments: 9
+    Single comments: 9
+    Multi: 12
+    Blank: 8
+    - Comment Stats
+        (C % L): 17%
+        (C % S): 38%
+        (C + M % L): 40%
+src/vicky/web/css_stamp.py
+    LOC: 106
+    LLOC: 44
+    SLOC: 45
+    Comments: 9
+    Single comments: 10
+    Multi: 27
+    Blank: 24
+    - Comment Stats
+        (C % L): 8%
+        (C % S): 20%
+        (C + M % L): 34%
+src/vicky/web/app.py
+    LOC: 3389
+    LLOC: 1559
+    SLOC: 2189
+    Comments: 685
+    Single comments: 633
+    Multi: 265
+    Blank: 302
+    - Comment Stats
+        (C % L): 20%
+        (C % S): 31%
+        (C + M % L): 28%
+src/vicky/web/queries.py
+    LOC: 1127
+    LLOC: 443
+    SLOC: 859
+    Comments: 69
+    Single comments: 79
+    Multi: 81
+    Blank: 108
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 8%
+        (C + M % L): 13%
+src/vicky/web/checkout_asaas.py
+    LOC: 1272
+    LLOC: 702
+    SLOC: 880
+    Comments: 110
+    Single comments: 116
+    Multi: 104
+    Blank: 172
+    - Comment Stats
+        (C % L): 9%
+        (C % S): 12%
+        (C + M % L): 17%
+src/vicky/web/projects.py
+    LOC: 262
+    LLOC: 133
+    SLOC: 163
+    Comments: 27
+    Single comments: 25
+    Multi: 38
+    Blank: 36
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 17%
+        (C + M % L): 25%
+src/vicky/web/consentimentos.py
+    LOC: 54
+    LLOC: 26
+    SLOC: 33
+    Comments: 0
+    Single comments: 0
+    Multi: 8
+    Blank: 13
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 15%
+src/vicky/web/workspaces.py
+    LOC: 114
+    LLOC: 91
+    SLOC: 94
+    Comments: 2
+    Single comments: 3
+    Multi: 0
+    Blank: 17
+    - Comment Stats
+        (C % L): 2%
+        (C % S): 2%
+        (C + M % L): 2%
+src/vicky/sources/pubmed.py
+    LOC: 265
+    LLOC: 192
+    SLOC: 197
+    Comments: 16
+    Single comments: 18
+    Multi: 14
+    Blank: 36
+    - Comment Stats
+        (C % L): 6%
+        (C % S): 8%
+        (C + M % L): 11%
+src/vicky/sources/scholar.py
+    LOC: 284
+    LLOC: 200
+    SLOC: 217
+    Comments: 14
+    Single comments: 14
+    Multi: 14
+    Blank: 39
+    - Comment Stats
+        (C % L): 5%
+        (C % S): 6%
+        (C + M % L): 10%
+src/vicky/sources/__init__.py
+    LOC: 9
+    LLOC: 4
+    SLOC: 6
+    Comments: 0
+    Single comments: 1
+    Multi: 0
+    Blank: 2
+    - Comment Stats
+        (C % L): 0%
+        (C % S): 0%
+        (C + M % L): 0%
+src/vicky/sources/scielo.py
+    LOC: 173
+    LLOC: 124
+    SLOC: 135
+    Comments: 6
+    Single comments: 7
+    Multi: 3
+    Blank: 28
+    - Comment Stats
+        (C % L): 3%
+        (C % S): 4%
+        (C + M % L): 5%
+** Total **
+    LOC: 19233
+    LLOC: 8837
+    SLOC: 12971
+    Comments: 1918
+    Single comments: 1880
+    Multi: 1829
+    Blank: 2553
+    - Comment Stats
+        (C % L): 10%
+        (C % S): 15%
+        (C + M % L): 19%
