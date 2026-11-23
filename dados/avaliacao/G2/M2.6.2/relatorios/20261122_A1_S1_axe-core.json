@@ -1,0 +1,1126 @@
+{
+  "testEngine": { "name": "axe-core", "version": "4.10.2" },
+  "testRunner": { "name": "axe" },
+  "testEnvironment": {
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/158.0.0.0 Safari/537.36",
+    "windowWidth": 1367,
+    "windowHeight": 766,
+    "orientationAngle": 0,
+    "orientationType": "landscape-primary"
+  },
+  "timestamp": "2026-11-23T00:29:34.532Z",
+  "url": "https://vicky.synaptha.com/",
+  "toolOptions": {
+    "runOnly": { "type": "rule", "values": ["color-contrast"] },
+    "reporter": "v1"
+  },
+  "inapplicable": [],
+  "passes": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0a0414",
+                "contrastRatio": 20.18,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 20.18"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"nav-wordmark\">Vicky</span>",
+          "target": ["a[aria-label=\"Vicky · início\"] > .nav-wordmark"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#cbd5e1",
+                "bgColor": "#0a0414",
+                "contrastRatio": 13.59,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 13.59"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"#como-funciona\">Como funciona</a>",
+          "target": [".nav-links > a[href$=\"#como-funciona\"]"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#cbd5e1",
+                "bgColor": "#0a0414",
+                "contrastRatio": 13.59,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 13.59"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"#entregas\">Entregas</a>",
+          "target": ["a[href$=\"#entregas\"]"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#cbd5e1",
+                "bgColor": "#0a0414",
+                "contrastRatio": 13.59,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 13.59"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"#faq\">Dúvidas</a>",
+          "target": ["a[href$=\"#faq\"]"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f9a8d4",
+                "bgColor": "#0a0414",
+                "contrastRatio": 11.13,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 11.13"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"btn btn-ghost-pink\" href=\"#preco\">Preço</a>",
+          "target": ["a[href$=\"#preco\"]"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f9a8d4",
+                "bgColor": "#0a0414",
+                "contrastRatio": 11.13,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 11.13"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a class=\"btn btn-ghost-pink\" href=\"/login\">Entrar</a>",
+          "target": [".btn-ghost-pink.btn[href$=\"login\"]"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8d8a92",
+                "bgColor": "#1b1524",
+                "contrastRatio": 5.24,
+                "fontSize": "7.9pt (10.5px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.24"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"flow-label\"><span class=\"flow-num\">1</span>Tema da pesquisa</div>",
+          "target": [".flow-card:nth-child(1) > .flow-label"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f9a8d4",
+                "bgColor": "#401e39",
+                "contrastRatio": 7.91,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.91"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"flow-num\">1</span>",
+          "target": [".flow-card:nth-child(1) > .flow-label > .flow-num"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#edeced",
+                "bgColor": "#1b1524",
+                "contrastRatio": 15.11,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 15.11"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"flow-value\">Uso de inteligência artificial no diagnóstico precoce de câncer de pele</div>",
+          "target": [".flow-card:nth-child(1) > .flow-value"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8d8a92",
+                "bgColor": "#1b1524",
+                "contrastRatio": 5.24,
+                "fontSize": "7.9pt (10.5px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.24"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"flow-label\"><span class=\"flow-num\">2</span>Observações</div>",
+          "target": [".flow-card:nth-child(3) > .flow-label"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f9a8d4",
+                "bgColor": "#401e39",
+                "contrastRatio": 7.91,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.91"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"flow-num\">2</span>",
+          "target": [".flow-card:nth-child(3) > .flow-label > .flow-num"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#edeced",
+                "bgColor": "#1b1524",
+                "contrastRatio": 15.11,
+                "fontSize": "10.5pt (14px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 15.11"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"flow-value\">Focar em estudos dos últimos 5 anos, população adulta e aplicações clínicas.</div>",
+          "target": [".flow-card:nth-child(3) > .flow-value"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#8d8a92",
+                "bgColor": "#1b1524",
+                "contrastRatio": 5.24,
+                "fontSize": "7.9pt (10.5px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 5.24"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<div class=\"flow-label\"><span class=\"flow-num\">3</span>Bases científicas</div>",
+          "target": [".flow-card:nth-child(5) > .flow-label"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#f9a8d4",
+                "bgColor": "#401e39",
+                "contrastRatio": 7.91,
+                "fontSize": "7.5pt (10px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 7.91"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"flow-num\">3</span>",
+          "target": [".flow-card:nth-child(5) > .flow-label > .flow-num"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fbcfe8",
+                "bgColor": "#341b32",
+                "contrastRatio": 11.26,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 11.26"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"flow-chip\">PubMed</span>",
+          "target": [".flow-chip:nth-child(1)"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fbcfe8",
+                "bgColor": "#341b32",
+                "contrastRatio": 11.26,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 11.26"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"flow-chip\">SciELO</span>",
+          "target": [".flow-chip:nth-child(2)"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#fbcfe8",
+                "bgColor": "#341b32",
+                "contrastRatio": 11.26,
+                "fontSize": "8.3pt (11px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 11.26"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"flow-chip\">Google Acadêmico</span>",
+          "target": [".flow-chip:nth-child(3)"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#ffffff",
+                "bgColor": "#0a0414",
+                "contrastRatio": 20.18,
+                "fontSize": "13.5pt (18px)",
+                "fontWeight": "bold",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 20.18"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<span class=\"nav-wordmark\">Vicky</span>",
+          "target": [
+            ".footer-inner > div:nth-child(1) > .nav-brand[href$=\"#top\"] > .nav-wordmark"
+          ]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#b6b4b9",
+                "bgColor": "#0a0414",
+                "contrastRatio": 9.82,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 9.82"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/login\">Entrar</a>",
+          "target": [".footer-links > a[href$=\"login\"]"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#b6b4b9",
+                "bgColor": "#0a0414",
+                "contrastRatio": 9.82,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 9.82"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/termos\">Termos de Uso</a>",
+          "target": [".footer-links > a[href$=\"termos\"]"]
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#b6b4b9",
+                "bgColor": "#0a0414",
+                "contrastRatio": 9.82,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element has sufficient color contrast of 9.82"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": null,
+          "html": "<a href=\"/privacidade\">Privacidade</a>",
+          "target": [".footer-links > a[href$=\"privacidade\"]"]
+        }
+      ]
+    }
+  ],
+  "incomplete": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "bold",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"nav-logo\" aria-hidden=\"true\">V</span>",
+                  "target": [
+                    "a[aria-label=\"Vicky · início\"] > .nav-logo[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"nav-logo\" aria-hidden=\"true\">V</span>",
+          "target": [
+            "a[aria-label=\"Vicky · início\"] > .nav-logo[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<a class=\"btn btn-primary\" href=\"/signup\">Começar grátis</a>",
+                  "target": [".nav-cta > .btn-primary.btn[href$=\"signup\"]"]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"btn btn-primary\" href=\"/signup\">Começar grátis</a>",
+          "target": [".nav-cta > .btn-primary.btn[href$=\"signup\"]"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.4pt (12.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"hero-eyebrow reveal in\">\n        <span class=\"live-dot\" aria-hidden=\"true\"></span>\n        Feito para estudantes de medicina · TCC · IC · artigo de resumo\n      </span>",
+          "target": [".hero-eyebrow"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "45.0pt (60px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h1 class=\"reveal in\" data-delay=\"1\">\n        Os artigos certos para a sua <span class=\"gradient-text\">iniciação científica, TCC ou monografia</span>, em minutos\n      </h1>",
+          "target": ["h1"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "45.0pt (60px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "3:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"gradient-text\">iniciação científica, TCC ou monografia</span>",
+          "target": ["h1 > .gradient-text"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.8pt (17px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"hero-sub reveal in\" data-delay=\"2\">",
+          "target": [".hero-sub"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.8pt (17px)",
+                "fontWeight": "bold",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<strong>Top 30 ranqueado por Quality Score</strong>",
+          "target": [".hero-sub > strong"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"btn btn-primary btn-large\" href=\"/signup\">Começar minha busca grátis →</a>",
+          "target": [
+            ".hero-cta.in[data-delay=\"3\"] > .btn-primary.btn-large[href$=\"signup\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a class=\"btn btn-ghost-light btn-large\" href=\"#como-funciona\">Ver como funciona</a>",
+          "target": [".btn-ghost-light"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "7.9pt (10.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flow-card result\">\n        <div class=\"flow-label\"><span class=\"flow-num\">✓</span>Resultado</div>\n        <div class=\"flow-value\">Top 30 artigos ranqueados</div>\n        <div class=\"flow-meta\">Quality Score 0–100 · você escolhe a quantidade</div>\n      </div>",
+                  "target": [".result"]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"flow-label\"><span class=\"flow-num\">✓</span>Resultado</div>",
+          "target": [".result > .flow-label"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": { "messageKey": "nonBmp" },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content contains only non-text characters"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"flow-num\">✓</span>",
+          "target": [".result > .flow-label > .flow-num"],
+          "failureSummary": "Fix any of the following:\n  Element content contains only non-text characters"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "12.8pt (17px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flow-card result\">\n        <div class=\"flow-label\"><span class=\"flow-num\">✓</span>Resultado</div>\n        <div class=\"flow-value\">Top 30 artigos ranqueados</div>\n        <div class=\"flow-meta\">Quality Score 0–100 · você escolhe a quantidade</div>\n      </div>",
+                  "target": [".result"]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"flow-value\">Top 30 artigos ranqueados</div>",
+          "target": [".result > .flow-value"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "9.4pt (12.5px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<div class=\"flow-card result\">\n        <div class=\"flow-label\"><span class=\"flow-num\">✓</span>Resultado</div>\n        <div class=\"flow-value\">Top 30 artigos ranqueados</div>\n        <div class=\"flow-meta\">Quality Score 0–100 · você escolhe a quantidade</div>\n      </div>",
+                  "target": [".result"]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"flow-meta\">Quality Score 0–100 · você escolhe a quantidade</div>",
+          "target": [".flow-meta"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15px)",
+                "fontWeight": "bold",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [
+                {
+                  "html": "<span class=\"nav-logo\" aria-hidden=\"true\">V</span>",
+                  "target": [
+                    ".footer-inner > div:nth-child(1) > .nav-brand[href$=\"#top\"] > .nav-logo[aria-hidden=\"true\"]"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"nav-logo\" aria-hidden=\"true\">V</span>",
+          "target": [
+            ".footer-inner > div:nth-child(1) > .nav-brand[href$=\"#top\"] > .nav-logo[aria-hidden=\"true\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "contrastRatio": 0,
+                "fontSize": "10.1pt (13.5px)",
+                "fontWeight": "normal",
+                "messageKey": "elmPartiallyObscuring",
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it partially overlaps other elements"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"footer-tag\">Triagem científica assistida por IA para estudantes e pesquisadores.</p>",
+          "target": [".footer-tag"],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it partially overlaps other elements"
+        }
+      ]
+    }
+  ],
+  "violations": [
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#64748b",
+                "bgColor": "#0a0414",
+                "contrastRatio": 4.24,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [{ "html": "<footer>", "target": ["footer"] }],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.24 (foreground color: #64748b, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div>Synaptha Inc Ltda · CNPJ 63.642.396/0001-90</div>",
+          "target": [
+            "footer > .container > div:nth-child(2) > div:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #64748b, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#64748b",
+                "bgColor": "#0a0414",
+                "contrastRatio": 4.24,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [{ "html": "<footer>", "target": ["footer"] }],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.24 (foreground color: #64748b, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div>Quadra SIG Quadra 4, nº 75, Bloco C, Sala 09 e 10, Parte 36, Edifício Capital Financial Center, Zona Industrial, Brasília - DF, CEP 70610-440</div>",
+          "target": [
+            "footer > .container > div:nth-child(2) > div:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #64748b, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#64748b",
+                "bgColor": "#0a0414",
+                "contrastRatio": 4.24,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [{ "html": "<footer>", "target": ["footer"] }],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.24 (foreground color: #64748b, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div style=\"margin-top:6px;\">",
+          "target": [
+            "footer > .container > div:nth-child(2) > div:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #64748b, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#be185d",
+                "bgColor": "#0a0414",
+                "contrastRatio": 3.34,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [{ "html": "<footer>", "target": ["footer"] }],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.34 (foreground color: #be185d, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"mailto:vickyangel@gmail.com\" style=\"color:#be185d; text-decoration:none;\">vickyangel@gmail.com</a>",
+          "target": ["a[href=\"mailto:vickyangel@gmail.com\"]"],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.34 (foreground color: #be185d, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#be185d",
+                "bgColor": "#0a0414",
+                "contrastRatio": 3.34,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [{ "html": "<footer>", "target": ["footer"] }],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.34 (foreground color: #be185d, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/termos\" style=\"color:#be185d; text-decoration:none;\">Termos de Uso</a>",
+          "target": ["div:nth-child(3) > a[href$=\"termos\"]"],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.34 (foreground color: #be185d, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#be185d",
+                "bgColor": "#0a0414",
+                "contrastRatio": 3.34,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [{ "html": "<footer>", "target": ["footer"] }],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 3.34 (foreground color: #be185d, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<a href=\"/privacidade\" style=\"color:#be185d; text-decoration:none;\">Política de Privacidade</a>",
+          "target": ["div:nth-child(3) > a[href$=\"privacidade\"]"],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.34 (foreground color: #be185d, background color: #0a0414, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": "#64748b",
+                "bgColor": "#0a0414",
+                "contrastRatio": 4.24,
+                "fontSize": "9.4pt (12.5px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1"
+              },
+              "relatedNodes": [{ "html": "<footer>", "target": ["footer"] }],
+              "impact": "serious",
+              "message": "Element has insufficient color contrast of 4.24 (foreground color: #64748b, background color: #0a0414, font size: 9.4pt (12.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<div class=\"footer-bottom\">© 2026 Vicky · Feita no Brasil</div>",
+          "target": [".footer-bottom"],
+          "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #64748b, background color: #0a0414, font size: 9.4pt (12.5px), font weight: normal). Expected contrast ratio of 4.5:1"
+        }
+      ]
+    }
+  ]
+}
