@@ -99,9 +99,11 @@ Conforme `docs/fase-1/proposito.md`, a avaliação busca verificar em que medida
 
 ## 5. Sugestões de melhoria para o requisitante
 
+> **Alinhamento com a equipe:** a priorização e o fechamento das sugestões de melhoria a serem encaminhadas ao requisitante ainda dependem de alinhamento com a equipe (considerando o escopo de ação, os resultados de G1 e G2 e os encaminhamentos da fase).
+
 ### 5.1 Critério de priorização
 
-Com base nos resultados da Fase 4, a equipe sugere como prioridade inicial para o requisitante a frente de **G1 (Adequação funcional)**, por concentrar o pior desempenho global (`0,60` - *Insatisfatório*, julgamento **Não atende**), com falhas críticas em `M1.1.1` e `M1.3.1` que comprometem diretamente o propósito central do VICKY para o estudante de medicina (recuperação dos estudos relevantes, funcionamento das fontes de busca, conformidade aos filtros e alinhamento do ranking à qualidade metodológica). As sugestões e encaminhamentos desta seção ainda dependem de **alinhamento com a equipe** e com o requisitante para definição do escopo definitivo e da ordem final de execução.
+Com base nos resultados da Fase 4, a equipe sugere como prioridade inicial para o requisitante a frente de **G1 (Adequação funcional)**, por concentrar o pior desempenho global (`0,60` - *Insatisfatório*, julgamento **Não atende**), com falhas críticas em `M1.1.1` e `M1.3.1` que comprometem diretamente o propósito central do VICKY para o estudante de medicina (recuperação dos estudos relevantes, funcionamento das fontes de busca, conformidade aos filtros e alinhamento do ranking à qualidade metodológica).
 
 Para organizar as recomendações na tabela a seguir, adota-se o seguinte critério de classificação:
 
