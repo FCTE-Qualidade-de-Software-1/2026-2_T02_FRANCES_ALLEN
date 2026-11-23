@@ -39,7 +39,7 @@ Feita depois das sessões, em 22/11/2026, pelas capturas de produção da inspe�
 | E07 | "Só artigos com texto completo gratuito" | sim | - |
 | E08 | "Salvar como rascunho", "Pré-visualizar critérios" (grátis · 0 créditos) e "Criar e iniciar tudo direto" (consome 1 crédito) | sim | - |
 | E09 | Painel "Critérios PICO + Strings de busca (geradas pela IA)" na tela do projeto | sim | Em produção o bloco não traz os rótulos P, I, C e O: mostra o protocolo de triagem (elegibilidade, piso metodológico e Quality Score) e as strings de busca. O ponto essencial do gabarito continua: são os critérios que decidem se cada artigo entra ou sai |
-| E10 | Número verde de cada artigo na lista ("O número verde de cada artigo é o Quality Score (0–100)") | sim | - |
+| E10 | Número verde de cada artigo na lista ("O número verde de cada artigo é o Quality Score (0 a 100)") | sim | - |
 | E11 | Painéis "Pipeline (sequência de ações executadas)" e "Critérios PICO + Strings de busca" na tela do projeto; motivo da exclusão no detalhe de cada artigo | sim | Confirmado: não há tela própria de log |
 | E12 | Botão "Exportar", com PDF · Resumo, PDF · Completo e XLSX · Planilha | sim | - |
 
