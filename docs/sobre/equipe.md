@@ -35,17 +35,17 @@ Cada integrante tem 1/6 do esforço (16,666...%). Com uma casa decimal, seis par
 
 Preenchida a partir das horas registradas em `dados/gestao/esforco.csv`, com o percentual de cada integrante calculado sobre o total de horas da equipe.
 
-Horas lançadas de 27/10 a 22/11/2026, conferidas em 23/11/2026 (56,2 h no total). A linha repetida de 19/11 da Larissa (inspeção do G2, 2 h) foi contada uma vez. O percentual mede as horas registradas, e não o valor entregue: quem lançou pouco aparece com menos.
+Horas lançadas de 27/10 a 22/11/2026, conferidas em 23/11/2026 (62,2 h no total). A linha repetida de 19/11 da Larissa (inspeção do G2, 2 h) foi contada uma vez. Os percentuais foram arredondados pelo método dos maiores restos, como na Entrega 1, para somar 100,0%. O percentual mede as horas registradas, e não o valor entregue: quem lançou pouco aparece com menos.
 
 | Integrante | Atividades realizadas na Entrega 2 | Horas | Esforço (%) |
 |------------|------------------------------------|:-----:|:-----------:|
-| Larissa Gomes Silva | Revisão do método do G1; coleta completa do G1 (T1 a T4, repetições e filtros), julgamentos e página de resultados; inspeção do G2 como A2 | 22,2 | 39,5 |
-| Gabriel Sampaio Fae | PSM e ciclos de medição; método do G2 por inspeção; inspeção do G2 como A1 e consolidação; sessão P01 do G2 com usuários | 16,0 | 28,5 |
-| Lucas Antunes de Avelar | Correções da E1; métodos da Fase 3 (D12), recursos, ambiente e cronograma; coleta do G3; fichas de A2 do G1; página da Fase 4; artigo v2 | 10,0 | 17,8 |
-| Guilherme Moura da Silva Neto | Repetição independente da coleta do G3 (A2), inspeção de M3.2.3 e consolidação dos resultados do G3 | 4,0 | 7,1 |
-| Guilherme Maciel de Meneses | Julgamento e conclusões da Fase 4 | 3,0 | 5,3 |
-| João Felipe Oliveira Alves e Silva | Sessão P01 do G2 com usuários como condutor | 1,0 | 1,8 |
-| **Total** | | **56,2** | **100,0** |
+| Larissa Gomes Silva | Revisão do método do G1; coleta completa do G1 (T1 a T4, repetições e filtros), julgamentos e página de resultados; inspeção do G2 como A2 | 22,2 | 35,7 |
+| Gabriel Sampaio Fae | PSM e ciclos de medição; método do G2 por inspeção; inspeção do G2 como A1 e consolidação; sessão P01 do G2 com usuários | 16,0 | 25,7 |
+| Lucas Antunes de Avelar | Correções da E1; milestone, issues de #2 a #31, cronograma e apresentação do PC2; métodos da Fase 3 (D12), recursos, ambiente e cronograma; coleta do G3; fichas de A2 do G1; página da Fase 4; artigo v2 | 16,0 | 25,7 |
+| Guilherme Moura da Silva Neto | Repetição independente da coleta do G3 (A2), inspeção de M3.2.3 e consolidação dos resultados do G3 | 4,0 | 6,5 |
+| Guilherme Maciel de Meneses | Julgamento e conclusões da Fase 4 | 3,0 | 4,8 |
+| João Felipe Oliveira Alves e Silva | Sessão P01 do G2 com usuários como condutor | 1,0 | 1,6 |
+| **Total** | | **62,2** | **100,0** |
 
 ## Histórico de versão
 
@@ -57,3 +57,4 @@ Horas lançadas de 27/10 a 22/11/2026, conferidas em 23/11/2026 (56,2 h no total
 | 0.4 | 04/11/2026 | Seis integrantes com matrícula, GitHub e papel; tabela de contribuição da Entrega 1 | Lucas Avelar | - |
 | 0.5 | 20/11/2026 | Tabela da Entrega 1 somando 100,0%: arredondamento de 1/6 pelo método dos maiores restos, com a regra explicada (#31) | Lucas Avelar | - |
 | 0.6 | 23/11/2026 | Tabela da Entrega 2 pelas horas de `esforco.csv` (56,2 h, de 27/10 a 22/11) e papel do Lucas atualizado | Lucas Avelar | - |
+| 0.7 | 23/11/2026 | Horas do Lucas na Entrega 2 completadas (16 h; total de 62,2 h) | Lucas Avelar | - |
