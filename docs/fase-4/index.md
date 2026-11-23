@@ -3,7 +3,7 @@
 Quarta e última fase do processo de avaliação de produto da família **SQuaRE** (ISO/IEC 25040:2024). Os métodos da [Fase 3](../fase-3/index.md) são executados, as medidas são obtidas, as questões do GQM da [Fase 2](../fase-2/index.md) são respondidas e a qualidade do VICKY é julgada contra os níveis e critérios definidos antes da coleta. A fase fecha com as conclusões e com uma ação de melhoria proposta e sua medida de verificação; executada e medida antes e depois. 
 
 !!! note "Fase concluída na Entrega 2"
-    Coleta de 14 a 20/11/2026 e entrega final em 22/11/2026, conforme o [cronograma](../fase-3/cronograma.md). Esta página só mostra valor que está em arquivo do repositório. O que não foi medido até a entrega está declarado como desvio: M2.6.1 e M2.6.2 (Q2.6 sem nível) e a medida depois da ação de melhoria.
+    Coleta de 14 a 20/11/2026 e entrega final em 22/11/2026, conforme o [cronograma](../fase-3/cronograma.md). Esta página só mostra valor que está em arquivo do repositório. O que não foi medido até a entrega está declarado como desvio: M2.6.1 e M2.6.2 (Q2.6 sem nível).
 
 ## Conteúdo desta fase
 
