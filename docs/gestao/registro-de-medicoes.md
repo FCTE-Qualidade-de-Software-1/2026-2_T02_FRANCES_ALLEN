@@ -820,6 +820,23 @@ _Figura 21 - Horas da E2 por integrante: barras = horas estimadas nas issues de 
 4. **As horas seguem vindo de 2 de 6 integrantes,** e as duas issues medidas estouraram a estimativa (+100% e +50%). A #27 já passou da estimativa antes de fechar.
 5. **Ações sugeridas para a equipe antes da coleta de 22/11:** abrir um PR com `Closes #N` para cada branch até 20/11; dividir ou fechar a #25 e fechar a milestone "E2 - Ponto de controle"; registrar as horas ao fechar cada issue.
 
+### RC3 da Entrega 2 pelas horas (conferência de 23/11/2026)
+
+Até o ciclo 5 parcial, o RC3 usou commits como *proxy*, porque as horas não estavam lançadas. Em 23/11/2026, com as horas da Entrega 2 em `dados/gestao/esforco.csv` (27/10 a 22/11, 62,2 h, com a linha repetida de 19/11 contada uma vez), a contribuição pelas horas fica assim:
+
+| Integrante | Horas | RC3 | Faixa (13% a 20%) |
+|------------|:-----:|:---:|:-----------------:|
+| larigs | 22,2 | 35,7% | Acima |
+| Faehzin | 16,0 | 25,7% | Acima |
+| LucasAvelar2711 | 16,0 | 25,7% | Acima |
+| Guilherme-Moura | 4,0 | 6,5% | Abaixo |
+| GuilhermeMM3 | 3,0 | 4,8% | Abaixo |
+| MrBolt2005 | 1,0 | 1,6% | Abaixo |
+
+_Tabela - RC3 da Entrega 2 pelas horas registradas. Fonte: `dados/gestao/esforco.csv`._
+
+**Leitura.** (AN) Nenhum integrante fica na faixa de 13% a 20%: três ficam acima e três abaixo. O RC3 pelas horas mede o que foi lançado, e não o que foi entregue: as horas da Entrega 2 foram lançadas em sua maioria depois do fim da coleta (20 a 23/11), e três integrantes têm entregas no repositório com poucas horas registradas. A mesma tabela está em [Equipe](../sobre/equipe.md).
+
 ## 10. Próxima coleta
 
 | Ciclo | Data | O que coletar | Situação |
@@ -1098,3 +1115,5 @@ _Figura 29 - Barras = issues abertas por integrante na data de corte, linha = li
 | 0.6 | 13/11/2026 | Fechamento retroativo do ciclo 2, ciclo 3 medido retroativamente e coleta parcial do ciclo 4 a partir do `git log` e da API do GitHub, com painel estendido e três gráficos novos | Gabriel Fae | - |
 | 0.7 | 13/11/2026 | Linha de base de horas da E2 (40 h) aplicada a CP2, RC1 e RC2 dos ciclos 3 e 4, e seção 9 com a evolução entre os ciclos: tabela de tendências e oito gráficos | Gabriel Fae | - |
 | 0.8 | 19/11/2026 | Fechamento retroativo do ciclo 4 com a verificação da D11, coleta parcial do ciclo 5 (corte em 19/11, às 10h55), quatro gráficos novos e evolução estendida até o ciclo 5 | Gabriel Fae | - |
+| 0.9 | 23/11/2026 | RC3 da Entrega 2 pelas horas de `esforco.csv` (56,2 h, de 27/10 a 22/11) | Lucas Avelar | - |
+| 0.10 | 23/11/2026 | RC3 recalculado com as horas do Lucas completadas (62,2 h) | Lucas Avelar | - |
